@@ -8,6 +8,8 @@ HEY YOU! Yes, I'm talking to you! Why are you looking at my profile? Just snoopi
 
 3 - For me, Software Development is a true art form. Don't know why, but I'm totally obsessed about making the cleanest and most organised code that I can. However, paradoxically, I hate missing my goals, so I take deadlines very seriously. To strike a balance between these two antagonists, I'm constantly finding ways where I can trim down repetitive tasks to save time.
 
+If you want to have a quick glance at what I've worked on just browse my [Portfolio Gallery](https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6).
+
 # Experience
 
 ## [Tynker](https://www.tynker.com/)
@@ -858,7 +860,10 @@ The whole game plot was incredibly dumb, which was natural for my age. The mecha
 # TODO
 
 - Describe all Tynker projects
+- Sort portfolio gallery
 - Sort Tynker projects by date
+- Add Tynker projects to album
+- Add portfolio screenshots to drive
 - Add validator script
 - Extract used technologies
 - Add resource links to all projects
