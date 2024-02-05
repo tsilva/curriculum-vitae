@@ -870,3 +870,5 @@ The whole game plot was incredibly dumb, which was natural for my age. The mecha
 - Add chatbot to help with navigation
 - Add github page
 - Link to tsilva.eu
+- Check toptal projects
+- Rename project to portfolio
