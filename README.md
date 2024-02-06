@@ -96,19 +96,18 @@ The course was very work intensive. Assignments got bigger and bigger as semeste
 
 # Projects
 
-## Tynker - PHP MongoDB ODM
+## Help Agent
 
-- **Employer:** Tynker
+- **Client:** Tynker
+- **Start:** 2023 @TODO: CONFIRMED
 
-Developed a custom MongoDB ODM for a legacy, unstructured PHP codebase to enforce object-oriented design principles. This initiative addressed significant code redundancy and facilitated the seamless transport of data and logic across the stack, which was previously unattainable due to a heterogeneous table-to-object mapping scheme and numerous database workarounds. Opting to create a tailored solution—completed in just a few days—yielded substantial long-term benefits, demonstrating remarkable return on investment through years of smooth operation with minimal issues.
+- [Assets](https://drive.google.com/drive/folders/1U9ncLOBEwThtn-3cf9GPUZisN4scWZ2d?usp=sharing)
 
-However, this experience underscored the importance of cautious feature development aimed at maskinLg structural deficiencies. While the custom ODM effectively abstracted certain data model flaws, it inadvertently reduced the urgency to address these underlying issues directly. This approach allowed the data model's problems to persist and propagate throughout the stack, highlighting a critical lesson on balancing immediate solutions with the need for fundamental structural improvements.
-
-- [Assets](https://drive.google.com/drive/folders/1dudBjbmBCSEQL6hyCdiPYDbAX8ITiiMe?usp=sharing)
+---
 
 ## [Tynker - Minecraft Editor](https://www.tynker.com/minecraft/editor/mob/pig/)
 
-- **Employer:** Tynker
+- **Client:** Tynker
 
 Developed a web 3D editor for Minecraft Bedrock Edition, enabling customization of Skins, Blocks, Items, and Mobs. The editor featured texture editing and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, translating user inputs into Minecraft's declarative configuration files.
 
@@ -120,9 +119,10 @@ This tool was incorporated into the Tynker App and Mod Creator App, providing a 
 - [Assets](https://drive.google.com/drive/folders/1tlldiP97AQ2Lxs3g0aipjVMR4ewcdIMH?usp=sharing)
 
 ---
+
 ## [Tynker - Crystal Clash](https://www.tynker.com/dashboard/student/#/battles/crystalclash)
 
-- **Employer:** Tynker
+- **Client:** Tynker
 
 Crystal Clash is a multiplayer turn-based battlebots game. Ended up implementing a mirror of the Tynker Block Language in the server-side.
 
@@ -134,7 +134,7 @@ Crystal Clash is a multiplayer turn-based battlebots game. Ended up implementing
 
 ## [Block IDE - Major redesign/overhaul](https://www.tynker.com/ide/v3)
 
-- **Employer:** Tynker
+- **Client:** Tynker
 - **Platforms:** Web
 - **Technologies:** PHP, Javascript, Redux, Redux Saga, AngularJS, SCSS
 
@@ -152,13 +152,13 @@ Looking back: Looking back I still think the extension framework and Redux Saga 
 
 ## Block IDE - integration into MCEE
 
-- **Employer:** Tynker
+- **Client:** Tynker
 
 ---
 
 ## Block IDE - Arcade Maker
 
-- **Employer:** Tynker
+- **Client:** Tynker
 
 - [Assets](https://drive.google.com/drive/folders/19G_5D410i1dO6kpUyacKjUNuROmoIw7J?usp=sharing)
 
@@ -166,7 +166,7 @@ Looking back: Looking back I still think the extension framework and Redux Saga 
 
 ## Lynker
 
-- **Employer:** Tynker
+- **Client:** Tynker
 - **Technologies:** NodeJS, Express, socket.io, Redis, NGINX
 
 For the Lynker server project at Tynker, designed as a versatile messaging server to support multiple real-time collaboration and notification scenarios. It enables clients to subscribe to channels for receiving messages, tailored for use cases like live dashboard notifications, project collaboration feeds, and multiplayer game prototyping. Built with a focus on real-time updates, the server integrates technologies such as PM2 for process management, Nginx for load balancing, Redis for message queuing, and MongoDB for data persistence. The architecture supports multi-tenancy, ensuring scalability and flexibility across development and production environments. Authentication is handled via signed data from Tynker's API, ensuring secure access to channels based on user roles and permissions. Although the server demonstrates robust capabilities in live scenarios, future improvements include transitioning from Socket.io to native WebSockets for enhanced performance and discontinuing status channels for streamlined server operations.
@@ -177,7 +177,7 @@ For the Lynker server project at Tynker, designed as a versatile messaging serve
 
 ## Block IDE - Collaborative Learning System
 
-- **Employer:** Tynker
+- **Client:** Tynker
 - **Technologies**: PHP, Javascript, Redux, Redux Saga, AngularJS
 
 This was an extension developed for the Block IDE that used Lynker to create an experience where students and teachers could share projects, chat about them, coment on code, and monitor changes in real-time.
@@ -191,7 +191,7 @@ Was granted a U.S. patent for this application. # TODO: add link
 
 ## Coaching System
 
-- **Employer:** Tynker
+- **Client:** Tynker
 
 - [Assets](https://drive.google.com/drive/folders/1YLENYlSViQtZBp4rEjQpO1SRj8wGCJzb?usp=sharing)
 
@@ -199,7 +199,7 @@ Was granted a U.S. patent for this application. # TODO: add link
 
 ## Quizzer
 
-- **Employer:** Tynker
+- **Client:** Tynker
 - **Technologies:** PHP, React, MDX, NodeJS
 
 At Tynker, I was responsible for creating Quizzer, a platform designed for crafting a wide array of quizzes that support all kinds of question types, thanks to the utilization of MDX for modularity. This approach enabled seamless integration across various parts of the educational stack, including interactive coding exercises, to facilitate a comprehensive assessment and learning enhancement for students. My involvement spanned the project's lifecycle, emphasizing design, integration, and the effective management of educational content.
@@ -212,7 +212,7 @@ At Tynker, I was responsible for creating Quizzer, a platform designed for craft
 
 ## [Coding Cup](https://www.tynker.com/codingcup/)
 
-- **Employer:** Tynker
+- **Client:** Tynker
 - **Platforms:** Web + Android + iOS
 - **Technologies:** PHP + React
 
@@ -226,32 +226,36 @@ Spearheaded the development of the BYJU'S Coding Cup, designed to engage childre
 
 ## Live Classes
 
-- **Employer:** Tynker
+- **Client:** Tynker
 
 - [Assets](https://drive.google.com/drive/folders/1GmAUerOyCbyYC4Aw35oFUyyf9Vho7Fjm?usp=sharing)
 
 ---
 
-## Help Agent
-
-- **Employer:** Tynker
-
-- [Assets](https://drive.google.com/drive/folders/1U9ncLOBEwThtn-3cf9GPUZisN4scWZ2d?usp=sharing)
-
----
-
 ## Tynker DevOps
 
-- **Employer:** Tynker
+- **Client:** Tynker
 
 Cloudflare, AWS, NGINX, PHP, PHP-FPM, Gitlab, Sentry, Docker
 
 ---
 
+## Tynker - PHP MongoDB ODM
+
+- **Client:** Tynker
+
+Developed a custom MongoDB ODM for a legacy, unstructured PHP codebase to enforce object-oriented design principles. This initiative addressed significant code redundancy and facilitated the seamless transport of data and logic across the stack, which was previously unattainable due to a heterogeneous table-to-object mapping scheme and numerous database workarounds. Opting to create a tailored solution—completed in just a few days—yielded substantial long-term benefits, demonstrating remarkable return on investment through years of smooth operation with minimal issues.
+
+However, this experience underscored the importance of cautious feature development aimed at maskinLg structural deficiencies. While the custom ODM effectively abstracted certain data model flaws, it inadvertently reduced the urgency to address these underlying issues directly. This approach allowed the data model's problems to persist and propagate throughout the stack, highlighting a critical lesson on balancing immediate solutions with the need for fundamental structural improvements.
+
+- [Assets](https://drive.google.com/drive/folders/1dudBjbmBCSEQL6hyCdiPYDbAX8ITiiMe?usp=sharing)
+
+---
+
 ## Kaboom! (iOS / tvOS / watchOS Lights-out revival Game)
 
-- **Employer:** Hive Solutions
-- **Start:** Jan 2016
+- **Start:** 2016 @TODO: CONFIRMED
+- **Client:** Hive Solutions
 - **Technologies:** Swift, iOS, tvOS, watchOS
 
 Kaboom! is a fast-paced revival of the classic "Lights Out" game for iPhone, iPad, Apple TV and Apple Watch.
@@ -265,8 +269,8 @@ Coordinated design and development of application. Developed some core parts of 
 
 ## Karl Kustomize (Online Store for Karl Lagerfeld with Sneaker Customization)
 
-- **Employer:** Ripe Productions
-- **Start:**  Jan 2016
+- **Start:** 2016
+- **Client:** Ripe Productions
 - **Technologies:** Python, MongoDB, Appier, HTML5, CSS3, Javascript, jQuery, UXF, Budy
 
 Karl Kustomize is an online store where the consumer can configure and purchase his own custom sneakers from Karl Lagerfeld (a major fashion brand). 
@@ -280,9 +284,9 @@ Took on the role of Tech Lead, developing core features, controlling timeline, a
 
 ## Lugar da Jóia (Jewellery Online Store)
 
-- **Employer:** Hive Solutions
+- **Start:** 2016
+- **Client:** Hive Solutions
 - **Client:** Lugar da Jóia
-- **Start:** Jan 2016
 - **Technologies:** Python, Appier, MongoDB, Budy, HTML/CSS/Javascript, jQuery, UXF
 
 Lugar da Jóia is a chain of jewellery stores, and this was its first venture into selling their jewellery online.
@@ -296,8 +300,8 @@ Acted as both full-stack developer and as a coordinator of another developer and
 
 ## MYSWEAR - Harrods Holographic Pyramid (Instore Shoe Customization and Ordering experience with Holographic Preview)
 
-- **Employer:** Ripe Productions
-- **Start:**  Jan 2016
+- **Start:** 2016
+- **Client:** Ripe Productions
 - **Technologies:** Python, Appier, HTML/CSS/Javascript, jQuery, UXF
 
 MYSWEAR deployed a stand at Harrods (one of the world's most famous department stores, in London), where customers could personalize and order their own custom pair of shoes, while simultaneously visualising their customisation on a four-faced holographic pyramid in front of them.
@@ -308,26 +312,28 @@ Developed new mode of operation for the customizer already used in the MYSWEAR o
 
 ---
 
-## Microsoft Dev Center - App Middleware Partners
+## Windows Dev Center Partners
 
-- **Employer:** Hive Solutions
+- **Start:** 2016
+- **Client:** Hive Solutions
 - **Client:** Microsoft
-- **Start:** Jan 2016
 - **Technologies:** C#, Core CLR, ASP.NET, Docker, Frontdoor
 
 App Middleware Partners is a section of Microsoft's Windows Dev Center that serves as a directory where Microsoft partners can advertise their middleware solutions.
 
 In this project I handled communication with stakeholders, coordinated project design and development, and performed core development tasks. The most challenging part of this project was actually the social aspect. There was a lot of red tape to cut through in order to get hold of the required information to be able to integrate and deploy within the existing Microsoft infrastructure. This project started with a lot of unknowns that had to be solved by relentless cold calling different people on the organisational branch, in order to uncover the answer to all the questions. The project was delivered on time and on budget, against all challenges.
 
+* [Website](http://devcenterpartners.windows.com)
 - [Assets](https://drive.google.com/drive/folders/1PyCxXjEA0yNKZQ1esq73XS5nIUffeAtC?usp=sharing)
 
 ---
 
 ## Details Pal (iOS Dog Activity Tracker with Bluetooth Collar)
 
-- **Employer:** Hive Solutions / Toptal
+- **Start:** 2015 (TODO: CONFIRMED)
 - **Client:** Rocksauce Studios
-- **Start:** Jan 2015
+- **Role:** Full-stack Mobile App Developer
+- **Platform:** iPhone (iOS)
 - **Technologies:** iOS / Objective-C, Parse, Bluetooth
 
 Details PAL is an iOS application that interfaces with a Bluetooth activity tracker you can place on your dog's collar. With it, you can monitor your pet's activity throughout the days, weeks, and months. It also has nutrition tracking features to help you track your pet's food intake.
@@ -335,53 +341,50 @@ Details PAL is an iOS application that interfaces with a Bluetooth activity trac
 Developed application from top to bottom, playing pivotal role in handling communication with the manufacturers of the Bluetooth collars in China, developing for and testing various prototype versions, as well as giving feedback on required improvements.
 
 - [App Store Page](https://apps.apple.com/us/app/details-pal-pet-activity-link/id1062049611)
+- [Kickstarter](https://www.kickstarter.com/projects/1792953608/details-pal-a-pet-activity-link-for-every-dog)
 - [Assets](https://drive.google.com/drive/folders/1SgOc6tM0J63X61A_clquYrqC2G8JCw3S?usp=sharing)
 
 ---
 
 ## Don't Mess with Texas (iOS Littering Reporting App)
 
-- **Start:** Jan 2015
+- **Start:** 2015
+- **Client:** Rocksauce Studios
+- **Role:** Bug fixing
+- **Platform:** iPhone (iOS)
 - **Technologies:** iOS / Objective-C
 
 Don't Mess with Texas is an application that lets Texas citizens report when they have seen someone littering.
 
 Fixed bugs in several parts of the app and implemented new features. Challenging project because the existing code-base was very messy.
 
-- [App Store Page](https://apps.apple.com/us/app/litterer/id882082348)
+- [App Store](https://itunes.apple.com/us/app/litterer/id882082348)
+- [Website](http://dontmesswithtexas.org)
 - [Assets](https://drive.google.com/drive/folders/1I6W7VQslgiNI32NrPe8KBMprndmjzjqg?usp=sharing)
 
 ---
 
 ## Energi Coach (iOS Lifestyle App)
 
-- **Start:** Jan 2015
+- **Start:** 2015
+- **Client:** Rocksauce Studios
+- **Role:** Bug fixing
+- **Platform:** iOS (iPhone + Apple Watch)
 - **Technologies:** iOS / Objective-C, WatchKit
 
 Energi is an app to assist you in improving your work-life balance by suggesting scheduled breaks of different kinds and scheduling them on your calendar.
 
 Work consisted in fixing tricky bugs in existing codebase for the iPhone and the Apple Watch.
 
+- [Website](http://energi.life)
+- [App Store](https://itunes.apple.com/us/app/energi-coach-personalized/id986965532)
 - [Assets](https://drive.google.com/drive/folders/1LppDJ595aU9TJqUOohWJUpOJcgMeEFsv?usp=sharing)
-
----
-
-## Knod (iOS Media Reviews Social Network - Books, Movies, Games, etc.)
-
-- **Start:** Jan 2015
-- **Technologies:** Objective-C
-
-Knod is a media discovery social network where you rate Movies, Books, Songs, Games, etc., and get back recommendations based on your ratings and social circle.
-
-I was involved in the bootstrap of the project and creating some core features for the iOS app. Later on I was moved to a more urgent project, and later came back to help out with other features and bug fixes.
-
-- [Assets](https://drive.google.com/drive/folders/1fOxZHd6cvdATyoZ2POFcvQyxDjW7rjOd?usp=sharing)
 
 ---
 
 ## MYSWEAR (Online Fashion Store with Shoe Customizer)
 
-- **Start:** Jan 2015
+- **Start:** 2015
 - **Technologies:** Python, MongoDB, Appier, HTML/CSS/Javascript, jQuery, UXF, Farfetch API
 
 MYSWEAR is an online store where the consumer can configure and purchase his own custom shoes from the SWEAR fashion brand.
@@ -394,7 +397,7 @@ Website was developed according to pre-existing design specs. Developed core fea
 
 ## MYSWEAR - iOS Demo (iOS Shoe Customization Experience for MYSWEAR)
 
-- **Start:** Jan 2015
+- **Start:** 2015
 - **Technologies:** iOS / Objective-C
 
 Single-handedly developed proof of concept native iOS application with the same shoe customization experience provided in the MYSWEAR website, but in a native app. Proof of concept was developed in record time and used for demo purposes successfully. 
@@ -405,7 +408,7 @@ Single-handedly developed proof of concept native iOS application with the same 
 
 ## Speakwrite (iOS Audio Transcribing Application)
 
-- **Start:** Jan 2015
+- **Start:** 2015
 - **Technologies:** iOS / Objective-C
 
 Speakwrite is an application where the user can record something he says, and have it transcribed to text within a short period of time (the recorded speech is sent over to human transcribers).
@@ -416,35 +419,90 @@ Fixed many critical bugs in several parts of the app. It was a challenging proje
 
 ---
 
-## TopShelf is an app that lets you order alcoholic beverages right from your phone and have them delivered quickly at your doorstep.
+## TopShelf (iOS Alcohol Delivery App)
 
-- **Start:** Jan 2015
+- **Start:** 2015 @TODO: CONFIRMED
+- **Client**: Rocksauce Studios
+- **Role**: Full-stack app development
+- **Platform**: iPhone (iOS)
 - **Technologies:** iOS / Objective-C, Parse / Javascript, Stripe, Apple Pay
 
 TopShelf is an app that lets you order alcoholic beverages right from your phone and have them delivered quickly at your doorstep.
 
 Developed iOS application and backend logic from top to bottom, also integrating with third-party fleet management service for delivery coordination.
 
+- [App Store](https://itunes.apple.com/us/app/topshelf-alcohol-delivery/id974722644)
 - [Assets](https://drive.google.com/drive/folders/11yKTjMhHgLxpyAlB7VwJbhcloB2xmIW1?usp=sharing)
+
+---
+
+## TALKiT 
+
+- **Start:** 2015 @TODO: CONFIRMED
+- **Client:** Rocksauce Studios
+- **Role:** Bug fixing
+- **Platform:** iPhone (iOS)
+- **Technologies:** iOS / Objective-C
+
+TALKiT is a social media alternative to texting where you can share your experiences by making your voice heard. It allows you to share your experience by recording your voice, instead of typing text.
+
+- [Website](http://www.gettalkit.com)
+- [App Store](https://itunes.apple.com/us/app/talkit-hands-free-social-network/id880219768)
 
 ---
 
 ## US Likey (iOS Social Network)
 
-- **Start:** Jan 2015
+- **Start:** 2015 @TODO: CONFIRMED
+- **Client:** Rocksauce Studios
+- **Role:** Bug fixing
+- **Platform:** iPhone (iOS)
 - **Technologies:** iOS / Objective-C
 
 Us Likey is a social network where people share the products they like.
 
 Fixed bugs in several parts of the app and implemented new features. This was a challenging project because the existing codebase was very messy.
 
+- [Website](http://uslikey.com)
+- [Facebook](https://www.facebook.com/uslikey)
+- [App Store](https://itunes.apple.com/us/app/us-likey/id717595225)
 - [Assets](https://drive.google.com/drive/folders/1rjik2XNrUXKQla1AGVOTubFenvIQOc2i?usp=sharing)
+
+---
+
+## WIN Atlas (iOS Career Planning & Exploration)
+
+- **Start:** 2015 @TODO: CONFIRMED
+- **Client**: Rocksauce Studios
+- **Role**: Full-stack Developer
+- **Platform**: iPhone (iOS)
+- **Technologies:** iOS / Objective-C
+
+WIN Atlas is a career guidance application that guides you by having you perform different types of quizzes and showing you career details about each job.
+
+Developed app client-side and integrated with server-side implemented by in-house developers.
+
+- [App Store](https://itunes.apple.com/us/app/win-atlas-career-planning/id997400974)
+- [Assets](https://drive.google.com/drive/folders/1mMbGhuAMr-qD8yxuieAUVCB4UdtvO2hr?usp=sharing)
+
+---
+
+## Knod (iOS Media Reviews Social Network - Books, Movies, Games, etc.)
+
+- **Start:** 2014 @TODO: CONFIRMED
+- **Technologies:** Objective-C
+
+Knod is a media discovery social network where you rate Movies, Books, Songs, Games, etc., and get back recommendations based on your ratings and social circle.
+
+I was involved in the bootstrap of the project and creating some core features for the iOS app. Later on I was moved to a more urgent project, and later came back to help out with other features and bug fixes.
+
+- [Assets](https://drive.google.com/drive/folders/1fOxZHd6cvdATyoZ2POFcvQyxDjW7rjOd?usp=sharing)
 
 ---
 
 ## ValetTab / ValetStand (iOS Valet Parking Software)
 
-- **Start:** Jan 2015
+- **Start:** 2014 @TODO: CONFIRMED
 - **Technologies:** iOS / Objective-C
 
 ValetTab is an application that facilitates the valet parking experience in adhering stands. With it you can checkin, notify that you're about to checkout so that your car can be picked up, and pay for the parking right from your phone. Adhering stands have the companion ValetStand app, that lets them keep track of parked cars, checkout requests and payments.
@@ -455,22 +513,9 @@ Fixed bugs in several parts of the app and implemented new features (mainly rela
 
 ---
 
-## WIN Atlas (iOS Career Planning & Exploration)
-
-- **Start:** Jan 2015
-- **Technologies:** iOS / Objective-C
-
-WIN Atlas is a career guidance application that guides you by having you perform different types of quizzes and showing you career details about each job.
-
-Developed app client-side and integrated with server-side implemented by in-house developers.
-
-- [Assets](https://drive.google.com/drive/folders/1mMbGhuAMr-qD8yxuieAUVCB4UdtvO2hr?usp=sharing)
-
----
-
 ## Academy Sports + Outdoors LIVE FIT (iOS Sports Tracking app)
 
-- **Start:** Jan 2014
+- **Start:** 2014
 - **Technologies:** iOS / Objective-C, MapMyFitness SDK
 
 LIVE FIT is a sports tracking application for the Academy Sports + Outdoors sports goods discount store chain.
@@ -483,46 +528,41 @@ This application integrated with MapMyFitness' SDK to store and retrieve activit
 
 ## Active Heroes (iOS Charity for Veterans App)
 
-- **Start:** Jan 2014
+- **Start:** 2014
+- **Client**: Rocksauce Studios
+- **Role**: Bug fixing
+- **Platform**: iPhone (iOS)
 - **Technologies:** iOS / Objective-C
 
-Active Heroes is a military veteran suicide prevention organization, and this was its app that helped raise awareness by completing mileage based activities like walking, running, etc.
+Active Heroes is a charity helping Veterans, Active Duty Military and their families.
+With the Active Heroes app you can track your workouts and share them to help raise funds to support the foundation's activities.
 
 Fixed many critical and non-critical bugs in existing app. Challenging because codebase was very messy.
 
+- [Website](http://activeheroes.org)
+- [App Store](https://itunes.apple.com/us/app/active-heroes/id635435400)
 - [Assets](https://drive.google.com/drive/folders/1VujTyiDi84lsuO0WdP42lGV-0roPabn8?usp=sharing)
-
----
-
-## Clockadoodle (iOS alarm clock app)Clockadoodle (iOS alarm clock app)
-
-- **Start:** Jan 2014
-- **Technologies:** iOS / Objective-C
-
-Clockadoodle is an iOS Alarm Clock with a lot of advanced features, such as Youtube Video Alarms. 
-
-I developed most of the application, however I didn't end up completing it, as I was moved to a more important project.
-
-- [Assets](https://drive.google.com/drive/folders/1BHwu2Ahcwq0fZU0OxUECIBUBLuVa0oDS?usp=sharing)
 
 ---
 
 ## Furtile (iOS Social Network app for Pet Owners and Breeders)
 
-- **Start:** Jan 2014
+- **START:** 2014 @TODO: CONFIRMED
+- **Client:** Rocksauce Studios
+- **Role**: Full-stack Developer
+- **Platform**: iPhone (iOS)
 - **Technologies:** iOS / Objective-C, Parse
 
-Furtile is a social network that allows pet owners and breeders to connect in order to help pets find their perfect mate.
+Furtile is a social network that allows pet owners and breeders to connect in order to help pets find their perfect mate. Developed application from top to bottom (iOS and backend). Completed app in record time and released to the App Store.
 
-Developed application from top to bottom (iOS and backend). Completed app in record time and released to the App Store.
-
+- [App Store](https://itunes.apple.com/us/app/furtile/id883776204)
 - [Assets](https://drive.google.com/drive/folders/1hDeIQd85G_-Ng7D6KwiVV0t7Wn0Qspbm?usp=sharing)
 
 ---
 
 ## Map My Fitness - Challenges (iOS Sports Tracking app)
 
-- **Start:** Jan 2014
+- **Start:** 2014
 - **Technologies:** iOS / Objective-C
 
 MapMyFitness was one of the first activity tracking applications, and ended up being acquired by Under Armour.
@@ -535,8 +575,8 @@ Implemented the Challenges feature, as well as the Weight and Sleep sections of 
 
 ## Project Capture (iOS UFO Reporting App)
 
-- **Start:** Jan 2014
-- - **Technologies:** iOS / Objective-C
+- **Start:** 2014
+- **Technologies:** iOS / Objective-C
 
 Project Capture is an app where users can report UFO sightings. 
 
@@ -548,33 +588,61 @@ This app was coded by another developer, and I just ended up doing many bug fixe
 
 ## Randid (iOS Social Photo Sharing App)
 
-- **Start:** Jan 2014
+- **Start:** 2014
+- **Client:** Rocksauce Studios
+- **Role:** Full-stack Developer
+- **Platform:** iPhone (iOS)
 - **Technologies:** iOS / Objective-C, Parse
 
 Randid is a social networking app for iOS where users send a picture and get a random one back from other users.
 
 I was sent into the project to help guide it back into a predictable path, and ended up developing part of the client side and most of the server side for the first version of the app.
 
+- [App Store](https://itunes.apple.com/us/app/randid/id791202964)
 - [Assets](https://drive.google.com/drive/folders/1MRKaT3uCH7KYIfIDtC6zmfUyT8kuknbZ?usp=sharing)
 
 ---
 
 ## WeGo (iOS Sports Tracking app with wearable integration)
 
-- **Start:** Jan 2014
+- **Start:** 2014
+- **Client:** Rocksauce Studios
+- **Role:** Full-stack Developer
+- **Platform:** iPhone (iOS)
 - **Technologies:** iOS / Objective-C, Bluetooth LE
 
 WeGo is a fitness tracking app that can interface with multiple low-budget hardware activity trackers.
 
 Developed iOS application from top to bottom in record time, against every unexpected obstacle imaginable. Had to integrate 5 wearable devices, from different manufacturers, through Bluetooth and Audio Jack. The project was completely successful from an implementation standpoint, with every standing limitation being attributed to immutable third-party dependencies.
 
+- [Website](http://joinwego.com/)
+- [Facebook](https://www.facebook.com/joinWeGo)
+- [App Store](https://itunes.apple.com/us/app/join-wego/id911117062)
 - [Assets](https://drive.google.com/drive/folders/1Ctw-j0Alm0qkIkNo47V8zgN09uhqNojw?usp=sharing)
+
+---
+
+## Clockadoodle (iOS alarm clock app)Clockadoodle (iOS alarm clock app)
+
+- **Start:** 2013 TODO: CONFIRMED
+- **Client:** Rocksauce Studios
+- **Role**: Mobile Developer
+- **Platform**: iPhone (iOS)
+- **Technologies:** iOS / Objective-C
+
+Clockadoodle is an iOS Alarm Clock with a lot of advanced features, such as Youtube Video Alarms. 
+
+I developed most of the application, however I didn't end up completing it, as I was moved to a more important project.
+
+- [App Store](https://itunes.apple.com/BR/app/id745537889)
+- [Facebook](https://www.facebook.com/clockadoodleapp)
+- [Assets](https://drive.google.com/drive/folders/1BHwu2Ahcwq0fZU0OxUECIBUBLuVa0oDS?usp=sharing)
 
 ---
 
 ## China Pro Tools (Market Analysis Tool for China Exporting)
 
-- **Start:** Jan 2013
+- **Start:** 2013 TODO: CONFIRMED
 - **Technologies:** Python, Flask, Quorum, MongoDB, HTML/CSS/Javascript, jQuery, UXF
 
 China Pro Tools is a market analytics solution that provides decision supporting statistics related with exports to China.
@@ -587,7 +655,7 @@ Developed application from top to bottom in accordance to existing specs, and de
 
 ## Discover Your City (iOS Architecture Travel Guide)
 
-- **Start:** Jan 2013
+- **Start:** 2013 @TODO: CONFIRMED
 - **Technologies:** Python, Flask, MongoDB, Objective-C, iOS SDK, Heroku, Amazon Web Services
 
 Discover Your City is a travelling app for people interested in architecture, guiding users in various tours of buildings of different styles and architectures.
@@ -600,46 +668,55 @@ Implemented application from top to bottom in accordance to pre-existing design 
 
 ## [Rocklobby (Web Music Social Network for Fans, Artists and Venues)](https://web.archive.org/web/20161001000000*/rocklobby.com)
 
-- **Start:** Jan 2013
-- **Technologies:** Python, MongoDB, Quorum, HTML, CSS, jQuery, UXF
+- **Start:** 2013
+- **Role**: Project Manager, Full-stack Web Developer
+- **Platform:** Web
+- **Technologies:** Python, Netius, Appier, MongoDB, Quorum, HTML, CSS, jQuery, UXF
 
 Rocklobby is a music social network for artists, venues and fans. In it, you could follow artists, venues and fans, buy tickets for shows, review them, book venues for a gig, chat with people, and many other features. This was reboot of the previous mobile Rocklobby application I created for the same client. Later on he wanted to start the project again from scratch with a bigger and bolder vision.
 
 Took on the role of Full-stack Developer (developed everything from top to bottom), Project Manager (coordinated designer and handled communication with client).
 
+- [Website](http://www.rocklobby.com)
 - [Assets](https://drive.google.com/drive/folders/1QpGx4v15_phovqlYMuQ9i-t5PPbIY0oy?usp=sharing)
 
 ---
 
 ## Rocklobby iOS App (iOS Music Social Network for Fans, Artists and Venues)
 
-- **Start:** Jan 2013
+- **Start:** 2013
+- **Client:** Rock Lobby
+- **Platform:** iOS (iPhone)
 - **Technologies:** iOS / Objective-C
 
 Rocklobby was a music social network for artists, venues and fans.
 
 Developed the client-side (the iOS app), cooperating with another pre-existing developer that was developing the server-side. The iOS app was an existing codebase, but I had to throw it all away and start from scratch because it was in a really bad place. Application was delivered on schedule within estimated budget.
 
+- [Website](http://www.rocklobby.com)
 - [Assets](https://drive.google.com/drive/folders/1b-WWwNh8g27hcMWqCMpj6KHs-iBXdz5J?usp=sharing)
 
 ---
 
 ## Fresh Deck Poker (Online Poker Game with Real Cash Prizes)
 
-- **Start:** Jan 2012
+- **Start:** 2012
+- **Client:** Idle Games (through Toptal)
+- **Platform:** Web
 - **Technologies:** Python / Django, MongoDB, HTML / CSS / JavaScript, jQuery, RabbitMQ
 
 Fresh Deck Poker is an online multiplayer Poker game with real cash prizes.
 
 Developed various features for the administration game management backoffice (account management, game and table management, monetization, odds assignement, etc.). Some requests went beyond Django's capabilities and resulted in me having to do some heavy-duty hacks to add those features (eg: monkey-patching).
 
+- [Website](http://www.freshdeckpoker.com/)
 - [Assets](https://drive.google.com/drive/folders/1E7sdm1AoWU9OAy44QwMDPqp1eID3LZdg?usp=sharing)
 
 ---
 
 ## Parfois B2B Portal (Supplier-Reseller Online Store)
 
-- **Start:** Jan 2012
+- **Start:** 2012
 - **Technologies:** Oracle DB, C#, SQL, PL/SQL
 
 This was a portal for managing B2B communications and transactions for the PARFOIS handbags and fashion accessories brand.
@@ -652,7 +729,7 @@ I was contracted as a consultant to empower the company's development team, gett
 
 ## Bargania (Deal-a-Day Aggregation Service)
 
-- **Start:** Jan 2011
+- **Start:** 2011
 - **Technologies:** Python / Colony Framework, HTML/CSS/Javascript, jQuery, UXF
 
 Bargania was a Deal-a-Day service (Groupon clones) aggregation platform, where one could check out the latest deals from all main providers, sort them through different preferences, and receive a personalized newsletter with the offers most suited to the user's profile.
@@ -665,7 +742,7 @@ Developed core features, and did copywriting and translation for the website and
 
 ## A La Carte (Restaurant Natural Language Search Engine)
 
-- **Start:** Jan 2010
+- **Start:** 2010
 - **Technologies:** Python, HTML/XML (scraping), MySQL
 
 A La Carte was a restaurant search engine where you could search for restaurants that had a certain food, for a certain price, near your location.
@@ -678,7 +755,7 @@ Designed and developed all ETL components for food indexing and search system. C
 
 ## Mariachi (Cross-Platform Shoot'em up Game)
 
-- **Start:** Jan 2010
+- **Start:** 2010
 - **Technologies:** C++, Objective-C, OpenGL ES
 
 Mariachi was a cross-platform Shoot'em Up game aimed at mobile platforms.
@@ -691,7 +768,7 @@ Developed and implemented game's logic, model importation, and physics engine.
 
 ## Panzerini (Web Based Battlebots like Deathmatch game)
 
-- **Start:** Jan 2010
+- **Start:** 2010
 - **Technologies:** Python / Colony Framework, HTML/CSS/Javascript, jQuery, UXF
 
 Panzerini was a Battlebots-like game built with Hive Solutions' Colony Framework (a project I was also involved with) to present at the Sapo Codebits 2010's 48-hour programming competition. In it, a developer could develop the Artificial Intelligence for his bot (this would be a Colony plugin), and drop it in the Panzerini arena, which lived in the web browser (no installed extensions required, it was just a simple webpage).
@@ -704,7 +781,7 @@ Developed some core features and artificial intelligence for some sample bots.
 
 ## Schoooools (Social Network for Schools)
 
-- **Start:** Jan 2010
+- **Start:** 2010
 - **Technologies:** PhoneGap / Objective-C, HTML / Javascript / CSS, Ruby / Ruby on Rails
 
 Schoooools provides personal and social learning spaces that empower collaboration between learners and their educators, namely parents and teachers. All school work is stored digitally, so parents can follow their children work, organize, and save it forever, so they can revisit it later, to learn, share or simply show it to the rest of the family or friends.
@@ -717,7 +794,7 @@ Developed core features (action tracking and analytics, as well as some classroo
 
 ## Take the Bill (SaaS Invoicing Solution)
 
-- **Start:** Jan 2010
+- **Start:** 2010
 - **Technologies:** Python / Colony Framework, HTML / CSS / Javascript, UXF
 
 Take the Bill is an online invoicing solution that was to be a public service but ended up being used only in private clouds (including being the billing app used at Hive Solutions).
@@ -730,7 +807,7 @@ Developed some core backend features and frontend features.
 
 ## Colony Framework (Modularity Framework)
 
-- **Start:** Jan 2008
+- **Start:** 2008
 - **Technologies:** Python, JavaScript
 
 Colony is a modularity container where plugins can be deployed, loaded and unloaded in real-time, without rebooting the container.
@@ -743,7 +820,7 @@ Developed core technology for the framework, wrote technical documentation, desi
 
 ## Frontdoor (SaaS ERP)
 
-- **Start:** Jan 2008
+- **Start:** 2008
 - **Technologies:** Python, Colony Framework, HTML / CSS / Javascript, jQuery, UXF
 
 Developed back-end logic for online Point-of-Sale SaaS product using Python with the Colony Framework and its respective MVC stack. Also developed front-end for same system through extensive usage of JavaScript and jQuery to create a productive user experience.
@@ -754,7 +831,7 @@ Developed back-end logic for online Point-of-Sale SaaS product using Python with
 
 ## MCH Workflow Helpdesk Innovation (Helpdesk Ticketing System)
 
-- **Start:** Jan 2006
+- **Start:** 2006
 - **Technologies:** C#, ASP.NET, SQL Server
 
 Worked in an academic-enterprise relationship to provide a functional knowledge management system for this organization's helpdesk support team.
@@ -769,7 +846,7 @@ The final product was successfully completed and deployed in the partner enterpr
 
 ## [Nihonaid (Japanese Language Learning Assistant)](https://sourceforge.net/projects/nihonaid/)
 
-- **Start:** Jan 2006
+- **Start:** 2006
 - **Technologies:** C#, SQL Server, Neural Networks
 
 Nihonaid was a tool I developed to assist in my learning of the Japanese language, namely to memorize the Kanji character set. 
@@ -786,7 +863,7 @@ With this system in place, memorizing the characters was as easy as simply doing
 
 ## [Clube de Karate da Maia (Website for Karate Club)](https://ckmaia.org/)
 
-- **Start:** Jan 2005
+- **Start:** 2005
 - **Technologies:** Joomla, PHP, MySQL
 
 Established the club's presence in the World Wide Web, providing a way to get it closer to it's members and the general public. 
@@ -801,7 +878,7 @@ Learned to customize the Mambo/Joomla Content Management System to provide most 
 
 ## NeuralJ (Java Neural Network Library)
 
-- **Start:** Jan 2005
+- **Start:** 2005
 - **Technologies:** Java
 
 NeuralJ was an open-source software project that aims at providing an efficient and user-friendly
@@ -815,7 +892,7 @@ Improved the knowledge on Neural Networks and Genetic Algorithms, as well as the
 
 ## [Clube do Paiva (Extreme Sports Company Website)](https://www.clubedopaiva.com/)
 
-- **Start:** Jan 2004
+- **Start:** 2004
 - **Technologies:** PHP, MySQL
 
 Handled entire back end production of a website, web application and database programming. Solution was provided in the form of a web application implemented in the PHP scripting language, interfacing with a MySQL database.
@@ -826,7 +903,7 @@ Handled entire back end production of a website, web application and database pr
 
 ## [European Student Moon Orbiter (European Space Agency Student Sattellite Project)](https://www.esa.int/Education/European_Student_Moon_Orbiter)
 
-- **Start:** Jan 2004
+- **Start:** 2004
 
 Coordinator of the Software subteam, part of the On Board Data Handler team, for the European Student Moon Orbiter project. 
 
@@ -840,7 +917,7 @@ Amongst the lessons learned, the personal revalidation on the power of effective
 
 ## Computer Capers (Adventure Game for the Commodore Amiga)
 
-- **Start:** Jan 1996
+- **Start:** 1996
 - **Technologies:** AMOS Basic
 
 Computer Capers was a video game I developed when I was 12 years old and sent for a monthly competition on the Amiga Format magazine.
@@ -859,16 +936,27 @@ The whole game plot was incredibly dumb, which was natural for my age. The mecha
 
 # TODO
 
+- Remove "prophit" + "boatday"
 - Describe all Tynker projects
 - Sort portfolio gallery
 - Sort Tynker projects by date
 - Add Tynker projects to album
-- Add portfolio screenshots to drive
 - Add validator script
 - Extract used technologies
 - Add resource links to all projects
 - Add chatbot to help with navigation
 - Add github page
 - Link to tsilva.eu
-- Check toptal projects
 - Rename project to portfolio
+- Check hive usages
+- Ask questions about candidate, try filtering yes/no
+- Add new screens to gallery
+- Remove photos for boatday, raison, prophit, truckfood
+- Add bagger, oioba, webook?
+speakwrite
+raison
+uslikey
+@TODO: talkit
+@TODO: oioba
+@TODO: raison
+- Ver portfolio da rocksauce e sacar de la
