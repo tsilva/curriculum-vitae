@@ -648,7 +648,7 @@ Developed iOS application from top to bottom in record time, against every unexp
 
 ---
 
-## Clockadoodle (iOS alarm clock app)Clockadoodle (iOS alarm clock app)
+## Clockadoodle (iOS alarm clock app)
 
 - **Start:** 2013 TODO: CONFIRMED
 - **Client:** Rocksauce Studios
