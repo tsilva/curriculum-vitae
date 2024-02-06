@@ -18,6 +18,10 @@ If you want to have a quick glance at what I've worked on just browse my [Portfo
 - **Dates:** Sep 2016 - Present
 - **Location:** Mountain View, CA · Remote
 
+At Tynker I wore many hats, acting mostly as a Lead Software Engineer, but also as a Project Manager, and sometimes as a Stakeholder, Client Communicator and Salesperson. I was responsible for developing and coordinating the development of several core features of the Tynker platform, such as the Block IDE, the Crystal Clash game, the Minecraft Editor, the Quizzer, the Collaborative Learning System, the Arcade Maker, the Live Classes, the Coaching System, the Lynker server, the Coding Cup, the Help Agent. I also developed a custom MongoDB ODM for a legacy, unstructured PHP codebase, and was granted a U.S. patent for the Collaborative Learning System.
+
+Along with my core software development tasks, I was also deeply involved with the DevOps tasks, regularly dealing with setting up, maintaing and upgrading the infrastructure required for the projects I developed as well as other legacy projects.
+
 ## [Ripe Productions](https://www.platforme.com/)
 
 - **Role:** Lead Software Engineer (Full-time)
@@ -98,8 +102,12 @@ The course was very work intensive. Assignments got bigger and bigger as semeste
 
 ## Help Agent
 
+- **Start:** 2023
 - **Client:** Tynker
-- **Start:** 2023 @TODO: CONFIRMED
+- **Role:** Lead Software Engineer
+- **Technologies:** React, Python, Flask, MongoDB, OpenAI, Pinecone
+
+Help Agent is a chatbot that helps users with their Tynker-related questions. It was built using the RAG (Retrieval-Augmented Generation) architecture, where custom data is used to augment the LLM's knowledge as well as grounding it to the truth to reduce hallucinations. The kind of challenges introduced by this project were interesting, as it was easy to develop a functional prototype, but challenging to create one that was functional enough to use in production. Unlike any other software projects, there were challenges dealing with the reliability of the LLMs, 
 
 - [Assets](https://drive.google.com/drive/folders/1U9ncLOBEwThtn-3cf9GPUZisN4scWZ2d?usp=sharing)
 
@@ -108,6 +116,8 @@ The course was very work intensive. Assignments got bigger and bigger as semeste
 ## [Tynker - Minecraft Editor](https://www.tynker.com/minecraft/editor/mob/pig/)
 
 - **Client:** Tynker
+
+TODO: Add number of creations, number of users, etc.
 
 Developed a web 3D editor for Minecraft Bedrock Edition, enabling customization of Skins, Blocks, Items, and Mobs. The editor featured texture editing and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, translating user inputs into Minecraft's declarative configuration files.
 
@@ -123,8 +133,15 @@ This tool was incorporated into the Tynker App and Mod Creator App, providing a 
 ## [Tynker - Crystal Clash](https://www.tynker.com/dashboard/student/#/battles/crystalclash)
 
 - **Client:** Tynker
+- **Role:** Lead Software Engineer
+- **Platforms:** Web / iOS (WebView)
+TODO: Add number of competitions, start date, etc.
 
-Crystal Clash is a multiplayer turn-based battlebots game. Ended up implementing a mirror of the Tynker Block Language in the server-side.
+Crystal Clash is a multiplayer turn-based battlebots game, where players can program their own bots using Tynker's block-based programming language and have them compete against each other in assynchronous matches. There are monthly seasons, leaderboards, quests, and a shop where players can buy new parts for their bots.
+
+At its core, Crystal Clash is computed like a complex game of chess. The arena is a discrete environment, essentially an 8x8 grid, where each bot can move, attack, and use special abilities. Each match is resolved in deterministic time, since the arena shrinks every X turns, with the last bot standing being the winner. Each turn the bot's code is executed and the resulting actions are applied in the environment (eg: a script could say that the bot must shoot whenever there's an opponent X tiles in front of him).
+
+Due to the assynchronous nature of the game, and the requirement to make the code be developed with Tynker's block-based programming language, which only had a client-side interpreter which at the time tightly coupled to the browser environment, I ended up building a specific server-side VM for the game that complied to the same internal language representation.
 
 - [Crystal Clash Dashboard](https://www.tynker.com/dashboard/student/#/battles/crystalclash)
 - [Videos and Screenshots](https://www.tynker.com/blog/articles/ideas-and-tips/crystal-clash-2-0/)
@@ -159,6 +176,15 @@ Looking back: Looking back I still think the extension framework and Redux Saga 
 ## Block IDE - Arcade Maker
 
 - **Client:** Tynker
+- **Role:** Lead Software Engineer
+- **Platforms:** Web
+- **Technologies:** PHP, Javascript, React, Redux, Redux Saga
+
+TODO: Add links
+
+Arcade Maker was an attempt to provide a simpler entry point into game development where kids could develop and publish games without being forced to do any coding. To do so, we created a set of game templates whose graphics and behaviors could be customized without having to resort to code.
+
+My role was to architect the solution, develop the core features, and coordinate of the other Software Developer and the Game Design team which developed the game templates. 
 
 - [Assets](https://drive.google.com/drive/folders/19G_5D410i1dO6kpUyacKjUNuROmoIw7J?usp=sharing)
 
@@ -178,11 +204,9 @@ For the Lynker server project at Tynker, designed as a versatile messaging serve
 ## Block IDE - Collaborative Learning System
 
 - **Client:** Tynker
-- **Technologies**: PHP, Javascript, Redux, Redux Saga, AngularJS
+- **Technologies**: PHP, Javascript, React, Redux, Redux Saga, socket.io
 
-This was an extension developed for the Block IDE that used Lynker to create an experience where students and teachers could share projects, chat about them, coment on code, and monitor changes in real-time.
-
-Was granted a U.S. patent for this application. # TODO: add link
+Using the Lynker messaging server I previously developed, augmented the Block IDE to have collaborative learning features, such as the ability to share projects, chat about them, comment on code, and monitor changes in real-time. This application was granted an [U.S. patent](https://patents.google.com/patent/US11699357B2).
 
 - [Patent - Collaborative Learning System (US11699357B2)](https://patents.google.com/patent/US11699357B2)
 - [Assets](https://drive.google.com/drive/folders/1fzpM14EZyMfkXYuXY70SyMDHLQI99uVK?usp=sharing)
@@ -192,6 +216,9 @@ Was granted a U.S. patent for this application. # TODO: add link
 ## Coaching System
 
 - **Client:** Tynker
+- **Technologies:** PHP, Javascript, React
+
+Combining the Block IDE Collaborative Learning features with the Live Classes platform, developed a coaching management system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
 
 - [Assets](https://drive.google.com/drive/folders/1YLENYlSViQtZBp4rEjQpO1SRj8wGCJzb?usp=sharing)
 
@@ -200,9 +227,12 @@ Was granted a U.S. patent for this application. # TODO: add link
 ## Quizzer
 
 - **Client:** Tynker
+- **Platform:** Web
 - **Technologies:** PHP, React, MDX, NodeJS
 
 At Tynker, I was responsible for creating Quizzer, a platform designed for crafting a wide array of quizzes that support all kinds of question types, thanks to the utilization of MDX for modularity. This approach enabled seamless integration across various parts of the educational stack, including interactive coding exercises, to facilitate a comprehensive assessment and learning enhancement for students. My involvement spanned the project's lifecycle, emphasizing design, integration, and the effective management of educational content.
+
+Quizzer is an innovative quiz platform I developed at Tynker, aimed at enhancing educational assessments. Built with MDX to allow for modularity, it supports a broad range of quiz types and integrates smoothly with interactive coding exercises and educational content. This feature-rich platform includes interactive hints, multiple input layouts, and network reliability, catering to diverse user interactions. My contributions spanned design, integration, and content management, focusing on UI/UX enhancements, performance optimization, and educational content improvement. Through these efforts, Quizzer has become a versatile tool for educators, enabling engaging and effective learning experiences.
 
 - [Block Coding Placement Test](https://www.tynker.com/quizzer/?type=placement:block)
 - [Text Coding Placement Test](https://www.tynker.com/quizzer/?type=placement:text)
@@ -227,16 +257,12 @@ Spearheaded the development of the BYJU'S Coding Cup, designed to engage childre
 ## Live Classes
 
 - **Client:** Tynker
+- **Platforms:** Web
+- **Technologies:** PHP, React, WebRTC, Dyte
+
+At Tynker, I developed a live class platform that enables educators to conduct interactive coding classes with students. The platform integrates with Tynker tools such as the Block IDE and other course content allowing teachers to seamlessly transition between live instruction and interactive coding exercises.
 
 - [Assets](https://drive.google.com/drive/folders/1GmAUerOyCbyYC4Aw35oFUyyf9Vho7Fjm?usp=sharing)
-
----
-
-## Tynker DevOps
-
-- **Client:** Tynker
-
-Cloudflare, AWS, NGINX, PHP, PHP-FPM, Gitlab, Sentry, Docker
 
 ---
 
