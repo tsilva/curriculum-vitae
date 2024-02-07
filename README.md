@@ -86,6 +86,8 @@ However, the most enriching part of this experience was not the academics per se
 
 I feel this short stay was more enriching on all levels, both personally and professionally, than anything that I could have found in academia. There's something special about having to live for an extended period in a country whose language and culture are so different, and where almost no one communicates in your language (or English for that matter). You truly have to transcend your comfort zone just to get by, and having to do so was one of the most enriching experiences of my life. Took on Genetic Algorithms, Cryptography, Neural Networks, Network Services Programming and an Intensive course of Polish language, completing them with an average grade of 18 out of 20. However, the most enriching part of this experience was not the academics per se, but that of living in a melting pot of different cultures, with students from all around Europe, and having the opportunity to travel through Poland and neighbouring countries. I feel this short stay was more enriching on all levels, both personally and professionally, than anything that I could have found in academia. There's something special about having to live for an extended period in a country whose language and culture are so different, and where almost no one communicates in your language (or English for that matter). You truly have to transcend your comfort zone just to get by, and having to do so was one of the most enriching experiences of my life.
 
+- [Website](https://www.uni.lodz.pl/en/)
+
 ## [Faculdade de Engenharia da Universidade do Porto](https://sigarra.up.pt/feup/en/)
 
 - **Duration:** 2002 - 2007 (5 year course)
@@ -97,6 +99,8 @@ Participated in the European Space Agency's ESMO project.Activities and societie
 This was arguably the best such course that could be found in my country, therefore the entry grades were relatively high. I started high school with a weak foundation in Mathemathics, so that complicated things quite a bit. However, I set my mind on that goal, put a picture of that Faculty on my study desk, and reversed the trend by the sweat of my brow, and ended up being admitted with excellent entry exam results.
 
 The course was very work intensive. Assignments got bigger and bigger as semesters went by, and ended up growing to 14 hour study/work days by the last years. That amount was not required to make the grade, but me, like most people in the course, actually enjoyed the assignments, and wanted to make the most out of them. Making a 3D Video Game or a Neural Network that could distinguish objects when pointing a camera at them, and the all-nighters required to pull them off, are some of the assignments I vividly remember to this day.
+
+- [Website](https://sigarra.up.pt/feup/en/)
 
 # Projects
 
