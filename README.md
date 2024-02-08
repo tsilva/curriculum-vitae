@@ -14,13 +14,25 @@ If you want to have a quick glance at what I've worked on just browse my [Portfo
 
 ## [Tynker](https://www.tynker.com/)
 
-- **Dates:** Sep 2016 - Present
+- **Duration:** Sep 2016 - Present
 - **Role:** Lead Software Engineer (Full-time)
 - **Location:** Mountain View, CA · Remote
 
-At Tynker I wore many hats, acting mostly as a Lead Software Engineer, but also as a Project Manager, and sometimes as a Stakeholder, Client Communicator and Salesperson. I was responsible for developing and coordinating the development of several core features of the Tynker platform, such as the Block IDE, the Crystal Clash game, the Minecraft Editor, the Quizzer, the Collaborative Learning System, the Arcade Maker, the Live Classes, the Coaching System, the Lynker server, the Coding Cup, the Help Agent. I also developed a custom MongoDB ODM for a legacy, unstructured PHP codebase, and was granted a U.S. patent for the Collaborative Learning System.
+Tynker is a creative computing platform where millions of kids have learned to code. At Tynker I acted mostly as a Lead Software Engineer, owning any required software development and project management role, culminating in being the main contributor to more than a handful of Tynker's core products, namely: 
 
-Along with my core software development tasks, I was also deeply involved with the DevOps tasks, regularly dealing with setting up, maintaing and upgrading the infrastructure required for the projects I developed as well as other legacy projects.
+ - Minecraft Editor (Bedrock Edition)
+ - the last version of the Block IDE (a major architectural overhaul)
+ - Crystal Clash (an assynchronous multiplayer battlebots competition)
+ - Lynker and the Collaborative Learning System (which enabled Block IDE project sharing, real-time messaging and project editing, being granted a U.S. patent for it), 
+ - Quizzer (a modular and versatile quiz platform allowing easy integration of different question types and engines, such as allowing integration with the Block IDE and its course content)
+ - Arcade Maker (a simplified game development platform for kids, where they could develop and publish games without having to code)
+ - Live Classes (a platform that enables educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the Block IDE and other course content)
+ - Coaching System (a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.)
+ - Coding Cup (a soccer-themed coding competition for kids, branded as a FIFA 2022 World Cup sponsor, with cash prizes, aimed at fostering coding skills and competitive spirit among young learners)
+ - Help Agent (a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture)
+ - a custom MongoDB ODM for a legacy
+
+Along with my core software development tasks, and other miscellaneous tasks across most of Tynker's products and tech stack, I was also deeply involved with the DevOps tasks, regularly dealing with setting up, maintaing and upgrading the infrastructure required for the projects I developed as well as other legacy projects.
 
 ## [RIPE Productions](https://www.platforme.com/)
 
@@ -28,7 +40,9 @@ Along with my core software development tasks, I was also deeply involved with t
 - **Role:** Lead Software Engineer (Full-time)
 - **Location:** Porto, Portugal · Remote
 
-Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the Karl Kustomize project for Karl Lagerfeld.
+RIPE Productions was a company that develops e-commerce solutions for the fashion industry, was my first client after I left Hive Solutions.
+
+Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the Karl Kustomize project for Karl Lagerfeld. In a lesser role also contributed as a software developer to the MYSWEAR online store featuring an advanced shoe customization rendering platform, related iOS demo and the adaptation of the customizer to be used in a holographic pyramid at Harrods, a Luxury Department Store in London.
 
 ## [Rocksauce Studios](https://www.rocksaucestudios.com/)
 
@@ -36,7 +50,7 @@ Developed some core features for the RIPE Core infrastructure, while simultaneou
 - **Role:** Senior iOS Developer (Full-time)
 - **Location:** Austin, Texas · Remote
 
-As an iOS developer for Rocksauce Studios, I worked on more than a dozen different projects for different clients.
+As an iOS developer for Rocksauce Studios, I worked on more than a dozen projects for different clients. 
 
 ## [Toptal](https://www.toptal.com/)
 
@@ -387,6 +401,8 @@ Developed new mode of operation for the customizer already used in the MYSWEAR o
 
 ## MYSWEAR - iOS Demo (iOS Shoe Customization Experience for MYSWEAR)
 
+TODO: did I do this?
+
 - **Start:** 2015
 - **Client:** RIPE Productions (through Hive Solutions)
 - **Technologies:** iOS, Objective-C
@@ -398,6 +414,8 @@ Single-handedly developed proof of concept native iOS application with the same 
 ---
 
 ## MYSWEAR (Online Fashion Store with Shoe Customizer)
+
+TODO: did I do this?
 
 - **Start:** 2015
 - **Client:** RIPE Productions (through Hive Solutions)
