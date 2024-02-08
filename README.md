@@ -20,12 +20,12 @@ If you want to have a quick glance at what I've worked on just browse my [Portfo
 
 Tynker is a creative computing platform where millions of kids have learned to code. At Tynker I acted mostly as a Lead Software Engineer, owning any required software development and project management role, culminating in being the main contributor to more than a handful of Tynker's core products, namely: 
 
- - Minecraft Editor (Bedrock Edition)
+ - [Minecraft Editor](#minecraft-editor) (Bedrock Edition)
  - the last version of the Block IDE (a major architectural overhaul)
- - Crystal Clash (an assynchronous multiplayer battlebots competition)
- - Lynker and the Collaborative Learning System (which enabled Block IDE project sharing, real-time messaging and project editing, being granted a U.S. patent for it), 
+ - [Crystal Clash](#crystal-clash) (an assynchronous multiplayer battlebots competition)
+ - [Lynker](#lynker) and the Collaborative Learning System (which enabled Block IDE project sharing, real-time messaging and project editing, being granted a U.S. patent for it), 
  - Quizzer (a modular and versatile quiz platform allowing easy integration of different question types and engines, such as allowing integration with the Block IDE and its course content)
- - Arcade Maker (a simplified game development platform for kids, where they could develop and publish games without having to code)
+ - [Arcade Maker](#block-ide-arcade-maker) (a simplified game development platform for kids, where they could develop and publish games without having to code)
  - Live Classes (a platform that enables educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the Block IDE and other course content)
  - Coaching System (a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.)
  - Coding Cup (a soccer-themed coding competition for kids, branded as a FIFA 2022 World Cup sponsor, with cash prizes, aimed at fostering coding skills and competitive spirit among young learners)
@@ -128,9 +128,9 @@ The course was very work intensive. Assignments got bigger and bigger as semeste
 
 Help Agent is a chatbot designed to assist users with inquiries related to Tynker, leveraging the Retrieval-Augmented Generation (RAG) architecture. This architecture enhances the chatbot's responses with custom data, grounding the information provided and minimizing inaccuracies. The development of such a system posed numerous challenges, including content scraping and parsing, data chunking and augmentation, embedding, indexing, querying, post-processing, reranking, model selection, and prompt engineering. Extensive experimentation was required to devise a solution that delivered fast, accurate, and reliable answers without compromising on safety or cost-effectiveness.
 
-A backoffice system was also developed to support the chatbot's operations. This system facilitated the initial scraping of websites to gather data, management of these data sources, and periodic updates from each scraped URL. It enabled the creation of new user-authored documents with the assistance of a large language model (LLM), including generation and summarization, as well as the uploading of additional documents (e.g., PDFs). Furthermore, the backoffice provided tools for reviewing chat logs, managing user tickets (e.g., reports of inadequate responses), and testing chatbot updates.
+A backoffice system was also developed to support the chatbot's operations. This system facilitated the initial scraping of websites to gather data, management of these data sources, and periodic updates from each scraped URL. It enabled the creation of new user-authored documents with the assistance of Large Language Models (LLMs), including generation and summarization, as well as the uploading of additional documents (e.g., PDFs). Furthermore, the backoffice provided tools for reviewing chat logs, managing user tickets (e.g., reports of inadequate responses), and testing chatbot updates.
 
-Upon deployment on the Tynker website for parents and schools, the chatbot demonstrated a significant impact on user engagement. Metrics collected post-launch showed a high conversion rate among users who interacted with the chatbot, leading to sign-ups and/or purchases. This performance metric was calculated as a percentage of the total users who engaged with the chatbot, underscoring its effectiveness and efficiency in supporting the user acquisition process.
+Upon deployment on the Tynker website for parents and schools, the chatbot demonstrated a significant impact on user engagement. Metrics collected post-launch showed a high conversion rate among users who interacted with the chatbot, leading to sign-ups and/or purchases.
 
 - [Help Agent in Parents page](https://www.tynker.com/parents/) (chat button in bottom right corner)
 - [Assets](https://drive.google.com/drive/folders/1U9ncLOBEwThtn-3cf9GPUZisN4scWZ2d?usp=sharing)
@@ -166,6 +166,9 @@ My role was to architect the solution, develop the core features, and coordinate
 - **Platforms:** Web + Android + iOS
 - **Technologies:** PHP, React
 
+TODO: add FIFA World Cup reference
+TODO: add screenshots
+
 Spearheaded the development of the BYJU'S Coding Cup, designed to engage children aged 7-18 in computer science through a soccer-themed coding competition. The game introduced participants to programming concepts such as conditional logic, selection, and debugging in a fun, interactive format. Managed four rounds of competition with a total prize pool of over $20,000 USD, aimed at fostering coding skills and competitive spirit among young learners.
 
 - [Landing Page](https://www.tynker.com/codingcup/)
@@ -181,6 +184,8 @@ Spearheaded the development of the BYJU'S Coding Cup, designed to engage childre
 - **Role:** Lead Software Engineer
 - **Platforms:** Web
 - **Technologies:** PHP, React, WebRTC, Dyte
+
+TODO: add assets
 
 At Tynker, I developed a live class platform that enables educators to conduct interactive coding classes with students. The platform integrates with Tynker tools such as the Block IDE and other course content allowing teachers to seamlessly transition between live instruction and interactive coding exercises.
 
@@ -212,6 +217,8 @@ Quizzer represents a significant innovation in quiz platforms, designed to impro
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
 - **Technologies:** PHP, Javascript, React
+
+TODO: modified collab system
 
 Combining the Block IDE Collaborative Learning features with the Live Classes platform, developed a coaching management system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
 
@@ -246,13 +253,15 @@ Using the Lynker messaging server I previously developed, augmented the Block ID
 
 ---
 
-## [Block IDE - Major redesign/overhaul](https://www.tynker.com/ide/v3)
+## Block IDE v3
 
 - **Start:** 2019
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
 - **Platforms:** Web
 - **Technologies:** PHP, Javascript, Redux, Redux Saga, AngularJS, SCSS
+
+TODO: add sample links
 
 Performed a major overhaul of Tynker's Block Editor, at that time, the core of Tynker's educational platform, mostly alone, in the span of six months. Given the previous mistakes and the undefined nature of the project, where this tool could keep growing to more and more unknown use cases, started by defining an architecture that forced separation of concerns, since this was the previous version's biggest mistake. To do that, first developed an extension framework where every part of the codebase was encapsulated in an extension, which could specify its dependencies. This approach forced all code to be encapsulated in an extension, which had a pre-determined lifecycle, and forced declaritve specification of dependencies. The second big decision was to use Redux. Redux forces a separation of concerns between the UI State and the UI itself, while also
 
@@ -262,11 +271,13 @@ Team: All software development tasks were architected and performed by me. There
 Looking back: Looking back I still think the extension framework and Redux Saga were good architectural decisions. The framework scaled great for new use cases, where most of the time one had only to create a new extension and perform minimal code changes across the others to develop the new feature. Coding with Redux Saga requires a paradigm shift and it was hard to onboard new people because of it. If I was comfortable with React at that time, and if version X was already available, I would just swap the whole stack with PHP + React + EmotionJS + Extension Framework + Redux Saga, and make a strong push for getting rid of Redux Saga completely if I was able to keep the application modular without it.
 
 - [Block IDE](https://www.tynker.com/ide/v3)
+- [Platformer - Retro Racer](https://www.tynker.com/ide/v3?type=platformer-v2&p=61a931e66634692f2b3a4310&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
+- [Platformer - Outlast the Onslaught](https://www.tynker.com/ide/v3?type=platformer-v2&p=61a9453f8bdab975987e36f2&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
 - [Assets](https://drive.google.com/drive/folders/1ugoXsBXkleQM3aD9m6Bk4vnvknsb9oY_?usp=sharing)
 
 ---
 
-## [Crystal Clash](https://www.tynker.com/dashboard/student/#/battles/crystalclash)
+## Crystal Clash
 
 - **Start:** 2018
 - **Client:** Tynker
@@ -282,12 +293,11 @@ At its core, Crystal Clash is computed like a complex game of chess. The arena i
 Due to the assynchronous nature of the game, and the requirement to make the code be developed with Tynker's block-based programming language, which only had a client-side interpreter which at the time tightly coupled to the browser environment, I ended up building a specific server-side VM for the game that complied to the same internal language representation.
 
 - [Crystal Clash Dashboard](https://www.tynker.com/dashboard/student/#/battles/crystalclash)
-- [Videos and Screenshots](https://www.tynker.com/blog/articles/ideas-and-tips/crystal-clash-2-0/)
 - [Assets](https://drive.google.com/drive/folders/1CmqQEERQ3JPsENW-ilyJtkB-i3aYBVia?usp=sharing)
 
 ---
 
-## [Minecraft Editor](https://www.tynker.com/minecraft/editor/mob/pig/)
+## Minecraft Editor
 
 - **Start:** 2016
 - **Client:** Tynker
@@ -302,7 +312,11 @@ The project presented challenges in optimizing for performance on older iPad Min
 
 This tool was incorporated into the Tynker App and Mod Creator App, providing a robust platform for Minecraft customizations.
 
-- [Minecraft Editor - Mobs - Pig](https://www.tynker.com/minecraft/editor/mob/pig/)
+- [Skins - Steve](https://www.tynker.com/minecraft/editor/skin/steve/)
+- [Blocks - TNT](https://www.tynker.com/minecraft/editor/block/tnt/)
+- [Items - Diamond Sword](https://www.tynker.com/minecraft/editor/item/diamond_sword/)
+- [Mobs - Llama](https://www.tynker.com/minecraft/editor/mob/llama2/)
+- [Mobs - Pig](https://www.tynker.com/minecraft/editor/mob/pig/)
 - [Assets](https://drive.google.com/drive/folders/1tlldiP97AQ2Lxs3g0aipjVMR4ewcdIMH?usp=sharing)
 
 ---
@@ -332,7 +346,7 @@ Kaboom! is a fast-paced revival of the classic "Lights Out" game for iPhone, iPa
 
 Coordinated design and development of application. Developed some core parts of the application, reviewed and refactored incoming pull requests, simultaneously acting as developer, project manager and stakeholder.
 
-- [App Store Page](https://apps.apple.com/ca/app/kaboom-lights-out-reloaded/id1124058567)
+- [App Store](https://apps.apple.com/ca/app/kaboom-lights-out-reloaded/id1124058567)
 - [Assets](https://drive.google.com/drive/folders/1JWNMdjJxhhNybNfnjKNchI3p5Pwt5P0P?usp=sharing)
 
 ---
@@ -455,7 +469,7 @@ Details PAL is an iOS application that interfaces with a Bluetooth activity trac
 
 Developed application from top to bottom, playing pivotal role in handling communication with the manufacturers of the Bluetooth collars in China, developing for and testing various prototype versions, as well as giving feedback on required improvements.
 
-- [App Store Page](https://apps.apple.com/us/app/details-pal-pet-activity-link/id1062049611)
+- [App Store](https://apps.apple.com/us/app/details-pal-pet-activity-link/id1062049611)
 - [Kickstarter](https://www.kickstarter.com/projects/1792953608/details-pal-a-pet-activity-link-for-every-dog)
 - [Assets](https://drive.google.com/drive/folders/1SgOc6tM0J63X61A_clquYrqC2G8JCw3S?usp=sharing)
 
@@ -940,7 +954,7 @@ The final product was successfully completed and deployed in the partner enterpr
 
 ---
 
-## [Nihonaid (Japanese Language Learning Assistant)](https://sourceforge.net/projects/nihonaid/)
+## Nihonaid (Japanese Language Learning Assistant)
 
 - **Start:** 2006
 - **Client:** Me
@@ -954,11 +968,12 @@ This way, the software would only present the user with characters he didn't kno
 
 With this system in place, memorizing the characters was as easy as simply doing a daily session with the app, since it would make sure you didn't forget the characters you had previously learned, by progressively building a model on how your learning and forgetting curve were.
 
+- [Sourceforce project](https://sourceforge.net/projects/nihonaid/)
 - [Assets](https://drive.google.com/drive/folders/1QTafd75HCV9yAUjXZ0y08ThdaE-3OE4a?usp=sharing)
 
 ---
 
-## [Clube de Karate da Maia (Website for Karate Club)](https://ckmaia.org/)
+## Clube de Karate da Maia (Website for Karate Club)
 
 - **Start:** 2005
 - **Client:** Clube de Karate da Maia
@@ -989,7 +1004,7 @@ Improved the knowledge on Neural Networks and Genetic Algorithms, as well as the
 
 ---
 
-## [Clube do Paiva (Extreme Sports Company Website)](https://www.clubedopaiva.com/)
+## Clube do Paiva (Extreme Sports Company Website)
 
 - **Start:** 2004
 - **Client:** Clube do Paiva
@@ -997,11 +1012,12 @@ Improved the knowledge on Neural Networks and Genetic Algorithms, as well as the
 
 Handled entire back end production of a website, web application and database programming. Solution was provided in the form of a web application implemented in the PHP scripting language, interfacing with a MySQL database.
 
+- [Website](https://www.clubedopaiva.com/)
 - [Assets](https://drive.google.com/drive/folders/1YwL5wz8jdm3rOfPSIDFD0vi0qHqlSLBF?usp=sharing)
 
 ---
 
-## [European Student Moon Orbiter (European Space Agency Student Sattellite Project)](https://www.esa.int/Education/European_Student_Moon_Orbiter)
+## European Student Moon Orbiter (European Space Agency Student Sattellite Project)
 
 - **Start:** 2004
 - **Client:** European Space Agency (through FEUP)
@@ -1012,6 +1028,7 @@ This project is a part of the European Space Agency's SSETI programme (Student S
 
 Amongst the lessons learned, the personal revalidation on the power of effective team-work stands out.
 
+- [ESMO Project](https://www.esa.int/Education/European_Student_Moon_Orbiter)
 - [Assets](https://drive.google.com/drive/folders/1ggkcdsNi1Y6VYKy6bfYSntaFQoKlhhP-?usp=sharing)
 
 ---
@@ -1026,6 +1043,7 @@ Computer Capers was a video game I developed when I was 12 years old and sent fo
 
 The whole game plot was incredibly dumb, which was natural for my age. The mechanics were very simple, you just walked around a tile-based world, talking to people who were looking for certain items, and when you found and gave them those items, they rewarded you with other items that other people were looking for, which let you advance the plot. The game graphics were created by me as well.
 
+- [Demo Video](https://drive.google.com/file/d/1DtE3ewh4trvmyFp3PjZC8USm_yMHQwpu/view?usp=drive_link)
 - [Assets](https://drive.google.com/drive/folders/1Ag30LUbb_ZY-tEq2I7vgEJb9dkED5A--?usp=sharing)
 
 ---
@@ -1038,21 +1056,21 @@ The whole game plot was incredibly dumb, which was natural for my age. The mecha
 
 # TODO
 
+- Add demo quick link
+- Add internal links
 - Remove "prophit" + "boatday"
+- Remove photos for boatday, raison, prophit, truckfood
 - Describe all Tynker projects
 - Sort portfolio gallery
 - Add Tynker projects to album
 - Add validator script
 - Extract used technologies
-- Add resource links to all projects
-- Add chatbot to help with navigation
 - Add github page
 - Link to tsilva.eu
 - Rename project to portfolio
 - Check hive usages
 - Ask questions about candidate, try filtering yes/no
 - Add new screens to gallery
-- Remove photos for boatday, raison, prophit, truckfood
 - Add bagger, oioba, webook?
 speakwrite
 raison
