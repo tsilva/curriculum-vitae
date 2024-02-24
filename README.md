@@ -79,10 +79,11 @@ As a co-founder of Hive Solutions I was a Jack of all trades, as most startup fo
 - **Role:** Software Development Engineer in Test (Full-time)
 - **Location:** Copenhagen, Denmark
 
-TODO: also wrote anonymization tool (thesis)
-TODO: also wrote code for improving code coverage
-
 Worked in the Global Development Localization team, in a Tester role, for Microsoft Dynamics AX (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing tests, searching for and investigating application bugs.
+
+Improved internal testing tools to allow scanning for test code coverage across multipler layers, as opposed to just the base of the stack.
+
+Developed internal tool for database PII anonymization to allow data transfer across internal groups spread around different regions.
 
 - [Microsoft Dynamics AX](https://dynamics.microsoft.com/en-us/ax/)
 
@@ -91,9 +92,8 @@ Worked in the Global Development Localization team, in a Tester role, for Micros
 - **Duration:** 2003 - 2006 · 3 years
 - **Role:** Software Developer
 
-TODO: explain how I did it to get money
-
-Extensive experience in freelance projects with worldwide clients via the Rent-a-Coder service (working by the name of Chronosync Developments), at the time ranked in the 99% percentile of overall customer rating. Learned a lot of skills, among which: requirement elicitation and management, negotiation, and personal marketing.
+As my first avenue of income, during college, got quite a bit of experience doing freelance projects with worldwide clients via the Rent-a-Coder service (going  by the name "
+Chronosync Developments"), at the time ranked in the 99% percentile of overall customer rating. Learned a lot of skills, among which: requirement elicitation and management, negotiation, and personal marketing.
 
 - Profile: https://www.exhedra.com/RentACoder/SoftwareCoders/showBioInfo_lngAuthorId_860960.html
 
