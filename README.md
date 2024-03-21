@@ -18,21 +18,18 @@ Tynker is a kid-friendly platform used by over 100 million students and in more 
 
 At Tynker I acted mostly as a Lead Software Engineer, owning any required Software Development and Project Management role, culminating in being the main contributor to more than a handful of Tynker's core products, namely: 
 
-@TODO: SORT THESE
-@TODO: add us patent link
-@TODO: add block IDE links
+- [Help Agent](#help-agent): a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture.
+- [Coding Cup](#coding-cup): a soccer-themed coding competition for kids, branded as a FIFA 2022 World Cup sponsor, with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.
+- the last version of the Block IDE (a major architectural overhaul)
+- [Crystal Clash](#crystal-clash): an assynchronous multiplayer battlebots competition
+- [Lynker](#lynker) and the [Collaborative Learning System](#collaborative-learning-system): which enabled Block IDE project sharing, real-time messaging and project editing, being granted a [U.S. patent](https://patents.google.com/patent/US11699357B2) for it 
+- [Quizzer](#quizzer): a modular and versatile quiz platform allowing easy integration of different question types and engines, such as allowing integration with the Block IDE and its course content
+- [Arcade Maker](#block-ide-arcade-maker): a simplified game development platform for kids, where they could develop and publish games without having to code
+- [Live Classes](#live-classes): a platform that enables educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the Block IDE and other course content
+- [Coaching System](#coaching-system): a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
+- [Block IDE](#block-ide---version-30): a major overhaul of Tynker's Block Editor, at that time, the core of Tynker's educational platform 
+- [Minecraft Editor](#minecraft-editor) (Bedrock Edition): a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors
 
- - [Help Agent](#help-agent): a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture.
- - [Coding Cup](#coding-cup): a soccer-themed coding competition for kids, branded as a FIFA 2022 World Cup sponsor, with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.
- - the last version of the Block IDE (a major architectural overhaul)
- - [Crystal Clash](#crystal-clash): an assynchronous multiplayer battlebots competition
- - [Lynker](#lynker) and the [Collaborative Learning System](#collaborative-learning-system): which enabled Block IDE project sharing, real-time messaging and project editing, being granted a U.S. patent for it 
- - [Quizzer](#quizzer): a modular and versatile quiz platform allowing easy integration of different question types and engines, such as allowing integration with the Block IDE and its course content
- - [Arcade Maker](#block-ide-arcade-maker): a simplified game development platform for kids, where they could develop and publish games without having to code
- - [Live Classes](#live-classes): a platform that enables educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the Block IDE and other course content
- - [Coaching System](#coaching-system): a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
- - [Minecraft Editor](#minecraft-editor) (Bedrock Edition): TODO: add description
- 
 Along with my core Software Development tasks and other miscellaneous tasks across most of Tynker's products and tech stack, I was also deeply involved with the DevOps tasks, regularly dealing with setting up, maintaing and upgrading the infrastructure required for the projects I developed as well as other legacy projects.
 
 ## [RIPE Productions](https://www.platforme.com/)
@@ -66,9 +63,8 @@ Toptal is a marketplace for top developers and top companies. It has a very stri
 - **Role:** Co Founder (Full-time)
 - **Location:** Porto, Portugal
 
-TODO: explain how it was founded and why, and mention some of the main projects
-
 As a co-founder of Hive Solutions I was a Jack of all trades, as most startup founders are. At different times I was acted as a Software Engineer (my main role), Tech Lead, but also having to deal with sales and recruiting.
+We started by building a SaaS Retail POS system called (Frontdoor)[#frontdoor], and later pivoted to software consulting where we developed a wide range of projects for many clients.
 
 - [Website](https://hive.pt/)
 - [Github](https://github.com/hivesolutions)
@@ -117,7 +113,6 @@ I feel this short stay was more enriching on all levels, both personally and pro
 - **Degree:** Licenciate, Software Engineering
 - **Grade:** 16 (out of 20)
 
-TODO: improve
 Activities and societies: Participated in ACM programming contests regularly.European Space Agency's ESMO project
 
 This was arguably the best such course that could be found in my country, therefore the entry grades were relatively high. I started high school with a weak foundation in Mathemathics, so that complicated things quite a bit. However, I set my mind on that goal, put a picture of that Faculty on my study desk, and reversed the trend by the sweat of my brow, and ended up being admitted with excellent entry exam results.
@@ -154,7 +149,7 @@ Upon deployment on the Tynker's parent and school pages, the chatbot demonstrate
 - **Start:** 2023
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
-- **Team:** Me + 1 Software Developer + 1 Game Designer
+- **Team:** Myself + 1 Software Developer + 1 Game Designer
 - **Platforms:** Web
 - **Technologies:** PHP, Javascript, React, Redux, Redux Saga
 
@@ -200,7 +195,7 @@ Successfully launched in time for the World Cup, the game was accessible via the
 - **Start:** 2022
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
-- **Team:** Me + Design Team
+- **Team:** Myself + Design Team
 - **Platforms:** Web
 - **Technologies:** PHP, React, WebRTC, Dyte
 
@@ -222,7 +217,7 @@ The solution was deployed on schedule, with just a few minor hiccups mostly rela
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
 - **Platform:** Web
-- **Team:** Me + Design Team + Content Team
+- **Team:** Myself + Design Team + Content Team
 - **Technologies:** PHP, React, MDX, NodeJS, React Native
 
 The Quizzer platform is a versatile quiz platform that supports building assessments that interleave multiple interactive quiz types using a simple unified content authoring format powered by MDX. 
@@ -248,9 +243,6 @@ The solution was deployed on schedule, and remained a core part of content progr
 - **Role:** Lead Software Engineer
 - **Team:** Myself and Design Team
 - **Technologies:** PHP, Javascript, React
-
-TODO: modified collab system
-TODO: improve description
 
 Combining the [Collaborative Learning System](#collaborative-learning-system) features with the [Live Classes](#live-classes) platform, developed an integrated coaching management system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
 
@@ -293,8 +285,6 @@ Using the Lynker messaging server I previously developed, augmented the Block ID
 - **Platforms:** Web
 - **Technologies:** PHP, Javascript, Redux, Redux Saga, AngularJS, SCSS
 
-TODO: add internal links
-
 Performed a major overhaul of Tynker's Block Editor, at that time, the core of Tynker's educational platform, mostly alone, in the span of six months. Given the previous mistakes and the undefined nature of the project, where this tool could keep growing to more and more unknown use cases, started by defining an architecture that forced separation of concerns, since this was the previous version's biggest mistake. To do that, first developed an extension framework where every part of the codebase was encapsulated in an extension, which could specify its dependencies. This approach forced all code to be encapsulated in an extension, which had a pre-determined lifecycle, and forced declaritve specification of dependencies. The second big decision was to use Redux. Redux forces a separation of concerns between the UI State and the UI itself, while also
 
 This project was a behemoth, it involved writing a lot of features from scratch. The ones that I barely touch were the very core, namely the VM and the Block Rendering.
@@ -316,16 +306,13 @@ Looking back: Looking back I still think the extension framework and Redux Saga 
 - **Role:** Lead Software Engineer
 - **Platforms:** Web / iOS (WebView)
 
-TODO: Add number of competitions, start date, etc.
-
 Crystal Clash is a multiplayer turn-based battlebots game that allows players to program their bots using Tynker's block-based programming language for competition in asynchronous matches. The game features monthly seasons, leaderboards, quests, and a shop where players can purchase new parts for their bots.
 
 At its heart, Crystal Clash operates similarly to a complex chess game, set in an 8x8 grid arena where bots can move, attack, and deploy special abilities. Matches are resolved within a deterministic timeframe as the arena size decreases every few turns, aiming to be the last bot standing to win. The bots' actions are dictated by player-programmed scripts, executed each turn, to navigate and combat within the game environment.
 
 To accommodate the game's asynchronous nature and the use of Tynker's block-based programming language, initially designed for client-side execution in browsers, I developed a specific server-side virtual machine (VM). This VM was tailored to interpret the game's unique programming language, ensuring seamless gameplay and script execution across platforms.
 
-
-Popular to the time of this writing, 
+Popular to the time of this writing, several million matches have been played across numerous seasons.
 
 - [Crystal Clash Dashboard](https://www.tynker.com/dashboard/student/#/battles/crystalclash)
 - [Assets](https://drive.google.com/drive/folders/1CmqQEERQ3JPsENW-ilyJtkB-i3aYBVia?usp=sharing)
@@ -339,13 +326,13 @@ Popular to the time of this writing,
 - **Role:** Lead Software Engineer
 - **Technologies:** React, Python, Flask, MongoDB, OpenAI, Pinecone
 
-TODO: Add number of creations, number of users, etc.
-
 Developed a web 3D editor for Minecraft Bedrock Edition, enabling customization of Skins, Blocks, Items, and Mobs. The editor featured texture editing and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, translating user inputs into Minecraft's declarative configuration files.
 
 The project presented challenges in optimizing for performance on older iPad Mini models. Issues with low frame rates and sluggish interactions were addressed by reducing CSS layers and implementing stringent memory management strategies to mitigate unpredictable garbage collection impacts. These optimizations ensured smooth operation within memory limits and achieved optimal frame rates.
 
 This tool was incorporated into the Tynker App and Mod Creator App, providing a robust platform for Minecraft customizations.
+
+Popular to the time of this writing, several million assets have been created by users.
 
 - [Skins - Steve](https://www.tynker.com/minecraft/editor/skin/steve/)
 - [Blocks - TNT](https://www.tynker.com/minecraft/editor/block/tnt/)
@@ -450,8 +437,6 @@ Developed new mode of operation for the customizer already used in the MYSWEAR o
 
 ## MYSWEAR - iOS Demo (iOS Shoe Customization Experience for MYSWEAR)
 
-TODO: did I do this?
-
 - **Start:** 2015
 - **Client:** RIPE Productions (through Hive Solutions)
 - **Technologies:** iOS, Objective-C
@@ -463,8 +448,6 @@ Single-handedly developed proof of concept native iOS application with the same 
 ---
 
 ## MYSWEAR (Online Fashion Store with Shoe Customizer)
-
-TODO: did I do this?
 
 - **Start:** 2015
 - **Client:** RIPE Productions (through Hive Solutions)
@@ -993,7 +976,7 @@ The final product was successfully completed and deployed in the partner enterpr
 ## Nihonaid (Japanese Language Learning Assistant)
 
 - **Start:** 2006
-- **Client:** Me
+- **Client:** Myself
 - **Technologies:** C#, SQL Server, Neural Networks
 
 Nihonaid was a tool I developed to assist in my learning of the Japanese language, namely to memorize the Kanji character set. 
@@ -1087,37 +1070,3 @@ The whole game plot was incredibly dumb, which was natural for my age. The mecha
 # Contacts
 
 - Linkedin: https://www.linkedin.com/in/engtiagosilva/
-
----
-
-# TODO
-
-- TODO: replace Me with Myself
-- TODO: reference projects directly from descriptions
-- Add Team to all projects
-- Change all iOS plaatform references
-- TODO: standardize project description structure
-- Start all project entries by descrbing what they are
-- Add demo quick link
-- Add internal links
-- Remove "prophit" + "boatday"
-- Remove photos for boatday, raison, prophit, truckfood
-- Describe all Tynker projects
-- Sort portfolio gallery
-- Add Tynker projects to album
-- Add validator script
-- Extract used technologies
-- Add github page
-- Link to tsilva.eu
-- Rename project to portfolio
-- Check hive usages
-- Ask questions about candidate, try filtering yes/no
-- Add new screens to gallery
-- Add bagger, oioba, webook?
-speakwrite
-raison
-uslikey
-@TODO: talkit
-@TODO: oioba
-@TODO: raison
-- Ver portfolio da rocksauce e sacar de la
