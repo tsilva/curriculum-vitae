@@ -57,7 +57,7 @@ As an iOS developer for Rocksauce Studios, I worked on more than a dozen project
 
 Toptal is a marketplace for top developers and top companies. It has a very strict screening process, that allows only highly technical developers who speak English proficiently to pass through. I have worked through Toptal with several companies, in medium to long-term arrangements, receiving excellent feedback from all clients until now.Toptal is a marketplace for top developers and top companies. It has a very strict screening process, that allows only highly technical developers who speak English proficiently to pass through. I have worked through Toptal with several companies, in medium to long-term arrangements, receiving excellent feedback from all clients until now.
 
-## [Hive Solutions](https://hive.pt/)
+## [Hive Solutions](https://www.hive.pt/)
 
 - **Duration:** Mar 2008 - Sep 2016 · 8 years and 7 months
 - **Role:** Co Founder (Full-time)
@@ -66,7 +66,7 @@ Toptal is a marketplace for top developers and top companies. It has a very stri
 As a co-founder of Hive Solutions I was a Jack of all trades, as most startup founders are. At different times I was acted as a Software Engineer (my main role), Tech Lead, but also having to deal with sales and recruiting.
 We started by building a SaaS Retail POS system called (Frontdoor)[#frontdoor], and later pivoted to software consulting where we developed a wide range of projects for many clients.
 
-- [Website](https://hive.pt/)
+- [Website](https://www.hive.pt/)
 - [Github](https://github.com/hivesolutions)
 
 ## [Microsoft](https://www.microsoft.com/)
@@ -151,7 +151,7 @@ Upon deployment on the Tynker's parent and school pages, the chatbot demonstrate
 - **Role:** Lead Software Engineer
 - **Team:** Myself + 1 Software Developer + 1 Game Designer
 - **Platforms:** Web
-- **Technologies:** PHP, Javascript, React, Redux, Redux Saga
+- **Technologies:** PHP, JavaScript, React, Redux, Redux Saga
 
 Arcade Maker was an extension to the Block IDE, made as an attempt to provide a simpler entry point into game development where kids could develop and publish games without being forced to do any coding. 
 
@@ -242,7 +242,7 @@ The solution was deployed on schedule, and remained a core part of content progr
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
 - **Team:** Myself and Design Team
-- **Technologies:** PHP, Javascript, React
+- **Technologies:** PHP, JavaScript, React
 
 Combining the [Collaborative Learning System](#collaborative-learning-system) features with the [Live Classes](#live-classes) platform, developed an integrated coaching management system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
 
@@ -268,7 +268,7 @@ Beginning in 2020, I spearheaded the creation of the Lynker server for Tynker, a
 - **Start:** 2020
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
-- **Technologies**: PHP, Javascript, React, Redux, Redux Saga, socket.io
+- **Technologies**: PHP, JavaScript, React, Redux, Redux Saga, socket.io
 
 Using the Lynker messaging server I previously developed, augmented the Block IDE to have collaborative learning features, such as the ability to share projects, chat about them, comment on code, and monitor changes in real-time. This application was granted an [U.S. patent](https://patents.google.com/patent/US11699357B2).
 
@@ -283,7 +283,7 @@ Using the Lynker messaging server I previously developed, augmented the Block ID
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
 - **Platforms:** Web
-- **Technologies:** PHP, Javascript, Redux, Redux Saga, AngularJS, SCSS
+- **Technologies:** PHP, JavaScript, Redux, Redux Saga, AngularJS, SCSS
 
 Performed a major overhaul of Tynker's Block Editor, at that time, the core of Tynker's educational platform, mostly alone, in the span of six months. Given the previous mistakes and the undefined nature of the project, where this tool could keep growing to more and more unknown use cases, started by defining an architecture that forced separation of concerns, since this was the previous version's biggest mistake. To do that, first developed an extension framework where every part of the codebase was encapsulated in an extension, which could specify its dependencies. This approach forced all code to be encapsulated in an extension, which had a pre-determined lifecycle, and forced declaritve specification of dependencies. The second big decision was to use Redux. Redux forces a separation of concerns between the UI State and the UI itself, while also
 
@@ -378,7 +378,7 @@ Coordinated design and development of application. Developed some core parts of 
 - **Start:** 2016
 - **Client:** RIPE Productions 
 - **Role:** Lead Software Engineer
-- **Technologies:** Python, MongoDB, Appier, HTML5, CSS3, Javascript, jQuery, UXF, Budy
+- **Technologies:** Python, MongoDB, Appier, HTML, CSS, JavaScript, jQuery, UXF, Budy
 
 Karl Kustomize is an online store where the consumer can configure and purchase his own custom sneakers from Karl Lagerfeld (a major fashion brand). 
 
@@ -394,13 +394,13 @@ Took on the role of Tech Lead, developing core features, controlling timeline, a
 - **Start:** 2016
 - **Client:** Lugar da Jóia (through Hive Solutions)
 - **Role:** Software Engineer
-- **Technologies:** Python, Appier, MongoDB, Budy, HTML/CSS/Javascript, jQuery, UXF
+- **Technologies:** Python, Appier, MongoDB, Budy, HTML, CSS, JavaScript, jQuery, UXF
 
 Lugar da Jóia is a chain of jewellery stores, and this was its first venture into selling their jewellery online.
 
 Acted as both full-stack developer and as a coordinator of another developer and designer. Developed a wide set of features across the site, both in frontend and in backend (the later leveraging the existing infrastructure provided by Hive Solutions' Budy e-commerce engine).
 
-- [Landing Page](https://www.lugardajoia.com/)
+- [Landing Page](https://www.lugardajoia.com/index)
 - [Assets](https://drive.google.com/drive/folders/18xWUzCjG_HILCzUXtbjQAUNy7XQ8FBdJ?usp=sharing)
 
 ---
@@ -409,7 +409,7 @@ Acted as both full-stack developer and as a coordinator of another developer and
 
 - **Start:** 2016
 - **Client:** Microsoft (through Hive Solutions)
-- **Technologies:** C#, Core CLR, ASP.NET, Docker, Frontdoor
+- **Technologies:** C#, CoreCLR, ASP.NET, Docker, Frontdoor
 
 App Middleware Partners is a section of Microsoft's Windows Dev Center that serves as a directory where Microsoft partners can advertise their middleware solutions.
 
@@ -425,7 +425,7 @@ In this project I handled communication with stakeholders, coordinated project d
 - **Start:** 2016
 - **Client:** RIPE Productions (through Hive Solutions)
 - **Role:** Software Engineer
-- **Technologies:** Python, Appier, HTML/CSS/Javascript, jQuery, UXF
+- **Technologies:** Python, Appier, HTML, CSS, JavaScript, jQuery, UXF
 
 MYSWEAR deployed a stand at Harrods (one of the world's most famous department stores, in London), where customers could personalize and order their own custom pair of shoes, while simultaneously visualising their customisation on a four-faced holographic pyramid in front of them.
 
@@ -451,7 +451,7 @@ Single-handedly developed proof of concept native iOS application with the same 
 
 - **Start:** 2015
 - **Client:** RIPE Productions (through Hive Solutions)
-- **Technologies:** Python, MongoDB, Appier, HTML/CSS/Javascript, jQuery, UXF, Farfetch API
+- **Technologies:** Python, MongoDB, Appier, HTML, CSS, JavaScript, jQuery, UXF, Farfetch API
 
 MYSWEAR is an online store where the consumer can configure and purchase his own custom shoes from the SWEAR fashion brand.
 
@@ -506,7 +506,7 @@ Don't Mess with Texas is an application that lets Texas citizens report when the
 Fixed bugs in several parts of the app and implemented new features. Challenging project because the existing code-base was very messy.
 
 - [App Store](https://itunes.apple.com/us/app/litterer/id882082348)
-- [Website](http://dontmesswithtexas.org)
+- [Website](https://www.dontmesswithtexas.org/)
 - [Assets](https://drive.google.com/drive/folders/1I6W7VQslgiNI32NrPe8KBMprndmjzjqg?usp=sharing)
 
 ---
@@ -535,7 +535,7 @@ Work consisted in fixing tricky bugs in existing codebase for the iPhone and the
 - **Client**: Rocksauce Studios (through Toptal)
 - **Role**: Full-stack app development
 - **Platform**: iPhone (iOS)
-- **Technologies:** iOS, Objective-C, Parse, Javascript, Stripe, Apple Pay
+- **Technologies:** iOS, Objective-C, Parse, JavaScript, Stripe, Apple Pay
 
 TopShelf is an app that lets you order alcoholic beverages right from your phone and have them delivered quickly at your doorstep.
 
@@ -556,7 +556,7 @@ Developed iOS application and backend logic from top to bottom, also integrating
 
 TALKiT is a social media alternative to texting where you can share your experiences by making your voice heard. It allows you to share your experience by recording your voice, instead of typing text.
 
-- [Website](http://www.gettalkit.com)
+- [Website](https://web.archive.org/web/20180326180938/http://www.gettalkit.com/)
 - [App Store](https://itunes.apple.com/us/app/talkit-hands-free-social-network/id880219768)
 
 ---
@@ -724,7 +724,7 @@ I was sent into the project to help guide it back into a predictable path, and e
 - **Client:** Rocksauce Studios (through Toptal)
 - **Role:** Full-stack Developer
 - **Platform:** iPhone (iOS)
-- **Technologies:** iOS, Objective-C, Bluetooth LE
+- **Technologies:** iOS, Objective-C, Bluetooth
 
 WeGo is a fitness tracking app that can interface with multiple low-budget hardware activity trackers.
 
@@ -759,7 +759,7 @@ I developed most of the application, however I didn't end up completing it, as I
 
 - **Start:** 2013
 - **Client**: East Point Consulting, LLC (through Toptal)
-- **Technologies:** Python, Flask, Quorum, MongoDB, HTML/CSS/Javascript, jQuery, UXF
+- **Technologies:** Python, Flask, Quorum, MongoDB, HTML, CSS, JavaScript, jQuery, UXF
 
 China Pro Tools is a market analytics solution that provides decision supporting statistics related with exports to China.
 
@@ -774,7 +774,7 @@ Developed application from top to bottom in accordance to existing specs, and de
 - **Start:** 2013
 - **Client**: Discover Your City (through Toptal)
 - **Platforms**: iOS (iPhone)
-- **Technologies:** Python, Flask, MongoDB, Objective-C, iOS SDK, Heroku, Amazon Web Services
+- **Technologies:** Python, Flask, MongoDB, Objective-C, iOS, Heroku, Amazon Web Services
 
 Discover Your City is a travelling app for people interested in architecture, guiding users in various tours of buildings of different styles and architectures.
 
@@ -851,7 +851,7 @@ I was contracted as a consultant to empower the company's development team, gett
 
 - **Start:** 2011
 - **Client:** Hive Solutions
-- **Technologies:** Python, Colony Framework, HTML, CSS, Javascript, jQuery, UXF
+- **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, jQuery, UXF
 
 Bargania was a Deal-a-Day service (Groupon clones) aggregation platform, where one could check out the latest deals from all main providers, sort them through different preferences, and receive a personalized newsletter with the offers most suited to the user's profile.
 
@@ -865,7 +865,7 @@ Developed core features, and did copywriting and translation for the website and
 
 - **Start:** 2010
 - **Client:** Hive Solutions
-- **Technologies:** Python, HTML/XML (scraping), MySQL
+- **Technologies:** Python, HTML, XML, MySQL
 
 A La Carte was a restaurant search engine where you could search for restaurants that had a certain food, for a certain price, near your location.
 
@@ -893,7 +893,7 @@ Developed and implemented game's logic, model importation, and physics engine.
 
 - **Start:** 2010
 - **Client:** Hive Solutions
-- **Technologies:** Python, Colony Framework, HTML, CSS, Javascript, jQuery, UXF
+- **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, jQuery, UXF
 
 Panzerini was a Battlebots-like game built with Hive Solutions' Colony Framework (a project I was also involved with) to present at the Sapo Codebits 2010's 48-hour programming competition. In it, a developer could develop the Artificial Intelligence for his bot (this would be a Colony plugin), and drop it in the Panzerini arena, which lived in the web browser (no installed extensions required, it was just a simple webpage).
 
@@ -907,7 +907,7 @@ Developed some core features and artificial intelligence for some sample bots.
 
 - **Start:** 2010
 - **Client:** Schoooools (through Hive Solutions)
-- **Technologies:** PhoneGap, Objective-C, HTML, Javascript, CSS, Ruby, Ruby on Rails
+- **Technologies:** PhoneGap, Objective-C, HTML, JavaScript, CSS, Ruby on Rails
 
 Schoooools provides personal and social learning spaces that empower collaboration between learners and their educators, namely parents and teachers. All school work is stored digitally, so parents can follow their children work, organize, and save it forever, so they can revisit it later, to learn, share or simply show it to the rest of the family or friends.
 
@@ -921,7 +921,7 @@ Developed core features (action tracking and analytics, as well as some classroo
 
 - **Start:** 2010
 - **Client:** Hive Solutions
-- **Technologies:** Python / Colony Framework, HTML / CSS / Javascript, UXF
+- **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, UXF
 
 Take the Bill is an online invoicing solution that was to be a public service but ended up being used only in private clouds (including being the billing app used at Hive Solutions).
 
@@ -935,7 +935,7 @@ Developed some core backend features and frontend features.
 
 - **Start:** 2008
 - **Client:** Hive Solutions
-- **Technologies:** Python, Colony Framework, HTML / CSS / Javascript, jQuery, UXF
+- **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, jQuery, UXF
 
 Developed back-end logic for online Point-of-Sale SaaS product using Python with the Colony Framework and its respective MVC stack. Also developed front-end for same system through extensive usage of JavaScript and jQuery to create a productive user experience.
 
