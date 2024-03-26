@@ -15,18 +15,19 @@ def extract_links():
     return links
 
 def check_links_status(links):
-    failed = []
+    failed_links = []
     for link in links:
         try:
-            response = requests.head(link, allow_redirects=True)
+            response = requests.get(link, allow_redirects=True)
             if response.status_code == 200: 
                 logging.info(f"Link OK: {link}")
             else:
-                failed.append(link) 
+                failed_links.append(link) 
                 logging.error(f"Link failed with status {response.status_code}: {link}")
         except requests.exceptions.RequestException as e:
-            failed.append(link)
+            failed_links.append(link)
             logging.error(f"Error accessing {link}: {e}")
+    return failed_links
 
 def main():
     links = extract_links()
