@@ -787,9 +787,9 @@ Developed iOS application from top to bottom in record time, against every unexp
 
 <!--
 - [App Store](https://itunes.apple.com/us/app/join-wego/id911117062)
--->
 - [Website](http://joinwego.com/)
 - [Facebook](https://www.facebook.com/joinWeGo)
+-->
 - [Assets](https://drive.google.com/drive/folders/1Ctw-j0Alm0qkIkNo47V8zgN09uhqNojw?usp=sharing)
 
 ---
@@ -876,7 +876,6 @@ Rocklobby was a music social network for artists, venues and fans.
 
 Developed the client-side (the iOS app), cooperating with another pre-existing developer that was developing the server-side. The iOS app was an existing codebase, but I had to throw it all away and start from scratch because it was in a really bad place. Application was delivered on schedule within estimated budget.
 
-- [Website](http://www.rocklobby.com)
 - [Assets](https://drive.google.com/drive/folders/1b-WWwNh8g27hcMWqCMpj6KHs-iBXdz5J?usp=sharing)
 
 ---
