@@ -368,7 +368,7 @@ However, this experience underscored the importance of cautious feature developm
 
 ---
 
-## Kaboom! (iOS / tvOS / watchOS Lights-out revival Game)
+## Kaboom!
 
 - **TLDR:** Fast-paced revival of the classic "Lights Out" game for iPhone, iPad, Apple TV and Apple Watch
 - **Start:** 2016
@@ -391,7 +391,7 @@ Coordinated design and development of application. Developed some core parts of 
 
 - **TLDR:** Online Shoe Customization Store
 - **Start:** 2016
-- **Client:** RIPE Productions 
+- **Client:** RIPE Productions
 - **Role:** Lead Software Engineer
 - **Technologies:** Python, MongoDB, Appier, HTML, CSS, JavaScript, jQuery, UXF, Budy
 
@@ -477,7 +477,7 @@ Single-handedly developed proof of concept native iOS application with the same 
 
 MYSWEAR is an online store where the consumer can configure and purchase his own custom shoes from the SWEAR fashion brand.
 
-Website was developed according to pre-existing design specs. Developed core features and coordinated work of other developers (assigning tasks, reviewing pull requests and refactoring code before merging). 
+Website was developed according to pre-existing design specs. Developed core features and coordinated work of other developers (assigning tasks, reviewing pull requests and refactoring code before merging).
 
 - [Assets](https://drive.google.com/drive/folders/19BbngsLGtOq1_ZQwcG6Q-D8rNAM9wY2T?usp=sharing)
 
