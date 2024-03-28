@@ -23,7 +23,7 @@ As a Lead Software Engineer, I was the main contributor to many of it's core pro
 - [Crystal Clash](#crystal-clash): an asynchronous multiplayer turn-based battlebots game that allows players to program their bots using Tynker's block-based programming language, achieving millions of matches played across numerous seasons.
 - [Lynker](#lynker) and the [Collaborative Learning System](#collaborative-learning-system): enabled project sharing features in the [Block IDE](#block-ide---version-30), real-time messaging and project editing, having been granted a [U.S. patent](https://patents.google.com/patent/US11699357B2).
 - [Quizzer](#quizzer): a modular quiz platform allowing easy integration of different question types and engines, such as allowing integration with the [Block IDE](#block-ide---version-30) and its course content.
-- [Block IDE - Arcade Maker](#block-ide---arcade-maker): a simplified game development platform for kids, where they could develop and publish games without having to code
+- [Block IDE - Arcade Maker](#block-ide---arcade-maker): a simplified game development platform for kids, where they could develop and publish games without having to code.
 - [Live Classes](#live-classes): a platform that enabled educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the [Block IDE](#block-ide---version-30) and course content.
 - [Coaching System](#coaching-system): a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
 - [Block IDE - Version 3.0](#block-ide---version-30): a major rewrite and rearchitecture of Tynker's Block Editor, at that time, the core of Tynker's educational platform.
