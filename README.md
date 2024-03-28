@@ -14,20 +14,19 @@ With a career that transitioned from a Lead Software Engineer at Tynker to co-fo
 - **Role:** Lead Software Engineer (Full-time)
 - **Location:** Mountain View, CA · Remote
 
-Tynker is a kid-friendly platform used by over 100 million students and in more than 150,000 schools, offering coding education through games and projects from basics to advanced programming languages, aimed at boosting problem-solving skills.
+Tynker is a kid-friendly platform used by over 100 million students and in more than 150,000 schools, offering coding education through games and projects from basics to advanced programming languages.
 
-At Tynker I acted mostly as a Lead Software Engineer, owning any required Software Development and Project Management role, culminating in being the main contributor to more than a handful of Tynker's core products, namely: 
+At Tynker, as a Lead Software Engineer, I was the main contributor to many of it's core products, namely:
 
 - [Help Agent](#help-agent): a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture.
 - [Coding Cup](#coding-cup): a soccer-themed coding competition for kids, branded as a FIFA 2022 World Cup sponsor, with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.
-- the last version of the Block IDE (a major architectural overhaul)
 - [Crystal Clash](#crystal-clash): an assynchronous multiplayer battlebots competition
 - [Lynker](#lynker) and the [Collaborative Learning System](#collaborative-learning-system): which enabled Block IDE project sharing, real-time messaging and project editing, being granted a [U.S. patent](https://patents.google.com/patent/US11699357B2) for it 
 - [Quizzer](#quizzer): a modular and versatile quiz platform allowing easy integration of different question types and engines, such as allowing integration with the Block IDE and its course content
 - [Arcade Maker](#block-ide-arcade-maker): a simplified game development platform for kids, where they could develop and publish games without having to code
 - [Live Classes](#live-classes): a platform that enables educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the Block IDE and other course content
 - [Coaching System](#coaching-system): a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
-- [Block IDE](#block-ide---version-30): a major overhaul of Tynker's Block Editor, at that time, the core of Tynker's educational platform 
+- [Block IDE - Version 3.0](#block-ide---version-30): a major overhaul of Tynker's Block Editor, at that time, the core of Tynker's educational platform 
 - [Minecraft Editor](#minecraft-editor) (Bedrock Edition): a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors
 
 Along with my core Software Development tasks and other miscellaneous tasks across most of Tynker's products and tech stack, I was also deeply involved with the DevOps tasks, regularly dealing with setting up, maintaing and upgrading the infrastructure required for the projects I developed as well as other legacy projects.
