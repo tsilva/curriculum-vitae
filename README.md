@@ -90,7 +90,7 @@ Developed internal tool for database PII anonymization to allow data transfer ac
 As my first avenue of income, during college, got quite a bit of experience doing freelance projects with worldwide clients via the Rent-a-Coder service (going  by the name "
 Chronosync Developments"), at the time ranked in the 99% percentile of overall customer rating. Learned a lot of skills, among which: requirement elicitation and management, negotiation, and personal marketing.
 
-- Profile: https://www.exhedra.com/RentACoder/SoftwareCoders/showBioInfo_lngAuthorId_860960.html
+- [Profile](https://www.exhedra.com/RentACoder/SoftwareCoders/showBioInfo_lngAuthorId_860960.html)
 
 # Education
 
@@ -434,7 +434,7 @@ App Middleware Partners is a section of Microsoft's Windows Dev Center that serv
 
 In this project I handled communication with stakeholders, coordinated project design and development, and performed core development tasks. The most challenging part of this project was actually the social aspect. There was a lot of red tape to cut through in order to get hold of the required information to be able to integrate and deploy within the existing Microsoft infrastructure. This project started with a lot of unknowns that had to be solved by relentless cold calling different people on the organisational branch, in order to uncover the answer to all the questions. The project was delivered on time and on budget, against all challenges.
 
-- [Website](http://devcenterpartners.windows.com)
+- [Website](https://web.archive.org/web/20160401014628/https://devcenterpartners.windows.com/)
 - [Assets](https://drive.google.com/drive/folders/1PyCxXjEA0yNKZQ1esq73XS5nIUffeAtC?usp=sharing)
 
 ---
