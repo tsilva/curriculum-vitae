@@ -16,18 +16,18 @@ With a career that transitioned from a Lead Software Engineer at Tynker to co-fo
 
 Tynker is a kid-friendly platform used by over 100 million students and in more than 150,000 schools, offering coding education through games and projects from basics to advanced programming languages.
 
-At Tynker, as a Lead Software Engineer, I was the main contributor to many of it's core products, namely:
+As a Lead Software Engineer, I was the main contributor to many of it's core products, namely:
 
 - [Help Agent](#help-agent): a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture.
 - [BYJU's Coding Cup](#byjus-coding-cup): a soccer-themed coding competition for kids, branded as a FIFA 2022 World Cup sponsor, with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.
-- [Crystal Clash](#crystal-clash): an assynchronous multiplayer battlebots competition
-- [Lynker](#lynker) and the [Collaborative Learning System](#collaborative-learning-system): which enabled Block IDE project sharing, real-time messaging and project editing, being granted a [U.S. patent](https://patents.google.com/patent/US11699357B2) for it 
-- [Quizzer](#quizzer): a modular and versatile quiz platform allowing easy integration of different question types and engines, such as allowing integration with the Block IDE and its course content
+- [Crystal Clash](#crystal-clash): an asynchronous multiplayer turn-based battlebots game that allows players to program their bots using Tynker's block-based programming language, achieving millions of matches played across numerous seasons.
+- [Lynker](#lynker) and the [Collaborative Learning System](#collaborative-learning-system): enabled project sharing features in the [Block IDE](#block-ide---version-30), real-time messaging and project editing, having been granted a [U.S. patent](https://patents.google.com/patent/US11699357B2).
+- [Quizzer](#quizzer): a modular quiz platform allowing easy integration of different question types and engines, such as allowing integration with the [Block IDE](#block-ide---version-30) and its course content.
 - [Block IDE - Arcade Maker](#block-ide---arcade-maker): a simplified game development platform for kids, where they could develop and publish games without having to code
-- [Live Classes](#live-classes): a platform that enables educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the Block IDE and other course content
+- [Live Classes](#live-classes): a platform that enabled educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the [Block IDE](#block-ide---version-30) and course content.
 - [Coaching System](#coaching-system): a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
-- [Block IDE - Version 3.0](#block-ide---version-30): a major overhaul of Tynker's Block Editor, at that time, the core of Tynker's educational platform 
-- [Minecraft Editor](#minecraft-editor) (Bedrock Edition): a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors
+- [Block IDE - Version 3.0](#block-ide---version-30): a major rewrite and rearchitecture of Tynker's Block Editor, at that time, the core of Tynker's educational platform.
+- [Minecraft Editor](#minecraft-editor) (Bedrock Edition): a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors.
 
 Along with my core Software Development tasks and other miscellaneous tasks across most of Tynker's products and tech stack, I was also deeply involved with the DevOps tasks, regularly dealing with setting up, maintaing and upgrading the infrastructure required for the projects I developed as well as other legacy projects.
 
@@ -367,7 +367,9 @@ Kaboom! is a fast-paced revival of the classic "Lights Out" game for iPhone, iPa
 
 Coordinated design and development of application. Developed some core parts of the application, reviewed and refactored incoming pull requests, simultaneously acting as developer, project manager and stakeholder.
 
+<!--
 - [App Store](https://apps.apple.com/ca/app/kaboom-lights-out-reloaded/id1124058567)
+-->
 - [Assets](https://drive.google.com/drive/folders/1JWNMdjJxhhNybNfnjKNchI3p5Pwt5P0P?usp=sharing)
 
 ---
@@ -383,7 +385,9 @@ Karl Kustomize is an online store where the consumer can configure and purchase 
 
 Took on the role of Tech Lead, developing core features, controlling timeline, assigning tasks, reviewing and refactoring pull requests from other developers.
 
-- [Landing Page](https://kustomize.karl.com/)
+<!--
+- [Landing Page](https://web.archive.org/web/20171007054048/https://kustomize.karl.com/)
+-->
 - [Assets](https://drive.google.com/drive/folders/1QGSN0CJF7MNETwYuV5jQLJ8nCfg-ZJg1?usp=sharing)
 
 ---
@@ -486,7 +490,9 @@ Details PAL is an iOS application that interfaces with a Bluetooth activity trac
 
 Developed application from top to bottom, playing pivotal role in handling communication with the manufacturers of the Bluetooth collars in China, developing for and testing various prototype versions, as well as giving feedback on required improvements.
 
+<!--
 - [App Store](https://apps.apple.com/us/app/details-pal-pet-activity-link/id1062049611)
+-->
 - [Kickstarter](https://www.kickstarter.com/projects/1792953608/details-pal-a-pet-activity-link-for-every-dog)
 - [Assets](https://drive.google.com/drive/folders/1SgOc6tM0J63X61A_clquYrqC2G8JCw3S?usp=sharing)
 
@@ -504,7 +510,9 @@ Don't Mess with Texas is an application that lets Texas citizens report when the
 
 Fixed bugs in several parts of the app and implemented new features. Challenging project because the existing code-base was very messy.
 
+<!--
 - [App Store](https://itunes.apple.com/us/app/litterer/id882082348)
+-->
 - [Website](https://www.dontmesswithtexas.org/)
 - [Assets](https://drive.google.com/drive/folders/1I6W7VQslgiNI32NrPe8KBMprndmjzjqg?usp=sharing)
 
@@ -522,8 +530,10 @@ Energi is an app to assist you in improving your work-life balance by suggesting
 
 Work consisted in fixing tricky bugs in existing codebase for the iPhone and the Apple Watch.
 
-- [Website](http://energi.life)
+<!--
 - [App Store](https://itunes.apple.com/us/app/energi-coach-personalized/id986965532)
+-->
+- [Website](http://energi.life)
 - [Assets](https://drive.google.com/drive/folders/1LppDJ595aU9TJqUOohWJUpOJcgMeEFsv?usp=sharing)
 
 ---
@@ -540,7 +550,9 @@ TopShelf is an app that lets you order alcoholic beverages right from your phone
 
 Developed iOS application and backend logic from top to bottom, also integrating with third-party fleet management service for delivery coordination.
 
+<!--
 - [App Store](https://itunes.apple.com/us/app/topshelf-alcohol-delivery/id974722644)
+-->
 - [Assets](https://drive.google.com/drive/folders/11yKTjMhHgLxpyAlB7VwJbhcloB2xmIW1?usp=sharing)
 
 ---
@@ -572,9 +584,11 @@ Us Likey is a social network where people share the products they like.
 
 Fixed bugs in several parts of the app and implemented new features. This was a challenging project because the existing codebase was very messy.
 
-- [Website](http://uslikey.com)
-- [Facebook](https://www.facebook.com/uslikey)
+<!--
 - [App Store](https://itunes.apple.com/us/app/us-likey/id717595225)
+-->
+- [Website](https://web.archive.org/web/20160527230029/http://www.uslikey.com/)
+- [Facebook](https://www.facebook.com/uslikey)
 - [Assets](https://drive.google.com/drive/folders/1rjik2XNrUXKQla1AGVOTubFenvIQOc2i?usp=sharing)
 
 ---
@@ -651,8 +665,10 @@ With the Active Heroes app you can track your workouts and share them to help ra
 
 Fixed many critical and non-critical bugs in existing app. Challenging because codebase was very messy.
 
-- [Website](http://activeheroes.org)
+<!--
 - [App Store](https://itunes.apple.com/us/app/active-heroes/id635435400)
+-->
+- [Website](http://activeheroes.org)
 - [Assets](https://drive.google.com/drive/folders/1VujTyiDi84lsuO0WdP42lGV-0roPabn8?usp=sharing)
 
 ---
@@ -667,7 +683,9 @@ Fixed many critical and non-critical bugs in existing app. Challenging because c
 
 Furtile is a social network that allows pet owners and breeders to connect in order to help pets find their perfect mate. Developed application from top to bottom (iOS and backend). Completed app in record time and released to the App Store.
 
+<!--
 - [App Store](https://itunes.apple.com/us/app/furtile/id883776204)
+-->
 - [Assets](https://drive.google.com/drive/folders/1hDeIQd85G_-Ng7D6KwiVV0t7Wn0Qspbm?usp=sharing)
 
 ---
@@ -712,7 +730,9 @@ Randid is a social networking app for iOS where users send a picture and get a r
 
 I was sent into the project to help guide it back into a predictable path, and ended up developing part of the client side and most of the server side for the first version of the app.
 
+<!--
 - [App Store](https://itunes.apple.com/us/app/randid/id791202964)
+-->
 - [Assets](https://drive.google.com/drive/folders/1MRKaT3uCH7KYIfIDtC6zmfUyT8kuknbZ?usp=sharing)
 
 ---
@@ -729,9 +749,11 @@ WeGo is a fitness tracking app that can interface with multiple low-budget hardw
 
 Developed iOS application from top to bottom in record time, against every unexpected obstacle imaginable. Had to integrate 5 wearable devices, from different manufacturers, through Bluetooth and Audio Jack. The project was completely successful from an implementation standpoint, with every standing limitation being attributed to immutable third-party dependencies.
 
+<!--
+- [App Store](https://itunes.apple.com/us/app/join-wego/id911117062)
+-->
 - [Website](http://joinwego.com/)
 - [Facebook](https://www.facebook.com/joinWeGo)
-- [App Store](https://itunes.apple.com/us/app/join-wego/id911117062)
 - [Assets](https://drive.google.com/drive/folders/1Ctw-j0Alm0qkIkNo47V8zgN09uhqNojw?usp=sharing)
 
 ---
@@ -748,7 +770,9 @@ Clockadoodle was an iOS Alarm Clock with a lot of advanced features, such as You
 
 I developed most of the application, however I didn't end up completing it, as I was moved to a more important project.
 
+<!--
 - [App Store](https://itunes.apple.com/BR/app/id745537889)
+-->
 - [Facebook](https://www.facebook.com/clockadoodleapp)
 - [Assets](https://drive.google.com/drive/folders/1BHwu2Ahcwq0fZU0OxUECIBUBLuVa0oDS?usp=sharing)
 
@@ -783,7 +807,7 @@ Implemented application from top to bottom in accordance to pre-existing design 
 
 ---
 
-## [Rocklobby (Web Music Social Network for Fans, Artists and Venues)](https://web.archive.org/web/20161001000000*/rocklobby.com)
+## Rocklobby (Web Music Social Network for Fans, Artists and Venues)
 
 - **Start:** 2013
 - **Client**: Rock Lobby (through Toptal)
@@ -795,7 +819,7 @@ Rocklobby is a music social network for artists, venues and fans. In it, you cou
 
 Took on the role of Full-stack Developer (developed everything from top to bottom), Project Manager (coordinated designer and handled communication with client).
 
-- [Website](http://www.rocklobby.com)
+- [Website](https://web.archive.org/web/20161017041055/http://www.rocklobby.com/)
 - [Assets](https://drive.google.com/drive/folders/1QpGx4v15_phovqlYMuQ9i-t5PPbIY0oy?usp=sharing)
 
 ---
@@ -827,7 +851,7 @@ Fresh Deck Poker is an online multiplayer Poker game with real cash prizes.
 
 Developed various features for the administration game management backoffice (account management, game and table management, monetization, odds assignement, etc.). Some requests went beyond Django's capabilities and resulted in me having to do some heavy-duty hacks to add those features (eg: monkey-patching).
 
-- [Website](http://www.freshdeckpoker.com/)
+- [Website](https://web.archive.org/web/20200724094354/http://freshdeckpoker.com/)
 - [Assets](https://drive.google.com/drive/folders/1E7sdm1AoWU9OAy44QwMDPqp1eID3LZdg?usp=sharing)
 
 ---
