@@ -39,7 +39,7 @@ Along with my core Software Development tasks and other miscellaneous tasks acro
 
 RIPE Productions was a company that developed e-commerce solutions for the fashion industry.
 
-Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#karl-kustomize) project for Karl Lagerfeld. In a lesser role also contributed as a software developer to the MYSWEAR online store featuring an advanced shoe customization rendering platform, related iOS demo and the adaptation of the customizer to be used in a holographic pyramid at Harrods, a Luxury Department Store in London.
+Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#karl-kustomize) project for [Karl Lagerfeld](https://www.karl.com/pt-en). In a lesser role also contributed as a software developer to the MYSWEAR online store featuring an advanced shoe customization rendering platform, related iOS demo and the adaptation of the customizer to be used in a holographic pyramid at Harrods, a Luxury Department Store in London.
 
 ## [Rocksauce Studios](https://www.rocksaucestudios.com/)
 
@@ -63,7 +63,7 @@ Toptal is a marketplace for top developers and top companies. It has a very stri
 - **Location:** Porto, Portugal
 
 As a co-founder of Hive Solutions I was a Jack of all trades, as most startup founders are. At different times I was acted as a Software Engineer (my main role), Tech Lead, but also having to deal with sales and recruiting.
-We started by building a SaaS Retail POS system called (Frontdoor)[#frontdoor], and later pivoted to software consulting where we developed a wide range of projects for many clients.
+We started by building a SaaS Retail POS system called [Frontdoor](#frontdoor), and later pivoted to software consulting where we developed a wide range of projects for many clients.
 
 - [Website](https://www.hive.pt/)
 - [Github](https://github.com/hivesolutions)
@@ -74,7 +74,7 @@ We started by building a SaaS Retail POS system called (Frontdoor)[#frontdoor], 
 - **Role:** Software Development Engineer in Test (Full-time)
 - **Location:** Copenhagen, Denmark
 
-Worked in the Global Development Localization team, in a Tester role, for Microsoft Dynamics AX (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing tests, searching for and investigating application bugs.
+Worked in the Global Development Localization team, in a Tester role, for [Microsoft Dynamics AX](https://dynamics.microsoft.com/en-us/ax/) (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing tests, searching for and investigating application bugs.
 
 Improved internal testing tools to allow scanning for test code coverage across multipler layers, as opposed to just the base of the stack.
 
@@ -395,7 +395,7 @@ Coordinated design and development of application. Developed some core parts of 
 - **Role:** Lead Software Engineer
 - **Technologies:** Python, MongoDB, Appier, HTML, CSS, JavaScript, jQuery, UXF, Budy
 
-Karl Kustomize is an online store where the consumer can configure and purchase his own custom sneakers from Karl Lagerfeld (a major fashion brand). 
+Karl Kustomize is an online store where the consumer can configure and purchase his own custom sneakers from [Karl Lagerfeld](https://www.karl.com/pt-en) (a major fashion brand). 
 
 Took on the role of Tech Lead, developing core features, controlling timeline, assigning tasks, reviewing and refactoring pull requests from other developers.
 
@@ -406,7 +406,7 @@ Took on the role of Tech Lead, developing core features, controlling timeline, a
 
 ---
 
-## Lugar da Jóia (Jewellery Online Store)
+## Lugar da Jóia
 
 - **TLDR:** Online Jewellery Store
 - **Start:** 2016
@@ -1150,4 +1150,4 @@ The whole game plot was incredibly dumb, which was natural for my age. The mecha
 
 # Contacts
 
-- Linkedin: https://www.linkedin.com/in/engtiagosilva/
+- [LinkedIn](https://www.linkedin.com/in/engtiagosilva/)
