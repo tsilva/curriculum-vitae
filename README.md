@@ -37,9 +37,9 @@ Along with my core Software Development tasks and other miscellaneous tasks acro
 - **Role:** Lead Software Engineer (Full-time)
 - **Location:** Porto, Portugal · Remote
 
-RIPE Productions was a company that develops e-commerce solutions for the fashion industry, was my first client after I left Hive Solutions.
+RIPE Productions was a company that developed e-commerce solutions for the fashion industry.
 
-Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the Karl Kustomize project for Karl Lagerfeld. In a lesser role also contributed as a software developer to the MYSWEAR online store featuring an advanced shoe customization rendering platform, related iOS demo and the adaptation of the customizer to be used in a holographic pyramid at Harrods, a Luxury Department Store in London.
+Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#karl-kustomize) project for Karl Lagerfeld. In a lesser role also contributed as a software developer to the MYSWEAR online store featuring an advanced shoe customization rendering platform, related iOS demo and the adaptation of the customizer to be used in a holographic pyramid at Harrods, a Luxury Department Store in London.
 
 ## [Rocksauce Studios](https://www.rocksaucestudios.com/)
 
@@ -124,6 +124,7 @@ The course was very work intensive. Assignments got bigger and bigger as semeste
 
 ## Help Agent
 
+- **TLDR:** Chatbot to assist users with inquiries related to Tynker
 - **Start:** 2023
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
@@ -145,6 +146,7 @@ Upon deployment on the Tynker's parent and school pages, the chatbot demonstrate
 
 ## Block IDE - Arcade Maker
 
+- **TLDR:** Extension for the Block IDE to create games without coding
 - **Start:** 2023
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
@@ -168,6 +170,7 @@ My role was to architect the solution, develop the core features, and coordinate
 
 ## BYJU's Coding Cup
 
+- **TLDR:** Soccer-themed coding competition for kids
 - **Start:** 2023
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
@@ -191,6 +194,7 @@ Successfully launched in time for the World Cup, the game was accessible via the
 
 ## Live Classes
 
+- **TLDR:** Platform for educators to conduct interactive coding classes with students
 - **Start:** 2022
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
@@ -212,6 +216,7 @@ The solution was deployed on schedule, with just a few minor hiccups mostly rela
 
 ## Quizzer
 
+- **TLDR:** Modular quiz platform
 - **Start:** 2021
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
@@ -237,6 +242,7 @@ The solution was deployed on schedule, and remained a core part of content progr
 
 ## Coaching System
 
+- **TLDR:** Integrated coaching management system
 - **Start:** 2020
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
@@ -251,6 +257,7 @@ Combining the [Collaborative Learning System](#collaborative-learning-system) fe
 
 ## Lynker
 
+- **TLDR:** Real-time messaging server for Tynker
 - **Start:** 2020
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
@@ -264,6 +271,7 @@ Beginning in 2020, I spearheaded the creation of the Lynker server for Tynker, a
 
 ## Collaborative Learning System
 
+- **TLDR:** Real-time project sharing and collaboration features for the Block IDE
 - **Start:** 2020
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
@@ -278,6 +286,7 @@ Using the Lynker messaging server I previously developed, augmented the Block ID
 
 ## Block IDE - Version 3.0
 
+- **TLDR:** Major overhaul of Tynker's Block Editor
 - **Start:** 2019
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
@@ -300,6 +309,7 @@ Looking back: Looking back I still think the extension framework and Redux Saga 
 
 ## Crystal Clash
 
+- **TLDR:** Multiplayer turn-based battlebots game
 - **Start:** 2018
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
@@ -320,6 +330,7 @@ Popular to the time of this writing, several million matches have been played ac
 
 ## Minecraft Editor
 
+- **TLDR:** Web 3D editor for Minecraft Bedrock Edition
 - **Start:** 2016
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
@@ -344,6 +355,7 @@ Popular to the time of this writing, several million assets have been created by
 
 ## Tynker - PHP MongoDB ODM
 
+- **TLDR:** Custom MongoDB ODM for a legacy, unstructured PHP codebase
 - **Start:** 2016
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
@@ -358,6 +370,7 @@ However, this experience underscored the importance of cautious feature developm
 
 ## Kaboom! (iOS / tvOS / watchOS Lights-out revival Game)
 
+- **TLDR:** Fast-paced revival of the classic "Lights Out" game for iPhone, iPad, Apple TV and Apple Watch
 - **Start:** 2016
 - **Client:** Hive Solutions
 - **Role:** Lead Software Engineer
@@ -374,8 +387,9 @@ Coordinated design and development of application. Developed some core parts of 
 
 ---
 
-## Karl Kustomize (Online Store for Karl Lagerfeld with Sneaker Customization)
+## Karl Kustomize
 
+- **TLDR:** Online Shoe Customization Store
 - **Start:** 2016
 - **Client:** RIPE Productions 
 - **Role:** Lead Software Engineer
@@ -394,6 +408,7 @@ Took on the role of Tech Lead, developing core features, controlling timeline, a
 
 ## Lugar da Jóia (Jewellery Online Store)
 
+- **TLDR:** Online Jewellery Store
 - **Start:** 2016
 - **Client:** Lugar da Jóia (through Hive Solutions)
 - **Role:** Software Engineer
@@ -410,6 +425,7 @@ Acted as both full-stack developer and as a coordinator of another developer and
 
 ## Windows Dev Center Partners
 
+- **TLDR:** Middleware Directory for Microsoft Partners
 - **Start:** 2016
 - **Client:** Microsoft (through Hive Solutions)
 - **Technologies:** C#, CoreCLR, ASP.NET, Docker, Frontdoor
@@ -423,8 +439,9 @@ In this project I handled communication with stakeholders, coordinated project d
 
 ---
 
-## MYSWEAR - Harrods Holographic Pyramid (Instore Shoe Customization and Ordering experience with Holographic Preview)
+## MYSWEAR - Harrods Holographic Pyramid
 
+- **TLDR:** Instore Shoe Customization and Ordering experience with Holographic Preview
 - **Start:** 2016
 - **Client:** RIPE Productions (through Hive Solutions)
 - **Role:** Software Engineer
@@ -438,8 +455,9 @@ Developed new mode of operation for the customizer already used in the MYSWEAR o
 
 ---
 
-## MYSWEAR - iOS Demo (iOS Shoe Customization Experience for MYSWEAR)
+## MYSWEAR - iOS Demo
 
+- **TLDR:** iOS Shoe Customization Experience for MYSWEAR
 - **Start:** 2015
 - **Client:** RIPE Productions (through Hive Solutions)
 - **Technologies:** iOS, Objective-C
@@ -450,8 +468,9 @@ Single-handedly developed proof of concept native iOS application with the same 
 
 ---
 
-## MYSWEAR (Online Fashion Store with Shoe Customizer)
+## MYSWEAR
 
+- **TLDR:** Online Fashion Store with Shoe Customizer
 - **Start:** 2015
 - **Client:** RIPE Productions (through Hive Solutions)
 - **Technologies:** Python, MongoDB, Appier, HTML, CSS, JavaScript, jQuery, UXF, Farfetch API
@@ -464,8 +483,9 @@ Website was developed according to pre-existing design specs. Developed core fea
 
 ---
 
-## Speakwrite (iOS Audio Transcribing Application)
+## Speakwrite
 
+- **TLDR:** iOS Audio Transcribing Application
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
 - **Technologies:** iOS, Objective-C
@@ -478,8 +498,9 @@ Fixed many critical bugs in several parts of the app. It was a challenging proje
 
 ---
 
-## Details Pal (iOS Dog Activity Tracker with Bluetooth Collar)
+## Details Pal
 
+- **TLDR:** iOS Dog Activity Tracker with Bluetooth Collar
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
 - **Role:** Full-stack Mobile App Developer
@@ -498,8 +519,9 @@ Developed application from top to bottom, playing pivotal role in handling commu
 
 ---
 
-## Don't Mess with Texas (iOS Littering Reporting App)
+## Don't Mess with Texas
 
+- **TLDR:** iOS Littering Reporting App
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
 - **Role:** Bug fixing
@@ -518,8 +540,9 @@ Fixed bugs in several parts of the app and implemented new features. Challenging
 
 ---
 
-## Energi Coach (iOS Lifestyle App)
+## Energi Coach
 
+- **TLDR:** iOS Work-Life Balance App
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
 - **Role:** Bug fixing
@@ -538,8 +561,9 @@ Work consisted in fixing tricky bugs in existing codebase for the iPhone and the
 
 ---
 
-## TopShelf (iOS Alcohol Delivery App)
+## TopShelf
 
+- **TLDR:** iOS Alcohol Delivery App
 - **Start:** 2015 
 - **Client**: Rocksauce Studios (through Toptal)
 - **Role**: Full-stack app development
@@ -559,6 +583,7 @@ Developed iOS application and backend logic from top to bottom, also integrating
 
 ## TALKiT 
 
+- **TLDR:** iOS Social Network for Sharing Experiences
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
 - **Role:** Bug fixing
@@ -572,8 +597,9 @@ TALKiT is a social media alternative to texting where you can share your experie
 
 ---
 
-## US Likey (iOS Social Network)
+## US Likey
 
+- **TLDR:** iOS Social Network for Sharing Products
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
 - **Role:** Bug fixing
@@ -593,8 +619,9 @@ Fixed bugs in several parts of the app and implemented new features. This was a 
 
 ---
 
-## WIN Atlas (iOS Career Planning & Exploration)
+## WIN Atlas
 
+- **TLDR:** iOS Career Guidance App
 - **Start:** 2015
 - **Client**: Rocksauce Studios (through Toptal)
 - **Role**: Full-stack Developer
@@ -610,8 +637,9 @@ Developed app client-side and integrated with server-side implemented by in-hous
 
 ---
 
-## Knod (iOS Media Reviews Social Network - Books, Movies, Games, etc.)
+## Knod
 
+- **TLDR:** iOS Media Reviews Social Network - Books, Movies, Games, etc.
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
 - **Technologies:** Objective-C
@@ -624,8 +652,9 @@ I was involved in the bootstrap of the project and creating some core features f
 
 ---
 
-## ValetTab / ValetStand (iOS Valet Parking Software)
+## ValetTab
 
+- **TLDR:** iOS Valet Parking Software
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
 - **Technologies:** iOS, Objective-C
@@ -638,8 +667,9 @@ Fixed bugs in several parts of the app and implemented new features (mainly rela
 
 ---
 
-## Academy Sports + Outdoors LIVE FIT (iOS Sports Tracking app)
+## Academy Sports LIVE FIT
 
+- **TLDR:** iOS Sports Tracking app
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
 - **Technologies:** iOS, Objective-C, MapMyFitness SDK
@@ -652,8 +682,9 @@ This application integrated with MapMyFitness' SDK to store and retrieve activit
 
 ---
 
-## Active Heroes (iOS Charity for Veterans App)
+## Active Heroes
 
+- **TLDR:** iOS Charity for Veterans App
 - **Start:** 2014
 - **Client**: Rocksauce Studios (through Toptal)
 - **Role**: Bug fixing
@@ -673,8 +704,9 @@ Fixed many critical and non-critical bugs in existing app. Challenging because c
 
 ---
 
-## Furtile (iOS Social Network app for Pet Owners and Breeders)
+## Furtile
 
+- **TLDR:** iOS Social Network for Pet Owners and Breeders
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
 - **Role**: Full-stack Developer
@@ -690,8 +722,9 @@ Furtile is a social network that allows pet owners and breeders to connect in or
 
 ---
 
-## Map My Fitness - Challenges (iOS Sports Tracking app)
+## Map My Fitness - Challenges
 
+- **TLDR:** iOS Sports Tracking App
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
 - **Technologies:** iOS, Objective-C
@@ -704,8 +737,9 @@ Implemented the Challenges feature, as well as the Weight and Sleep sections of 
 
 ---
 
-## Project Capture (iOS UFO Reporting App)
+## Project Capture
 
+- **TLDR:** iOS UFO Reporting App
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
 - **Technologies:** iOS, Objective-C
@@ -718,8 +752,9 @@ This app was coded by another developer, and I just ended up doing many bug fixe
 
 ---
 
-## Randid (iOS Social Photo Sharing App)
+## Randid
 
+- **TLDR:** iOS Social Photo Sharing App
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
 - **Role:** Full-stack Developer
@@ -737,8 +772,9 @@ I was sent into the project to help guide it back into a predictable path, and e
 
 ---
 
-## WeGo (iOS Sports Tracking app with wearable integration)
+## WeGo
 
+- **TLDR:** iOS Sports Tracking app with wearable integration
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
 - **Role:** Full-stack Developer
@@ -758,8 +794,9 @@ Developed iOS application from top to bottom in record time, against every unexp
 
 ---
 
-## Clockadoodle (iOS alarm clock app)
+## Clockadoodle
 
+- **TLDR:** iOS Alarm Clock with Youtube Video Alarms
 - **Start:** 2013
 - **Client:** Rocksauce Studios (through Toptal)
 - **Role**: Mobile Developer
@@ -780,6 +817,7 @@ I developed most of the application, however I didn't end up completing it, as I
 
 ## China Pro Tools
 
+- **TLDR:** Market Analytics Solution for Exports to China
 - **Start:** 2013
 - **Client**: East Point Consulting, LLC (through Toptal)
 - **Technologies:** Python, Flask, Quorum, MongoDB, HTML, CSS, JavaScript, jQuery, UXF
@@ -794,6 +832,7 @@ Developed application from top to bottom in accordance to existing specs, and de
 
 ## Discover Your City
 
+- **TLDR:** Travelling App for Architecture Enthusiasts
 - **Start:** 2013
 - **Client**: Discover Your City (through Toptal)
 - **Platforms**: iOS (iPhone)
@@ -807,8 +846,9 @@ Implemented application from top to bottom in accordance to pre-existing design 
 
 ---
 
-## Rocklobby (Web Music Social Network for Fans, Artists and Venues)
+## Rocklobby
 
+- **TLDR:** Web Music Social Network for Fans, Artists and Venues
 - **Start:** 2013
 - **Client**: Rock Lobby (through Toptal)
 - **Role**: Project Manager, Full-stack Web Developer
@@ -824,8 +864,9 @@ Took on the role of Full-stack Developer (developed everything from top to botto
 
 ---
 
-## Rocklobby iOS App (iOS Music Social Network for Fans, Artists and Venues)
+## Rocklobby iOS App
 
+- **TLDR:** iOS Music Social Network for Fans, Artists and Venues
 - **Start:** 2013
 - **Client:** Rock Lobby (through Toptal)
 - **Platform:** iOS (iPhone)
@@ -840,8 +881,9 @@ Developed the client-side (the iOS app), cooperating with another pre-existing d
 
 ---
 
-## Fresh Deck Poker (Online Poker Game with Real Cash Prizes)
+## Fresh Deck Poker
 
+- **TLDR:** Online Poker Game with Real Cash Prizes
 - **Start:** 2012
 - **Client:** Idle Games (through Toptal)
 - **Platform:** Web
@@ -856,8 +898,9 @@ Developed various features for the administration game management backoffice (ac
 
 ---
 
-## Parfois B2B Portal (Supplier-Reseller Online Store)
+## Parfois B2B Portal
 
+- **TLDR:** B2B Portal for Handbags and Fashion Accessories Brand
 - **Start:** 2012
 - **Client:** Parfois (through Hive Solutions)
 - **Technologies:** Oracle DB, C#, SQL, PL/SQL
@@ -870,8 +913,9 @@ I was contracted as a consultant to empower the company's development team, gett
 
 ---
 
-## Bargania (Deal-a-Day Aggregation Service)
+## Bargania
 
+- **TLDR:** Deal-a-Day Aggregation Service
 - **Start:** 2011
 - **Client:** Hive Solutions
 - **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, jQuery, UXF
@@ -884,8 +928,9 @@ Developed core features, and did copywriting and translation for the website and
 
 ---
 
-## A La Carte (Restaurant Natural Language Search Engine)
+## A La Carte
 
+- **TLDR:** Restaurant Search Engine
 - **Start:** 2010
 - **Client:** Hive Solutions
 - **Technologies:** Python, HTML, XML, MySQL
@@ -898,8 +943,9 @@ Designed and developed all ETL components for food indexing and search system. C
 
 ---
 
-## Mariachi (Cross-Platform Shoot'em up Game)
+## Mariachi
 
+- **TLDR:** Cross-Platform Shoot'em Up Game
 - **Start:** 2010
 - **Client:** Hive Solutions
 - **Technologies:** C++, Objective-C, OpenGL ES
@@ -912,8 +958,9 @@ Developed and implemented game's logic, model importation, and physics engine.
 
 ---
 
-## Panzerini (Web Based Battlebots like Deathmatch game)
+## Panzerini
 
+- **TLDR:** Battlebots-like Game
 - **Start:** 2010
 - **Client:** Hive Solutions
 - **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, jQuery, UXF
@@ -926,8 +973,9 @@ Developed some core features and artificial intelligence for some sample bots.
 
 ---
 
-## Schoooools (Social Network for Schools)
+## Schoooools
 
+- **TLDR:** Social Network for Schools
 - **Start:** 2010
 - **Client:** Schoooools (through Hive Solutions)
 - **Technologies:** PhoneGap, Objective-C, HTML, JavaScript, CSS, Ruby on Rails
@@ -940,8 +988,9 @@ Developed core features (action tracking and analytics, as well as some classroo
 
 ---
 
-## Take the Bill (SaaS Invoicing Solution)
+## Take the Bill
 
+- **TLDR:** SaaS Invoicing Solution
 - **Start:** 2010
 - **Client:** Hive Solutions
 - **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, UXF
@@ -954,8 +1003,9 @@ Developed some core backend features and frontend features.
 
 ---
 
-## Frontdoor (SaaS ERP)
+## Frontdoor
 
+- **TLDR:** SaaS ERP Solution
 - **Start:** 2008
 - **Client:** Hive Solutions
 - **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, jQuery, UXF
@@ -966,8 +1016,9 @@ Developed back-end logic for online Point-of-Sale SaaS product using Python with
 
 ---
 
-## Colony Framework (Modularity Framework)
+## Colony Framework
 
+- **TLDR:** Modularity Container Framework
 - **Start:** 2008
 - **Client:** Hive Solutions
 - **Technologies:** Python, JavaScript
@@ -980,8 +1031,9 @@ Developed core technology for the framework, wrote technical documentation, desi
 
 ---
 
-## MCH Workflow Helpdesk Innovation (Helpdesk Ticketing System)
+## MCH Workflow Helpdesk Innovation
 
+- **TLDR:** Knowledge Management System for Helpdesk Support
 - **Start:** 2006
 - **Client:** Modelo Continente Hipermercados (through FEUP)
 - **Technologies:** C#, ASP.NET, SQL Server
@@ -996,8 +1048,9 @@ The final product was successfully completed and deployed in the partner enterpr
 
 ---
 
-## Nihonaid (Japanese Language Learning Assistant)
+## Nihonaid
 
+- **TLDR:** Japanese Language Learning Assistant
 - **Start:** 2006
 - **Client:** Myself
 - **Technologies:** C#, SQL Server, Neural Networks
@@ -1015,8 +1068,9 @@ With this system in place, memorizing the characters was as easy as simply doing
 
 ---
 
-## Clube de Karate da Maia (Website for Karate Club)
+## Clube de Karate da Maia
 
+- **TLDR:** Community Website for Karate Club
 - **Start:** 2005
 - **Client:** Clube de Karate da Maia
 - **Technologies:** Joomla, PHP, MySQL
@@ -1031,8 +1085,9 @@ Learned to customize the Mambo/Joomla Content Management System to provide most 
 
 ---
 
-## NeuralJ (Java Neural Network Library)
+## NeuralJ
 
+- **TLDR:** Neural Network Library for Java
 - **Start:** 2005
 - **Client:** Me
 - **Technologies:** Java
@@ -1046,8 +1101,9 @@ Improved the knowledge on Neural Networks and Genetic Algorithms, as well as the
 
 ---
 
-## Clube do Paiva (Extreme Sports Company Website)
+## Clube do Paiva
 
+- **TLDR:** Extreme Sports Company Website
 - **Start:** 2004
 - **Client:** Clube do Paiva
 - **Technologies:** PHP, MySQL
@@ -1059,8 +1115,9 @@ Handled entire back end production of a website, web application and database pr
 
 ---
 
-## European Student Moon Orbiter (European Space Agency Student Sattellite Project)
+## European Student Moon Orbiter
 
+- **TLDR:** European Space Agency Student Sattellite Project
 - **Start:** 2004
 - **Client:** European Space Agency (through FEUP)
 
@@ -1075,8 +1132,9 @@ Amongst the lessons learned, the personal revalidation on the power of effective
 
 ---
 
-## Computer Capers (Adventure Game for the Commodore Amiga)
+## Computer Capers
 
+- **TLDR:** Adventure Game for the Commodore Amiga
 - **Start:** 1996
 - **Client:** Me
 - **Technologies:** AMOS Basic
