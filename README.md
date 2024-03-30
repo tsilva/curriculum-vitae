@@ -423,7 +423,7 @@ Acted as both full-stack developer and as a coordinator of another developer and
 
 ---
 
-## Windows Dev Center Partners
+## Windows Dev Center - App Middleware Partners
 
 - **TLDR:** Middleware Directory for Microsoft Partners
 - **Start:** 2016
@@ -483,14 +483,14 @@ Website was developed according to pre-existing design specs. Developed core fea
 
 ---
 
-## Speakwrite
+## SpeakWrite
 
 - **TLDR:** iOS Audio Transcribing Application
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
 - **Technologies:** iOS, Objective-C
 
-Speakwrite is an application where the user can record something he says, and have it transcribed to text within a short period of time (the recorded speech is sent over to human transcribers).
+SpeakWrite is an application where the user can record something he says, and have it transcribed to text within a short period of time (the recorded speech is sent over to human transcribers).
 
 Fixed many critical bugs in several parts of the app. It was a challenging project because the existing code-base was very messy.
 
@@ -498,7 +498,7 @@ Fixed many critical bugs in several parts of the app. It was a challenging proje
 
 ---
 
-## Details Pal
+## Details PAL
 
 - **TLDR:** iOS Dog Activity Tracker with Bluetooth Collar
 - **Start:** 2015
@@ -519,7 +519,7 @@ Developed application from top to bottom, playing pivotal role in handling commu
 
 ---
 
-## Don't Mess with Texas
+## Don't Mess With Texas - Report a Litterer
 
 - **TLDR:** iOS Littering Reporting App
 - **Start:** 2015
@@ -528,7 +528,7 @@ Developed application from top to bottom, playing pivotal role in handling commu
 - **Platform:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C
 
-Don't Mess with Texas is an application that lets Texas citizens report when they have seen someone littering.
+Don't Mess With Texas - Report a Litterer is an application that lets Texas citizens report when they have seen someone littering.
 
 Fixed bugs in several parts of the app and implemented new features. Challenging project because the existing code-base was very messy.
 
@@ -667,7 +667,7 @@ Fixed bugs in several parts of the app and implemented new features (mainly rela
 
 ---
 
-## Academy Sports LIVE FIT
+## Academy Sports - LIVE FIT
 
 - **TLDR:** iOS Sports Tracking app
 - **Start:** 2014
@@ -864,7 +864,7 @@ Took on the role of Full-stack Developer (developed everything from top to botto
 
 ---
 
-## Rocklobby iOS App
+## Rocklobby - iOS App
 
 - **TLDR:** iOS Music Social Network for Fans, Artists and Venues
 - **Start:** 2013
