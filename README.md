@@ -139,8 +139,8 @@ My role was to elicit requirements from stakeholders, research and experiment di
 
 Upon deployment on the Tynker's parent and school pages, the chatbot demonstrated a significant impact on user engagement. Metrics collected post-launch showed a high conversion rate among users who interacted with the chatbot, leading to sign-ups and/or purchases.
 
+- [Gallery](https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6)
 - [Help Agent in Parents page](https://www.tynker.com/parents/) (chat button in bottom right corner)
-- [Assets](https://drive.google.com/drive/folders/1U9ncLOBEwThtn-3cf9GPUZisN4scWZ2d?usp=sharing)
 
 ---
 
@@ -160,11 +160,11 @@ This extension allows declarative specifying configuration variables, how they b
 
 My role was to architect the solution, develop the core features, and coordinate of the other Software Developer and the Game Design team who developed the game templates. 
 
+- [Gallery](https://photos.app.goo.gl/ZKss72chsSgrfSMfA)
 - [Fashion Designer](https://www.tynker.com/block-ide?type=arcade&p=63f90df1218b2c5338740c8d)
 - [Pet Designer](https://www.tynker.com/block-ide?type=arcade&p=6418ea6f218b2c0767316018)
 - [Catch 'Em](https://www.tynker.com/block-ide?type=arcade&p=642dc40c218b2c55131c2aca)
 - [Bop 'Em](https://www.tynker.com/block-ide?type=arcade&p=642dc5b8218b2c575d1e5e2a)
-- [Assets](https://drive.google.com/drive/folders/19G_5D410i1dO6kpUyacKjUNuROmoIw7J?usp=sharing)
 
 ---
 
@@ -185,10 +185,10 @@ In my role, I was responsible for conceptualizing the game, architecting the sol
 
 Successfully launched in time for the World Cup, the game was accessible via the web and integrated into Tynker Apps for iOS and Android through web views. It has since enjoyed widespread success, with millions of matches played across numerous rounds and a total prize pool exceeding $20,000 USD being awarded in the first four rounds.
 
+- [Gallery](https://photos.app.goo.gl/hJ5rUAbWMr21xNuJ8)
 - [Landing Page](https://www.tynker.com/codingcup/)
 - [Game Trailer](https://www.tynker.com/codingcup/static/media/FIFA-Welcome.5d408e712931137e67e2.mp4)
 - [Leaderboard](https://www.tynker.com/codingcup/competitions/65a637807dbf0021445757ac/leaderboards/countries)
-- [Assets](https://drive.google.com/drive/folders/1g8cdmQdJ7ZEhhKSjzuYEEssr73QUi1B_?usp=sharing)
 
 ---
 
@@ -300,10 +300,10 @@ This project was a behemoth, it involved writing a lot of features from scratch.
 Team: All software development tasks were architected and performed by me. There was also a significant effort to upgrade some curriculum to the new version, which was done by the game development team.
 Looking back: Looking back I still think the extension framework and Redux Saga were good architectural decisions. The framework scaled great for new use cases, where most of the time one had only to create a new extension and perform minimal code changes across the others to develop the new feature. Coding with Redux Saga requires a paradigm shift and it was hard to onboard new people because of it. If I was comfortable with React at that time, and if version X was already available, I would just swap the whole stack with PHP + React + EmotionJS + Extension Framework + Redux Saga, and make a strong push for getting rid of Redux Saga completely if I was able to keep the application modular without it.
 
+- [Gallery](https://photos.app.goo.gl/rLjp8tBGs6WNStA18)
 - [Block IDE](https://www.tynker.com/ide/v3)
 - [Platformer - Retro Racer](https://www.tynker.com/ide/v3?type=platformer-v2&p=61a931e66634692f2b3a4310&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
 - [Platformer - Outlast the Onslaught](https://www.tynker.com/ide/v3?type=platformer-v2&p=61a9453f8bdab975987e36f2&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
-- [Assets](https://drive.google.com/drive/folders/1ugoXsBXkleQM3aD9m6Bk4vnvknsb9oY_?usp=sharing)
 
 ---
 
@@ -344,12 +344,12 @@ This tool was incorporated into the Tynker App and Mod Creator App, providing a 
 
 Popular to the time of this writing, several million assets have been created by users.
 
+- [Gallery](https://photos.app.goo.gl/7PtgswT8BT2jcXnR9)
 - [Skins - Steve](https://www.tynker.com/minecraft/editor/skin/steve/)
 - [Blocks - TNT](https://www.tynker.com/minecraft/editor/block/tnt/)
 - [Items - Diamond Sword](https://www.tynker.com/minecraft/editor/item/diamond_sword/)
 - [Mobs - Llama](https://www.tynker.com/minecraft/editor/mob/llama2/)
 - [Mobs - Pig](https://www.tynker.com/minecraft/editor/mob/pig/)
-- [Assets](https://drive.google.com/drive/folders/1tlldiP97AQ2Lxs3g0aipjVMR4ewcdIMH?usp=sharing)
 
 ---
 
@@ -383,7 +383,7 @@ Coordinated design and development of application. Developed some core parts of 
 <!--
 - [App Store](https://apps.apple.com/ca/app/kaboom-lights-out-reloaded/id1124058567)
 -->
-- [Assets](https://drive.google.com/drive/folders/1JWNMdjJxhhNybNfnjKNchI3p5Pwt5P0P?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8)
 
 ---
 
@@ -402,7 +402,7 @@ Took on the role of Tech Lead, developing core features, controlling timeline, a
 <!--
 - [Landing Page](https://web.archive.org/web/20171007054048/https://kustomize.karl.com/)
 -->
-- [Assets](https://drive.google.com/drive/folders/1QGSN0CJF7MNETwYuV5jQLJ8nCfg-ZJg1?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/wVCsT1Y5EKjcLgeU9)
 
 ---
 
@@ -418,8 +418,8 @@ Lugar da Jóia is a chain of jewellery stores, and this was its first venture in
 
 Acted as both full-stack developer and as a coordinator of another developer and designer. Developed a wide set of features across the site, both in frontend and in backend (the later leveraging the existing infrastructure provided by Hive Solutions' Budy e-commerce engine).
 
+- [Gallery](https://photos.app.goo.gl/J8zziNJajw6ZwRnm9)
 - [Landing Page](https://www.lugardajoia.com/index)
-- [Assets](https://drive.google.com/drive/folders/18xWUzCjG_HILCzUXtbjQAUNy7XQ8FBdJ?usp=sharing)
 
 ---
 
@@ -434,8 +434,8 @@ App Middleware Partners is a section of Microsoft's Windows Dev Center that serv
 
 In this project I handled communication with stakeholders, coordinated project design and development, and performed core development tasks. The most challenging part of this project was actually the social aspect. There was a lot of red tape to cut through in order to get hold of the required information to be able to integrate and deploy within the existing Microsoft infrastructure. This project started with a lot of unknowns that had to be solved by relentless cold calling different people on the organisational branch, in order to uncover the answer to all the questions. The project was delivered on time and on budget, against all challenges.
 
+- [Gallery](https://photos.app.goo.gl/T13vtSmmCndfCmUZ7)
 - [Website](https://web.archive.org/web/20160401014628/https://devcenterpartners.windows.com/)
-- [Assets](https://drive.google.com/drive/folders/1PyCxXjEA0yNKZQ1esq73XS5nIUffeAtC?usp=sharing)
 
 ---
 
@@ -451,7 +451,7 @@ MYSWEAR deployed a stand at Harrods (one of the world's most famous department s
 
 Developed new mode of operation for the customizer already used in the MYSWEAR online store, where client browser instances could remote control viewer browser instances using real-time communication with Websockets. Also developed orchestrator in Python that monitored the communication channel to instruct in which mode the hologram should be at a given time (coordinating the different viewer browser instances).
 
-- [Assets](https://drive.google.com/drive/folders/1F2fSP2kJC2cXq7e3dMe2N81zM3uS7ciO?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/TCP2sVwqjGtvvhx28)
 
 ---
 
@@ -479,7 +479,7 @@ MYSWEAR is an online store where the consumer can configure and purchase his own
 
 Website was developed according to pre-existing design specs. Developed core features and coordinated work of other developers (assigning tasks, reviewing pull requests and refactoring code before merging).
 
-- [Assets](https://drive.google.com/drive/folders/19BbngsLGtOq1_ZQwcG6Q-D8rNAM9wY2T?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/8gPa9phk2cwfVtH87)
 
 ---
 
@@ -494,7 +494,7 @@ SpeakWrite is an application where the user can record something he says, and ha
 
 Fixed many critical bugs in several parts of the app. It was a challenging project because the existing code-base was very messy.
 
-- [Assets](https://drive.google.com/drive/folders/1BtqOl1kcWRYmvNPmexgzSjWxudJRCXrS?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/53FXNdxeBmqoqXzs7)
 
 ---
 
@@ -514,8 +514,8 @@ Developed application from top to bottom, playing pivotal role in handling commu
 <!--
 - [App Store](https://apps.apple.com/us/app/details-pal-pet-activity-link/id1062049611)
 -->
+- [Gallery](https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7)
 - [Kickstarter](https://www.kickstarter.com/projects/1792953608/details-pal-a-pet-activity-link-for-every-dog)
-- [Assets](https://drive.google.com/drive/folders/1SgOc6tM0J63X61A_clquYrqC2G8JCw3S?usp=sharing)
 
 ---
 
@@ -535,8 +535,8 @@ Fixed bugs in several parts of the app and implemented new features. Challenging
 <!--
 - [App Store](https://itunes.apple.com/us/app/litterer/id882082348)
 -->
+- [Gallery](https://photos.app.goo.gl/DoLcczf7SZpYcroK9)
 - [Website](https://www.dontmesswithtexas.org/)
-- [Assets](https://drive.google.com/drive/folders/1I6W7VQslgiNI32NrPe8KBMprndmjzjqg?usp=sharing)
 
 ---
 
@@ -557,7 +557,7 @@ Work consisted in fixing tricky bugs in existing codebase for the iPhone and the
 - [App Store](https://itunes.apple.com/us/app/energi-coach-personalized/id986965532)
 -->
 - [Website](http://energi.life)
-- [Assets](https://drive.google.com/drive/folders/1LppDJ595aU9TJqUOohWJUpOJcgMeEFsv?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/zdBc2yVP85U8dVNUA)
 
 ---
 
@@ -577,7 +577,7 @@ Developed iOS application and backend logic from top to bottom, also integrating
 <!--
 - [App Store](https://itunes.apple.com/us/app/topshelf-alcohol-delivery/id974722644)
 -->
-- [Assets](https://drive.google.com/drive/folders/11yKTjMhHgLxpyAlB7VwJbhcloB2xmIW1?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6)
 
 ---
 
@@ -592,6 +592,7 @@ Developed iOS application and backend logic from top to bottom, also integrating
 
 TALKiT is a social media alternative to texting where you can share your experiences by making your voice heard. It allows you to share your experience by recording your voice, instead of typing text.
 
+- [Gallery](https://photos.app.goo.gl/VJkCBsdmQzt4ihMS7)
 - [Website](https://web.archive.org/web/20180326180938/http://www.gettalkit.com/)
 - [App Store](https://itunes.apple.com/us/app/talkit-hands-free-social-network/id880219768)
 
@@ -613,9 +614,9 @@ Fixed bugs in several parts of the app and implemented new features. This was a 
 <!--
 - [App Store](https://itunes.apple.com/us/app/us-likey/id717595225)
 -->
+- [Gallery](https://photos.app.goo.gl/349FvG9KzJAxKMGC9)
 - [Website](https://web.archive.org/web/20160527230029/http://www.uslikey.com/)
 - [Facebook](https://www.facebook.com/uslikey)
-- [Assets](https://drive.google.com/drive/folders/1rjik2XNrUXKQla1AGVOTubFenvIQOc2i?usp=sharing)
 
 ---
 
@@ -632,8 +633,8 @@ WIN Atlas is a career guidance application that guides you by having you perform
 
 Developed app client-side and integrated with server-side implemented by in-house developers.
 
+- [Gallery](https://photos.app.goo.gl/XCnJs2ELENcah7Ek7)
 - [App Store](https://itunes.apple.com/us/app/win-atlas-career-planning/id997400974)
-- [Assets](https://drive.google.com/drive/folders/1mMbGhuAMr-qD8yxuieAUVCB4UdtvO2hr?usp=sharing)
 
 ---
 
@@ -648,7 +649,7 @@ Knod is a media discovery social network where you rate Movies, Books, Songs, Ga
 
 I was involved in the bootstrap of the project and creating some core features for the iOS app. Later on I was moved to a more urgent project, and later came back to help out with other features and bug fixes.
 
-- [Assets](https://drive.google.com/drive/folders/1fOxZHd6cvdATyoZ2POFcvQyxDjW7rjOd?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6)
 
 ---
 
@@ -678,7 +679,7 @@ LIVE FIT is a sports tracking application for the Academy Sports + Outdoors spor
 
 This application integrated with MapMyFitness' SDK to store and retrieve activity data from the MMF service. I was blocked by a lot of bugs that existed in the SDK at the time and ended up fully refactoring some sections of the SDK (with MMF's permission) to be able to complete the application on schedule. They admired the quality of the code and the speed it was developed in and invited me back to develop some features in the official MMF app.
 
-- [Assets](https://drive.google.com/drive/folders/1LHydXY456xh1mu06tCp9CNYlhuUQgsjk?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/AMMpRdPWMU98D7mW7)
 
 ---
 
@@ -699,8 +700,8 @@ Fixed many critical and non-critical bugs in existing app. Challenging because c
 <!--
 - [App Store](https://itunes.apple.com/us/app/active-heroes/id635435400)
 -->
+- [Gallery](https://photos.app.goo.gl/JkBgK1bbqhm2b1nb6)
 - [Website](http://activeheroes.org)
-- [Assets](https://drive.google.com/drive/folders/1VujTyiDi84lsuO0WdP42lGV-0roPabn8?usp=sharing)
 
 ---
 
@@ -718,7 +719,7 @@ Furtile is a social network that allows pet owners and breeders to connect in or
 <!--
 - [App Store](https://itunes.apple.com/us/app/furtile/id883776204)
 -->
-- [Assets](https://drive.google.com/drive/folders/1hDeIQd85G_-Ng7D6KwiVV0t7Wn0Qspbm?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/Ebwb13vPBHovrK1X9)
 
 ---
 
@@ -733,7 +734,7 @@ MapMyFitness was one of the first activity tracking applications, and ended up b
 
 Implemented the Challenges feature, as well as the Weight and Sleep sections of the 24/7 tracking feature for the extremely popular Map My Fitness app (now a part of Under Armour). Map My Fitness is a huge app, with an enormous codebase, so it was a bit challenging to dig in and get stuff done, but nonetheless, the features were fully implemented and delivered on schedule.
 
-- [Assets](https://drive.google.com/drive/folders/1PxIaPRSlIQoBNLmgv9-fuIta83aqmEES?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/yV5rQH6QvrL3yQh69)
 
 ---
 
@@ -748,7 +749,7 @@ Project Capture is an app where users can report UFO sightings.
 
 This app was coded by another developer, and I just ended up doing many bug fixes on it.
 
-- [Assets](https://drive.google.com/drive/folders/13ppsp_VUd_HZl5XQ8oNKVBU15KGTgPU2?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/zdBc2yVP85U8dVNUA)
 
 ---
 
@@ -768,7 +769,7 @@ I was sent into the project to help guide it back into a predictable path, and e
 <!--
 - [App Store](https://itunes.apple.com/us/app/randid/id791202964)
 -->
-- [Assets](https://drive.google.com/drive/folders/1MRKaT3uCH7KYIfIDtC6zmfUyT8kuknbZ?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/33wt6ewUqtBV1mwB7)
 
 ---
 
@@ -790,7 +791,7 @@ Developed iOS application from top to bottom in record time, against every unexp
 - [Website](http://joinwego.com/)
 - [Facebook](https://www.facebook.com/joinWeGo)
 -->
-- [Assets](https://drive.google.com/drive/folders/1Ctw-j0Alm0qkIkNo47V8zgN09uhqNojw?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/S4mAy24CX2pggMEj8)
 
 ---
 
@@ -811,7 +812,7 @@ I developed most of the application, however I didn't end up completing it, as I
 - [App Store](https://itunes.apple.com/BR/app/id745537889)
 -->
 - [Facebook](https://www.facebook.com/clockadoodleapp)
-- [Assets](https://drive.google.com/drive/folders/1BHwu2Ahcwq0fZU0OxUECIBUBLuVa0oDS?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/EaASm71wXHKvfNY47)
 
 ---
 
@@ -826,7 +827,7 @@ China Pro Tools is a market analytics solution that provides decision supporting
 
 Developed application from top to bottom in accordance to existing specs, and delivered exactly on schedule.
 
-- [Assets](https://drive.google.com/drive/folders/1SHZt1hVSt8QN8Qv8IWKE3ueYShIgM-c5?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/16xmzjMpPP9pP7Z88)
 
 ---
 
@@ -842,7 +843,7 @@ Discover Your City is a travelling app for people interested in architecture, gu
 
 Implemented application from top to bottom in accordance to pre-existing design specs. The server-side included a backoffice where the application's contents could me managed.
 
-- [Assets](https://drive.google.com/drive/folders/1fJ1bAZHyVMdDkNXo5wtKytiwB6cTJo9c?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/RGoL3s92XLfNqsVa9)
 
 ---
 
@@ -859,8 +860,8 @@ Rocklobby is a music social network for artists, venues and fans. In it, you cou
 
 Took on the role of Full-stack Developer (developed everything from top to bottom), Project Manager (coordinated designer and handled communication with client).
 
+- [Gallery](https://photos.app.goo.gl/paiggJ6dEvdKeBwk7)
 - [Website](https://web.archive.org/web/20161017041055/http://www.rocklobby.com/)
-- [Assets](https://drive.google.com/drive/folders/1QpGx4v15_phovqlYMuQ9i-t5PPbIY0oy?usp=sharing)
 
 ---
 
@@ -876,7 +877,7 @@ Rocklobby was a music social network for artists, venues and fans.
 
 Developed the client-side (the iOS app), cooperating with another pre-existing developer that was developing the server-side. The iOS app was an existing codebase, but I had to throw it all away and start from scratch because it was in a really bad place. Application was delivered on schedule within estimated budget.
 
-- [Assets](https://drive.google.com/drive/folders/1b-WWwNh8g27hcMWqCMpj6KHs-iBXdz5J?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/8c4fpByixacvbZvAA)
 
 ---
 
@@ -892,8 +893,8 @@ Fresh Deck Poker is an online multiplayer Poker game with real cash prizes.
 
 Developed various features for the administration game management backoffice (account management, game and table management, monetization, odds assignement, etc.). Some requests went beyond Django's capabilities and resulted in me having to do some heavy-duty hacks to add those features (eg: monkey-patching).
 
+- [Gallery](https://photos.app.goo.gl/FoLw9hqAmi8UUrQw9)
 - [Website](https://web.archive.org/web/20200724094354/http://freshdeckpoker.com/)
-- [Assets](https://drive.google.com/drive/folders/1E7sdm1AoWU9OAy44QwMDPqp1eID3LZdg?usp=sharing)
 
 ---
 
@@ -923,7 +924,7 @@ Bargania was a Deal-a-Day service (Groupon clones) aggregation platform, where o
 
 Developed core features, and did copywriting and translation for the website and all associated media (eg: adverstising).
 
-- [Assets](https://drive.google.com/drive/folders/1XqttnvfIif3_0aml9Isy8JGZvZ7xk1fn?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/nqtk5jtiGQ56GjCm8)
 
 ---
 
@@ -938,7 +939,7 @@ A La Carte was a restaurant search engine where you could search for restaurants
 
 Designed and developed all ETL components for food indexing and search system. Created software for retrieval of information from wide array of heterogeneous data sources.
 
-- [Assets](https://drive.google.com/drive/folders/1NUuKQbeL32M9QCykxOFMQv8nwe7X-cuD?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/WGcN6Uyiktbc9LHFA)
 
 ---
 
@@ -968,7 +969,7 @@ Panzerini was a Battlebots-like game built with Hive Solutions' Colony Framework
 
 Developed some core features and artificial intelligence for some sample bots.
 
-- [Assets](https://drive.google.com/drive/folders/1I9RQCNUJReQ-n_rBFoJaEK9B35-kzBP2?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/uuMTMyFEtspu8NBY7)
 
 ---
 
@@ -983,7 +984,7 @@ Schoooools provides personal and social learning spaces that empower collaborati
 
 Developed core features (action tracking and analytics, as well as some classroom management features), and created mobile cross-platform application for the service (using PhoneGap).
 
-- [Assets](https://drive.google.com/drive/folders/1ATaD5bHzPPi4ZSTrEKXZOWS4kmPQV18u?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/WevSYZW9bJH4Kyaz8)
 
 ---
 
@@ -998,7 +999,7 @@ Take the Bill is an online invoicing solution that was to be a public service bu
 
 Developed some core backend features and frontend features.
 
-- [Assets](https://drive.google.com/drive/folders/1KVh00LftUS4fd_WOeTDfi3HARoveaeLU?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/PNSdpTtKAb8t4bkr5)
 
 ---
 
@@ -1011,7 +1012,7 @@ Developed some core backend features and frontend features.
 
 Developed back-end logic for online Point-of-Sale SaaS product using Python with the Colony Framework and its respective MVC stack. Also developed front-end for same system through extensive usage of JavaScript and jQuery to create a productive user experience.
 
-- [Assets](https://drive.google.com/drive/folders/14jhuR1RMrMtY4S48cSr-GB65JFqk2QSW?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/9qeFGMfqXWxdYXLXA)
 
 ---
 
@@ -1026,7 +1027,7 @@ Colony is a modularity container where plugins can be deployed, loaded and unloa
 
 Developed core technology for the framework, wrote technical documentation, designed marketing videos (storylines), comic books (storylines and sketches), and other copywriting efforts.
 
-- [Assets](https://drive.google.com/drive/folders/1qqGlfwgzF2yGy6YGSOc9otWD_CeLG2KG?usp=sharing)
+- [Gallery](https://photos.app.goo.gl/g5w3nPii7GgV5AeA6)
 
 ---
 
