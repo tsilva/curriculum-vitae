@@ -323,8 +323,8 @@ To accommodate the game's asynchronous nature and the use of Tynker's block-base
 
 Popular to the time of this writing, several million matches have been played across numerous seasons.
 
-- [Crystal Clash Dashboard](https://www.tynker.com/dashboard/student/#/battles/crystalclash)
-- [Assets](https://drive.google.com/drive/folders/1CmqQEERQ3JPsENW-ilyJtkB-i3aYBVia?usp=sharing)
+- [Gallery](https://photos.google.com/share/AF1QipMr2gNFGS497iVv5IzycTa3KhrrZ2VyvtCNQCIkHutntaMPO3Cyq3Gj1o5KxGCYhQ?key=UHNNTFpUeVRXNFNtQTRHRF82T3AwYjlQb1ZISDZR)
+- [Dashboard](https://www.tynker.com/dashboard/student/#/battles/crystalclash)
 
 ---
 
