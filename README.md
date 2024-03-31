@@ -210,8 +210,6 @@ My role was to quickly identify what the requirements for such an experience was
 
 The solution was deployed on schedule, with just a few minor hiccups mostly related to the video conferencing solution we integrated and a few cases of user mistakes.
 
-- [Assets](https://drive.google.com/drive/folders/1GmAUerOyCbyYC4Aw35oFUyyf9Vho7Fjm?usp=sharing)
-
 ---
 
 ## Quizzer
@@ -236,7 +234,6 @@ The solution was deployed on schedule, and remained a core part of content progr
 
 - [Block Coding Placement Test](https://www.tynker.com/quizzer/?type=placement:block)
 - [Text Coding Placement Test](https://www.tynker.com/quizzer/?type=placement:text)
-- [Assets](https://drive.google.com/drive/folders/1Mp9_SVa6b1KaWrg_QExZdzEZ-6UnG4p_?usp=sharing)
 
 ---
 
@@ -251,8 +248,6 @@ The solution was deployed on schedule, and remained a core part of content progr
 
 Combining the [Collaborative Learning System](#collaborative-learning-system) features with the [Live Classes](#live-classes) platform, developed an integrated coaching management system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
 
-- [Assets](https://drive.google.com/drive/folders/1YLENYlSViQtZBp4rEjQpO1SRj8wGCJzb?usp=sharing)
-
 ---
 
 ## Lynker
@@ -264,8 +259,6 @@ Combining the [Collaborative Learning System](#collaborative-learning-system) fe
 - **Technologies:** NodeJS, Express, socket.io, Redis, NGINX
 
 Beginning in 2020, I spearheaded the creation of the Lynker server for Tynker, a dynamic messaging server engineered to enhance real-time collaboration and notification processes. This project harnessed the power of NodeJS, Express, socket.io, Redis, and NGINX to enable a range of functionalities, from live dashboard notifications to project collaboration and multiplayer game development. Our design prioritized real-time updates, leveraging PM2 for efficient process management, Nginx for effective load balancing, Redis for fast message queuing, and MongoDB for reliable data storage. The architecture was carefully developed to support multi-tenancy, ensuring the system's scalability and adaptability in various environments. We implemented secure authentication through signed data from Tynker's API, providing controlled access based on user roles and permissions. While the server has proven its robustness in live applications, we are looking to further enhance its performance by shifting from Socket.io to native WebSockets and simplifying operations by phasing out status channels.
-
-- [Assets](https://drive.google.com/drive/folders/1mbUtmgwDURrcWm-DJ9bdHDemkaTRaj-M?usp=sharing)
 
 ---
 
@@ -280,7 +273,6 @@ Beginning in 2020, I spearheaded the creation of the Lynker server for Tynker, a
 Using the Lynker messaging server I previously developed, augmented the Block IDE to have collaborative learning features, such as the ability to share projects, chat about them, comment on code, and monitor changes in real-time. This application was granted an [U.S. patent](https://patents.google.com/patent/US11699357B2).
 
 - [Patent - Collaborative Learning System (US11699357B2)](https://patents.google.com/patent/US11699357B2)
-- [Assets](https://drive.google.com/drive/folders/1fzpM14EZyMfkXYuXY70SyMDHLQI99uVK?usp=sharing)
 
 ---
 
@@ -363,8 +355,6 @@ Popular to the time of this writing, several million assets have been created by
 Developed a custom MongoDB ODM for a legacy, unstructured PHP codebase to enforce object-oriented design principles. This initiative addressed significant code redundancy and facilitated the seamless transport of data and logic across the stack, which was previously unattainable due to a heterogeneous table-to-object mapping scheme and numerous database workarounds. Opting to create a tailored solution—completed in just a few days—yielded substantial long-term benefits, demonstrating remarkable return on investment through years of smooth operation with minimal issues.
 
 However, this experience underscored the importance of cautious feature development aimed at maskinLg structural deficiencies. While the custom ODM effectively abstracted certain data model flaws, it inadvertently reduced the urgency to address these underlying issues directly. This approach allowed the data model's problems to persist and propagate throughout the stack, highlighting a critical lesson on balancing immediate solutions with the need for fundamental structural improvements.
-
-- [Assets](https://drive.google.com/drive/folders/1dudBjbmBCSEQL6hyCdiPYDbAX8ITiiMe?usp=sharing)
 
 ---
 
@@ -463,8 +453,6 @@ Developed new mode of operation for the customizer already used in the MYSWEAR o
 - **Technologies:** iOS, Objective-C
 
 Single-handedly developed proof of concept native iOS application with the same shoe customization experience provided in the MYSWEAR website, but in a native app. Proof of concept was developed in record time and used for demo purposes successfully. 
-
-- [Assets](https://drive.google.com/drive/folders/1aYrF1_TYBgGzolnF6cyyoNU1qcyQ7RET?usp=sharing)
 
 ---
 
@@ -663,8 +651,6 @@ I was involved in the bootstrap of the project and creating some core features f
 ValetTab is an application that facilitates the valet parking experience in adhering stands. With it you can checkin, notify that you're about to checkout so that your car can be picked up, and pay for the parking right from your phone. Adhering stands have the companion ValetStand app, that lets them keep track of parked cars, checkout requests and payments.
 
 Fixed bugs in several parts of the app and implemented new features (mainly related with the payment steps). This project was challenging project because the existing codebase was very messy.
-
-- [Assets](https://drive.google.com/drive/folders/11bBaTFHyYrdRNekyc3EJU5Gr_AaXv-vE?usp=sharing)
 
 ---
 
@@ -909,8 +895,6 @@ This was a portal for managing B2B communications and transactions for the PARFO
 
 I was contracted as a consultant to empower the company's development team, getting them up to speed with the required technologies. I ended up filling the role of Tech Lead, leading the whole development team to finish the project on time, on what was a very tight schedule and a completely underestimated budget, by taking on all possible and available shortcuts I could find.
 
-- [Assets](https://drive.google.com/drive/folders/1Rrv2lkJvGEVtWydRf8_gcMihn7DWlUXn?usp=drive_link)
-
 ---
 
 ## Bargania
@@ -953,8 +937,6 @@ Designed and developed all ETL components for food indexing and search system. C
 Mariachi was a cross-platform Shoot'em Up game aimed at mobile platforms.
 
 Developed and implemented game's logic, model importation, and physics engine.
-
-- [Assets](https://drive.google.com/drive/folders/1szD-hukU4EZO-duM_9QLYt3BOM2CqW5y?usp=sharing)
 
 ---
 
@@ -1064,7 +1046,6 @@ This way, the software would only present the user with characters he didn't kno
 With this system in place, memorizing the characters was as easy as simply doing a daily session with the app, since it would make sure you didn't forget the characters you had previously learned, by progressively building a model on how your learning and forgetting curve were.
 
 - [Sourceforce project](https://sourceforge.net/projects/nihonaid/)
-- [Assets](https://drive.google.com/drive/folders/1QTafd75HCV9yAUjXZ0y08ThdaE-3OE4a?usp=sharing)
 
 ---
 
@@ -1081,8 +1062,6 @@ Solution was provided via a website implemented over the Joomla framework, using
 
 Learned to customize the Mambo/Joomla Content Management System to provide most functionalities a regular community website needs.
 
-- [Assets](https://drive.google.com/drive/folders/1Q_Wg6Mr0OpWMYF9QhByc0GskfkO7G3RK?usp=sharing)
-
 ---
 
 ## NeuralJ
@@ -1097,8 +1076,6 @@ Neural Network library for Java.
 
 Improved the knowledge on Neural Networks and Genetic Algorithms, as well as the skills in Java programming, and software architecture.
 
-- [Assets](https://drive.google.com/drive/folders/1oVhoArCtIAM8-dfHNUyTcK3_pEwrH_0M?usp=sharing)
-
 ---
 
 ## Clube do Paiva
@@ -1111,7 +1088,6 @@ Improved the knowledge on Neural Networks and Genetic Algorithms, as well as the
 Handled entire back end production of a website, web application and database programming. Solution was provided in the form of a web application implemented in the PHP scripting language, interfacing with a MySQL database.
 
 - [Website](https://www.clubedopaiva.com/)
-- [Assets](https://drive.google.com/drive/folders/1YwL5wz8jdm3rOfPSIDFD0vi0qHqlSLBF?usp=sharing)
 
 ---
 
@@ -1128,7 +1104,6 @@ This project is a part of the European Space Agency's SSETI programme (Student S
 Amongst the lessons learned, the personal revalidation on the power of effective team-work stands out.
 
 - [ESMO Project](https://www.esa.int/Education/European_Student_Moon_Orbiter)
-- [Assets](https://drive.google.com/drive/folders/1ggkcdsNi1Y6VYKy6bfYSntaFQoKlhhP-?usp=sharing)
 
 ---
 
@@ -1144,7 +1119,6 @@ Computer Capers was a video game I developed when I was 12 years old and sent fo
 The whole game plot was incredibly dumb, which was natural for my age. The mechanics were very simple, you just walked around a tile-based world, talking to people who were looking for certain items, and when you found and gave them those items, they rewarded you with other items that other people were looking for, which let you advance the plot. The game graphics were created by me as well.
 
 - [Demo Video](https://drive.google.com/file/d/1DtE3ewh4trvmyFp3PjZC8USm_yMHQwpu/view?usp=drive_link)
-- [Assets](https://drive.google.com/drive/folders/1Ag30LUbb_ZY-tEq2I7vgEJb9dkED5A--?usp=sharing)
 
 ---
 
