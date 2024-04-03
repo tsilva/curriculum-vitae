@@ -232,6 +232,7 @@ My role was to architect a solution and implement the full-stack, frontend and b
 
 The solution was deployed on schedule, and remained a core part of content progression for the home user up to the day of this writing, with minimal maintenance requirements.
 
+- [Gallery](https://photos.app.goo.gl/tWYftTXKxePWfJ2G6)
 - [Block Coding Placement Test](https://www.tynker.com/quizzer/?type=placement:block)
 - [Text Coding Placement Test](https://www.tynker.com/quizzer/?type=placement:text)
 
@@ -248,6 +249,7 @@ The solution was deployed on schedule, and remained a core part of content progr
 
 Combining the [Collaborative Learning System](#collaborative-learning-system) features with the [Live Classes](#live-classes) platform, developed an integrated coaching management system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
 
+- [Gallery](https://photos.app.goo.gl/rGGaisXY8zYbEPZK6)
 ---
 
 ## Lynker
@@ -544,8 +546,8 @@ Work consisted in fixing tricky bugs in existing codebase for the iPhone and the
 <!--
 - [App Store](https://itunes.apple.com/us/app/energi-coach-personalized/id986965532)
 -->
-- [Website](http://energi.life)
 - [Gallery](https://photos.app.goo.gl/zdBc2yVP85U8dVNUA)
+- [Website](http://energi.life)
 
 ---
 
@@ -651,6 +653,8 @@ I was involved in the bootstrap of the project and creating some core features f
 ValetTab is an application that facilitates the valet parking experience in adhering stands. With it you can checkin, notify that you're about to checkout so that your car can be picked up, and pay for the parking right from your phone. Adhering stands have the companion ValetStand app, that lets them keep track of parked cars, checkout requests and payments.
 
 Fixed bugs in several parts of the app and implemented new features (mainly related with the payment steps). This project was challenging project because the existing codebase was very messy.
+
+- [Gallery](https://photos.app.goo.gl/mf692orHUWtw1RHp7)
 
 ---
 
@@ -797,8 +801,8 @@ I developed most of the application, however I didn't end up completing it, as I
 <!--
 - [App Store](https://itunes.apple.com/BR/app/id745537889)
 -->
-- [Facebook](https://www.facebook.com/clockadoodleapp)
 - [Gallery](https://photos.app.goo.gl/EaASm71wXHKvfNY47)
+- [Facebook](https://www.facebook.com/clockadoodleapp)
 
 ---
 
@@ -937,6 +941,8 @@ Designed and developed all ETL components for food indexing and search system. C
 Mariachi was a cross-platform Shoot'em Up game aimed at mobile platforms.
 
 Developed and implemented game's logic, model importation, and physics engine.
+
+- [Gallery](https://photos.app.goo.gl/q2zvsL82jeqiKAPV7)
 
 ---
 
@@ -1118,6 +1124,7 @@ Computer Capers was a video game I developed when I was 12 years old and sent fo
 
 The whole game plot was incredibly dumb, which was natural for my age. The mechanics were very simple, you just walked around a tile-based world, talking to people who were looking for certain items, and when you found and gave them those items, they rewarded you with other items that other people were looking for, which let you advance the plot. The game graphics were created by me as well.
 
+- [Gallery](https://photos.app.goo.gl/fk1GEomK621wdJ7s6)
 - [Demo Video](https://drive.google.com/file/d/1DtE3ewh4trvmyFp3PjZC8USm_yMHQwpu/view?usp=drive_link)
 
 ---
