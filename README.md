@@ -320,6 +320,22 @@ Popular to the time of this writing, several million matches have been played ac
 - [Gallery](https://photos.google.com/share/AF1QipMr2gNFGS497iVv5IzycTa3KhrrZ2VyvtCNQCIkHutntaMPO3Cyq3Gj1o5KxGCYhQ?key=UHNNTFpUeVRXNFNtQTRHRF82T3AwYjlQb1ZISDZR)
 - [Dashboard](https://www.tynker.com/dashboard/student/#/battles/crystalclash)
 
+---
+
+## Minecraft Education Edition Integration
+
+- **TLDR:** Integration of Tynker's Minecraft Editor into Minecraft Education Edition app
+- **Start:** 2018
+- **Client:** Tynker
+- **Role:** Lead Software Engineer
+- **Platforms:** Windows 10
+
+Integrated Tynker's Block Editor into the Minecraft Education Edition app such that users could create and deploy mobs during game time by accessing a side panel with the Tynker Editor.
+
+- [Minecraft Education Edition](https://education.minecraft.net/)
+
+---
+
 ## Mythicraft
 
 - **TLDR**: Integration of Minecraft Editor into a new Tynker course.
