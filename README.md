@@ -320,6 +320,20 @@ Popular to the time of this writing, several million matches have been played ac
 - [Gallery](https://photos.google.com/share/AF1QipMr2gNFGS497iVv5IzycTa3KhrrZ2VyvtCNQCIkHutntaMPO3Cyq3Gj1o5KxGCYhQ?key=UHNNTFpUeVRXNFNtQTRHRF82T3AwYjlQb1ZISDZR)
 - [Dashboard](https://www.tynker.com/dashboard/student/#/battles/crystalclash)
 
+## Mythicraft
+
+- **TLDR**: Integration of Minecraft Editor into a new Tynker course.
+- **Start:** 2017
+- **Client:** Tynker
+- **Role:** Lead Software Engineer
+- **Platforms:** Web / iOS (WebView)
+
+Tynker's Mythicraft is a creative and educational course designed to teach users how to mod their Minecraft world with a focus on mythological themes. It guides learners through the process of creating custom skins, magical items and blocks, and mythical creatures.
+
+This was the first attempt at integrating the Minecraft Editor tool into the structure of a regular Tynker course, interweaving regular intro lessons with lessons that had to be performed in the Minecraft Editor itself. To do so, I had to integrate the tool into the course workflows such that it could be declared in a course structured, launched when it had to and inside the course frame, and support lesson completion detection to trigger a jump to the next lesson. Also further performance improvements had to be done in the editor to improve support in the native mobile apps, since this course was also available on them.
+
+- [Demo Video](https://photos.app.goo.gl/mjEzTS8Gpw8NsC668)
+
 ---
 
 ## Minecraft Editor
