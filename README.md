@@ -81,6 +81,10 @@ Improved internal testing tools to allow scanning for test code coverage across 
 Developed internal tool for database PII anonymization to allow data transfer across internal groups spread around different regions.
 
 - [Microsoft Dynamics AX](https://dynamics.microsoft.com/en-us/ax/)
+- TV news coverage about being hired by Microsoft out of college:
+  - [RTP 1](https://photos.app.goo.gl/jo7DskprCoxt2jB77)
+  - [SIC](https://photos.app.goo.gl/PY6t4TEXYK4fXmt98)
+  - [TVI](https://photos.app.goo.gl/W3wTceGahoE2p36U7)
 
 ## [Rent-a-Coder](https://www.freelancer.com/)
 
@@ -298,7 +302,11 @@ Looking back: Looking back I still think the extension framework and Redux Saga 
 - [Block IDE](https://www.tynker.com/ide/v3)
 - [Platformer - Retro Racer](https://www.tynker.com/ide/v3?type=platformer-v2&p=61a931e66634692f2b3a4310&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
 - [Platformer - Outlast the Onslaught](https://www.tynker.com/ide/v3?type=platformer-v2&p=61a9453f8bdab975987e36f2&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
-
+- [Platformer - Platform Peril](https://www.tynker.com/ide/v3?type=platformer-v2&p=61a93e699a4c54146b14233c&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
+- [Physics Cannon](https://www.tynker.com/ide/v3?type=diy&p=546eaeef84aafa3125000012&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
+- [Brick Breaker](https://www.tynker.com/ide/v3?type=diy&p=563bf549af923168448b456b&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
+- [Candy Quest](https://www.tynker.com/ide/v3?type=course&slug=activity:candy-quest&chapter=0&lesson=0)
+- [Barbie Pet Vet](https://www.tynker.com/ide/v3?type=course&slug=activity:barbie-pet-vet&chapter=0&lesson=0)
 ---
 
 ## Crystal Clash
@@ -548,7 +556,7 @@ Developed application from top to bottom, playing pivotal role in handling commu
 - **Platform:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C
 
-Don't Mess With Texas - Report a Litterer is an application that lets Texas citizens report when they have seen someone littering.
+Don't mess with Texas is an app that allows you to report litterers to the Texas Department of Transportation’s Report a Litterer Program. You can either insert the details manually or by answering questions by speaking directly to your mobile phone.
 
 Fixed bugs in several parts of the app and implemented new features. Challenging project because the existing code-base was very messy.
 
@@ -627,7 +635,7 @@ TALKiT is a social media alternative to texting where you can share your experie
 - **Platform:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C
 
-Us Likey is a social network where people share the products they like.
+Us Likey is a social network where people share the products, places, brands, foods and everything else that they like.
 
 Fixed bugs in several parts of the app and implemented new features. This was a challenging project because the existing codebase was very messy.
 
@@ -779,7 +787,7 @@ This app was coded by another developer, and I just ended up doing many bug fixe
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
 - **Role:** Full-stack Developer
-- **Platform:** iPhone (iOS)
+- **Platform:** iPhone (iOS)x
 - **Technologies:** iOS, Objective-C, Parse
 
 Randid is a social networking app for iOS where users send a picture and get a random one back from other users.
@@ -804,7 +812,7 @@ I was sent into the project to help guide it back into a predictable path, and e
 
 WeGo is a fitness tracking app that can interface with multiple low-budget hardware activity trackers.
 
-Developed iOS application from top to bottom in record time, against every unexpected obstacle imaginable. Had to integrate 5 wearable devices, from different manufacturers, through Bluetooth and Audio Jack. The project was completely successful from an implementation standpoint, with every standing limitation being attributed to immutable third-party dependencies.
+Developed iOS application from top to bottom in record time, against every unexpected obstacle imaginable. Had to integrate five wearable devices, from different manufacturers, through Bluetooth and Audio Jack. The project was completely successful from an implementation standpoint, with every standing limitation being attributed to immutable third-party dependencies.
 
 <!--
 - [App Store](https://itunes.apple.com/us/app/join-wego/id911117062)
@@ -1156,6 +1164,14 @@ The whole game plot was incredibly dumb, which was natural for my age. The mecha
 
 - [Gallery](https://photos.app.goo.gl/fk1GEomK621wdJ7s6)
 - [Demo Video](https://drive.google.com/file/d/1DtE3ewh4trvmyFp3PjZC8USm_yMHQwpu/view?usp=drive_link)
+
+---
+
+## Misc
+
+- **Mindhacking 101 presentation at BarcampPT 2010 (Porto, Portugal)**:
+  - [Slides](https://www.slideshare.net/hivesolutions/mind-hacking-101)
+  - [Audio](https://www.youtube.com/watch?v=8rTSRpF5SHE)
 
 ---
 
