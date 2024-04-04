@@ -1,6 +1,14 @@
-# Curriculum Vitae
+# TLDR
 
-Want the TLDR? Check my [Portfolio Gallery](https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6).
+My CV is long and detailed, written for AI to read, so if you're a human, here's the TLDR instead:
+
+With more than 20 years of experience in software development, I have honed my skills across a wide range of projects, from my early days at Microsoft to co-founding Hive Solutions and leading development efforts at Tynker. My journey began with a passion for coding ignited in childhood, which I pursued through a Computer Engineering degree and into a career marked by continuous learning and impactful work. I thrive on the challenge of architecting solutions and driving them from ideation to deployment.
+
+Want a visual TLDR? Check my [Portfolio Gallery](https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6).
+
+If you can reach out to me through [LinkedIn](https://www.linkedin.com/in/engtiagosilva/).
+
+# Intro
 
 Nurtured by the nostalgic screeching sounds of a ZX Spectrum loading games from an audio cassette, my journey into the digital realm began in the pre-internet dark ages, where knowledge was buried in dusty libraries. 
 
@@ -10,7 +18,7 @@ Moving on to the Commodore Amiga, a marvel ahead of its era yet tragically unsun
 
 When I later got my hands on a PC and a 56kbps modem, with internet access and a voracious appetite for learning, I was off to the races: disassembling executables to bypass trial limitations (allegedly), writing more video games, learning more coding languages, developing web apps, etc.. by the time I got to taking Computer Engineering in university, I was already well on my way. 
 
-From starting my career at Microsoft, co-founding Hive Solutions, remote-working for multiple United States clients and finally settling for a long ride with Tynker, I have had the opportunity to work on a wide range of projects, usually in a leading role and covering all facets of software development.
+Across the span of 20+ years of experience, from starting my career at Microsoft, to co-founding Hive Solutions, remote-working for multiple United States clients and finally settling for a long ride with Tynker, I have had the opportunity to work on a wide range of projects, usually in a leading role and covering all facets of software development.
 
 In my latest gig with Tynker, I rode the rollercoaster all the way from it being a very small team, to being [acquired for $200M by BYJU's in 2021](https://techcrunch.com/2021/09/16/byjus-acquires-coding-platform-tynker-for-200-million-in-us-expansion-push/), and ultimately [going down with the ship](https://techcrunch.com/2024/01/29/byjus-seeks-to-raise-200-million-in-rights-issue/). It was a wild ride, full of valuable lessons, where I had the opportunity of being the main contributor to a lot of Tynker's core products, that were used by over 100 million students and in more than 150,000 schools.
 
@@ -171,7 +179,7 @@ Upon deployment on the Tynker's parent and school pages, the chatbot demonstrate
 - **Role:** Lead Software Engineer
 - **Team:** Myself + 1 Software Developer + 1 Game Designer
 - **Platforms:** Web
-- **Technologies:** PHP, JavaScript, React, Redux, Redux Saga
+- **Technologies:** React, Redux, Redux Saga, PHP, JavaScript
 
 Arcade Maker was an extension to the Block IDE, made as an attempt to provide a simpler entry point into game development where kids could develop and publish games without being forced to do any coding. 
 
@@ -193,9 +201,9 @@ My role was to architect the solution, develop the core features, and coordinate
 - **Start:** 2023
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
-- **Team:** Myself + 1 Software Developer (match renderer) + Multiple Game Designers (content development)
+- **Team:** Myself + 1 Software Developer (match renderer) + multiple Game Designers (content development)
 - **Platforms:** Web, Android (WebView), iOS (WebView)
-- **Technologies:** PHP, React
+- **Technologies:** React, PHP
 
 The BYJU's Coding Cup was created as a flagship product to represent BYJU'S role as an official sponsor of the FIFA World Cup Qatar 2022™. Targeted at children aged 7–18, this soccer-themed coding competition was designed to introduce key programming concepts such as conditional logic and debugging in an engaging, interactive format. By coding virtual soccer teams, participants could compete globally, enhancing their coding skills through a fun and educational experience.
 
@@ -220,7 +228,7 @@ Successfully launched in time for the World Cup, the game was accessible via the
 - **Role:** Lead Software Engineer
 - **Team:** Myself + Design Team
 - **Platforms:** Web
-- **Technologies:** PHP, React, WebRTC, Dyte
+- **Technologies:** React, PHP, WebRTC, Dyte
 
 The Live Class platform was a tool that enabled educators to conduct interactive coding classes with students. The platform integrated with Tynker tools such as the Block IDE and  Tynker course content allowing teachers to seamlessly transition between live instruction and interactive coding exercises.
 
@@ -240,7 +248,7 @@ The solution was deployed on schedule, with just a few minor hiccups mostly rela
 - **Role:** Lead Software Engineer
 - **Platform:** Web
 - **Team:** Myself + Design Team + Content Team
-- **Technologies:** PHP, React, MDX, NodeJS, React Native
+- **Technologies:** React, MDX, NodeJS, React Native, PHP
 
 The Quizzer platform is a versatile quiz platform that supports building assessments that interleave multiple interactive quiz types using a simple unified content authoring format powered by MDX. 
 
@@ -264,8 +272,8 @@ The solution was deployed on schedule, and remained a core part of content progr
 - **Start:** 2020
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
-- **Team:** Myself and Design Team
-- **Technologies:** PHP, JavaScript, React
+- **Team:** Myself + Design Team
+- **Technologies:** React, PHP, JavaScript
 
 Combining the [Collaborative Learning System](#collaborative-learning-system) features with the [Live Classes](#live-classes) platform, developed an integrated coaching management system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
 
@@ -279,7 +287,7 @@ Combining the [Collaborative Learning System](#collaborative-learning-system) fe
 - **Start:** 2020
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
-- **Team:** Myself
+- **Team:** Just me
 - **Technologies:** NodeJS, Express, socket.io, Redis, NGINX
 
 Lynker was a custom made real-time messaging server for Tynker, engineered to handle a wide range of planned feature releases, from live dashboard notifications to project collaboration and multiplayer game development. It was designed to be scalable, reliable, and secure, with a focus on performance and low latency.
@@ -296,7 +304,7 @@ In retrospect, it was over-engineered, as it was built to support a much higher 
 - **Start:** 2020
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
-- **Technologies**: PHP, JavaScript, React, Redux, Redux Saga, socket.io
+- **Technologies**: React, Redux, Redux Saga, socket.io, JavaScript, PHP
 
 Using the Lynker messaging server I previously developed, augmented the Block IDE to have collaborative learning features, such as the ability to share projects, chat about them, comment on code, and monitor changes in real-time. This application was granted an U.S. patent.
 
@@ -312,7 +320,7 @@ Using the Lynker messaging server I previously developed, augmented the Block ID
 - **Role:** Lead Software Engineer
 - **Platforms:** Web
 - **Team:** Myself + Game Development Team (content upgrades)
-- **Technologies:** PHP, JavaScript, Redux, Redux Saga, AngularJS, SCSS
+- **Technologies:** Redux, Redux Saga, AngularJS, JavaScript, SCSS, PHP
 
 In a major six-month overhaul of Tynker's Block Editor, the core of the educational platform, I independently rewrote most of the codebase and developed numerous features from scratch, focusing on scalability and future-proofing. To achieve this, I implemented an extension framework that encapsulated each code functionality into its own extension with a pre-determined lifecycle and declarative specification of dependencies, forcing separation of concerns.
 
@@ -390,7 +398,7 @@ This was the first attempt at integrating the Minecraft Editor tool into the str
 - **Start:** 2016
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
-- **Team:** Myself
+- **Team:** Myself + Game Design Team (testing)
 - **Technologies:** React, Python, Flask, MongoDB, OpenAI, Pinecone
 
 Developed a web 3D editor for Minecraft Bedrock Edition, enabling customization of Skins, Blocks, Items, and Mobs. The editor featured texture editing and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, translating user inputs into Minecraft's declarative configuration files.
@@ -416,6 +424,7 @@ Popular to the time of this writing, several million assets have been created by
 - **Start:** 2016
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
+- **Technologies:** PHP, MongoDB
 
 Developed a custom MongoDB ODM for a legacy, unstructured PHP codebase to enforce object-oriented design principles. This initiative addressed significant code redundancy and facilitated the seamless transport of data and logic across the stack, which was previously unattainable due to a heterogeneous table-to-object mapping scheme and numerous database workarounds. Opting to create a tailored solution—completed in just a few days—yielded substantial long-term benefits, demonstrating remarkable return on investment through years of smooth operation with minimal issues.
 
@@ -1199,9 +1208,3 @@ The whole game plot was incredibly dumb, which was natural for my age. The mecha
 - **Mindhacking 101 presentation at BarcampPT 2010 (Porto, Portugal)**:
   - [Slides](https://www.slideshare.net/hivesolutions/mind-hacking-101)
   - [Audio](https://www.youtube.com/watch?v=8rTSRpF5SHE)
-
----
-
-# Contacts
-
-- [LinkedIn](https://www.linkedin.com/in/engtiagosilva/)
