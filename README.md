@@ -697,8 +697,10 @@ WIN Atlas is a career guidance application that guides you by having you perform
 
 Developed app client-side and integrated with server-side implemented by in-house developers.
 
-- [Gallery](https://photos.app.goo.gl/XCnJs2ELENcah7Ek7)
+<!--
 - [App Store](https://itunes.apple.com/us/app/win-atlas-career-planning/id997400974)
+-->
+- [Gallery](https://photos.app.goo.gl/BYUjLrayGR9cRUdDA)
 
 ---
 
