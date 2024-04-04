@@ -2,17 +2,17 @@
 
 Want the TLDR? Check my [Portfolio Gallery](https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6).
 
-Nurtered by the nostalgic screeching sounds of a ZX Spectrum loading games from an audio cassette, my journey into the digital realm began in the pre-internet dark ages, where knowledge was a buried in dusty libraries. 
+Nurtured by the nostalgic screeching sounds of a ZX Spectrum loading games from an audio cassette, my journey into the digital realm began in the pre-internet dark ages, where knowledge was buried in dusty libraries. 
 
-By eight, armed with only my Casio Calculator and my wits, I began crafting text adventure games, lighting the first sparks of a lifelong passion for technology and programming. 
+By age eight, armed with only my Casio Calculator and my wits, I began crafting text adventure games, lighting the first sparks of a lifelong passion for technology and programming. 
 
-Progressing to the Commodore Amiga, a marvel ahead of its era yet tragically unsung, I progressed from hacking video games for infinite lives and ammo, to building them in BASIC, launching a game in Amiga Format magazine by the age of twelve. 
+Moving on to the Commodore Amiga, a marvel ahead of its era yet tragically unsung, I progressed from hacking video games for infinite lives and ammo, to building them in BASIC, launching a game in Amiga Format magazine by the age of twelve. 
 
-When I later got my hands on a PC and a 56kbps modem, with internet access and a voracious appetite for learning, I was off to the races: disassembling executables to bypass trial limitations (allegedly), writing more video games, learning more coding languages, developing web apps, etc... by the time I got to taking Computer Engineering in University, I was already well on my way. 
+When I later got my hands on a PC and a 56kbps modem, with internet access and a voracious appetite for learning, I was off to the races: disassembling executables to bypass trial limitations (allegedly), writing more video games, learning more coding languages, developing web apps, etc.. by the time I got to taking Computer Engineering in university, I was already well on my way. 
 
 From starting my career at Microsoft, co-founding Hive Solutions, remote-working for multiple United States clients and finally settling for a long ride with Tynker, I have had the opportunity to work on a wide range of projects, usually in a leading role and covering all facets of software development.
 
-In my latest gig with Tynker, I rode the rollercoaster all the way from it being a very small team, to being [acquired for $200M by BYJU's in 2021](https://techcrunch.com/2021/09/16/byjus-acquires-coding-platform-tynker-for-200-million-in-us-expansion-push/), and ultimately [going down with the ship](https://techcrunch.com/2024/01/29/byjus-seeks-to-raise-200-million-in-rights-issue/). It was a wild ride, full of valuable lessons, where I had the opportunity of being the main contributor to a lot of Tynker's core products that were used by over 100 million students and in more than 150,000 schools.
+In my latest gig with Tynker, I rode the rollercoaster all the way from it being a very small team, to being [acquired for $200M by BYJU's in 2021](https://techcrunch.com/2021/09/16/byjus-acquires-coding-platform-tynker-for-200-million-in-us-expansion-push/), and ultimately [going down with the ship](https://techcrunch.com/2024/01/29/byjus-seeks-to-raise-200-million-in-rights-issue/). It was a wild ride, full of valuable lessons, where I had the opportunity of being the main contributor to a lot of Tynker's core products, that were used by over 100 million students and in more than 150,000 schools.
 
 # Experience
 
@@ -49,7 +49,7 @@ RIPE Productions, was a company that developed e-commerce solutions for the fash
 
 Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#karl-kustomize) project for [Karl Lagerfeld](https://www.karl.com/pt-en). 
 
-In a lesser role also contributed as a software developer to the [MYSWEAR online store](#myswear-online-store) featuring an advanced shoe customization rendering platform, related [iOS demo](#myswear-ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#myswear-harrods-holographic-pyramid), a Luxury Department Store in London.
+In a lesser role also contributed as a software developer to the [MYSWEAR online store](#myswear-online-store) featuring an advanced shoe customization rendering platform, related [iOS demo](#myswear-ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#myswear-harrods-holographic-pyramid), a luxury department store in London.
 
 ## [Rocksauce Studios](https://www.rocksaucestudios.com/)
 
@@ -57,14 +57,14 @@ In a lesser role also contributed as a software developer to the [MYSWEAR online
 - **Role:** Senior iOS Developer (Full-time)
 - **Location:** Austin, Texas · Remote
 
-Rocksauce Studios was a mobile app development company that specializes in creating custom apps for businesses and startups. While working at Hive Solutions, I was contracted by them to work on more than a dozen projects for different clients, always as an iOS developer.
+Rocksauce Studios was a mobile app development company that specialized in creating custom apps for businesses and startups. While working at Hive Solutions, I was contracted by them to work on more than a dozen projects for different clients, always as an iOS developer.
 
 ## [Toptal](https://www.toptal.com/)
 
 - **Duration:** Apr 2012 - Present
 - **Role:** Senior Software Engineer
 
-Toptal is a marketplace for top developers and top companies. It has a very strict screening process, that screens for deep technical skills and high English language proficiency. Through Toptal I worked for multiple companies, in medium to long-term arrangements, receiving excellent feedback from all clients.
+Toptal is a marketplace for top developers and companies. It has a very strict screening process, that screens for deep technical skills and high English language proficiency. Through Toptal I worked for multiple companies, in medium to long-term arrangements, receiving excellent feedback from all clients.
 
 ## [Hive Solutions](https://www.hive.pt/)
 
@@ -72,7 +72,7 @@ Toptal is a marketplace for top developers and top companies. It has a very stri
 - **Role:** Co Founder (Full-time)
 - **Location:** Porto, Portugal
 
-As a co-founder of Hive Solutions I was a Jack of all trades, as most startup founders are. At different times I was acted as a Software Engineer (my main role), Tech Lead, but also having to deal with sales and recruiting related tasks.
+As a co-founder of Hive Solutions, I was a Jack of all trades, as most startup founders are. At different times I acted as a Software Engineer (my main role), Tech Lead, but also having to deal with sales and recruiting related tasks.
 
 We started with the main premise of building a SaaS Retail POS system called [Frontdoor](#frontdoor), which was built literally from scratch with most of the stack except Python being built internally. It was a technical success but a commercial failure. We later pivoted to software consulting where we developed a wide range of projects for many clients.
 
@@ -115,7 +115,7 @@ Chronosync Developments"), at the time ranked in the 99% percentile of overall c
 - **Degree:** Licenciate, Software Engineering
 - **Grade:** 18 (out of 20)
 
-Took on Genetic Algorithms, Cryptography, Neural Networks, Network Services Programming and an Intensive course of Polish language, completing them with an average grade of 18 out of 20. 
+Took courses on Genetic Algorithms, Cryptography, Neural Networks, Network Services Programming and an Intensive course of Polish language, completing them with an average grade of 18 out of 20. 
 
 The most fulfilling part of this experience was not the academics per se, but that of living in a melting pot of different cultures, with students from all around Europe, and having the opportunity to travel through Poland and neighbouring countries. 
 
@@ -131,7 +131,7 @@ I feel this short stay was more enriching on all levels, both personally and pro
 
 Activities and societies: Participated in ACM programming contests regularly.European Space Agency's ESMO project
 
-This was arguably the best such course that could be found in my country, therefore the entry grades were relatively high. I started high school with a weak foundation in Mathemathics, so that complicated things quite a bit. However, I set my mind on that goal, and reversed the trend by the sweat of my brow, and ended up being admitted with excellent entry exam results (2nd best grade in my high school).
+This was arguably the best Software Engineering course that could be found in my country, therefore the entry grades were relatively high. I started high school with a weak foundation in Mathematics, so that complicated things quite a bit. However, I set my mind on that goal, and reversed the trend by the sweat of my brow, and ended up being admitted with excellent entry exam results (2nd best grade in my high school).
 
 The course was very work intensive. Assignments got bigger and bigger as semesters went by, and ended up growing to 80-100h work weeks by the last years. That amount was not required to make the grade, but me, like most people in the course, actually enjoyed the assignments, and wanted to make the most out of them. From making 3D video games to coding and training object recognition Neural Networks from scratch, the assignments were always challenging and interesting.
 
@@ -282,7 +282,7 @@ Combining the [Collaborative Learning System](#collaborative-learning-system) fe
 - **Team:** Myself
 - **Technologies:** NodeJS, Express, socket.io, Redis, NGINX
 
-Lynker was a custom made real-time messaging server for Tynker, enginereed to handle a wide range of planned feature releases, from live dashboard notifications to project collaboration and multiplayer game development. It was designed to be scalable, reliable, and secure, with a focus on performance and low latency.
+Lynker was a custom made real-time messaging server for Tynker, engineered to handle a wide range of planned feature releases, from live dashboard notifications to project collaboration and multiplayer game development. It was designed to be scalable, reliable, and secure, with a focus on performance and low latency.
 
 I was responsible for the full stack development, from the initial architecture to the final deployment and post-deployment maintenance. It was successfully integrated into the Tynker platform, being used to power the [Collaborative Learning System](#collaborative-learning-system), the [Live Classes](#live-classes) platform and other features that required real-time communication. 
 
@@ -419,7 +419,7 @@ Popular to the time of this writing, several million assets have been created by
 
 Developed a custom MongoDB ODM for a legacy, unstructured PHP codebase to enforce object-oriented design principles. This initiative addressed significant code redundancy and facilitated the seamless transport of data and logic across the stack, which was previously unattainable due to a heterogeneous table-to-object mapping scheme and numerous database workarounds. Opting to create a tailored solution—completed in just a few days—yielded substantial long-term benefits, demonstrating remarkable return on investment through years of smooth operation with minimal issues.
 
-However, this experience underscored the importance of cautious feature development aimed at maskinLg structural deficiencies. While the custom ODM effectively abstracted certain data model flaws, it inadvertently reduced the urgency to address these underlying issues directly. This approach allowed the data model's problems to persist and propagate throughout the stack, highlighting a critical lesson on balancing immediate solutions with the need for fundamental structural improvements.
+However, this experience underscored the importance of cautious feature development aimed at masking structural deficiencies. While the custom ODM effectively abstracted certain data model flaws, it inadvertently reduced the urgency to address these underlying issues directly. This approach allowed the data model's problems to persist and propagate throughout the stack, highlighting a critical lesson on balancing immediate solutions with the need for fundamental structural improvements.
 
 ---
 
@@ -715,7 +715,7 @@ I was involved in the bootstrap of the project and creating some core features f
 - **Client:** Rocksauce Studios (through Toptal)
 - **Technologies:** iOS, Objective-C
 
-ValetTab is an application that facilitates the valet parking experience in adhering stands. With it you can checkin, notify that you're about to checkout so that your car can be picked up, and pay for the parking right from your phone. Adhering stands have the companion ValetStand app, that lets them keep track of parked cars, checkout requests and payments.
+ValetTab is an application that facilitates the valet parking experience in participating stands. With it you can checkin, notify that you're about to checkout so that your car can be picked up, and pay for the parking right from your phone. Participating stands have the companion ValetStand app, that lets them keep track of parked cars, checkout requests and payments.
 
 Fixed bugs in several parts of the app and implemented new features (mainly related with the payment steps). This project was challenging project because the existing codebase was very messy.
 
@@ -1131,7 +1131,7 @@ Established the club's presence in the World Wide Web, providing a way to get it
 
 Solution was provided via a website implemented over the Joomla framework, using the PHP scripting language, and a MySQL database.
 
-Learned to customize the Mambo/Joomla Content Management System to provide most functionalities a regular community website needs.
+Learned to customize the Mambo/Joomla Content Management System to provide the functionalities a regular community website needs.
 
 ---
 
@@ -1145,7 +1145,7 @@ Learned to customize the Mambo/Joomla Content Management System to provide most 
 NeuralJ was an open-source software project that aims at providing an efficient and user-friendly
 Neural Network library for Java.
 
-Improved the knowledge on Neural Networks and Genetic Algorithms, as well as the skills in Java programming, and software architecture.
+Improved my knowledge on Neural Networks and Genetic Algorithms, as well as the skills in Java programming, and software architecture.
 
 ---
 
@@ -1156,7 +1156,7 @@ Improved the knowledge on Neural Networks and Genetic Algorithms, as well as the
 - **Client:** Clube do Paiva
 - **Technologies:** PHP, MySQL
 
-Handled entire back end production of a website, web application and database programming. Solution was provided in the form of a web application implemented in the PHP scripting language, interfacing with a MySQL database.
+Handled entire backend production of a website, web application and database programming. Solution was provided in the form of a web application implemented in the PHP scripting language, interfacing with a MySQL database.
 
 - [Website](https://www.clubedopaiva.com/)
 
@@ -1172,7 +1172,7 @@ Coordinator of the Software subteam, part of the On Board Data Handler team, for
 
 This project is a part of the European Space Agency's SSETI programme (Student Space Exploration & Technology Initiative), and aims at the deployment of a satellite in lunar orbit.
 
-Amongst the lessons learned, the personal revalidation on the power of effective team-work stands out.
+Amongst the lessons learned, the personal revalidation on the power of effective teamwork stands out.
 
 - [ESMO Project](https://www.esa.int/Education/European_Student_Moon_Orbiter)
 
