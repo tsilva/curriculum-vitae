@@ -990,7 +990,7 @@ Developed core features, and did copywriting and translation for the website and
 
 A La Carte was a restaurant search engine where you could search for restaurants that had a certain food, for a certain price, near your location.
 
-Designed and developed all ETL components for food indexing and search system. Created software for retrieval of information from wide array of heterogeneous data sources.
+Designed and developed all ETL components for the food indexing and search system. Created software for retrieval of information from wide array of heterogeneous data sources.
 
 - [Gallery](https://photos.app.goo.gl/WGcN6Uyiktbc9LHFA)
 
@@ -1005,7 +1005,7 @@ Designed and developed all ETL components for food indexing and search system. C
 
 Mariachi was a cross-platform Shoot'em Up game aimed at mobile platforms.
 
-Developed and implemented game's logic, model importation, and physics engine.
+Developed and implemented the game's logic, model importation, and physics engine.
 
 - [Gallery](https://photos.app.goo.gl/q2zvsL82jeqiKAPV7)
 
@@ -1110,7 +1110,7 @@ The final product was successfully completed and deployed in the partner enterpr
 
 Nihonaid was a tool I developed to assist in my learning of the Japanese language, namely to memorize the Kanji character set. 
 
-It presented the user with each character in order of complexity, and asked him for the meaning. The user then saw the meaning, and had to select how well he remembered it. The application would use this feedback and feed it into a Neural Network that kept track of how well the user new each character, and decided when was the best time to present it to the user again. 
+It presented the user with each character in order of complexity, and asked him for the meaning. The user then saw the meaning, and had to select how well he remembered it. The application would use this feedback and feed it into a Neural Network that kept track of how well the user knew each character, and decided when was the best time to present it to the user again. 
 
 This way, the software would only present the user with characters he didn't know, or that the application predicted he would probably had forgotten by then. For example, it would present a character the first time, and if the user said he didn't know the meaning at all, it would decide it would display it again in the next training session. In the next session the user could say he remembered it, and the application would decide to show it again in two days. In two days if the user remembered it again, then it would show it again in one week, and so on and so forth.
 
@@ -1129,7 +1129,7 @@ With this system in place, memorizing the characters was as easy as simply doing
 
 Established the club's presence in the World Wide Web, providing a way to get it closer to it's members and the general public. 
 
-Solution was provided via a website implemented over the Joomla framework, using the PHP scripting language, and a MySQL database.
+Solution was provided via a website implemented using the Joomla framework, using the PHP scripting language, and a MySQL database.
 
 Learned to customize the Mambo/Joomla Content Management System to provide the functionalities a regular community website needs.
 
@@ -1172,7 +1172,7 @@ Coordinator of the Software subteam, part of the On Board Data Handler team, for
 
 This project is a part of the European Space Agency's SSETI programme (Student Space Exploration & Technology Initiative), and aims at the deployment of a satellite in lunar orbit.
 
-Amongst the lessons learned, the personal revalidation on the power of effective teamwork stands out.
+Amongst the lessons learned, the personal revalidation of the power of effective teamwork stands out.
 
 - [ESMO Project](https://www.esa.int/Education/European_Student_Moon_Orbiter)
 
