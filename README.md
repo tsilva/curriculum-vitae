@@ -2,15 +2,17 @@
 
 Want the TLDR? Check my [Portfolio Gallery](https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6).
 
-Nurtered by the nostalgic screeching sounds of a ZX Spectrum loading games from an audio cassette, my journey into the digital realm began in the pre-internet dark ages, where knowledge was a treasure buried in dusty libraries and vintage magazines. 
+Nurtered by the nostalgic screeching sounds of a ZX Spectrum loading games from an audio cassette, my journey into the digital realm began in the pre-internet dark ages, where knowledge was a buried in dusty libraries. 
 
-By eight, armed with only my Casio Calculator and my wits, I began crafting text adventure games, lighting the first sparks of a lifelong passion for technology and programming. Progressing to the Commodore Amiga, a marvel ahead of its era yet tragically unsung, I progressed from hacking video games for infinite lives and ammo, to building them in BASIC, launching a game in Amiga Format magazine by the age of twelve. 
+By eight, armed with only my Casio Calculator and my wits, I began crafting text adventure games, lighting the first sparks of a lifelong passion for technology and programming. 
 
-When I later got my hands on a PC, I was off to the races, disassembling executables to bypass trial limitations (allegedly), writing more video games, learning more coding languages, developing web apps, by the time I got to taking Computer Engineering in University, I was already well on my way. 
+Progressing to the Commodore Amiga, a marvel ahead of its era yet tragically unsung, I progressed from hacking video games for infinite lives and ammo, to building them in BASIC, launching a game in Amiga Format magazine by the age of twelve. 
 
-From starting my career at Microsoft, co-founding a startup named Hive Solutions, working for lots of clients in the United States and finally settling for a long ride with Tynker, I have had the opportunity to work on a wide range of projects, usually in a leading role and covering all facets of software development.
+When I later got my hands on a PC and a 56kbps modem, with internet access and a voracious appetite for learning, I was off to the races: disassembling executables to bypass trial limitations (allegedly), writing more video games, learning more coding languages, developing web apps, etc... by the time I got to taking Computer Engineering in University, I was already well on my way. 
 
-My latest long stint ride was with Tynker, riding the rollercoaster all the way from it being a very small team, to being [acquired for $200M by BYJU's in 2021](https://techcrunch.com/2021/09/16/byjus-acquires-coding-platform-tynker-for-200-million-in-us-expansion-push/), and ultimately [going down with the ship](https://techcrunch.com/2024/01/29/byjus-seeks-to-raise-200-million-in-rights-issue/). It was a wild ride, full of valuable lessons, where I had the opportunity of being the main contributor to a lot of Tynker's core products that were used by over 100 million students and in more than 150,000 schools.
+From starting my career at Microsoft, co-founding Hive Solutions, remote-working for multiple United States clients and finally settling for a long ride with Tynker, I have had the opportunity to work on a wide range of projects, usually in a leading role and covering all facets of software development.
+
+In my latest gig with Tynker, I rode the rollercoaster all the way from it being a very small team, to being [acquired for $200M by BYJU's in 2021](https://techcrunch.com/2021/09/16/byjus-acquires-coding-platform-tynker-for-200-million-in-us-expansion-push/), and ultimately [going down with the ship](https://techcrunch.com/2024/01/29/byjus-seeks-to-raise-200-million-in-rights-issue/). It was a wild ride, full of valuable lessons, where I had the opportunity of being the main contributor to a lot of Tynker's core products that were used by over 100 million students and in more than 150,000 schools.
 
 # Experience
 
@@ -25,17 +27,17 @@ Tynker is a kid-friendly platform used by over 100 million students and in more 
 As a Lead Software Engineer, I was the main contributor to many of it's core products, namely:
 
 - [Help Agent](#help-agent): a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture.
-- [BYJU's Coding Cup](#byjus-coding-cup): a soccer-themed coding competition for kids, branded as a FIFA 2022 World Cup sponsor, with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.
-- [Crystal Clash](#crystal-clash): an asynchronous multiplayer turn-based battlebots game that allows players to program their bots using Tynker's block-based programming language, achieving millions of matches played across numerous seasons.
+- [BYJU's Coding Cup](#byjus-coding-cup): a soccer-themed coding competition for kids, branded as a [FIFA 2022 World Cup sponsor](https://www.prnewswire.com/ae/news-releases/byjus-unveils-the-byjus-coding-cup-enabling-kids-to-use-code-and-ai-to-field-virtual-soccer-teams-in-unison-with-the-fifa-world-cup-qatar-2022-301654538.html), with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.
+- [Crystal Clash](#crystal-clash): an asynchronous multiplayer turn-based battlebots game that allows players to program their bots using Tynker's block-based programming language, played millions of times across numerous seasons.
 - [Lynker](#lynker) and the [Collaborative Learning System](#collaborative-learning-system): enabled project sharing features in the [Block IDE](#block-ide---version-30), real-time messaging and project editing, having been granted a [U.S. patent](https://patents.google.com/patent/US11699357B2).
 - [Quizzer](#quizzer): a modular quiz platform allowing easy integration of different question types and engines, such as allowing integration with the [Block IDE](#block-ide---version-30) and its course content.
 - [Block IDE - Arcade Maker](#block-ide---arcade-maker): a simplified game development platform for kids, where they could develop and publish games without having to code.
 - [Live Classes](#live-classes): a platform that enabled educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the [Block IDE](#block-ide---version-30) and course content.
 - [Coaching System](#coaching-system): a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
 - [Block IDE - Version 3.0](#block-ide---version-30): a major rewrite and rearchitecture of Tynker's Block Editor, at that time, the core of Tynker's educational platform.
-- [Minecraft Editor](#minecraft-editor) (Bedrock Edition): a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors.
+- [Minecraft Editor](#minecraft-editor): a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors.
 
-Along with my core Software Development tasks and other miscellaneous tasks across most of Tynker's products and tech stack, I was also deeply involved with the DevOps tasks, regularly dealing with setting up, maintaing and upgrading the infrastructure required for the projects I developed as well as other legacy projects.
+In all these projects, I was responsible for eliciting requirements from stakeholders, researching and experimenting with different solutions, and finally implementing the solution end-to-end, deploying and managing it post-deployment.
 
 ## [RIPE Productions](https://www.platforme.com/)
 
@@ -43,9 +45,11 @@ Along with my core Software Development tasks and other miscellaneous tasks acro
 - **Role:** Lead Software Engineer (Full-time)
 - **Location:** Porto, Portugal · Remote
 
-RIPE Productions was a company that developed e-commerce solutions for the fashion industry.
+RIPE Productions, was a company that developed e-commerce solutions for the fashion industry (this company is now called PlatformE).
 
-Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#karl-kustomize) project for [Karl Lagerfeld](https://www.karl.com/pt-en). In a lesser role also contributed as a software developer to the MYSWEAR online store featuring an advanced shoe customization rendering platform, related iOS demo and the adaptation of the customizer to be used in a holographic pyramid at Harrods, a Luxury Department Store in London.
+Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#karl-kustomize) project for [Karl Lagerfeld](https://www.karl.com/pt-en). 
+
+In a lesser role also contributed as a software developer to the [MYSWEAR online store](#myswear-online-store) featuring an advanced shoe customization rendering platform, related [iOS demo](#myswear-ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#myswear-harrods-holographic-pyramid), a Luxury Department Store in London.
 
 ## [Rocksauce Studios](https://www.rocksaucestudios.com/)
 
@@ -53,14 +57,14 @@ Developed some core features for the RIPE Core infrastructure, while simultaneou
 - **Role:** Senior iOS Developer (Full-time)
 - **Location:** Austin, Texas · Remote
 
-As an iOS developer for Rocksauce Studios, I worked on more than a dozen projects for different clients. 
+Rocksauce Studios was a mobile app development company that specializes in creating custom apps for businesses and startups. While working at Hive Solutions, I was contracted by them to work on more than a dozen projects for different clients, always as an iOS developer.
 
 ## [Toptal](https://www.toptal.com/)
 
 - **Duration:** Apr 2012 - Present
 - **Role:** Senior Software Engineer
 
-Toptal is a marketplace for top developers and top companies. It has a very strict screening process, that allows only highly technical developers who speak English proficiently to pass through. I have worked through Toptal with several companies, in medium to long-term arrangements, receiving excellent feedback from all clients until now.Toptal is a marketplace for top developers and top companies. It has a very strict screening process, that allows only highly technical developers who speak English proficiently to pass through. I have worked through Toptal with several companies, in medium to long-term arrangements, receiving excellent feedback from all clients until now.
+Toptal is a marketplace for top developers and top companies. It has a very strict screening process, that screens for deep technical skills and high English language proficiency. Through Toptal I worked for multiple companies, in medium to long-term arrangements, receiving excellent feedback from all clients.
 
 ## [Hive Solutions](https://www.hive.pt/)
 
@@ -68,8 +72,9 @@ Toptal is a marketplace for top developers and top companies. It has a very stri
 - **Role:** Co Founder (Full-time)
 - **Location:** Porto, Portugal
 
-As a co-founder of Hive Solutions I was a Jack of all trades, as most startup founders are. At different times I was acted as a Software Engineer (my main role), Tech Lead, but also having to deal with sales and recruiting.
-We started by building a SaaS Retail POS system called [Frontdoor](#frontdoor), and later pivoted to software consulting where we developed a wide range of projects for many clients.
+As a co-founder of Hive Solutions I was a Jack of all trades, as most startup founders are. At different times I was acted as a Software Engineer (my main role), Tech Lead, but also having to deal with sales and recruiting related tasks.
+
+We started with the main premise of building a SaaS Retail POS system called [Frontdoor](#frontdoor), which was built literally from scratch with most of the stack except Python being built internally. It was a technical success but a commercial failure. We later pivoted to software consulting where we developed a wide range of projects for many clients.
 
 - [Website](https://www.hive.pt/)
 - [Github](https://github.com/hivesolutions)
@@ -80,14 +85,14 @@ We started by building a SaaS Retail POS system called [Frontdoor](#frontdoor), 
 - **Role:** Software Development Engineer in Test (Full-time)
 - **Location:** Copenhagen, Denmark
 
-Worked in the Global Development Localization team, in a Tester role, for [Microsoft Dynamics AX](https://dynamics.microsoft.com/en-us/ax/) (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing tests, searching for and investigating application bugs.
+Worked in the Global Development Localization team, in a Tester role, for [Microsoft Dynamics AX](https://dynamics.microsoft.com/en-us/ax/) (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing new tests, searching for and investigating application bugs.
 
-Improved internal testing tools to allow scanning for test code coverage across multipler layers, as opposed to just the base of the stack.
+Improved internal testing tools to allow scanning for test code coverage across multipler layers, as opposed to just the root of the application's layered customization stack.
 
 Developed internal tool for database PII anonymization to allow data transfer across internal groups spread around different regions.
 
 - [Microsoft Dynamics AX](https://dynamics.microsoft.com/en-us/ax/)
-- TV news coverage about being hired by Microsoft out of college:
+- TV news coverage about being hired by Microsoft straight out of college (oh the cringe!):
   - [RTP 1](https://photos.app.goo.gl/jo7DskprCoxt2jB77)
   - [SIC](https://photos.app.goo.gl/PY6t4TEXYK4fXmt98)
   - [TVI](https://photos.app.goo.gl/W3wTceGahoE2p36U7)
@@ -97,8 +102,8 @@ Developed internal tool for database PII anonymization to allow data transfer ac
 - **Duration:** 2003 - 2006 · 3 years
 - **Role:** Software Developer
 
-As my first avenue of income, during college, got quite a bit of experience doing freelance projects with worldwide clients via the Rent-a-Coder service (going  by the name "
-Chronosync Developments"), at the time ranked in the 99% percentile of overall customer rating. Learned a lot of skills, among which: requirement elicitation and management, negotiation, and personal marketing.
+As my first avenue of income, during college, got quite a bit of experience doing freelance projects with worldwide clients via the Rent-a-Coder service (going by the name "
+Chronosync Developments"), at the time ranked in the 99% percentile of overall customer rating. Learned a lot of skills, mainly how to properly elicit requirements from clients, manage expectations, and deliver on time.
 
 - [Profile](https://www.exhedra.com/RentACoder/SoftwareCoders/showBioInfo_lngAuthorId_860960.html)
 
@@ -110,9 +115,11 @@ Chronosync Developments"), at the time ranked in the 99% percentile of overall c
 - **Degree:** Licenciate, Software Engineering
 - **Grade:** 18 (out of 20)
 
-Took on Genetic Algorithms, Cryptography, Neural Networks, Network Services Programming and an Intensive course of Polish language, completing them with an average grade of 18 out of 20. The most enriching part of this experience was not the academics per se, but that of living in a melting pot of different cultures, with students from all around Europe, and having the opportunity to travel through Poland and neighbouring countries. 
+Took on Genetic Algorithms, Cryptography, Neural Networks, Network Services Programming and an Intensive course of Polish language, completing them with an average grade of 18 out of 20. 
 
-I feel this short stay was more enriching on all levels, both personally and professionally, than anything that I could have found in Academia. There's something special about having to live for an extended period in a country whose language and culture are so different, and where almost no one communicates in your language (or English for that matter). You truly have to transcend your comfort zone just to get by, and having to do so was one of the most enriching experiences of my life. 
+The most fulfilling part of this experience was not the academics per se, but that of living in a melting pot of different cultures, with students from all around Europe, and having the opportunity to travel through Poland and neighbouring countries. 
+
+I feel this short stay was more enriching on all levels, both personally and professionally, than anything that I could have found in academia. There's something special about having to live for an extended period in a country whose language and culture are so different, and where no one speaks your language (or English for that matter). You truly have to push through your comfort zone just to get by.
 
 - [Website](https://www.uni.lodz.pl/en/)
 
@@ -124,9 +131,9 @@ I feel this short stay was more enriching on all levels, both personally and pro
 
 Activities and societies: Participated in ACM programming contests regularly.European Space Agency's ESMO project
 
-This was arguably the best such course that could be found in my country, therefore the entry grades were relatively high. I started high school with a weak foundation in Mathemathics, so that complicated things quite a bit. However, I set my mind on that goal, put a picture of that Faculty on my study desk, and reversed the trend by the sweat of my brow, and ended up being admitted with excellent entry exam results.
+This was arguably the best such course that could be found in my country, therefore the entry grades were relatively high. I started high school with a weak foundation in Mathemathics, so that complicated things quite a bit. However, I set my mind on that goal, and reversed the trend by the sweat of my brow, and ended up being admitted with excellent entry exam results (2nd best grade in my high school).
 
-The course was very work intensive. Assignments got bigger and bigger as semesters went by, and ended up growing to 80-100h work weeks by the last years. That amount was not required to make the grade, but me, like most people in the course, actually enjoyed the assignments, and wanted to make the most out of them. Making a 3D Video Game or a Neural Network that could distinguish objects when pointing a camera at them, and the all-nighters required to pull them off, are some of the assignments I vividly remember to this day.
+The course was very work intensive. Assignments got bigger and bigger as semesters went by, and ended up growing to 80-100h work weeks by the last years. That amount was not required to make the grade, but me, like most people in the course, actually enjoyed the assignments, and wanted to make the most out of them. From making 3D video games to coding and training object recognition Neural Networks from scratch, the assignments were always challenging and interesting.
 
 - [Website](https://sigarra.up.pt/feup/en/)
 
@@ -134,20 +141,22 @@ The course was very work intensive. Assignments got bigger and bigger as semeste
 
 ## Help Agent
 
-- **TLDR:** Chatbot to assist users with inquiries related to Tynker
+- **TLDR:** Sales assistant chatbot meant to assist users in Tynker related inquiries
 - **Start:** 2023
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
 - **Team:** Just me
 - **Technologies:** React, Python, Flask, MongoDB, OpenAI, Pinecone
 
-Help Agent is a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLMs) and the Retrieval-Augmented Generation (RAG) architecture. This architecture enhances the chatbot's responses with custom data, grounding the information provided and minimizing inaccuracies. The development of such a system posed numerous challenges, including content scraping and parsing, data chunking and augmentation, embedding, indexing, querying, post-processing, reranking, model selection, and prompt engineering. Extensive experimentation was required to devise a solution that delivered fast, accurate, and reliable answers without compromising on safety or cost-effectiveness.
+Help Agent is a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLMs) and the Retrieval-Augmented Generation (RAG) architecture.
 
-A backoffice system was also developed to support the chatbot's operations. This system facilitated the initial scraping of websites to gather data, management of these data sources, and periodic updates from each scraped URL. It enabled the creation of new user-authored documents with the assistance of Large Language Models (LLMs), including generation and summarization, as well as the uploading of additional documents (e.g., PDFs). Furthermore, the backoffice provided tools for reviewing chat logs, managing user tickets (e.g., reports of inadequate responses), and testing chatbot updates.
+The development of such a system posed numerous challenges, including content scraping and parsing, data chunking and augmentation, embedding, indexing, querying, post-processing, reranking, model selection, and prompt engineering. Extensive experimentation was required to devise a solution that delivered fast, accurate, and reliable answers without compromising on safety or cost-effectiveness.
+
+A backoffice system was also developed to support the chatbot's operations. This system facilitated the initial scraping of websites to gather data, management of these data sources, and periodic updates from each scraped URL. It enabled the creation of new user-authored documents with the assistance of LLMs, including content generation and summarization, as well as the uploading of additional documents (e.g., PDFs). Furthermore, the backoffice provided tools for reviewing chat logs, managing user tickets (e.g., reports of inadequate responses), and testing chatbot updates.
 
 My role was to elicit requirements from stakeholders, research and experiment different solutions and finally to implement the solution end-to-end, deploy and manage it post-deployment.
 
-Upon deployment on the Tynker's parent and school pages, the chatbot demonstrated a significant impact on user engagement. Metrics collected post-launch showed a high conversion rate among users who interacted with the chatbot, leading to sign-ups and/or purchases.
+Upon deployment on the Tynker's parent and school pages, the chatbot demonstrated a significant impact on user engagement. Metrics collected post-launch showed a higher conversion rate amongst users who interacted with the chatbot than those who did not, indicating a positive reception and potential for further development.
 
 - [Gallery](https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6)
 - [Help Agent in Parents page](https://www.tynker.com/parents/) (chat button in bottom right corner)
@@ -166,7 +175,7 @@ Upon deployment on the Tynker's parent and school pages, the chatbot demonstrate
 
 Arcade Maker was an extension to the Block IDE, made as an attempt to provide a simpler entry point into game development where kids could develop and publish games without being forced to do any coding. 
 
-This extension allows declarative specifying configuration variables, how they bind to the game code, as well as define the controls available in the user interface to modify those variables. Along with some other upgrades provided by this extension, developers are able to create new game templates that can be remixed by the end-user without having to touch any code.
+This extension allows declaratively specifying configuration variables, how they bind to the game code, as well as define the controls available in the user interface to modify those variables. Along with some other upgrades provided by this extension, developers are able to create new game templates that can be remixed by the end-user without having to touch any code.
 
 My role was to architect the solution, develop the core features, and coordinate of the other Software Developer and the Game Design team who developed the game templates. 
 
@@ -184,14 +193,15 @@ My role was to architect the solution, develop the core features, and coordinate
 - **Start:** 2023
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
+- **Team:** Myself + 1 Software Developer (match renderer) + Multiple Game Designers (content development)
 - **Platforms:** Web, Android (WebView), iOS (WebView)
 - **Technologies:** PHP, React
 
 The BYJU's Coding Cup was created as a flagship product to represent BYJU'S role as an official sponsor of the FIFA World Cup Qatar 2022™. Targeted at children aged 7–18, this soccer-themed coding competition was designed to introduce key programming concepts such as conditional logic and debugging in an engaging, interactive format. By coding virtual soccer teams, participants could compete globally, enhancing their coding skills through a fun and educational experience.
 
-The development process was completed in a remarkably short span of months, leveraging the game engine from [Crystal Clash](#crystal-clash). The soccer matches were simulated as a discrete, grid-based environment, achieving a seemingly fluid game flow through clever interpolation of discrete computed states. The introduction of game mechanics like assigning skill levels to players added depth, influencing probabilistic events such as ball steals.
+From ideation to deployment, this project took around six intense months, with some shortcuts provided by being able to leverage parts of the game engine from [Crystal Clash](#crystal-clash). The soccer matches were simulated as a discrete, grid-based environment, achieving a seemingly fluid game flow through clever interpolation of discretely computed states. The introduction of game mechanics like assigning skill levels to players added depth, influencing probabilistic events such as ball steals.
 
-In my role, I was responsible for conceptualizing the game, architecting the solution, coding the backend engine and APIs, and implementing the whole frontend except for the match rendering and some aspects of the character avatar rendering. This match rendering task was mostly fully handled by another developer, whose efforts I coordinated to ensure integration with the broader game infrastructure. Another key focus of mine was optimizing the game's performance and layout for a seamless mobile experience.
+In my role, I was responsible for ideating the game, architecting the solution, coding the backend engine and APIs, and implementing the whole frontend except for the match rendering and some aspects of the character avatar rendering. This match rendering task was mostly fully handled by another developer, whose efforts I coordinated to ensure integration with the broader game infrastructure. Another key focus of mine was optimizing the game's performance and layout so it could perform well in lower end mobile devices.
 
 Successfully launched in time for the World Cup, the game was accessible via the web and integrated into Tynker Apps for iOS and Android through web views. It has since enjoyed widespread success, with millions of matches played across numerous rounds and a total prize pool exceeding $20,000 USD being awarded in the first four rounds.
 
@@ -212,13 +222,13 @@ Successfully launched in time for the World Cup, the game was accessible via the
 - **Platforms:** Web
 - **Technologies:** PHP, React, WebRTC, Dyte
 
-The Live Class platform was a tool that enabled educators to conduct interactive coding classes with students. The platform integrated with Tynker tools such as the Block IDE and other course content allowing teachers to seamlessly transition between live instruction and interactive coding exercises.
+The Live Class platform was a tool that enabled educators to conduct interactive coding classes with students. The platform integrated with Tynker tools such as the Block IDE and  Tynker course content allowing teachers to seamlessly transition between live instruction and interactive coding exercises.
 
-This requirement surfaced with the need to create a new product offering where we sold small course packages bundled with a number of lessons where an actual teacher would assist with that content over the span of a number of scheduled lessons.
+This requirement surfaced with the need to create a new product offering where we sold small course packages bundled with a number of scheduled lessons where an actual teacher would assist the student with that content.
 
 My role was to quickly identify what the requirements for such an experience was, architect a solution and implement the full stack, backend and frontend as fast as possible.
 
-The solution was deployed on schedule, with just a few minor hiccups mostly related to the video conferencing solution we integrated and a few cases of user mistakes.
+The solution was deployed on schedule, with just a few minor hiccups mostly related to the video conferencing solution we integrated and a few cases of PEBKAC (Problem Exists Between Keyboard And Chair).
 
 ---
 
@@ -234,9 +244,9 @@ The solution was deployed on schedule, with just a few minor hiccups mostly rela
 
 The Quizzer platform is a versatile quiz platform that supports building assessments that interleave multiple interactive quiz types using a simple unified content authoring format powered by MDX. 
 
-The need for building this system stemmed from the necessity of having more enticing and interactive quizzes that could be easily created and modified. Such quizzes would initially integrate into Tynker's content progression system in the form of placement tests that onboarded new users into the right skill level, and assessment tests that guardrailed if users were able to progress to the next education level or not.
+The need for building this system stemmed from the necessity of having more enticing and interactive quizzes that could be easily created and modified. Such quizzes would initially integrate into Tynker's content progression system in the form of placement tests that onboarded new users into the right skill level, and later on as assessment tests that guardrailed if users were able to progress to the next education level.
 
-This was achieved by incorporating MDX for modularity, enabling Quizzer to integrate effortlessly with different components of the educational stack, including interactive coding exercises. 
+This was achieved by using MDX for modularity, enabling Quizzer to seamelessly integrate with different components of the educational stack, including interactive coding exercises. 
 
 My role was to architect a solution and implement the full-stack, frontend and backend. Having also built a cross-platform native mobile prototype that ran on Android and iOS, built using React Native (the native mobile version was eventually backlogged and shelved due to a shift in priorities).
 
@@ -260,6 +270,7 @@ The solution was deployed on schedule, and remained a core part of content progr
 Combining the [Collaborative Learning System](#collaborative-learning-system) features with the [Live Classes](#live-classes) platform, developed an integrated coaching management system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
 
 - [Gallery](https://photos.app.goo.gl/rGGaisXY8zYbEPZK6)
+
 ---
 
 ## Lynker
@@ -268,9 +279,14 @@ Combining the [Collaborative Learning System](#collaborative-learning-system) fe
 - **Start:** 2020
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
+- **Team:** Myself
 - **Technologies:** NodeJS, Express, socket.io, Redis, NGINX
 
-Beginning in 2020, I spearheaded the creation of the Lynker server for Tynker, a dynamic messaging server engineered to enhance real-time collaboration and notification processes. This project harnessed the power of NodeJS, Express, socket.io, Redis, and NGINX to enable a range of functionalities, from live dashboard notifications to project collaboration and multiplayer game development. Our design prioritized real-time updates, leveraging PM2 for efficient process management, Nginx for effective load balancing, Redis for fast message queuing, and MongoDB for reliable data storage. The architecture was carefully developed to support multi-tenancy, ensuring the system's scalability and adaptability in various environments. We implemented secure authentication through signed data from Tynker's API, providing controlled access based on user roles and permissions. While the server has proven its robustness in live applications, we are looking to further enhance its performance by shifting from Socket.io to native WebSockets and simplifying operations by phasing out status channels.
+Lynker was a custom made real-time messaging server for Tynker, enginereed to handle a wide range of planned feature releases, from live dashboard notifications to project collaboration and multiplayer game development. It was designed to be scalable, reliable, and secure, with a focus on performance and low latency.
+
+I was responsible for the full stack development, from the initial architecture to the final deployment and post-deployment maintenance. It was successfully integrated into the Tynker platform, being used to power the [Collaborative Learning System](#collaborative-learning-system), the [Live Classes](#live-classes) platform and other features that required real-time communication. 
+
+In retrospect, it was over-engineered, as it was built to support a much higher throughput than it was ever required to handle, as some high throughput features like multiplayer game development were eventually backlogged and shelved due to a shift in priorities.
 
 ---
 
@@ -282,7 +298,7 @@ Beginning in 2020, I spearheaded the creation of the Lynker server for Tynker, a
 - **Role:** Lead Software Engineer
 - **Technologies**: PHP, JavaScript, React, Redux, Redux Saga, socket.io
 
-Using the Lynker messaging server I previously developed, augmented the Block IDE to have collaborative learning features, such as the ability to share projects, chat about them, comment on code, and monitor changes in real-time. This application was granted an [U.S. patent](https://patents.google.com/patent/US11699357B2).
+Using the Lynker messaging server I previously developed, augmented the Block IDE to have collaborative learning features, such as the ability to share projects, chat about them, comment on code, and monitor changes in real-time. This application was granted an U.S. patent.
 
 - [Patent - Collaborative Learning System (US11699357B2)](https://patents.google.com/patent/US11699357B2)
 
@@ -295,14 +311,14 @@ Using the Lynker messaging server I previously developed, augmented the Block ID
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
 - **Platforms:** Web
+- **Team:** Myself + Game Development Team (content upgrades)
 - **Technologies:** PHP, JavaScript, Redux, Redux Saga, AngularJS, SCSS
 
-Performed a major overhaul of Tynker's Block Editor, at that time, the core of Tynker's educational platform, mostly alone, in the span of six months. Given the previous mistakes and the undefined nature of the project, where this tool could keep growing to more and more unknown use cases, started by defining an architecture that forced separation of concerns, since this was the previous version's biggest mistake. To do that, first developed an extension framework where every part of the codebase was encapsulated in an extension, which could specify its dependencies. This approach forced all code to be encapsulated in an extension, which had a pre-determined lifecycle, and forced declaritve specification of dependencies. The second big decision was to use Redux. Redux forces a separation of concerns between the UI State and the UI itself, while also
+In a major six-month overhaul of Tynker's Block Editor, the core of the educational platform, I independently rewrote most of the codebase and developed numerous features from scratch, focusing on scalability and future-proofing. To achieve this, I implemented an extension framework that encapsulated each code functionality into its own extension with a pre-determined lifecycle and declarative specification of dependencies, forcing separation of concerns.
 
-This project was a behemoth, it involved writing a lot of features from scratch. The ones that I barely touch were the very core, namely the VM and the Block Rendering.
+Additionally, I utilized Redux to separate the UI State from the UI itself, which proved to be a good architectural decision alongside the extension framework and Redux Saga. The framework scaled well for new use cases, requiring minimal code changes across extensions to develop new features.
 
-Team: All software development tasks were architected and performed by me. There was also a significant effort to upgrade some curriculum to the new version, which was done by the game development team.
-Looking back: Looking back I still think the extension framework and Redux Saga were good architectural decisions. The framework scaled great for new use cases, where most of the time one had only to create a new extension and perform minimal code changes across the others to develop the new feature. Coding with Redux Saga requires a paradigm shift and it was hard to onboard new people because of it. If I was comfortable with React at that time, and if version X was already available, I would just swap the whole stack with PHP + React + EmotionJS + Extension Framework + Redux Saga, and make a strong push for getting rid of Redux Saga completely if I was able to keep the application modular without it.
+In retrospect, if at the time I was as comfortable with React as I am today, and version 16.8 was available, I would have opted for a PHP (mandatory) + React + EmotionJS + Extension Framework + Redux Saga stack; dropping AngularJS and Redux, and pushing to eliminate Redux Saga if I was able to keep the same level of modularity without it (it's an amazing framework but has a steep learning curve, making it hard to onboard new developers).
 
 - [Gallery](https://photos.app.goo.gl/rLjp8tBGs6WNStA18)
 - [Block IDE](https://www.tynker.com/ide/v3)
@@ -313,6 +329,7 @@ Looking back: Looking back I still think the extension framework and Redux Saga 
 - [Brick Breaker](https://www.tynker.com/ide/v3?type=diy&p=563bf549af923168448b456b&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
 - [Candy Quest](https://www.tynker.com/ide/v3?type=course&slug=activity:candy-quest&chapter=0&lesson=0)
 - [Barbie Pet Vet](https://www.tynker.com/ide/v3?type=course&slug=activity:barbie-pet-vet&chapter=0&lesson=0)
+
 ---
 
 ## Crystal Clash
@@ -323,11 +340,11 @@ Looking back: Looking back I still think the extension framework and Redux Saga 
 - **Role:** Lead Software Engineer
 - **Platforms:** Web / iOS (WebView)
 
-Crystal Clash is a multiplayer turn-based battlebots game that allows players to program their bots using Tynker's block-based programming language for competition in asynchronous matches. The game features monthly seasons, leaderboards, quests, and a shop where players can purchase new parts for their bots.
+Crystal Clash is a multiplayer turn-based battlebots game that allows players to code their bots using Tynker's block-based programming language for competition in asynchronous matches. The game features monthly seasons, leaderboards, quests, and a shop where players can purchase new parts for their bots.
 
 At its heart, Crystal Clash operates similarly to a complex chess game, set in an 8x8 grid arena where bots can move, attack, and deploy special abilities. Matches are resolved within a deterministic timeframe as the arena size decreases every few turns, aiming to be the last bot standing to win. The bots' actions are dictated by player-programmed scripts, executed each turn, to navigate and combat within the game environment.
 
-To accommodate the game's asynchronous nature and the use of Tynker's block-based programming language, initially designed for client-side execution in browsers, I developed a specific server-side virtual machine (VM). This VM was tailored to interpret the game's unique programming language, ensuring seamless gameplay and script execution across platforms.
+To accommodate the game's asynchronous nature and the use of Tynker's block-based programming language, whose existing VM was at the time tightly coupled to browser environments and legacy codebases, I developed a mirror server-side virtual machine with a subset of the language's features. This VM processed the player's scripts in order to compute the next game state.
 
 Popular to the time of this writing, several million matches have been played across numerous seasons.
 
@@ -356,11 +373,12 @@ Integrated Tynker's Block Editor into the Minecraft Education Edition app such t
 - **Start:** 2017
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
+- **Team:** Myself (Minecraft Editor) + Course Development Team (Mythicraft Course Content)
 - **Platforms:** Web / iOS (WebView)
 
 Tynker's Mythicraft is a creative and educational course designed to teach users how to mod their Minecraft world with a focus on mythological themes. It guides learners through the process of creating custom skins, magical items and blocks, and mythical creatures.
 
-This was the first attempt at integrating the Minecraft Editor tool into the structure of a regular Tynker course, interweaving regular intro lessons with lessons that had to be performed in the Minecraft Editor itself. To do so, I had to integrate the tool into the course workflows such that it could be declared in a course structured, launched when it had to and inside the course frame, and support lesson completion detection to trigger a jump to the next lesson. Also further performance improvements had to be done in the editor to improve support in the native mobile apps, since this course was also available on them.
+This was the first attempt at integrating the Minecraft Editor tool into the structure of a regular Tynker course, interweaving regular intro lessons with lessons that had to be performed in the Minecraft Editor itself. To do so, I had to integrate the tool into the course workflows such that it could be declared in the course data structures, launched when it had to, and inside the course frame, and support lesson completion detection to trigger a jump to the next lesson. Further performance improvements also had to be done in the editor to improve support in the native mobile apps, since this course was also available on them.
 
 - [Demo Video](https://photos.app.goo.gl/mjEzTS8Gpw8NsC668)
 
@@ -372,6 +390,7 @@ This was the first attempt at integrating the Minecraft Editor tool into the str
 - **Start:** 2016
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
+- **Team:** Myself
 - **Technologies:** React, Python, Flask, MongoDB, OpenAI, Pinecone
 
 Developed a web 3D editor for Minecraft Bedrock Edition, enabling customization of Skins, Blocks, Items, and Mobs. The editor featured texture editing and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, translating user inputs into Minecraft's declarative configuration files.
@@ -502,7 +521,7 @@ Single-handedly developed proof of concept native iOS application with the same 
 
 ---
 
-## MYSWEAR
+## MYSWEAR - Online Store
 
 - **TLDR:** Online Fashion Store with Shoe Customizer
 - **Start:** 2015
@@ -589,9 +608,9 @@ Work consisted in fixing tricky bugs in existing codebase for the iPhone and the
 
 <!--
 - [App Store](https://itunes.apple.com/us/app/energi-coach-personalized/id986965532)
+- [Website](http://energi.life)
 -->
 - [Gallery](https://photos.app.goo.gl/zdBc2yVP85U8dVNUA)
-- [Website](http://energi.life)
 
 ---
 
@@ -626,9 +645,11 @@ Developed iOS application and backend logic from top to bottom, also integrating
 
 TALKiT is a social media alternative to texting where you can share your experiences by making your voice heard. It allows you to share your experience by recording your voice, instead of typing text.
 
+<!--
+- [App Store](https://itunes.apple.com/us/app/talkit-hands-free-social-network/id880219768)
+-->
 - [Gallery](https://photos.app.goo.gl/VJkCBsdmQzt4ihMS7)
 - [Website](https://web.archive.org/web/20180326180938/http://www.gettalkit.com/)
-- [App Store](https://itunes.apple.com/us/app/talkit-hands-free-social-network/id880219768)
 
 ---
 
