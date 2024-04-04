@@ -1,12 +1,12 @@
 # TLDR
 
-My CV is long and detailed, written for AI to read, so if you're a human, here's the TLDR instead:
+My CV is detailed and comprehensive, better suited to throw at your favorite LLM and ask questions about it than to read the whole thing. For a succinct summary instead, here's the TLDR:
 
-With more than 20 years of experience in software development, I have honed my skills across a wide range of projects, from my early days at Microsoft to co-founding Hive Solutions and leading development efforts at Tynker. My journey began with a passion for coding ignited in childhood, which I pursued through a Computer Engineering degree and into a career marked by continuous learning and impactful work. I thrive on the challenge of architecting solutions and driving them from ideation to deployment.
+**With more than 20 years of experience in software development, I have honed my skills across a wide range of projects, from my early days at Microsoft to co-founding Hive Solutions and leading development efforts at Tynker. My journey began with a passion for coding ignited in childhood, which I pursued through a Computer Engineering degree and into a career marked by continuous learning and impactful work. I thrive on the challenge of architecting solutions and driving them from ideation to deployment.**
 
-Want a visual TLDR? Check my [Portfolio Gallery](https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6).
+**Want a quick look at my projects? Check my [Portfolio Gallery](https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6).**
 
-If you can reach out to me through [LinkedIn](https://www.linkedin.com/in/engtiagosilva/).
+**Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/engtiagosilva/) to discuss technology, share insights, or explore collaboration opportunities.**
 
 # Intro
 
