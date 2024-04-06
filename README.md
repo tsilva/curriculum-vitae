@@ -32,7 +32,7 @@ In my latest gig with Tynker, I rode the rollercoaster all the way from it being
 
 Tynker is a kid-friendly platform used by over 100 million students and in more than 150,000 schools, offering coding education through games and projects from basics to advanced programming languages.
 
-As a Lead Software Engineer, I was the main contributor to many of it's core products, namely:
+As a Lead Software Engineer, I was the main contributor to many of its core products, namely:
 
 - [Help Agent](#help-agent): a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture.
 - [BYJU's Coding Cup](#byjus-coding-cup): a soccer-themed coding competition for kids, branded as a [FIFA 2022 World Cup sponsor](https://www.prnewswire.com/ae/news-releases/byjus-unveils-the-byjus-coding-cup-enabling-kids-to-use-code-and-ai-to-field-virtual-soccer-teams-in-unison-with-the-fifa-world-cup-qatar-2022-301654538.html), with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.
