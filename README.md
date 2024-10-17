@@ -490,7 +490,7 @@ I was responsible for developing core features, managing the project timeline, a
 - **TLDR:** Online Jewellery Store
 - **Start:** 2016
 - **Client:** Lugar da Jóia (through Hive Solutions)
-- **Role:** Software Engineer
+- **Role:** Lead Software Engineer
 - **Technologies:** Python, Appier, MongoDB, Budy, HTML, CSS, JavaScript, jQuery, UXF
 
 Lugar da Jóia is a chain of jewelry stores, and this project marked their first venture into online sales.
@@ -507,6 +507,7 @@ I served as both a full-stack developer and coordinator, overseeing another deve
 - **TLDR:** Middleware Directory for Microsoft Partners
 - **Start:** 2016
 - **Client:** Microsoft (through Hive Solutions)
+- **Role:** Lead Software Engineer
 - **Technologies:** C#, CoreCLR, ASP.NET, Docker, Frontdoor
 
 App Middleware Partners is a section of Microsoft's Windows Dev Center that serves as a directory for Microsoft partners to showcase their middleware solutions.
@@ -523,7 +524,7 @@ In this project, I managed stakeholder communication, coordinated the design and
 - **TLDR:** Instore Shoe Customization and Ordering experience with Holographic Preview
 - **Start:** 2016
 - **Client:** RIPE Productions (through Hive Solutions)
-- **Role:** Software Engineer
+- **Role:** Full-stack Developer
 - **Technologies:** Python, Appier, HTML, CSS, JavaScript, jQuery, UXF
 
 MYSWEAR set up a stand at Harrods, one of the world's most renowned department stores in London, where customers could personalize and order custom shoes while viewing their design in real-time on a four-sided holographic pyramid display.
@@ -539,6 +540,7 @@ Developed a new mode for the existing MYSWEAR online customizer, enabling custom
 - **TLDR:** iOS Shoe Customization Experience for MYSWEAR
 - **Start:** 2015
 - **Client:** RIPE Productions (through Hive Solutions)
+- **Role:** Mobile Developer
 - **Technologies:** iOS, Objective-C
 
 Single-handedly developed a proof-of-concept native iOS application that replicated the shoe customization experience from the MYSWEAR website. This native app was created in record time and successfully used for demo purposes.
@@ -550,6 +552,7 @@ Single-handedly developed a proof-of-concept native iOS application that replica
 - **TLDR:** Online Fashion Store with Shoe Customizer
 - **Start:** 2015
 - **Client:** RIPE Productions (through Hive Solutions)
+- **Role:** Lead Software Engineer
 - **Technologies:** Python, MongoDB, Appier, HTML, CSS, JavaScript, jQuery, UXF, Farfetch API
 
 MYSWEAR is an online store where customers can design and purchase custom shoes from the SWEAR fashion brand.
@@ -565,6 +568,7 @@ The website was developed based on pre-existing design specifications. I develop
 - **TLDR:** iOS Audio Transcribing Application
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
+- **Role:** Bug fixing
 - **Technologies:** iOS, Objective-C
 
 SpeakWrite is an application that allows users to record audio and have it transcribed into text by human transcribers within a short period.
@@ -643,7 +647,7 @@ I focused on fixing complex bugs in the existing codebase for both the iPhone an
 - **TLDR:** iOS Alcohol Delivery App
 - **Start:** 2015 
 - **Client**: Rocksauce Studios (through Toptal)
-- **Role**: Full-stack app development
+- **Role**: Full-stack Developer
 - **Platform**: iPhone (iOS)
 - **Technologies:** iOS, Objective-C, Parse, JavaScript, Stripe, Apple Pay
 
@@ -739,6 +743,7 @@ I contributed to the initial development of the project, creating core features 
 - **TLDR:** iOS Valet Parking Software
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
+- **Role:** Bug fixing
 - **Technologies:** iOS, Objective-C
 
 ValetTab is an app that streamlines the valet parking experience at participating locations. It allows users to check in, notify the valet when they are ready to check out, and pay for parking directly from their phone. The companion app, ValetStand, helps valet staff manage parked cars, checkout requests, and payments.
@@ -754,6 +759,7 @@ I fixed numerous bugs and implemented new features, primarily related to the pay
 - **TLDR:** iOS Sports Tracking app
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
+- **Role:** Mobile Developer
 - **Technologies:** iOS, Objective-C, MapMyFitness SDK
 
 LIVE FIT is a sports tracking app for the Academy Sports + Outdoors retail chain. It integrates with the MapMyFitness (MMF) SDK to store and retrieve activity data from the MMF service.
@@ -843,7 +849,7 @@ Although the app was originally developed by someone else, I contributed by fixi
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
 - **Role:** Full-stack Developer
-- **Platform:** iPhone (iOS)x
+- **Platform:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C, Parse
 
 Randid is a social networking app for iOS where users send a picture and receive a random one in return from other users.
@@ -956,6 +962,7 @@ I developed the entire application from top to bottom while also managing the pr
 - **TLDR:** iOS Music Social Network for Fans, Artists and Venues
 - **Start:** 2013
 - **Client:** Rock Lobby (through Toptal)
+- **Role:** Mobile Developer
 - **Platform:** iOS (iPhone)
 - **Technologies:** iOS, Objective-C
 
@@ -973,9 +980,10 @@ I developed the client-side iOS app, collaborating with an existing developer wo
 - **Start:** 2012
 - **Client:** Idle Games (through Toptal)
 - **Platform:** Web
+- **Role:** Backend Developer
 - **Technologies:** Python, Django, MongoDB, HTML, CSS, JavaScript, jQuery, RabbitMQ
 
-Fresh Deck Poker is an online multiplayer poker game with real cash prizes.
+Fresh Deck Poker was an online multiplayer poker game with real cash prizes.
 
 I developed several features for the game's administration backoffice, including account management, game and table management, monetization, and odds assignment. Some requests exceeded Django's native capabilities, requiring advanced solutions like heavy-duty hacks and monkey-patching to implement the necessary features.
 
@@ -989,6 +997,7 @@ I developed several features for the game's administration backoffice, including
 - **TLDR:** B2B Portal for Handbags and Fashion Accessories Brand
 - **Start:** 2012
 - **Client:** Parfois (through Hive Solutions)
+- **Role:** Lead Software Engineer
 - **Technologies:** Oracle DB, C#, SQL, PL/SQL
 
 This project was a B2B portal for managing communications and transactions for the PARFOIS handbags and fashion accessories brand.
@@ -1002,6 +1011,7 @@ Initially contracted as a consultant to help the development team adopt the requ
 - **TLDR:** Deal-a-Day Aggregation Service
 - **Start:** 2011
 - **Client:** Hive Solutions
+- **Role:** Backend Developer, Marketing copywriter
 - **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, jQuery, UXF
 
 Bargania was a Deal-a-Day aggregation platform, similar to Groupon, where users could browse the latest deals from major providers, sort them based on preferences, and receive personalized newsletters with offers tailored to their profiles.
@@ -1017,6 +1027,7 @@ I developed the core features of the platform and handled copywriting and transl
 - **TLDR:** Restaurant Search Engine
 - **Start:** 2010
 - **Client:** Hive Solutions
+- **Role:** Backend Developer
 - **Technologies:** Python, HTML, XML, MySQL
 
 A La Carte was a restaurant search engine that allowed users to search for restaurants offering specific dishes, within a certain price range, near their location.
@@ -1047,6 +1058,7 @@ I developed and implemented the game's core logic, 3D model import feature, and 
 - **TLDR:** Battlebots-like Game
 - **Start:** 2010
 - **Client:** Hive Solutions
+- **Role:** Backend Developer
 - **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, jQuery, UXF
 
 Panzerini was a Battlebots-style game built using Hive Solutions' Colony Framework, created for the 2010 Sapo Codebits 48-hour programming competition. Developers could write AI for their bots (as Colony plugins) and deploy them in the Panzerini arena, which ran directly in a web browser without requiring any extensions.
@@ -1154,13 +1166,12 @@ With this system, daily sessions ensured the user retained previously learned ch
 - **TLDR:** Community Website for Karate Club
 - **Start:** 2005
 - **Client:** Clube de Karate da Maia
+- **Role:** Full-stack Developer
 - **Technologies:** Joomla, PHP, MySQL
 
-Established the club's presence in the World Wide Web, providing a way to get it closer to it's members and the general public. 
+Created a website for the Clube de Karate da Maia, a local karate club where I trained for many years. The website was implemented using the Joomla framework, leveraging PHP as the scripting language and a MySQL database for data management.
 
-Solution was provided via a website implemented using the Joomla framework, using the PHP scripting language, and a MySQL database.
-
-Learned to customize the Mambo/Joomla Content Management System to provide the functionalities a regular community website needs.
+Through this project, I gained experience in customizing the Mambo/Joomla Content Management System to provide essential functionalities for a community-oriented website.
 
 ---
 
