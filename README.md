@@ -1,8 +1,6 @@
 # TLDR
 
-
-My CV is detailed and comprehensive, better suited to throw at your favorite LLM and ask questions about it than to read the whole thing. For a succinct summary instead, here's the TLDR:
-
+My CV is detailed and comprehensive—it's more suited for running through your favorite LLM and asking questions than reading it all the way through. For a concise summary, here's the **TL;DR**:
 
 > <br>Passionate Lead Software Engineer with over 20 years of diverse experience, my love for technology was ignited at age 8 when I began coding text adventure games on a Casio calculator. This lifelong enthusiasm drives me to continuously learn and innovate across a wide range of projects.<br>  
 From starting at Microsoft to co-founding Hive Solutions, consulting for multiple U.S. companies, and leading major development efforts at Tynker, I've consistently taken on pivotal roles. At Tynker, I was the main contributor to several core products used by over **100 million students in more than 150,000 schools**, significantly contributing to the company's **$200 million acquisition by BYJU's in 2021.**<br>  
@@ -20,8 +18,8 @@ Specializing in full-stack development, I thrive on architecting solutions and d
 >- **Other Technologies:** OpenGL, Bluetooth
 <br>
 
-><br>**For a showcase of my work, please visit my [Portfolio Gallery](https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6).**
-**Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/engtiagosilva/) to explore collaboration opportunities.**
+><br>**For a showcase of my work, visit my [Portfolio Gallery](https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6).**
+**To explore collaboration opportunities, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/engtiagosilva/).**
 <br>
 
 # Intro
@@ -73,7 +71,7 @@ RIPE Productions, was a company that developed e-commerce solutions for the fash
 
 Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#karl-kustomize) project for [Karl Lagerfeld](https://www.karl.com/pt-en). 
 
-In a lesser role also contributed as a software developer to the [MYSWEAR online store](#myswear--online-store) featuring an advanced shoe customization rendering platform, related [iOS demo](#myswear--ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#myswear--harrods-holographic-pyramid), a luxury department store in London.
+In a lesser role also contributed as a software developer to the [MYSWEAR online store](#myswear---online-store), featuring an advanced shoe customization rendering platform, related [iOS demo](#myswear---ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#myswear---harrods-holographic-pyramid), a luxury department store in London.
 
 ## [Rocksauce Studios](https://www.rocksaucestudios.com/)
 
