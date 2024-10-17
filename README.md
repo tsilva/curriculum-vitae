@@ -1,26 +1,42 @@
 # TLDR
 
+
 My CV is detailed and comprehensive, better suited to throw at your favorite LLM and ask questions about it than to read the whole thing. For a succinct summary instead, here's the TLDR:
 
-**With more than 20 years of experience in software development, I have honed my skills across a wide range of projects, from my early days at Microsoft to co-founding Hive Solutions and leading development efforts at Tynker. My journey began with a passion for coding ignited in childhood, which I pursued through a Computer Engineering degree and into a career marked by continuous learning and impactful work. I thrive on the challenge of architecting solutions and driving them from ideation to deployment.**
 
-**Want a quick look at my projects? Check my [Portfolio Gallery](https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6).**
+> <br>Passionate Lead Software Engineer with over 20 years of diverse experience, my love for technology was ignited at age 8 when I began coding text adventure games on a Casio calculator. This lifelong enthusiasm drives me to continuously learn and innovate across a wide range of projects.<br>  
+From starting at Microsoft to co-founding Hive Solutions, consulting for multiple U.S. companies, and leading major development efforts at Tynker, I've consistently taken on pivotal roles. At Tynker, I was the main contributor to several core products used by over **100 million students in more than 150,000 schools**, significantly contributing to the company's **$200 million acquisition by BYJU's in 2021.**<br>  
+Specializing in full-stack development, I thrive on architecting solutions and driving them from ideation to successful deployment.<br>
+>I've worked with the following technologies:<br>
+>- **Programming Languages:** Python, JavaScript, PHP, C#, Java, 
+>- **Frontend Development:** React, Redux, Redux Saga, AngularJS, jQuery, CSS/SCSS/CSS-in-JS
+>- **Backend Development:** Node.js, Express, Flask, ASP.NET
+>- **Mobile Development:** React Native, iOS (Objective-C, Swift)
+>- **Databases and Data Stores:** MongoDB, MySQL, SQLite, Redis, PostgreSQL, Oracle DB
+>- **Real-Time Communication:** WebSockets, WebRTC
+>- **DevOps and Infrastructure:** AWS, Google Cloud, Docker, NGINX, RabbitMQ, Heroku
+>- **Payment Integration:** Stripe, Apple Pay
+>- **Artificial Intelligence and Machine Learning:** PyTorch, TensorFlow, Pinecone, Langchain, LlamaIndex, OpenAI/Cohere/Anthropic API, Gymnasium
+>- **Other Technologies:** OpenGL, Bluetooth
+<br>
 
-**Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/engtiagosilva/) to discuss technology, share insights, or explore collaboration opportunities.**
+><br>**For a showcase of my work, please visit my [Portfolio Gallery](https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6).**
+**Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/engtiagosilva/) to explore collaboration opportunities.**
+<br>
 
 # Intro
 
-Nurtured by the nostalgic screeching sounds of a ZX Spectrum loading games from an audio cassette, my journey into the digital realm began in the pre-internet dark ages, where knowledge was buried in dusty libraries. 
+Nurtured by the nostalgic screeching sounds of a [Sinclair ZX Spectrum](https://www.youtube.com/watch?v=V0EfycbDhiw) loading games from an audio cassette, my journey into the digital realm began in the pre-internet dark ages, where knowledge was buried in dusty libraries. 
 
-By age eight, armed with only my Casio Calculator and my wits, I began crafting text adventure games, lighting the first sparks of a lifelong passion for technology and programming. 
+By age eight, armed with only a [Casio FX-850P](https://en.wikipedia.org/wiki/Casio_FX-850P) and my wits, I began crafting text adventure games, lighting the first sparks of a lifelong passion for technology and programming. 
 
-Moving on to the Commodore Amiga, a marvel ahead of its era yet tragically unsung, I progressed from hacking video games for infinite lives and ammo, to building them in BASIC, launching a game in Amiga Format magazine by the age of twelve. 
+Moving on to the [Commodore Amiga](https://en.wikipedia.org/wiki/Amiga), a marvel ahead of its era yet tragically unsung, I progressed from hacking video games for infinite lives and ammo, to building them in [Amos BASIC](https://en.wikipedia.org/wiki/AMOS_(programming_language)), launching a game in [Amiga Format magazine](https://en.wikipedia.org/wiki/Amiga_Format) by the age of twelve. 
 
 When I later got my hands on a PC and a 56kbps modem, with internet access and a voracious appetite for learning, I was off to the races: disassembling executables to bypass trial limitations (allegedly), writing more video games, learning more coding languages, developing web apps, etc.. by the time I got to taking Computer Engineering in university, I was already well on my way. 
 
 Across the span of 20+ years of experience, from starting my career at Microsoft, to co-founding Hive Solutions, remote-working for multiple United States clients and finally settling for a long ride with Tynker, I have had the opportunity to work on a wide range of projects, usually in a leading role and covering all facets of software development.
 
-In my latest gig with Tynker, I rode the rollercoaster all the way from it being a very small team, to being [acquired for $200M by BYJU's in 2021](https://techcrunch.com/2021/09/16/byjus-acquires-coding-platform-tynker-for-200-million-in-us-expansion-push/), and ultimately [going down with the ship](https://techcrunch.com/2024/01/29/byjus-seeks-to-raise-200-million-in-rights-issue/). It was a wild ride, full of valuable lessons, where I had the opportunity of being the main contributor to a lot of Tynker's core products, that were used by over 100 million students and in more than 150,000 schools.
+In my latest role with Tynker, I rode the rollercoaster all the way from it being a very small team, to being [acquired for $200M by BYJU's in 2021](https://techcrunch.com/2021/09/16/byjus-acquires-coding-platform-tynker-for-200-million-in-us-expansion-push/), and ultimately [going down with the ship](https://techcrunch.com/2024/01/29/byjus-seeks-to-raise-200-million-in-rights-issue/). It was a wild ride, full of valuable lessons, where I had the opportunity of being the main contributor to a lot of Tynker's core products, that were used by over 100 million students and in more than 150,000 schools.
 
 # Experience
 
@@ -57,7 +73,7 @@ RIPE Productions, was a company that developed e-commerce solutions for the fash
 
 Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#karl-kustomize) project for [Karl Lagerfeld](https://www.karl.com/pt-en). 
 
-In a lesser role also contributed as a software developer to the [MYSWEAR online store](#myswear-online-store) featuring an advanced shoe customization rendering platform, related [iOS demo](#myswear-ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#myswear-harrods-holographic-pyramid), a luxury department store in London.
+In a lesser role also contributed as a software developer to the [MYSWEAR online store](#myswear--online-store) featuring an advanced shoe customization rendering platform, related [iOS demo](#myswear--ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#myswear--harrods-holographic-pyramid), a luxury department store in London.
 
 ## [Rocksauce Studios](https://www.rocksaucestudios.com/)
 
@@ -105,15 +121,14 @@ Developed internal tool for database PII anonymization to allow data transfer ac
   - [SIC](https://photos.app.goo.gl/PY6t4TEXYK4fXmt98)
   - [TVI](https://photos.app.goo.gl/W3wTceGahoE2p36U7)
 
-## [Rent-a-Coder](https://www.freelancer.com/)
+## [Rent-a-Coder](https://web.archive.org/web/20061228042557/http://www.rentacoder.com/RentACoder/default.asp)
 
 - **Duration:** 2003 - 2006 · 3 years
 - **Role:** Software Developer
 
-As my first avenue of income, during college, got quite a bit of experience doing freelance projects with worldwide clients via the Rent-a-Coder service (going by the name "
-Chronosync Developments"), at the time ranked in the 99% percentile of overall customer rating. Learned a lot of skills, mainly how to properly elicit requirements from clients, manage expectations, and deliver on time.
+During college, I gained valuable experience working on freelance projects for clients around the world through the Rent-a-Coder platform, where I operated under the name "Chronosync Developments" and was fortunate to rank in the top 1% for customer ratings. This was my first foray into managing end-to-end client relationships, where I was tasked with projects and paid for delivering them. It helped me develop key skills in understanding client needs, managing expectations, and delivering on time.
 
-- [Profile](https://www.exhedra.com/RentACoder/SoftwareCoders/showBioInfo_lngAuthorId_860960.html)
+- [Profile](https://web.archive.org/web/20041112020320/http://www.rentacoder.com/RentACoder/SoftwareCoders/showBioInfo.asp?lngAuthorId=860960) (old snapshot of profile, unfortunately most of the work reviews from later years were not crawled by the Wayback Machine)
 
 # Education
 
@@ -619,7 +634,7 @@ Work consisted in fixing tricky bugs in existing codebase for the iPhone and the
 - [App Store](https://itunes.apple.com/us/app/energi-coach-personalized/id986965532)
 - [Website](http://energi.life)
 -->
-- [Gallery](https://photos.app.goo.gl/zdBc2yVP85U8dVNUA)
+- [Gallery](https://photos.app.goo.gl/nxxb3rzMBLug6Fg27)
 
 ---
 
@@ -1201,7 +1216,7 @@ Computer Capers was a video game I developed when I was 12 years old and sent fo
 The whole game plot was incredibly dumb, which was natural for my age. The mechanics were very simple, you just walked around a tile-based world, talking to people who were looking for certain items, and when you found and gave them those items, they rewarded you with other items that other people were looking for, which let you advance the plot. The game graphics were created by me as well.
 
 - [Gallery](https://photos.app.goo.gl/fk1GEomK621wdJ7s6)
-- [Demo Video](https://drive.google.com/file/d/1DtE3ewh4trvmyFp3PjZC8USm_yMHQwpu/view?usp=drive_link)
+- [Demo Video](https://photos.app.goo.gl/uMKFMcYurDnpCged8)
 
 ---
 
