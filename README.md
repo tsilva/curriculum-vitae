@@ -51,7 +51,7 @@ In all these projects, I was responsible for eliciting requirements from stakeho
 
 - **Duration:** 2016 · Less than a year
 - **Role:** Lead Software Engineer (Full-time)
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Remote 🌍
 
 RIPE Productions, was a company that developed e-commerce solutions for the fashion industry (this company is now called [PlatformE](https://www.platforme.com/)).
 
@@ -81,7 +81,7 @@ Toptal is a platform connecting top developers with leading companies. It employ
 
 - **Duration:** Mar 2008 - Sep 2016 · 8 years and 7 months
 - **Role:** Co Founder (Full-time)
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Onsite 🏢
 
 As a co-founder of Hive Solutions, I took on a variety of roles, as is common for startup founders. While my primary role was Lead Software Engineer, I also handled tasks related to sales, marketing and recruitment when needed.
 
@@ -140,7 +140,7 @@ Being in a country with a language and culture so different from my own, where c
 - **Duration:** 2002 - 2007 (5 year course)
 - **Degree:** Licenciate, Computer Engineering
 - **Grade:** 16 (out of 20)
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Onsite 🏢
 
 The Computer Engineering course I attended was one of the most competitive in the country, with high entry requirements. Despite starting with a weak foundation in Mathematics, I worked hard to turn things around, achieving excellent entry exam results and earning the second-highest grade in my high school.
 
@@ -184,7 +184,7 @@ Post-deployment on Tynker's parent and school pages, the chatbot significantly b
 - **Client:** Tynker
 - **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
-- **Team:** Myself + 1 Software Developer + 1 Game Designer
+- **Team:** Me + 1 Software Developer + 1 Game Designer
 - **Platforms:** Web
 - **Technologies:** React, Redux, Redux Saga, PHP, JavaScript
 
@@ -209,7 +209,7 @@ My role involved architecting the solution, developing core features, and coordi
 - **Client:** Tynker
 - **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
-- **Team:** Myself + 1 Software Developer (match renderer) + multiple Game Designers (content development)
+- **Team:** Me + 1 Software Developer (match renderer) + multiple Game Designers (content development)
 - **Platforms:** Web, Android (WebView), iOS (WebView)
 - **Technologies:** React, PHP
 
@@ -235,7 +235,7 @@ Launched in time for the World Cup, the game was accessible via the web and inte
 - **Client:** Tynker
 - **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
-- **Team:** Myself + Design Team
+- **Team:** Me + Design Team
 - **Platforms:** Web
 - **Technologies:** React, PHP, WebRTC, Dyte
 
@@ -257,7 +257,7 @@ The platform was deployed on schedule with only minor issues, mostly related to 
 - **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Platform:** Web
-- **Team:** Myself + Design Team + Content Team
+- **Team:** Me + Design Team + Content Team
 - **Technologies:** React, MDX, NodeJS, React Native, PHP
 
 The Quizzer platform is a versatile tool designed to build assessments that interleave multiple interactive quiz types, using a unified content authoring format powered by MDX.
@@ -283,7 +283,7 @@ The solution was deployed on schedule and required minimal post-deployment maint
 - **Client:** Tynker
 - **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
-- **Team:** Myself + Design Team
+- **Team:** Me + Design Team
 - **Technologies:** React, PHP, JavaScript
 
 Combining the [Collaborative Learning System](#collaborative-learning-system) features with the [Live Classes](#live-classes) platform, developed an integrated coaching management system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
@@ -332,7 +332,7 @@ Using the Lynker messaging server I previously developed, I enhanced the Block I
 - **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Platforms:** Web
-- **Team:** Myself + Game Development Team (content upgrades)
+- **Team:** Me + Game Development Team (content upgrades)
 - **Technologies:** Redux, Redux Saga, AngularJS, JavaScript, SCSS, PHP
 
 In six months, I rearchitected a significant portion of Tynker's Block Editor, the core of its educational platform, to address critical scalability and maintenance issues caused by years of rushed development under tight deadlines, which had left the legacy codebase cluttered with hardcoded elements and quick-fix hacks, making it difficult to scale and maintain.
@@ -397,7 +397,7 @@ Integrated Tynker's Block Editor into the Minecraft Education Edition app, enabl
 - **Client:** Tynker
 - **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
-- **Team:** Myself (Minecraft Editor) + Course Development Team (Mythicraft Course Content)
+- **Team:** Me (Minecraft Editor) + Course Development Team (Mythicraft Course Content)
 - **Platforms:** Web / iOS (WebView)
 
 Tynker's Mythicraft is a creative educational course designed to teach users how to mod their Minecraft world with a focus on mythological themes. It guides learners through the creation of custom skins, magical items, blocks, and mythical creatures.
@@ -415,7 +415,7 @@ This course marked the first integration of the Minecraft Editor tool into a sta
 - **Client:** Tynker
 - **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
-- **Team:** Myself + Game Design Team (testing)
+- **Team:** Me + Game Design Team (testing)
 - **Technologies:** React, Python, Flask, MongoDB, OpenAI, Pinecone
 
 Developed a web-based 3D editor for Minecraft Bedrock Edition, allowing users to customize Skins, Blocks, Items, and Mobs. The editor included texture editing capabilities and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, which translated user inputs into Minecraft's declarative configuration files.
@@ -455,7 +455,7 @@ This tool was integrated into both the Tynker App and Mod Creator App, offering 
 - **TLDR:** Fast-paced revival of the classic "Lights Out" game for iPhone, iPad, Apple TV and Apple Watch
 - **Start:** 2016
 - **Client:** Hive Solutions
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Onsite 🏢
 - **Role:** Lead Software Engineer
 - **Technologies:** Swift, iOS, tvOS, watchOS
 
@@ -475,7 +475,7 @@ I coordinated the design and development of the application, contributing to cor
 - **TLDR:** Online Shoe Customization Store
 - **Start:** 2016
 - **Client:** RIPE Productions
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Technologies:** Python, MongoDB, Appier, HTML, CSS, JavaScript, jQuery, UXF, Budy
 
@@ -495,7 +495,7 @@ I was responsible for developing core features, managing the project timeline, a
 - **TLDR:** Online Jewellery Store
 - **Start:** 2016
 - **Client:** Lugar da Jóia (through Hive Solutions)
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Onsite 🏢
 - **Role:** Lead Software Engineer
 - **Technologies:** Python, Appier, MongoDB, Budy, HTML, CSS, JavaScript, jQuery, UXF
 
@@ -531,7 +531,7 @@ In this project, I managed stakeholder communication, coordinated the design and
 - **TLDR:** Instore Shoe Customization and Ordering experience with Holographic Preview
 - **Start:** 2016
 - **Client:** RIPE Productions (through Hive Solutions)
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Remote 🌍
 - **Role:** Full-stack Developer
 - **Technologies:** Python, Appier, HTML, CSS, JavaScript, jQuery, UXF
 
@@ -548,7 +548,7 @@ Developed a new mode for the existing MYSWEAR online customizer, enabling custom
 - **TLDR:** iOS Shoe Customization Experience for MYSWEAR
 - **Start:** 2015
 - **Client:** RIPE Productions (through Hive Solutions)
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Remote 🌍
 - **Role:** Mobile Developer
 - **Technologies:** iOS, Objective-C
 
@@ -561,7 +561,7 @@ Single-handedly developed a proof-of-concept native iOS application that replica
 - **TLDR:** Online Fashion Store with Shoe Customizer
 - **Start:** 2015
 - **Client:** RIPE Productions (through Hive Solutions)
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Technologies:** Python, MongoDB, Appier, HTML, CSS, JavaScript, jQuery, UXF, Farfetch API
 
@@ -1031,7 +1031,7 @@ I developed several features for the game's administration backoffice, including
 - **TLDR:** B2B Portal for Handbags and Fashion Accessories Brand
 - **Start:** 2012
 - **Client:** Parfois (through Hive Solutions)
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Onsite 🏢
 - **Role:** Lead Software Engineer
 - **Technologies:** Oracle DB, C#, SQL, PL/SQL
 
@@ -1046,7 +1046,7 @@ Initially contracted as a consultant to help the development team adopt the requ
 - **TLDR:** Deal-a-Day Aggregation Service
 - **Start:** 2011
 - **Client:** Hive Solutions
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Onsite 🏢
 - **Role:** Backend Developer, Marketing copywriter
 - **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, jQuery, UXF
 
@@ -1063,7 +1063,7 @@ I developed the core features of the platform and handled copywriting and transl
 - **TLDR:** Restaurant Search Engine
 - **Start:** 2010
 - **Client:** Hive Solutions
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Onsite 🏢
 - **Role:** Backend Developer
 - **Technologies:** Python, HTML, XML, MySQL
 
@@ -1080,7 +1080,7 @@ I designed and developed the ETL components for the food indexing and search sys
 - **TLDR:** Cross-Platform Shoot'em Up Game
 - **Start:** 2010
 - **Client:** Hive Solutions
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Onsite 🏢
 - **Technologies:** C++, Objective-C, OpenGL ES
 
 Mariachi was a cross-platform shoot-'em-up game designed for mobile platforms.
@@ -1096,7 +1096,7 @@ I developed and implemented the game's core logic, 3D model import feature, and 
 - **TLDR:** Battlebots-like Game
 - **Start:** 2010
 - **Client:** Hive Solutions
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Onsite 🏢
 - **Role:** Backend Developer
 - **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, jQuery, UXF
 
@@ -1113,7 +1113,7 @@ I developed core features of the game and created the artificial intelligence fo
 - **TLDR:** Social Network for Schools
 - **Start:** 2010
 - **Client:** Schoooools (through Hive Solutions)
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Onsite 🏢
 - **Technologies:** PhoneGap, Objective-C, HTML, JavaScript, CSS, Ruby on Rails
 
 Schoooools is a platform that provides personal and social learning spaces, fostering collaboration between learners, parents, and teachers. It allows all schoolwork to be stored digitally, enabling parents to follow their children's progress, organize their work, and preserve it for future reference, sharing, or family viewing.
@@ -1129,7 +1129,7 @@ I developed core features such as action tracking, analytics, and classroom mana
 - **TLDR:** SaaS Invoicing Solution
 - **Start:** 2010
 - **Client:** Hive Solutions
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Onsite 🏢
 - **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, UXF
 
 Take the Bill is an online invoicing solution initially intended as a public service but ultimately deployed in private clouds, including as the billing app for Hive Solutions.
@@ -1145,7 +1145,7 @@ I developed key backend and frontend features for the application.
 - **TLDR:** SaaS ERP Solution
 - **Start:** 2008
 - **Client:** Hive Solutions
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Onsite 🏢
 - **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, jQuery, UXF
 
 Developed back-end logic for online Point-of-Sale SaaS product using Python with the Colony Framework and its respective MVC stack. Also developed front-end for same system through extensive usage of JavaScript and jQuery to create a productive user experience.
@@ -1159,7 +1159,7 @@ Developed back-end logic for online Point-of-Sale SaaS product using Python with
 - **TLDR:** Modularity Container Framework
 - **Start:** 2008
 - **Client:** Hive Solutions
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Onsite 🏢
 - **Technologies:** Python, JavaScript
 
 Colony is a modularity container that allows plugins to be deployed, loaded, and unloaded in real-time without restarting the container.
@@ -1175,7 +1175,7 @@ I developed core technology for the framework, authored technical documentation,
 - **TLDR:** Knowledge Management System for Helpdesk Support
 - **Start:** 2006
 - **Client:** Modelo Continente Hipermercados (through FEUP)
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Remote 🌍
 - **Technologies:** C#, ASP.NET, SQL Server
 
 Collaborated in an academic-enterprise partnership to deliver a functional knowledge management system for the organization's helpdesk support team.
@@ -1190,7 +1190,7 @@ The final product was successfully completed and deployed at the partner enterpr
 
 - **TLDR:** Japanese Language Learning Assistant
 - **Start:** 2006
-- **Client:** Myself
+- **Client:** Me
 - **Location:** Porto, Portugal
 - **Technologies:** C#, SQL Server, Neural Networks
 
@@ -1211,7 +1211,7 @@ With this system, daily sessions ensured the user retained previously learned ch
 - **TLDR:** Community Website for Karate Club
 - **Start:** 2005
 - **Client:** Clube de Karate da Maia
-- **Location:** Maia, Portugal
+- **Location:** Maia, Portugal · Onsite 🏢
 - **Role:** Full-stack Developer
 - **Technologies:** Joomla, PHP, MySQL
 
@@ -1240,7 +1240,7 @@ Through this project, I deepened my understanding of Neural Networks and Genetic
 - **TLDR:** Extreme Sports Company Website
 - **Start:** 2004
 - **Client:** Clube do Paiva
-- **Location:** Arouca, Portugal
+- **Location:** Arouca, Portugal · Remote 🌍
 - **Technologies:** PHP, MySQL
 
 Handled entire backend production of a website, web application and database programming. Solution was provided in the form of a web application implemented in the PHP scripting language, interfacing with a MySQL database.
@@ -1254,7 +1254,7 @@ Handled entire backend production of a website, web application and database pro
 - **TLDR:** European Space Agency Student Sattellite Project
 - **Start:** 2004
 - **Client:** European Space Agency (through FEUP)
-- **Location:** Porto, Portugal
+- **Location:** Porto, Portugal · Remote 🌍
 
 I served as the Coordinator of the Software subteam within the On Board Data Handler team for the European Student Moon Orbiter project, part of the European Space Agency's SSETI (Student Space Exploration & Technology Initiative) program, which aimed to deploy a satellite into lunar orbit.
 
