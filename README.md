@@ -75,7 +75,7 @@ Rocksauce Studios was a mobile app development company that specialized in creat
 
 Toptal is a platform connecting top developers with leading companies. It employs a rigorous screening process, assessing both advanced technical abilities and strong English proficiency. Through Toptal, I have collaborated with several companies on medium to long-term projects, consistently receiving outstanding feedback from clients.
 
-- [Website](https://www.toptal.com/)
+- <a href="https://www.toptal.com/" target="_blank">Website</a>
 
 ## 🐝 [Hive Solutions](https://www.hive.pt/)
 
@@ -87,7 +87,7 @@ As a co-founder of Hive Solutions, I took on a variety of roles, as is common fo
 
 We initially set out to build a SaaS Retail POS system called *[Frontdoor](#frontdoor)*, which we developed entirely from scratch, using a tech stack fully built in-house. Although it was a technical success, it didn’t achieve commercial success. We eventually pivoted to software consulting, where we shipped a diverse range of projects for numerous clients.
 
-- [Website](https://www.hive.pt/)
+- <a href="https://www.hive.pt/" target="_blank">Website</a>
 - [Github](https://github.com/hivesolutions)
 
 ## 🖥 [Microsoft](https://www.microsoft.com/)
@@ -133,7 +133,7 @@ However, the most rewarding aspect of this experience extended far beyond academ
 
 Being in a country with a language and culture so different from my own, where communication was often challenging (as neither Polish nor English were widely spoken), pushed me out of my comfort zone every day. It was a profoundly transformative experience that fostered resilience and adaptability in ways I hadn't anticipated.
 
-- [Website](https://www.uni.lodz.pl/en/)
+- <a href="https://www.uni.lodz.pl/en/" target="_blank">Website</a>
 
 ## [Faculdade de Engenharia da Universidade do Porto](https://sigarra.up.pt/feup/en/)🎓
 
@@ -148,7 +148,7 @@ The course itself was demanding, with assignments becoming more complex each sem
 
 Additionally, I regularly participated in ACM programming contests, placed second in the 2006 edition of the [National Logic and Functional Programming Contest](https://www.flickr.com/photos/tiagoafpereira/albums/72057594128921562/), and was involved in the [European Space Agency's ESMO project](https://www.esa.int/Education/ESMO_mission).
 
-- [Website](https://sigarra.up.pt/feup/en/)
+- <a href="https://sigarra.up.pt/feup/en/" target="_blank">Website</a>
 
 # 🚀 Projects
 
@@ -522,7 +522,7 @@ App Middleware Partners is a section of Microsoft's Windows Dev Center that serv
 In this project, I managed stakeholder communication, coordinated the design and development, and contributed to core development tasks. The biggest challenge was navigating Microsoft's complex organizational structure to gather the necessary information for integration and deployment. This required overcoming significant bureaucratic obstacles, including extensive outreach through messaging and cold-calling across multiple levels of the organization. Despite these challenges, the project was successfully delivered on time and within budget.
 
 - <a href="https://photos.app.goo.gl/T13vtSmmCndfCmUZ7" target="_blank">Gallery</a>
-- [Website](https://web.archive.org/web/20160401014628/https://devcenterpartners.windows.com/)
+- <a href="https://web.archive.org/web/20160401014628/https://devcenterpartners.windows.com/" target="_blank">Website</a>
 
 ---
 
@@ -630,7 +630,7 @@ I fixed numerous bugs across the app and implemented new features. The project w
 - [App Store](https://itunes.apple.com/us/app/litterer/id882082348)
 -->
 - <a href="https://photos.app.goo.gl/DoLcczf7SZpYcroK9" target="_blank">Gallery</a>
-- [Website](https://www.dontmesswithtexas.org/)
+- <a href="https://www.dontmesswithtexas.org/" target="_blank">Website</a>
 
 ---
 
@@ -650,7 +650,7 @@ I focused on fixing complex bugs in the existing codebase for both the iPhone an
 
 <!--
 - [App Store](https://itunes.apple.com/us/app/energi-coach-personalized/id986965532)
-- [Website](http://energi.life)
+- <a href="http://energi.life" target="_blank">Website</a>
 -->
 - <a href="https://photos.app.goo.gl/nxxb3rzMBLug6Fg27" target="_blank">Gallery</a>
 
@@ -693,7 +693,7 @@ TALKiT is a social media platform that offers an alternative to texting, allowin
 - [App Store](https://itunes.apple.com/us/app/talkit-hands-free-social-network/id880219768)
 -->
 - <a href="https://photos.app.goo.gl/VJkCBsdmQzt4ihMS7" target="_blank">Gallery</a>
-- [Website](https://web.archive.org/web/20180326180938/http://www.gettalkit.com/)
+- <a href="https://web.archive.org/web/20180326180938/http://www.gettalkit.com/" target="_blank">Website</a>
 
 ---
 
@@ -715,7 +715,7 @@ I fixed numerous bugs and implemented new features across the app. The project w
 - [App Store](https://itunes.apple.com/us/app/us-likey/id717595225)
 -->
 - <a href="https://photos.app.goo.gl/349FvG9KzJAxKMGC9" target="_blank">Gallery</a>
-- [Website](https://web.archive.org/web/20160527230029/http://www.uslikey.com/)
+- <a href="https://web.archive.org/web/20160527230029/http://www.uslikey.com/" target="_blank">Website</a>
 - [Facebook](https://www.facebook.com/uslikey)
 
 ---
@@ -809,7 +809,7 @@ I fixed numerous critical and non-critical bugs in the existing app. The project
 - [App Store](https://itunes.apple.com/us/app/active-heroes/id635435400)
 -->
 - <a href="https://photos.app.goo.gl/JkBgK1bbqhm2b1nb6" target="_blank">Gallery</a>
-- [Website](http://activeheroes.org)
+- <a href="http://activeheroes.org" target="_blank">Website</a>
 
 ---
 
@@ -905,7 +905,7 @@ I developed the iOS application from start to finish in record time, overcoming 
 
 <!--
 - [App Store](https://itunes.apple.com/us/app/join-wego/id911117062)
-- [Website](http://joinwego.com/)
+- <a href="http://joinwego.com/" target="_blank">Website</a>
 - [Facebook](https://www.facebook.com/joinWeGo)
 -->
 - <a href="https://photos.app.goo.gl/S4mAy24CX2pggMEj8" target="_blank">Gallery</a>
@@ -985,7 +985,7 @@ Rocklobby is a music social network connecting artists, venues, and fans. Users 
 I developed the entire application from top to bottom while also managing the project. This involved coordinating with the designer and handling all communication with the client.
 
 - <a href="https://photos.app.goo.gl/paiggJ6dEvdKeBwk7" target="_blank">Gallery</a>
-- [Website](https://web.archive.org/web/20161017041055/http://www.rocklobby.com/)
+- <a href="https://web.archive.org/web/20161017041055/http://www.rocklobby.com/" target="_blank">Website</a>
 
 ---
 
@@ -1022,7 +1022,7 @@ Fresh Deck Poker was an online multiplayer poker game with real cash prizes.
 I developed several features for the game's administration backoffice, including account management, game and table management, monetization, and odds assignment. Some requests exceeded Django's native capabilities, requiring advanced solutions like heavy-duty hacks and monkey-patching to implement the necessary features.
 
 - <a href="https://photos.app.goo.gl/FoLw9hqAmi8UUrQw9" target="_blank">Gallery</a>
-- [Website](https://web.archive.org/web/20200724094354/http://freshdeckpoker.com/)
+- <a href="https://web.archive.org/web/20200724094354/http://freshdeckpoker.com/" target="_blank">Website</a>
 
 ---
 
@@ -1245,7 +1245,7 @@ Through this project, I deepened my understanding of Neural Networks and Genetic
 
 Handled entire backend production of a website, web application and database programming. Solution was provided in the form of a web application implemented in the PHP scripting language, interfacing with a MySQL database.
 
-- [Website](https://www.clubedopaiva.com/)
+- <a href="https://www.clubedopaiva.com/" target="_blank">Website</a>
 
 ---
 
