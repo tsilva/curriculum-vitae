@@ -353,7 +353,7 @@ Looking back, a stack using PHP (for legacy reasons) + React (particularly with 
 
 ---
 
-## ⚔️ Crystal Clash
+## 🤖 Crystal Clash
 
 - **TLDR:** Multiplayer turn-based battlebots game
 - **Start:** 2018
@@ -375,7 +375,7 @@ Since its release, millions of matches have been played across numerous seasons.
 
 ---
 
-## ⛏️ Minecraft Education Edition Integration
+## 🧱 Minecraft Education Edition Integration
 
 - **TLDR:** Integration of Tynker's Minecraft Editor into Minecraft Education Edition app
 - **Start:** 2018
@@ -390,7 +390,7 @@ Integrated Tynker's Block Editor into the Minecraft Education Edition app, enabl
 
 ---
 
-## ⛏️ Mythicraft
+## 🧱 Mythicraft
 
 - **TLDR**: Integration of Minecraft Editor into a new Tynker course.
 - **Start:** 2017
@@ -408,7 +408,7 @@ This course marked the first integration of the Minecraft Editor tool into a sta
 
 ---
 
-## ⛏️ Minecraft Editor
+## 🧱 Minecraft Editor
 
 - **TLDR:** Web 3D editor for Minecraft Bedrock Edition
 - **Start:** 2016
@@ -433,7 +433,7 @@ The tool was integrated into both the Tynker App and the Mod Creator App, provid
 
 ---
 
-## 🗄️ Tynker - PHP MongoDB ODM
+## 🖥 Tynker - PHP MongoDB ODM
 
 - **TLDR:** Custom MongoDB ODM for a legacy, unstructured PHP codebase
 - **Start:** 2016
@@ -634,7 +634,7 @@ I fixed numerous bugs across the app and implemented new features. The project w
 
 ---
 
-## 🧘‍♀️ Energi Coach
+## ⚡Energi Coach
 
 - **TLDR:** iOS Work-Life Balance App
 - **Start:** 2015
@@ -774,7 +774,7 @@ I fixed numerous bugs and implemented new features, primarily related to the pay
 
 ---
 
-## 🏋️‍♂️ Academy Sports - LIVE FIT
+## 🏃 Academy Sports - LIVE FIT
 
 - **TLDR:** iOS Sports Tracking app
 - **Start:** 2014
@@ -834,7 +834,7 @@ I developed the entire application, both the iOS app and the backend, from the g
 
 ---
 
-## 🏃‍♂️ Map My Fitness - Challenges
+## 🏃 Map My Fitness - Challenges
 
 - **TLDR:** iOS Sports Tracking App
 - **Start:** 2014
@@ -889,7 +889,7 @@ I was brought into the project to help steer it back on track, ultimately develo
 
 ---
 
-## 🏃‍♀️ WeGo
+## 🏃 WeGo
 
 - **TLDR:** iOS Sports Tracking app with wearable integration
 - **Start:** 2014
@@ -1007,7 +1007,7 @@ I developed the client-side iOS app, collaborating with an existing developer wo
 
 ---
 
-## ♠️ Fresh Deck Poker
+## ♣ Fresh Deck Poker
 
 - **TLDR:** Online Poker Game with Real Cash Prizes
 - **Start:** 2012
