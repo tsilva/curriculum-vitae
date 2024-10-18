@@ -172,7 +172,7 @@ My role was to gather requirements, research solutions, and implement, deploy, a
 
 Post-deployment on Tynker's parent and school pages, the chatbot significantly boosted user engagement, with higher conversion rates from users who interacted with it, indicating strong potential for further development.
 
-- [Gallery](https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6)
+- <a href="https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6" target="_blank">Gallery</a>
 - [Help Agent in Parents page](https://www.tynker.com/parents/) (chat button in bottom right corner)
 
 ---
@@ -194,7 +194,7 @@ This extension enabled developers to declaratively specify configuration variabl
 
 My role involved architecting the solution, developing core features, and coordinating with a Software Developer and the Game Design team responsible for creating the game templates.
 
-- [Gallery](https://photos.app.goo.gl/ZKss72chsSgrfSMfA)
+- <a href="https://photos.app.goo.gl/ZKss72chsSgrfSMfA" target="_blank">Gallery</a>
 - [Fashion Designer](https://www.tynker.com/block-ide?type=arcade&p=63f90df1218b2c5338740c8d)
 - [Pet Designer](https://www.tynker.com/block-ide?type=arcade&p=6418ea6f218b2c0767316018)
 - [Catch 'Em](https://www.tynker.com/block-ide?type=arcade&p=642dc40c218b2c55131c2aca)
@@ -221,7 +221,7 @@ In my role, I ideated the game, architected the solution, and developed the back
 
 Launched in time for the World Cup, the game was accessible via the web and integrated into Tynker Apps for iOS and Android through web views. It quickly gained popularity, with millions of matches played, and over $20,000 USD awarded in prizes during the first four rounds.
 
-- [Gallery](https://photos.app.goo.gl/hJ5rUAbWMr21xNuJ8)
+- <a href="https://photos.app.goo.gl/hJ5rUAbWMr21xNuJ8" target="_blank">Gallery</a>
 - [Landing Page](https://www.tynker.com/codingcup/)
 - [Game Trailer](https://www.tynker.com/codingcup/static/media/FIFA-Welcome.5d408e712931137e67e2.mp4)
 - [Leaderboard](https://www.tynker.com/codingcup/competitions/65a637807dbf0021445757ac/leaderboards/countries)
@@ -270,7 +270,7 @@ My role was to architect and implement the full-stack solution, covering both fr
 
 The solution was deployed on schedule and required minimal post-deployment maintenance, with only minor issues related to content authoring and user experience.
 
-- [Gallery](https://photos.app.goo.gl/tWYftTXKxePWfJ2G6)
+- <a href="https://photos.app.goo.gl/tWYftTXKxePWfJ2G6" target="_blank">Gallery</a>
 - [Block Coding Placement Test](https://www.tynker.com/quizzer/?type=placement:block)
 - [Text Coding Placement Test](https://www.tynker.com/quizzer/?type=placement:text)
 
@@ -288,7 +288,7 @@ The solution was deployed on schedule and required minimal post-deployment maint
 
 Combining the [Collaborative Learning System](#collaborative-learning-system) features with the [Live Classes](#live-classes) platform, developed an integrated coaching management system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
 
-- [Gallery](https://photos.app.goo.gl/rGGaisXY8zYbEPZK6)
+- <a href="https://photos.app.goo.gl/rGGaisXY8zYbEPZK6" target="_blank">Gallery</a>
 
 ---
 
@@ -341,7 +341,7 @@ I implemented a new architecture based on a custom-built extension framework, Re
 
 Looking back, a stack using PHP (for legacy reasons) + React (particularly with the release of React 16.8) + EmotionJS + the Extension Framework would have been more efficient. React could have replaced AngularJS, simplifying state management and eliminating the need for Redux. While Redux Saga was powerful, its steep learning curve for new developers would have made simpler alternatives preferable.
 
-- [Gallery](https://photos.app.goo.gl/rLjp8tBGs6WNStA18)
+- <a href="https://photos.app.goo.gl/rLjp8tBGs6WNStA18" target="_blank">Gallery</a>
 - [Block IDE](https://www.tynker.com/ide/v3)
 - [Platformer - Retro Racer](https://www.tynker.com/ide/v3?type=platformer-v2&p=61a931e66634692f2b3a4310&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
 - [Platformer - Outlast the Onslaught](https://www.tynker.com/ide/v3?type=platformer-v2&p=61a9453f8bdab975987e36f2&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
@@ -370,7 +370,7 @@ To support the asynchronous gameplay and integrate Tynker's block-based programm
 
 Since its release, millions of matches have been played across numerous seasons.
 
-- [Gallery](https://photos.google.com/share/AF1QipMr2gNFGS497iVv5IzycTa3KhrrZ2VyvtCNQCIkHutntaMPO3Cyq3Gj1o5KxGCYhQ?key=UHNNTFpUeVRXNFNtQTRHRF82T3AwYjlQb1ZISDZR)
+- <a href="https://photos.google.com/share/AF1QipMr2gNFGS497iVv5IzycTa3KhrrZ2VyvtCNQCIkHutntaMPO3Cyq3Gj1o5KxGCYhQ?key=UHNNTFpUeVRXNFNtQTRHRF82T3AwYjlQb1ZISDZR" target="_blank">Gallery</a>
 - [Dashboard](https://www.tynker.com/dashboard/student/#/battles/crystalclash)
 
 ---
@@ -424,7 +424,7 @@ A key challenge was optimizing performance on older iPad Mini models, where low 
 
 The tool was integrated into both the Tynker App and the Mod Creator App, providing a powerful platform for Minecraft customizations. As of this writing, users have created several million assets using the editor.
 
-- [Gallery](https://photos.app.goo.gl/7PtgswT8BT2jcXnR9)
+- <a href="https://photos.app.goo.gl/7PtgswT8BT2jcXnR9" target="_blank">Gallery</a>
 - [Skins - Steve](https://www.tynker.com/minecraft/editor/skin/steve/)
 - [Blocks - TNT](https://www.tynker.com/minecraft/editor/block/tnt/)
 - [Items - Diamond Sword](https://www.tynker.com/minecraft/editor/item/diamond_sword/)
@@ -466,7 +466,7 @@ I coordinated the design and development of the application, contributing to cor
 <!--
 - [App Store](https://apps.apple.com/ca/app/kaboom-lights-out-reloaded/id1124058567)
 -->
-- [Gallery](https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8)
+- <a href="https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8" target="_blank">Gallery</a>
 
 ---
 
@@ -486,7 +486,7 @@ I was responsible for developing core features, managing the project timeline, a
 <!--
 - [Landing Page](https://web.archive.org/web/20171007054048/https://kustomize.karl.com/)
 -->
-- [Gallery](https://photos.app.goo.gl/wVCsT1Y5EKjcLgeU9)
+- <a href="https://photos.app.goo.gl/wVCsT1Y5EKjcLgeU9" target="_blank">Gallery</a>
 
 ---
 
@@ -503,7 +503,7 @@ Lugar da Jóia is a chain of jewelry stores, and this project marked their first
 
 I served as both a full-stack developer and coordinator, overseeing another developer and a designer. I developed a wide range of features for the site, working on both the frontend and backend, with the latter utilizing Hive Solutions' Budy e-commerce engine to integrate with the existing infrastructure.
 
-- [Gallery](https://photos.app.goo.gl/J8zziNJajw6ZwRnm9)
+- <a href="https://photos.app.goo.gl/J8zziNJajw6ZwRnm9" target="_blank">Gallery</a>
 - [Landing Page](https://www.lugardajoia.com/index)
 
 ---
@@ -521,7 +521,7 @@ App Middleware Partners is a section of Microsoft's Windows Dev Center that serv
 
 In this project, I managed stakeholder communication, coordinated the design and development, and contributed to core development tasks. The biggest challenge was navigating Microsoft's complex organizational structure to gather the necessary information for integration and deployment. This required overcoming significant bureaucratic obstacles, including extensive outreach through messaging and cold-calling across multiple levels of the organization. Despite these challenges, the project was successfully delivered on time and within budget.
 
-- [Gallery](https://photos.app.goo.gl/T13vtSmmCndfCmUZ7)
+- <a href="https://photos.app.goo.gl/T13vtSmmCndfCmUZ7" target="_blank">Gallery</a>
 - [Website](https://web.archive.org/web/20160401014628/https://devcenterpartners.windows.com/)
 
 ---
@@ -539,7 +539,7 @@ MYSWEAR set up a stand at Harrods, one of the world's most renowned department s
 
 Developed a new mode for the existing MYSWEAR online customizer, enabling customer browser instances to remotely control the holographic viewer browser instances through real-time communication using WebSockets. Additionally, also developed a Python-based orchestrator that monitored the communication channels and coordinated the holographic display, ensuring the display's browsers operated correctly at any given time.
 
-- [Gallery](https://photos.app.goo.gl/TCP2sVwqjGtvvhx28)
+- <a href="https://photos.app.goo.gl/TCP2sVwqjGtvvhx28" target="_blank">Gallery</a>
 
 ---
 
@@ -569,7 +569,7 @@ MYSWEAR is an online store where customers can design and purchase custom shoes 
 
 The website was developed based on pre-existing design specifications. I developed core features and coordinated the work of other developers, including task assignment, reviewing pull requests, and refactoring code prior to merging.
 
-- [Gallery](https://photos.app.goo.gl/8gPa9phk2cwfVtH87)
+- <a href="https://photos.app.goo.gl/8gPa9phk2cwfVtH87" target="_blank">Gallery</a>
 
 ---
 
@@ -586,7 +586,7 @@ SpeakWrite is an application that allows users to record audio and have it trans
 
 I resolved numerous critical bugs across various parts of the app, which was particularly challenging due to the messy and disorganized existing codebase.
 
-- [Gallery](https://photos.app.goo.gl/53FXNdxeBmqoqXzs7)
+- <a href="https://photos.app.goo.gl/53FXNdxeBmqoqXzs7" target="_blank">Gallery</a>
 
 ---
 
@@ -607,7 +607,7 @@ I developed the application from the ground up, playing a key role in managing c
 <!--
 - [App Store](https://apps.apple.com/us/app/details-pal-pet-activity-link/id1062049611)
 -->
-- [Gallery](https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7)
+- <a href="https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7" target="_blank">Gallery</a>
 - [Kickstarter](https://www.kickstarter.com/projects/1792953608/details-pal-a-pet-activity-link-for-every-dog)
 
 ---
@@ -629,7 +629,7 @@ I fixed numerous bugs across the app and implemented new features. The project w
 <!--
 - [App Store](https://itunes.apple.com/us/app/litterer/id882082348)
 -->
-- [Gallery](https://photos.app.goo.gl/DoLcczf7SZpYcroK9)
+- <a href="https://photos.app.goo.gl/DoLcczf7SZpYcroK9" target="_blank">Gallery</a>
 - [Website](https://www.dontmesswithtexas.org/)
 
 ---
@@ -652,7 +652,7 @@ I focused on fixing complex bugs in the existing codebase for both the iPhone an
 - [App Store](https://itunes.apple.com/us/app/energi-coach-personalized/id986965532)
 - [Website](http://energi.life)
 -->
-- [Gallery](https://photos.app.goo.gl/nxxb3rzMBLug6Fg27)
+- <a href="https://photos.app.goo.gl/nxxb3rzMBLug6Fg27" target="_blank">Gallery</a>
 
 ---
 
@@ -673,7 +673,7 @@ I developed the iOS application and backend logic from the ground up, including 
 <!--
 - [App Store](https://itunes.apple.com/us/app/topshelf-alcohol-delivery/id974722644)
 -->
-- [Gallery](https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6)
+- <a href="https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6" target="_blank">Gallery</a>
 
 ---
 
@@ -692,7 +692,7 @@ TALKiT is a social media platform that offers an alternative to texting, allowin
 <!--
 - [App Store](https://itunes.apple.com/us/app/talkit-hands-free-social-network/id880219768)
 -->
-- [Gallery](https://photos.app.goo.gl/VJkCBsdmQzt4ihMS7)
+- <a href="https://photos.app.goo.gl/VJkCBsdmQzt4ihMS7" target="_blank">Gallery</a>
 - [Website](https://web.archive.org/web/20180326180938/http://www.gettalkit.com/)
 
 ---
@@ -714,7 +714,7 @@ I fixed numerous bugs and implemented new features across the app. The project w
 <!--
 - [App Store](https://itunes.apple.com/us/app/us-likey/id717595225)
 -->
-- [Gallery](https://photos.app.goo.gl/349FvG9KzJAxKMGC9)
+- <a href="https://photos.app.goo.gl/349FvG9KzJAxKMGC9" target="_blank">Gallery</a>
 - [Website](https://web.archive.org/web/20160527230029/http://www.uslikey.com/)
 - [Facebook](https://www.facebook.com/uslikey)
 
@@ -737,7 +737,7 @@ I developed the client-side of the app and integrated it with the server-side, w
 <!--
 - [App Store](https://itunes.apple.com/us/app/win-atlas-career-planning/id997400974)
 -->
-- [Gallery](https://photos.app.goo.gl/BYUjLrayGR9cRUdDA)
+- <a href="https://photos.app.goo.gl/BYUjLrayGR9cRUdDA" target="_blank">Gallery</a>
 
 ---
 
@@ -753,7 +753,7 @@ Knod is a media discovery social network where users can rate movies, books, son
 
 I contributed to the initial development of the project, creating core features for the iOS app. After being reassigned to a more urgent project, I later returned to assist with additional feature development and bug fixes.
 
-- [Gallery](https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6)
+- <a href="https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6" target="_blank">Gallery</a>
 
 ---
 
@@ -770,7 +770,7 @@ ValetTab is an app that streamlines the valet parking experience at participatin
 
 I fixed numerous bugs and implemented new features, primarily related to the payment process. The project was particularly challenging due to the disorganized and messy existing codebase.
 
-- [Gallery](https://photos.app.goo.gl/mf692orHUWtw1RHp7)
+- <a href="https://photos.app.goo.gl/mf692orHUWtw1RHp7" target="_blank">Gallery</a>
 
 ---
 
@@ -787,7 +787,7 @@ LIVE FIT is a sports tracking app for the Academy Sports + Outdoors retail chain
 
 During development, I encountered numerous bugs within the MMF SDK that blocked progress. With MMF's permission, I fully refactored sections of the SDK to meet the project's deadlines. MMF appreciated the quality and speed of my work, later inviting me to contribute to feature development in the official MapMyFitness app.
 
-- [Gallery](https://photos.app.goo.gl/AMMpRdPWMU98D7mW7)
+- <a href="https://photos.app.goo.gl/AMMpRdPWMU98D7mW7" target="_blank">Gallery</a>
 
 ---
 
@@ -808,7 +808,7 @@ I fixed numerous critical and non-critical bugs in the existing app. The project
 <!--
 - [App Store](https://itunes.apple.com/us/app/active-heroes/id635435400)
 -->
-- [Gallery](https://photos.app.goo.gl/JkBgK1bbqhm2b1nb6)
+- <a href="https://photos.app.goo.gl/JkBgK1bbqhm2b1nb6" target="_blank">Gallery</a>
 - [Website](http://activeheroes.org)
 
 ---
@@ -830,7 +830,7 @@ I developed the entire application, both the iOS app and the backend, from the g
 <!--
 - [App Store](https://itunes.apple.com/us/app/furtile/id883776204)
 -->
-- [Gallery](https://photos.app.goo.gl/Ebwb13vPBHovrK1X9)
+- <a href="https://photos.app.goo.gl/Ebwb13vPBHovrK1X9" target="_blank">Gallery</a>
 
 ---
 
@@ -847,7 +847,7 @@ MapMyFitness, one of the first activity tracking applications, was later acquire
 
 I implemented the Challenges feature, as well as the Weight and Sleep sections of the 24/7 tracking feature for the widely popular MapMyFitness app. Due to the app's enormous codebase, it was challenging to navigate and work efficiently, but the features were fully implemented and delivered on schedule.
 
-- [Gallery](https://photos.app.goo.gl/yV5rQH6QvrL3yQh69)
+- <a href="https://photos.app.goo.gl/yV5rQH6QvrL3yQh69" target="_blank">Gallery</a>
 
 ---
 
@@ -864,7 +864,7 @@ Project Capture is an app that allows users to report UFO sightings.
 
 Although the app was originally developed by someone else, I contributed by fixing numerous bugs throughout the app.
 
-- [Gallery](https://photos.app.goo.gl/zdBc2yVP85U8dVNUA)
+- <a href="https://photos.app.goo.gl/zdBc2yVP85U8dVNUA" target="_blank">Gallery</a>
 
 ---
 
@@ -885,7 +885,7 @@ I was brought into the project to help steer it back on track, ultimately develo
 <!--
 - [App Store](https://itunes.apple.com/us/app/randid/id791202964)
 -->
-- [Gallery](https://photos.app.goo.gl/33wt6ewUqtBV1mwB7)
+- <a href="https://photos.app.goo.gl/33wt6ewUqtBV1mwB7" target="_blank">Gallery</a>
 
 ---
 
@@ -908,7 +908,7 @@ I developed the iOS application from start to finish in record time, overcoming 
 - [Website](http://joinwego.com/)
 - [Facebook](https://www.facebook.com/joinWeGo)
 -->
-- [Gallery](https://photos.app.goo.gl/S4mAy24CX2pggMEj8)
+- <a href="https://photos.app.goo.gl/S4mAy24CX2pggMEj8" target="_blank">Gallery</a>
 
 ---
 
@@ -929,7 +929,7 @@ I developed most of the application, but it remained incomplete as I was reassig
 <!--
 - [App Store](https://itunes.apple.com/BR/app/id745537889)
 -->
-- [Gallery](https://photos.app.goo.gl/EaASm71wXHKvfNY47)
+- <a href="https://photos.app.goo.gl/EaASm71wXHKvfNY47" target="_blank">Gallery</a>
 - [Facebook](https://www.facebook.com/clockadoodleapp)
 
 ---
@@ -948,7 +948,7 @@ China Pro Tools is a market analytics solution that provides decision-support st
 
 I developed the entire application based on pre-existing specifications and delivered it precisely on schedule.
 
-- [Gallery](https://photos.app.goo.gl/16xmzjMpPP9pP7Z88)
+- <a href="https://photos.app.goo.gl/16xmzjMpPP9pP7Z88" target="_blank">Gallery</a>
 
 ---
 
@@ -966,7 +966,7 @@ Discover Your City is a travel app for architecture enthusiasts, offering guided
 
 I developed the entire application, from start to finish, based on pre-existing design specifications. The project also included a server-side back office for managing the app's content.
 
-- [Gallery](https://photos.app.goo.gl/RGoL3s92XLfNqsVa9)
+- <a href="https://photos.app.goo.gl/RGoL3s92XLfNqsVa9" target="_blank">Gallery</a>
 
 ---
 
@@ -984,7 +984,7 @@ Rocklobby is a music social network connecting artists, venues, and fans. Users 
 
 I developed the entire application from top to bottom while also managing the project. This involved coordinating with the designer and handling all communication with the client.
 
-- [Gallery](https://photos.app.goo.gl/paiggJ6dEvdKeBwk7)
+- <a href="https://photos.app.goo.gl/paiggJ6dEvdKeBwk7" target="_blank">Gallery</a>
 - [Website](https://web.archive.org/web/20161017041055/http://www.rocklobby.com/)
 
 ---
@@ -1003,7 +1003,7 @@ Rocklobby was a music social network for artists, venues, and fans.
 
 I developed the client-side iOS app, collaborating with an existing developer working on the server-side. Although the app had an existing codebase, I had to rebuild it from scratch due to its poor condition. The application was successfully delivered on schedule and within the estimated budget.
 
-- [Gallery](https://photos.app.goo.gl/8c4fpByixacvbZvAA)
+- <a href="https://photos.app.goo.gl/8c4fpByixacvbZvAA" target="_blank">Gallery</a>
 
 ---
 
@@ -1021,7 +1021,7 @@ Fresh Deck Poker was an online multiplayer poker game with real cash prizes.
 
 I developed several features for the game's administration backoffice, including account management, game and table management, monetization, and odds assignment. Some requests exceeded Django's native capabilities, requiring advanced solutions like heavy-duty hacks and monkey-patching to implement the necessary features.
 
-- [Gallery](https://photos.app.goo.gl/FoLw9hqAmi8UUrQw9)
+- <a href="https://photos.app.goo.gl/FoLw9hqAmi8UUrQw9" target="_blank">Gallery</a>
 - [Website](https://web.archive.org/web/20200724094354/http://freshdeckpoker.com/)
 
 ---
@@ -1054,7 +1054,7 @@ Bargania was a Deal-a-Day aggregation platform, similar to Groupon, where users 
 
 I developed the core features of the platform and handled copywriting and translation for the website and all associated media, including advertising materials.
 
-- [Gallery](https://photos.app.goo.gl/nqtk5jtiGQ56GjCm8)
+- <a href="https://photos.app.goo.gl/nqtk5jtiGQ56GjCm8" target="_blank">Gallery</a>
 
 ---
 
@@ -1071,7 +1071,7 @@ A La Carte was a restaurant search engine that allowed users to search for resta
 
 I designed and developed the ETL components for the food indexing and search system, and created software to retrieve information from a wide array of heterogeneous data sources.
 
-- [Gallery](https://photos.app.goo.gl/WGcN6Uyiktbc9LHFA)
+- <a href="https://photos.app.goo.gl/WGcN6Uyiktbc9LHFA" target="_blank">Gallery</a>
 
 ---
 
@@ -1087,7 +1087,7 @@ Mariachi was a cross-platform shoot-'em-up game designed for mobile platforms.
 
 I developed and implemented the game's core logic, 3D model import feature, and physics engine.
 
-- [Gallery](https://photos.app.goo.gl/q2zvsL82jeqiKAPV7)
+- <a href="https://photos.app.goo.gl/q2zvsL82jeqiKAPV7" target="_blank">Gallery</a>
 
 ---
 
@@ -1104,7 +1104,7 @@ Panzerini was a Battlebots-style game built using Hive Solutions' Colony Framewo
 
 I developed core features of the game and created the artificial intelligence for sample bots used in the arena.
 
-- [Gallery](https://photos.app.goo.gl/uuMTMyFEtspu8NBY7)
+- <a href="https://photos.app.goo.gl/uuMTMyFEtspu8NBY7" target="_blank">Gallery</a>
 
 ---
 
@@ -1120,7 +1120,7 @@ Schoooools is a platform that provides personal and social learning spaces, fost
 
 I developed core features such as action tracking, analytics, and classroom management tools. Additionally, I created a cross-platform mobile application for the service using PhoneGap.
 
-- [Gallery](https://photos.app.goo.gl/WevSYZW9bJH4Kyaz8)
+- <a href="https://photos.app.goo.gl/WevSYZW9bJH4Kyaz8" target="_blank">Gallery</a>
 
 ---
 
@@ -1136,7 +1136,7 @@ Take the Bill is an online invoicing solution initially intended as a public ser
 
 I developed key backend and frontend features for the application.
 
-- [Gallery](https://photos.app.goo.gl/PNSdpTtKAb8t4bkr5)
+- <a href="https://photos.app.goo.gl/PNSdpTtKAb8t4bkr5" target="_blank">Gallery</a>
 
 ---
 
@@ -1150,7 +1150,7 @@ I developed key backend and frontend features for the application.
 
 Developed back-end logic for online Point-of-Sale SaaS product using Python with the Colony Framework and its respective MVC stack. Also developed front-end for same system through extensive usage of JavaScript and jQuery to create a productive user experience.
 
-- [Gallery](https://photos.app.goo.gl/9qeFGMfqXWxdYXLXA)
+- <a href="https://photos.app.goo.gl/9qeFGMfqXWxdYXLXA" target="_blank">Gallery</a>
 
 ---
 
@@ -1166,7 +1166,7 @@ Colony is a modularity container that allows plugins to be deployed, loaded, and
 
 I developed core technology for the framework, authored technical documentation, and contributed to marketing efforts by designing storylines for videos and comic books, as well as handling various copywriting tasks.
 
-- [Gallery](https://photos.app.goo.gl/g5w3nPii7GgV5AeA6)
+- <a href="https://photos.app.goo.gl/g5w3nPii7GgV5AeA6" target="_blank">Gallery</a>
 
 ---
 
@@ -1274,7 +1274,7 @@ One of the key lessons I took away from this experience was the immense value of
 
 Computer Capers was a video game I developed at 12 years old and submitted to a monthly competition in Amiga Format magazine. Although the plot was simplistic and cringe, and the mechanics basic, I was proud of my accomplishment, especially given my age and having no internet access of any kind at the time. The game featured a tile-based world where players interacted with characters searching for specific items. By finding and trading these items, players advanced the storyline. I was particularly encouraged by the positive feedback I received from the magazine's contest reviewer.
 
-- [Gallery](https://photos.app.goo.gl/fk1GEomK621wdJ7s6)
+- <a href="https://photos.app.goo.gl/fk1GEomK621wdJ7s6" target="_blank">Gallery</a>
 - [Demo Video](https://photos.app.goo.gl/uMKFMcYurDnpCged8)
 
 ---
