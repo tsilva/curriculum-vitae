@@ -1,40 +1,26 @@
 # TLDR
 
-My CV is detailed and comprehensive—it's more suited for running through your favorite LLM and asking questions than reading it all the way through. For a concise summary, here's the **TL;DR**:
+This CV is detailed and comprehensive—it's more suited for running through your favorite LLM and asking questions than reading it all the way through. For a concise summary, here's the **TL;DR**:
 
-> <br>Passionate Lead Software Engineer with over 20 years of diverse experience, my love for technology was ignited at age 8 when I began coding text adventure games on a Casio calculator. This lifelong enthusiasm drives me to continuously learn and innovate across a wide range of projects.<br>  
-From starting at Microsoft to co-founding Hive Solutions, consulting for multiple U.S. companies, and leading major development efforts at Tynker, I've consistently taken on pivotal roles. At Tynker, I was the main contributor to several core products used by over **100 million students in more than 150,000 schools**, significantly contributing to the company's **$200 million acquisition by BYJU's in 2021.**<br>  
-Specializing in full-stack development, I thrive on architecting solutions and driving them from ideation to successful deployment.<br>
->I've worked with the following technologies:<br>
->- **Programming Languages:** Python, JavaScript, PHP, C#, Java, 
->- **Frontend Development:** React, Redux, Redux Saga, AngularJS, jQuery, CSS/SCSS/CSS-in-JS
->- **Backend Development:** Node.js, Express, Flask, ASP.NET
->- **Mobile Development:** React Native, iOS (Objective-C, Swift)
->- **Databases and Data Stores:** MongoDB, MySQL, SQLite, Redis, PostgreSQL, Oracle DB
->- **Real-Time Communication:** WebSockets, WebRTC
->- **DevOps and Infrastructure:** AWS, Google Cloud, Docker, NGINX, RabbitMQ, Heroku
+><br>👋 As a Software Engineer with over **20 years of experience**, my passion for technology began in childhood. My earliest memories are of playing on a [Sinclair ZX Spectrum](https://www.youtube.com/watch?v=V0EfycbDhiw) (`LOAD "" [ENTER]` anyone? 🎮)  and later learning English by trial and error while navigating graphical adventure games like [The Secret of Monkey Island](https://www.youtube.com/watch?v=RBeYlClQRgQ) on the [Commodore Amiga 500](https://en.wikipedia.org/wiki/Amiga_500). My home became the go-to spot for neighborhood friends to binge on video games for hours and hours 🎮🕹, and when we got stuck, I would trace where game variables were stored in RAM to patch them for infinite lives (`0x00057A34 = 03 -> FF` 💻🔧😈). At eight, I received a [Casio FX-850P calculator](https://en.wikipedia.org/wiki/Casio_FX-850P)—my first portable computer—and began coding text adventures on it to share with friends. By age 12, I had submitted [my first game](https://photos.app.goo.gl/uMKFMcYurDnpCged8) to [Amiga Format magazine](https://en.wikipedia.org/wiki/Amiga_Format), and the [positive feedback](https://photos.app.goo.gl/usD9rmawFdXKwFcH8) from the reviewer was encouraging enough to kickstart my journey into pursuing Software Engineering.
+><br>🚀 Over the past two decades, I’ve committed myself fully to just three major roles—starting at Microsoft, co-founding Hive Solutions 🐝, and leading development at Tynker 💡. In each role, I dedicated myself wholeheartedly, embracing both the challenges and opportunities. At Tynker, I played a key role in developing products used by over **100 million students across 150,000+ schools** 🏫, contributing significantly to the company’s **[$200 million acquisition by BYJU's in 2021](https://techcrunch.com/2021/09/16/byjus-acquires-coding-platform-tynker-for-200-million-in-us-expansion-push/)** 💼.
+><br>💡My long-term commitment to these roles has always aligned with my passion for learning 📚. Instead of specializing in one area, I embrace a broad view of technology 🌐, staying adaptable and continuously evolving. I enjoy working across frontend, backend, mobile apps, infrastructure, and machine learning ([commiting more time](https://github.com/tsilva/aiml-notebooks/tree/main) to Deep Learning as of late 🤖). Every project—whether familiar or new—is an opportunity to refine my skills and solve real-world problems 💡🔧.
+>
+>💻 **Worked with the following technologies so far:**
+>- **Programming Languages:** Python, JavaScript, PHP, C#, Java  
+>- **Frontend Development:** React, Redux, Redux Saga, AngularJS, jQuery, CSS/SCSS/CSS-in-JS  
+>- **Backend Development:** Node.js, Express, Flask, ASP\.NET  
+>- **Mobile Development:** React Native, iOS (Objective-C, Swift)  
+>- **Databases and Data Stores:** MongoDB, MySQL, SQLite, Redis, PostgreSQL, Oracle DB  
+>- **Real-Time Communication:** WebSockets, WebRTC  
+>- **DevOps and Infrastructure:** AWS, GCP, Azure, Docker, NGINX, RabbitMQ, Heroku  
 >- **Payment Integration:** Stripe, Apple Pay
->- **Artificial Intelligence and Machine Learning:** PyTorch, TensorFlow, Pinecone, Langchain, LlamaIndex, OpenAI/Cohere/Anthropic API, Gymnasium
+>- **Artificial Intelligence and Machine Learning:** PyTorch, TensorFlow, Pinecone, Langchain, LlamaIndex, OpenAI/Cohere/Anthropic API, Gymnasium  
 >- **Other Technologies:** OpenGL, Bluetooth
-<br>
-
-><br>**For a showcase of my work, visit my [Portfolio Gallery](https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6).**
-**To explore collaboration opportunities, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/engtiagosilva/).**
-<br>
-
-# Intro
-
-Nurtured by the nostalgic screeching sounds of a [Sinclair ZX Spectrum](https://www.youtube.com/watch?v=V0EfycbDhiw) loading games from an audio cassette, my journey into the digital realm began in the pre-internet dark ages, where knowledge was buried in dusty libraries. 
-
-By age eight, armed with only a [Casio FX-850P](https://en.wikipedia.org/wiki/Casio_FX-850P) and my wits, I began crafting text adventure games, lighting the first sparks of a lifelong passion for technology and programming. 
-
-Moving on to the [Commodore Amiga](https://en.wikipedia.org/wiki/Amiga), a marvel ahead of its era yet tragically unsung, I progressed from hacking video games for infinite lives and ammo, to building them in [Amos BASIC](https://en.wikipedia.org/wiki/AMOS_(programming_language)), having a game published in [Amiga Format magazine](https://en.wikipedia.org/wiki/Amiga_Format) by the age of twelve. 
-
-When I later got my hands on a PC and a 56kbps modem, with internet access and a voracious appetite for learning, I was off to the races: disassembling executables to bypass trial limitations (allegedly), writing more video games, learning more coding languages, developing web apps, etc.. by the time I got to taking Computer Engineering in university, I was already well on my way. 
-
-Across the span of 20+ years of experience, from starting my career at Microsoft, to co-founding Hive Solutions, remote-working for multiple United States clients and finally settling for a long ride with Tynker, I have had the opportunity to work on a wide range of projects, usually in a leading role and covering all facets of software development.
-
-In my latest role with Tynker, I rode the rollercoaster all the way from it being a very small team, to being [acquired for $200M by BYJU's in 2021](https://techcrunch.com/2021/09/16/byjus-acquires-coding-platform-tynker-for-200-million-in-us-expansion-push/), and ultimately [going down with the ship](https://techcrunch.com/2024/01/29/byjus-seeks-to-raise-200-million-in-rights-issue/). It was a wild ride, full of valuable lessons, where I had the opportunity of being the main contributor to a lot of Tynker's core products, that were used by over 100 million students and in more than 150,000 schools.
+>
+>**🔗 For a showcase of my work, visit my [Portfolio Gallery](https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6).**  
+**🔗 To explore collaboration opportunities, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/engtiagosilva/).**
+><br>
 
 # Experience
 
@@ -48,16 +34,16 @@ Tynker is a kid-friendly platform used by over 100 million students and in more 
 
 As a Lead Software Engineer, I was the main contributor to many of its core products, namely:
 
-- [Help Agent](#help-agent): a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture.
-- [BYJU's Coding Cup](#byjus-coding-cup): a soccer-themed coding competition for kids, branded as a [FIFA 2022 World Cup sponsor](https://www.prnewswire.com/ae/news-releases/byjus-unveils-the-byjus-coding-cup-enabling-kids-to-use-code-and-ai-to-field-virtual-soccer-teams-in-unison-with-the-fifa-world-cup-qatar-2022-301654538.html), with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.
-- [Crystal Clash](#crystal-clash): an asynchronous multiplayer turn-based battlebots game that allows players to program their bots using Tynker's block-based programming language, played millions of times across numerous seasons.
-- [Lynker](#lynker) and the [Collaborative Learning System](#collaborative-learning-system): enabled project sharing features in the [Block IDE](#block-ide---version-30), real-time messaging and project editing, having been granted a [U.S. patent](https://patents.google.com/patent/US11699357B2).
-- [Quizzer](#quizzer): a modular quiz platform allowing easy integration of different question types and engines, such as allowing integration with the [Block IDE](#block-ide---version-30) and its course content.
-- [Block IDE - Arcade Maker](#block-ide---arcade-maker): a simplified game development platform for kids, where they could develop and publish games without having to code.
-- [Live Classes](#live-classes): a platform that enabled educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the [Block IDE](#block-ide---version-30) and course content.
-- [Coaching System](#coaching-system): a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
-- [Block IDE - Version 3.0](#block-ide---version-30): a major rewrite and rearchitecture of Tynker's Block Editor, at that time, the core of Tynker's educational platform.
-- [Minecraft Editor](#minecraft-editor): a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors.
+- **[Help Agent](#help-agent)**: a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture.
+- **[BYJU's Coding Cup](#byjus-coding-cup)**: a soccer-themed coding competition for kids, branded as a [FIFA 2022 World Cup sponsor](https://www.prnewswire.com/ae/news-releases/byjus-unveils-the-byjus-coding-cup-enabling-kids-to-use-code-and-ai-to-field-virtual-soccer-teams-in-unison-with-the-fifa-world-cup-qatar-2022-301654538.html), with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.
+- **[Crystal Clash](#crystal-clash)**: an asynchronous multiplayer turn-based battlebots game that allows players to program their bots using Tynker's block-based programming language, played millions of times across numerous seasons.
+- **[Lynker](#lynker) and the [Collaborative Learning System](#collaborative-learning-system)**: enabled project sharing features in the [Block IDE](#block-ide---version-30), real-time messaging and project editing, having been granted a [U.S. patent](https://patents.google.com/patent/US11699357B2).
+- **[Quizzer](#quizzer)**: a modular quiz platform allowing easy integration of different question types and engines, such as allowing integration with the [Block IDE](#block-ide---version-30) and its course content.
+- **[Block IDE - Arcade Maker](#block-ide---arcade-maker)**: a simplified game development platform for kids, where they could develop and publish games without having to code.
+- **[Live Classes](#live-classes)**: a platform that enabled educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the [Block IDE](#block-ide---version-30) and course content.
+- **[Coaching System](#coaching-system)**: a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
+- **[Block IDE - Version 3.0](#block-ide---version-30)**: a major rewrite and rearchitecture of Tynker's Block Editor, at that time, the core of Tynker's educational platform.
+- **[Minecraft Editor](#minecraft-editor)**: a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors.
 
 In all these projects, I was responsible for eliciting requirements from stakeholders, researching and experimenting with different solutions, and finally implementing the solution end-to-end, deploying and managing it post-deployment.
 
