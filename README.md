@@ -3,7 +3,7 @@
 This CV is detailed and comprehensive—it's more suited for running through your favorite LLM and asking questions than reading it all the way through. For a concise summary, here's the **TL;DR**:
 
 ><br>👋 As a Software Engineer with over **20 years of experience**, my passion for technology began in childhood. My earliest memories are of playing on a [Sinclair ZX Spectrum](https://www.youtube.com/watch?v=V0EfycbDhiw) (`LOAD "" [ENTER]` anyone? 🎮)  and later learning English by trial and error while navigating graphical adventure games like [The Secret of Monkey Island](https://www.youtube.com/watch?v=RBeYlClQRgQ) on the [Commodore Amiga 500](https://en.wikipedia.org/wiki/Amiga_500). My home became the go-to spot for neighborhood friends to binge on video games for hours and hours 🎮🕹, and when we got stuck, I would trace where game variables were stored in RAM to patch them for infinite lives (`0x00057A34 = 03 -> FF` 💻🔧😈). At eight, I received a [Casio FX-850P calculator](https://en.wikipedia.org/wiki/Casio_FX-850P)—my first portable computer—and began coding text adventures on it to share with friends. By age 12, I had submitted [my first game](https://photos.app.goo.gl/uMKFMcYurDnpCged8) to [Amiga Format magazine](https://en.wikipedia.org/wiki/Amiga_Format), and the [positive feedback](https://photos.app.goo.gl/usD9rmawFdXKwFcH8) from the reviewer was encouraging enough to kickstart my journey into pursuing Software Engineering.
-><br>🚀 Over the past two decades, I’ve committed myself fully to just three major roles—starting at Microsoft, co-founding Hive Solutions 🐝, and leading development at Tynker 💡. In each role, I dedicated myself wholeheartedly, embracing both the challenges and opportunities. At Tynker, I played a key role in developing products used by over **100 million students across 150,000+ schools** 🏫, contributing significantly to the company’s **[$200 million acquisition by BYJU's in 2021](https://techcrunch.com/2021/09/16/byjus-acquires-coding-platform-tynker-for-200-million-in-us-expansion-push/)** 💼.
+><br>🚀 Over the past two decades, I’ve committed myself fully to just three major roles—starting at [Microsoft](#microsoft), co-founding [Hive Solutions](#hive-solutions) 🐝, and leading development at [Tynker](#tynker) 💡. In each role, I dedicated myself wholeheartedly, embracing both the challenges and opportunities. At Tynker, I played a key role in developing products used by over **100 million students across 150,000+ schools** 🏫, contributing significantly to the company’s **[$200 million acquisition by BYJU's in 2021](https://techcrunch.com/2021/09/16/byjus-acquires-coding-platform-tynker-for-200-million-in-us-expansion-push/)** 💼.
 ><br>💡My long-term commitment to these roles has always aligned with my passion for learning 📚. Instead of specializing in one area, I embrace a broad view of technology 🌐, staying adaptable and continuously evolving. I enjoy working across frontend, backend, mobile apps, infrastructure, and machine learning ([commiting more time](https://github.com/tsilva/aiml-notebooks/tree/main) to Deep Learning as of late 🤖). Every project—whether familiar or new—is an opportunity to refine my skills and solve real-world problems 💡🔧.
 >
 >💻 **Worked with the following technologies so far:**
@@ -22,74 +22,75 @@ This CV is detailed and comprehensive—it's more suited for running through you
 **🔗 To explore collaboration opportunities, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/engtiagosilva/).**
 ><br>
 
-# Experience
+# 🧑‍💻 Experience
 
-## [Tynker](https://www.tynker.com/)
+## 🏫 [Tynker](https://www.tynker.com/)
 
 - **Duration:** Sep 2016 - Present
 - **Role:** Lead Software Engineer (Full-time)
-- **Location:** Mountain View, CA · Remote
+- **Location:** Mountain View, California · Remote 🌍
 
 Tynker is a kid-friendly platform used by over 100 million students and in more than 150,000 schools, offering coding education through games and projects from basics to advanced programming languages.
 
 As a Lead Software Engineer, I was the main contributor to many of its core products, namely:
 
-- **[Help Agent](#help-agent)**: a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture.
-- **[BYJU's Coding Cup](#byjus-coding-cup)**: a soccer-themed coding competition for kids, branded as a [FIFA 2022 World Cup sponsor](https://www.prnewswire.com/ae/news-releases/byjus-unveils-the-byjus-coding-cup-enabling-kids-to-use-code-and-ai-to-field-virtual-soccer-teams-in-unison-with-the-fifa-world-cup-qatar-2022-301654538.html), with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.
-- **[Crystal Clash](#crystal-clash)**: an asynchronous multiplayer turn-based battlebots game that allows players to program their bots using Tynker's block-based programming language, played millions of times across numerous seasons.
-- **[Lynker](#lynker) and the [Collaborative Learning System](#collaborative-learning-system)**: enabled project sharing features in the [Block IDE](#block-ide---version-30), real-time messaging and project editing, having been granted a [U.S. patent](https://patents.google.com/patent/US11699357B2).
-- **[Quizzer](#quizzer)**: a modular quiz platform allowing easy integration of different question types and engines, such as allowing integration with the [Block IDE](#block-ide---version-30) and its course content.
-- **[Block IDE - Arcade Maker](#block-ide---arcade-maker)**: a simplified game development platform for kids, where they could develop and publish games without having to code.
+- **[Help Agent](#help-agent) 🤖💬**: a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture.
+- **[BYJU's Coding Cup](#byjus-coding-cup)** ⚽👾: a soccer-themed coding competition for kids, branded as a [FIFA 2022 World Cup sponsor](https://www.prnewswire.com/ae/news-releases/byjus-unveils-the-byjus-coding-cup-enabling-kids-to-use-code-and-ai-to-field-virtual-soccer-teams-in-unison-with-the-fifa-world-cup-qatar-2022-301654538.html), with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.
+- **[Crystal Clash](#crystal-clash)** ⚔️🤖: an asynchronous multiplayer turn-based battlebots game that allows players to program their bots using Tynker's block-based programming language, played millions of times across numerous seasons.
+- **[Lynker](#lynker)** 🛠💬 and the **[Collaborative Learning System](#collaborative-learning-system)** 👥💻: enabled project sharing features in the [Block IDE](#block-ide---version-30), real-time messaging and project editing, having been granted a [U.S. patent](https://patents.google.com/patent/US11699357B2).
+- **[Quizzer](#quizzer)** 🧠❓: a modular quiz platform allowing easy integration of different question types and engines, such as allowing integration with the [Block IDE](#block-ide---version-30) and its course content.
+- **[Block IDE - Arcade Maker](#block-ide---arcade-maker)** 🎮👾: a simplified game development platform for kids, where they could develop and publish games without having to code.
 - **[Live Classes](#live-classes)**: a platform that enabled educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the [Block IDE](#block-ide---version-30) and course content.
-- **[Coaching System](#coaching-system)**: a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
-- **[Block IDE - Version 3.0](#block-ide---version-30)**: a major rewrite and rearchitecture of Tynker's Block Editor, at that time, the core of Tynker's educational platform.
-- **[Minecraft Editor](#minecraft-editor)**: a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors.
+- **[Coaching System](#coaching-system)** 👩‍🏫📊: a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
+- **[Block IDE - Version 3.0](#block-ide---version-30)** 🧩🔧: a major rewrite and rearchitecture of Tynker's Block Editor, at that time, the core of Tynker's educational platform.
+- **[Minecraft Editor](#minecraft-editor)** 🛠🎮: a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors.
 
 In all these projects, I was responsible for eliciting requirements from stakeholders, researching and experimenting with different solutions, and finally implementing the solution end-to-end, deploying and managing it post-deployment.
 
-## [RIPE Productions](https://www.platforme.com/)
+## 🛍 [RIPE Productions](https://www.platforme.com/)
 
 - **Duration:** 2016 · Less than a year
 - **Role:** Lead Software Engineer (Full-time)
-- **Location:** Porto, Portugal · Remote
+- **Location:** Porto, Portugal
 
-RIPE Productions, was a company that developed e-commerce solutions for the fashion industry (this company is now called PlatformE).
+RIPE Productions, was a company that developed e-commerce solutions for the fashion industry (this company is now called [PlatformE](https://www.platforme.com/)).
 
 Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#karl-kustomize) project for [Karl Lagerfeld](https://www.karl.com/pt-en). 
 
 In a lesser role also contributed as a software developer to the [MYSWEAR online store](#myswear---online-store), featuring an advanced shoe customization rendering platform, related [iOS demo](#myswear---ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#myswear---harrods-holographic-pyramid), a luxury department store in London.
 
-## [Rocksauce Studios](https://www.rocksaucestudios.com/)
+## 📱 [Rocksauce Studios](https://www.rocksaucestudios.com/)
 
 - **Duration:** 2013 - 2015 · 2 years
 - **Role:** Senior iOS Developer (Full-time)
-- **Location:** Austin, Texas · Remote
+- **Location:** Austin, Texas · Remote 🌍
 
 Rocksauce Studios was a mobile app development company that specialized in creating custom apps for businesses and startups. While working at Hive Solutions, I was contracted by them to work on more than a dozen projects for different clients, always as an iOS developer.
 
-## [Toptal](https://www.toptal.com/)
+## 🌍 [Toptal](https://www.toptal.com/)
 
 - **Duration:** Apr 2012 - Present
 - **Role:** Senior Software Engineer
+- **Location:** Remote 🌍
 
-Toptal is a marketplace for top developers and companies. It has a very strict screening process, that screens for deep technical skills and high English language proficiency. Through Toptal I worked for multiple companies, in medium to long-term arrangements, receiving excellent feedback from all clients.
+Toptal is a platform connecting top developers with leading companies. It employs a rigorous screening process, assessing both advanced technical abilities and strong English proficiency. Through Toptal, I have collaborated with several companies on medium to long-term projects, consistently receiving outstanding feedback from clients.
 
 - [Website](https://www.toptal.com/)
 
-## [Hive Solutions](https://www.hive.pt/)
+## 🐝 [Hive Solutions](https://www.hive.pt/)
 
 - **Duration:** Mar 2008 - Sep 2016 · 8 years and 7 months
 - **Role:** Co Founder (Full-time)
 - **Location:** Porto, Portugal
 
-As a co-founder of Hive Solutions, I was a Jack of all trades, as most startup founders are. At different times I acted as a Software Engineer (my main role), Tech Lead, but also having to deal with sales and recruiting related tasks.
+As a co-founder of Hive Solutions, I took on a variety of roles, as is common for startup founders. While my primary role was Lead Software Engineer, I also handled tasks related to sales, marketing and recruitment when needed.
 
-We started with the main premise of building a SaaS Retail POS system called [Frontdoor](#frontdoor), which was built literally from scratch with most of the stack except Python being built internally. It was a technical success but a commercial failure. We later pivoted to software consulting where we developed a wide range of projects for many clients.
+We initially set out to build a SaaS Retail POS system called *[Frontdoor](#frontdoor)*, which we developed entirely from scratch, using a tech stack fully built in-house. Although it was a technical success, it didn’t achieve commercial success. We eventually pivoted to software consulting, where we shipped a diverse range of projects for numerous clients.
 
 - [Website](https://www.hive.pt/)
 - [Github](https://github.com/hivesolutions)
 
-## [Microsoft](https://www.microsoft.com/)
+## 🖥 [Microsoft](https://www.microsoft.com/)
 
 - **Duration:** Mar 2007 - Feb 2008 · 1 year
 - **Role:** Software Development Engineer in Test (Full-time)
@@ -102,27 +103,29 @@ Improved internal testing tools to allow scanning for test code coverage across 
 Developed internal tool for database PII anonymization to allow data transfer across internal groups spread around different regions.
 
 - [Microsoft Dynamics AX](https://dynamics.microsoft.com/en-us/ax/)
-- TV news coverage about being hired by Microsoft straight out of college (oh the cringe!):
+- TV news coverage about being hired by Microsoft straight out of college (oh the cringe! 😬) :
   - [RTP 1](https://photos.app.goo.gl/jo7DskprCoxt2jB77)
   - [SIC](https://photos.app.goo.gl/PY6t4TEXYK4fXmt98)
   - [TVI](https://photos.app.goo.gl/W3wTceGahoE2p36U7)
 
-## [Rent-a-Coder](https://web.archive.org/web/20061228042557/http://www.rentacoder.com/RentACoder/default.asp)
+## 🏷 [Rent-a-Coder](https://web.archive.org/web/20061228042557/http://www.rentacoder.com/RentACoder/default.asp)
 
 - **Duration:** 2003 - 2006 · 3 years
 - **Role:** Software Developer
+- **Location:** Remote 🌍
 
 During college, I gained valuable experience working on freelance projects for clients around the world through the Rent-a-Coder platform, where I operated under the name "Chronosync Developments" and was fortunate to rank in the top 1% for customer ratings. This was my first foray into managing end-to-end client relationships, where I was tasked with projects and paid for delivering them. It helped me develop key skills in understanding client needs, managing expectations, and delivering on time.
 
 - [Profile](https://web.archive.org/web/20041112020320/http://www.rentacoder.com/RentACoder/SoftwareCoders/showBioInfo.asp?lngAuthorId=860960) (old snapshot of profile, unfortunately most of the work reviews from later years were not crawled by the Wayback Machine)
 
-# Education
+# 🎓 Education
 
-## [University of Lodz](https://www.uni.lodz.pl/en/)
+## [University of Lodz](https://www.uni.lodz.pl/en/) 📚
 
 - **Duration:** 2006 - 2007 (one semester)
 - **Degree:** Licenciate, Computer Engineering
 - **Grade:** 18 (out of 20)
+- **Location:** Lodz, Poland
 
 During my [Erasmus](https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/studying-abroad) exchange, which took place in the final year of my Computer Engineering studies at [FEUP](https://sigarra.up.pt/feup/pt/web_page.inicial), I enrolled in courses on Genetic Algorithms, Cryptography, Neural Networks, Network Services Programming, and an intensive Polish language course. I successfully completed them with an average grade of 18 out of 20.
 
@@ -132,11 +135,12 @@ Being in a country with a language and culture so different from my own, where c
 
 - [Website](https://www.uni.lodz.pl/en/)
 
-## [Faculdade de Engenharia da Universidade do Porto](https://sigarra.up.pt/feup/en/)
+## [Faculdade de Engenharia da Universidade do Porto](https://sigarra.up.pt/feup/en/)🎓
 
 - **Duration:** 2002 - 2007 (5 year course)
 - **Degree:** Licenciate, Computer Engineering
 - **Grade:** 16 (out of 20)
+- **Location:** Porto, Portugal
 
 The Computer Engineering course I attended was one of the most competitive in the country, with high entry requirements. Despite starting with a weak foundation in Mathematics, I worked hard to turn things around, achieving excellent entry exam results and earning the second-highest grade in my high school.
 
@@ -146,13 +150,14 @@ Additionally, I regularly participated in ACM programming contests, placed secon
 
 - [Website](https://sigarra.up.pt/feup/en/)
 
-# Projects
+# 🚀 Projects
 
-## Help Agent
+## 🤖 Help Agent
 
 - **TLDR:** Sales assistant chatbot meant to assist users in Tynker related inquiries
 - **Start:** 2023
 - **Client:** Tynker
+- **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Team:** Just me
 - **Technologies:** React, Python, Flask, MongoDB, OpenAI, Pinecone
@@ -172,11 +177,12 @@ Post-deployment on Tynker's parent and school pages, the chatbot significantly b
 
 ---
 
-## Block IDE - Arcade Maker
+## 🕹 Block IDE - Arcade Maker
 
 - **TLDR:** Block IDE extension for creating games without coding
 - **Start:** 2023
 - **Client:** Tynker
+- **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Team:** Myself + 1 Software Developer + 1 Game Designer
 - **Platforms:** Web
@@ -196,11 +202,12 @@ My role involved architecting the solution, developing core features, and coordi
 
 ---
 
-## BYJU's Coding Cup
+## ⚽ BYJU's Coding Cup
 
 - **TLDR:** Soccer-themed coding competition for kids
 - **Start:** 2023
 - **Client:** Tynker
+- **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Team:** Myself + 1 Software Developer (match renderer) + multiple Game Designers (content development)
 - **Platforms:** Web, Android (WebView), iOS (WebView)
@@ -221,11 +228,12 @@ Launched in time for the World Cup, the game was accessible via the web and inte
 
 ---
 
-## Live Classes
+## 👩‍🏫 Live Classes
 
 - **TLDR:** Platform for educators to conduct interactive coding classes with students
 - **Start:** 2022
 - **Client:** Tynker
+- **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Team:** Myself + Design Team
 - **Platforms:** Web
@@ -241,11 +249,12 @@ The platform was deployed on schedule with only minor issues, mostly related to 
 
 ---
 
-## Quizzer
+## ❓ Quizzer
 
 - **TLDR:** Modular quiz platform
 - **Start:** 2021
 - **Client:** Tynker
+- **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Platform:** Web
 - **Team:** Myself + Design Team + Content Team
@@ -267,11 +276,12 @@ The solution was deployed on schedule and required minimal post-deployment maint
 
 ---
 
-## Coaching System
+## 👩‍🏫 Coaching System
 
 - **TLDR:** Integrated coaching management system
 - **Start:** 2020
 - **Client:** Tynker
+- **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Team:** Myself + Design Team
 - **Technologies:** React, PHP, JavaScript
@@ -282,11 +292,12 @@ Combining the [Collaborative Learning System](#collaborative-learning-system) fe
 
 ---
 
-## Lynker
+## 💬 Lynker
 
 - **TLDR:** Real-time messaging server for Tynker
 - **Start:** 2020
 - **Client:** Tynker
+- **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Team:** Just me
 - **Technologies:** NodeJS, Express, socket.io, Redis, NGINX
@@ -299,7 +310,7 @@ In hindsight, it was over-engineered, as it was built to handle a higher through
 
 ---
 
-## Collaborative Learning System
+## 👥 Collaborative Learning System
 
 - **TLDR:** Real-time project sharing and collaboration features for the Block IDE
 - **Start:** 2020
@@ -313,11 +324,12 @@ Using the Lynker messaging server I previously developed, I enhanced the Block I
 
 ---
 
-## Block IDE - Version 3.0
+## 🧩 Block IDE - Version 3.0
 
 - **TLDR:** Major overhaul of Tynker's Block Editor
 - **Start:** 2019
 - **Client:** Tynker
+- **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Platforms:** Web
 - **Team:** Myself + Game Development Team (content upgrades)
@@ -341,11 +353,12 @@ Looking back, a stack using PHP (for legacy reasons) + React (particularly with 
 
 ---
 
-## Crystal Clash
+## ⚔️ Crystal Clash
 
 - **TLDR:** Multiplayer turn-based battlebots game
 - **Start:** 2018
 - **Client:** Tynker
+- **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Platforms:** Web / iOS (WebView)
 
@@ -362,11 +375,12 @@ Since its release, millions of matches have been played across numerous seasons.
 
 ---
 
-## Minecraft Education Edition Integration
+## ⛏️ Minecraft Education Edition Integration
 
 - **TLDR:** Integration of Tynker's Minecraft Editor into Minecraft Education Edition app
 - **Start:** 2018
 - **Client:** Tynker
+- **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Platforms:** Windows 10
 
@@ -376,11 +390,12 @@ Integrated Tynker's Block Editor into the Minecraft Education Edition app, enabl
 
 ---
 
-## Mythicraft
+## ⛏️ Mythicraft
 
 - **TLDR**: Integration of Minecraft Editor into a new Tynker course.
 - **Start:** 2017
 - **Client:** Tynker
+- **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Team:** Myself (Minecraft Editor) + Course Development Team (Mythicraft Course Content)
 - **Platforms:** Web / iOS (WebView)
@@ -393,11 +408,12 @@ This course marked the first integration of the Minecraft Editor tool into a sta
 
 ---
 
-## Minecraft Editor
+## ⛏️ Minecraft Editor
 
 - **TLDR:** Web 3D editor for Minecraft Bedrock Edition
 - **Start:** 2016
 - **Client:** Tynker
+- **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Team:** Myself + Game Design Team (testing)
 - **Technologies:** React, Python, Flask, MongoDB, OpenAI, Pinecone
@@ -417,11 +433,12 @@ The tool was integrated into both the Tynker App and the Mod Creator App, provid
 
 ---
 
-## Tynker - PHP MongoDB ODM
+## 🗄️ Tynker - PHP MongoDB ODM
 
 - **TLDR:** Custom MongoDB ODM for a legacy, unstructured PHP codebase
 - **Start:** 2016
 - **Client:** Tynker
+- **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Technologies:** PHP, MongoDB
 
@@ -433,11 +450,12 @@ This tool was integrated into both the Tynker App and Mod Creator App, offering 
 
 ---
 
-## Kaboom!
+## 💥 Kaboom!
 
 - **TLDR:** Fast-paced revival of the classic "Lights Out" game for iPhone, iPad, Apple TV and Apple Watch
 - **Start:** 2016
 - **Client:** Hive Solutions
+- **Location:** Porto, Portugal
 - **Role:** Lead Software Engineer
 - **Technologies:** Swift, iOS, tvOS, watchOS
 
@@ -452,11 +470,12 @@ I coordinated the design and development of the application, contributing to cor
 
 ---
 
-## Karl Kustomize
+## 👟 Karl Kustomize
 
 - **TLDR:** Online Shoe Customization Store
 - **Start:** 2016
 - **Client:** RIPE Productions
+- **Location:** Porto, Portugal
 - **Role:** Lead Software Engineer
 - **Technologies:** Python, MongoDB, Appier, HTML, CSS, JavaScript, jQuery, UXF, Budy
 
@@ -471,11 +490,12 @@ I was responsible for developing core features, managing the project timeline, a
 
 ---
 
-## Lugar da Jóia
+## 💍 Lugar da Jóia
 
 - **TLDR:** Online Jewellery Store
 - **Start:** 2016
 - **Client:** Lugar da Jóia (through Hive Solutions)
+- **Location:** Porto, Portugal
 - **Role:** Lead Software Engineer
 - **Technologies:** Python, Appier, MongoDB, Budy, HTML, CSS, JavaScript, jQuery, UXF
 
@@ -488,11 +508,12 @@ I served as both a full-stack developer and coordinator, overseeing another deve
 
 ---
 
-## Windows Dev Center - App Middleware Partners
+## 🖥 Windows Dev Center - App Middleware Partners
 
 - **TLDR:** Middleware Directory for Microsoft Partners
 - **Start:** 2016
 - **Client:** Microsoft (through Hive Solutions)
+- **Location:** Redmond, Washington · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Technologies:** C#, CoreCLR, ASP.NET, Docker, Frontdoor
 
@@ -505,11 +526,12 @@ In this project, I managed stakeholder communication, coordinated the design and
 
 ---
 
-## MYSWEAR - Harrods Holographic Pyramid
+## 👟 MYSWEAR - Harrods Holographic Pyramid
 
 - **TLDR:** Instore Shoe Customization and Ordering experience with Holographic Preview
 - **Start:** 2016
 - **Client:** RIPE Productions (through Hive Solutions)
+- **Location:** Porto, Portugal
 - **Role:** Full-stack Developer
 - **Technologies:** Python, Appier, HTML, CSS, JavaScript, jQuery, UXF
 
@@ -521,11 +543,12 @@ Developed a new mode for the existing MYSWEAR online customizer, enabling custom
 
 ---
 
-## MYSWEAR - iOS Demo
+## 👟 MYSWEAR - iOS Demo
 
 - **TLDR:** iOS Shoe Customization Experience for MYSWEAR
 - **Start:** 2015
 - **Client:** RIPE Productions (through Hive Solutions)
+- **Location:** Porto, Portugal
 - **Role:** Mobile Developer
 - **Technologies:** iOS, Objective-C
 
@@ -533,11 +556,12 @@ Single-handedly developed a proof-of-concept native iOS application that replica
 
 ---
 
-## MYSWEAR - Online Store
+## 👟 MYSWEAR - Online Store
 
 - **TLDR:** Online Fashion Store with Shoe Customizer
 - **Start:** 2015
 - **Client:** RIPE Productions (through Hive Solutions)
+- **Location:** Porto, Portugal
 - **Role:** Lead Software Engineer
 - **Technologies:** Python, MongoDB, Appier, HTML, CSS, JavaScript, jQuery, UXF, Farfetch API
 
@@ -549,11 +573,12 @@ The website was developed based on pre-existing design specifications. I develop
 
 ---
 
-## SpeakWrite
+## 📝 SpeakWrite
 
 - **TLDR:** iOS Audio Transcribing Application
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role:** Bug fixing
 - **Technologies:** iOS, Objective-C
 
@@ -565,11 +590,12 @@ I resolved numerous critical bugs across various parts of the app, which was par
 
 ---
 
-## Details PAL
+## 🐕 Details PAL
 
 - **TLDR:** iOS Dog Activity Tracker with Bluetooth Collar
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role:** Full-stack Mobile App Developer
 - **Platform:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C, Parse, Bluetooth
@@ -586,11 +612,12 @@ I developed the application from the ground up, playing a key role in managing c
 
 ---
 
-## Don't Mess With Texas - Report a Litterer
+## 🧼 Don't Mess With Texas - Report a Litterer
 
 - **TLDR:** iOS Littering Reporting App
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role:** Bug fixing
 - **Platform:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C
@@ -607,11 +634,12 @@ I fixed numerous bugs across the app and implemented new features. The project w
 
 ---
 
-## Energi Coach
+## 🧘‍♀️ Energi Coach
 
 - **TLDR:** iOS Work-Life Balance App
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role:** Bug fixing
 - **Platform:** iOS (iPhone + Apple Watch)
 - **Technologies:** iOS, Objective-C, WatchKit
@@ -628,11 +656,12 @@ I focused on fixing complex bugs in the existing codebase for both the iPhone an
 
 ---
 
-## TopShelf
+## 🥃 TopShelf
 
 - **TLDR:** iOS Alcohol Delivery App
 - **Start:** 2015 
 - **Client**: Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role**: Full-stack Developer
 - **Platform**: iPhone (iOS)
 - **Technologies:** iOS, Objective-C, Parse, JavaScript, Stripe, Apple Pay
@@ -648,11 +677,12 @@ I developed the iOS application and backend logic from the ground up, including 
 
 ---
 
-## TALKiT 
+## 🗣 TALKiT 
 
 - **TLDR:** iOS Social Network for Sharing Experiences
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role:** Bug fixing
 - **Platform:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C
@@ -667,11 +697,12 @@ TALKiT is a social media platform that offers an alternative to texting, allowin
 
 ---
 
-## US Likey
+## 🛍 US Likey
 
 - **TLDR:** iOS Social Network for Sharing Products
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role:** Bug fixing
 - **Platform:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C
@@ -689,11 +720,12 @@ I fixed numerous bugs and implemented new features across the app. The project w
 
 ---
 
-## WIN Atlas
+## 🌎 WIN Atlas
 
 - **TLDR:** iOS Career Guidance App
 - **Start:** 2015
 - **Client**: Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role**: Full-stack Developer
 - **Platform**: iPhone (iOS)
 - **Technologies:** iOS, Objective-C
@@ -709,11 +741,12 @@ I developed the client-side of the app and integrated it with the server-side, w
 
 ---
 
-## Knod
+## 📚 Knod
 
 - **TLDR:** iOS Media Reviews Social Network - Books, Movies, Games, etc.
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Technologies:** Objective-C
 
 Knod is a media discovery social network where users can rate movies, books, songs, games, and more, receiving personalized recommendations based on their ratings and social connections.
@@ -724,11 +757,12 @@ I contributed to the initial development of the project, creating core features 
 
 ---
 
-## ValetTab
+## 🚗 ValetTab
 
 - **TLDR:** iOS Valet Parking Software
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role:** Bug fixing
 - **Technologies:** iOS, Objective-C
 
@@ -740,11 +774,12 @@ I fixed numerous bugs and implemented new features, primarily related to the pay
 
 ---
 
-## Academy Sports - LIVE FIT
+## 🏋️‍♂️ Academy Sports - LIVE FIT
 
 - **TLDR:** iOS Sports Tracking app
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role:** Mobile Developer
 - **Technologies:** iOS, Objective-C, MapMyFitness SDK
 
@@ -756,11 +791,12 @@ During development, I encountered numerous bugs within the MMF SDK that blocked 
 
 ---
 
-## Active Heroes
+## 🎖 Active Heroes
 
 - **TLDR:** iOS Charity for Veterans App
 - **Start:** 2014
 - **Client**: Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role**: Bug fixing
 - **Platform**: iPhone (iOS)
 - **Technologies:** iOS, Objective-C
@@ -777,11 +813,12 @@ I fixed numerous critical and non-critical bugs in the existing app. The project
 
 ---
 
-## Furtile
+## 🐾 Furtile
 
 - **TLDR:** iOS Social Network for Pet Owners and Breeders
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role**: Full-stack Developer
 - **Platform**: iPhone (iOS)
 - **Technologies:** iOS, Objective-C, Parse
@@ -797,11 +834,12 @@ I developed the entire application, both the iOS app and the backend, from the g
 
 ---
 
-## Map My Fitness - Challenges
+## 🏃‍♂️ Map My Fitness - Challenges
 
 - **TLDR:** iOS Sports Tracking App
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role**: Mobile Developer
 - **Technologies:** iOS, Objective-C
 
@@ -813,11 +851,12 @@ I implemented the Challenges feature, as well as the Weight and Sleep sections o
 
 ---
 
-## Project Capture
+## 🛸 Project Capture
 
 - **TLDR:** iOS UFO Reporting App
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role**: Bug fixing
 - **Technologies:** iOS, Objective-C
 
@@ -829,11 +868,12 @@ Although the app was originally developed by someone else, I contributed by fixi
 
 ---
 
-## Randid
+## 📸 Randid
 
 - **TLDR:** iOS Social Photo Sharing App
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role:** Full-stack Developer
 - **Platform:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C, Parse
@@ -849,11 +889,12 @@ I was brought into the project to help steer it back on track, ultimately develo
 
 ---
 
-## WeGo
+## 🏃‍♀️ WeGo
 
 - **TLDR:** iOS Sports Tracking app with wearable integration
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role:** Full-stack Developer
 - **Platform:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C, Bluetooth
@@ -871,11 +912,12 @@ I developed the iOS application from start to finish in record time, overcoming 
 
 ---
 
-## Clockadoodle
+## ⏰ Clockadoodle
 
 - **TLDR:** iOS Alarm Clock with Youtube Video Alarms
 - **Start:** 2013
 - **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
 - **Role**: Mobile Developer
 - **Platform**: iPhone (iOS)
 - **Technologies:** iOS, Objective-C
@@ -892,13 +934,15 @@ I developed most of the application, but it remained incomplete as I was reassig
 
 ---
 
-## China Pro Tools
+## 🧮 China Pro Tools
 
 - **TLDR:** Market Analytics Solution for Exports to China
 - **Start:** 2013
 - **Client**: East Point Consulting, LLC (through Toptal)
+- **Location:** New York · Remote 🌍
 - **Role:** Full-stack Developer
 - **Technologies:** Python, Flask, Quorum, MongoDB, HTML, CSS, JavaScript, jQuery, UXF
+- **Location:** New York · Remote 🌍
 
 China Pro Tools is a market analytics solution that provides decision-support statistics related to exports to China.
 
@@ -908,11 +952,12 @@ I developed the entire application based on pre-existing specifications and deli
 
 ---
 
-## Discover Your City
+## 🏛 Discover Your City
 
 - **TLDR:** Travelling App for Architecture Enthusiasts
 - **Start:** 2013
 - **Client**: Discover Your City (through Toptal)
+- **Location:** New York · Remote 🌍
 - **Role:** Mobile Developer
 - **Platforms**: iOS (iPhone)
 - **Technologies:** Python, Flask, MongoDB, Objective-C, iOS, Heroku, Amazon Web Services
@@ -925,11 +970,12 @@ I developed the entire application, from start to finish, based on pre-existing 
 
 ---
 
-## Rocklobby
+## 🎶Rocklobby
 
 - **TLDR:** Web Music Social Network for Fans, Artists and Venues
 - **Start:** 2013
 - **Client**: Rock Lobby (through Toptal)
+- **Location:** New York · Remote 🌍
 - **Role**: Lead Software Engineer
 - **Platform:** Web
 - **Technologies:** Python, Netius, Appier, MongoDB, Quorum, HTML, CSS, jQuery, UXF
@@ -943,11 +989,12 @@ I developed the entire application from top to bottom while also managing the pr
 
 ---
 
-## Rocklobby - iOS App
+## 🎶Rocklobby - iOS App
 
 - **TLDR:** iOS Music Social Network for Fans, Artists and Venues
 - **Start:** 2013
 - **Client:** Rock Lobby (through Toptal)
+- **Location:** New York · Remote 🌍
 - **Role:** Mobile Developer
 - **Platform:** iOS (iPhone)
 - **Technologies:** iOS, Objective-C
@@ -960,11 +1007,12 @@ I developed the client-side iOS app, collaborating with an existing developer wo
 
 ---
 
-## Fresh Deck Poker
+## ♠️ Fresh Deck Poker
 
 - **TLDR:** Online Poker Game with Real Cash Prizes
 - **Start:** 2012
 - **Client:** Idle Games (through Toptal)
+- **Location:** San Francisco, California · Remote 🌍
 - **Platform:** Web
 - **Role:** Backend Developer
 - **Technologies:** Python, Django, MongoDB, HTML, CSS, JavaScript, jQuery, RabbitMQ
@@ -978,11 +1026,12 @@ I developed several features for the game's administration backoffice, including
 
 ---
 
-## Parfois B2B Portal
+## 👜 Parfois B2B Portal
 
 - **TLDR:** B2B Portal for Handbags and Fashion Accessories Brand
 - **Start:** 2012
 - **Client:** Parfois (through Hive Solutions)
+- **Location:** Porto, Portugal
 - **Role:** Lead Software Engineer
 - **Technologies:** Oracle DB, C#, SQL, PL/SQL
 
@@ -992,11 +1041,12 @@ Initially contracted as a consultant to help the development team adopt the requ
 
 ---
 
-## Bargania
+## 💰 Bargania
 
 - **TLDR:** Deal-a-Day Aggregation Service
 - **Start:** 2011
 - **Client:** Hive Solutions
+- **Location:** Porto, Portugal
 - **Role:** Backend Developer, Marketing copywriter
 - **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, jQuery, UXF
 
@@ -1008,11 +1058,12 @@ I developed the core features of the platform and handled copywriting and transl
 
 ---
 
-## A La Carte
+## 🍽 A La Carte
 
 - **TLDR:** Restaurant Search Engine
 - **Start:** 2010
 - **Client:** Hive Solutions
+- **Location:** Porto, Portugal
 - **Role:** Backend Developer
 - **Technologies:** Python, HTML, XML, MySQL
 
@@ -1024,11 +1075,12 @@ I designed and developed the ETL components for the food indexing and search sys
 
 ---
 
-## Mariachi
+## 🎮 Mariachi
 
 - **TLDR:** Cross-Platform Shoot'em Up Game
 - **Start:** 2010
 - **Client:** Hive Solutions
+- **Location:** Porto, Portugal
 - **Technologies:** C++, Objective-C, OpenGL ES
 
 Mariachi was a cross-platform shoot-'em-up game designed for mobile platforms.
@@ -1039,11 +1091,12 @@ I developed and implemented the game's core logic, 3D model import feature, and 
 
 ---
 
-## Panzerini
+## 🤖 Panzerini
 
 - **TLDR:** Battlebots-like Game
 - **Start:** 2010
 - **Client:** Hive Solutions
+- **Location:** Porto, Portugal
 - **Role:** Backend Developer
 - **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, jQuery, UXF
 
@@ -1055,11 +1108,12 @@ I developed core features of the game and created the artificial intelligence fo
 
 ---
 
-## Schoooools
+## 🏫 Schoooools
 
 - **TLDR:** Social Network for Schools
 - **Start:** 2010
 - **Client:** Schoooools (through Hive Solutions)
+- **Location:** Porto, Portugal
 - **Technologies:** PhoneGap, Objective-C, HTML, JavaScript, CSS, Ruby on Rails
 
 Schoooools is a platform that provides personal and social learning spaces, fostering collaboration between learners, parents, and teachers. It allows all schoolwork to be stored digitally, enabling parents to follow their children's progress, organize their work, and preserve it for future reference, sharing, or family viewing.
@@ -1070,11 +1124,12 @@ I developed core features such as action tracking, analytics, and classroom mana
 
 ---
 
-## Take the Bill
+## 🧾 Take the Bill
 
 - **TLDR:** SaaS Invoicing Solution
 - **Start:** 2010
 - **Client:** Hive Solutions
+- **Location:** Porto, Portugal
 - **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, UXF
 
 Take the Bill is an online invoicing solution initially intended as a public service but ultimately deployed in private clouds, including as the billing app for Hive Solutions.
@@ -1085,11 +1140,12 @@ I developed key backend and frontend features for the application.
 
 ---
 
-## Frontdoor
+## 🛍 Frontdoor
 
 - **TLDR:** SaaS ERP Solution
 - **Start:** 2008
 - **Client:** Hive Solutions
+- **Location:** Porto, Portugal
 - **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, jQuery, UXF
 
 Developed back-end logic for online Point-of-Sale SaaS product using Python with the Colony Framework and its respective MVC stack. Also developed front-end for same system through extensive usage of JavaScript and jQuery to create a productive user experience.
@@ -1098,11 +1154,12 @@ Developed back-end logic for online Point-of-Sale SaaS product using Python with
 
 ---
 
-## Colony Framework
+## 🔌 Colony Framework
 
 - **TLDR:** Modularity Container Framework
 - **Start:** 2008
 - **Client:** Hive Solutions
+- **Location:** Porto, Portugal
 - **Technologies:** Python, JavaScript
 
 Colony is a modularity container that allows plugins to be deployed, loaded, and unloaded in real-time without restarting the container.
@@ -1113,11 +1170,12 @@ I developed core technology for the framework, authored technical documentation,
 
 ---
 
-## MCH Workflow Helpdesk Innovation
+## 📋 MCH Workflow Helpdesk Innovation
 
 - **TLDR:** Knowledge Management System for Helpdesk Support
 - **Start:** 2006
 - **Client:** Modelo Continente Hipermercados (through FEUP)
+- **Location:** Porto, Portugal
 - **Technologies:** C#, ASP.NET, SQL Server
 
 Collaborated in an academic-enterprise partnership to deliver a functional knowledge management system for the organization's helpdesk support team.
@@ -1128,11 +1186,12 @@ The final product was successfully completed and deployed at the partner enterpr
 
 ---
 
-## Nihonaid
+## 🥋 Nihonaid
 
 - **TLDR:** Japanese Language Learning Assistant
 - **Start:** 2006
 - **Client:** Myself
+- **Location:** Porto, Portugal
 - **Technologies:** C#, SQL Server, Neural Networks
 
 Nihonaid is a tool I developed to assist with learning Japanese, specifically for memorizing the Kanji character set.
@@ -1147,11 +1206,12 @@ With this system, daily sessions ensured the user retained previously learned ch
 
 ---
 
-## Clube de Karate da Maia
+## 🥋 Clube de Karate da Maia
 
 - **TLDR:** Community Website for Karate Club
 - **Start:** 2005
 - **Client:** Clube de Karate da Maia
+- **Location:** Maia, Portugal
 - **Role:** Full-stack Developer
 - **Technologies:** Joomla, PHP, MySQL
 
@@ -1161,11 +1221,12 @@ Through this project, I gained experience in customizing the Mambo/Joomla Conten
 
 ---
 
-## NeuralJ
+## 🧠 NeuralJ
 
 - **TLDR:** Neural Network Library for Java
 - **Start:** 2005
 - **Client:** Me
+- **Location:** Porto, Portugal
 - **Technologies:** Java
 
 NeuralJ was an open-source software project I created to provide an efficient and user-friendly Neural Network library for Java.
@@ -1174,11 +1235,12 @@ Through this project, I deepened my understanding of Neural Networks and Genetic
 
 ---
 
-## Clube do Paiva
+## 🛶 Clube do Paiva
 
 - **TLDR:** Extreme Sports Company Website
 - **Start:** 2004
 - **Client:** Clube do Paiva
+- **Location:** Arouca, Portugal
 - **Technologies:** PHP, MySQL
 
 Handled entire backend production of a website, web application and database programming. Solution was provided in the form of a web application implemented in the PHP scripting language, interfacing with a MySQL database.
@@ -1187,11 +1249,12 @@ Handled entire backend production of a website, web application and database pro
 
 ---
 
-## European Student Moon Orbiter
+## 🌔 European Student Moon Orbiter
 
 - **TLDR:** European Space Agency Student Sattellite Project
 - **Start:** 2004
 - **Client:** European Space Agency (through FEUP)
+- **Location:** Porto, Portugal
 
 I served as the Coordinator of the Software subteam within the On Board Data Handler team for the European Student Moon Orbiter project, part of the European Space Agency's SSETI (Student Space Exploration & Technology Initiative) program, which aimed to deploy a satellite into lunar orbit.
 
@@ -1201,11 +1264,12 @@ One of the key lessons I took away from this experience was the immense value of
 
 ---
 
-## Computer Capers
+## 🎮 Computer Capers
 
 - **TLDR:** Adventure Game for the Commodore Amiga
 - **Start:** 1996
 - **Client:** Me
+- **Location:** Porto, Portugal
 - **Technologies:** AMOS Basic
 
 Computer Capers was a video game I developed at 12 years old and submitted to a monthly competition in Amiga Format magazine. Although the plot was simplistic and cringe, and the mechanics basic, I was proud of my accomplishment, especially given my age and having no internet access of any kind at the time. The game featured a tile-based world where players interacted with characters searching for specific items. By finding and trading these items, players advanced the storyline. I was particularly encouraged by the positive feedback I received from the magazine's contest reviewer.
@@ -1215,7 +1279,7 @@ Computer Capers was a video game I developed at 12 years old and submitted to a 
 
 ---
 
-## Misc
+## 🔗 Misc
 
 - **Mindhacking 101 presentation at BarcampPT 2010 (Porto, Portugal)**:
   - [Slides](https://www.slideshare.net/hivesolutions/mind-hacking-101)
