@@ -2,7 +2,7 @@
 
 This CV is detailed and comprehensive—it's more suited for running through your favorite LLM and asking questions than reading it all the way through. For a concise summary, here's the **TL;DR**:
 
-><br>👋 As a **Software Engineer** with over **20+ years of experience**, and **60+ projects shipped** my passion for technology began in childhood. My earliest memories are of playing on a <a href="https://www.youtube.com/watch?v=V0EfycbDhiw" target="_blank">Sinclair ZX Spectrum</a> (`LOAD "" [ENTER]` anyone? 🎮)  and later learning English by trial and error while navigating graphical adventure games like [The Secret of Monkey Island](https://www.youtube.com/watch?v=RBeYlClQRgQ) on the <a href="https://en.wikipedia.org/wiki/Amiga_500" target="_blank">Commodore Amiga 500</a>. My home became the go-to spot for neighborhood friends to binge on video games for hours and hours 🎮🕹, and when we got stuck, I would trace where game variables were stored in RAM to patch them for infinite lives (`0x00057A34 = 03 -> FF` 💻🔧😈). At age 8, I received a <a href="https://en.wikipedia.org/wiki/Casio_FX-850P" target="_blank">Casio FX-850P calculator</a>—my first portable computer—and began coding text adventures on it to share with friends. By age 12, I had submitted <a href="https://photos.app.goo.gl/uMKFMcYurDnpCged8" target="_blank">my first game</a> to <a href="https://en.wikipedia.org/wiki/Amiga_Format" target="_blank">Amiga Format magazine</a>, and the <a href="https://photos.app.goo.gl/usD9rmawFdXKwFcH8" target="_blank">positive feedback</a> from the reviewer was encouraging enough to kickstart my journey into pursuing Software Engineering.
+><br>👋 As a **Software Engineer** with over **20+ years of experience**, and **60+ projects shipped** my passion for technology began in childhood. My earliest memories are of playing on a <a href="https://www.youtube.com/watch?v=V0EfycbDhiw" target="_blank">Sinclair ZX Spectrum</a> (`LOAD "" [ENTER]` anyone? 🎮)  and later learning English by trial and error while navigating graphical adventure games like <a href="https://www.youtube.com/watch?v=RBeYlClQRgQ">The Secret of Monkey Island</a> on the <a href="https://en.wikipedia.org/wiki/Amiga_500" target="_blank">Commodore Amiga 500</a>. My home became the go-to spot for neighborhood friends to binge on video games for hours and hours 🎮🕹, and when we got stuck, I would trace where game variables were stored in RAM to patch them for infinite lives (`0x00057A34 = 03 -> FF` 💻🔧😈). At age 8, I received a <a href="https://en.wikipedia.org/wiki/Casio_FX-850P" target="_blank">Casio FX-850P calculator</a>—my first portable computer—and began coding text adventures on it to share with friends. By age 12, I had submitted <a href="https://photos.app.goo.gl/uMKFMcYurDnpCged8" target="_blank">my first game</a> to <a href="https://en.wikipedia.org/wiki/Amiga_Format" target="_blank">Amiga Format magazine</a>, and the <a href="https://photos.app.goo.gl/usD9rmawFdXKwFcH8" target="_blank">positive feedback</a> from the reviewer was encouraging enough to kickstart my journey into pursuing Software Engineering.
 ><br>🚀 Over the past two decades, I’ve committed myself fully to just three major roles—starting at [Microsoft](#microsoft), co-founding [Hive Solutions](#hive-solutions) 🐝, and leading development at [Tynker](#tynker) 💡. In each role, I dedicated myself wholeheartedly, embracing both the challenges and opportunities. At Tynker, I played a key role in developing products used by over **100 million students across 150,000+ schools** 🏫, contributing significantly to the company’s **<a href="https://techcrunch.com/2021/09/16/byjus-acquires-coding-platform-tynker-for-200-million-in-us-expansion-push/" target="_blank">$200 million acquisition by BYJU's in 2021</a>** 💼.
 ><br>💡My long-term commitment to these roles has always aligned with my passion for learning 📚. Instead of specializing in one area, I embrace a broad view of technology 🌐, staying adaptable and continuously evolving. I enjoy working across frontend, backend, mobile apps, infrastructure, and machine learning (<a href="https://github.com/tsilva/aiml-notebooks/tree/main" target="_blank">commiting more time</a> to Deep Learning as of late 🤖). Every project—whether familiar or new—is an opportunity to refine my skills and solve real-world problems 💡🔧.
 >
@@ -24,7 +24,7 @@ This CV is detailed and comprehensive—it's more suited for running through you
 
 # 🧑‍💻 Experience
 
-## 🏫 [Tynker](https://www.tynker.com/)
+## 🏫 <a href="https://www.tynker.com/" target="_blank">Tynker</a>
 
 - **Duration:** Sep 2016 - Present
 - **Role:** Lead Software Engineer (Full-time)
@@ -35,9 +35,9 @@ Tynker is a kid-friendly platform used by over 100 million students and in more 
 As a Lead Software Engineer, I was the main contributor to many of its core products, namely:
 
 - **[Help Agent](#help-agent) 🤖💬**: a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture.
-- **[BYJU's Coding Cup](#byjus-coding-cup)** ⚽👾: a soccer-themed coding competition for kids, branded as a [FIFA 2022 World Cup sponsor](https://www.prnewswire.com/ae/news-releases/byjus-unveils-the-byjus-coding-cup-enabling-kids-to-use-code-and-ai-to-field-virtual-soccer-teams-in-unison-with-the-fifa-world-cup-qatar-2022-301654538.html), with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.
+- **[BYJU's Coding Cup](#byjus-coding-cup)** ⚽👾: a soccer-themed coding competition for kids, branded as a <a href="https://www.prnewswire.com/ae/news-releases/byjus-unveils-the-byjus-coding-cup-enabling-kids-to-use-code-and-ai-to-field-virtual-soccer-teams-in-unison-with-the-fifa-world-cup-qatar-2022-301654538.html" target="_blank">FIFA 2022 World Cup sponsor</a>, with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.
 - **[Crystal Clash](#crystal-clash)** ⚔️🤖: an asynchronous multiplayer turn-based battlebots game that allows players to program their bots using Tynker's block-based programming language, played millions of times across numerous seasons.
-- **[Lynker](#lynker)** 🛠💬 and the **[Collaborative Learning System](#collaborative-learning-system)** 👥💻: enabled project sharing features in the [Block IDE](#block-ide---version-30), real-time messaging and project editing, having been granted a [U.S. patent](https://patents.google.com/patent/US11699357B2).
+- **[Lynker](#lynker)** 🛠💬 and the **[Collaborative Learning System](#collaborative-learning-system)** 👥💻: enabled project sharing features in the [Block IDE](#block-ide---version-30), real-time messaging and project editing, having been granted a <a href="https://patents.google.com/patent/US11699357B2" target="_blank">U.S. patent</a>.
 - **[Quizzer](#quizzer)** 🧠❓: a modular quiz platform allowing easy integration of different question types and engines, such as allowing integration with the [Block IDE](#block-ide---version-30) and its course content.
 - **[Block IDE - Arcade Maker](#block-ide---arcade-maker)** 🎮👾: a simplified game development platform for kids, where they could develop and publish games without having to code.
 - **[Live Classes](#live-classes)**: a platform that enabled educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the [Block IDE](#block-ide---version-30) and course content.
@@ -47,19 +47,19 @@ As a Lead Software Engineer, I was the main contributor to many of its core prod
 
 In all these projects, I was responsible for eliciting requirements from stakeholders, researching and experimenting with different solutions, and finally implementing the solution end-to-end, deploying and managing it post-deployment.
 
-## 🛍 [RIPE Productions](https://www.platforme.com/)
+## 🛍 <a href="https://www.platforme.com/" target="_blank">RIPE Productions</a>
 
 - **Duration:** 2016 · Less than a year
 - **Role:** Lead Software Engineer (Full-time)
 - **Location:** Porto, Portugal · Remote 🌍
 
-RIPE Productions, was a company that developed e-commerce solutions for the fashion industry (this company is now called [PlatformE](https://www.platforme.com/)).
+RIPE Productions was a company that developed e-commerce solutions for the fashion industry (this company is now called <a href="https://www.platforme.com/" target="_blank">PlatformE</a>).
 
-Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#karl-kustomize) project for [Karl Lagerfeld](https://www.karl.com/pt-en). 
+Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#karl-kustomize) project for <a href="https://www.karl.com/pt-en" target="_blank">Karl Lagerfeld</a>.
 
 In a lesser role also contributed as a software developer to the [MYSWEAR online store](#myswear---online-store), featuring an advanced shoe customization rendering platform, related [iOS demo](#myswear---ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#myswear---harrods-holographic-pyramid), a luxury department store in London.
 
-## 📱 [Rocksauce Studios](https://www.rocksaucestudios.com/)
+## 📱 <a href="https://www.rocksaucestudios.com/" target="_blank">Rocksauce Studios</a>
 
 - **Duration:** 2013 - 2015 · 2 years
 - **Role:** Senior iOS Developer (Full-time)
@@ -67,7 +67,7 @@ In a lesser role also contributed as a software developer to the [MYSWEAR online
 
 Rocksauce Studios was a mobile app development company that specialized in creating custom apps for businesses and startups. While working at Hive Solutions, I was contracted by them to work on more than a dozen projects for different clients, always as an iOS developer.
 
-## 🌍 [Toptal](https://www.toptal.com/)
+## 🌍 <a href="https://www.toptal.com/" target="_blank">Toptal</a>
 
 - **Duration:** Apr 2012 - Present
 - **Role:** Senior Software Engineer
@@ -77,10 +77,10 @@ Toptal is a platform connecting top developers with leading companies. It employ
 
 - <a href="https://www.toptal.com/" target="_blank">Website</a>
 
-## 🐝 [Hive Solutions](https://www.hive.pt/)
+## 🐝 <a href="https://www.hive.pt/" target="_blank">Hive Solutions</a>
 
 - **Duration:** Mar 2008 - Sep 2016 · 8 years and 7 months
-- **Role:** Co Founder (Full-time)
+- **Role:** Co-founder (Full-time)
 - **Location:** Porto, Portugal · Onsite 🏢
 
 As a co-founder of Hive Solutions, I took on a variety of roles, as is common for startup founders. While my primary role was Lead Software Engineer, I also handled tasks related to sales, marketing and recruitment when needed.
@@ -88,27 +88,27 @@ As a co-founder of Hive Solutions, I took on a variety of roles, as is common fo
 We initially set out to build a SaaS Retail POS system called *[Frontdoor](#frontdoor)*, which we developed entirely from scratch, using a tech stack fully built in-house. Although it was a technical success, it didn’t achieve commercial success. We eventually pivoted to software consulting, where we shipped a diverse range of projects for numerous clients.
 
 - <a href="https://www.hive.pt/" target="_blank">Website</a>
-- [Github](https://github.com/hivesolutions)
+- <a href="https://github.com/hivesolutions" target="_blank">Github</a>
 
-## 🖥 [Microsoft](https://www.microsoft.com/)
+## 🖥 <a href="https://www.microsoft.com/" target="_blank">Microsoft</a>
 
 - **Duration:** Mar 2007 - Feb 2008 · 1 year
 - **Role:** Software Development Engineer in Test (Full-time)
 - **Location:** Copenhagen, Denmark
 
-Worked in the Global Development Localization team, in a Tester role, for [Microsoft Dynamics AX](https://dynamics.microsoft.com/en-us/ax/) (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing new tests, searching for and investigating application bugs.
+Worked in the Global Development Localization team, in a Tester role, for <a href="https://dynamics.microsoft.com/en-us/ax/" target="_blank">Microsoft Dynamics AX</a> (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing new tests, searching for and investigating application bugs.
 
 Improved internal testing tools to allow scanning for test code coverage across multipler layers, as opposed to just the root of the application's layered customization stack.
 
 Developed internal tool for database PII anonymization to allow data transfer across internal groups spread around different regions.
 
-- [Microsoft Dynamics AX](https://dynamics.microsoft.com/en-us/ax/)
+- <a href="https://dynamics.microsoft.com/en-us/ax/" target="_blank">Microsoft Dynamics AX</a>
 - TV news coverage about being hired by Microsoft straight out of college (oh the cringe! 😬) :
-  - [RTP 1](https://photos.app.goo.gl/jo7DskprCoxt2jB77)
-  - [SIC](https://photos.app.goo.gl/PY6t4TEXYK4fXmt98)
-  - [TVI](https://photos.app.goo.gl/W3wTceGahoE2p36U7)
+  - <a href="https://photos.app.goo.gl/jo7DskprCoxt2jB77" target="_blank">RTP 1</a>
+  - <a href="https://photos.app.goo.gl/PY6t4TEXYK4fXmt98" target="_blank">SIC</a>
+  - <a href="https://photos.app.goo.gl/W3wTceGahoE2p36U7" target="_blank">TVI</a>
 
-## 🏷 [Rent-a-Coder](https://web.archive.org/web/20061228042557/http://www.rentacoder.com/RentACoder/default.asp)
+## 🏷 <a href="https://web.archive.org/web/20061228042557/http://www.rentacoder.com/RentACoder/default.asp" target="_blank">Rent-a-Coder</a>
 
 - **Duration:** 2003 - 2006 · 3 years
 - **Role:** Software Developer
@@ -116,18 +116,18 @@ Developed internal tool for database PII anonymization to allow data transfer ac
 
 During college, I gained valuable experience working on freelance projects for clients around the world through the Rent-a-Coder platform, where I operated under the name "Chronosync Developments" and was fortunate to rank in the top 1% for customer ratings. This was my first foray into managing end-to-end client relationships, where I was tasked with projects and paid for delivering them. It helped me develop key skills in understanding client needs, managing expectations, and delivering on time.
 
-- [Profile](https://web.archive.org/web/20041112020320/http://www.rentacoder.com/RentACoder/SoftwareCoders/showBioInfo.asp?lngAuthorId=860960) (old snapshot of profile, unfortunately most of the work reviews from later years were not crawled by the Wayback Machine)
+- <a href="https://web.archive.org/web/20041112020320/http://www.rentacoder.com/RentACoder/SoftwareCoders/showBioInfo.asp?lngAuthorId=860960" target="_blank">Profile</a> (old snapshot of profile, unfortunately most of the work reviews from later years were not crawled by the Wayback Machine)
 
 # 🎓 Education
 
-## [University of Lodz](https://www.uni.lodz.pl/en/) 📚
+## 📚 <a href="https://www.uni.lodz.pl/en/" target="_blank">University of Lodz</a>
 
 - **Duration:** 2006 - 2007 (one semester)
 - **Degree:** Licenciate, Computer Engineering
 - **Grade:** 18 (out of 20)
 - **Location:** Lodz, Poland
 
-During my [Erasmus](https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/studying-abroad) exchange, which took place in the final year of my Computer Engineering studies at [FEUP](https://sigarra.up.pt/feup/pt/web_page.inicial), I enrolled in courses on Genetic Algorithms, Cryptography, Neural Networks, Network Services Programming, and an intensive Polish language course. I successfully completed them with an average grade of 18 out of 20.
+During my <a href="https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/studying-abroad" target="_blank">Erasmus</a> exchange, which took place in the final year of my Computer Engineering studies at <a href="https://sigarra.up.pt/feup/pt/web_page.inicial" target="_blank">FEUP</a>, I enrolled in courses on Genetic Algorithms, Cryptography, Neural Networks, Network Services Programming, and an intensive Polish language course. I successfully completed them with an average grade of 18 out of 20.
 
 However, the most rewarding aspect of this experience extended far beyond academics. Living in a diverse cultural melting pot, alongside students from across Europe, and having the chance to travel throughout Poland and neighboring countries, proved to be incredibly enriching. This brief but immersive experience provided personal and professional growth that far exceeded what I could have gained from traditional academic settings.
 
@@ -135,7 +135,7 @@ Being in a country with a language and culture so different from my own, where c
 
 - <a href="https://www.uni.lodz.pl/en/" target="_blank">Website</a>
 
-## [Faculdade de Engenharia da Universidade do Porto](https://sigarra.up.pt/feup/en/)🎓
+## 🎓 <a href="https://sigarra.up.pt/feup/en/" target="_blank">Faculdade de Engenharia da Universidade do Porto</a>
 
 - **Duration:** 2002 - 2007 (5 year course)
 - **Degree:** Licenciate, Computer Engineering
@@ -146,7 +146,7 @@ The Computer Engineering course I attended was one of the most competitive in th
 
 The course itself was demanding, with assignments becoming more complex each semester. By the final years, I dedicated 80-100 hours a week, not because it was required, but because I genuinely enjoyed the work. From creating 3D video games to developing neural networks, the challenges were both intense and rewarding.
 
-Additionally, I regularly participated in ACM programming contests, placed second in the 2006 edition of the [National Logic and Functional Programming Contest](https://www.flickr.com/photos/tiagoafpereira/albums/72057594128921562/), and was involved in the [European Space Agency's ESMO project](https://www.esa.int/Education/ESMO_mission).
+Additionally, I regularly participated in ACM programming contests, placed second in the 2006 edition of the <a href="https://www.flickr.com/photos/tiagoafpereira/albums/72057594128921562/" target="_blank">National Logic and Functional Programming Contest</a>, and was involved in the <a href="https://www.esa.int/Education/ESMO_mission" target="_blank">European Space Agency's ESMO project</a>.
 
 - <a href="https://sigarra.up.pt/feup/en/" target="_blank">Website</a>
 
@@ -173,7 +173,7 @@ My role was to gather requirements, research solutions, and implement, deploy, a
 Post-deployment on Tynker's parent and school pages, the chatbot significantly boosted user engagement, with higher conversion rates from users who interacted with it, indicating strong potential for further development.
 
 - <a href="https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6" target="_blank">Gallery</a>
-- [Help Agent in Parents page](https://www.tynker.com/parents/) (chat button in bottom right corner)
+- <a href="https://www.tynker.com/parents/" target="_blank">Help Agent in Parents page</a> (chat button in bottom right corner)
 
 ---
 
@@ -195,10 +195,10 @@ This extension enabled developers to declaratively specify configuration variabl
 My role involved architecting the solution, developing core features, and coordinating with a Software Developer and the Game Design team responsible for creating the game templates.
 
 - <a href="https://photos.app.goo.gl/ZKss72chsSgrfSMfA" target="_blank">Gallery</a>
-- [Fashion Designer](https://www.tynker.com/block-ide?type=arcade&p=63f90df1218b2c5338740c8d)
-- [Pet Designer](https://www.tynker.com/block-ide?type=arcade&p=6418ea6f218b2c0767316018)
-- [Catch 'Em](https://www.tynker.com/block-ide?type=arcade&p=642dc40c218b2c55131c2aca)
-- [Bop 'Em](https://www.tynker.com/block-ide?type=arcade&p=642dc5b8218b2c575d1e5e2a)
+- <a href="https://www.tynker.com/block-ide?type=arcade&p=63f90df1218b2c5338740c8d" target="_blank">Fashion Designer</a>
+- <a href="https://www.tynker.com/block-ide?type=arcade&p=6418ea6f218b2c0767316018" target="_blank">Pet Designer</a>
+- <a href="https://www.tynker.com/block-ide?type=arcade&p=642dc40c218b2c55131c2aca" target="_blank">Catch 'Em</a>
+- <a href="https://www.tynker.com/block-ide?type=arcade&p=642dc5b8218b2c575d1e5e2a" target="_blank">Bop 'Em</a>
 
 ---
 
@@ -222,9 +222,9 @@ In my role, I ideated the game, architected the solution, and developed the back
 Launched in time for the World Cup, the game was accessible via the web and integrated into Tynker Apps for iOS and Android through web views. It quickly gained popularity, with millions of matches played, and over $20,000 USD awarded in prizes during the first four rounds.
 
 - <a href="https://photos.app.goo.gl/hJ5rUAbWMr21xNuJ8" target="_blank">Gallery</a>
-- [Landing Page](https://www.tynker.com/codingcup/)
-- [Game Trailer](https://www.tynker.com/codingcup/static/media/FIFA-Welcome.5d408e712931137e67e2.mp4)
-- [Leaderboard](https://www.tynker.com/codingcup/competitions/65a637807dbf0021445757ac/leaderboards/countries)
+- <a href="https://www.tynker.com/codingcup/" target="_blank">Landing Page</a>
+- <a href="https://www.tynker.com/codingcup/static/media/FIFA-Welcome.5d408e712931137e67e2.mp4" target="_blank">Game Trailer</a>
+- <a href="https://www.tynker.com/codingcup/competitions/65a637807dbf0021445757ac/leaderboards/countries" target="_blank">Leaderboard</a>
 
 ---
 
@@ -271,8 +271,8 @@ My role was to architect and implement the full-stack solution, covering both fr
 The solution was deployed on schedule and required minimal post-deployment maintenance, with only minor issues related to content authoring and user experience.
 
 - <a href="https://photos.app.goo.gl/tWYftTXKxePWfJ2G6" target="_blank">Gallery</a>
-- [Block Coding Placement Test](https://www.tynker.com/quizzer/?type=placement:block)
-- [Text Coding Placement Test](https://www.tynker.com/quizzer/?type=placement:text)
+- <a href="https://www.tynker.com/quizzer/?type=placement:block" target="_blank">Block Coding Placement Test</a>
+- <a href="https://www.tynker.com/quizzer/?type=placement:text" target="_blank">Text Coding Placement Test</a>
 
 ---
 
@@ -320,7 +320,7 @@ In hindsight, it was over-engineered, as it was built to handle a higher through
 
 Using the Lynker messaging server I previously developed, I enhanced the Block IDE with collaborative learning features, including the ability to share projects, chat about them, comment on code, and monitor changes in real-time. This application was awarded a U.S. patent.
 
-- [Patent - Collaborative Learning System (US11699357B2)](https://patents.google.com/patent/US11699357B2)
+- <a href="https://patents.google.com/patent/US11699357B2" target="_blank">Patent - Collaborative Learning System (US11699357B2)</a>
 
 ---
 
@@ -342,14 +342,14 @@ I implemented a new architecture based on a custom-built extension framework, Re
 Looking back, a stack using PHP (for legacy reasons) + React (particularly with the release of React 16.8) + EmotionJS + the Extension Framework would have been more efficient. React could have replaced AngularJS, simplifying state management and eliminating the need for Redux. While Redux Saga was powerful, its steep learning curve for new developers would have made simpler alternatives preferable.
 
 - <a href="https://photos.app.goo.gl/rLjp8tBGs6WNStA18" target="_blank">Gallery</a>
-- [Block IDE](https://www.tynker.com/ide/v3)
-- [Platformer - Retro Racer](https://www.tynker.com/ide/v3?type=platformer-v2&p=61a931e66634692f2b3a4310&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
-- [Platformer - Outlast the Onslaught](https://www.tynker.com/ide/v3?type=platformer-v2&p=61a9453f8bdab975987e36f2&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
-- [Platformer - Platform Peril](https://www.tynker.com/ide/v3?type=platformer-v2&p=61a93e699a4c54146b14233c&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
-- [Physics Cannon](https://www.tynker.com/ide/v3?type=diy&p=546eaeef84aafa3125000012&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
-- [Brick Breaker](https://www.tynker.com/ide/v3?type=diy&p=563bf549af923168448b456b&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5)
-- [Candy Quest](https://www.tynker.com/ide/v3?type=course&slug=activity:candy-quest&chapter=0&lesson=0)
-- [Barbie Pet Vet](https://www.tynker.com/ide/v3?type=course&slug=activity:barbie-pet-vet&chapter=0&lesson=0)
+- <a href="https://www.tynker.com/ide/v3" target="_blank">Block IDE</a>
+- <a href="https://www.tynker.com/ide/v3?type=platformer-v2&p=61a931e66634692f2b3a4310&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5" target="_blank">Platformer - Retro Racer</a>
+- <a href="https://www.tynker.com/ide/v3?type=platformer-v2&p=61a9453f8bdab975987e36f2&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5" target="_blank">Platformer - Outlast the Onslaught</a>
+- <a href="https://www.tynker.com/ide/v3?type=platformer-v2&p=61a93e699a4c54146b14233c&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5" target="_blank">Platformer - Platform Peril</a>
+- <a href="https://www.tynker.com/ide/v3?type=diy&p=546eaeef84aafa3125000012&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5" target="_blank">Physics Cannon</a>
+- <a href="https://www.tynker.com/ide/v3?type=diy&p=563bf549af923168448b456b&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5" target="_blank">Brick Breaker</a>
+- <a href="https://www.tynker.com/ide/v3?type=course&slug=activity:candy-quest&chapter=0&lesson=0" target="_blank">Candy Quest</a>
+- <a href="https://www.tynker.com/ide/v3?type=course&slug=activity:barbie-pet-vet&chapter=0&lesson=0" target="_blank">Barbie Pet Vet</a>
 
 ---
 
@@ -371,7 +371,7 @@ To support the asynchronous gameplay and integrate Tynker's block-based programm
 Since its release, millions of matches have been played across numerous seasons.
 
 - <a href="https://photos.google.com/share/AF1QipMr2gNFGS497iVv5IzycTa3KhrrZ2VyvtCNQCIkHutntaMPO3Cyq3Gj1o5KxGCYhQ?key=UHNNTFpUeVRXNFNtQTRHRF82T3AwYjlQb1ZISDZR" target="_blank">Gallery</a>
-- [Dashboard](https://www.tynker.com/dashboard/student/#/battles/crystalclash)
+- <a href="https://www.tynker.com/dashboard/student/#/battles/crystalclash" target="_blank">Dashboard</a>
 
 ---
 
@@ -386,7 +386,7 @@ Since its release, millions of matches have been played across numerous seasons.
 
 Integrated Tynker's Block Editor into the Minecraft Education Edition app, enabling users to create and deploy custom mobs in real-time. This was achieved by adding a side panel with the Tynker Editor, allowing seamless access to coding tools during gameplay.
 
-- [Minecraft Education Edition](https://education.minecraft.net/)
+- <a href="https://education.minecraft.net/" target="_blank">Minecraft Education Edition</a>
 
 ---
 
@@ -404,7 +404,7 @@ Tynker's Mythicraft is a creative educational course designed to teach users how
 
 This course marked the first integration of the Minecraft Editor tool into a standard Tynker course structure, blending traditional introductory lessons with those requiring the Minecraft Editor. To achieve this, I integrated the tool into the course workflows, enabling it to be declared in the course data structures, launched at the appropriate times, and embedded within the course frame. I also implemented lesson completion detection to trigger progression to the next lesson. Additionally, I optimized the editor's performance to enhance its functionality on native mobile apps, as the course was available on those platforms as well.
 
-- [Demo Video](https://photos.app.goo.gl/mjEzTS8Gpw8NsC668)
+- <a href="https://photos.app.goo.gl/mjEzTS8Gpw8NsC668" target="_blank">Demo Video</a>
 
 ---
 
@@ -425,11 +425,11 @@ A key challenge was optimizing performance on older iPad Mini models, where low 
 The tool was integrated into both the Tynker App and the Mod Creator App, providing a powerful platform for Minecraft customizations. As of this writing, users have created several million assets using the editor.
 
 - <a href="https://photos.app.goo.gl/7PtgswT8BT2jcXnR9" target="_blank">Gallery</a>
-- [Skins - Steve](https://www.tynker.com/minecraft/editor/skin/steve/)
-- [Blocks - TNT](https://www.tynker.com/minecraft/editor/block/tnt/)
-- [Items - Diamond Sword](https://www.tynker.com/minecraft/editor/item/diamond_sword/)
-- [Mobs - Llama](https://www.tynker.com/minecraft/editor/mob/llama2/)
-- [Mobs - Pig](https://www.tynker.com/minecraft/editor/mob/pig/)
+- <a href="https://www.tynker.com/minecraft/editor/skin/steve/" target="_blank">Skins - Steve</a>
+- <a href="https://www.tynker.com/minecraft/editor/block/tnt/" target="_blank">Blocks - TNT</a>
+- <a href="https://www.tynker.com/minecraft/editor/item/diamond_sword/" target="_blank">Items - Diamond Sword</a>
+- <a href="https://www.tynker.com/minecraft/editor/mob/llama2/" target="_blank">Mobs - Llama</a>
+- <a href="https://www.tynker.com/minecraft/editor/mob/pig/" target="_blank">Mobs - Pig</a>
 
 ---
 
@@ -479,7 +479,7 @@ I coordinated the design and development of the application, contributing to cor
 - **Role:** Lead Software Engineer
 - **Technologies:** Python, MongoDB, Appier, HTML, CSS, JavaScript, jQuery, UXF, Budy
 
-Karl Kustomize is an online store where consumers can design and purchase custom sneakers from the fashion brand [Karl Lagerfeld](https://www.karl.com/pt-en).
+Karl Kustomize is an online store where consumers can design and purchase custom sneakers from the fashion brand <a href="https://www.karl.com/pt-en" target="_blank">Karl Lagerfeld</a>.
 
 I was responsible for developing core features, managing the project timeline, assigning tasks, and reviewing and refactoring pull requests from other developers to ensure a smooth and efficient development process.
 
@@ -504,7 +504,7 @@ Lugar da Jóia is a chain of jewelry stores, and this project marked their first
 I served as both a full-stack developer and coordinator, overseeing another developer and a designer. I developed a wide range of features for the site, working on both the frontend and backend, with the latter utilizing Hive Solutions' Budy e-commerce engine to integrate with the existing infrastructure.
 
 - <a href="https://photos.app.goo.gl/J8zziNJajw6ZwRnm9" target="_blank">Gallery</a>
-- [Landing Page](https://www.lugardajoia.com/index)
+- <a href="https://www.lugardajoia.com/index" target="_blank">Landing Page</a>
 
 ---
 
@@ -608,7 +608,7 @@ I developed the application from the ground up, playing a key role in managing c
 - [App Store](https://apps.apple.com/us/app/details-pal-pet-activity-link/id1062049611)
 -->
 - <a href="https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7" target="_blank">Gallery</a>
-- [Kickstarter](https://www.kickstarter.com/projects/1792953608/details-pal-a-pet-activity-link-for-every-dog)
+- <a href="https://www.kickstarter.com/projects/1792953608/details-pal-a-pet-activity-link-for-every-dog" target="_blank">Kickstarter</a>
 
 ---
 
@@ -716,7 +716,7 @@ I fixed numerous bugs and implemented new features across the app. The project w
 -->
 - <a href="https://photos.app.goo.gl/349FvG9KzJAxKMGC9" target="_blank">Gallery</a>
 - <a href="https://web.archive.org/web/20160527230029/http://www.uslikey.com/" target="_blank">Website</a>
-- [Facebook](https://www.facebook.com/uslikey)
+- <a href="https://www.facebook.com/uslikey" target="_blank">Facebook</a>
 
 ---
 
@@ -930,7 +930,7 @@ I developed most of the application, but it remained incomplete as I was reassig
 - [App Store](https://itunes.apple.com/BR/app/id745537889)
 -->
 - <a href="https://photos.app.goo.gl/EaASm71wXHKvfNY47" target="_blank">Gallery</a>
-- [Facebook](https://www.facebook.com/clockadoodleapp)
+- <a href="https://www.facebook.com/clockadoodleapp" target="_blank">Facebook</a>
 
 ---
 
@@ -1202,7 +1202,7 @@ The system focused on characters the user either didn't know or was predicted to
 
 With this system, daily sessions ensured the user retained previously learned characters, as the app adapted to their individual learning and forgetting curve.
 
-- [Sourceforce project](https://sourceforge.net/projects/nihonaid/)
+- <a href="https://sourceforge.net/projects/nihonaid/" target="_blank">Sourceforge project</a>
 
 ---
 
@@ -1260,7 +1260,7 @@ I served as the Coordinator of the Software subteam within the On Board Data Han
 
 One of the key lessons I took away from this experience was the immense value of effective teamwork.
 
-- [ESMO Project](https://www.esa.int/Education/European_Student_Moon_Orbiter)
+- <a href="https://www.esa.int/Education/European_Student_Moon_Orbiter" target="_blank">ESMO Project</a>
 
 ---
 
@@ -1275,12 +1275,12 @@ One of the key lessons I took away from this experience was the immense value of
 Computer Capers was a video game I developed at 12 years old and submitted to a monthly competition in Amiga Format magazine. Although the plot was simplistic and cringe, and the mechanics basic, I was proud of my accomplishment, especially given my age and having no internet access of any kind at the time. The game featured a tile-based world where players interacted with characters searching for specific items. By finding and trading these items, players advanced the storyline. I was particularly encouraged by the positive feedback I received from the magazine's contest reviewer.
 
 - <a href="https://photos.app.goo.gl/fk1GEomK621wdJ7s6" target="_blank">Gallery</a>
-- [Demo Video](https://photos.app.goo.gl/uMKFMcYurDnpCged8)
+- <a href="https://photos.app.goo.gl/uMKFMcYurDnpCged8" target="_blank">Demo Video</a>
 
 ---
 
 ## 🔗 Misc
 
 - **Mindhacking 101 presentation at BarcampPT 2010 (Porto, Portugal)**:
-  - [Slides](https://www.slideshare.net/hivesolutions/mind-hacking-101)
-  - [Audio](https://www.youtube.com/watch?v=8rTSRpF5SHE)
+  - <a href="https://www.slideshare.net/hivesolutions/mind-hacking-101" target="_blank">Slides</a>
+  - <a href="https://www.youtube.com/watch?v=8rTSRpF5SHE" target="_blank">Audio</a>
