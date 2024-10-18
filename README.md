@@ -3,7 +3,7 @@
 This CV is detailed and comprehensive—it's more suited for running through your favorite LLM and asking questions than reading it all the way through. For a concise summary, here's the **TL;DR**:
 
 ><br>👋 As a **Software Engineer** with over **20+ years of experience**, and **60+ projects shipped** my passion for technology began in childhood. My earliest memories are of playing on a <a href="https://www.youtube.com/watch?v=V0EfycbDhiw" target="_blank">Sinclair ZX Spectrum</a> (`LOAD "" [ENTER]` anyone? 🎮)  and later learning English by trial and error while navigating graphical adventure games like <a href="https://www.youtube.com/watch?v=RBeYlClQRgQ" target="_blank">The Secret of Monkey Island</a> on the <a href="https://en.wikipedia.org/wiki/Amiga_500" target="_blank">Commodore Amiga 500</a>. My home became the go-to spot for neighborhood friends to binge on video games for hours and hours 🎮🕹, and when we got stuck, I would trace where game variables were stored in RAM to patch them for infinite lives (`0x00057A34 = 03 -> FF` 💻🔧😈). At age 8, I received a <a href="https://en.wikipedia.org/wiki/Casio_FX-850P" target="_blank">Casio FX-850P calculator</a>—my first portable computer—and began coding text adventures on it to share with friends. By age 12, I had submitted <a href="https://photos.app.goo.gl/uMKFMcYurDnpCged8" target="_blank">my first game</a> to <a href="https://en.wikipedia.org/wiki/Amiga_Format" target="_blank">Amiga Format magazine</a>, and the <a href="https://photos.app.goo.gl/usD9rmawFdXKwFcH8" target="_blank">positive feedback</a> from the reviewer was encouraging enough to kickstart my journey into pursuing Software Engineering.
-><br>🚀 Over the past two decades, I’ve committed myself fully to just three major roles—starting at [Microsoft](#microsoft), co-founding [Hive Solutions](#hive-solutions) 🐝, and leading development at [Tynker](#tynker) 💡. In each role, I dedicated myself wholeheartedly, embracing both the challenges and opportunities. At Tynker, I played a key role in developing products used by over **100 million students across 150,000+ schools** 🏫, contributing significantly to the company’s **<a href="https://techcrunch.com/2021/09/16/byjus-acquires-coding-platform-tynker-for-200-million-in-us-expansion-push/" target="_blank">$200 million acquisition by BYJU's in 2021</a>** 💼.
+><br>🚀 Over the past two decades, I’ve committed myself fully to just three major roles—starting at [Microsoft](#-microsoft), co-founding [Hive Solutions](#-hive-solutions) 🐝, and leading development at [Tynker](#-tynker) 💡. In each role, I dedicated myself wholeheartedly, embracing both the challenges and opportunities. At Tynker, I played a key role in developing products used by over **100 million students across 150,000+ schools** 🏫, contributing significantly to the company’s **<a href="https://techcrunch.com/2021/09/16/byjus-acquires-coding-platform-tynker-for-200-million-in-us-expansion-push/" target="_blank">$200 million acquisition by BYJU's in 2021</a>** 💼.
 ><br>💡My long-term commitment to these roles has always aligned with my passion for learning 📚. Instead of specializing in one area, I embrace a broad view of technology 🌐, staying adaptable and continuously evolving. I enjoy working across frontend, backend, mobile apps, infrastructure, and machine learning (<a href="https://github.com/tsilva/aiml-notebooks/tree/main" target="_blank">commiting more time</a> to Deep Learning as of late 🤖). Every project—whether familiar or new—is an opportunity to refine my skills and solve real-world problems 💡🔧.
 >
 >💻 **Worked with the following technologies so far:**
@@ -34,16 +34,16 @@ Tynker is a kid-friendly platform used by over 100 million students and in more 
 
 As a Lead Software Engineer, I was the main contributor to many of its core products, namely:
 
-- **[Help Agent](#help-agent) 🤖💬**: a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture.
-- **[BYJU's Coding Cup](#byjus-coding-cup)** ⚽👾: a soccer-themed coding competition for kids, branded as a <a href="https://www.prnewswire.com/ae/news-releases/byjus-unveils-the-byjus-coding-cup-enabling-kids-to-use-code-and-ai-to-field-virtual-soccer-teams-in-unison-with-the-fifa-world-cup-qatar-2022-301654538.html" target="_blank">FIFA 2022 World Cup sponsor</a>, with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.
-- **[Crystal Clash](#crystal-clash)** ⚔️🤖: an asynchronous multiplayer turn-based battlebots game that allows players to program their bots using Tynker's block-based programming language, played millions of times across numerous seasons.
-- **[Lynker](#lynker)** 🛠💬 and the **[Collaborative Learning System](#collaborative-learning-system)** 👥💻: enabled project sharing features in the [Block IDE](#block-ide---version-30), real-time messaging and project editing, having been granted a <a href="https://patents.google.com/patent/US11699357B2" target="_blank">U.S. patent</a>.
-- **[Quizzer](#quizzer)** 🧠❓: a modular quiz platform allowing easy integration of different question types and engines, such as allowing integration with the [Block IDE](#block-ide---version-30) and its course content.
-- **[Block IDE - Arcade Maker](#block-ide---arcade-maker)** 🎮👾: a simplified game development platform for kids, where they could develop and publish games without having to code.
-- **[Live Classes](#live-classes)**: a platform that enabled educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the [Block IDE](#block-ide---version-30) and course content.
-- **[Coaching System](#coaching-system)** 👩‍🏫📊: a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
-- **[Block IDE - Version 3.0](#block-ide---version-30)** 🧩🔧: a major rewrite and rearchitecture of Tynker's Block Editor, at that time, the core of Tynker's educational platform.
-- **[Minecraft Editor](#minecraft-editor)** 🛠🎮: a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors.
+- **[Help Agent](#-help-agent) 🤖💬**: a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture.
+- **[BYJU's Coding Cup](#-byjus-coding-cup)** ⚽👾: a soccer-themed coding competition for kids, branded as a <a href="https://www.prnewswire.com/ae/news-releases/byjus-unveils-the-byjus-coding-cup-enabling-kids-to-use-code-and-ai-to-field-virtual-soccer-teams-in-unison-with-the-fifa-world-cup-qatar-2022-301654538.html" target="_blank">FIFA 2022 World Cup sponsor</a>, with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.
+- **[Crystal Clash](#-crystal-clash)** ⚔️🤖: an asynchronous multiplayer turn-based battlebots game that allows players to program their bots using Tynker's block-based programming language, played millions of times across numerous seasons.
+- **[Lynker](#-lynker)** 🛠💬 and the **[Collaborative Learning System](#-collaborative-learning-system)** 👥💻: enabled project sharing features in the [Block IDE](#-block-ide---version-30), real-time messaging and project editing, having been granted a <a href="https://patents.google.com/patent/US11699357B2" target="_blank">U.S. patent</a>.
+- **[Quizzer](#-quizzer)** 🧠❓: a modular quiz platform allowing easy integration of different question types and engines, such as allowing integration with the [Block IDE](#-block-ide---version-30) and its course content.
+- **[Block IDE - Arcade Maker](#-block-ide---arcade-maker)** 🎮👾: a simplified game development platform for kids, where they could develop and publish games without having to code.
+- **[Live Classes](#-live-classes)**: a platform that enabled educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the [Block IDE](#-block-ide---version-30) and course content.
+- **[Coaching System](#-coaching-system)** 👩‍🏫📊: a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
+- **[Block IDE - Version 3.0](#-block-ide---version-30)** 🧩🔧: a major rewrite and rearchitecture of Tynker's Block Editor, at that time, the core of Tynker's educational platform.
+- **[Minecraft Editor](#-minecraft-editor)** 🛠🎮: a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors.
 
 In all these projects, I was responsible for eliciting requirements from stakeholders, researching and experimenting with different solutions, and finally implementing the solution end-to-end, deploying and managing it post-deployment.
 
@@ -55,9 +55,9 @@ In all these projects, I was responsible for eliciting requirements from stakeho
 
 RIPE Productions was a company that developed e-commerce solutions for the fashion industry (this company is now called <a href="https://www.platforme.com/" target="_blank">PlatformE</a>).
 
-Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#karl-kustomize) project for <a href="https://www.karl.com/pt-en" target="_blank">Karl Lagerfeld</a>.
+Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#-karl-kustomize) project for <a href="https://www.karl.com/pt-en" target="_blank">Karl Lagerfeld</a>.
 
-In a lesser role also contributed as a software developer to the [MYSWEAR online store](#myswear---online-store), featuring an advanced shoe customization rendering platform, related [iOS demo](#myswear---ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#myswear---harrods-holographic-pyramid), a luxury department store in London.
+In a lesser role also contributed as a software developer to the [MYSWEAR online store](#-myswear---online-store), featuring an advanced shoe customization rendering platform, related [iOS demo](#-myswear---ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#-myswear---harrods-holographic-pyramid), a luxury department store in London.
 
 ## 📱 <a href="https://www.rocksaucestudios.com/" target="_blank">Rocksauce Studios</a>
 
@@ -85,7 +85,7 @@ Toptal is a platform connecting top developers with leading companies. It employ
 
 As a co-founder of Hive Solutions, I took on a variety of roles, as is common for startup founders. While my primary role was Lead Software Engineer, I also handled tasks related to sales, marketing and recruitment when needed.
 
-We initially set out to build a SaaS Retail POS system called *[Frontdoor](#frontdoor)*, which we developed entirely from scratch, using a tech stack fully built in-house. Although it was a technical success, it didn’t achieve commercial success. We eventually pivoted to software consulting, where we shipped a diverse range of projects for numerous clients.
+We initially set out to build a SaaS Retail POS system called *[Frontdoor](#-frontdoor)*, which we developed entirely from scratch, using a tech stack fully built in-house. Although it was a technical success, it didn’t achieve commercial success. We eventually pivoted to software consulting, where we shipped a diverse range of projects for numerous clients.
 
 - <a href="https://www.hive.pt/" target="_blank">Website</a>
 - <a href="https://github.com/hivesolutions" target="_blank">Github</a>
@@ -215,7 +215,7 @@ My role involved architecting the solution, developing core features, and coordi
 
 The BYJU's Coding Cup was developed as a flagship product to highlight BYJU'S sponsorship of the FIFA World Cup Qatar 2022™. Aimed at children aged 7–18, this soccer-themed coding competition introduced key programming concepts like conditional logic and debugging in an interactive, fun format. Participants coded virtual soccer teams to compete globally, enhancing their coding skills through an engaging experience.
 
-The project, completed in six months, leveraged parts of the [Crystal Clash](#crystal-clash) game engine to streamline development. The soccer matches were simulated in a discrete, grid-based environment, with fluid game flow achieved through clever interpolation of discrete states. Game mechanics, like skill levels influencing probabilistic events (e.g., ball steals), added strategic depth.
+The project, completed in six months, leveraged parts of the [Crystal Clash](#-crystal-clash) game engine to streamline development. The soccer matches were simulated in a discrete, grid-based environment, with fluid game flow achieved through clever interpolation of discrete states. Game mechanics, like skill levels influencing probabilistic events (e.g., ball steals), added strategic depth.
 
 In my role, I ideated the game, architected the solution, and developed the backend engine, APIs, and most of the frontend (excluding match and character avatar rendering). I coordinated with another developer who handled match rendering to ensure smooth integration. I also optimized the game for performance on lower-end mobile devices.
 
@@ -286,7 +286,7 @@ The solution was deployed on schedule and required minimal post-deployment maint
 - **Team:** Me + Design Team
 - **Technologies:** React, PHP, JavaScript
 
-Combining the [Collaborative Learning System](#collaborative-learning-system) features with the [Live Classes](#live-classes) platform, developed an integrated coaching management system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
+Combining the [Collaborative Learning System](#-collaborative-learning-system) features with the [Live Classes](#-live-classes) platform, developed an integrated coaching management system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.
 
 - <a href="https://photos.app.goo.gl/rGGaisXY8zYbEPZK6" target="_blank">Gallery</a>
 
@@ -304,7 +304,7 @@ Combining the [Collaborative Learning System](#collaborative-learning-system) fe
 
 Lynker was a custom-built real-time messaging server for Tynker, designed to support a wide range of features, from live dashboard notifications to project collaboration and multiplayer game development. It was engineered for scalability, reliability, security, and low-latency performance.
 
-I was responsible for the full stack development, overseeing everything from architecture to deployment and post-launch maintenance. Lynker was successfully integrated into the Tynker platform, powering key features like the [Collaborative Learning System](#collaborative-learning-system) and the [Live Classes](#live-classes) platform, as well as other real-time communication needs.
+I was responsible for the full stack development, overseeing everything from architecture to deployment and post-launch maintenance. Lynker was successfully integrated into the Tynker platform, powering key features like the [Collaborative Learning System](#-collaborative-learning-system) and the [Live Classes](#-live-classes) platform, as well as other real-time communication needs.
 
 In hindsight, it was over-engineered, as it was built to handle a higher throughput than was ultimately needed, with features like multiplayer game development eventually backlogged due to shifting priorities.
 
