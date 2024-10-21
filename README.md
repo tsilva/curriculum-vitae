@@ -389,7 +389,7 @@ Integrated Tynker's Block Editor into the Minecraft Education Edition app, enabl
 
 ---
 
-## 🧱 <a href="https://photos.app.goo.gl/mjEzTS8Gpw8NsC668" target="_blank">Mythicraft</a>
+## 🧱 <a href="https://photos.app.goo.gl/4mYja1dfdWLECgAs8" target="_blank">Mythicraft</a>
 
 - **TLDR**: Integration of Minecraft Editor into a new Tynker course.
 - **Start:** 2017
@@ -403,7 +403,7 @@ Tynker's Mythicraft is a creative educational course designed to teach users how
 
 This course marked the first integration of the Minecraft Editor tool into a standard Tynker course structure, blending traditional introductory lessons with those requiring the Minecraft Editor. To achieve this, I integrated the tool into the course workflows, enabling it to be declared in the course data structures, launched at the appropriate times, and embedded within the course frame. I also implemented lesson completion detection to trigger progression to the next lesson. Additionally, I optimized the editor's performance to enhance its functionality on native mobile apps, as the course was available on those platforms as well.
 
-- <a href="https://photos.app.goo.gl/mjEzTS8Gpw8NsC668" target="_blank">Demo Video</a>
+- <a href="https://photos.app.goo.gl/4mYja1dfdWLECgAs8" target="_blank">Gallery</a>
 
 ---
 
@@ -432,7 +432,7 @@ The tool was integrated into both the Tynker App and the Mod Creator App, provid
 
 ---
 
-## 🖥 <a href="https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8" target="_blank">Tynker - PHP MongoDB ODM</a>
+## 🖥 Tynker - PHP MongoDB ODM
 
 - **TLDR:** Custom MongoDB ODM for a legacy, unstructured PHP codebase
 - **Start:** 2016
