@@ -152,7 +152,7 @@ Additionally, I regularly participated in ACM programming contests, placed secon
 
 # 🚀 Projects
 
-## 🤖 Help Agent
+## 🤖 <a href="https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6" target="_blank">Help Agent</a>
 
 - **TLDR:** Sales assistant chatbot meant to assist users in Tynker related inquiries
 - **Start:** 2023
@@ -177,7 +177,7 @@ Post-deployment on Tynker's parent and school pages, the chatbot significantly b
 
 ---
 
-## 🕹 Block IDE - Arcade Maker
+## 🕹 <a href="https://photos.app.goo.gl/ZKss72chsSgrfSMfA" target="_blank">Block IDE - Arcade Maker</a>
 
 - **TLDR:** Block IDE extension for creating games without coding
 - **Start:** 2023
@@ -202,7 +202,7 @@ My role involved architecting the solution, developing core features, and coordi
 
 ---
 
-## ⚽ BYJU's Coding Cup
+## ⚽ <a href="https://photos.app.goo.gl/hJ5rUAbWMr21xNuJ8" target="_blank">BYJU's Coding Cup</a>
 
 - **TLDR:** Soccer-themed coding competition for kids
 - **Start:** 2023
@@ -249,7 +249,7 @@ The platform was deployed on schedule with only minor issues, mostly related to 
 
 ---
 
-## ❓ Quizzer
+## ❓ <a href="https://photos.app.goo.gl/tWYftTXKxePWfJ2G6" target="_blank">Quizzer</a>
 
 - **TLDR:** Modular quiz platform
 - **Start:** 2021
@@ -276,7 +276,7 @@ The solution was deployed on schedule and required minimal post-deployment maint
 
 ---
 
-## 👩‍🏫 Coaching System
+## 👩‍🏫 <a href="https://photos.app.goo.gl/rGGaisXY8zYbEPZK6" target="_blank">Coaching System</a>
 
 - **TLDR:** Integrated coaching management system
 - **Start:** 2020
@@ -310,7 +310,7 @@ In hindsight, it was over-engineered, as it was built to handle a higher through
 
 ---
 
-## 👥 Collaborative Learning System
+## 👥 <a href="https://patents.google.com/patent/US11699357B2" target="_blank">Collaborative Learning System</a>
 
 - **TLDR:** Real-time project sharing and collaboration features for the Block IDE
 - **Start:** 2020
@@ -324,7 +324,7 @@ Using the Lynker messaging server I previously developed, I enhanced the Block I
 
 ---
 
-## 🧩 Block IDE - Version 3.0
+## 🧩 <a href="https://photos.app.goo.gl/rLjp8tBGs6WNStA18" target="_blank">Block IDE - Version 3.0</a>
 
 - **TLDR:** Major overhaul of Tynker's Block Editor
 - **Start:** 2019
@@ -353,7 +353,7 @@ Looking back, a stack using PHP (for legacy reasons) + React (particularly with 
 
 ---
 
-## 🤖 Crystal Clash
+## 🤖 <a href="https://photos.app.goo.gl/FGWHWu9dR81ryzAZ8" target="_blank">Crystal Clash</a>
 
 - **TLDR:** Multiplayer turn-based battlebots game
 - **Start:** 2018
@@ -370,12 +370,12 @@ To support the asynchronous gameplay and integrate Tynker's block-based programm
 
 Since its release, millions of matches have been played across numerous seasons.
 
-- <a href="https://photos.google.com/share/AF1QipMr2gNFGS497iVv5IzycTa3KhrrZ2VyvtCNQCIkHutntaMPO3Cyq3Gj1o5KxGCYhQ?key=UHNNTFpUeVRXNFNtQTRHRF82T3AwYjlQb1ZISDZR" target="_blank">Gallery</a>
+- <a href="https://photos.app.goo.gl/FGWHWu9dR81ryzAZ8" target="_blank">Gallery</a>
 - <a href="https://www.tynker.com/dashboard/student/#/battles/crystalclash" target="_blank">Dashboard</a>
 
 ---
 
-## 🧱 Minecraft Education Edition Integration
+## 🧱 <a href="https://education.minecraft.net/" target="_blank">Minecraft Education Edition Integration</a>
 
 - **TLDR:** Integration of Tynker's Minecraft Editor into Minecraft Education Edition app
 - **Start:** 2018
@@ -390,7 +390,7 @@ Integrated Tynker's Block Editor into the Minecraft Education Edition app, enabl
 
 ---
 
-## 🧱 Mythicraft
+## 🧱 <a href="https://photos.app.goo.gl/mjEzTS8Gpw8NsC668" target="_blank">Mythicraft</a>
 
 - **TLDR**: Integration of Minecraft Editor into a new Tynker course.
 - **Start:** 2017
@@ -408,7 +408,7 @@ This course marked the first integration of the Minecraft Editor tool into a sta
 
 ---
 
-## 🧱 Minecraft Editor
+## 🧱 <a href="https://photos.app.goo.gl/7PtgswT8BT2jcXnR9" target="_blank">Minecraft Editor</a>
 
 - **TLDR:** Web 3D editor for Minecraft Bedrock Edition
 - **Start:** 2016
@@ -433,7 +433,7 @@ The tool was integrated into both the Tynker App and the Mod Creator App, provid
 
 ---
 
-## 🖥 Tynker - PHP MongoDB ODM
+## 🖥 <a href="https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8" target="_blank">Tynker - PHP MongoDB ODM</a>
 
 - **TLDR:** Custom MongoDB ODM for a legacy, unstructured PHP codebase
 - **Start:** 2016
@@ -450,7 +450,7 @@ This tool was integrated into both the Tynker App and Mod Creator App, offering 
 
 ---
 
-## 💥 Kaboom!
+## 💥 <a href="https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8" target="_blank">Kaboom!</a>
 
 - **TLDR:** Fast-paced revival of the classic "Lights Out" game for iPhone, iPad, Apple TV and Apple Watch
 - **Start:** 2016
@@ -470,7 +470,7 @@ I coordinated the design and development of the application, contributing to cor
 
 ---
 
-## 👟 Karl Kustomize
+## 👟 <a href="https://photos.app.goo.gl/wVCsT1Y5EKjcLgeU9" target="_blank">Karl Kustomize</a>
 
 - **TLDR:** Online Shoe Customization Store
 - **Start:** 2016
@@ -490,7 +490,7 @@ I was responsible for developing core features, managing the project timeline, a
 
 ---
 
-## 💍 Lugar da Jóia
+## 💍 <a href="https://photos.app.goo.gl/J8zziNJajw6ZwRnm9" target="_blank">Lugar da Jóia</a>
 
 - **TLDR:** Online Jewellery Store
 - **Start:** 2016
@@ -508,7 +508,7 @@ I served as both a full-stack developer and coordinator, overseeing another deve
 
 ---
 
-## 🖥 Windows Dev Center - App Middleware Partners
+## 🖥 <a href="https://photos.app.goo.gl/T13vtSmmCndfCmUZ7" target="_blank">Windows Dev Center - App Middleware Partners</a>
 
 - **TLDR:** Middleware Directory for Microsoft Partners
 - **Start:** 2016
@@ -526,7 +526,7 @@ In this project, I managed stakeholder communication, coordinated the design and
 
 ---
 
-## 👟 MYSWEAR - Harrods Holographic Pyramid
+## 👟 <a href="https://photos.app.goo.gl/TCP2sVwqjGtvvhx28" target="_blank">MYSWEAR - Harrods Holographic Pyramid</a>
 
 - **TLDR:** Instore Shoe Customization and Ordering experience with Holographic Preview
 - **Start:** 2016
@@ -556,7 +556,7 @@ Single-handedly developed a proof-of-concept native iOS application that replica
 
 ---
 
-## 👟 MYSWEAR - Online Store
+## 👟 <a href="https://photos.app.goo.gl/8gPa9phk2cwfVtH87" target="_blank">MYSWEAR - Online Store</a>
 
 - **TLDR:** Online Fashion Store with Shoe Customizer
 - **Start:** 2015
@@ -573,7 +573,7 @@ The website was developed based on pre-existing design specifications. I develop
 
 ---
 
-## 📝 SpeakWrite
+## 📝 <a href="https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7" target="_blank">SpeakWrite</a>
 
 - **TLDR:** iOS Audio Transcribing Application
 - **Start:** 2015
@@ -590,7 +590,7 @@ I resolved numerous critical bugs across various parts of the app, which was par
 
 ---
 
-## 🐕 Details PAL
+## 🐕 <a href="https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7" target="_blank">Details PAL</a>
 
 - **TLDR:** iOS Dog Activity Tracker with Bluetooth Collar
 - **Start:** 2015
@@ -612,7 +612,7 @@ I developed the application from the ground up, playing a key role in managing c
 
 ---
 
-## 🧼 Don't Mess With Texas - Report a Litterer
+## 🧼 <a href="https://photos.app.goo.gl/DoLcczf7SZpYcroK9" target="_blank">Don't Mess With Texas - Report a Litterer</a>
 
 - **TLDR:** iOS Littering Reporting App
 - **Start:** 2015
@@ -634,7 +634,7 @@ I fixed numerous bugs across the app and implemented new features. The project w
 
 ---
 
-## ⚡Energi Coach
+## ⚡<a href="https://photos.app.goo.gl/nxxb3rzMBLug6Fg27" target="_blank">Energi Coach</a>
 
 - **TLDR:** iOS Work-Life Balance App
 - **Start:** 2015
@@ -656,7 +656,7 @@ I focused on fixing complex bugs in the existing codebase for both the iPhone an
 
 ---
 
-## 🥃 TopShelf
+## 🥃 <a href="https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6" target="_blank">TopShelf</a>
 
 - **TLDR:** iOS Alcohol Delivery App
 - **Start:** 2015 
@@ -677,7 +677,7 @@ I developed the iOS application and backend logic from the ground up, including 
 
 ---
 
-## 🗣 TALKiT 
+## 🗣 <a href="https://photos.app.goo.gl/VJkCBsdmQzt4ihMS7" target="_blank">TALKiT</a> 
 
 - **TLDR:** iOS Social Network for Sharing Experiences
 - **Start:** 2015
@@ -697,7 +697,7 @@ TALKiT is a social media platform that offers an alternative to texting, allowin
 
 ---
 
-## 🛍 US Likey
+## 🛍 <a href="https://photos.app.goo.gl/349FvG9KzJAxKMGC9" target="_blank">US Likey</a>
 
 - **TLDR:** iOS Social Network for Sharing Products
 - **Start:** 2015
@@ -720,7 +720,7 @@ I fixed numerous bugs and implemented new features across the app. The project w
 
 ---
 
-## 🌎 WIN Atlas
+## 🌎 <a href="https://photos.app.goo.gl/BYUjLrayGR9cRUdDA" target="_blank">WIN Atlas</a>
 
 - **TLDR:** iOS Career Guidance App
 - **Start:** 2015
@@ -741,7 +741,7 @@ I developed the client-side of the app and integrated it with the server-side, w
 
 ---
 
-## 📚 Knod
+## 📚 <a href="https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6" target="_blank">Knod</a>
 
 - **TLDR:** iOS Media Reviews Social Network - Books, Movies, Games, etc.
 - **Start:** 2014
@@ -757,7 +757,7 @@ I contributed to the initial development of the project, creating core features 
 
 ---
 
-## 🚗 ValetTab
+## 🚗 <a href="https://photos.app.goo.gl/mf692orHUWtw1RHp7" target="_blank">ValetTab</a>
 
 - **TLDR:** iOS Valet Parking Software
 - **Start:** 2014
@@ -774,7 +774,7 @@ I fixed numerous bugs and implemented new features, primarily related to the pay
 
 ---
 
-## 🏃 Academy Sports - LIVE FIT
+## 🏃 <a href="https://photos.app.goo.gl/AMMpRdPWMU98D7mW7" target="_blank">Academy Sports - LIVE FIT</a>
 
 - **TLDR:** iOS Sports Tracking app
 - **Start:** 2014
@@ -791,7 +791,7 @@ During development, I encountered numerous bugs within the MMF SDK that blocked 
 
 ---
 
-## 🎖 Active Heroes
+## 🎖 <a href="https://photos.app.goo.gl/JkBgK1bbqhm2b1nb6" target="_blank">Active Heroes</a>
 
 - **TLDR:** iOS Charity for Veterans App
 - **Start:** 2014
@@ -813,7 +813,7 @@ I fixed numerous critical and non-critical bugs in the existing app. The project
 
 ---
 
-## 🐾 Furtile
+## 🐾 <a href="https://photos.app.goo.gl/Ebwb13vPBHovrK1X9" target="_blank">Furtile</a>
 
 - **TLDR:** iOS Social Network for Pet Owners and Breeders
 - **Start:** 2014
@@ -834,7 +834,7 @@ I developed the entire application, both the iOS app and the backend, from the g
 
 ---
 
-## 🏃 Map My Fitness - Challenges
+## 🏃 <a href="https://photos.app.goo.gl/yV5rQH6QvrL3yQh69" target="_blank">Map My Fitness - Challenges</a>
 
 - **TLDR:** iOS Sports Tracking App
 - **Start:** 2014
@@ -851,7 +851,7 @@ I implemented the Challenges feature, as well as the Weight and Sleep sections o
 
 ---
 
-## 🛸 Project Capture
+## 🛸 <a href="https://photos.app.goo.gl/zdBc2yVP85U8dVNUA" target="_blank">Project Capture</a>
 
 - **TLDR:** iOS UFO Reporting App
 - **Start:** 2014
@@ -868,7 +868,7 @@ Although the app was originally developed by someone else, I contributed by fixi
 
 ---
 
-## 📸 Randid
+## 📸 <a href="https://photos.app.goo.gl/33wt6ewUqtBV1mwB7" target="_blank">Randid</a>
 
 - **TLDR:** iOS Social Photo Sharing App
 - **Start:** 2014
@@ -889,7 +889,7 @@ I was brought into the project to help steer it back on track, ultimately develo
 
 ---
 
-## 🏃 WeGo
+## 🏃 <a href="https://photos.app.goo.gl/S4mAy24CX2pggMEj8" target="_blank">WeGo</a>
 
 - **TLDR:** iOS Sports Tracking app with wearable integration
 - **Start:** 2014
@@ -912,7 +912,7 @@ I developed the iOS application from start to finish in record time, overcoming 
 
 ---
 
-## ⏰ Clockadoodle
+## ⏰ <a href="https://photos.app.goo.gl/EaASm71wXHKvfNY47" target="_blank">Clockadoodle</a>
 
 - **TLDR:** iOS Alarm Clock with Youtube Video Alarms
 - **Start:** 2013
@@ -934,7 +934,7 @@ I developed most of the application, but it remained incomplete as I was reassig
 
 ---
 
-## 🧮 China Pro Tools
+## 🧮 <a href="https://photos.app.goo.gl/16xmzjMpPP9pP7Z88" target="_blank">China Pro Tools</a>
 
 - **TLDR:** Market Analytics Solution for Exports to China
 - **Start:** 2013
@@ -952,7 +952,7 @@ I developed the entire application based on pre-existing specifications and deli
 
 ---
 
-## 🏛 Discover Your City
+## 🏛 <a href="https://photos.app.goo.gl/RGoL3s92XLfNqsVa9" target="_blank">Discover Your City</a>
 
 - **TLDR:** Travelling App for Architecture Enthusiasts
 - **Start:** 2013
@@ -970,7 +970,7 @@ I developed the entire application, from start to finish, based on pre-existing 
 
 ---
 
-## 🎶Rocklobby
+## 🎶 <a href="https://photos.app.goo.gl/paiggJ6dEvdKeBwk7" target="_blank">Rocklobby</a>
 
 - **TLDR:** Web Music Social Network for Fans, Artists and Venues
 - **Start:** 2013
@@ -989,7 +989,7 @@ I developed the entire application from top to bottom while also managing the pr
 
 ---
 
-## 🎶Rocklobby - iOS App
+## 🎶 <a href="https://photos.app.goo.gl/8c4fpByixacvbZvAA" target="_blank">Rocklobby - iOS App</a>
 
 - **TLDR:** iOS Music Social Network for Fans, Artists and Venues
 - **Start:** 2013
@@ -1007,7 +1007,7 @@ I developed the client-side iOS app, collaborating with an existing developer wo
 
 ---
 
-## ♣ Fresh Deck Poker
+## ♣ <a href="https://photos.app.goo.gl/FoLw9hqAmi8UUrQw9" target="_blank">Fresh Deck Poker</a>
 
 - **TLDR:** Online Poker Game with Real Cash Prizes
 - **Start:** 2012
@@ -1041,7 +1041,7 @@ Initially contracted as a consultant to help the development team adopt the requ
 
 ---
 
-## 💰 Bargania
+## 💰 <a href="https://photos.app.goo.gl/nqtk5jtiGQ56GjCm8" target="_blank">Bargania</a>
 
 - **TLDR:** Deal-a-Day Aggregation Service
 - **Start:** 2011
@@ -1058,7 +1058,7 @@ I developed the core features of the platform and handled copywriting and transl
 
 ---
 
-## 🍽 A La Carte
+## 🍽 <a href="https://photos.app.goo.gl/WGcN6Uyiktbc9LHFA" target="_blank">A La Carte</a>
 
 - **TLDR:** Restaurant Search Engine
 - **Start:** 2010
@@ -1075,7 +1075,7 @@ I designed and developed the ETL components for the food indexing and search sys
 
 ---
 
-## 🎮 Mariachi
+## 🎮 <a href="https://photos.app.goo.gl/q2zvsL82jeqiKAPV7" target="_blank">Mariachi</a>
 
 - **TLDR:** Cross-Platform Shoot'em Up Game
 - **Start:** 2010
@@ -1091,7 +1091,7 @@ I developed and implemented the game's core logic, 3D model import feature, and 
 
 ---
 
-## 🤖 Panzerini
+## 🤖 <a href="https://photos.app.goo.gl/uuMTMyFEtspu8NBY7" target="_blank">Panzerini</a>
 
 - **TLDR:** Battlebots-like Game
 - **Start:** 2010
@@ -1108,7 +1108,7 @@ I developed core features of the game and created the artificial intelligence fo
 
 ---
 
-## 🏫 Schoooools
+## 🏫 <a href="https://photos.app.goo.gl/PNSdpTtKAb8t4bkr5" target="_blank">Schoooools</a>
 
 - **TLDR:** Social Network for Schools
 - **Start:** 2010
@@ -1120,11 +1120,11 @@ Schoooools is a platform that provides personal and social learning spaces, fost
 
 I developed core features such as action tracking, analytics, and classroom management tools. Additionally, I created a cross-platform mobile application for the service using PhoneGap.
 
-- <a href="https://photos.app.goo.gl/WevSYZW9bJH4Kyaz8" target="_blank">Gallery</a>
+- <a href="https://photos.app.goo.gl/PNSdpTtKAb8t4bkr5" target="_blank">Gallery</a>
 
 ---
 
-## 🧾 Take the Bill
+## 🧾 <a href="https://photos.app.goo.gl/PNSdpTtKAb8t4bkr5" target="_blank">Take the Bill</a>
 
 - **TLDR:** SaaS Invoicing Solution
 - **Start:** 2010
@@ -1140,7 +1140,7 @@ I developed key backend and frontend features for the application.
 
 ---
 
-## 🛍 Frontdoor
+## 🛍 <a href="https://photos.app.goo.gl/9qeFGMfqXWxdYXLXA" target="_blank">Frontdoor</a>
 
 - **TLDR:** SaaS ERP Solution
 - **Start:** 2008
@@ -1154,7 +1154,7 @@ Developed back-end logic for online Point-of-Sale SaaS product using Python with
 
 ---
 
-## 🔌 Colony Framework
+## 🔌 <a href="https://photos.app.goo.gl/g5w3nPii7GgV5AeA6" target="_blank">Colony Framework</a>
 
 - **TLDR:** Modularity Container Framework
 - **Start:** 2008
@@ -1186,7 +1186,7 @@ The final product was successfully completed and deployed at the partner enterpr
 
 ---
 
-## 🥋 Nihonaid
+## 🥋 <a href="https://sourceforge.net/projects/nihonaid/" target="_blank">Nihonaid</a>
 
 - **TLDR:** Japanese Language Learning Assistant
 - **Start:** 2006
@@ -1221,7 +1221,7 @@ Through this project, I gained experience in customizing the Mambo/Joomla Conten
 
 ---
 
-## 🧠 NeuralJ
+## 🧠 <a href="https://sourceforge.net/projects/neuralj/" target="_blank">NeuralJ</a>
 
 - **TLDR:** Neural Network Library for Java
 - **Start:** 2005
@@ -1233,9 +1233,11 @@ NeuralJ was an open-source software project I created to provide an efficient an
 
 Through this project, I deepened my understanding of Neural Networks and Genetic Algorithms, while also honing my skills in Java programming and software architecture.
 
+- <a href="https://sourceforge.net/projects/neuralj/" target="_blank">SourceForge project</a>
+
 ---
 
-## 🛶 Clube do Paiva
+## 🛶 <a href="https://www.clubedopaiva.com/" target="_blank">Clube do Paiva</a>
 
 - **TLDR:** Extreme Sports Company Website
 - **Start:** 2004
@@ -1249,7 +1251,7 @@ Handled entire backend production of a website, web application and database pro
 
 ---
 
-## 🌔 European Student Moon Orbiter
+## 🌔 <a href="https://www.esa.int/Education/European_Student_Moon_Orbiter" target="_blank">European Student Moon Orbiter</a>
 
 - **TLDR:** European Space Agency Student Sattellite Project
 - **Start:** 2004
@@ -1264,7 +1266,7 @@ One of the key lessons I took away from this experience was the immense value of
 
 ---
 
-## 🎮 Computer Capers
+## 🎮 <a href="https://photos.app.goo.gl/uMKFMcYurDnpCged8" target="_blank">Computer Capers</a>
 
 - **TLDR:** Adventure Game for the Commodore Amiga
 - **Start:** 1996
