@@ -352,7 +352,7 @@ Looking back, a stack using PHP (for legacy reasons) + React (particularly with 
 
 ---
 
-## 🤖 <a href="https://photos.app.goo.gl/FGWHWu9dR81ryzAZ8" target="_blank">Crystal Clash</a>
+## 🤖 <a href="https://photos.app.goo.gl/h8BPE44JqYkjCFnT9" target="_blank">Crystal Clash</a>
 
 - **TLDR:** Multiplayer turn-based battlebots game
 - **Start:** 2018
@@ -369,7 +369,7 @@ To support the asynchronous gameplay and integrate Tynker's block-based programm
 
 Since its release, millions of matches have been played across numerous seasons.
 
-- <a href="https://photos.app.goo.gl/FGWHWu9dR81ryzAZ8" target="_blank">Gallery</a>
+- <a href="https://photos.app.goo.gl/h8BPE44JqYkjCFnT9" target="_blank">Gallery</a>
 - <a href="https://www.tynker.com/dashboard/student/#/battles/crystalclash" target="_blank">Dashboard</a>
 
 ---
