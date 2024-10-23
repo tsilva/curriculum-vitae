@@ -227,7 +227,7 @@ Launched in time for the World Cup, the game was accessible via the web and inte
 
 ---
 
-## 👩‍🏫 Live Classes
+## 👩‍🏫 <a href="https://photos.app.goo.gl/dATH9AZGA5G8Zb2K6" target="_blank">Live Classes</a>
 
 - **TLDR:** Platform for educators to conduct interactive coding classes with students
 - **Start:** 2022
@@ -245,6 +245,8 @@ The platform was created to support a new product offering that bundled small co
 My role involved quickly defining the requirements, architecting the solution, and implementing both the backend and frontend in a short time frame.
 
 The platform was deployed on schedule with only minor issues, mostly related to the video conferencing integration and a few cases of user error, rather than system bugs.
+
+- <a href="https://photos.app.goo.gl/dATH9AZGA5G8Zb2K6" target="_blank">Gallery</a>
 
 ---
 
