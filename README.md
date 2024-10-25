@@ -45,7 +45,7 @@ As a Lead Software Engineer, I was the main contributor to many of its core prod
 - **[Block IDE - Version 3.0](#-block-ide---version-30)** 🧩🔧: a major rewrite and rearchitecture of Tynker's Block Editor, at that time, the core of Tynker's educational platform.
 - **[Minecraft Editor](#-minecraft-editor)** 🛠🎮: a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors.
 
-In all these projects, I was responsible for eliciting requirements from stakeholders, researching and experimenting with different solutions, and finally implementing the solution end-to-end, deploying and managing it post-deployment.
+❗ In all these projects, I was responsible for gathering requirements from stakeholders, researching and testing various solutions, and implementing the solution end-to-end, including deployment and post-deployment management.
 
 ## 🛍 <a href="https://www.platforme.com/" target="_blank">RIPE Productions</a>
 
