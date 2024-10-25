@@ -20,6 +20,7 @@ This CV is detailed and comprehensive—it's more suited for running through you
 >
 ><br>**🔗 For a showcase of my work, visit my <a href="https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6" target="_blank">Portfolio Gallery</a>.**  
 **🔗 To explore collaboration opportunities, feel free to connect with me on <a href="https://www.linkedin.com/in/engtiagosilva/" target="_blank">LinkedIn</a>.**
+**🔗 You can also <a href="https://drive.google.com/file/d/1mI_kDTRpEhqn0xzEg1lQjEodMI0tZ_hB/view?usp=sharing" target="_blank">listen to this CV in podcast format</a> 🎤** (generated with <a href="https://notebooklm.google.com/" target="_blank">NotebookLM</a>, it's a bit cringe and not fully factual).<br> 
 ><br>
 
 # 🧑‍💻 Experience
