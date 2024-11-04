@@ -206,7 +206,7 @@ My role involved architecting the solution, developing core features, and coordi
 ## ⚽ <a href="https://photos.app.goo.gl/hJ5rUAbWMr21xNuJ8" target="_blank">BYJU's Coding Cup</a>
 
 - **TLDR:** Soccer-themed coding competition for kids
-- **Start:** 2023
+- **Start:** 2022
 - **Client:** Tynker
 - **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
@@ -323,6 +323,7 @@ In hindsight, it was over-engineered, as it was built to handle a higher through
 
 Using the Lynker messaging server I previously developed, I enhanced the Block IDE with collaborative learning features, including the ability to share projects, chat about them, comment on code, and monitor changes in real-time. This application was awarded a U.S. patent.
 
+- <a href="https://photos.app.goo.gl/RMAy9e66DvJSBp8T8">Gallery</a>
 - <a href="https://patents.google.com/patent/US11699357B2" target="_blank">Patent - Collaborative Learning System (US11699357B2)</a>
 
 ---
