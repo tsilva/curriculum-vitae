@@ -426,7 +426,7 @@ Developed a web-based 3D editor for Minecraft Bedrock Edition, allowing users to
 
 A key challenge was optimizing performance on older iPad Mini models, where low frame rates and sluggish interactions were prevalent. To address this, I made sure I bypassed GPU compositing operations as much as possible, and implemented strict memory management strategies to mitigate the effects of unpredictable garbage collection. These optimizations ensured the editor ran smoothly within memory limits, achieving optimal frame rates.
 
-The tool was integrated into both the Tynker App and the Mod Creator App, providing a powerful platform for Minecraft customizations. As of this writing, users have created several million assets using the editor.
+The tool was integrated into both the Tynker App and the Mod Creator App (which <a href="https://photos.app.goo.gl/KDZMd8qAxy5TeSHx8">reached top 3 in different App Store categories</a>), providing a powerful platform for Minecraft customizations. As of this writing, users have created several million assets using the editor.
 
 - <a href="https://photos.app.goo.gl/7PtgswT8BT2jcXnR9" target="_blank">Gallery</a>
 - <a href="https://www.tynker.com/minecraft/editor/skin/steve/" target="_blank">Skins - Steve</a>
