@@ -1,3 +1,17 @@
+<div align="center">
+  <img src="logo.png" alt="curriculum-vitae" width="200"/>
+
+  [![GitHub stars](https://img.shields.io/github/stars/tsilva/curriculum-vitae?style=flat)](https://github.com/tsilva/curriculum-vitae/stargazers)
+  [![Profile Views](https://komarev.com/ghpvc/?username=tsilva&label=Profile%20Views&color=blue&style=flat)](https://github.com/tsilva)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/engtiagosilva/)
+
+  **20+ years of software engineering experience distilled into an LLM-friendly format**
+
+  [Portfolio Gallery](https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6) · [LinkedIn](https://www.linkedin.com/in/engtiagosilva/) · [GitHub](https://github.com/tsilva)
+</div>
+
+---
+
 # TLDR
 
 This CV is detailed and comprehensive—it's more suited for running through your favorite LLM and asking questions than reading it all the way through. For a concise summary, here's the **TL;DR**:
