@@ -5,7 +5,7 @@
   [![Profile Views](https://komarev.com/ghpvc/?username=tsilva&label=Profile%20Views&color=blue&style=flat)](https://github.com/tsilva)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/engtiagosilva/)
 
-  **20+ years of software engineering experience distilled into an LLM-friendly format**
+  **🧠 20+ years of software engineering experience distilled into an LLM-friendly format**
 
   [Portfolio Gallery](https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6) · [LinkedIn](https://www.linkedin.com/in/engtiagosilva/) · [GitHub](https://github.com/tsilva)
 </div>
