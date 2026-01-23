@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logo.png" alt="curriculum-vitae" width="200"/>
+  <img src="logo.png" alt="curriculum-vitae" width="512"/>
 
   [![GitHub stars](https://img.shields.io/github/stars/tsilva/curriculum-vitae?style=flat)](https://github.com/tsilva/curriculum-vitae/stargazers)
   [![Profile Views](https://komarev.com/ghpvc/?username=tsilva&label=Profile%20Views&color=blue&style=flat)](https://github.com/tsilva)
