@@ -2,6 +2,10 @@
 
 # curriculum-vitae
 
+<p align="center">
+  <img src="logo.png" alt="curriculum-vitae logo" width="200">
+</p>
+
 **📄 20+ years of software engineering — Microsoft, Hive Solutions, Tynker, and beyond 🚀**
 
 </div>
