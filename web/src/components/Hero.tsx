@@ -212,10 +212,15 @@ export function Hero() {
       <div className="flex items-center gap-3 mt-3">
         <span className="text-kiroshi-red text-base">◆</span>
         <p className="font-[family-name:var(--font-display)] text-base md:text-lg text-cyan tracking-[0.25em] uppercase neon-glow-cyan">
-          Software Engineer
+          Fullstack Software Engineer
         </p>
         <span className="text-kiroshi-red text-base">◆</span>
       </div>
+
+      {/* Tagline */}
+      <p className="font-[family-name:var(--font-mono)] text-[10px] md:text-xs text-kiroshi-yellow/80 mt-2 tracking-[0.15em] uppercase">
+        backend + frontend + mobile + ai. idea in → product out.
+      </p>
 
       {/* Red separator line */}
       <div className="flex items-center gap-3 mt-6 mb-8 w-48">
