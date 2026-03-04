@@ -57,6 +57,37 @@ npm run build        # Parse README + build static export
 npm run parse        # Only regenerate cv-data.json from README.md
 ```
 
+### Visual Inspection
+Use the `visual-inspection` skill to capture and analyze screenshots of the CV web app:
+
+```bash
+# From repo root, use the full path:
+./.opencode/skills/visual-inspection/screenshot-fullpage.sh
+```
+
+**When to use:**
+- After making visual/design changes to verify the result
+- To check if the page looks correct before committing
+- For visual regression testing (capture before/after)
+- To analyze layout, styling, or content issues
+
+**Important:** Always capture the **full page** (not just hero) to see the complete result including Experience, Projects, and Education sections. The skill automatically triggers scroll-reveal animations so all content is visible.
+
+**Analyze the screenshot:**
+After capturing, use the skill to read and analyze the screenshot. Focus on:
+- Layout integrity (no broken grids, proper spacing)
+- Visual consistency (colors match cyberpunk theme)
+- Content visibility (all sections rendered correctly)
+- Typography readability
+- Animation states (if applicable)
+
+**Example workflow:**
+1. Make changes to a component
+2. Ensure dev server is running (`cd web && npm run dev`)
+3. Capture full page: `./.opencode/skills/visual-inspection/screenshot-fullpage.sh`
+4. Analyze: Read `.visual-inspection-screenshots/full-page-screenshot.png` and describe what you see
+5. Verify all sections (Hero, Experience, Projects, Education) look correct
+
 ### Data Pipeline
 The web app consumes CV data via a build-time pipeline:
 1. `scripts/parse-readme.ts` parses README.md, extracting projects, employers, education, etc.
@@ -146,3 +177,11 @@ When updating project information:
 - Python scripts are utilities, not production code
 - `parse-readme.ts` bridges the README and web app — changes to README.md project structure may require updating the parser
 - When modifying CV content, run `npm run parse` in `web/` to regenerate the JSON data
+
+## Skills
+
+### readme-generator
+Use this skill when authoring or updating README content. The README.md is the primary artifact and must be kept synchronized with any significant changes.
+
+### visual-inspection
+**Use this skill to verify visual changes before committing.** Capture screenshots of the CV web app to check layout, styling, and content. Always capture the **full page** to verify all sections (Hero, Experience, Projects, Education) render correctly. Screenshots are automatically saved to `.visual-inspection-screenshots/` (gitignored).

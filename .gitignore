@@ -51,6 +51,12 @@ logs/
 .claude/
 .opencode/
 
+# Visual Inspection Skill screenshots
+.visual-inspection-screenshots/
+*.png
+!web/public/*.png
+!docs/**/*.png
+
 # Next.js
 web/.next/
 web/out/
