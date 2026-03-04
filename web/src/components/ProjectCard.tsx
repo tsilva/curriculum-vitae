@@ -37,8 +37,15 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
       </div>
 
       {/* Quick links - always at footer */}
-      <div className="flex gap-3 mt-auto pt-3 border-t border-cyan/10 justify-end">
-        {project.links.length > 0 && project.links.slice(0, 2).map((link) => {
+      <div className="flex items-center gap-3 mt-auto pt-3 border-t border-cyan/10 justify-between">
+        <span className="flex items-center gap-2 text-xs font-[family-name:var(--font-mono)] text-steel-dim group-hover:text-cyan transition-colors">
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Click for details
+        </span>
+        <div className="flex gap-3">
+          {project.links.length > 0 && project.links.slice(0, 2).map((link) => {
           // SVG icons matching Hero component style
           const getIcon = (url: string, label: string) => {
             if (url.includes('github.com')) {
@@ -98,6 +105,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
           </a>
           );
         })}
+        </div>
       </div>
     </button>
   );
