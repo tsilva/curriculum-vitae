@@ -67,6 +67,17 @@ const ROOT = path.resolve(__dirname, "..");
 const README_PATH = path.join(ROOT, "README.md");
 const OUTPUT_PATH = path.join(ROOT, "web", "src", "data", "cv-data.json");
 
+// Gallery configuration
+const GALLERY_MODE = process.env.GALLERY_MODE || 'local';
+const R2_PUBLIC_URL = process.env.R2_PUBLIC_URL || 'https://curriculum-vitae-r2.tsilva.eu';
+
+function getGalleryBaseUrl(): string {
+  if (GALLERY_MODE === 'r2') {
+    return `${R2_PUBLIC_URL}/galleries`;
+  }
+  return '/galleries';
+}
+
 function slugify(text: string): string {
   return text
     .toLowerCase()
@@ -276,6 +287,7 @@ function findProjectIds(description: string, projectTitles: string[]): string[] 
 function scanGalleries(): Map<string, GalleryMedia[]> {
   const galleriesPath = path.join(ROOT, "galleries");
   const galleryMap = new Map<string, GalleryMedia[]>();
+  const baseUrl = getGalleryBaseUrl();
   
   if (!fs.existsSync(galleriesPath)) {
     console.log("Galleries folder not found, skipping gallery data");
@@ -301,7 +313,7 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
         media.push({
           filename,
           type: isImage ? 'image' : 'video',
-          path: `/galleries/${entry.name}/${filename}`
+          path: `${baseUrl}/${entry.name}/${filename}`
         });
       }
     }
@@ -314,7 +326,7 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
     }
   }
   
-  console.log(`Scanned ${galleryMap.size} galleries with media`);
+  console.log(`Scanned ${galleryMap.size} galleries with media (mode: ${GALLERY_MODE})`);
   return galleryMap;
 }
 

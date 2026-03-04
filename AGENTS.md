@@ -67,6 +67,57 @@ Created by `scripts/create_canonical_galleries.py` which:
 
 **Note**: The `galleries/` directory is gitignored as the source of truth remains the Google Photos Takeout backup.
 
+## Cloudflare R2 Gallery Hosting
+
+The galleries can be served from either local files or Cloudflare R2. This allows swapping between local development (with galleries folder) and production (with R2 CDN).
+
+### Configuration
+
+Set environment variables in `web/.env` or via command line:
+
+```bash
+# Gallery mode: 'local' or 'r2'
+GALLERY_MODE=r2
+
+# R2 Public URL (custom domain or R2 dev URL)
+R2_PUBLIC_URL=https://curriculum-vitae-r2.tsilva.eu
+```
+
+### NPM Scripts
+
+Convenient scripts are available in `web/package.json`:
+
+```bash
+# Build with local galleries
+cd web
+npm run build:local
+
+# Build with R2 galleries
+cd web
+npm run build:r2
+
+# Just parse (regenerate cv-data.json)
+npm run parse:local  # or parse:r2
+```
+
+### R2 Setup
+
+1. Create a Cloudflare R2 bucket named `curriculum-vitae`
+2. Configure a custom domain (e.g., `curriculum-vitae-r2.tsilva.eu`) or use the R2 dev URL
+3. Upload galleries using rclone:
+   ```bash
+   rclone sync galleries/ r2-cv:curriculum-vitae/galleries/ --progress
+   ```
+4. Set bucket to public or configure appropriate access policies
+
+### How It Works
+
+The `scripts/parse-readme.ts` script reads `GALLERY_MODE` and generates appropriate URLs:
+- **Local mode**: `/galleries/{project}/{filename}` (served from `public/galleries/` or proxied)
+- **R2 mode**: `https://curriculum-vitae-r2.tsilva.eu/galleries/{project}/{filename}` (served from R2 CDN)
+
+The Next.js `next.config.ts` includes the R2 domain in `images.remotePatterns` for optimization support.
+
 ## Key Commands
 
 ### Validate Links
