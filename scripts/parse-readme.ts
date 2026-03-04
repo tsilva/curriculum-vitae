@@ -81,6 +81,8 @@ function getGalleryBaseUrl(): string {
 function slugify(text: string): string {
   return text
     .toLowerCase()
+    .normalize('NFD')  // Decompose accented characters
+    .replace(/[\u0300-\u036f]/g, '')  // Remove combining marks
     .replace(/[^a-z0-9\s-]/g, "")
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-")
