@@ -31,7 +31,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
         </div>
 
         <p
-          className="text-base text-steel leading-relaxed mb-4 line-clamp-3 [&_a]:text-cyan [&_a]:hover:underline"
+          className="text-sm text-steel leading-[1.7] mb-4 line-clamp-3 [&_a]:text-cyan [&_a]:hover:underline"
           dangerouslySetInnerHTML={{ __html: project.tldr }}
         />
       </div>

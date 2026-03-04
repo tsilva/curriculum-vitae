@@ -6,12 +6,12 @@ interface EducationProps {
 
 export function Education({ entries }: EducationProps) {
   return (
-    <section id="education" className="max-w-6xl mx-auto px-6 py-24 pb-32">
-      <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-12 reveal">
+    <section id="education" className="max-w-6xl mx-auto px-6 pt-8 pb-32">
+      <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-10 reveal">
         <span className="text-magenta">&gt;</span> TRAINING_MODULES
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {entries.map((entry) => (
           <div
             key={entry.id}
@@ -47,8 +47,8 @@ export function Education({ entries }: EducationProps) {
             </div>
 
             {entry.description && (
-              <p
-                className="text-base text-cool-white/80 mt-4 leading-relaxed line-clamp-4 [&_a]:text-cyan [&_a]:hover:underline"
+              <div
+                className="text-sm text-cool-white/80 mt-4 leading-[1.7] line-clamp-4 [&_a]:text-cyan [&_a]:hover:underline"
                 dangerouslySetInnerHTML={{ __html: entry.description.split("\n")[0] }}
               />
             )}

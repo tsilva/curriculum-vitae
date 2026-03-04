@@ -10,11 +10,11 @@ export function TimelineItem({ employer }: TimelineItemProps) {
     .replace("Present", "PRESENT");
 
   return (
-    <div className="relative pl-8 pb-10 last:pb-0 group">
+    <div className="relative pl-8 pb-12 last:pb-0 group">
       {/* Timeline line — cyan circuit trace */}
-      <div className="absolute left-[7px] top-3 bottom-0 w-px bg-cyan/20 group-last:hidden" />
+      <div className="absolute left-[11px] top-4 bottom-0 w-px bg-cyan/20 group-last:hidden" />
       {/* Timeline dot — diamond */}
-      <div className="absolute left-0 top-2 w-[15px] h-[15px] rotate-45 border-2 border-cyan bg-base-light shadow-[0_0_6px_rgba(0,255,240,0.4)]" />
+      <div className="absolute left-[3px] top-3 w-[17px] h-[17px] rotate-45 border-2 border-cyan bg-base-light shadow-[0_0_8px_rgba(0,255,240,0.5)]" />
 
       <div className="reveal">
         <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
@@ -38,17 +38,17 @@ export function TimelineItem({ employer }: TimelineItemProps) {
           </span>
         </div>
 
-        <div className="font-[family-name:var(--font-mono)] text-xs text-neon-green mt-1">
+        <div className="font-[family-name:var(--font-mono)] text-sm text-neon-green mt-2 tracking-wide">
           {employer.role}
         </div>
 
-        <div className="font-[family-name:var(--font-mono)] text-xs text-steel-dim mt-0.5">
-          {employer.location}
+        <div className="font-[family-name:var(--font-mono)] text-xs text-steel-dim mt-1 flex items-center gap-1">
+          <span className="text-steel/50">◊</span> {employer.location}
         </div>
 
         {employer.description && (
-          <p
-            className="text-sm text-cool-white/80 mt-3 leading-relaxed [&_a]:text-cyan [&_a]:hover:underline"
+          <div
+            className="text-sm text-cool-white/80 mt-4 leading-[1.8] [&_a]:text-cyan [&_a]:hover:underline max-w-3xl"
             dangerouslySetInnerHTML={{ __html: employer.description.split("\n")[0] }}
           />
         )}
