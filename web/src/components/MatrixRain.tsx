@@ -49,6 +49,12 @@ export function MatrixRain() {
     const frameInterval = 1000 / FPS;
 
     const resize = () => {
+      // Don't resize on mobile (when canvas is hidden via hidden md:block)
+      if (window.innerWidth < 768) {
+        canvas.width = 0;
+        canvas.height = 0;
+        return;
+      }
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     };

@@ -238,11 +238,13 @@
    ============================================ */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background-color: var(--color-base);
   color: var(--color-cool-white);
+  overflow-x: hidden;
 }
 
 /* ============================================
