@@ -56,15 +56,14 @@ export function CountUp({ end, suffix = "", duration = 2000, label }: CountUpPro
 
   return (
     <div ref={ref} className="text-center">
-      <div className="font-[family-name:var(--font-pixel)] text-2xl md:text-3xl lg:text-4xl font-bold text-cyan neon-glow-cyan">
-        <span className="text-steel text-lg">[</span>
-        {" "}{count}
-        <span className="text-magenta">{suffix}</span>
-        {" "}<span className="text-steel text-lg">]</span>
-      </div>
-      <div className="font-[family-name:var(--font-mono)] text-xs text-neon-green mt-2 uppercase tracking-wider">
+      <div className="font-[family-name:var(--font-mono)] text-[10px] text-cyan/40 mb-1 tracking-widest uppercase">
         {label}
       </div>
+      <div className="font-[family-name:var(--font-pixel)] text-2xl md:text-3xl font-bold text-cool-white" style={{ textShadow: "0 0 20px rgba(0,255,240,0.3)" }}>
+        {count}<span className="text-cyan">{suffix}</span>
+      </div>
+      {/* Mini bar decoration */}
+      <div className="mt-2 mx-auto w-12 h-px bg-magenta/40" />
     </div>
   );
 }
