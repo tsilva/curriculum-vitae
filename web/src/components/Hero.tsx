@@ -208,10 +208,10 @@ export function Hero() {
         <GlitchText text="TIAGO SILVA" />
       </h1>
 
-      {/* Role — cyan like secondary data in the HUD */}
+      {/* Role — cyan like secondary data in the HUD with enhanced glow */}
       <div className="flex items-center gap-3 mt-3">
         <span className="text-kiroshi-red text-base">◆</span>
-        <p className="font-[family-name:var(--font-display)] text-base md:text-lg text-cyan tracking-[0.2em] uppercase">
+        <p className="font-[family-name:var(--font-display)] text-base md:text-lg text-cyan tracking-[0.25em] uppercase neon-glow-cyan">
           Software Engineer
         </p>
         <span className="text-kiroshi-red text-base">◆</span>
