@@ -49,3 +49,7 @@ logs/
 
 # Project-specific rules
 .claude/
+
+# Next.js
+web/.next/
+web/out/
