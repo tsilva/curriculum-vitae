@@ -6,6 +6,7 @@ import { FilterBar } from "./FilterBar";
 import { TechBrowser } from "./TechBrowser";
 import { ProjectCard } from "./ProjectCard";
 import { ProjectModal } from "./ProjectModal";
+import { GalleryModal } from "./GalleryModal";
 
 interface ProjectsProps {
   projects: Project[];
@@ -16,6 +17,7 @@ export function Projects({ projects, technologies }: ProjectsProps) {
   const [selectedTechs, setSelectedTechs] = useState<string[]>([]);
   const [isTechBrowserOpen, setIsTechBrowserOpen] = useState(false);
   const [modalProject, setModalProject] = useState<Project | null>(null);
+  const [galleryModalProject, setGalleryModalProject] = useState<Project | null>(null);
   const [filterKey, setFilterKey] = useState(0); // Used to trigger re-animation
 
   const filtered = useMemo(() => {
@@ -27,6 +29,19 @@ export function Projects({ projects, technologies }: ProjectsProps) {
   }, [projects, selectedTechs]);
 
   const gridRef = useRef<HTMLDivElement>(null);
+
+  // Listen for gallery open events from ProjectModal
+  useEffect(() => {
+    const handleOpenGallery = (e: CustomEvent<Project>) => {
+      setGalleryModalProject(e.detail);
+    };
+    
+    window.addEventListener('openProjectGallery', handleOpenGallery as EventListener);
+    
+    return () => {
+      window.removeEventListener('openProjectGallery', handleOpenGallery as EventListener);
+    };
+  }, []);
 
   // Trigger re-animation when filter changes
   useEffect(() => {
@@ -99,6 +114,7 @@ export function Projects({ projects, technologies }: ProjectsProps) {
             <ProjectCard
               project={project}
               onClick={() => setModalProject(project)}
+              onGalleryClick={() => setGalleryModalProject(project)}
             />
           </div>
         ))}
@@ -116,6 +132,11 @@ export function Projects({ projects, technologies }: ProjectsProps) {
       <ProjectModal
         project={modalProject}
         onClose={() => setModalProject(null)}
+      />
+
+      <GalleryModal
+        project={galleryModalProject}
+        onClose={() => setGalleryModalProject(null)}
       />
     </section>
   );

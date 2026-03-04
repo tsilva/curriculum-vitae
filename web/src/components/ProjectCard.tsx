@@ -3,9 +3,10 @@ import type { Project } from "@/types/cv";
 interface ProjectCardProps {
   project: Project;
   onClick: () => void;
+  onGalleryClick: () => void;
 }
 
-export function ProjectCard({ project, onClick }: ProjectCardProps) {
+export function ProjectCard({ project, onClick, onGalleryClick }: ProjectCardProps) {
   return (
     <button
       onClick={onClick}
@@ -45,7 +46,39 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
           Click for details
         </span>
         <div className="flex gap-3">
+          {/* Local Gallery Button - shown if project has local gallery */}
+          {project.gallery && project.gallery.length > 0 && (
+            <span
+              role="button"
+              tabIndex={0}
+              onClick={(e) => {
+                e.stopPropagation();
+                onGalleryClick();
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  onGalleryClick();
+                }
+              }}
+              className="group/link relative text-steel hover:text-cyan transition-colors p-1.5 hover:shadow-[0_0_10px_rgba(0,230,230,0.15)] cursor-pointer"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+              </svg>
+              {/* Tooltip */}
+              <span className="absolute -top-9 right-0 bg-base-light border border-cyan/30 px-2 py-1 rounded-sm text-sm font-[family-name:var(--font-mono)] text-cyan whitespace-nowrap opacity-0 group-hover/link:opacity-100 transition-opacity pointer-events-none z-10">
+                Local Gallery ({project.gallery.length})
+              </span>
+            </span>
+          )}
+          
           {project.links.length > 0 && project.links.slice(0, 2).map((link) => {
+          // Skip Google Photos links if we have local gallery
+          if (project.gallery && project.gallery.length > 0 && link.url.includes('photos.app.goo.gl')) {
+            return null;
+          }
           // SVG icons matching Hero component style
           const getIcon = (url: string, label: string) => {
             if (url.includes('github.com')) {

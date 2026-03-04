@@ -3,6 +3,12 @@ export interface Link {
   url: string;
 }
 
+export interface GalleryMedia {
+  filename: string;
+  type: 'image' | 'video';
+  path: string;
+}
+
 export interface Project {
   id: string;
   emoji: string;
@@ -17,6 +23,7 @@ export interface Project {
   technologies: string[];
   narrative: string;
   links: Link[];
+  gallery?: GalleryMedia[];
 }
 
 export interface Employer {

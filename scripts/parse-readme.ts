@@ -6,6 +6,12 @@ interface Link {
   url: string;
 }
 
+interface GalleryMedia {
+  filename: string;
+  type: 'image' | 'video';
+  path: string;
+}
+
 interface Project {
   id: string;
   emoji: string;
@@ -20,6 +26,7 @@ interface Project {
   technologies: string[];
   narrative: string;
   links: Link[];
+  gallery?: GalleryMedia[];
 }
 
 interface Employer {
@@ -266,9 +273,57 @@ function findProjectIds(description: string, projectTitles: string[]): string[] 
   return ids;
 }
 
+function scanGalleries(): Map<string, GalleryMedia[]> {
+  const galleriesPath = path.join(ROOT, "galleries");
+  const galleryMap = new Map<string, GalleryMedia[]>();
+  
+  if (!fs.existsSync(galleriesPath)) {
+    console.log("Galleries folder not found, skipping gallery data");
+    return galleryMap;
+  }
+  
+  const entries = fs.readdirSync(galleriesPath, { withFileTypes: true });
+  
+  for (const entry of entries) {
+    if (!entry.isDirectory()) continue;
+    if (entry.name.startsWith("_")) continue; // Skip metadata folders
+    
+    const projectFolder = path.join(galleriesPath, entry.name);
+    const files = fs.readdirSync(projectFolder);
+    const media: GalleryMedia[] = [];
+    
+    for (const filename of files) {
+      const ext = path.extname(filename).toLowerCase();
+      const isImage = ['.webp', '.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg'].includes(ext);
+      const isVideo = ['.mp4', '.mov', '.mkv', '.avi', '.webm'].includes(ext);
+      
+      if (isImage || isVideo) {
+        media.push({
+          filename,
+          type: isImage ? 'image' : 'video',
+          path: `/galleries/${entry.name}/${filename}`
+        });
+      }
+    }
+    
+    // Sort by filename for consistent ordering
+    media.sort((a, b) => a.filename.localeCompare(b.filename));
+    
+    if (media.length > 0) {
+      galleryMap.set(entry.name, media);
+    }
+  }
+  
+  console.log(`Scanned ${galleryMap.size} galleries with media`);
+  return galleryMap;
+}
+
 function parse(): CVData {
   const content = fs.readFileSync(README_PATH, "utf-8");
   const lines = content.split("\n");
+  
+  // Scan galleries folder for media
+  const galleryMap = scanGalleries();
 
   // Find section boundaries
   let tldrEnd = 0;
@@ -442,9 +497,11 @@ function parse(): CVData {
 
     const narrative = extractNarrative(lines, i, endIdx);
     const links = extractLinks(lines, i, endIdx);
+    const projectId = slugify(heading.title);
+    const gallery = galleryMap.get(projectId);
 
     projects.push({
-      id: slugify(heading.title),
+      id: projectId,
       emoji: heading.emoji,
       title: heading.title,
       tldr: tldrField,
@@ -457,6 +514,7 @@ function parse(): CVData {
       technologies,
       narrative,
       links,
+      gallery,
     });
   }
 

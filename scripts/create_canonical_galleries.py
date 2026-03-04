@@ -18,8 +18,9 @@ README_PATH = Path("/Users/tsilva/repos/tsilva/curriculum-vitae/README.md")
 
 # Image optimization settings
 WEBP_QUALITY = 85
-MAX_WIDTH = 1920
-MAX_HEIGHT = 1080
+# Only resize if image is truly ridiculous (larger than MacBook Pro 14" Retina needs)
+OVERSIZE_THRESHOLD = 4500  # Resize if any dimension exceeds this
+MAX_DIMENSION = 4000  # Resize to this max dimension while preserving aspect ratio
 
 # Project to album name mapping (normalized for matching)
 # Format: "Project Name from README": "Album Name in Takeout"
@@ -101,47 +102,132 @@ def to_kebab_case(name: str) -> str:
     return name
 
 
-def get_image_files(album_path: Path) -> List[Path]:
-    """Get all image files from an album, excluding metadata."""
+def get_image_files(album_path: Path) -> List[Tuple[Path, int]]:
+    """Get all image files from an album with their timestamps, sorted by order."""
     image_exts = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".webp", ".heic"}
-    files = []
+    files_with_timestamps = []
+
     for f in album_path.iterdir():
         if f.is_file() and f.suffix.lower() in image_exts:
             # Skip metadata JSON files
             if not f.name.endswith(".json") and "supplemental-metadata" not in f.name:
-                files.append(f)
-    return files
+                # Try to get timestamp from metadata
+                timestamp = get_image_timestamp(album_path, f.name)
+                files_with_timestamps.append((f, timestamp))
+
+    # Sort by timestamp (chronological order from Google Photos)
+    files_with_timestamps.sort(key=lambda x: x[1])
+    return files_with_timestamps
 
 
-def get_video_files(album_path: Path) -> List[Path]:
-    """Get all video files from an album."""
+def get_image_timestamp(album_path: Path, filename: str) -> int:
+    """Get the timestamp for an image from its metadata JSON."""
+    # Look for the supplemental metadata JSON file
+    json_path = album_path / f"{filename}.supplemental-metadata.json"
+
+    if not json_path.exists():
+        # Try alternative naming patterns
+        base_name = Path(filename).stem
+        for f in album_path.iterdir():
+            if f.suffix == ".json" and base_name in f.name:
+                json_path = f
+                break
+
+    if json_path.exists():
+        try:
+            with open(json_path, "r") as f:
+                metadata = json.load(f)
+                # Prefer photoTakenTime, fallback to creationTime
+                if (
+                    "photoTakenTime" in metadata
+                    and "timestamp" in metadata["photoTakenTime"]
+                ):
+                    return int(metadata["photoTakenTime"]["timestamp"])
+                elif (
+                    "creationTime" in metadata
+                    and "timestamp" in metadata["creationTime"]
+                ):
+                    return int(metadata["creationTime"]["timestamp"])
+        except Exception:
+            pass
+
+    # Fallback to file modification time
+    try:
+        return int((album_path / filename).stat().st_mtime)
+    except Exception:
+        return 0
+
+
+def get_video_files(album_path: Path) -> List[Tuple[Path, int]]:
+    """Get all video files from an album with their timestamps, sorted by order."""
     video_exts = {".mp4", ".mov", ".avi", ".mkv", ".webm", ".m4v", ".3gp"}
-    files = []
+    files_with_timestamps = []
+
     for f in album_path.iterdir():
         if f.is_file() and f.suffix.lower() in video_exts:
             # Skip metadata JSON files
             if not f.name.endswith(".json") and "supplemental-metadata" not in f.name:
-                files.append(f)
-    return files
+                # Try to get timestamp from metadata
+                timestamp = get_image_timestamp(album_path, f.name)
+                files_with_timestamps.append((f, timestamp))
+
+    # Sort by timestamp (chronological order from Google Photos)
+    files_with_timestamps.sort(key=lambda x: x[1])
+    return files_with_timestamps
 
 
 def convert_to_webp(input_path: Path, output_path: Path) -> bool:
-    """Convert image to WebP format using cwebp."""
+    """Convert image to WebP format. Only resize if image is truly oversized."""
     try:
         import subprocess
 
-        # Use cwebp with resize and quality
-        cmd = [
-            "cwebp",
-            "-q",
-            str(WEBP_QUALITY),
-            "-resize",
-            f"{MAX_WIDTH}",
-            f"{MAX_HEIGHT}",  # Maintains aspect ratio, only downscales
-            str(input_path),
-            "-o",
-            str(output_path),
-        ]
+        # Check image dimensions first
+        try:
+            result = subprocess.run(
+                ["identify", "-format", "%w %h", str(input_path)],
+                capture_output=True,
+                text=True,
+                check=True,
+            )
+            width, height = map(int, result.stdout.strip().split())
+            max_dim = max(width, height)
+
+            # Only resize if truly ridiculous
+            if max_dim > OVERSIZE_THRESHOLD:
+                print(
+                    f"    ↳ Oversized ({width}x{height}), resizing to max {MAX_DIMENSION}px"
+                )
+                cmd = [
+                    "cwebp",
+                    "-q",
+                    str(WEBP_QUALITY),
+                    "-resize",
+                    "0",
+                    str(MAX_DIMENSION),  # 0 means maintain aspect ratio
+                    str(input_path),
+                    "-o",
+                    str(output_path),
+                ]
+            else:
+                cmd = [
+                    "cwebp",
+                    "-q",
+                    str(WEBP_QUALITY),
+                    str(input_path),
+                    "-o",
+                    str(output_path),
+                ]
+        except Exception as e:
+            # If we can't identify, just convert without resizing
+            print(f"    ⚠ Could not identify dimensions: {e}")
+            cmd = [
+                "cwebp",
+                "-q",
+                str(WEBP_QUALITY),
+                str(input_path),
+                "-o",
+                str(output_path),
+            ]
 
         result = subprocess.run(cmd, capture_output=True, text=True)
 
@@ -182,8 +268,10 @@ def process_project(project_name: str, album_name: Optional[str]) -> Tuple[bool,
     images_converted = 0
     images_failed = 0
 
-    for img_path in images:
-        output_name = f"{img_path.stem}.webp"
+    for idx, (img_path, timestamp) in enumerate(images, 1):
+        # Create ordered filename: 001-originalname.webp
+        original_stem = img_path.stem
+        output_name = f"{idx:03d}-{original_stem}.webp"
         output_path = canonical_path / output_name
 
         if convert_to_webp(img_path, output_path):
@@ -196,8 +284,10 @@ def process_project(project_name: str, album_name: Optional[str]) -> Tuple[bool,
     videos_copied = 0
     videos_failed = 0
 
-    for video_path in videos:
-        output_path = canonical_path / video_path.name
+    for idx, (video_path, timestamp) in enumerate(videos, 1):
+        # Create ordered filename: v001-originalname.ext (v prefix for videos)
+        output_name = f"v{idx:03d}-{video_path.name}"
+        output_path = canonical_path / output_name
         try:
             shutil.copy2(video_path, output_path)
             videos_copied += 1
@@ -222,7 +312,8 @@ def main():
     print(f"\nOutput directory: {GALLERIES_DIR}")
     print(f"Takeout directory: {TAKEOUT_DIR}")
     print(f"WebP Quality: {WEBP_QUALITY}")
-    print(f"Max Dimensions: {MAX_WIDTH}x{MAX_HEIGHT}")
+    print(f"Oversize Threshold: {OVERSIZE_THRESHOLD}px")
+    print(f"Max Dimension (when resizing): {MAX_DIMENSION}px")
     print()
 
     # Process all projects
