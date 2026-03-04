@@ -6,7 +6,7 @@
       "emoji": "🏫",
       "name": "Tynker",
       "url": "https://www.tynker.com/",
-      "duration": "Sep 2016 - Present",
+      "duration": "Sep 2016 - May 2024",
       "role": "Lead Software Engineer (Full-time)",
       "location": "Mountain View, California · Remote 🌍",
       "description": "Tynker is a kid-friendly platform used by over 100 million students and in more than 150,000 schools, offering coding education through games and projects from basics to advanced programming languages.\n\nAs a Lead Software Engineer, I was the main contributor to many of its core products, namely:\n\n\n❗ In all these projects, I was responsible for gathering requirements from stakeholders, researching and testing various solutions, and implementing the solution end-to-end, including deployment and post-deployment management.",
@@ -26,6 +26,17 @@
         "minecraft-editor",
         "tynker-php-mongodb-odm"
       ],
+      "links": []
+    },
+    {
+      "id": "vaulthaus",
+      "emoji": "🔐",
+      "name": "VaultHaus",
+      "duration": "May 2024 - Present",
+      "role": "AI Research Engineer (Full-time)",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "description": "I pursue a deliberately broad portfolio of AI initiatives—spanning deep-reinforcement-learning research, agentic and large-language-model applications, and the requisite supporting infrastructure—while systematically cultivating a rigorous, first-principles understanding of deep-learning systems and translating my insights into exploratory proof-of-concepts.",
+      "projectIds": [],
       "links": []
     },
     {
