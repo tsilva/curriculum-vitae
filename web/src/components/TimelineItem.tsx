@@ -11,10 +11,10 @@ export function TimelineItem({ employer }: TimelineItemProps) {
 
   return (
     <div className="relative pl-8 pb-12 last:pb-0 group/card">
-      {/* Timeline line — cyan circuit trace */}
-      <div className="absolute left-[11px] top-4 bottom-0 w-px bg-cyan/20 group-last/card:hidden group-hover/card:bg-cyan/40 transition-colors" />
-      {/* Timeline dot — diamond */}
-      <div className="absolute left-[3px] top-3 w-[17px] h-[17px] rotate-45 border-2 border-cyan bg-base-light shadow-[0_0_8px_rgba(0,255,240,0.5)] group-hover/card:shadow-[0_0_15px_rgba(0,255,240,0.7)] group-hover/card:border-cyan/80 transition-all" />
+      {/* Timeline line — cyan circuit trace - starts from bottom of diamond */}
+      <div className="absolute left-[11px] top-6 bottom-0 w-px bg-cyan/20 group-last/card:hidden group-hover/card:bg-cyan/40 transition-colors" />
+      {/* Timeline dot — diamond - positioned higher so top vertex extends above header */}
+      <div className="absolute left-[3px] top-1 w-[17px] h-[17px] rotate-45 border-2 border-cyan bg-base-light shadow-[0_0_8px_rgba(0,255,240,0.5)] group-hover/card:shadow-[0_0_15px_rgba(0,255,240,0.7)] group-hover/card:border-cyan/80 transition-all" />
 
       <div className="reveal group-hover/card:translate-x-1 transition-transform">
         <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
