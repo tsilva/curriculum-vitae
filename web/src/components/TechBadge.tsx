@@ -14,8 +14,8 @@ export function TechBadge({ name, active = false, onClick }: TechBadgeProps) {
         onClick={onClick}
         className={`${baseClasses} ${
           active
-            ? "bg-cyan text-base border-cyan font-bold shadow-[0_0_12px_rgba(0,255,240,0.4),0_0_20px_rgba(0,255,240,0.2),inset_0_0_10px_rgba(0,255,240,0.1)] hover:shadow-[0_0_15px_rgba(0,255,240,0.5),0_0_30px_rgba(0,255,240,0.3)]"
-            : "bg-surface text-steel border-steel/20 hover:border-cyan/40 hover:text-cool-white hover:shadow-[0_0_8px_rgba(0,255,240,0.15)]"
+            ? "bg-cyan text-base border-cyan font-bold shadow-[0_0_15px_rgba(0,255,240,0.5),0_0_30px_rgba(0,255,240,0.3),inset_0_0_12px_rgba(0,255,240,0.2)] hover:shadow-[0_0_20px_rgba(0,255,240,0.6),0_0_40px_rgba(0,255,240,0.4)] scale-105"
+            : "bg-surface text-steel border-steel/20 hover:border-cyan/40 hover:text-cool-white hover:shadow-[0_0_10px_rgba(0,255,240,0.2)]"
         }`}
       >
         {name}
