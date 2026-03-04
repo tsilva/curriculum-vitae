@@ -43,9 +43,10 @@ export function TimelineItem({ employer }: TimelineItemProps) {
         </div>
 
         {employer.description && (
-          <p className="text-sm text-warm-white/80 mt-3 leading-relaxed">
-            {employer.description.split("\n")[0]}
-          </p>
+          <p
+            className="text-sm text-warm-white/80 mt-3 leading-relaxed [&_a]:text-amber [&_a]:hover:underline"
+            dangerouslySetInnerHTML={{ __html: employer.description.split("\n")[0] }}
+          />
         )}
 
         {employer.projectIds.length > 0 && (

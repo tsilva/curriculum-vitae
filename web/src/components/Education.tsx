@@ -47,9 +47,10 @@ export function Education({ entries }: EducationProps) {
             </div>
 
             {entry.description && (
-              <p className="text-sm text-warm-white/80 mt-3 leading-relaxed line-clamp-4">
-                {entry.description.split("\n")[0]}
-              </p>
+              <p
+                className="text-sm text-warm-white/80 mt-3 leading-relaxed line-clamp-4 [&_a]:text-amber [&_a]:hover:underline"
+                dangerouslySetInnerHTML={{ __html: entry.description.split("\n")[0] }}
+              />
             )}
           </div>
         ))}

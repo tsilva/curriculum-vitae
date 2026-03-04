@@ -24,9 +24,10 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
         </span>
       </div>
 
-      <p className="text-sm text-slate leading-relaxed mb-3 line-clamp-2">
-        {project.tldr}
-      </p>
+      <p
+        className="text-sm text-slate leading-relaxed mb-3 line-clamp-2 [&_a]:text-amber [&_a]:hover:underline"
+        dangerouslySetInnerHTML={{ __html: project.tldr }}
+      />
 
       {project.technologies.length > 0 && (
         <div className="flex flex-wrap gap-1 mt-auto">
