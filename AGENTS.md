@@ -31,6 +31,42 @@ This repository contains a detailed professional CV/resume rendered as a compreh
 └── .git/                   # Git repository
 ```
 
+## Canonical Project Galleries
+
+Project screenshots and media are stored in the `galleries/` directory as canonical optimized versions extracted from Google Photos Takeout.
+
+### Location
+```
+galleries/                    # Canonical project media (gitignored)
+├── help-agent/              # Each project has its own folder
+├── block-ide-arcade-maker/
+├── byjus-coding-cup/
+└── ... (50 total folders)
+```
+
+### Naming Scheme
+Folders use **kebab-case** derived from project names in README.md:
+- `Help Agent` → `help-agent`
+- `Block IDE - Arcade Maker` → `block-ide-arcade-maker`
+- `BYJU's Coding Cup` → `byjus-coding-cup`
+- `MYSWEAR - Harrods Holographic Pyramid` → `myswear-harrods-holographic-pyramid`
+
+### File Format
+- **Images**: Converted to WebP format (quality: 85, max 1920×1080px)
+- **Videos**: Copied as-is (MP4, MOV, MKV, etc.)
+- **Metadata**: All JSON metadata files excluded
+- **Total Size**: ~4.5 GB (678 WebP images + 134 videos across 50 projects)
+
+### Generation
+Created by `scripts/create_canonical_galleries.py` which:
+1. Matches README.md projects to Google Photos Takeout albums
+2. Creates kebab-case folders for each matched project
+3. Converts images to optimized WebP using cwebp/ImageMagick
+4. Copies videos without conversion
+5. Skips projects without galleries (9 total) and non-matching albums
+
+**Note**: The `galleries/` directory is gitignored as the source of truth remains the Google Photos Takeout backup.
+
 ## Key Commands
 
 ### Validate Links
