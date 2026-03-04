@@ -114,9 +114,14 @@ function extractMetadataField(
 ): string | undefined {
   for (let i = startIdx; i < Math.min(startIdx + 20, lines.length); i++) {
     const line = lines[i];
-    const pattern = `**${field}:**`;
-    if (line.includes(pattern)) {
-      return line.split(pattern)[1].trim();
+    // Match both "**Field:**" and "**Field**:" formats (colon inside or outside bold)
+    const patternInside = `**${field}:**`;
+    const patternOutside = `**${field}**:`;
+    if (line.includes(patternInside)) {
+      return line.split(patternInside)[1].trim();
+    }
+    if (line.includes(patternOutside)) {
+      return line.split(patternOutside)[1].trim();
     }
   }
   return undefined;
@@ -187,14 +192,20 @@ function extractNarrative(
     }
     if (inCommentBlock) continue;
 
-    // Skip metadata lines
+    // Skip metadata lines (both "**Field:**" and "**Field**:" formats)
     if (
       line.startsWith("- **TLDR:**") ||
+      line.startsWith("- **TLDR**:") ||
       line.startsWith("- **Start:**") ||
+      line.startsWith("- **Start**:") ||
       line.startsWith("- **Client:**") ||
+      line.startsWith("- **Client**:") ||
       line.startsWith("- **Location:**") ||
+      line.startsWith("- **Location**:") ||
       line.startsWith("- **Role:**") ||
+      line.startsWith("- **Role**:") ||
       line.startsWith("- **Team:**") ||
+      line.startsWith("- **Team**:") ||
       line.startsWith("- **Platform") ||
       line.startsWith("- **Technologies:**") ||
       line.startsWith("- **Technologies**:")
