@@ -115,8 +115,34 @@ export function Hero() {
       </div>
 
       {/* Classification tag — yellow like the game */}
-      <div className="font-[family-name:var(--font-mono)] text-[9px] text-kiroshi-yellow/80 mb-6 border border-kiroshi-yellow/30 px-4 py-1 tracking-[0.2em]">
+      <div className="font-[family-name:var(--font-mono)] text-[9px] text-kiroshi-yellow/80 mb-4 border border-kiroshi-yellow/30 px-4 py-1 tracking-[0.2em]">
         SUBJECT IDENTIFIED
+      </div>
+
+      {/* Avatar — Kiroshi scan target */}
+      <div className="relative mb-4">
+        <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-2 border-kiroshi-red/60 shadow-[0_0_20px_rgba(232,0,63,0.3)]">
+          <img
+            src="/avatar.jpg"
+            alt="Tiago Silva"
+            width={144}
+            height={144}
+            className="w-full h-full object-cover"
+          />
+          {/* Scan lines overlay */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background: "repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(232,0,63,0.06) 2px, rgba(232,0,63,0.06) 4px)",
+            }}
+          />
+          {/* Sweeping scan bar */}
+          <div className="absolute inset-0 pointer-events-none overflow-hidden">
+            <div className="absolute left-0 right-0 h-8 animate-[scan_3s_ease-in-out_infinite] bg-gradient-to-b from-transparent via-kiroshi-red/15 to-transparent" />
+          </div>
+        </div>
+        {/* Kiroshi scan ring */}
+        <div className="absolute inset-0 rounded-full border border-kiroshi-red/30 animate-pulse" />
       </div>
 
       {/* Name — white with red glow like the Kiroshi target name */}
