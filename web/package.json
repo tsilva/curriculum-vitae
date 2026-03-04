@@ -4,14 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run parse && next build",
+    "build": "GALLERY_MODE=r2 npm run parse && next build",
     "build:local": "GALLERY_MODE=local npm run build",
     "build:r2": "GALLERY_MODE=r2 npm run build",
     "start": "next start",
     "lint": "next lint",
-    "parse": "npx tsx ../scripts/parse-readme.ts",
-    "parse:local": "GALLERY_MODE=local npm run parse",
-    "parse:r2": "GALLERY_MODE=r2 npm run parse"
+    "parse": "GALLERY_MODE=r2 npx tsx ../scripts/parse-readme.ts",
+    "parse:local": "GALLERY_MODE=local npx tsx ../scripts/parse-readme.ts",
+    "parse:r2": "GALLERY_MODE=r2 npx tsx ../scripts/parse-readme.ts"
   },
   "dependencies": {
     "next": "^15.1.0",

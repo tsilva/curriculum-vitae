@@ -68,7 +68,7 @@ const README_PATH = path.join(ROOT, "README.md");
 const OUTPUT_PATH = path.join(ROOT, "web", "src", "data", "cv-data.json");
 
 // Gallery configuration
-const GALLERY_MODE = process.env.GALLERY_MODE || 'local';
+const GALLERY_MODE = process.env.GALLERY_MODE || 'r2';
 const R2_PUBLIC_URL = process.env.R2_PUBLIC_URL || 'https://curriculum-vitae-r2.tsilva.eu';
 
 function getGalleryBaseUrl(): string {
