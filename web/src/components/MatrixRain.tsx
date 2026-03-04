@@ -43,7 +43,7 @@ export function MatrixRain() {
       ctx.fillStyle = "rgba(10, 10, 18, 0.08)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      ctx.fillStyle = "#00FF4115";
+      ctx.fillStyle = "#00FF410D";
       ctx.font = `${FONT_SIZE}px monospace`;
 
       for (let i = 0; i < drops.length; i++) {

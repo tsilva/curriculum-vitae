@@ -10,16 +10,16 @@
   --color-base-light: #0F0F1A;
   --color-surface: #111827;
   --color-surface-hover: #1A2035;
-  --color-cool-white: #E0F0FF;
-  --color-steel: #4A5568;
-  --color-steel-dim: #2D3748;
+  --color-cool-white: #E8F4FF;
+  --color-steel: #7B8FA6;
+  --color-steel-dim: #5A6E84;
 
   /* Legacy aliases — existing Tailwind classes auto-inherit */
   --color-amber: #00FFF0;
   --color-amber-dim: #00CCC0;
   --color-warm-white: #E0F0FF;
-  --color-slate: #8A9BAE;
-  --color-slate-dim: #4A5568;
+  --color-slate: #94A7BC;
+  --color-slate-dim: #5A6E84;
 
   /* Typography */
   --font-display: "Orbitron", sans-serif;

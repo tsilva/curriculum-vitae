@@ -55,29 +55,83 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col items-center justify-center px-6 relative"
+      className="min-h-screen flex flex-col items-center justify-center px-6 relative overflow-hidden"
     >
-      {/* Decorative system text */}
-      <div className="font-[family-name:var(--font-mono)] text-[10px] text-neon-green/40 mb-6 tracking-widest">
-        [ SYSTEM ONLINE ]
+      {/* Kiroshi scan frame — corner brackets */}
+      <div className="absolute inset-8 md:inset-16 pointer-events-none">
+        {/* Top-left */}
+        <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-cyan/40" />
+        {/* Top-right */}
+        <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-cyan/40" />
+        {/* Bottom-left */}
+        <div className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-cyan/40" />
+        {/* Bottom-right */}
+        <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-cyan/40" />
+
+        {/* Top HUD line */}
+        <div className="absolute top-0 left-16 right-16 flex items-center gap-2">
+          <div className="h-px flex-1 bg-cyan/15" />
+          <span className="font-[family-name:var(--font-mono)] text-[9px] text-cyan/40 tracking-[0.3em]">KIROSHI v4.2 — OPTICAL SCAN</span>
+          <div className="h-px flex-1 bg-cyan/15" />
+        </div>
+
+        {/* Bottom HUD line */}
+        <div className="absolute bottom-0 left-16 right-16 flex items-center gap-2">
+          <div className="h-px flex-1 bg-cyan/15" />
+          <span className="font-[family-name:var(--font-mono)] text-[9px] text-neon-green/40 tracking-[0.2em]">SIGNAL: STRONG ■■■■■□□</span>
+          <div className="h-px flex-1 bg-cyan/15" />
+        </div>
       </div>
 
-      <h1 className="font-[family-name:var(--font-pixel)] text-[clamp(1.5rem,5vw,3.5rem)] font-bold text-cyan leading-tight text-center neon-glow-cyan">
-        <GlitchText text="Tiago Silva" />
+      {/* Left-side HUD data */}
+      <div className="absolute left-4 md:left-20 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-1 font-[family-name:var(--font-mono)] text-[9px] text-steel/60">
+        <span>ID: TSV-1984</span>
+        <span>CLASS: <span className="text-neon-green/70">ENGINEER</span></span>
+        <span>THREAT: <span className="text-neon-yellow/70">NONE</span></span>
+        <span className="mt-2 text-cyan/40">──────</span>
+        <span>NET: <span className="text-cyan/60">LINKED</span></span>
+        <span>ICE: <span className="text-neon-green/70">CLEAN</span></span>
+      </div>
+
+      {/* Scan status */}
+      <div className="font-[family-name:var(--font-mono)] text-[10px] text-neon-green/60 mb-2 tracking-[0.3em]">
+        ◈ SCAN COMPLETE ◈
+      </div>
+
+      {/* Classification tag */}
+      <div className="font-[family-name:var(--font-mono)] text-[9px] text-cyan/50 mb-6 border border-cyan/20 px-3 py-1 tracking-widest">
+        SUBJECT IDENTIFIED
+      </div>
+
+      {/* Name — the big Kiroshi readout */}
+      <h1 className="font-[family-name:var(--font-pixel)] text-[clamp(1.5rem,5vw,3.5rem)] font-bold text-cool-white leading-tight text-center" style={{ textShadow: "0 0 30px rgba(0,255,240,0.4), 0 0 60px rgba(0,255,240,0.15)" }}>
+        <GlitchText text="TIAGO SILVA" />
       </h1>
 
-      <p className="font-[family-name:var(--font-mono)] text-slate text-lg md:text-xl mt-3 tracking-wide">
-        <span className="text-neon-green mr-2">&gt;</span>
-        <span>Software Engineer</span>
-        <span className="terminal-cursor" />
-      </p>
-
-      <div className="flex gap-12 md:gap-20 mt-12 md:mt-16">
-        <CountUp end={20} suffix="+" label="Years" />
-        <CountUp end={60} suffix="+" label="Projects" />
-        <CountUp end={100} suffix="M" label="Students" />
+      {/* Role with targeting reticle */}
+      <div className="flex items-center gap-3 mt-3">
+        <span className="text-magenta text-lg">◆</span>
+        <p className="font-[family-name:var(--font-display)] text-sm md:text-base text-cyan tracking-[0.25em] uppercase">
+          Software Engineer
+        </p>
+        <span className="text-magenta text-lg">◆</span>
       </div>
 
+      {/* Thin separator */}
+      <div className="flex items-center gap-3 mt-6 mb-8 w-48">
+        <div className="h-px flex-1 bg-magenta/30" />
+        <span className="text-magenta text-xs">◇</span>
+        <div className="h-px flex-1 bg-magenta/30" />
+      </div>
+
+      {/* Stats — like Kiroshi data readout */}
+      <div className="flex gap-10 md:gap-16">
+        <CountUp end={20} suffix="+" label="Years" />
+        <CountUp end={60} suffix="+" label="Projects" />
+        <CountUp end={100} suffix="M+" label="Users" />
+      </div>
+
+      {/* Social links */}
       <div className="flex gap-4 mt-12">
         {socialLinks.map((link) => (
           <a
@@ -85,7 +139,7 @@ export function Hero() {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-steel hover:text-cyan transition-colors p-2 rounded-lg hover:bg-surface hover:shadow-[0_0_10px_rgba(0,255,240,0.2)]"
+            className="text-steel hover:text-cyan transition-colors p-2 hover:shadow-[0_0_10px_rgba(0,255,240,0.2)]"
             title={link.label}
           >
             {link.icon}
@@ -94,10 +148,9 @@ export function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <span className="font-[family-name:var(--font-pixel)] text-[8px] text-cyan/50 tracking-wider">
-          ▼ SCROLL ▼
-        </span>
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce flex flex-col items-center gap-1">
+        <span className="font-[family-name:var(--font-mono)] text-[9px] text-cyan/50 tracking-widest">SCROLL</span>
+        <span className="text-cyan/50">▾</span>
       </div>
     </section>
   );
