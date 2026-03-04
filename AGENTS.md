@@ -4,19 +4,31 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This repository contains a detailed professional CV/resume rendered as a comprehensive README.md file. The CV is intentionally verbose and detailed, designed to be processed by Large Language Models rather than read linearly. It documents 20+ years of software engineering experience across 60+ projects.
+This repository contains a detailed professional CV/resume rendered as a comprehensive README.md file, along with an interactive cyberpunk-themed web application that presents the CV data. The CV is intentionally verbose and detailed, designed to be processed by Large Language Models rather than read linearly. It documents 20+ years of software engineering experience across 60+ projects.
 
 ## Repository Structure
 
 ```
 .
-├── README.md           # Main CV content (78KB+ detailed professional history)
-├── scripts/            # Python utilities for CV maintenance
-│   ├── validate_links.py      # Validates all HTTP links in README.md
-│   ├── count_technologies.py  # Extracts and counts technology mentions
-│   └── requirements.txt       # Python dependencies (bs4, markdown2, requests)
-├── CNAME              # Domain configuration
-└── .git/              # Git repository
+├── README.md               # Main CV content (78KB+ detailed professional history)
+├── scripts/                # Utilities for CV maintenance
+│   ├── validate_links.py   # Validates all HTTP links in README.md
+│   ├── count_technologies.py # Extracts and counts technology mentions
+│   ├── parse-readme.ts     # Parses README.md → web/src/data/cv-data.json
+│   └── requirements.txt    # Python dependencies (bs4, markdown2, requests)
+├── web/                    # Next.js cyberpunk-themed web application
+│   ├── src/
+│   │   ├── app/            # Next.js App Router (layout, page, globals.css)
+│   │   ├── components/     # React components (Hero, Nav, ProjectCard, etc.)
+│   │   ├── hooks/          # Custom hooks (useScrollReveal)
+│   │   ├── types/          # TypeScript interfaces (Project, Employer, CVData)
+│   │   ├── lib/            # Data import helpers
+│   │   └── data/           # Generated cv-data.json (from parse-readme.ts)
+│   ├── public/             # Static assets (avatar, logo, robots.txt, sitemap)
+│   ├── package.json
+│   ├── next.config.ts      # Static export config (output: export)
+│   └── vercel.json         # Vercel deployment config
+└── .git/                   # Git repository
 ```
 
 ## Key Commands
@@ -35,6 +47,46 @@ cd scripts
 python count_technologies.py
 ```
 Parses README.md for `**Technologies:**` sections and generates a sorted count of all technology mentions across projects.
+
+### Web App Development
+```bash
+cd web
+npm install
+npm run dev          # Start Next.js dev server
+npm run build        # Parse README + build static export
+npm run parse        # Only regenerate cv-data.json from README.md
+```
+
+### Data Pipeline
+The web app consumes CV data via a build-time pipeline:
+1. `scripts/parse-readme.ts` parses README.md, extracting projects, employers, education, etc.
+2. Outputs structured JSON to `web/src/data/cv-data.json`
+3. The Next.js app imports this JSON at build time for static generation
+
+## Web App Architecture
+
+### Tech Stack
+- **Framework**: Next.js 15 (App Router, static export)
+- **UI**: React 19 with client-side interactivity
+- **Styling**: Tailwind CSS 4 with custom cyberpunk theme
+- **Language**: TypeScript 5
+- **Fonts**: Orbitron (display), Share Tech Mono (body), Fira Code (mono), Press Start 2P (pixel)
+- **Deployment**: Vercel (static HTML/CSS/JS)
+
+### Cyberpunk Theme
+The web app uses a distinct cyberpunk/Edgerunners aesthetic:
+- **Colors**: Cyan (#00FFF0), Magenta (#FF00AA), Neon Green (#00FF41), Kiroshi accents
+- **Effects**: Scanlines, CRT vignette, dot grid background, glitch text animations
+- **Components**: ASCII corner brackets on cards, matrix rain background, boot sequence loader
+- **Typography**: Retro futuristic monospace fonts
+
+### Key Components
+- `Hero.tsx` — Intro section with social links and avatar
+- `ProjectCard.tsx` / `ProjectModal.tsx` — Project display with filtering
+- `MatrixRain.tsx` — Animated background effect
+- `BootSequence.tsx` — Loading animation
+- `GlitchText.tsx` — Glitch text effect
+- `FilterBar.tsx` — Technology-based project filtering
 
 ## Content Architecture
 
