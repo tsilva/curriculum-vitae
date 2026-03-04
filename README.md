@@ -404,7 +404,7 @@ Integrated Tynker's Block Editor into the Minecraft Education Edition app, enabl
 
 ## 🧱 <a href="https://photos.app.goo.gl/4mYja1dfdWLECgAs8" target="_blank">Mythicraft</a>
 
-- **TLDR**: Integration of Minecraft Editor into a new Tynker course.
+- **TLDR:** Integration of Minecraft Editor into a new Tynker course.
 - **Start:** 2017
 - **Client:** Tynker
 - **Location:** Mountain View, California · Remote 🌍
