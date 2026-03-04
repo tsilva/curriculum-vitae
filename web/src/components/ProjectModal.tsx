@@ -71,37 +71,37 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             <div className="font-[family-name:var(--font-mono)] text-sm text-steel space-y-2 pl-4 border-l-2 border-cyan/20">
               {project.start && (
                 <div className="flex gap-2">
-                  <span className="text-steel-dim w-16">year:</span>
+                  <span className="text-steel-dim w-20 flex-shrink-0">year:</span>
                   <span className="text-kiroshi-yellow">{project.start}</span>
                 </div>
               )}
               {project.client && (
                 <div className="flex gap-2">
-                  <span className="text-steel-dim w-16">client:</span>
+                  <span className="text-steel-dim w-20 flex-shrink-0">client:</span>
                   <span className="text-cool-white">{project.client}</span>
                 </div>
               )}
               {project.role && (
                 <div className="flex gap-2">
-                  <span className="text-steel-dim w-16">role:</span>
+                  <span className="text-steel-dim w-20 flex-shrink-0">role:</span>
                   <span className="text-cyan">{project.role}</span>
                 </div>
               )}
               {project.team && (
                 <div className="flex gap-2">
-                  <span className="text-steel-dim w-16">team:</span>
+                  <span className="text-steel-dim w-20 flex-shrink-0">team:</span>
                   <span className="text-cool-white">{project.team}</span>
                 </div>
               )}
               {project.platforms && (
                 <div className="flex gap-2">
-                  <span className="text-steel-dim w-16">platforms:</span>
+                  <span className="text-steel-dim w-20 flex-shrink-0">platforms:</span>
                   <span className="text-steel">{project.platforms}</span>
                 </div>
               )}
               {project.location && (
                 <div className="flex gap-2">
-                  <span className="text-steel-dim w-16">location:</span>
+                  <span className="text-steel-dim w-20 flex-shrink-0">location:</span>
                   <span className="text-steel">{project.location}</span>
                 </div>
               )}
