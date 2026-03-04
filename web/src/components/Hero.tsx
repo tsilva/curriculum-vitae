@@ -248,10 +248,15 @@ export function Hero() {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-steel hover:text-cyan transition-all duration-300 p-2 rounded-sm hover:shadow-[0_0_20px_rgba(0,230,230,0.3),0_0_40px_rgba(0,230,230,0.15)] hover:scale-110 hover:bg-cyan/5 border border-transparent hover:border-cyan/30"
-            title={link.label}
+            className="relative group text-steel hover:text-cyan transition-all duration-300 p-2 rounded-sm hover:shadow-[0_0_20px_rgba(0,230,230,0.3),0_0_40px_rgba(0,230,230,0.15)] hover:scale-110 hover:bg-cyan/5 border border-transparent hover:border-cyan/30"
+            data-tooltip={link.label}
           >
             {link.icon}
+            {/* Cyberpunk Tooltip */}
+            <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-3 py-1.5 bg-surface border border-cyan/50 text-cyan text-[11px] font-[family-name:var(--font-mono)] tracking-[0.15em] uppercase opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap shadow-[0_0_15px_rgba(0,230,230,0.4)] z-50">
+              <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-surface border-r border-b border-cyan/50 rotate-45" />
+              {link.label}
+            </span>
           </a>
         ))}
       </div>

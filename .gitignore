@@ -60,3 +60,6 @@ logs/
 # Next.js
 web/.next/
 web/out/
+
+# Canonical Galleries (generated from Google Photos Takeout)
+galleries/
