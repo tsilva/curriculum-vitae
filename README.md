@@ -27,7 +27,7 @@ This CV is detailed and comprehensive—it's more suited for running through you
 
 ## 🏫 <a href="https://www.tynker.com/" target="_blank">Tynker</a>
 
-- **Duration:** Sep 2016 - Present
+- **Duration:** Sep 2016 - May 2024
 - **Role:** Lead Software Engineer (Full-time)
 - **Location:** Mountain View, California · Remote 🌍
 
@@ -47,6 +47,14 @@ As a Lead Software Engineer, I was the main contributor to many of its core prod
 - **[Minecraft Editor](#-minecraft-editor)** 🛠🎮: a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors.
 
 ❗ In all these projects, I was responsible for gathering requirements from stakeholders, researching and testing various solutions, and implementing the solution end-to-end, including deployment and post-deployment management.
+
+## 🔐 VaultHaus
+
+- **Duration:** May 2024 - Present
+- **Role:** AI Research Engineer (Full-time)
+- **Location:** Porto, Portugal · Onsite 🏢
+
+I pursue a deliberately broad portfolio of AI initiatives—spanning deep-reinforcement-learning research, agentic and large-language-model applications, and the requisite supporting infrastructure—while systematically cultivating a rigorous, first-principles understanding of deep-learning systems and translating my insights into exploratory proof-of-concepts.
 
 ## 🛍 <a href="https://www.platforme.com/" target="_blank">RIPE Productions</a>
 
