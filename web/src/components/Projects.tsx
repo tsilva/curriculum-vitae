@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import type { Project } from "@/types/cv";
 import { FilterBar } from "./FilterBar";
 import { ProjectCard } from "./ProjectCard";
@@ -20,6 +20,17 @@ export function Projects({ projects, technologies }: ProjectsProps) {
     return projects.filter((p) => p.technologies.includes(selectedTech));
   }, [projects, selectedTech]);
 
+  const gridRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!gridRef.current) return;
+    // When filter changes, reveal all cards in the grid immediately
+    // (user is already looking at the projects section if they're filtering)
+    gridRef.current.querySelectorAll('.reveal').forEach((el) => {
+      el.classList.add('visible');
+    });
+  }, [filtered]);
+
   return (
     <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
       <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-8 reveal">
@@ -36,7 +47,7 @@ export function Projects({ projects, technologies }: ProjectsProps) {
         <span className="text-steel-dim">//</span> Displaying {filtered.length} of {projects.length} records
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+      <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
         {filtered.map((project) => (
           <div key={project.id} className="reveal h-full">
             <ProjectCard
