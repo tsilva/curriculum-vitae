@@ -15,6 +15,9 @@ export function MatrixRain() {
   const isInHeroRef = useRef(true);
 
   useEffect(() => {
+    // Disable on mobile/touch devices
+    if (window.matchMedia("(pointer: coarse)").matches) return;
+    
     const handleScroll = () => {
       const heroHeight = window.innerHeight;
       const scrollY = window.scrollY;
@@ -32,6 +35,9 @@ export function MatrixRain() {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
+    // Disable on mobile/touch devices
+    if (window.matchMedia("(pointer: coarse)").matches) return;
+    
     // Respect reduced motion
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
@@ -91,7 +97,7 @@ export function MatrixRain() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 pointer-events-none z-0"
+      className="fixed inset-0 pointer-events-none z-0 hidden md:block"
       aria-hidden="true"
     />
   );

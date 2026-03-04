@@ -109,47 +109,47 @@ export function Hero() {
         {/* Top HUD readout */}
         <div className="absolute -top-0.5 left-20 right-20 flex items-center gap-2">
           <div className="h-px flex-1 bg-kiroshi-red/20" />
-          <span className={`font-[family-name:var(--font-display)] text-[9px] font-bold text-kiroshi-red tracking-[0.25em] neon-glow-kiroshi-red transition-all duration-300 ${isHovered ? 'text-kiroshi-yellow' : ''}`}>KIROSHI OPTICS MK.4</span>
+          <span className={`font-[family-name:var(--font-display)] text-[11px] font-bold text-kiroshi-red tracking-[0.25em] neon-glow-kiroshi-red transition-all duration-300 ${isHovered ? 'text-kiroshi-yellow' : ''}`}>KIROSHI OPTICS MK.4</span>
           <div className="h-px flex-1 bg-kiroshi-red/20" />
         </div>
 
         {/* Bottom HUD readout */}
         <div className="absolute -bottom-0.5 left-20 right-20 flex items-center gap-2">
           <div className="h-px flex-1 bg-kiroshi-red/20" />
-          <span className="font-[family-name:var(--font-mono)] text-[9px] text-kiroshi-yellow/70 tracking-[0.2em]">SIG ■■■■■■□ — 98.2%</span>
+          <span className="font-[family-name:var(--font-mono)] text-[11px] text-kiroshi-yellow/70 tracking-[0.2em]">SIG ■■■■■■□ — 98.2%</span>
           <div className="h-px flex-1 bg-kiroshi-red/20" />
         </div>
       </div>
 
-      {/* Left-side HUD data panel */}
-      <div className="absolute left-4 md:left-20 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-1.5 font-[family-name:var(--font-mono)] text-[9px]">
-        <span className="text-kiroshi-red/60 animate-pulse">■ SCAN ACTIVE</span>
+      {/* Left-side HUD data panel - reduced prominence */}
+      <div className="absolute left-4 md:left-20 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-2 font-[family-name:var(--font-mono)] text-[11px] opacity-60">
+        <span className="text-kiroshi-red/60">■ SCAN ACTIVE</span>
         <span className="text-steel">ID: <span className="text-kiroshi-yellow/80">TSV-1984</span></span>
-        <span className="text-steel">CLASS: <span className="text-kiroshi-cyan/80">ENGINEER</span></span>
+        <span className="text-steel">CLASS: <span className="text-cyan/80">ENGINEER</span></span>
         <span className="text-steel">THREAT: <span className={`transition-colors duration-300 ${threat === 'NONE' ? 'text-kiroshi-yellow/80' : threat === 'LOW' ? 'text-kiroshi-yellow' : 'text-kiroshi-red'}`}>{threat}</span></span>
         <span className="text-kiroshi-red/40 mt-1">────────</span>
-        <span className="text-steel">AFFIL: <span className="text-kiroshi-cyan/80">CORPO</span></span>
-        <span className="text-steel">NET: <span className="text-kiroshi-cyan/80">LINKED</span></span>
-        <span className="text-steel">ICE: <span className={`transition-colors duration-300 ${ice === 'CLEAN' ? 'text-kiroshi-yellow/80' : 'text-kiroshi-cyan'}`}>{ice}</span></span>
+        <span className="text-steel">AFFIL: <span className="text-cyan/80">CORPO</span></span>
+        <span className="text-steel">NET: <span className="text-cyan/80">LINKED</span></span>
+        <span className="text-steel">ICE: <span className={`transition-colors duration-300 ${ice === 'CLEAN' ? 'text-kiroshi-yellow/80' : 'text-cyan'}`}>{ice}</span></span>
       </div>
 
-      {/* Right-side HUD data panel */}
-      <div className="absolute right-4 md:right-20 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-1.5 font-[family-name:var(--font-mono)] text-[9px] text-right">
-        <span className="text-kiroshi-red/60 animate-pulse">REC ●</span>
+      {/* Right-side HUD data panel - reduced prominence */}
+      <div className="absolute right-4 md:right-20 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-2 font-[family-name:var(--font-mono)] text-[11px] text-right opacity-60">
+        <span className="text-kiroshi-red/60">REC ●</span>
         <span className="text-steel">LAT: <span className="text-kiroshi-yellow/80">38.7223</span></span>
         <span className="text-steel">LON: <span className="text-kiroshi-yellow/80">-9.1393</span></span>
         <span className="text-kiroshi-red/40 mt-1">────────</span>
-        <span className="text-steel">STK: <span className="text-kiroshi-cyan/80">{stock}</span></span>
-        <span className="text-steel">HP: <span className="text-kiroshi-cyan/80">{Array(hp).fill('█').join('')}</span><span className="text-kiroshi-red/40">{Array(8-hp).fill('░').join('')}</span></span>
+        <span className="text-steel">STK: <span className="text-cyan/80">{stock}</span></span>
+        <span className="text-steel">HP: <span className="text-cyan/80">{Array(hp).fill('█').join('')}</span><span className="text-kiroshi-red/40">{Array(8-hp).fill('░').join('')}</span></span>
       </div>
 
       {/* Scan status line */}
-      <div className="font-[family-name:var(--font-display)] text-[9px] font-bold text-kiroshi-red mb-2 tracking-[0.3em] neon-glow-kiroshi-red">
+      <div className="font-[family-name:var(--font-display)] text-[11px] font-bold text-kiroshi-red mb-2 tracking-[0.3em] neon-glow-kiroshi-red">
         ◈ SCAN COMPLETE ◈
       </div>
 
       {/* Classification tag — yellow like the game */}
-      <div className="font-[family-name:var(--font-mono)] text-[9px] text-kiroshi-yellow/80 mb-4 border border-kiroshi-yellow/30 px-4 py-1 tracking-[0.2em]">
+      <div className="font-[family-name:var(--font-mono)] text-[11px] text-kiroshi-yellow/80 mb-4 border border-kiroshi-yellow/30 px-4 py-1 tracking-[0.2em]">
         SUBJECT IDENTIFIED
       </div>
 
@@ -183,20 +183,20 @@ export function Hero() {
         <div className={`absolute inset-0 rounded-full border transition-all duration-300 ${isHovered ? 'border-kiroshi-red border-2 shadow-[0_0_20px_rgba(232,0,63,0.5)] animate-pulse' : 'border-kiroshi-red/30'}`} />
       </div>
 
-      {/* Name — white with red glow like the Kiroshi target name */}
+      {/* Name — Orbitron display font for better readability */}
       <h1
-        className="font-[family-name:var(--font-pixel)] text-[clamp(1.5rem,5vw,3.5rem)] font-bold text-cool-white leading-tight text-center neon-glow-kiroshi-red"
+        className="font-[family-name:var(--font-display)] text-[clamp(2rem,6vw,4rem)] font-bold text-cool-white leading-tight text-center neon-glow-kiroshi-red"
       >
         <GlitchText text="TIAGO SILVA" />
       </h1>
 
       {/* Role — cyan like secondary data in the HUD */}
       <div className="flex items-center gap-3 mt-3">
-        <span className="text-kiroshi-red text-sm">◆</span>
-        <p className="font-[family-name:var(--font-display)] text-sm md:text-base text-kiroshi-cyan tracking-[0.25em] uppercase">
+        <span className="text-kiroshi-red text-base">◆</span>
+        <p className="font-[family-name:var(--font-display)] text-base md:text-lg text-cyan tracking-[0.2em] uppercase">
           Software Engineer
         </p>
-        <span className="text-kiroshi-red text-sm">◆</span>
+        <span className="text-kiroshi-red text-base">◆</span>
       </div>
 
       {/* Red separator line */}
@@ -221,7 +221,7 @@ export function Hero() {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-steel hover:text-kiroshi-cyan transition-colors p-2 hover:shadow-[0_0_15px_rgba(85,234,212,0.3)] hover:scale-110 transform"
+            className="text-steel hover:text-cyan transition-colors p-2 hover:shadow-[0_0_15px_rgba(0,230,230,0.2)] hover:scale-110 transform"
             title={link.label}
           >
             {link.icon}
@@ -230,9 +230,9 @@ export function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 animate-bounce flex flex-col items-center gap-0.5">
-        <span className="font-[family-name:var(--font-mono)] text-xs text-kiroshi-red tracking-widest neon-glow-kiroshi-red drop-shadow-[0_2px_4px_rgba(232,0,63,0.5)]">SCROLL</span>
-        <span className="text-kiroshi-red text-lg neon-glow-kiroshi-red drop-shadow-[0_2px_4px_rgba(232,0,63,0.5)]">▼</span>
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 animate-bounce flex flex-col items-center gap-1">
+        <span className="font-[family-name:var(--font-mono)] text-sm text-kiroshi-red tracking-widest neon-glow-kiroshi-red">SCROLL</span>
+        <span className="text-kiroshi-red text-lg neon-glow-kiroshi-red">▼</span>
       </div>
     </section>
   );

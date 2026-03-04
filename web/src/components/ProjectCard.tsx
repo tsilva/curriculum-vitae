@@ -9,29 +9,29 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
   return (
     <button
       onClick={onClick}
-      className="card-glow bg-surface border border-cyan/20 rounded-sm p-5 text-left w-full h-full cursor-pointer transition-all hover:border-cyan/50 hover:shadow-[0_0_25px_rgba(0,255,240,0.15),0_0_50px_rgba(0,255,240,0.05)] group flex flex-col relative"
+      className="card-glow bg-surface border border-cyan/20 rounded-sm p-6 text-left w-full h-full cursor-pointer transition-all hover:border-cyan/40 hover:shadow-[0_0_20px_rgba(0,230,230,0.1),0_0_40px_rgba(0,230,230,0.05)] group flex flex-col relative"
     >
       {/* Corner bracket decorations */}
-      <span className="absolute top-1 left-2 text-cyan/40 font-[family-name:var(--font-mono)] text-xs select-none">&#x250C;&#x2500;</span>
-      <span className="absolute top-1 right-2 text-cyan/40 font-[family-name:var(--font-mono)] text-xs select-none">&#x2500;&#x2510;</span>
-      <span className="absolute bottom-1 left-2 text-cyan/40 font-[family-name:var(--font-mono)] text-xs select-none">&#x2514;&#x2500;</span>
-      <span className="absolute bottom-1 right-2 text-cyan/40 font-[family-name:var(--font-mono)] text-xs select-none">&#x2500;&#x2518;</span>
+      <span className="absolute top-2 left-2 text-cyan/30 font-[family-name:var(--font-mono)] text-xs select-none">&#x250C;&#x2500;</span>
+      <span className="absolute top-2 right-2 text-cyan/30 font-[family-name:var(--font-mono)] text-xs select-none">&#x2500;&#x2510;</span>
+      <span className="absolute bottom-2 left-2 text-cyan/30 font-[family-name:var(--font-mono)] text-xs select-none">&#x2514;&#x2500;</span>
+      <span className="absolute bottom-2 right-2 text-cyan/30 font-[family-name:var(--font-mono)] text-xs select-none">&#x2500;&#x2518;</span>
 
       <div className="flex-1 flex flex-col">
-        <div className="flex items-start justify-between gap-2 mb-2">
+        <div className="flex items-start justify-between gap-2 mb-3">
           <div className="flex items-center gap-2 min-w-0">
-            <span className="text-xl flex-shrink-0">{project.emoji}</span>
-        <h3 className="font-[family-name:var(--font-display)] text-base font-semibold text-cool-white group-hover:text-cyan transition-colors truncate glitch-hover">
+            <span className="text-2xl flex-shrink-0">{project.emoji}</span>
+        <h3 className="font-[family-name:var(--font-display)] text-lg font-semibold text-cool-white group-hover:text-cyan transition-colors truncate glitch-hover">
           {project.title}
         </h3>
           </div>
-          <span className="font-[family-name:var(--font-mono)] text-xs text-steel flex-shrink-0">
+          <span className="font-[family-name:var(--font-mono)] text-sm text-steel flex-shrink-0">
             <span className="text-steel-dim">//</span> {project.start}
           </span>
         </div>
 
         <p
-          className="text-sm text-steel leading-relaxed mb-3 line-clamp-2 [&_a]:text-cyan [&_a]:hover:underline"
+          className="text-base text-steel leading-relaxed mb-4 line-clamp-3 [&_a]:text-cyan [&_a]:hover:underline"
           dangerouslySetInnerHTML={{ __html: project.tldr }}
         />
       </div>
@@ -82,20 +82,20 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
           };
           
           return (
-            <a
-              key={link.url}
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-              className="group/link relative text-steel hover:text-kiroshi-cyan transition-colors p-1 hover:shadow-[0_0_10px_rgba(85,234,212,0.2)]"
-            >
-              {getIcon(link.url, link.label)}
-              {/* Tooltip */}
-              <span className="absolute -top-8 right-0 bg-base-light border border-cyan/30 px-2 py-1 rounded-sm text-xs font-[family-name:var(--font-mono)] text-cyan whitespace-nowrap opacity-0 group-hover/link:opacity-100 transition-opacity pointer-events-none z-10">
-                {link.label}
-              </span>
-            </a>
+          <a
+            key={link.url}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="group/link relative text-steel hover:text-cyan transition-colors p-1.5 hover:shadow-[0_0_10px_rgba(0,230,230,0.15)]"
+          >
+            {getIcon(link.url, link.label)}
+            {/* Tooltip */}
+            <span className="absolute -top-9 right-0 bg-base-light border border-cyan/30 px-2 py-1 rounded-sm text-sm font-[family-name:var(--font-mono)] text-cyan whitespace-nowrap opacity-0 group-hover/link:opacity-100 transition-opacity pointer-events-none z-10">
+              {link.label}
+            </span>
+          </a>
           );
         })}
       </div>

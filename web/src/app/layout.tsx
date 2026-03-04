@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Orbitron, Share_Tech_Mono, Fira_Code, Press_Start_2P } from "next/font/google";
+import { Orbitron, Share_Tech_Mono, Fira_Code } from "next/font/google";
 import { MatrixRain } from "@/components/MatrixRain";
 import "./globals.css";
 
@@ -19,13 +19,6 @@ const shareTechMono = Share_Tech_Mono({
 const firaCode = Fira_Code({
   subsets: ["latin"],
   variable: "--font-mono",
-  display: "swap",
-});
-
-const pressStart2P = Press_Start_2P({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-pixel",
   display: "swap",
 });
 
@@ -145,7 +138,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${orbitron.variable} ${shareTechMono.variable} ${firaCode.variable} ${pressStart2P.variable}`}
+      className={`${orbitron.variable} ${shareTechMono.variable} ${firaCode.variable}`}
     >
       <head>
         <script
