@@ -1,17 +1,3 @@
-<div align="center">
-
-# curriculum-vitae
-
-<p align="center">
-  <img src="logo.png" alt="curriculum-vitae logo" width="200">
-</p>
-
-**📄 20+ years of software engineering — Microsoft, Hive Solutions, Tynker, and beyond 🚀**
-
-</div>
-
----
-
 # TLDR
 
 This CV is detailed and comprehensive—it's more suited for running through your favorite LLM and asking questions than reading it all the way through. For a concise summary, here's the **TL;DR**:
