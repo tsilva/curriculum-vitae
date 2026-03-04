@@ -69,11 +69,14 @@
         "details-pal",
         "dont-mess-with-texas-report-a-litterer",
         "energi-coach",
+        "topshelf",
         "talkit",
         "us-likey",
+        "win-atlas",
         "knod",
         "valettab",
         "academy-sports-live-fit",
+        "active-heroes",
         "furtile",
         "map-my-fitness-challenges",
         "project-capture",
@@ -97,17 +100,23 @@
         "details-pal",
         "dont-mess-with-texas-report-a-litterer",
         "energi-coach",
+        "topshelf",
         "talkit",
         "us-likey",
+        "win-atlas",
         "knod",
         "valettab",
         "academy-sports-live-fit",
+        "active-heroes",
         "furtile",
         "map-my-fitness-challenges",
         "project-capture",
         "randid",
         "wego",
         "clockadoodle",
+        "china-pro-tools",
+        "discover-your-city",
+        "rocklobby",
         "rocklobby-ios-app",
         "fresh-deck-poker"
       ],
@@ -457,7 +466,14 @@
       "start": "2020",
       "client": "Tynker",
       "role": "Lead Software Engineer",
-      "technologies": [],
+      "technologies": [
+        "React",
+        "Redux",
+        "Redux Saga",
+        "socket.io",
+        "JavaScript",
+        "PHP"
+      ],
       "narrative": "Using the Lynker messaging server I previously developed, I enhanced the Block IDE with collaborative learning features, including the ability to share projects, chat about them, comment on code, and monitor changes in real-time. This application was awarded a U.S. patent.",
       "links": [
         {
@@ -924,8 +940,10 @@
       "title": "TopShelf",
       "tldr": "iOS Alcohol Delivery App",
       "start": "2015",
-      "client": "",
+      "client": "Rocksauce Studios (through Toptal)",
       "location": "Austin, Texas · Remote 🌍",
+      "role": "Full-stack Developer",
+      "platforms": "iPhone (iOS)",
       "technologies": [
         "iOS",
         "Objective-C",
@@ -934,7 +952,7 @@
         "Stripe",
         "Apple Pay"
       ],
-      "narrative": "- **Client**: Rocksauce Studios (through Toptal)\n- **Role**: Full-stack Developer\n\nTopShelf is an app that allows users to order alcoholic beverages directly from their phone and have them delivered to their doorstep.\n\nI developed the iOS application and backend logic from the ground up, including integration with a third-party fleet management service to coordinate deliveries efficiently.",
+      "narrative": "TopShelf is an app that allows users to order alcoholic beverages directly from their phone and have them delivered to their doorstep.\n\nI developed the iOS application and backend logic from the ground up, including integration with a third-party fleet management service to coordinate deliveries efficiently.",
       "links": [
         {
           "label": "Gallery",
@@ -1004,13 +1022,15 @@
       "title": "WIN Atlas",
       "tldr": "iOS Career Guidance App",
       "start": "2015",
-      "client": "",
+      "client": "Rocksauce Studios (through Toptal)",
       "location": "Austin, Texas · Remote 🌍",
+      "role": "Full-stack Developer",
+      "platforms": "iPhone (iOS)",
       "technologies": [
         "iOS",
         "Objective-C"
       ],
-      "narrative": "- **Client**: Rocksauce Studios (through Toptal)\n- **Role**: Full-stack Developer\n\nWIN Atlas is a career guidance app that helps users explore career options by taking various quizzes and providing detailed information about different jobs.\n\nI developed the client-side of the app and integrated it with the server-side, which was implemented by in-house developers.",
+      "narrative": "WIN Atlas is a career guidance app that helps users explore career options by taking various quizzes and providing detailed information about different jobs.\n\nI developed the client-side of the app and integrated it with the server-side, which was implemented by in-house developers.",
       "links": [
         {
           "label": "Gallery",
@@ -1086,13 +1106,15 @@
       "title": "Active Heroes",
       "tldr": "iOS Charity for Veterans App",
       "start": "2014",
-      "client": "",
+      "client": "Rocksauce Studios (through Toptal)",
       "location": "Austin, Texas · Remote 🌍",
+      "role": "Bug fixing",
+      "platforms": "iPhone (iOS)",
       "technologies": [
         "iOS",
         "Objective-C"
       ],
-      "narrative": "- **Client**: Rocksauce Studios (through Toptal)\n- **Role**: Bug fixing\n\nActive Heroes is a charity that supports Veterans, Active Duty Military, and their families. The Active Heroes app allows users to track workouts and share them to help raise funds for the foundation's initiatives.\n\nI fixed numerous critical and non-critical bugs in the existing app. The project was challenging due to the messy and disorganized codebase.",
+      "narrative": "Active Heroes is a charity that supports Veterans, Active Duty Military, and their families. The Active Heroes app allows users to track workouts and share them to help raise funds for the foundation's initiatives.\n\nI fixed numerous critical and non-critical bugs in the existing app. The project was challenging due to the messy and disorganized codebase.",
       "links": [
         {
           "label": "Gallery",
@@ -1112,12 +1134,14 @@
       "start": "2014",
       "client": "Rocksauce Studios (through Toptal)",
       "location": "Austin, Texas · Remote 🌍",
+      "role": "Full-stack Developer",
+      "platforms": "iPhone (iOS)",
       "technologies": [
         "iOS",
         "Objective-C",
         "Parse"
       ],
-      "narrative": "- **Role**: Full-stack Developer\n\nFurtile is a social network designed for pet owners and breeders to connect and help pets find their ideal mates.\n\nI developed the entire application, both the iOS app and the backend, from the ground up. The project was completed in record time and successfully released on the App Store.",
+      "narrative": "Furtile is a social network designed for pet owners and breeders to connect and help pets find their ideal mates.\n\nI developed the entire application, both the iOS app and the backend, from the ground up. The project was completed in record time and successfully released on the App Store.",
       "links": [
         {
           "label": "Gallery",
@@ -1133,11 +1157,12 @@
       "start": "2014",
       "client": "Rocksauce Studios (through Toptal)",
       "location": "Austin, Texas · Remote 🌍",
+      "role": "Mobile Developer",
       "technologies": [
         "iOS",
         "Objective-C"
       ],
-      "narrative": "- **Role**: Mobile Developer\n\nMapMyFitness, one of the first activity tracking applications, was later acquired by Under Armour.\n\nI implemented the Challenges feature, as well as the Weight and Sleep sections of the 24/7 tracking feature for the widely popular MapMyFitness app. Due to the app's enormous codebase, it was challenging to navigate and work efficiently, but the features were fully implemented and delivered on schedule.",
+      "narrative": "MapMyFitness, one of the first activity tracking applications, was later acquired by Under Armour.\n\nI implemented the Challenges feature, as well as the Weight and Sleep sections of the 24/7 tracking feature for the widely popular MapMyFitness app. Due to the app's enormous codebase, it was challenging to navigate and work efficiently, but the features were fully implemented and delivered on schedule.",
       "links": [
         {
           "label": "Gallery",
@@ -1153,11 +1178,12 @@
       "start": "2014",
       "client": "Rocksauce Studios (through Toptal)",
       "location": "Austin, Texas · Remote 🌍",
+      "role": "Bug fixing",
       "technologies": [
         "iOS",
         "Objective-C"
       ],
-      "narrative": "- **Role**: Bug fixing\n\nProject Capture is an app that allows users to report UFO sightings.\n\nAlthough the app was originally developed by someone else, I contributed by fixing numerous bugs throughout the app.",
+      "narrative": "Project Capture is an app that allows users to report UFO sightings.\n\nAlthough the app was originally developed by someone else, I contributed by fixing numerous bugs throughout the app.",
       "links": [
         {
           "label": "Gallery",
@@ -1219,11 +1245,13 @@
       "start": "2013",
       "client": "Rocksauce Studios (through Toptal)",
       "location": "Austin, Texas · Remote 🌍",
+      "role": "Mobile Developer",
+      "platforms": "iPhone (iOS)",
       "technologies": [
         "iOS",
         "Objective-C"
       ],
-      "narrative": "- **Role**: Mobile Developer\n\nClockadoodle was an iOS alarm clock app featuring advanced options, such as YouTube video alarms.\n\nI developed most of the application, but it remained incomplete as I was reassigned to a higher-priority project.",
+      "narrative": "Clockadoodle was an iOS alarm clock app featuring advanced options, such as YouTube video alarms.\n\nI developed most of the application, but it remained incomplete as I was reassigned to a higher-priority project.",
       "links": [
         {
           "label": "Gallery",
@@ -1241,7 +1269,7 @@
       "title": "China Pro Tools",
       "tldr": "Market Analytics Solution for Exports to China",
       "start": "2013",
-      "client": "",
+      "client": "East Point Consulting, LLC (through Toptal)",
       "location": "New York · Remote 🌍",
       "role": "Full-stack Developer",
       "technologies": [
@@ -1255,7 +1283,7 @@
         "jQuery",
         "UXF"
       ],
-      "narrative": "- **Client**: East Point Consulting, LLC (through Toptal)\n\nChina Pro Tools is a market analytics solution that provides decision-support statistics related to exports to China.\n\nI developed the entire application based on pre-existing specifications and delivered it precisely on schedule.",
+      "narrative": "China Pro Tools is a market analytics solution that provides decision-support statistics related to exports to China.\n\nI developed the entire application based on pre-existing specifications and delivered it precisely on schedule.",
       "links": [
         {
           "label": "Gallery",
@@ -1269,9 +1297,10 @@
       "title": "Discover Your City",
       "tldr": "Travelling App for Architecture Enthusiasts",
       "start": "2013",
-      "client": "",
+      "client": "Discover Your City (through Toptal)",
       "location": "New York · Remote 🌍",
       "role": "Mobile Developer",
+      "platforms": "iOS (iPhone)",
       "technologies": [
         "Python",
         "Flask",
@@ -1281,7 +1310,7 @@
         "Heroku",
         "Amazon Web Services"
       ],
-      "narrative": "- **Client**: Discover Your City (through Toptal)\n\nDiscover Your City is a travel app for architecture enthusiasts, offering guided tours of buildings featuring various styles and designs.\n\nI developed the entire application, from start to finish, based on pre-existing design specifications. The project also included a server-side back office for managing the app's content.",
+      "narrative": "Discover Your City is a travel app for architecture enthusiasts, offering guided tours of buildings featuring various styles and designs.\n\nI developed the entire application, from start to finish, based on pre-existing design specifications. The project also included a server-side back office for managing the app's content.",
       "links": [
         {
           "label": "Gallery",
@@ -1295,8 +1324,9 @@
       "title": "Rocklobby",
       "tldr": "Web Music Social Network for Fans, Artists and Venues",
       "start": "2013",
-      "client": "",
+      "client": "Rock Lobby (through Toptal)",
       "location": "New York · Remote 🌍",
+      "role": "Lead Software Engineer",
       "platforms": "Web",
       "technologies": [
         "Python",
@@ -1309,7 +1339,7 @@
         "jQuery",
         "UXF"
       ],
-      "narrative": "- **Client**: Rock Lobby (through Toptal)\n- **Role**: Lead Software Engineer\n\nRocklobby is a music social network connecting artists, venues, and fans. Users can follow artists, venues, and fans, buy tickets for shows, review them, book venues for gigs, chat with others, and access various other features. This project was a reboot of a previous mobile Rocklobby app I had created for the same client, with a bigger and more ambitious vision.\n\nI developed the entire application from top to bottom while also managing the project. This involved coordinating with the designer and handling all communication with the client.",
+      "narrative": "Rocklobby is a music social network connecting artists, venues, and fans. Users can follow artists, venues, and fans, buy tickets for shows, review them, book venues for gigs, chat with others, and access various other features. This project was a reboot of a previous mobile Rocklobby app I had created for the same client, with a bigger and more ambitious vision.\n\nI developed the entire application from top to bottom while also managing the project. This involved coordinating with the designer and handling all communication with the client.",
       "links": [
         {
           "label": "Gallery",
