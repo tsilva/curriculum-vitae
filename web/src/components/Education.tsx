@@ -7,7 +7,7 @@ interface EducationProps {
 export function Education({ entries }: EducationProps) {
   return (
     <section id="education" className="max-w-6xl mx-auto px-6 pt-8 pb-32">
-      <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-10 reveal">
+      <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-10 reveal neon-glow-cyan">
         <span className="text-magenta">&gt;</span> TRAINING_MODULES
       </h2>
 
@@ -15,8 +15,14 @@ export function Education({ entries }: EducationProps) {
         {entries.map((entry) => (
           <div
             key={entry.id}
-            className="card-glow bg-surface border border-cyan/10 rounded-sm p-6 reveal h-full"
+            className="card-glow bg-surface border border-cyan/10 rounded-sm p-6 reveal h-full relative"
           >
+            {/* Corner bracket decorations - matching ProjectCard style */}
+            <span className="absolute top-2 left-2 text-cyan/30 font-[family-name:var(--font-mono)] text-xs select-none">&#x250C;&#x2500;</span>
+            <span className="absolute top-2 right-2 text-cyan/30 font-[family-name:var(--font-mono)] text-xs select-none">&#x2500;&#x2510;</span>
+            <span className="absolute bottom-2 left-2 text-cyan/30 font-[family-name:var(--font-mono)] text-xs select-none">&#x2514;&#x2500;</span>
+            <span className="absolute bottom-2 right-2 text-cyan/30 font-[family-name:var(--font-mono)] text-xs select-none">&#x2500;&#x2518;</span>
+
             <div className="flex items-start gap-3 mb-3">
               <span className="text-2xl">{entry.emoji}</span>
               <div className="min-w-0">
