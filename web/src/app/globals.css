@@ -1,22 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-base: #0D0D0B;
-  --color-base-light: #161614;
-  --color-surface: #1A1A17;
-  --color-surface-hover: #222220;
-  --color-amber: #E8A020;
-  --color-amber-dim: #B8801A;
-  --color-warm-white: #F0EDE8;
-  --color-slate: #8A9BAE;
-  --color-slate-dim: #5A6B7E;
+  /* Cyberpunk color palette */
+  --color-cyan: #00FFF0;
+  --color-magenta: #FF00AA;
+  --color-neon-green: #00FF41;
+  --color-neon-yellow: #FFE000;
+  --color-base: #0A0A12;
+  --color-base-light: #0F0F1A;
+  --color-surface: #111827;
+  --color-surface-hover: #1A2035;
+  --color-cool-white: #E0F0FF;
+  --color-steel: #4A5568;
+  --color-steel-dim: #2D3748;
 
-  --font-display: "Syne", sans-serif;
-  --font-body: "Literata", serif;
-  --font-mono: "IBM Plex Mono", monospace;
+  /* Legacy aliases — existing Tailwind classes auto-inherit */
+  --color-amber: #00FFF0;
+  --color-amber-dim: #00CCC0;
+  --color-warm-white: #E0F0FF;
+  --color-slate: #8A9BAE;
+  --color-slate-dim: #4A5568;
+
+  /* Typography */
+  --font-display: "Orbitron", sans-serif;
+  --font-body: "Share Tech Mono", monospace;
+  --font-mono: "Fira Code", monospace;
+  --font-pixel: "Press Start 2P", monospace;
 }
 
-/* Scan-line overlay */
+/* ============================================
+   SCANLINES + CRT VIGNETTE
+   ============================================ */
 .scanlines::after {
   content: "";
   position: fixed;
@@ -27,42 +41,55 @@
     0deg,
     transparent,
     transparent 2px,
-    rgba(0, 0, 0, 0.03) 2px,
-    rgba(0, 0, 0, 0.03) 4px
+    rgba(0, 255, 240, 0.015) 2px,
+    rgba(0, 255, 240, 0.015) 4px
   );
 }
 
-/* Dot grid background */
+.crt-vignette::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 49;
+  background: radial-gradient(ellipse at center, transparent 60%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+/* ============================================
+   DOT GRID (cyan instead of amber)
+   ============================================ */
 .dot-grid {
   background-image: radial-gradient(
     circle,
-    rgba(232, 160, 32, 0.04) 1px,
+    rgba(0, 255, 240, 0.03) 1px,
     transparent 1px
   );
   background-size: 24px 24px;
 }
 
-/* Glitch keyframe */
+/* ============================================
+   GLITCH KEYFRAMES — aggressive RGB split
+   ============================================ */
 @keyframes glitch {
   0% {
-    text-shadow: 2px 0 #E8A020, -2px 0 #8A9BAE;
+    text-shadow: 2px 0 #00FFF0, -2px 0 #FF00AA;
     transform: translate(0);
   }
   20% {
-    text-shadow: -3px 0 #E8A020, 3px 0 #8A9BAE;
-    transform: translate(-2px, 1px);
+    text-shadow: -4px 0 #00FFF0, 4px 0 #FF00AA;
+    transform: translate(-3px, 1px);
   }
   40% {
-    text-shadow: 3px 0 #E8A020, -3px 0 #8A9BAE;
-    transform: translate(2px, -1px);
+    text-shadow: 4px 0 #00FFF0, -4px 0 #FF00AA;
+    transform: translate(3px, -2px);
   }
   60% {
-    text-shadow: -2px 0 #E8A020, 2px 0 #8A9BAE;
-    transform: translate(-1px, 2px);
+    text-shadow: -3px 0 #00FFF0, 3px 0 #FF00AA;
+    transform: translate(-2px, 2px);
   }
   80% {
-    text-shadow: 2px 0 #E8A020, -2px 0 #8A9BAE;
-    transform: translate(1px, -1px);
+    text-shadow: 3px 0 #00FFF0, -3px 0 #FF00AA;
+    transform: translate(2px, -1px);
   }
   100% {
     text-shadow: none;
@@ -70,11 +97,111 @@
   }
 }
 
-.glitch-once {
-  animation: glitch 0.3s ease-in-out 0.5s 1;
+@keyframes glitch-rgb {
+  0%, 100% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0);
+  }
+  10% {
+    clip-path: inset(20% 0 60% 0);
+    transform: translate(-3px, 0);
+  }
+  20% {
+    clip-path: inset(50% 0 20% 0);
+    transform: translate(3px, 0);
+  }
+  30% {
+    clip-path: inset(10% 0 70% 0);
+    transform: translate(-2px, 0);
+  }
+  40% {
+    clip-path: inset(80% 0 5% 0);
+    transform: translate(2px, 0);
+  }
+  50% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0);
+  }
 }
 
-/* Scroll reveal */
+.glitch-once {
+  animation: glitch 0.4s ease-in-out 0.5s 1;
+}
+
+/* Glitch overlay via data-text pseudo-elements */
+.glitch-text {
+  position: relative;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.glitch-text::before {
+  color: #00FFF0;
+  animation: glitch-rgb 3s infinite linear;
+  opacity: 0.6;
+}
+
+.glitch-text::after {
+  color: #FF00AA;
+  animation: glitch-rgb 3s infinite linear reverse;
+  opacity: 0.6;
+}
+
+/* ============================================
+   NEON GLOW UTILITIES
+   ============================================ */
+.neon-glow-cyan {
+  text-shadow: 0 0 7px #00FFF0, 0 0 20px #00FFF0, 0 0 40px #00FFF0;
+}
+
+.neon-glow-magenta {
+  text-shadow: 0 0 7px #FF00AA, 0 0 20px #FF00AA, 0 0 40px #FF00AA;
+}
+
+.neon-glow-green {
+  text-shadow: 0 0 7px #00FF41, 0 0 20px #00FF41, 0 0 40px #00FF41;
+}
+
+.neon-box-cyan {
+  box-shadow: 0 0 7px #00FFF0, 0 0 20px rgba(0, 255, 240, 0.3), inset 0 0 7px rgba(0, 255, 240, 0.1);
+}
+
+/* ============================================
+   TERMINAL CURSOR BLINK
+   ============================================ */
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.terminal-cursor::after {
+  content: "█";
+  color: #00FFF0;
+  animation: cursor-blink 1s step-end infinite;
+  margin-left: 2px;
+}
+
+/* ============================================
+   SCREEN FLICKER
+   ============================================ */
+@keyframes flicker {
+  0%, 97%, 100% { opacity: 1; }
+  98% { opacity: 0.95; }
+  99% { opacity: 0.98; }
+}
+
+/* ============================================
+   SCROLL REVEAL
+   ============================================ */
 .reveal {
   opacity: 0;
   transform: translateY(20px);
@@ -86,7 +213,9 @@
   transform: translateY(0);
 }
 
-/* Count up animation */
+/* ============================================
+   COUNT UP ANIMATION
+   ============================================ */
 @keyframes fade-in-up {
   from {
     opacity: 0;
@@ -102,17 +231,22 @@
   animation: fade-in-up 0.5s ease-out forwards;
 }
 
-/* Smooth scroll */
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
 html {
   scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--color-base);
-  color: var(--color-warm-white);
+  color: var(--color-cool-white);
+  animation: flicker 4s infinite;
 }
 
-/* Custom scrollbar */
+/* ============================================
+   SCROLLBAR — cyan themed
+   ============================================ */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -122,21 +256,25 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-slate-dim);
+  background: #00FFF033;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-slate);
+  background: #00FFF066;
 }
 
-/* Modal backdrop */
+/* ============================================
+   MODAL BACKDROP
+   ============================================ */
 .modal-backdrop {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
 
-/* Filter pill scrollbar hide */
+/* ============================================
+   FILTER PILL SCROLLBAR HIDE
+   ============================================ */
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -145,11 +283,54 @@ body {
   display: none;
 }
 
-/* Card amber glow on hover */
+/* ============================================
+   CARD GLOW — cyan neon on hover
+   ============================================ */
 .card-glow {
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
 }
 .card-glow:hover {
-  box-shadow: 0 0 20px rgba(232, 160, 32, 0.15), 0 0 40px rgba(232, 160, 32, 0.05);
+  box-shadow: 0 0 20px rgba(0, 255, 240, 0.15), 0 0 40px rgba(0, 255, 240, 0.05);
   transform: translateY(-2px);
+}
+
+/* ============================================
+   ACCESSIBILITY — reduced motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  .scanlines::after,
+  .crt-vignette::before {
+    display: none;
+  }
+
+  body {
+    animation: none;
+  }
+
+  .glitch-once {
+    animation: none;
+  }
+
+  .glitch-text::before,
+  .glitch-text::after {
+    display: none;
+  }
+
+  .terminal-cursor::after {
+    animation: none;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .card-glow {
+    transition: none;
+  }
+
+  .card-glow:hover {
+    transform: none;
+  }
 }
