@@ -14,6 +14,7 @@ interface ProjectsProps {
 export function Projects({ projects, technologies }: ProjectsProps) {
   const [selectedTech, setSelectedTech] = useState<string | null>(null);
   const [modalProject, setModalProject] = useState<Project | null>(null);
+  const [filterKey, setFilterKey] = useState(0); // Used to trigger re-animation
 
   const filtered = useMemo(() => {
     if (!selectedTech) return projects;
@@ -22,10 +23,14 @@ export function Projects({ projects, technologies }: ProjectsProps) {
 
   const gridRef = useRef<HTMLDivElement>(null);
 
+  // Trigger re-animation when filter changes
+  useEffect(() => {
+    setFilterKey(prev => prev + 1);
+  }, [selectedTech]);
+
   useEffect(() => {
     if (!gridRef.current) return;
-    // When filter changes, reveal all cards in the grid immediately
-    // (user is already looking at the projects section if they're filtering)
+    // Reveal all cards immediately when in view
     gridRef.current.querySelectorAll('.reveal').forEach((el) => {
       el.classList.add('visible');
     });
@@ -47,9 +52,19 @@ export function Projects({ projects, technologies }: ProjectsProps) {
         <span className="text-steel-dim">//</span> Displaying {filtered.length} of {projects.length} records
       </div>
 
-      <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
-        {filtered.map((project) => (
-          <div key={project.id} className="reveal h-full">
+      <div 
+        ref={gridRef} 
+        key={filterKey}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6"
+      >
+        {filtered.map((project, index) => (
+          <div 
+            key={project.id} 
+            className="h-full"
+            style={{
+              animation: `stagger-fade-in 0.5s ease-out ${index * 0.05}s both`,
+            }}
+          >
             <ProjectCard
               project={project}
               onClick={() => setModalProject(project)}

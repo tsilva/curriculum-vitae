@@ -12,16 +12,18 @@ export function FilterBar({ technologies, selected, onSelect }: FilterBarProps) 
   return (
     <div className="sticky top-0 z-30 bg-base/90 backdrop-blur-sm py-3 -mx-6 px-6 border-b border-cyan/10">
       <div className="flex items-center gap-2 overflow-x-auto hide-scrollbar pb-1">
-        <span className="font-[family-name:var(--font-mono)] text-xs text-neon-green flex-shrink-0">$ filter --tech=</span>
+        <span className="font-[family-name:var(--font-mono)] text-xs text-neon-green flex-shrink-0 animate-pulse">$</span>
+        <span className="font-[family-name:var(--font-mono)] text-xs text-steel flex-shrink-0">filter --tech=</span>
         <TechBadge
-          name="All"
+          name="ALL"
           active={selected === null}
           onClick={() => onSelect(null)}
         />
+        <span className="text-steel/30 flex-shrink-0">|</span>
         {technologies.map((tech) => (
           <TechBadge
             key={tech.name}
-            name={`${tech.name} (${tech.count})`}
+            name={`${tech.name} [${tech.count}]`}
             active={selected === tech.name}
             onClick={() =>
               onSelect(selected === tech.name ? null : tech.name)

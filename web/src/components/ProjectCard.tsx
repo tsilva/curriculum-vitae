@@ -9,7 +9,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
   return (
     <button
       onClick={onClick}
-      className="card-glow bg-surface border border-cyan/10 rounded-sm p-5 text-left w-full h-full cursor-pointer transition-all hover:border-cyan/40 group flex flex-col relative"
+      className="card-glow bg-surface border border-cyan/20 rounded-sm p-5 text-left w-full h-full cursor-pointer transition-all hover:border-cyan/50 hover:shadow-[0_0_25px_rgba(0,255,240,0.15),0_0_50px_rgba(0,255,240,0.05)] group flex flex-col relative"
     >
       {/* Corner bracket decorations */}
       <span className="absolute top-1 left-2 text-cyan/40 font-[family-name:var(--font-mono)] text-xs select-none">&#x250C;&#x2500;</span>
@@ -21,9 +21,9 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
         <div className="flex items-start justify-between gap-2 mb-2">
           <div className="flex items-center gap-2 min-w-0">
             <span className="text-xl flex-shrink-0">{project.emoji}</span>
-            <h3 className="font-[family-name:var(--font-display)] text-base font-semibold text-cool-white group-hover:text-cyan transition-colors truncate">
-              {project.title}
-            </h3>
+        <h3 className="font-[family-name:var(--font-display)] text-base font-semibold text-cool-white group-hover:text-cyan transition-colors truncate glitch-hover">
+          {project.title}
+        </h3>
           </div>
           <span className="font-[family-name:var(--font-mono)] text-xs text-steel flex-shrink-0">
             <span className="text-steel-dim">//</span> {project.start}

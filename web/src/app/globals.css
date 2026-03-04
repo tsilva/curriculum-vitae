@@ -306,6 +306,80 @@ body {
 }
 
 /* ============================================
+   STAGGERED FADE-IN ANIMATION
+   ============================================ */
+@keyframes stagger-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ============================================
+   GLITCH HOVER EFFECT — more aggressive
+   ============================================ */
+@keyframes glitch-hover {
+  0% {
+    text-shadow: 2px 0 #E8003F, -2px 0 #55ead4;
+    transform: translate(0) skew(0deg);
+  }
+  10% {
+    text-shadow: -3px 0 #E8003F, 3px 0 #55ead4;
+    transform: translate(-2px, 1px) skew(-2deg);
+  }
+  20% {
+    text-shadow: 3px 0 #E8003F, -3px 0 #55ead4;
+    transform: translate(2px, -1px) skew(2deg);
+  }
+  30% {
+    text-shadow: -2px 0 #E8003F, 2px 0 #55ead4;
+    transform: translate(-1px, 2px) skew(-1deg);
+  }
+  40% {
+    text-shadow: 2px 0 #E8003F, -2px 0 #55ead4;
+    transform: translate(1px, -2px) skew(1deg);
+  }
+  50% {
+    text-shadow: -3px 0 #E8003F, 3px 0 #55ead4;
+    transform: translate(0) skew(0deg);
+  }
+  60% {
+    text-shadow: 3px 0 #E8003F, -3px 0 #55ead4;
+    transform: translate(-1px, 1px) skew(-2deg);
+  }
+  70% {
+    text-shadow: -2px 0 #E8003F, 2px 0 #55ead4;
+    transform: translate(1px, -1px) skew(2deg);
+  }
+  80% {
+    text-shadow: 2px 0 #E8003F, -2px 0 #55ead4;
+    transform: translate(-2px, 0) skew(-1deg);
+  }
+  90% {
+    text-shadow: -3px 0 #E8003F, 3px 0 #55ead4;
+    transform: translate(2px, 0) skew(1deg);
+  }
+  100% {
+    text-shadow: 2px 0 #E8003F, -2px 0 #55ead4;
+    transform: translate(0) skew(0deg);
+  }
+}
+
+.glitch-hover:hover {
+  animation: glitch-hover 0.5s ease-in-out;
+  color: #00FFF0;
+}
+
+/* Active glitch state for GlitchText component */
+.glitch-active {
+  animation: glitch-hover 0.6s ease-in-out infinite;
+}
+
+/* ============================================
    ACCESSIBILITY — reduced motion
    ============================================ */
 @media (prefers-reduced-motion: reduce) {
