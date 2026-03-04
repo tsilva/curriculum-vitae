@@ -3,10 +3,10 @@
 import { useEffect, useState } from "react";
 
 const sections = [
-  { id: "hero", label: "Top" },
-  { id: "experience", label: "Experience" },
-  { id: "projects", label: "Projects" },
-  { id: "education", label: "Education" },
+  { id: "hero", label: "TOP" },
+  { id: "experience", label: "EXPERIENCE" },
+  { id: "projects", label: "PROJECTS" },
+  { id: "education", label: "TRAINING" },
 ];
 
 export function Nav() {
@@ -34,8 +34,8 @@ export function Nav() {
 
   return (
     <>
-      {/* Desktop: right-side diamonds */}
-      <nav className="fixed right-4 top-1/2 -translate-y-1/2 z-40 hidden lg:flex flex-col gap-3">
+      {/* Desktop: right-side diamonds - hidden when in hero */}
+      <nav className={`fixed right-4 top-1/2 -translate-y-1/2 z-40 hidden lg:flex flex-col gap-3 transition-opacity duration-500 ${active === 'hero' ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
         {sections.map((section) => (
           <a
             key={section.id}
@@ -44,7 +44,7 @@ export function Nav() {
             title={section.label}
           >
             <span className="font-[family-name:var(--font-mono)] text-[10px] text-cyan/60 transition-all">
-              //{section.label}
+              {section.label}
             </span>
             <span
               className={`w-2.5 h-2.5 rotate-45 border transition-all ${
@@ -70,7 +70,7 @@ export function Nav() {
                   : "text-steel hover:text-cool-white"
               }`}
             >
-              //{section.label}
+              {section.label}
             </a>
           ))}
         </div>
