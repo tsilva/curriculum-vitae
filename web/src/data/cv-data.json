@@ -575,7 +575,7 @@
       "id": "mythicraft",
       "emoji": "🧱",
       "title": "Mythicraft",
-      "tldr": "",
+      "tldr": "Integration of Minecraft Editor into a new Tynker course.",
       "start": "2017",
       "client": "Tynker",
       "location": "Mountain View, California · Remote 🌍",
@@ -583,7 +583,7 @@
       "team": "Me (Minecraft Editor) + Course Development Team (Mythicraft Course Content)",
       "platforms": "Web / iOS (WebView)",
       "technologies": [],
-      "narrative": "- **TLDR**: Integration of Minecraft Editor into a new Tynker course.\n\nTynker's Mythicraft is a creative educational course designed to teach users how to mod their Minecraft world with a focus on mythological themes. It guides learners through the creation of custom skins, magical items, blocks, and mythical creatures.\n\nThis course marked the first integration of the Minecraft Editor tool into a standard Tynker course structure, blending traditional introductory lessons with those requiring the Minecraft Editor. To achieve this, I integrated the tool into the course workflows, enabling it to be declared in the course data structures, launched at the appropriate times, and embedded within the course frame. I also implemented lesson completion detection to trigger progression to the next lesson. Additionally, I optimized the editor's performance to enhance its functionality on native mobile apps, as the course was available on those platforms as well.",
+      "narrative": "Tynker's Mythicraft is a creative educational course designed to teach users how to mod their Minecraft world with a focus on mythological themes. It guides learners through the creation of custom skins, magical items, blocks, and mythical creatures.\n\nThis course marked the first integration of the Minecraft Editor tool into a standard Tynker course structure, blending traditional introductory lessons with those requiring the Minecraft Editor. To achieve this, I integrated the tool into the course workflows, enabling it to be declared in the course data structures, launched at the appropriate times, and embedded within the course frame. I also implemented lesson completion detection to trigger progression to the next lesson. Additionally, I optimized the editor's performance to enhance its functionality on native mobile apps, as the course was available on those platforms as well.",
       "links": [
         {
           "label": "Gallery",
