@@ -22,8 +22,8 @@ export function Projects({ projects, technologies }: ProjectsProps) {
 
   return (
     <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
-      <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-amber mb-8 reveal">
-        Projects
+      <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-8 reveal">
+        &lt; PROJECTS_DATABASE /&gt;
       </h2>
 
       <FilterBar
@@ -32,8 +32,8 @@ export function Projects({ projects, technologies }: ProjectsProps) {
         onSelect={setSelectedTech}
       />
 
-      <div className="mt-4 font-[family-name:var(--font-mono)] text-xs text-slate-dim">
-        Showing {filtered.length} of {projects.length} projects
+      <div className="mt-4 font-[family-name:var(--font-mono)] text-xs text-steel">
+        <span className="text-steel-dim">//</span> Displaying {filtered.length} of {projects.length} records
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">

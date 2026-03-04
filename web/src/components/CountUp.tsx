@@ -42,7 +42,6 @@ export function CountUp({ end, suffix = "", duration = 2000, label }: CountUpPro
     const timer = setInterval(() => {
       current++;
       const progress = current / steps;
-      // Ease out cubic
       const eased = 1 - Math.pow(1 - progress, 3);
       setCount(Math.round(eased * end));
 
@@ -57,10 +56,13 @@ export function CountUp({ end, suffix = "", duration = 2000, label }: CountUpPro
 
   return (
     <div ref={ref} className="text-center">
-      <div className="font-[family-name:var(--font-display)] text-4xl md:text-5xl lg:text-6xl font-bold text-amber">
-        {count}{suffix}
+      <div className="font-[family-name:var(--font-pixel)] text-2xl md:text-3xl lg:text-4xl font-bold text-cyan neon-glow-cyan">
+        <span className="text-steel text-lg">[</span>
+        {" "}{count}
+        <span className="text-magenta">{suffix}</span>
+        {" "}<span className="text-steel text-lg">]</span>
       </div>
-      <div className="font-[family-name:var(--font-mono)] text-sm text-slate mt-2 uppercase tracking-wider">
+      <div className="font-[family-name:var(--font-mono)] text-xs text-neon-green mt-2 uppercase tracking-wider">
         {label}
       </div>
     </div>

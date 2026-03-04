@@ -57,20 +57,19 @@ export function Hero() {
       id="hero"
       className="min-h-screen flex flex-col items-center justify-center px-6 relative"
     >
-      <div className="mb-4">
-        <img
-          src="/logo.png"
-          alt="Tiago Silva"
-          className="w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-amber/30"
-        />
+      {/* Decorative system text */}
+      <div className="font-[family-name:var(--font-mono)] text-[10px] text-neon-green/40 mb-6 tracking-widest">
+        [ SYSTEM ONLINE ]
       </div>
 
-      <h1 className="font-[family-name:var(--font-display)] text-[clamp(2.5rem,8vw,6rem)] font-bold text-amber leading-tight text-center">
+      <h1 className="font-[family-name:var(--font-pixel)] text-[clamp(1.5rem,5vw,3.5rem)] font-bold text-cyan leading-tight text-center neon-glow-cyan">
         <GlitchText text="Tiago Silva" />
       </h1>
 
-      <p className="font-[family-name:var(--font-mono)] text-slate text-lg md:text-xl mt-2 tracking-wide">
-        Software Engineer
+      <p className="font-[family-name:var(--font-mono)] text-slate text-lg md:text-xl mt-3 tracking-wide">
+        <span className="text-neon-green mr-2">&gt;</span>
+        <span>Software Engineer</span>
+        <span className="terminal-cursor" />
       </p>
 
       <div className="flex gap-12 md:gap-20 mt-12 md:mt-16">
@@ -86,7 +85,7 @@ export function Hero() {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate hover:text-amber transition-colors p-2 rounded-lg hover:bg-surface"
+            className="text-steel hover:text-cyan transition-colors p-2 rounded-lg hover:bg-surface hover:shadow-[0_0_10px_rgba(0,255,240,0.2)]"
             title={link.label}
           >
             {link.icon}
@@ -96,19 +95,9 @@ export function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <svg
-          className="w-6 h-6 text-slate/50"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M19 14l-7 7m0 0l-7-7m7 7V3"
-          />
-        </svg>
+        <span className="font-[family-name:var(--font-pixel)] text-[8px] text-cyan/50 tracking-wider">
+          ▼ SCROLL ▼
+        </span>
       </div>
     </section>
   );
