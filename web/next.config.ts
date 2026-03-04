@@ -2,6 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
+  env: {
+    GIT_COMMIT_HASH: process.env.GIT_COMMIT_HASH || "dev",
+  },
   images: {
     unoptimized: true,
     remotePatterns: [
