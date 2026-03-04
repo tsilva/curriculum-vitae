@@ -6,7 +6,6 @@ import { Education } from "@/components/Education";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ScrollRevealProvider } from "@/components/ScrollRevealProvider";
-import { BootSequence } from "@/components/BootSequence";
 
 export default function Home() {
   const data = getCVData();
@@ -14,7 +13,6 @@ export default function Home() {
 
   return (
     <>
-      <BootSequence />
       <ScrollRevealProvider>
         <Nav />
         <main>
