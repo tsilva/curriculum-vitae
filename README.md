@@ -273,7 +273,7 @@ The platform was deployed on schedule with only minor issues, mostly related to 
 - **Role:** Lead Software Engineer
 - **Platform:** Web
 - **Team:** Me + Design Team + Content Team
-- **Technologies:** React, MDX, NodeJS, React Native, PHP
+- **Technologies:** React, MDX, Node.js, React Native, PHP
 
 The Quizzer platform is a versatile tool designed to build assessments that interleave multiple interactive quiz types, using a unified content authoring format powered by MDX.
 
@@ -315,7 +315,7 @@ Combining the [Collaborative Learning System](#-collaborative-learning-system) f
 - **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
 - **Team:** Just me
-- **Technologies:** NodeJS, Express, socket.io, Redis, NGINX
+- **Technologies:** Node.js, Express, Socket.IO, Redis, NGINX
 
 Lynker was a custom-built real-time messaging server for Tynker, designed to support a wide range of features, from live dashboard notifications to project collaboration and multiplayer game development. It was engineered for scalability, reliability, security, and low-latency performance.
 
@@ -331,7 +331,7 @@ In hindsight, it was over-engineered, as it was built to handle a higher through
 - **Start:** 2020
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
-- **Technologies**: React, Redux, Redux Saga, socket.io, JavaScript, PHP
+- **Technologies**: React, Redux, Redux Saga, Socket.IO, JavaScript, PHP
 
 Using the Lynker messaging server I previously developed, I enhanced the Block IDE with collaborative learning features, including the ability to share projects, chat about them, comment on code, and monitor changes in real-time. This application was awarded a U.S. patent.
 
@@ -349,7 +349,7 @@ Using the Lynker messaging server I previously developed, I enhanced the Block I
 - **Role:** Lead Software Engineer
 - **Platforms:** Web
 - **Team:** Me + Game Development Team (content upgrades)
-- **Technologies:** Redux, Redux Saga, AngularJS, JavaScript, SCSS, PHP
+- **Technologies:** Redux, Redux Saga, AngularJS, JavaScript, CSS, PHP
 
 In six months, I rearchitected a significant portion of Tynker's Block Editor, the core of its educational platform, to address critical scalability and maintenance issues caused by years of rushed development under tight deadlines, which had left the legacy codebase cluttered with hardcoded elements and quick-fix hacks, making it difficult to scale and maintain.
 
@@ -965,7 +965,7 @@ I developed the entire application based on pre-existing specifications and deli
 - **Location:** New York · Remote 🌍
 - **Role:** Mobile Developer
 - **Platforms**: iOS (iPhone)
-- **Technologies:** Python, Flask, MongoDB, Objective-C, iOS, Heroku, Amazon Web Services
+- **Technologies:** Python, Flask, MongoDB, Objective-C, iOS, Heroku, AWS
 
 Discover Your City is a travel app for architecture enthusiasts, offering guided tours of buildings featuring various styles and designs.
 
@@ -1197,7 +1197,7 @@ The final product was successfully completed and deployed at the partner enterpr
 - **Start:** 2006
 - **Client:** Me
 - **Location:** Porto, Portugal
-- **Technologies:** C#, SQL Server, Neural Networks
+- **Technologies:** C#, SQL Server
 
 Nihonaid is a tool I developed to assist with learning Japanese, specifically for memorizing the Kanji character set.
 
