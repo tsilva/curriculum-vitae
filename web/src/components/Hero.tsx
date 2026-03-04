@@ -151,7 +151,7 @@ export function Hero() {
         <span className="text-steel">THREAT: <span className={`transition-colors duration-300 ${threat === 'NONE' ? 'text-kiroshi-yellow/80' : threat === 'LOW' ? 'text-kiroshi-yellow' : 'text-kiroshi-red'}`}>{threat}</span></span>
         <span className="text-kiroshi-red/40 mt-1">────────</span>
         <span className="text-steel">AFFIL: <span className="text-cyan/80">CORPO</span></span>
-        <span className="text-steel">NET: <span className="text-cyan/80">LINKED</span></span>
+        <span className="text-steel">NET: <span className="text-cyan/80">{process.env.GIT_COMMIT_HASH?.toUpperCase() || "LINKED"}</span></span>
         <span className="text-steel">ICE: <span className={`transition-colors duration-300 ${ice === 'CLEAN' ? 'text-kiroshi-yellow/80' : 'text-cyan'}`}>{ice}</span></span>
       </div>
 
