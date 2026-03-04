@@ -5,21 +5,16 @@
   --color-cyan: #00FFF0;
   --color-magenta: #FF00AA;
   --color-neon-green: #00FF41;
-  --color-neon-yellow: #FFE000;
+  /* Kiroshi optics palette */
+  --color-kiroshi-red: #E8003F;
+  --color-kiroshi-yellow: #f3e600;
+  --color-kiroshi-cyan: #55ead4;
   --color-base: #0A0A12;
   --color-base-light: #0F0F1A;
   --color-surface: #111827;
-  --color-surface-hover: #1A2035;
   --color-cool-white: #E8F4FF;
   --color-steel: #7B8FA6;
   --color-steel-dim: #5A6E84;
-
-  /* Legacy aliases — existing Tailwind classes auto-inherit */
-  --color-amber: #00FFF0;
-  --color-amber-dim: #00CCC0;
-  --color-warm-white: #E0F0FF;
-  --color-slate: #94A7BC;
-  --color-slate-dim: #5A6E84;
 
   /* Typography */
   --font-display: "Orbitron", sans-serif;
@@ -72,23 +67,23 @@
    ============================================ */
 @keyframes glitch {
   0% {
-    text-shadow: 2px 0 #00FFF0, -2px 0 #FF00AA;
+    text-shadow: 2px 0 #E8003F, -2px 0 #55ead4;
     transform: translate(0);
   }
   20% {
-    text-shadow: -4px 0 #00FFF0, 4px 0 #FF00AA;
+    text-shadow: -4px 0 #E8003F, 4px 0 #55ead4;
     transform: translate(-3px, 1px);
   }
   40% {
-    text-shadow: 4px 0 #00FFF0, -4px 0 #FF00AA;
+    text-shadow: 4px 0 #E8003F, -4px 0 #55ead4;
     transform: translate(3px, -2px);
   }
   60% {
-    text-shadow: -3px 0 #00FFF0, 3px 0 #FF00AA;
+    text-shadow: -3px 0 #E8003F, 3px 0 #55ead4;
     transform: translate(-2px, 2px);
   }
   80% {
-    text-shadow: 3px 0 #00FFF0, -3px 0 #FF00AA;
+    text-shadow: 3px 0 #E8003F, -3px 0 #55ead4;
     transform: translate(2px, -1px);
   }
   100% {
@@ -145,13 +140,13 @@
 }
 
 .glitch-text::before {
-  color: #00FFF0;
+  color: #E8003F;
   animation: glitch-rgb 3s infinite linear;
   opacity: 0.6;
 }
 
 .glitch-text::after {
-  color: #FF00AA;
+  color: #55ead4;
   animation: glitch-rgb 3s infinite linear reverse;
   opacity: 0.6;
 }
@@ -169,6 +164,14 @@
 
 .neon-glow-green {
   text-shadow: 0 0 7px #00FF41, 0 0 20px #00FF41, 0 0 40px #00FF41;
+}
+
+.neon-glow-kiroshi-yellow {
+  text-shadow: 0 0 10px rgba(243,230,0,0.3), 0 0 30px rgba(243,230,0,0.15);
+}
+
+.neon-glow-kiroshi-red {
+  text-shadow: 0 0 20px rgba(232,0,63,0.4), 0 0 50px rgba(232,0,63,0.15);
 }
 
 .neon-box-cyan {
