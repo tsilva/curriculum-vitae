@@ -171,7 +171,7 @@ export function Hero() {
       {/* Stats — yellow numbers like Kiroshi data readouts */}
       <div className="flex gap-10 md:gap-16">
         <CountUp end={20} suffix="+" label="Years" />
-        <CountUp end={60} suffix="+" label="Deployed" />
+        <CountUp end={60} suffix="+" label="Projects" />
         <CountUp end={100} suffix="M+" label="Users" />
       </div>
 
@@ -192,9 +192,9 @@ export function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 animate-bounce flex flex-col items-center gap-2">
-        <span className="font-[family-name:var(--font-mono)] text-xs text-kiroshi-red tracking-widest neon-glow-kiroshi-red">SCROLL</span>
-        <span className="text-kiroshi-red text-lg neon-glow-kiroshi-red">▼</span>
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 animate-bounce flex flex-col items-center gap-0.5">
+        <span className="font-[family-name:var(--font-mono)] text-xs text-kiroshi-red tracking-widest neon-glow-kiroshi-red drop-shadow-[0_2px_4px_rgba(232,0,63,0.5)]">SCROLL</span>
+        <span className="text-kiroshi-red text-lg neon-glow-kiroshi-red drop-shadow-[0_2px_4px_rgba(232,0,63,0.5)]">▼</span>
       </div>
     </section>
   );
