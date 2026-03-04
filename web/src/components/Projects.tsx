@@ -37,8 +37,8 @@ export function Projects({ projects, technologies }: ProjectsProps) {
   }, [filtered]);
 
   return (
-    <section id="projects" className="max-w-6xl mx-auto px-6 py-24">
-      <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-8 reveal">
+    <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
+      <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-10 reveal">
         <span className="text-magenta">&gt;</span> PROJECTS_DATABASE
       </h2>
 
@@ -48,7 +48,7 @@ export function Projects({ projects, technologies }: ProjectsProps) {
         onSelect={setSelectedTech}
       />
 
-      <div className="mt-4 font-[family-name:var(--font-mono)] text-sm text-steel">
+      <div className="mt-6 font-[family-name:var(--font-mono)] text-sm text-steel">
         <span className="text-steel-dim">//</span> Displaying {filtered.length} of {projects.length} records
       </div>
 

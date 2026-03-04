@@ -10,8 +10,8 @@ interface FilterBarProps {
 
 export function FilterBar({ technologies, selected, onSelect }: FilterBarProps) {
   return (
-    <div className="sticky top-0 z-30 bg-base/90 backdrop-blur-sm py-3 -mx-6 px-6 border-b border-cyan/10">
-      <div className="flex items-center gap-2 overflow-x-auto hide-scrollbar pb-1">
+    <div className="sticky top-0 z-30 bg-base/95 backdrop-blur-md py-4 -mx-6 px-6 border-y border-cyan/20 shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
+      <div className="flex items-center gap-3 overflow-x-auto hide-scrollbar pb-1">
         <span className="font-[family-name:var(--font-mono)] text-xs text-neon-green flex-shrink-0 animate-pulse">$</span>
         <span className="font-[family-name:var(--font-mono)] text-xs text-steel flex-shrink-0">filter --tech=</span>
         <TechBadge
