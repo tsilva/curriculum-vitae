@@ -25,8 +25,8 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
           {project.title}
         </h3>
           </div>
-          <span className="font-[family-name:var(--font-mono)] text-sm text-steel flex-shrink-0">
-            <span className="text-steel-dim">//</span> {project.start}
+          <span className="font-[family-name:var(--font-mono)] text-sm text-steel-dim flex-shrink-0">
+            <span className="text-cyan/70">//</span> {project.start}
           </span>
         </div>
 

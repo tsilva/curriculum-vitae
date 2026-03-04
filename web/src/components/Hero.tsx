@@ -37,7 +37,7 @@ const socialLinks = [
     url: "https://huggingface.co/tsilva",
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-        <path d="M12 1.5C6.201 1.5 1.5 6.201 1.5 12S6.201 22.5 12 22.5 22.5 17.799 22.5 12 17.799 1.5 12 1.5zm0 2c4.961 0 9 4.039 9 9s-4.039 9-9 9-9-4.039-9-9 4.039-9 9-9zm-2.5 6c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5zm5 0c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5zm-4 4.5c0 1.5 1.5 2.5 2 2.5s2-1 2-2.5-2-2.5-2-2.5-2 1-2 2.5z" />
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-3-8c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm6 0c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm-4.5 3c.83 0 1.5-.67 1.5-1.5S11.33 9 10.5 9 9 9.67 9 10.5s.67 1.5 1.5 1.5zm3 0c.83 0 1.5-.67 1.5-1.5S14.33 9 13.5 9 12 9.67 12 10.5s.67 1.5 1.5 1.5zm-3 2.5c1.38 0 2.5-1.12 2.5-2.5h-5c0 1.38 1.12 2.5 2.5 2.5z" />
       </svg>
     ),
   },
@@ -239,7 +239,7 @@ export function Hero() {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-steel hover:text-cyan transition-colors p-2 hover:shadow-[0_0_15px_rgba(0,230,230,0.2)] hover:scale-110 transform"
+            className="text-steel hover:text-cyan transition-all duration-300 p-2 rounded-sm hover:shadow-[0_0_20px_rgba(0,230,230,0.3),0_0_40px_rgba(0,230,230,0.15)] hover:scale-110 hover:bg-cyan/5 border border-transparent hover:border-cyan/30"
             title={link.label}
           >
             {link.icon}
