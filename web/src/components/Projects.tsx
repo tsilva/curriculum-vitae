@@ -37,7 +37,7 @@ export function Projects({ projects, technologies }: ProjectsProps) {
   }, [filtered]);
 
   return (
-    <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
+    <section id="projects" className="max-w-6xl mx-auto px-6 py-24">
       <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-8 reveal">
         <span className="text-magenta">&gt;</span> PROJECTS_DATABASE
       </h2>
@@ -48,14 +48,14 @@ export function Projects({ projects, technologies }: ProjectsProps) {
         onSelect={setSelectedTech}
       />
 
-      <div className="mt-4 font-[family-name:var(--font-mono)] text-xs text-steel">
+      <div className="mt-4 font-[family-name:var(--font-mono)] text-sm text-steel">
         <span className="text-steel-dim">//</span> Displaying {filtered.length} of {projects.length} records
       </div>
 
       <div 
         ref={gridRef} 
         key={filterKey}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8"
       >
         {filtered.map((project, index) => (
           <div 

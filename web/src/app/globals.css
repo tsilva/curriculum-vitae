@@ -1,30 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  /* Cyberpunk color palette */
-  --color-cyan: #00FFF0;
+  /* Cyberpunk color palette - consolidated */
+  --color-cyan: #00E6E6;
   --color-magenta: #FF00AA;
   --color-neon-green: #00FF41;
-  /* Kiroshi optics palette */
+  /* Kiroshi optics palette - using same cyan */
   --color-kiroshi-red: #E8003F;
   --color-kiroshi-yellow: #f3e600;
-  --color-kiroshi-cyan: #55ead4;
+  --color-kiroshi-cyan: #00E6E6;
   --color-base: #0A0A12;
   --color-base-light: #0F0F1A;
   --color-surface: #111827;
   --color-cool-white: #E8F4FF;
   --color-steel: #7B8FA6;
-  --color-steel-dim: #5A6E84;
+  --color-steel-dim: #7B8FA6;
 
   /* Typography */
   --font-display: "Orbitron", sans-serif;
   --font-body: "Share Tech Mono", monospace;
   --font-mono: "Fira Code", monospace;
-  --font-pixel: "Press Start 2P", monospace;
 }
 
 /* ============================================
-   SCANLINES + CRT VIGNETTE
+   SCANLINES + CRT VIGNETTE - reduced opacity
    ============================================ */
 .scanlines::after {
   content: "";
@@ -36,8 +35,8 @@
     0deg,
     transparent,
     transparent 2px,
-    rgba(0, 255, 240, 0.05) 2px,
-    rgba(0, 255, 240, 0.05) 4px
+    rgba(0, 230, 230, 0.02) 2px,
+    rgba(0, 230, 230, 0.02) 4px
   );
 }
 
@@ -47,16 +46,16 @@
   inset: 0;
   pointer-events: none;
   z-index: 49;
-  background: radial-gradient(ellipse at center, transparent 60%, rgba(0, 0, 0, 0.6) 100%);
+  background: radial-gradient(ellipse at center, transparent 60%, rgba(0, 0, 0, 0.4) 100%);
 }
 
 /* ============================================
-   DOT GRID (cyan instead of amber)
+   DOT GRID (cyan instead of amber) - more subtle
    ============================================ */
 .dot-grid {
   background-image: radial-gradient(
     circle,
-    rgba(0, 255, 240, 0.03) 1px,
+    rgba(0, 230, 230, 0.02) 1px,
     transparent 1px
   );
   background-size: 24px 24px;
@@ -142,40 +141,40 @@
 .glitch-text::before {
   color: #E8003F;
   animation: glitch-rgb 3s infinite linear;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .glitch-text::after {
-  color: #55ead4;
+  color: #00E6E6;
   animation: glitch-rgb 3s infinite linear reverse;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 /* ============================================
-   NEON GLOW UTILITIES
+   NEON GLOW UTILITIES - reduced intensity
    ============================================ */
 .neon-glow-cyan {
-  text-shadow: 0 0 7px #00FFF0, 0 0 20px #00FFF0, 0 0 40px #00FFF0;
+  text-shadow: 0 0 3px #00E6E6, 0 0 10px #00E6E6;
 }
 
 .neon-glow-magenta {
-  text-shadow: 0 0 7px #FF00AA, 0 0 20px #FF00AA, 0 0 40px #FF00AA;
+  text-shadow: 0 0 3px #FF00AA, 0 0 10px #FF00AA;
 }
 
 .neon-glow-green {
-  text-shadow: 0 0 7px #00FF41, 0 0 20px #00FF41, 0 0 40px #00FF41;
+  text-shadow: 0 0 3px #00FF41, 0 0 10px #00FF41;
 }
 
 .neon-glow-kiroshi-yellow {
-  text-shadow: 0 0 10px rgba(243,230,0,0.3), 0 0 30px rgba(243,230,0,0.15);
+  text-shadow: 0 0 5px rgba(243,230,0,0.2), 0 0 15px rgba(243,230,0,0.1);
 }
 
 .neon-glow-kiroshi-red {
-  text-shadow: 0 0 20px rgba(232,0,63,0.4), 0 0 50px rgba(232,0,63,0.15);
+  text-shadow: 0 0 10px rgba(232,0,63,0.3), 0 0 25px rgba(232,0,63,0.1);
 }
 
 .neon-box-cyan {
-  box-shadow: 0 0 7px #00FFF0, 0 0 20px rgba(0, 255, 240, 0.3), inset 0 0 7px rgba(0, 255, 240, 0.1);
+  box-shadow: 0 0 3px #00E6E6, 0 0 10px rgba(0, 230, 230, 0.2), inset 0 0 3px rgba(0, 230, 230, 0.1);
 }
 
 /* ============================================
@@ -188,7 +187,7 @@
 
 .terminal-cursor::after {
   content: "█";
-  color: #00FFF0;
+  color: #00E6E6;
   animation: cursor-blink 1s step-end infinite;
   margin-left: 2px;
 }
@@ -235,7 +234,7 @@
 }
 
 /* ============================================
-   GLOBAL STYLES
+   GLOBAL STYLES - no flicker
    ============================================ */
 html {
   scroll-behavior: smooth;
@@ -244,7 +243,6 @@ html {
 body {
   background-color: var(--color-base);
   color: var(--color-cool-white);
-  animation: flicker 4s infinite;
 }
 
 /* ============================================
@@ -259,12 +257,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00FFF033;
+  background: #00E6E633;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00FFF066;
+  background: #00E6E666;
 }
 
 /* ============================================
@@ -295,13 +293,13 @@ body {
 }
 
 /* ============================================
-   CARD GLOW — cyan neon on hover
+   CARD GLOW — cyan neon on hover - reduced intensity
    ============================================ */
 .card-glow {
   transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
 }
 .card-glow:hover {
-  box-shadow: 0 0 20px rgba(0, 255, 240, 0.15), 0 0 40px rgba(0, 255, 240, 0.05);
+  box-shadow: 0 0 15px rgba(0, 230, 230, 0.1), 0 0 30px rgba(0, 230, 230, 0.05);
   transform: translateY(-2px);
 }
 
@@ -371,7 +369,7 @@ body {
 
 .glitch-hover:hover {
   animation: glitch-hover 0.5s ease-in-out;
-  color: #00FFF0;
+  color: #00E6E6;
 }
 
 /* Active glitch state for GlitchText component */

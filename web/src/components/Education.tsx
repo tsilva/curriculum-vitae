@@ -6,8 +6,8 @@ interface EducationProps {
 
 export function Education({ entries }: EducationProps) {
   return (
-    <section id="education" className="max-w-6xl mx-auto px-6 py-20">
-      <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-10 reveal">
+    <section id="education" className="max-w-6xl mx-auto px-6 py-24 pb-32">
+      <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-12 reveal">
         <span className="text-magenta">&gt;</span> TRAINING_MODULES
       </h2>
 
@@ -20,7 +20,7 @@ export function Education({ entries }: EducationProps) {
             <div className="flex items-start gap-3 mb-3">
               <span className="text-2xl">{entry.emoji}</span>
               <div className="min-w-0">
-                <h3 className="font-[family-name:var(--font-display)] text-base font-bold text-cool-white">
+                <h3 className="font-[family-name:var(--font-display)] text-lg font-bold text-cool-white">
                   {entry.url ? (
                     <a
                       href={entry.url}
@@ -34,13 +34,13 @@ export function Education({ entries }: EducationProps) {
                     entry.institution
                   )}
                 </h3>
-                <div className="font-[family-name:var(--font-mono)] text-xs text-magenta mt-1">
+                <div className="font-[family-name:var(--font-mono)] text-sm text-magenta mt-1">
                   {entry.degree}
                 </div>
               </div>
             </div>
 
-            <div className="font-[family-name:var(--font-mono)] text-xs text-steel space-y-0.5">
+            <div className="font-[family-name:var(--font-mono)] text-sm text-steel space-y-1">
               <div>{entry.duration}</div>
               <div>Grade: {entry.grade}</div>
               <div>{entry.location}</div>
@@ -48,7 +48,7 @@ export function Education({ entries }: EducationProps) {
 
             {entry.description && (
               <p
-                className="text-sm text-cool-white/80 mt-3 leading-relaxed line-clamp-4 [&_a]:text-cyan [&_a]:hover:underline"
+                className="text-base text-cool-white/80 mt-4 leading-relaxed line-clamp-4 [&_a]:text-cyan [&_a]:hover:underline"
                 dangerouslySetInnerHTML={{ __html: entry.description.split("\n")[0] }}
               />
             )}
