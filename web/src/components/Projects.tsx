@@ -38,7 +38,7 @@ export function Projects({ projects, technologies }: ProjectsProps) {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
         {filtered.map((project) => (
-          <div key={project.id} className="reveal">
+          <div key={project.id} className="reveal h-full">
             <ProjectCard
               project={project}
               onClick={() => setModalProject(project)}

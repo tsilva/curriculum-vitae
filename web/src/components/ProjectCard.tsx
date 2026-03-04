@@ -10,7 +10,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
   return (
     <button
       onClick={onClick}
-      className="card-glow bg-surface border border-amber/10 rounded-xl p-5 text-left w-full cursor-pointer transition-all hover:border-amber/30 group"
+      className="card-glow bg-surface border border-amber/10 rounded-xl p-5 text-left w-full h-full cursor-pointer transition-all hover:border-amber/30 group flex flex-col"
     >
       <div className="flex items-start justify-between gap-2 mb-2">
         <div className="flex items-center gap-2 min-w-0">
@@ -29,7 +29,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
       </p>
 
       {project.technologies.length > 0 && (
-        <div className="flex flex-wrap gap-1">
+        <div className="flex flex-wrap gap-1 mt-auto">
           {project.technologies.slice(0, 5).map((tech) => (
             <TechBadge key={tech} name={tech} />
           ))}

@@ -15,7 +15,7 @@ export function Education({ entries }: EducationProps) {
         {entries.map((entry) => (
           <div
             key={entry.id}
-            className="card-glow bg-surface border border-amber/10 rounded-xl p-6 reveal"
+            className="card-glow bg-surface border border-amber/10 rounded-xl p-6 reveal h-full"
           >
             <div className="flex items-start gap-3 mb-3">
               <span className="text-2xl">{entry.emoji}</span>
