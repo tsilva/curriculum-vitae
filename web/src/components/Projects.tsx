@@ -3,6 +3,7 @@
 import { useState, useMemo, useEffect, useRef } from "react";
 import type { Project } from "@/types/cv";
 import { FilterBar } from "./FilterBar";
+import { TechBrowser } from "./TechBrowser";
 import { ProjectCard } from "./ProjectCard";
 import { ProjectModal } from "./ProjectModal";
 
@@ -12,29 +13,51 @@ interface ProjectsProps {
 }
 
 export function Projects({ projects, technologies }: ProjectsProps) {
-  const [selectedTech, setSelectedTech] = useState<string | null>(null);
+  const [selectedTechs, setSelectedTechs] = useState<string[]>([]);
+  const [isTechBrowserOpen, setIsTechBrowserOpen] = useState(false);
   const [modalProject, setModalProject] = useState<Project | null>(null);
   const [filterKey, setFilterKey] = useState(0); // Used to trigger re-animation
 
   const filtered = useMemo(() => {
-    if (!selectedTech) return projects;
-    return projects.filter((p) => p.technologies.includes(selectedTech));
-  }, [projects, selectedTech]);
+    if (selectedTechs.length === 0) return projects;
+    // OR logic: show projects that have ANY of the selected technologies
+    return projects.filter((p) =>
+      selectedTechs.some((tech) => p.technologies.includes(tech))
+    );
+  }, [projects, selectedTechs]);
 
   const gridRef = useRef<HTMLDivElement>(null);
 
   // Trigger re-animation when filter changes
   useEffect(() => {
-    setFilterKey(prev => prev + 1);
-  }, [selectedTech]);
+    setFilterKey((prev) => prev + 1);
+  }, [selectedTechs]);
 
   useEffect(() => {
     if (!gridRef.current) return;
     // Reveal all cards immediately when in view
-    gridRef.current.querySelectorAll('.reveal').forEach((el) => {
-      el.classList.add('visible');
+    gridRef.current.querySelectorAll(".reveal").forEach((el) => {
+      el.classList.add("visible");
     });
   }, [filtered]);
+
+  const handleTechSelect = (tech: string | null) => {
+    if (tech === null) {
+      // Clear all filters
+      setSelectedTechs([]);
+    } else {
+      // Toggle the technology
+      setSelectedTechs((prev) =>
+        prev.includes(tech) ? prev.filter((t) => t !== tech) : [...prev, tech]
+      );
+    }
+  };
+
+  const handleTechToggle = (tech: string) => {
+    setSelectedTechs((prev) =>
+      prev.includes(tech) ? prev.filter((t) => t !== tech) : [...prev, tech]
+    );
+  };
 
   return (
     <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
@@ -44,22 +67,30 @@ export function Projects({ projects, technologies }: ProjectsProps) {
 
       <FilterBar
         technologies={technologies}
-        selected={selectedTech}
-        onSelect={setSelectedTech}
+        selected={selectedTechs}
+        onSelect={handleTechSelect}
+        onBrowseAll={() => setIsTechBrowserOpen(true)}
       />
 
       <div className="mt-6 font-[family-name:var(--font-mono)] text-sm text-steel">
-        <span className="text-steel-dim">//</span> Displaying {filtered.length} of {projects.length} records
+        <span className="text-steel-dim">//</span> Displaying {filtered.length}{" "}
+        of {projects.length} records
+        {selectedTechs.length > 0 && (
+          <span className="text-cyan ml-2">
+            (matching {selectedTechs.length} filter
+            {selectedTechs.length > 1 ? "s" : ""})
+          </span>
+        )}
       </div>
 
-      <div 
-        ref={gridRef} 
+      <div
+        ref={gridRef}
         key={filterKey}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8"
       >
         {filtered.map((project, index) => (
-          <div 
-            key={project.id} 
+          <div
+            key={project.id}
             className="h-full"
             style={{
               animation: `stagger-fade-in 0.5s ease-out ${index * 0.05}s both`,
@@ -72,6 +103,15 @@ export function Projects({ projects, technologies }: ProjectsProps) {
           </div>
         ))}
       </div>
+
+      <TechBrowser
+        technologies={technologies}
+        selected={selectedTechs}
+        onToggle={handleTechToggle}
+        onClear={() => setSelectedTechs([])}
+        onClose={() => setIsTechBrowserOpen(false)}
+        isOpen={isTechBrowserOpen}
+      />
 
       <ProjectModal
         project={modalProject}

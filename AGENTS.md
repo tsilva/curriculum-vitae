@@ -61,13 +61,24 @@ npm run parse        # Only regenerate cv-data.json from README.md
 Use the `visual-inspection` skill to capture and analyze screenshots of the CV web app:
 
 ```bash
-# From repo root, use the full path:
+# Quick mode (default) - 2 devices for feature development
 ./.opencode/skills/visual-inspection/screenshot-fullpage.sh
+
+# Full mode - 6 devices for final audits
+./.opencode/skills/visual-inspection/screenshot-fullpage.sh --full
 ```
 
+**Two Modes:**
+- **Quick Mode (default)**: Tests 1 desktop (1920x1080) + 1 mobile (390x844)
+  - Use this for feature development and quick checks
+  - Covers the major layout breakpoints
+- **Full Mode (`--full`)**: Tests all 6 device layouts
+  - Use this for final audits before release
+  - Covers Desktop FHD (~9%), Laptop (~3.8%), Mobile Android (~6%), iPhone Std (~3-14%), iPhone Large (~5%), Tablet (~2%)
+
 **When to use:**
-- After making visual/design changes to verify the result
-- To check if the page looks correct before committing
+- **Quick mode**: After making visual/design changes during development
+- **Full mode**: Before committing major changes or releasing
 - For visual regression testing (capture before/after)
 - To analyze layout, styling, or content issues
 
@@ -84,9 +95,10 @@ After capturing, use the skill to read and analyze the screenshot. Focus on:
 **Example workflow:**
 1. Make changes to a component
 2. Ensure dev server is running (`cd web && npm run dev`)
-3. Capture full page: `./.opencode/skills/visual-inspection/screenshot-fullpage.sh`
-4. Analyze: Read `.visual-inspection-screenshots/full-page-screenshot.png` and describe what you see
+3. Capture screenshots: `./.opencode/skills/visual-inspection/screenshot-fullpage.sh`
+4. Analyze: Read files in `.visual-inspection-screenshots/*/full-page.png` and describe what you see
 5. Verify all sections (Hero, Experience, Projects, Education) look correct
+6. For final audit: Run with `--full` flag
 
 ### Data Pipeline
 The web app consumes CV data via a build-time pipeline:
