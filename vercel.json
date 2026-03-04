@@ -1,7 +1,6 @@
 {
   "buildCommand": "cd web && npm run build",
   "installCommand": "cd web && npm install",
-  "framework": "nextjs",
   "headers": [
     {
       "source": "/(.*)",
