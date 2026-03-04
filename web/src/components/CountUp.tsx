@@ -56,7 +56,7 @@ export function CountUp({ end, suffix = "", duration = 2000, label }: CountUpPro
 
   return (
     <div ref={ref} className="text-center">
-      <div className="font-[family-name:var(--font-mono)] text-[10px] text-kiroshi-red/60 mb-1 tracking-widest uppercase">
+      <div className="font-[family-name:var(--font-display)] text-[9px] font-bold text-kiroshi-red mb-1 tracking-[0.25em] uppercase neon-glow-kiroshi-red">
         {label}
       </div>
       <div

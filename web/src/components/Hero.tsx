@@ -75,7 +75,7 @@ export function Hero() {
         {/* Top HUD readout */}
         <div className="absolute -top-0.5 left-20 right-20 flex items-center gap-2">
           <div className="h-px flex-1 bg-kiroshi-red/20" />
-          <span className="font-[family-name:var(--font-mono)] text-[9px] text-kiroshi-red/70 tracking-[0.3em]">KIROSHI OPTICS MK.4</span>
+          <span className="font-[family-name:var(--font-display)] text-[9px] font-bold text-kiroshi-red tracking-[0.25em] neon-glow-kiroshi-red">KIROSHI OPTICS MK.4</span>
           <div className="h-px flex-1 bg-kiroshi-red/20" />
         </div>
 
@@ -110,7 +110,7 @@ export function Hero() {
       </div>
 
       {/* Scan status line */}
-      <div className="font-[family-name:var(--font-mono)] text-[10px] text-kiroshi-red/70 mb-2 tracking-[0.3em]">
+      <div className="font-[family-name:var(--font-display)] text-[9px] font-bold text-kiroshi-red mb-2 tracking-[0.3em] neon-glow-kiroshi-red">
         ◈ SCAN COMPLETE ◈
       </div>
 
