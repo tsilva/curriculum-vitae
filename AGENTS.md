@@ -141,7 +141,8 @@ When updating project information:
 
 ## Development Notes
 
-- This is a static documentation repository with no build process
-- The repository serves as the source for a GitHub Pages site (note CNAME file)
+- The repository contains both a static README-based CV and an interactive Next.js web app
+- The web app is statically exported and deployed to Vercel
 - Python scripts are utilities, not production code
-- No testing framework required (scripts are simple data extractors)
+- `parse-readme.ts` bridges the README and web app — changes to README.md project structure may require updating the parser
+- When modifying CV content, run `npm run parse` in `web/` to regenerate the JSON data
