@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { GlitchText } from "./GlitchText";
 import { CountUp } from "./CountUp";
 
@@ -51,22 +52,55 @@ const socialLinks = [
   },
 ];
 
+// HUD data that updates randomly
+const THREAT_LEVELS = ["NONE", "LOW", "MONITOR"];
+const ICE_STATUS = ["CLEAN", "SCANNING", "VERIFIED"];
+const STOCK_LEVELS = ["FULL", "98%", "NOMINAL"];
+
 export function Hero() {
+  const [isHovered, setIsHovered] = useState(false);
+  const [threat, setThreat] = useState("NONE");
+  const [ice, setIce] = useState("CLEAN");
+  const [stock, setStock] = useState("FULL");
+  const [hp, setHp] = useState(8);
+
+  // Randomize HUD data periodically
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (Math.random() > 0.7) {
+        setThreat(THREAT_LEVELS[Math.floor(Math.random() * THREAT_LEVELS.length)]);
+      }
+      if (Math.random() > 0.6) {
+        setIce(ICE_STATUS[Math.floor(Math.random() * ICE_STATUS.length)]);
+      }
+      if (Math.random() > 0.5) {
+        setStock(STOCK_LEVELS[Math.floor(Math.random() * STOCK_LEVELS.length)]);
+      }
+      setHp(Math.floor(Math.random() * 3) + 6); // 6-8 HP blocks
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section
       id="hero"
       className="min-h-screen flex flex-col items-center justify-center px-6 relative overflow-hidden"
     >
-      {/* Kiroshi scan frame — red corner brackets */}
-      <div className="absolute inset-8 md:inset-16 pointer-events-none">
+      {/* Kiroshi scan frame — red corner brackets with interactive pulse */}
+      <div 
+        className={`absolute inset-8 md:inset-16 pointer-events-none transition-all duration-500 ${isHovered ? 'scale-[1.02]' : ''}`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         {/* Top-left */}
-        <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-kiroshi-red/60" />
+        <div className={`absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-kiroshi-red/60 transition-all duration-300 ${isHovered ? 'border-kiroshi-red shadow-[0_0_15px_rgba(232,0,63,0.4)]' : ''}`} />
         {/* Top-right */}
-        <div className="absolute top-0 right-0 w-16 h-16 border-t-2 border-r-2 border-kiroshi-red/60" />
+        <div className={`absolute top-0 right-0 w-16 h-16 border-t-2 border-r-2 border-kiroshi-red/60 transition-all duration-300 ${isHovered ? 'border-kiroshi-red shadow-[0_0_15px_rgba(232,0,63,0.4)]' : ''}`} />
         {/* Bottom-left */}
-        <div className="absolute bottom-0 left-0 w-16 h-16 border-b-2 border-l-2 border-kiroshi-red/60" />
+        <div className={`absolute bottom-0 left-0 w-16 h-16 border-b-2 border-l-2 border-kiroshi-red/60 transition-all duration-300 ${isHovered ? 'border-kiroshi-red shadow-[0_0_15px_rgba(232,0,63,0.4)]' : ''}`} />
         {/* Bottom-right */}
-        <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-kiroshi-red/60" />
+        <div className={`absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-kiroshi-red/60 transition-all duration-300 ${isHovered ? 'border-kiroshi-red shadow-[0_0_15px_rgba(232,0,63,0.4)]' : ''}`} />
 
         {/* Small inner tick marks */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-6 h-3 border-l border-r border-t border-kiroshi-red/40" />
@@ -75,7 +109,7 @@ export function Hero() {
         {/* Top HUD readout */}
         <div className="absolute -top-0.5 left-20 right-20 flex items-center gap-2">
           <div className="h-px flex-1 bg-kiroshi-red/20" />
-          <span className="font-[family-name:var(--font-display)] text-[9px] font-bold text-kiroshi-red tracking-[0.25em] neon-glow-kiroshi-red">KIROSHI OPTICS MK.4</span>
+          <span className={`font-[family-name:var(--font-display)] text-[9px] font-bold text-kiroshi-red tracking-[0.25em] neon-glow-kiroshi-red transition-all duration-300 ${isHovered ? 'text-kiroshi-yellow' : ''}`}>KIROSHI OPTICS MK.4</span>
           <div className="h-px flex-1 bg-kiroshi-red/20" />
         </div>
 
@@ -89,24 +123,24 @@ export function Hero() {
 
       {/* Left-side HUD data panel */}
       <div className="absolute left-4 md:left-20 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-1.5 font-[family-name:var(--font-mono)] text-[9px]">
-        <span className="text-kiroshi-red/60">■ SCAN ACTIVE</span>
+        <span className="text-kiroshi-red/60 animate-pulse">■ SCAN ACTIVE</span>
         <span className="text-steel">ID: <span className="text-kiroshi-yellow/80">TSV-1984</span></span>
         <span className="text-steel">CLASS: <span className="text-kiroshi-cyan/80">ENGINEER</span></span>
-        <span className="text-steel">THREAT: <span className="text-kiroshi-yellow/80">NONE</span></span>
+        <span className="text-steel">THREAT: <span className={`transition-colors duration-300 ${threat === 'NONE' ? 'text-kiroshi-yellow/80' : threat === 'LOW' ? 'text-kiroshi-yellow' : 'text-kiroshi-red'}`}>{threat}</span></span>
         <span className="text-kiroshi-red/40 mt-1">────────</span>
         <span className="text-steel">AFFIL: <span className="text-kiroshi-cyan/80">CORPO</span></span>
         <span className="text-steel">NET: <span className="text-kiroshi-cyan/80">LINKED</span></span>
-        <span className="text-steel">ICE: <span className="text-kiroshi-yellow/80">CLEAN</span></span>
+        <span className="text-steel">ICE: <span className={`transition-colors duration-300 ${ice === 'CLEAN' ? 'text-kiroshi-yellow/80' : 'text-kiroshi-cyan'}`}>{ice}</span></span>
       </div>
 
       {/* Right-side HUD data panel */}
       <div className="absolute right-4 md:right-20 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-1.5 font-[family-name:var(--font-mono)] text-[9px] text-right">
-        <span className="text-kiroshi-red/60">REC ●</span>
+        <span className="text-kiroshi-red/60 animate-pulse">REC ●</span>
         <span className="text-steel">LAT: <span className="text-kiroshi-yellow/80">38.7223</span></span>
         <span className="text-steel">LON: <span className="text-kiroshi-yellow/80">-9.1393</span></span>
         <span className="text-kiroshi-red/40 mt-1">────────</span>
-        <span className="text-steel">STK: <span className="text-kiroshi-cyan/80">FULL</span></span>
-        <span className="text-steel">HP: <span className="text-kiroshi-cyan/80">████████</span></span>
+        <span className="text-steel">STK: <span className="text-kiroshi-cyan/80">{stock}</span></span>
+        <span className="text-steel">HP: <span className="text-kiroshi-cyan/80">{Array(hp).fill('█').join('')}</span><span className="text-kiroshi-red/40">{Array(8-hp).fill('░').join('')}</span></span>
       </div>
 
       {/* Scan status line */}
@@ -120,8 +154,12 @@ export function Hero() {
       </div>
 
       {/* Avatar — Kiroshi scan target */}
-      <div className="relative mb-4">
-        <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-2 border-kiroshi-red/60 shadow-[0_0_20px_rgba(232,0,63,0.3)]">
+      <div 
+        className="relative mb-4 cursor-pointer group"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <div className={`w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-2 border-kiroshi-red/60 shadow-[0_0_20px_rgba(232,0,63,0.3)] transition-all duration-300 ${isHovered ? 'border-kiroshi-red shadow-[0_0_30px_rgba(232,0,63,0.5)]' : ''}`}>
           <img
             src="/avatar.jpg"
             alt="Tiago Silva"
@@ -138,11 +176,11 @@ export function Hero() {
           />
           {/* Sweeping scan bar */}
           <div className="absolute inset-0 pointer-events-none overflow-hidden">
-            <div className="absolute left-0 right-0 h-8 animate-[scan_3s_ease-in-out_infinite] bg-gradient-to-b from-transparent via-kiroshi-red/15 to-transparent" />
+            <div className={`absolute left-0 right-0 h-8 animate-[scan_3s_ease-in-out_infinite] bg-gradient-to-b from-transparent via-kiroshi-red/15 to-transparent transition-all duration-300 ${isHovered ? 'via-kiroshi-red/30' : ''}`} />
           </div>
         </div>
         {/* Kiroshi scan ring */}
-        <div className="absolute inset-0 rounded-full border border-kiroshi-red/30 animate-pulse" />
+        <div className={`absolute inset-0 rounded-full border transition-all duration-300 ${isHovered ? 'border-kiroshi-red border-2 shadow-[0_0_20px_rgba(232,0,63,0.5)] animate-pulse' : 'border-kiroshi-red/30'}`} />
       </div>
 
       {/* Name — white with red glow like the Kiroshi target name */}
@@ -183,7 +221,7 @@ export function Hero() {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-steel hover:text-kiroshi-cyan transition-colors p-2 hover:shadow-[0_0_10px_rgba(85,234,212,0.2)]"
+            className="text-steel hover:text-kiroshi-cyan transition-colors p-2 hover:shadow-[0_0_15px_rgba(85,234,212,0.3)] hover:scale-110 transform"
             title={link.label}
           >
             {link.icon}
