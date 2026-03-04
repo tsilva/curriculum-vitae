@@ -75,7 +75,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           {/* Narrative */}
           <div className="text-warm-white/90 leading-relaxed text-sm space-y-3">
             {project.narrative.split("\n\n").map((para, i) => (
-              <p key={i}>{para}</p>
+              <p key={i} className="[&_a]:text-amber [&_a]:hover:underline" dangerouslySetInnerHTML={{ __html: para }} />
             ))}
           </div>
 
