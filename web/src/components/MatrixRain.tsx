@@ -47,6 +47,8 @@ export function MatrixRain() {
     let animId: number;
     let lastFrame = 0;
     const frameInterval = 1000 / FPS;
+    let columns = 0;
+    let drops: number[] = [];
 
     const resize = () => {
       // Don't resize on mobile (when canvas is hidden via hidden md:block)
@@ -57,13 +59,14 @@ export function MatrixRain() {
       }
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+      
+      // Recalculate columns and reset drops array on resize
+      columns = Math.floor(canvas.width / FONT_SIZE);
+      drops = new Array(columns).fill(0).map(() => Math.random() * -100);
     };
 
     resize();
     window.addEventListener("resize", resize);
-
-    const columns = Math.floor(canvas.width / FONT_SIZE);
-    const drops: number[] = new Array(columns).fill(0).map(() => Math.random() * -100);
 
     const draw = (timestamp: number) => {
       animId = requestAnimationFrame(draw);
