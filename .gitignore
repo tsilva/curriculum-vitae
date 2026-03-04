@@ -49,6 +49,7 @@ logs/
 
 # Project-specific rules
 .claude/
+.opencode/
 
 # Next.js
 web/.next/
