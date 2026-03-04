@@ -138,7 +138,7 @@
       "description": "As a co-founder of Hive Solutions, I took on a variety of roles, as is common for startup founders. While my primary role was Lead Software Engineer, I also handled tasks related to sales, marketing and recruitment when needed.\n\nWe initially set out to build a SaaS Retail POS system called *[Frontdoor](#-frontdoor)*, which we developed entirely from scratch, using a tech stack fully built in-house. Although it was a technical success, it didn’t achieve commercial success. We eventually pivoted to software consulting, where we shipped a diverse range of projects for numerous clients.",
       "projectIds": [
         "kaboom",
-        "lugar-da-jia",
+        "lugar-da-joia",
         "windows-dev-center-app-middleware-partners",
         "myswear-harrods-holographic-pyramid",
         "myswear-online-store",
@@ -866,14 +866,14 @@
           "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v006-Coding Cup by Tynker_tvai.mp4"
         },
         {
+          "filename": "v006-Coding Cup by Tynker_tvai.retry.mp4",
+          "type": "video",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v006-Coding Cup by Tynker_tvai.retry.mp4"
+        },
+        {
           "filename": "v007-lab - 2.mp4",
           "type": "video",
           "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v007-lab - 2.mp4"
-        },
-        {
-          "filename": "v007-lab - 2.retry.mp4",
-          "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v007-lab - 2.retry.mp4"
         },
         {
           "filename": "v008-testimonial - teacher - linda kurtz.mp4",
@@ -2722,7 +2722,7 @@
       ]
     },
     {
-      "id": "lugar-da-jia",
+      "id": "lugar-da-joia",
       "emoji": "💍",
       "title": "Lugar da Jóia",
       "tldr": "Online Jewellery Store",
@@ -2750,6 +2750,43 @@
         {
           "label": "Landing Page",
           "url": "https://www.lugardajoia.com/index"
+        }
+      ],
+      "gallery": [
+        {
+          "filename": "001-Screen Shot 2016-06-28 at 19.25.40.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/001-Screen Shot 2016-06-28 at 19.25.40.webp"
+        },
+        {
+          "filename": "002-Screen Shot 2016-06-28 at 19.25.57.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/002-Screen Shot 2016-06-28 at 19.25.57.webp"
+        },
+        {
+          "filename": "003-Screen Shot 2016-06-28 at 19.26.18.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/003-Screen Shot 2016-06-28 at 19.26.18.webp"
+        },
+        {
+          "filename": "004-Screen Shot 2016-06-28 at 19.29.35.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/004-Screen Shot 2016-06-28 at 19.29.35.webp"
+        },
+        {
+          "filename": "005-03.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/005-03.webp"
+        },
+        {
+          "filename": "006-21.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/006-21.webp"
+        },
+        {
+          "filename": "007-20.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/007-20.webp"
         }
       ]
     },
