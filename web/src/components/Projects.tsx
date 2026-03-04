@@ -20,6 +20,12 @@ export function Projects({ projects, technologies }: ProjectsProps) {
   const [galleryModalProject, setGalleryModalProject] = useState<Project | null>(null);
   const [filterKey, setFilterKey] = useState(0); // Used to trigger re-animation
 
+  // Debug: Log projects with galleries
+  useEffect(() => {
+    const withGalleries = projects.filter(p => p.gallery && p.gallery.length > 0);
+    console.log(`Projects with galleries: ${withGalleries.length}`, withGalleries.map(p => p.id));
+  }, [projects]);
+
   const filtered = useMemo(() => {
     if (selectedTechs.length === 0) return projects;
     // OR logic: show projects that have ANY of the selected technologies
