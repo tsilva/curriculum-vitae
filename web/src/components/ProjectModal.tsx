@@ -36,9 +36,9 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="bg-base-light border border-cyan/20 rounded-sm w-full max-w-2xl max-h-[85vh] overflow-y-auto shadow-[0_0_30px_rgba(0,230,230,0.1),0_0_60px_rgba(0,230,230,0.05)]">
+      <div className="bg-base-light border border-cyan/20 rounded-sm w-full h-[95vh] md:h-auto md:max-w-2xl md:max-h-[85vh] overflow-y-auto shadow-[0_0_30px_rgba(0,230,230,0.1),0_0_60px_rgba(0,230,230,0.05)]">
         {/* Terminal window chrome */}
-        <div className="sticky top-0 bg-base-light/95 backdrop-blur border-b border-cyan/10 px-6 py-4 flex items-center justify-between">
+        <div className="sticky top-0 bg-base-light/95 backdrop-blur border-b border-cyan/10 px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <div className="flex items-center gap-3 min-w-0">
             {/* Terminal dots */}
             <div className="flex gap-1.5 flex-shrink-0">
@@ -59,7 +59,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
         </div>
 
         {/* Body */}
-        <div className="px-6 py-6 space-y-6">
+        <div className="px-4 py-4 md:px-6 md:py-6 space-y-6">
           {/* Section: Meta Data */}
           <div className="space-y-4">
             <div className="flex items-center gap-2 mb-2">
