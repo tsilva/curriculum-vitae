@@ -39,7 +39,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             {/* Terminal dots */}
             <div className="flex gap-1.5 flex-shrink-0">
               <span className="w-2.5 h-2.5 rounded-full bg-magenta/80" />
-              <span className="w-2.5 h-2.5 rounded-full bg-neon-yellow/80" />
+              <span className="w-2.5 h-2.5 rounded-full bg-kiroshi-yellow/80" />
               <span className="w-2.5 h-2.5 rounded-full bg-neon-green/80" />
             </div>
             <h2 className="font-[family-name:var(--font-display)] text-sm font-bold text-cool-white truncate">
@@ -57,7 +57,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
         {/* Body */}
         <div className="px-6 py-5 space-y-5">
           {/* Meta row */}
-          <div className="font-[family-name:var(--font-mono)] text-xs text-slate space-y-1.5">
+          <div className="font-[family-name:var(--font-mono)] text-xs text-steel space-y-1.5">
             {project.start && <div><span className="text-neon-green">year:</span> {project.start}</div>}
             {project.client && <div><span className="text-neon-green">client:</span> {project.client}</div>}
             {project.role && <div><span className="text-neon-green">role:</span> {project.role}</div>}
