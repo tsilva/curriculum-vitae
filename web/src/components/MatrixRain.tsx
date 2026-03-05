@@ -4,11 +4,17 @@ import { useEffect, useRef } from "react";
 
 const CHARS = "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEF";
 const FONT_SIZE = 14;
-const FPS = 8; // Reduced from 12 to 8 FPS
+const FPS = 12;
 
-// Kiroshi cyan at 30% opacity (full), 6% opacity (dimmed)
-const DROP_COLOR_FULL = "#55ead44d";
-const DROP_COLOR_DIMMED = "#55ead40f";
+const COLOR_FULL = "#55ead4";
+const COLOR_DIMMED = "rgba(85, 234, 212, 0.3)";
+
+interface Stream {
+  col: number;
+  row: number;
+  speed: number;
+  counter: number;
+}
 
 export function MatrixRain() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -17,13 +23,11 @@ export function MatrixRain() {
   const animIdRef = useRef<number | undefined>(undefined);
 
   useEffect(() => {
-    // Disable on mobile/touch devices
     if (window.matchMedia("(pointer: coarse)").matches) return;
     
     const handleScroll = () => {
       const heroHeight = window.innerHeight;
       const scrollY = window.scrollY;
-      // Consider "in hero" if within first 50% of viewport
       isInHeroRef.current = scrollY < heroHeight * 0.5;
     };
 
@@ -37,26 +41,23 @@ export function MatrixRain() {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    // Disable on mobile/touch devices
     if (window.matchMedia("(pointer: coarse)").matches) return;
-    
-    // Respect reduced motion
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    const ctx = canvas.getContext("2d", { alpha: true }); // Optimize for transparency
+    const ctx = canvas.getContext("2d", { alpha: true });
     if (!ctx) return;
 
     let lastFrame = 0;
     const frameInterval = 1000 / FPS;
-    let columns = 0;
-    let drops: number[] = [];
+    let cols = 0;
+    let rows = 0;
+    let grid: (string | null)[][] = [];
+    let streams: Stream[] = [];
     let resizeTimeout: NodeJS.Timeout;
 
     const resize = () => {
-      // Debounce resize
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(() => {
-        // Don't resize on mobile (when canvas is hidden via hidden md:block)
         if (window.innerWidth < 768) {
           canvas.width = 0;
           canvas.height = 0;
@@ -65,16 +66,29 @@ export function MatrixRain() {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
         
-        // Recalculate columns and reset drops array on resize
-        columns = Math.floor(canvas.width / FONT_SIZE);
-        drops = new Array(columns).fill(0).map(() => Math.random() * -100);
+        cols = Math.floor(canvas.width / FONT_SIZE);
+        rows = Math.floor(canvas.height / FONT_SIZE);
+        
+        // Initialize empty grid
+        grid = Array(rows).fill(null).map(() => Array(cols).fill(null));
+        
+        // Create streams - about 30% of columns have active streams
+        const numStreams = Math.floor(cols * 0.3);
+        streams = [];
+        for (let i = 0; i < numStreams; i++) {
+          streams.push({
+            col: Math.floor(Math.random() * cols),
+            row: Math.floor(Math.random() * -rows), // Start above viewport
+            speed: Math.floor(Math.random() * 2) + 1, // 1-2 cells per frame
+            counter: 0
+          });
+        }
       }, 100);
     };
 
     resize();
     window.addEventListener("resize", resize, { passive: true });
 
-    // IntersectionObserver to pause when not visible
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -88,30 +102,64 @@ export function MatrixRain() {
     const draw = (timestamp: number) => {
       animIdRef.current = requestAnimationFrame(draw);
 
-      // Skip frames when not visible or tab hidden
       if (!isVisibleRef.current || document.hidden) return;
       if (timestamp - lastFrame < frameInterval) return;
       lastFrame = timestamp;
 
-      ctx.fillStyle = "rgba(10, 10, 18, 0.08)";
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      // Clear entire canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Use dimmed color when not in hero, full color when in hero
-      ctx.fillStyle = isInHeroRef.current ? DROP_COLOR_FULL : DROP_COLOR_DIMMED;
-      ctx.font = `${FONT_SIZE}px monospace`;
-
-      // Only render every 3rd column for performance (sparse effect)
-      for (let i = 0; i < drops.length; i += 2) {
-        const char = CHARS[Math.floor(Math.random() * CHARS.length)];
-        const x = i * FONT_SIZE;
-        const y = drops[i] * FONT_SIZE;
-
-        ctx.fillText(char, x, y);
-
-        if (y > canvas.height && Math.random() > 0.975) {
-          drops[i] = 0;
+      // Update streams and grid
+      for (const stream of streams) {
+        stream.counter++;
+        if (stream.counter >= stream.speed) {
+          stream.counter = 0;
+          
+          // Clear previous cell if within bounds
+          if (stream.row >= 0 && stream.row < rows) {
+            // Character stays until overwritten by another stream or cleared
+          }
+          
+          // Move down
+          stream.row++;
+          
+          // Place new character if within bounds
+          if (stream.row >= 0 && stream.row < rows) {
+            grid[stream.row][stream.col] = CHARS[Math.floor(Math.random() * CHARS.length)];
+          }
+          
+          // Reset stream when it goes off bottom
+          if (stream.row > rows + 10) {
+            stream.row = Math.floor(Math.random() * -20) - 5;
+            stream.col = Math.floor(Math.random() * cols);
+            stream.speed = Math.floor(Math.random() * 2) + 1;
+          }
         }
-        drops[i]++;
+      }
+
+      // Clear cells that have no active stream (fade effect)
+      // Only clear a few random cells per frame for persistence
+      const cellsToClear = Math.floor(cols * rows * 0.005); // 0.5% of cells per frame
+      for (let i = 0; i < cellsToClear; i++) {
+        const clearRow = Math.floor(Math.random() * rows);
+        const clearCol = Math.floor(Math.random() * cols);
+        grid[clearRow][clearCol] = null;
+      }
+
+      // Draw all non-null cells
+      ctx.font = `${FONT_SIZE}px monospace`;
+      ctx.textBaseline = "top";
+      
+      const baseColor = isInHeroRef.current ? COLOR_FULL : COLOR_DIMMED;
+      
+      for (let row = 0; row < rows; row++) {
+        for (let col = 0; col < cols; col++) {
+          const char = grid[row][col];
+          if (char) {
+            ctx.fillStyle = baseColor;
+            ctx.fillText(char, col * FONT_SIZE, row * FONT_SIZE);
+          }
+        }
       }
     };
 

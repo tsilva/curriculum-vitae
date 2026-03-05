@@ -10,6 +10,7 @@ interface GalleryMedia {
   filename: string;
   type: 'image' | 'video';
   path: string;
+  thumbnail?: string;
 }
 
 interface Project {
@@ -308,10 +309,15 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
         const isVideo = ['.mp4', '.mov', '.mkv', '.avi', '.webm'].includes(ext);
         
         if (isImage || isVideo) {
+          // For videos, check if there's a corresponding thumbnail
+          const thumbFilename = path.basename(filename, ext) + '.thumb.webp';
+          const hasThumbnail = (files as string[]).includes(thumbFilename);
+          
           media.push({
             filename,
             type: isImage ? 'image' : 'video',
-            path: `${baseUrl}/${projectId}/${filename}`
+            path: `${baseUrl}/${projectId}/${filename}`,
+            thumbnail: isVideo && hasThumbnail ? `${baseUrl}/${projectId}/${thumbFilename}` : undefined
           });
         }
       }
@@ -350,11 +356,19 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
       const isImage = ['.webp', '.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg'].includes(ext);
       const isVideo = ['.mp4', '.mov', '.mkv', '.avi', '.webm'].includes(ext);
       
+      // Skip thumbnail files (they are associated with videos)
+      if (filename.endsWith('.thumb.webp')) continue;
+      
       if (isImage || isVideo) {
+        // For videos, check if there's a corresponding thumbnail
+        const thumbFilename = path.basename(filename, ext) + '.thumb.webp';
+        const hasThumbnail = files.includes(thumbFilename);
+        
         media.push({
           filename,
           type: isImage ? 'image' : 'video',
-          path: `${baseUrl}/${entry.name}/${filename}`
+          path: `${baseUrl}/${entry.name}/${filename}`,
+          thumbnail: isVideo && hasThumbnail ? `${baseUrl}/${entry.name}/${thumbFilename}` : undefined
         });
         mediaFiles.push(filename);
       }
