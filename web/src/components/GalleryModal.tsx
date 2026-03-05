@@ -16,7 +16,6 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [showControls, setShowControls] = useState(true);
-  const [showThumbnails, setShowThumbnails] = useState(true);
   const controlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -104,8 +103,6 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
         setViewMode('lightbox');
       } else if (e.key === 'f' || e.key === 'F') {
         toggleFullscreen();
-      } else if (e.key === 't' || e.key === 'T') {
-        setShowThumbnails(prev => !prev);
       }
     };
 
@@ -271,26 +268,6 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
                   ) : (
                     <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
                   )}
-                </svg>
-              </button>
-            )}
-
-            {/* Thumbnail toggle - only in lightbox */}
-            {viewMode === 'lightbox' && (
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setShowThumbnails(prev => !prev);
-                }}
-                className={`hidden md:flex px-2 md:px-3 py-1.5 rounded-sm text-sm font-[family-name:var(--font-mono)] transition-colors border ${
-                  showThumbnails 
-                    ? 'bg-cyan/20 text-cyan border-cyan/40' 
-                    : 'text-steel hover:text-cyan border-steel/30 hover:border-cyan/40'
-                }`}
-                title="Toggle thumbnails (T)"
-              >
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M4 6h4v2H4zm0 5h4v2H4zm0 5h4v2H4zm6-10h10v2H10zm0 5h10v2H10zm0 5h10v2H10z"/>
                 </svg>
               </button>
             )}
@@ -483,103 +460,6 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
               <div 
                 className={`transition-all duration-300 ${showControls ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full pointer-events-none'}`}
               >
-                {/* Info bar */}
-                <div className="px-4 py-2 md:py-3 bg-gradient-to-t from-black/90 to-transparent">
-                  <div className="flex items-center justify-between max-w-4xl mx-auto">
-                    <p className="font-[family-name:var(--font-mono)] text-sm text-steel truncate flex-1 mr-4">
-                      {currentMedia?.filename}
-                    </p>
-                    
-                    <div className="flex items-center gap-2 md:gap-4 flex-shrink-0">
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          navigatePrev();
-                        }}
-                        className="md:hidden font-[family-name:var(--font-mono)] text-xs text-steel hover:text-cyan transition-colors px-2 py-1 border border-steel/30 rounded-sm"
-                        disabled={gallery.length <= 1}
-                      >
-                        &lt;
-                      </button>
-                      
-                      <span className="font-[family-name:var(--font-mono)] text-cyan text-sm">
-                        {currentIndex + 1} / {gallery.length}
-                      </span>
-                      
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          navigateNext();
-                        }}
-                        className="md:hidden font-[family-name:var(--font-mono)] text-xs text-steel hover:text-cyan transition-colors px-2 py-1 border border-steel/30 rounded-sm"
-                        disabled={gallery.length <= 1}
-                      >
-                        &gt;
-                      </button>
-
-                      {/* Desktop nav buttons */}
-                      <div className="hidden md:flex items-center gap-2">
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            navigatePrev();
-                          }}
-                          className="font-[family-name:var(--font-mono)] text-xs text-steel hover:text-cyan transition-colors px-2 py-1 border border-steel/30 hover:border-cyan/40 rounded-sm"
-                          disabled={gallery.length <= 1}
-                        >
-                          &lt; PREV
-                        </button>
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            navigateNext();
-                          }}
-                          className="font-[family-name:var(--font-mono)] text-xs text-steel hover:text-cyan transition-colors px-2 py-1 border border-steel/30 hover:border-cyan/40 rounded-sm"
-                          disabled={gallery.length <= 1}
-                        >
-                          NEXT &gt;
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Thumbnail strip - toggleable */}
-                {showThumbnails && (
-                  <div className="px-4 py-2 bg-black/80 border-t border-cyan/10">
-                    <div className="flex gap-2 overflow-x-auto max-w-full pb-2 scrollbar-thin scrollbar-thumb-cyan/30 scrollbar-track-transparent">
-                      {gallery.map((media, index) => (
-                        <button
-                          key={media.filename}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setCurrentIndex(index);
-                          }}
-                          className={`flex-shrink-0 w-14 h-14 md:w-16 md:h-16 border rounded-sm overflow-hidden transition-all ${
-                            index === currentIndex
-                              ? 'border-cyan shadow-[0_0_10px_rgba(0,230,230,0.3)]'
-                              : 'border-cyan/20 hover:border-cyan/50'
-                          }`}
-                        >
-                          {media.type === 'image' ? (
-                            <img
-                              src={media.path}
-                              alt=""
-                              className="w-full h-full object-cover"
-                            />
-                          ) : (
-                            <div className="w-full h-full flex items-center justify-center bg-surface">
-                              <svg className="w-5 h-5 md:w-6 md:h-6 text-cyan/50" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z"/>
-                              </svg>
-                            </div>
-                          )}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
                 {/* Keyboard shortcuts hint */}
                 <div className="px-4 py-2 border-t border-cyan/10 bg-black/60">
                   <p className="font-[family-name:var(--font-mono)] text-xs text-steel-dim text-center">
@@ -591,8 +471,6 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
                     <span className="hidden md:inline text-cyan">F</span>
                     <span className="md:hidden"> Toggle Controls</span>
                     <span className="hidden md:inline"> Fullscreen </span>
-                    <span className="mx-1 md:mx-2">|</span>
-                    <span className="text-cyan">T</span> Thumbnails
                     <span className="mx-1 md:mx-2">|</span>
                     <span className="text-cyan">ESC</span> {viewMode === 'lightbox' ? 'Back' : 'Close'}
                   </p>
