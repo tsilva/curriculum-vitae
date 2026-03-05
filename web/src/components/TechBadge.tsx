@@ -6,7 +6,7 @@ interface TechBadgeProps {
 
 export function TechBadge({ name, active = false, onClick }: TechBadgeProps) {
   const baseClasses =
-    "font-[family-name:var(--font-mono)] text-xs px-2.5 py-1 rounded-sm transition-all whitespace-nowrap border cursor-default";
+    "font-[family-name:var(--font-mono)] text-xs px-3 py-1.5 rounded-sm transition-all whitespace-nowrap border cursor-default flex items-center justify-center h-[30px] box-border";
 
   if (onClick) {
     return (
