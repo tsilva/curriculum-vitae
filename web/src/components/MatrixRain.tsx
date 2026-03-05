@@ -21,12 +21,12 @@ interface Stream {
   counter: number;
 }
 
-const MAX_AGE = 480; // Characters live for 40 seconds at 12 FPS
-const MAX_STREAMS_PERCENT = 0.15; // Only 15% of columns have streams (sparse)
-const SPAWN_DELAY_MIN = 60; // Minimum frames between stream spawns
-const SPAWN_DELAY_MAX = 180; // Maximum frames between stream spawns
-const STREAM_RESET_DELAY_MIN = -80; // Start way above
-const STREAM_RESET_DELAY_MAX = -20;
+const MAX_AGE = 360; // Characters live for 30 seconds at 12 FPS
+const MAX_STREAMS_PERCENT = 0.4; // 40% of columns have streams (more visible)
+const SPAWN_DELAY_MIN = 10; // Quick startup
+const SPAWN_DELAY_MAX = 60; // Max 5 seconds initial stagger
+const STREAM_RESET_DELAY_MIN = -30; // Start just above
+const STREAM_RESET_DELAY_MAX = -5;
 
 export function MatrixRain() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -183,27 +183,24 @@ export function MatrixRain() {
         for (let col = 0; col < cols && col < grid[row].length; col++) {
           const cell = grid[row][col];
           if (cell) {
-            // Fade curve: bright when young, quickly fade to very dim baseline
-            // New chars (0-5 frames): bright
-            // Middle (5-60 frames): fade to baseline
-            // Old (60+ frames): stay at very dim baseline
-            const ageRatio = cell.age / 60;
+            // Fade curve: bright when young, fade to visible baseline
+            // New chars (0-3 frames): bright at 100%
+            // Fade (3-30 frames): fade to 15% baseline
+            // Old (30+ frames): stay at 15% baseline
             let opacity: number;
-            if (cell.age < 5) {
+            if (cell.age < 3) {
               opacity = 1; // Bright new characters
-            } else if (ageRatio < 1) {
-              // Fade from bright to baseline over frames 5-60
-              opacity = 1 - (ageRatio * 0.95); // Fade to 0.05 (5%)
+            } else if (cell.age < 30) {
+              // Fade from 100% to 15% over frames 3-30
+              opacity = 1 - ((cell.age - 3) / 27 * 0.85); // Fade to 0.15 (15%)
             } else {
-              opacity = 0.05; // Very dim baseline for old characters
+              opacity = 0.15; // Visible baseline for old characters
             }
             
-            // Even dimmer when not in hero section
-            if (!isHero) opacity *= 0.3;
+            // Dim when not in hero section
+            if (!isHero) opacity *= 0.5;
             
-            ctx.fillStyle = isHero
-              ? `rgba(85, 234, 212, ${opacity})`
-              : `rgba(85, 234, 212, ${opacity})`;
+            ctx.fillStyle = `rgba(85, 234, 212, ${opacity})`;
             ctx.fillText(cell.char, col * FONT_SIZE, row * FONT_SIZE);
           }
         }
