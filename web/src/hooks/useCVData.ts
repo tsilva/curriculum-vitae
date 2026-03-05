@@ -142,6 +142,29 @@ export function useCVData(): UseCVDataReturn {
     loadData();
   }, [loadData]);
 
+  // Poll for preloaded data that arrives after initial hydration
+  useEffect(() => {
+    if (data || isLoading === false) return;
+    
+    // Check a few times for preloaded data (inline script loads async)
+    let checks = 0;
+    const maxChecks = 20; // Check for up to 2 seconds
+    
+    const interval = setInterval(() => {
+      checks++;
+      
+      if (window.__CV_DATA__) {
+        setData(window.__CV_DATA__);
+        setIsLoading(false);
+        clearInterval(interval);
+      } else if (checks >= maxChecks) {
+        clearInterval(interval);
+      }
+    }, 100);
+    
+    return () => clearInterval(interval);
+  }, [data, isLoading]);
+
   return { data, isLoading, error, refetch: loadData };
 }
 
