@@ -212,7 +212,7 @@ export function Hero() {
       </h1>
 
       {/* Role — cyan like secondary data in the HUD with enhanced glow */}
-      <div className="flex items-center gap-3 mt-3">
+      <div className="flex items-center justify-center gap-3 mt-3">
         <span className="text-kiroshi-red text-base">◆</span>
         <p className="font-[family-name:var(--font-display)] text-base md:text-lg text-cyan tracking-[0.25em] uppercase neon-glow-cyan">
           Fullstack Software Engineer
@@ -221,7 +221,7 @@ export function Hero() {
       </div>
 
       {/* Tagline */}
-      <p className="font-[family-name:var(--font-mono)] text-[10px] md:text-xs text-kiroshi-yellow/80 mt-2 tracking-[0.15em] uppercase">
+      <p className="font-[family-name:var(--font-mono)] text-[10px] md:text-xs text-kiroshi-yellow/80 mt-2 tracking-[0.15em] uppercase text-center">
         backend + frontend + mobile + ai. idea in → product out.
       </p>
 

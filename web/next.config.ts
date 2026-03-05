@@ -16,6 +16,8 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     optimizePackageImports: ["lucide-react"],
+    // Disable features that can hurt performance
+    optimizeServerReact: false,
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
@@ -34,6 +36,10 @@ const nextConfig: NextConfig = {
     }
     return config;
   },
+  // Enable trailing slashes for better SEO
+  trailingSlash: true,
+  // Disable powered by header
+  poweredByHeader: false,
 };
 
 export default nextConfig;
