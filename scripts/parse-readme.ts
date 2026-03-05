@@ -612,8 +612,48 @@ function parse(): CVData {
 }
 
 const data = parse();
-fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
-fs.writeFileSync(OUTPUT_PATH, JSON.stringify(data, null, 2));
+
+// Generate content hash for cache busting
+const crypto = require('crypto');
+const contentHash = crypto.createHash('md5').update(JSON.stringify(data)).digest('hex').slice(0, 12);
+const timestamp = Date.now();
+
+// Create versioned filename
+const versionedFilename = `cv-data.${contentHash}.json`;
+const dataDir = path.join(ROOT, "web", "src", "data");
+const publicDir = path.join(ROOT, "web", "public");
+const versionedPath = path.join(publicDir, versionedFilename);
+const manifestPath = path.join(publicDir, "cv-data-manifest.json");
+const staticPath = path.join(dataDir, "cv-data.json");
+
+// Ensure directories exist
+fs.mkdirSync(dataDir, { recursive: true });
+fs.mkdirSync(publicDir, { recursive: true });
+
+// Write versioned file to public (for runtime fetching)
+fs.writeFileSync(versionedPath, JSON.stringify(data));
+
+// Write static file to src/data (for build-time usage if needed)
+fs.writeFileSync(staticPath, JSON.stringify(data, null, 2));
+
+// Write manifest with current version info
+const manifest = {
+  filename: versionedFilename,
+  hash: contentHash,
+  timestamp: timestamp,
+  buildDate: new Date().toISOString(),
+  stats: {
+    employers: data.employers.length,
+    education: data.education.length,
+    projects: data.projects.length,
+    projectsWithGalleries: data.projects.filter(p => p.gallery && p.gallery.length > 0).length
+  }
+};
+fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
+
 console.log(
   `Parsed: ${data.employers.length} employers, ${data.education.length} education entries, ${data.projects.length} projects`
 );
+console.log(`Generated: ${versionedFilename} (hash: ${contentHash})`);
+console.log(`Projects with galleries: ${manifest.stats.projectsWithGalleries}`);
+console.log(`Manifest written to: cv-data-manifest.json`);

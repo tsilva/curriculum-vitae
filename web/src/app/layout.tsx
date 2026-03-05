@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Orbitron, Share_Tech_Mono, Fira_Code } from "next/font/google";
 import { MatrixRain } from "@/components/MatrixRain";
+import * as fs from "fs";
+import * as path from "path";
 import "./globals.css";
 
 const orbitron = Orbitron({
@@ -21,6 +23,20 @@ const firaCode = Fira_Code({
   variable: "--font-mono",
   display: "swap",
 });
+
+// Read manifest to get current data filename for preloading
+function getDataManifest() {
+  try {
+    const manifestPath = path.join(process.cwd(), "public", "cv-data-manifest.json");
+    if (fs.existsSync(manifestPath)) {
+      const content = fs.readFileSync(manifestPath, "utf-8");
+      return JSON.parse(content);
+    }
+  } catch (e) {
+    console.warn("Could not read cv-data-manifest.json");
+  }
+  return null;
+}
 
 export const metadata: Metadata = {
   title: "Tiago Silva — Software Engineer | 20+ Years Experience",
@@ -135,6 +151,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const manifest = getDataManifest();
+  const dataUrl = manifest?.filename ? `/${manifest.filename}` : "/cv-data.json";
+  
   return (
     <html
       lang="en"
@@ -145,6 +164,9 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* Preload hints for critical data */}
+        <link rel="preload" href={dataUrl} as="fetch" crossOrigin="anonymous" />
+        <link rel="prefetch" href={dataUrl} />
       </head>
       <body className="font-[family-name:var(--font-body)] dot-grid scanlines crt-vignette antialiased">
         <MatrixRain />

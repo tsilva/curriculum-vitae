@@ -1,10 +1,38 @@
-import type { Education as EducationType } from "@/types/cv";
+"use client";
 
-interface EducationProps {
-  entries: EducationType[];
-}
+import { useCVData } from "@/hooks/useCVData";
 
-export function Education({ entries }: EducationProps) {
+export function Education() {
+  const { data, isLoading, error } = useCVData();
+
+  if (isLoading) {
+    return (
+      <section id="education" className="max-w-6xl mx-auto px-6 pt-8 pb-32">
+        <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-10 reveal neon-glow-cyan">
+          <span className="text-magenta">&gt;</span> TRAINING_MODULES
+        </h2>
+        <div className="flex items-center justify-center py-10">
+          <div className="animate-pulse text-steel font-[family-name:var(--font-mono)]">
+            <span className="text-cyan">&gt;</span> Loading education data...
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  if (error || !data) {
+    return (
+      <section id="education" className="max-w-6xl mx-auto px-6 pt-8 pb-32">
+        <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-10 reveal neon-glow-cyan">
+          <span className="text-magenta">&gt;</span> TRAINING_MODULES
+        </h2>
+        <div className="text-magenta font-[family-name:var(--font-mono)] p-4 border border-magenta/30 rounded bg-magenta/5">
+          <span className="text-magenta">✗</span> Error loading education data
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id="education" className="max-w-6xl mx-auto px-6 pt-8 pb-32">
       <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-10 reveal neon-glow-cyan">
@@ -12,7 +40,7 @@ export function Education({ entries }: EducationProps) {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-        {entries.map((entry) => (
+        {data.education.map((entry) => (
           <div
             key={entry.id}
             className="card-glow bg-surface border border-cyan/10 rounded-sm p-6 reveal h-full relative"
