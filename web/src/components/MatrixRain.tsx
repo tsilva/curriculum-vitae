@@ -72,18 +72,16 @@ export function MatrixRain() {
         grid = Array(rows).fill(null).map(() => Array(cols).fill(null));
         
         // Create streams - sparse with staggered spawn timing
+        // All streams start within first 60 frames (5 seconds at 12 FPS)
         const numStreams = Math.floor(cols * MAX_STREAMS_PERCENT);
         streams = [];
-        let nextSpawnFrame = 0;
         for (let i = 0; i < numStreams; i++) {
           streams.push({
             col: Math.floor(Math.random() * cols),
             row: Math.floor(Math.random() * (STREAM_RESET_DELAY_MAX - STREAM_RESET_DELAY_MIN) + STREAM_RESET_DELAY_MIN),
             speed: Math.floor(Math.random() * 2) + 1,
-            counter: -nextSpawnFrame // Negative counter = delayed spawn
+            counter: -Math.floor(Math.random() * SPAWN_DELAY_MAX) // Random delay 0-60 frames
           });
-          // Stagger spawn times so they don't all start at once
-          nextSpawnFrame += Math.floor(Math.random() * (SPAWN_DELAY_MAX - SPAWN_DELAY_MIN) + SPAWN_DELAY_MIN);
         }
         
         isResizing = false;

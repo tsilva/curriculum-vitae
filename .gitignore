@@ -57,6 +57,9 @@ logs/
 !web/public/*.png
 !docs/**/*.png
 
+# Lighthouse Audit reports
+.lighthouse-reports/
+
 # Next.js
 web/.next/
 web/out/
