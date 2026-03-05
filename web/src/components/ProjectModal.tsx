@@ -162,35 +162,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             </div>
           )}
 
-          {/* Section: Gallery */}
-          {project.gallery && project.gallery.length > 0 && (
-            <div className="space-y-3">
-              <div className="flex items-center gap-2">
-                <span className="text-magenta text-base">■</span>
-                <span className="font-[family-name:var(--font-display)] text-sm font-bold text-magenta tracking-widest uppercase">
-                  Media Gallery
-                </span>
-              </div>
-              <div className="pl-4 border-l-2 border-magenta/20">
-                <button
-                  onClick={() => {
-                    // Dispatch custom event to open gallery
-                    window.dispatchEvent(new CustomEvent('openProjectGallery', { detail: project }));
-                  }}
-                  className="flex items-center gap-2 text-base text-cyan hover:text-cyan/80 transition-colors group/link"
-                >
-                  <svg className="w-4 h-4 flex-shrink-0 group-hover/link:animate-pulse" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                  </svg>
-                  <span className="group-hover/link:glitch-hover">
-                    View Gallery ({project.gallery.length} items)
-                  </span>
-                </button>
-              </div>
-            </div>
-          )}
 
-          {/* Section: Links */}
           {project.links.length > 0 && (
             <div className="pt-4 border-t border-cyan/10 space-y-4">
               <div className="flex items-center gap-2 mb-2">
