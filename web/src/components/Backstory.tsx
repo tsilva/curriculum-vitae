@@ -102,7 +102,7 @@ export function Backstory() {
 
           {/* Content */}
           <div
-            className="font-[family-name:var(--font-body)] text-sm md:text-base text-cool-white leading-relaxed space-y-6 [&_a]:text-cyan [&_a]:underline [&_a]:decoration-cyan/50 [&_a]:hover:text-cool-white [&_a]:hover:decoration-cool-white [&_strong]:text-cool-white [&_strong]:font-bold"
+            className="font-[family-name:var(--font-body)] text-sm md:text-base !text-cool-white leading-relaxed space-y-6 [&>*]:!text-cool-white [&_a]:text-cyan [&_a]:underline [&_a]:decoration-cyan/50 [&_a]:hover:text-cool-white [&_a]:hover:decoration-cool-white [&_strong]:text-cool-white [&_strong]:font-bold"
             dangerouslySetInnerHTML={{ __html: backstoryContent }}
           />
 
