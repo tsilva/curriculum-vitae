@@ -233,10 +233,11 @@ export function Hero() {
       </div>
 
       {/* Stats — yellow numbers like Kiroshi data readouts */}
-      <div className="flex gap-10 md:gap-16">
+      <div className="flex gap-8 md:gap-12">
         <CountUp end={20} suffix="+" label="Years" />
         <CountUp end={60} suffix="+" label="Projects" />
         <CountUp end={100} suffix="M+" label="Users" />
+        <CountUp end={86} suffix="" label="OSS" />
       </div>
 
       {/* Social links */}
