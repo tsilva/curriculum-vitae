@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import { Orbitron, Share_Tech_Mono, Fira_Code } from "next/font/google";
-import { MatrixRain } from "@/components/MatrixRain";
+import dynamic from "next/dynamic";
 import "./globals.css";
+
+// Lazy load MatrixRain as it's a non-critical visual effect
+const MatrixRain = dynamic(() => import("@/components/MatrixRain").then((mod) => ({ default: mod.MatrixRain })));
 
 const orbitron = Orbitron({
   subsets: ["latin"],
   variable: "--font-display",
   display: "swap",
+  preload: true,
 });
 
 const shareTechMono = Share_Tech_Mono({
@@ -14,12 +18,14 @@ const shareTechMono = Share_Tech_Mono({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
+  preload: true,
 });
 
 const firaCode = Fira_Code({
   subsets: ["latin"],
   variable: "--font-mono",
   display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -134,7 +140,7 @@ const jsonLd = {
   },
 };
 
-export default function RootLayout({
+  export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -153,14 +159,6 @@ export default function RootLayout({
         {/* Preconnect for R2 CDN */}
         <link rel="preconnect" href="https://curriculum-vitae-r2.tsilva.eu" />
         <link rel="dns-prefetch" href="https://curriculum-vitae-r2.tsilva.eu" />
-        
-        {/* Preload critical fonts */}
-        <link rel="preload" href="/_next/static/media/03f2d74f5e7b171e-s.p.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        <link rel="preload" href="/_next/static/media/3703c28dcda155b1-s.p.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        <link rel="preload" href="/_next/static/media/9a4ee768fed045da-s.p.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        
-        {/* Preload avatar image */}
-        <link rel="preload" href="/avatar.webp" as="image" fetchPriority="high" />
       </head>
       <body className="font-[family-name:var(--font-body)] dot-grid scanlines crt-vignette antialiased">
         <MatrixRain />
