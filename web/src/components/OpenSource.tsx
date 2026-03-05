@@ -10,8 +10,13 @@ import githubRepos from "@/data/github-data.json";
 
 const ITEMS_PER_PAGE = 12;
 
+// Filter out template-* and sandbox-* repos
+const filteredGithubRepos = githubRepos.filter(
+  repo => !repo.name.startsWith('template-') && !repo.name.startsWith('sandbox-')
+);
+
 export function OpenSource() {
-  const repos = useMemo(() => githubRepos as GitHubRepo[], []);
+  const repos = useMemo(() => filteredGithubRepos as GitHubRepo[], []);
   const [selectedLanguages, setSelectedLanguages] = useState<string[]>([]);
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
   const loadMoreRef = useRef<HTMLDivElement>(null);

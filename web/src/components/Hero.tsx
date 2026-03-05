@@ -6,8 +6,8 @@ import { GlitchText } from "./GlitchText";
 import { CountUp } from "./CountUp";
 import githubRepos from "@/data/github-data.json";
 
-// Calculate OSS count excluding sandbox-* repos
-const OSS_COUNT = githubRepos.filter(repo => !repo.name.startsWith('sandbox-')).length;
+// Calculate OSS count excluding template-* and sandbox-* repos
+const OSS_COUNT = githubRepos.filter(repo => !repo.name.startsWith('template-') && !repo.name.startsWith('sandbox-')).length;
 
 const socialLinks = [
   {
