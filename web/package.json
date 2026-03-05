@@ -11,7 +11,8 @@
     "lint": "next lint",
     "parse": "GALLERY_MODE=r2 npx tsx ../scripts/parse-readme.ts",
     "parse:local": "GALLERY_MODE=local npx tsx ../scripts/parse-readme.ts",
-    "parse:r2": "GALLERY_MODE=r2 npx tsx ../scripts/parse-readme.ts"
+    "parse:r2": "GALLERY_MODE=r2 npx tsx ../scripts/parse-readme.ts",
+    "stats": "npx tsx ../scripts/count-technologies.ts"
   },
   "dependencies": {
     "next": "^15.1.0",
