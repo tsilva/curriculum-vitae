@@ -14,6 +14,26 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  experimental: {
+    optimizePackageImports: ["lucide-react"],
+  },
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production",
+  },
+  // Optimize bundle by excluding certain polyfills
+  webpack: (config, { isServer }) => {
+    // Only apply to client-side bundle
+    if (!isServer) {
+      // Exclude certain heavy polyfills that aren't needed for modern browsers
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        net: false,
+        tls: false,
+      };
+    }
+    return config;
+  },
 };
 
 export default nextConfig;
