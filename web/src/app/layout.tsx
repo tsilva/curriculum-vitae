@@ -83,9 +83,6 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
-  verification: {
-    google: "your-google-verification-code",
-  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
