@@ -50,12 +50,30 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
               <span className="text-cyan">ACCESSING:</span> {project.title.toLowerCase().replace(/\s+/g, "_")}.dat
             </h2>
           </div>
-          <button
-            onClick={onClose}
-            className="font-[family-name:var(--font-mono)] text-sm text-steel hover:text-cyan transition-colors flex-shrink-0 cursor-pointer border border-steel/30 hover:border-cyan/40 px-2 py-1 rounded-sm"
-          >
-            [ESC]
-          </button>
+          <div className="flex items-center gap-2">
+            {/* Gallery button - prominent if gallery exists */}
+            {project.gallery && project.gallery.length > 0 && (
+              <button
+                onClick={() => {
+                  window.dispatchEvent(new CustomEvent('openProjectGallery', { detail: project }));
+                }}
+                className="flex items-center gap-1.5 font-[family-name:var(--font-mono)] text-xs text-magenta hover:text-cool-white transition-colors border border-magenta/50 hover:border-magenta bg-magenta/10 hover:bg-magenta/20 px-2 py-1 rounded-sm animate-pulse"
+                title={`View Gallery (${project.gallery.length} items)`}
+              >
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                </svg>
+                <span className="hidden sm:inline">Gallery ({project.gallery.length})</span>
+                <span className="sm:hidden">({project.gallery.length})</span>
+              </button>
+            )}
+            <button
+              onClick={onClose}
+              className="font-[family-name:var(--font-mono)] text-sm text-steel hover:text-cyan transition-colors flex-shrink-0 cursor-pointer border border-steel/30 hover:border-cyan/40 px-2 py-1 rounded-sm"
+            >
+              [ESC]
+            </button>
+          </div>
         </div>
 
         {/* Body */}
