@@ -14,7 +14,7 @@
   --color-surface: #111827;
   --color-cool-white: #E8F4FF;
   --color-steel: #7B8FA6;
-  --color-steel-dim: #7B8FA6;
+  --color-steel-dim: #9BAEC4;
 
   /* Typography */
   --font-display: "Orbitron", sans-serif;
@@ -290,8 +290,8 @@ body {
    AVATAR SCAN SWEEP
    ============================================ */
 @keyframes scan {
-  0%, 100% { top: -2rem; }
-  50% { top: calc(100% + 2rem); }
+  0%, 100% { transform: translateY(-2rem); }
+  50% { transform: translateY(calc(100% + 2rem)); }
 }
 
 /* ============================================
