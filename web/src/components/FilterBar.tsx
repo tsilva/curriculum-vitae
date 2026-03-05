@@ -50,7 +50,7 @@ export function FilterBar({
         {/* Browse All Button */}
         <button
           onClick={onBrowseAll}
-          className="flex-shrink-0 font-[family-name:var(--font-mono)] text-xs px-3 py-1.5 rounded-sm border border-dashed border-cyan/40 text-cyan hover:border-cyan hover:bg-cyan/10 transition-all whitespace-nowrap"
+          className="flex-shrink-0 font-[family-name:var(--font-mono)] text-xs px-3 py-1.5 rounded-sm border border-dashed border-cyan/40 text-cyan hover:border-cyan hover:bg-cyan/10 transition-all whitespace-nowrap flex items-center justify-center h-[30px] box-border"
         >
           Browse all [{technologies.length}]
         </button>

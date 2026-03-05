@@ -3,6 +3,17 @@
 import { useEffect, useRef } from "react";
 import { cvData } from "@/lib/cv-data";
 
+// Convert basic Markdown to HTML
+function markdownToHtml(markdown: string): string {
+  return markdown
+    // Convert **bold** to <strong>
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    // Convert <br> at start of lines
+    .replace(/^<br>\s*/gm, '')
+    // Convert line breaks to paragraphs or <br>
+    .split('\n').map(line => line.trim()).join('<br>');
+}
+
 // Extract the backstory narrative from the TLDR content
 // The backstory is contained in the blockquote sections (>)
 function extractBackstory(tldr: string): string {
@@ -14,7 +25,7 @@ function extractBackstory(tldr: string): string {
   for (const line of lines) {
     // Skip the logo and intro paragraph
     if (line.includes('<p align=') || line.includes('logo.png')) continue;
-    if (line.includes("This CV is detailed")) continue;
+    if (line.includes('This CV is detailed')) continue;
     
     // Check if this line is part of a blockquote (starts with > or ><br>)
     if (line.match(/^>(<br>)?\s*/)) {
@@ -26,17 +37,14 @@ function extractBackstory(tldr: string): string {
       }
     } else if (inBlockquote) {
       // We've exited the blockquote (empty line or non-blockquote content)
-      if (line.trim() === '' || !line.match(/^\s*>/)) {
-        // Check if it's truly the end by looking for non-empty, non-blockquote content
-        if (line.trim() !== '' && !line.match(/^\s*>/)) {
-          break;
-        }
-        // Otherwise it's just an empty line within the blockquote, skip it
+      if (line.trim() !== '' && !line.match(/^\s*>/)) {
+        break;
       }
     }
   }
 
-  return backstoryLines.join('\n');
+  const rawContent = backstoryLines.join('\n');
+  return markdownToHtml(rawContent);
 }
 
 export function Backstory() {
@@ -89,7 +97,7 @@ export function Backstory() {
 
           {/* Quote marks */}
           <div className="absolute -top-4 -left-2 text-6xl text-kiroshi-red/20 font-[family-name:var(--font-display)] leading-none">
-            "
+            &ldquo;
           </div>
 
           {/* Content */}
@@ -100,7 +108,7 @@ export function Backstory() {
 
           {/* Quote marks */}
           <div className="absolute -bottom-8 -right-2 text-6xl text-kiroshi-red/20 font-[family-name:var(--font-display)] leading-none rotate-180">
-            "
+            &rdquo;
           </div>
 
           {/* Bottom metadata */}
