@@ -61,8 +61,10 @@ export function MatrixRain() {
     let grid: (Cell | null)[][] = [];
     let streams: Stream[] = [];
     let resizeTimeout: NodeJS.Timeout;
+    let isResizing = false;
 
     const resize = () => {
+      isResizing = true;
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(() => {
         if (window.innerWidth < 768) {
@@ -79,9 +81,6 @@ export function MatrixRain() {
         // Initialize empty grid
         grid = Array(rows).fill(null).map(() => Array(cols).fill(null));
         
-        // Initialize empty grid
-        grid = Array(rows).fill(null).map(() => Array(cols).fill(null));
-        
         // Create streams - about 40% of columns have active streams (less dense)
         const numStreams = Math.floor(cols * 0.4);
         streams = [];
@@ -93,6 +92,8 @@ export function MatrixRain() {
             counter: Math.floor(Math.random() * 3)
           });
         }
+        
+        isResizing = false;
       }, 100);
     };
 
@@ -113,6 +114,7 @@ export function MatrixRain() {
       animIdRef.current = requestAnimationFrame(draw);
 
       if (!isVisibleRef.current || document.hidden) return;
+      if (isResizing || grid.length === 0) return; // Skip frame during resize
       if (timestamp - lastFrame < frameInterval) return;
       lastFrame = timestamp;
 
@@ -120,8 +122,8 @@ export function MatrixRain() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       // Age all cells
-      for (let row = 0; row < rows; row++) {
-        for (let col = 0; col < cols; col++) {
+      for (let row = 0; row < rows && row < grid.length; row++) {
+        for (let col = 0; col < cols && col < grid[row].length; col++) {
           const cell = grid[row][col];
           if (cell) {
             cell.age++;
@@ -142,7 +144,7 @@ export function MatrixRain() {
           stream.row++;
           
           // Place new character if within bounds
-          if (stream.row >= 0 && stream.row < rows) {
+          if (stream.row >= 0 && stream.row < rows && stream.col >= 0 && stream.col < cols) {
             grid[stream.row][stream.col] = {
               char: CHARS[Math.floor(Math.random() * CHARS.length)],
               age: 0
@@ -163,8 +165,8 @@ export function MatrixRain() {
       
       const baseColor = isInHeroRef.current ? COLOR_FULL : COLOR_DIMMED;
       
-      for (let row = 0; row < rows; row++) {
-        for (let col = 0; col < cols; col++) {
+      for (let row = 0; row < rows && row < grid.length; row++) {
+        for (let col = 0; col < cols && col < grid[row].length; col++) {
           const cell = grid[row][col];
           if (cell) {
             // Fade based on age: new = bright, old = dim
