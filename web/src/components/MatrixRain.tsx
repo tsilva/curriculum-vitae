@@ -21,7 +21,7 @@ interface Stream {
   counter: number;
 }
 
-const MAX_AGE = 15; // Characters live for 15 frames max
+const MAX_AGE = 600; // Characters live for 600 frames (~50 seconds at 12 FPS) - allows screen to fill up
 
 export function MatrixRain() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
