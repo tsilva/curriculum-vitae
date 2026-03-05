@@ -1270,6 +1270,56 @@ Computer Capers was a video game I developed at 12 years old and submitted to a 
 
 ---
 
+## 🔓 OSS
+
+Open source projects and contributions.
+
+- [aiml-notebooks](https://github.com/tsilva/aiml-notebooks) - AI/ML Jupyter notebooks for learning deep learning concepts
+- [agentpong](https://github.com/tsilva/agentpong) - Desktop notifications that jump you to the right Claude Code window
+- [workflow-claude-supervisor](https://github.com/tsilva/workflow-claude-supervisor) - Supervise multiple Claude Code instances in parallel
+- [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
+- [claudebridge](https://github.com/tsilva/claudebridge) - Bridge OpenAI tools to Claude Code SDK
+- [claudebox](https://github.com/tsilva/claudebox) - Full autonomy sandbox for Claude Code
+- [obsidian-agents-plugin](https://github.com/tsilva/obsidian-agents-plugin) - Launch AI agents from Obsidian vault
+- [dedrive-web](https://github.com/tsilva/dedrive-web) - Find and clean up duplicate files in Google Drive from browser
+- [dedrive](https://github.com/tsilva/dedrive) - Find and manage duplicate files in Google Drive using MD5 checksums
+- [demosim](https://github.com/tsilva/demosim) - Explore Portugal's demographic future with economic projections
+- [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
+- [gitfleet](https://github.com/tsilva/gitfleet) - Bulk operations across GitHub repositories with parallel processing
+- [mcp-openrouter](https://github.com/tsilva/mcp-openrouter) - Access 300+ AI models through a single MCP server
+- [homebrew-tap](https://github.com/tsilva/homebrew-tap) - Homebrew tap for installing tsilva projects
+- [capture](https://github.com/tsilva/capture) - Capture thoughts to Gmail with a single command
+- [mochimochi](https://github.com/tsilva/mochimochi) - CLI for curating Mochi flashcard decks with AI-powered deduplication
+- [gymrec](https://github.com/tsilva/gymrec) - Record and replay Gymnasium gameplay as Hugging Face datasets
+- [repologogen](https://github.com/tsilva/repologogen) - Generate professional logos from the command line
+- [gmailstream](https://github.com/tsilva/gmailstream) - Download Gmail messages matching filters to local files
+- [claudeskillz](https://github.com/tsilva/claudeskillz) - Modular skills that supercharge Claude Code
+- [youtube-downloader](https://github.com/tsilva/youtube-downloader) - Download YouTube videos and extract audio
+- [whatsapp-llm](https://github.com/tsilva/whatsapp-llm) - Bridge WhatsApp to AI for intelligent responses
+- [tsilva.eu](https://github.com/tsilva/tsilva.eu) - Personal landing page
+- [retro-romset-cleaner](https://github.com/tsilva/retro-romset-cleaner) - Clean up retro ROM collections
+- [retro-asset-gen](https://github.com/tsilva/retro-asset-gen) - Generate retro gaming assets using Gemini AI
+- [repo2md](https://github.com/tsilva/repo2md) - Transform any repository into a single Markdown document
+- [popdesk](https://github.com/tsilva/popdesk) - Trigger Windows desktop notifications from anywhere via webhooks
+- [pdfpress](https://github.com/tsilva/pdfpress) - Compress, merge, split, and unlock PDF files
+- [parsemedicalexams](https://github.com/tsilva/parsemedicalexams) - Extract and summarize medical exam reports from PDFs
+- [parsehealthlog](https://github.com/tsilva/parsehealthlog) - Transform health journal entries into structured data
+- [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
+- [notebook2md](https://github.com/tsilva/notebook2md) - Convert Jupyter Notebooks to Markdown
+- [mochidecks](https://github.com/tsilva/mochidecks) - Curated flashcard decks for AI/ML and data science
+- [mcp-imagetools](https://github.com/tsilva/mcp-imagetools) - Image processing tools for Claude Code via MCP
+- [health-agent](https://github.com/tsilva/health-agent) - Unify lab results, medical exams, and health journals
+- [gymsolve](https://github.com/tsilva/gymsolve) - Fast RL framework with PPO and REINFORCE on Gymnasium
+- [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
+- [gmail2obsidian](https://github.com/tsilva/gmail2obsidian) - Flush Gmail threads into Obsidian task files
+- [dataset-explorer-agent](https://github.com/tsilva/dataset-explorer-agent) - Validate dataset schemas with regex pattern analysis
+- [claudesk](https://github.com/tsilva/claudesk) - Interactive dashboard for launching Claude Code agents
+- [botty-mcbotface](https://github.com/tsilva/botty-mcbotface) - Gradio-powered AI chatbot with tools and memory
+- [aerospace-setup](https://github.com/tsilva/aerospace-setup) - Portable Aerospace configuration with Cursor project switching
+- [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
+- [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
+- [archex](https://github.com/tsilva/archex) - Recursively extract archives from directory trees
+
 ## 🔗 Misc
 
 - **Mindhacking 101 presentation at BarcampPT 2010 (Porto, Portugal)**:
