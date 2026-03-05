@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { cvData } from "@/lib/cv-data";
 
 // Convert basic Markdown to HTML
@@ -49,6 +49,8 @@ function extractBackstory(tldr: string): string {
 
 export function Backstory() {
   const sectionRef = useRef<HTMLElement>(null);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const backstoryContent = extractBackstory(cvData.tldr);
 
   useEffect(() => {
@@ -76,59 +78,107 @@ export function Backstory() {
     <section
       ref={sectionRef}
       id="backstory"
-      className="py-20 px-6 relative overflow-hidden opacity-0 translate-y-8 transition-all duration-700 [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0"
+      className="py-12 px-6 relative overflow-hidden opacity-0 translate-y-8 transition-all duration-700 [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0]"
     >
-      {/* Section border with cyberpunk styling */}
+      {/* Section container */}
       <div className="max-w-4xl mx-auto relative">
-        {/* Top decorative line */}
-        <div className="flex items-center gap-4 mb-8">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-kiroshi-red/40 to-transparent" />
-          <span className="font-[family-name:var(--font-mono)] text-xs text-kiroshi-red/60 tracking-[0.3em] uppercase">
-            /// ORIGIN_STORY
-          </span>
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-kiroshi-red/40 to-transparent" />
-        </div>
-
-        {/* Backstory content card */}
-        <div className="relative p-8 md:p-12 border-l-2 border-kiroshi-red/40 bg-surface/30 backdrop-blur-sm">
-          {/* Corner accents */}
-          <div className="absolute top-0 left-0 w-8 h-8 border-t border-l border-kiroshi-red/60" />
-          <div className="absolute bottom-0 left-0 w-8 h-8 border-b border-l border-kiroshi-red/60" />
-
-          {/* Quote marks */}
-          <div className="absolute -top-4 -left-2 text-6xl text-kiroshi-red/20 font-[family-name:var(--font-display)] leading-none">
-            &ldquo;
-          </div>
-
-          {/* Content */}
-          <div
-            className="font-[family-name:var(--font-body)] text-sm md:text-base !text-cool-white leading-relaxed space-y-6 [&>*]:!text-cool-white [&_a]:text-cyan [&_a]:underline [&_a]:decoration-cyan/50 [&_a]:hover:text-cool-white [&_a]:hover:decoration-cool-white [&_strong]:text-cool-white [&_strong]:font-bold"
-            dangerouslySetInnerHTML={{ __html: backstoryContent }}
-          />
-
-          {/* Quote marks */}
-          <div className="absolute -bottom-8 -right-2 text-6xl text-kiroshi-red/20 font-[family-name:var(--font-display)] leading-none rotate-180">
-            &rdquo;
-          </div>
-
-          {/* Bottom metadata */}
-          <div className="mt-8 pt-6 border-t border-white/5 flex items-center justify-between">
-            <span className="font-[family-name:var(--font-mono)] text-xs text-kiroshi-yellow/60 tracking-wider">
-              CLASSIFIED // LEVEL 1 CLEARANCE
+        {/* Compact side quest header - always visible */}
+        <button
+          onClick={() => setIsExpanded(!isExpanded)}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          className={`w-full group flex items-center justify-between gap-4 p-4 border-l-2 transition-all duration-300 ${
+            isExpanded 
+              ? 'border-kiroshi-red bg-kiroshi-red/5' 
+              : 'border-kiroshi-red/40 bg-surface/20 hover:bg-surface/40 hover:border-kiroshi-red/60'
+          }`}
+        >
+          {/* Left side: Icon + Label */}
+          <div className="flex items-center gap-3">
+            {/* Expand/Collapse icon */}
+            <span className={`font-[family-name:var(--font-mono)] text-lg text-kiroshi-red transition-transform duration-300 ${isExpanded ? 'rotate-45' : ''}`}>
+              {isExpanded ? '×' : '+'}
             </span>
-            <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-kiroshi-red/60 animate-pulse" />
-              <span className="font-[family-name:var(--font-mono)] text-xs text-kiroshi-red/60">
-                AUTHENTICATED
+            
+            {/* Side Quest Label */}
+            <div className="flex flex-col items-start">
+              <span className="font-[family-name:var(--font-mono)] text-xs text-kiroshi-red/60 tracking-[0.2em] uppercase">
+                Optional Side Quest
+              </span>
+              <span className={`font-[family-name:var(--font-display)] text-sm tracking-[0.15em] uppercase transition-colors duration-300 ${
+                isHovered || isExpanded ? 'text-cool-white' : 'text-steel'
+              }`}>
+                ORIGIN_STORY.exe
               </span>
             </div>
           </div>
-        </div>
 
-        {/* Decorative binary code */}
-        <div className="absolute -right-4 top-1/2 -translate-y-1/2 hidden lg:block">
-          <div className="font-[family-name:var(--font-mono)] text-[10px] text-kiroshi-red/10 leading-tight rotate-90 whitespace-nowrap">
-            01001000 01000101 01001100 01001100 01001111
+          {/* Right side: Status indicators */}
+          <div className="flex items-center gap-3">
+            <span className={`font-[family-name:var(--font-mono)] text-xs tracking-wider transition-colors duration-300 ${
+              isExpanded ? 'text-kiroshi-yellow' : 'text-steel/60'
+            }`}>
+              {isExpanded ? '[ ACCESSING... ]' : '[ LOCKED ]'}
+            </span>
+            
+            {/* Animated lock/indicator */}
+            <div className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              isExpanded 
+                ? 'bg-kiroshi-red animate-pulse shadow-[0_0_8px_rgba(232,0,63,0.6)]' 
+                : isHovered 
+                  ? 'bg-kiroshi-red/60' 
+                  : 'bg-steel/40'
+            }`} />
+          </div>
+        </button>
+
+        {/* Expandable content area */}
+        <div 
+          className={`overflow-hidden transition-all duration-500 ease-out ${
+            isExpanded ? 'max-h-[2000px] opacity-100 mt-4' : 'max-h-0 opacity-0'
+          }`}
+        >
+          {/* Backstory content card */}
+          <div className="relative p-8 md:p-12 border-l-2 border-kiroshi-red/40 bg-surface/30 backdrop-blur-sm">
+            {/* Corner accents */}
+            <div className="absolute top-0 left-0 w-8 h-8 border-t border-l border-kiroshi-red/60" />
+            <div className="absolute bottom-0 left-0 w-8 h-8 border-b border-l border-kiroshi-red/60" />
+
+            {/* Quote marks */}
+            <div className="absolute -top-4 -left-2 text-6xl text-kiroshi-red/20 font-[family-name:var(--font-display)] leading-none">
+              &ldquo;
+            </div>
+
+            {/* Content */}
+            <div
+              className="font-[family-name:var(--font-body)] text-sm md:text-base !text-cool-white leading-relaxed space-y-6 [&>*]:!text-cool-white [&_a]:text-cyan [&_a]:underline [&_a]:decoration-cyan/50 [&_a]:hover:text-cool-white [&_a]:hover:decoration-cool-white [&_strong]:text-cool-white [&_strong]:font-bold"
+              dangerouslySetInnerHTML={{ __html: backstoryContent }}
+            />
+
+            {/* Quote marks */}
+            <div className="absolute -bottom-8 -right-2 text-6xl text-kiroshi-red/20 font-[family-name:var(--font-display)] leading-none rotate-180">
+              &rdquo;
+            </div>
+
+            {/* Bottom metadata */}
+            <div className="mt-8 pt-6 border-t border-white/5 flex items-center justify-between">
+              <span className="font-[family-name:var(--font-mono)] text-xs text-kiroshi-yellow/60 tracking-wider">
+                CLASSIFIED // LEVEL 1 CLEARANCE
+              </span>
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-kiroshi-red/60 animate-pulse" />
+                <span className="font-[family-name:var(--font-mono)] text-xs text-kiroshi-red/60">
+                  AUTHENTICATED
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Decorative binary code */}
+          <div className="absolute -right-4 top-1/2 -translate-y-1/2 hidden lg:block">
+            <div className="font-[family-name:var(--font-mono)] text-[10px] text-kiroshi-red/10 leading-tight rotate-90 whitespace-nowrap">
+              01001000 01000101 01001100 01001100 01001111
+            </div>
           </div>
         </div>
       </div>
