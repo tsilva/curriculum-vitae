@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const CHARS = "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEF";
 const FONT_SIZE = 14;
@@ -9,7 +9,7 @@ const FPS = 12;
 interface Cell {
   char: string;
   age: number;
-  baselineOpacity: number; // Each cell has its own baseline opacity (15-20%)
+  baselineOpacity: number;
 }
 
 interface Stream {
@@ -19,20 +19,22 @@ interface Stream {
   counter: number;
 }
 
-const MAX_AGE_BRIGHT = 3; // Frames to stay bright (100%)
-const MAX_AGE_FADE = 30; // Frames to fade to baseline
+const MAX_AGE_BRIGHT = 3;
+const MAX_AGE_FADE = 30;
 const BASELINE_OPACITY_MIN = 0.05;
 const BASELINE_OPACITY_MAX = 0.10;
-const MAX_STREAMS_PERCENT = 0.35; // 35% of columns have streams (sparse)
-const SPAWN_DELAY_MIN = 10; // Quick startup
-const SPAWN_DELAY_MAX = 60; // Max 5 seconds initial stagger
-const STREAM_RESET_DELAY_MIN = -30; // Start just above
+const MAX_STREAMS_PERCENT = 0.35;
+const SPAWN_DELAY_MIN = 10;
+const SPAWN_DELAY_MAX = 60;
+const STREAM_RESET_DELAY_MIN = -30;
 const STREAM_RESET_DELAY_MAX = -5;
 
 export function MatrixRain() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const isVisibleRef = useRef(true);
+  const inHeroRef = useRef(true);
   const animIdRef = useRef<number | undefined>(undefined);
+  const [canvasOpacity, setCanvasOpacity] = useState(1);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -52,7 +54,7 @@ export function MatrixRain() {
     let streams: Stream[] = [];
     let resizeTimeout: NodeJS.Timeout;
     let isResizing = false;
-    let filledColumns = new Set<number>(); // Track columns that have had streams
+    let filledColumns = new Set<number>();
 
     const resize = () => {
       isResizing = true;
@@ -69,13 +71,10 @@ export function MatrixRain() {
         cols = Math.floor(canvas.width / FONT_SIZE);
         rows = Math.floor(canvas.height / FONT_SIZE);
         
-        // Initialize empty grid
         grid = Array(rows).fill(null).map(() => Array(cols).fill(null));
         
-        // Reset filled columns tracking
         filledColumns.clear();
         
-        // Helper to get columns without streams
         const getUnfilledColumns = (): number[] => {
           const unfilled = [];
           for (let i = 0; i < cols; i++) {
@@ -86,11 +85,9 @@ export function MatrixRain() {
           return unfilled;
         };
         
-        // Create streams - prioritize empty columns first
         const numStreams = Math.floor(cols * MAX_STREAMS_PERCENT);
         streams = [];
         for (let i = 0; i < numStreams; i++) {
-          // Prioritize columns that haven't been filled yet
           const unfilled = getUnfilledColumns();
           const col = unfilled.length > 0 
             ? unfilled[Math.floor(Math.random() * unfilled.length)]
@@ -102,7 +99,7 @@ export function MatrixRain() {
             col,
             row: Math.floor(Math.random() * (STREAM_RESET_DELAY_MAX - STREAM_RESET_DELAY_MIN) + STREAM_RESET_DELAY_MIN),
             speed: Math.floor(Math.random() * 2) + 1,
-            counter: -Math.floor(Math.random() * SPAWN_DELAY_MAX) // Random delay 0-60 frames
+            counter: -Math.floor(Math.random() * SPAWN_DELAY_MAX)
           });
         }
         
@@ -123,18 +120,34 @@ export function MatrixRain() {
     );
     observer.observe(canvas);
 
+    const checkHeroVisibility = () => {
+      const hero = document.getElementById('hero');
+      if (!hero) return;
+      
+      const heroRect = hero.getBoundingClientRect();
+      const isInHero = heroRect.bottom > 0;
+      
+      inHeroRef.current = isInHero;
+      setCanvasOpacity(isInHero ? 1 : 0);
+    };
+
+    checkHeroVisibility();
+    window.addEventListener("scroll", checkHeroVisibility, { passive: true });
+
     const draw = (timestamp: number) => {
       animIdRef.current = requestAnimationFrame(draw);
 
       if (!isVisibleRef.current || document.hidden) return;
-      if (isResizing || grid.length === 0) return; // Skip frame during resize
+      if (isResizing || grid.length === 0) return;
       if (timestamp - lastFrame < frameInterval) return;
       lastFrame = timestamp;
 
-      // Clear entire canvas
+      if (!inHeroRef.current) {
+        return;
+      }
+
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Age all cells (they never disappear, just stay at baseline)
       for (let row = 0; row < rows && row < grid.length; row++) {
         for (let col = 0; col < cols && col < grid[row].length; col++) {
           const cell = grid[row][col];
@@ -144,9 +157,7 @@ export function MatrixRain() {
         }
       }
 
-      // Update streams and place new characters
       for (const stream of streams) {
-        // Handle delayed spawn (negative counter)
         if (stream.counter < 0) {
           stream.counter++;
           continue;
@@ -156,10 +167,8 @@ export function MatrixRain() {
         if (stream.counter >= stream.speed) {
           stream.counter = 0;
           
-          // Move down
           stream.row++;
           
-          // Place new character if within bounds
           if (stream.row >= 0 && stream.row < rows && stream.col >= 0 && stream.col < cols) {
             grid[stream.row][stream.col] = {
               char: CHARS[Math.floor(Math.random() * CHARS.length)],
@@ -168,8 +177,6 @@ export function MatrixRain() {
             };
           }
           
-          // Reset stream when it goes off bottom with random delay
-          // Prioritize columns that haven't been filled yet
           if (stream.row > rows + 5) {
             const getUnfilledColumns = (): number[] => {
               const unfilled = [];
@@ -183,10 +190,8 @@ export function MatrixRain() {
             
             const unfilled = getUnfilledColumns();
             if (unfilled.length > 0) {
-              // Pick from unfilled columns
               stream.col = unfilled[Math.floor(Math.random() * unfilled.length)];
             } else {
-              // All columns filled, pick randomly
               stream.col = Math.floor(Math.random() * cols);
             }
             filledColumns.add(stream.col);
@@ -196,7 +201,6 @@ export function MatrixRain() {
         }
       }
 
-      // Draw all cells with age-based fade
       ctx.font = `${FONT_SIZE}px monospace`;
       ctx.textBaseline = "top";
       
@@ -204,19 +208,14 @@ export function MatrixRain() {
         for (let col = 0; col < cols && col < grid[row].length; col++) {
           const cell = grid[row][col];
           if (cell) {
-            // Two-tier visual hierarchy:
-            // New chars (0-3 frames): bright at 100%
-            // Fade (3-30 frames): fade from 100% to cell's baseline opacity
-            // Old (30+ frames): stay at cell's baseline opacity (15-20%)
             let opacity: number;
             if (cell.age < MAX_AGE_BRIGHT) {
-              opacity = 1; // Bright new characters
+              opacity = 1;
             } else if (cell.age < MAX_AGE_FADE) {
-              // Fade from 100% to baseline over frames 3-30
               const fadeProgress = (cell.age - MAX_AGE_BRIGHT) / (MAX_AGE_FADE - MAX_AGE_BRIGHT);
               opacity = 1 - (fadeProgress * (1 - cell.baselineOpacity));
             } else {
-              opacity = cell.baselineOpacity; // Baseline for old characters (15-20%)
+              opacity = cell.baselineOpacity;
             }
             
             ctx.fillStyle = `rgba(85, 234, 212, ${opacity})`;
@@ -232,6 +231,7 @@ export function MatrixRain() {
       if (animIdRef.current) cancelAnimationFrame(animIdRef.current);
       clearTimeout(resizeTimeout);
       window.removeEventListener("resize", resize);
+      window.removeEventListener("scroll", checkHeroVisibility);
       observer.disconnect();
     };
   }, []);
@@ -239,7 +239,8 @@ export function MatrixRain() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 pointer-events-none z-0 hidden md:block will-change-transform"
+      className="fixed inset-0 pointer-events-none z-0 hidden md:block will-change-transform transition-opacity duration-700 ease-out"
+      style={{ opacity: canvasOpacity }}
       aria-hidden="true"
     />
   );

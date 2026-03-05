@@ -154,8 +154,14 @@ const jsonLd = {
         />
         
         {/* Preconnect for R2 CDN */}
-        <link rel="preconnect" href="https://curriculum-vitae-r2.tsilva.eu" />
+        <link rel="preconnect" href="https://curriculum-vitae-r2.tsilva.eu" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://curriculum-vitae-r2.tsilva.eu" />
+        
+        {/* Preload LCP image */}
+        <link rel="preload" href="/avatar.webp" as="image" type="image/webp" />
+        
+        {/* Critical CSS preload */}
+        <link rel="preload" href="/_next/static/css/app/layout.css" as="style" />
       </head>
       <body className="font-[family-name:var(--font-body)] dot-grid scanlines crt-vignette antialiased">
         <MatrixRain />
