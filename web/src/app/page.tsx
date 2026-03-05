@@ -5,6 +5,7 @@ import { Education } from "@/components/Education";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ScrollRevealProvider } from "@/components/ScrollRevealProvider";
+import { VersionDetector } from "@/components/VersionDetector";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         </main>
         <Footer />
       </ScrollRevealProvider>
+      <VersionDetector />
     </>
   );
 }
