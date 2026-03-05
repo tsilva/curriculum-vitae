@@ -1,12 +1,83 @@
 "use client";
 
-import { useEffect, useState, useCallback, useRef } from "react";
+import { useEffect, useState, useCallback, useRef, memo } from "react";
 import type { Project, GalleryMedia } from "@/types/cv";
 
 interface GalleryModalProps {
   project: Project | null;
   onClose: () => void;
 }
+
+// Memoized grid item to prevent unnecessary re-renders
+const GridItem = memo(({ media, index, onClick }: { media: GalleryMedia; index: number; onClick: () => void }) => {
+  const [isInView, setIsInView] = useState(false);
+  const ref = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!ref.current) return;
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsInView(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "100px" }
+    );
+    
+    observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <button
+      ref={ref}
+      onClick={onClick}
+      className="relative aspect-square bg-surface border border-cyan/10 rounded-sm overflow-hidden group hover:border-cyan/40 transition-all hover:shadow-[0_0_20px_rgba(0,230,230,0.1)]"
+    >
+      {media.type === 'image' ? (
+        isInView ? (
+          <img
+            src={media.path}
+            alt={media.filename}
+            className="w-full h-full object-cover transition-transform group-hover:scale-105"
+            loading="lazy"
+            decoding="async"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center bg-surface">
+            <div className="font-[family-name:var(--font-mono)] text-cyan/30 text-xs">Loading...</div>
+          </div>
+        )
+      ) : (
+        <div className="w-full h-full flex items-center justify-center bg-surface">
+          <svg className="w-12 h-12 text-cyan/50" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+        </div>
+      )}
+
+      {/* Index badge */}
+      <div className="absolute top-2 right-2 bg-black/60 border border-cyan/30 px-2 py-0.5 rounded-sm">
+        <span className="font-[family-name:var(--font-mono)] text-xs text-cyan">
+          {index + 1}
+        </span>
+      </div>
+
+      {/* Video indicator */}
+      {media.type === 'video' && (
+        <div className="absolute top-2 left-2 bg-magenta/80 px-2 py-0.5 rounded-sm">
+          <span className="font-[family-name:var(--font-mono)] text-xs text-white uppercase">
+            VIDEO
+          </span>
+        </div>
+      )}
+    </button>
+  );
+});
+
+GridItem.displayName = 'GridItem';
 
 export function GalleryModal({ project, onClose }: GalleryModalProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -266,56 +337,19 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
         {/* Content area */}
         <div className="flex-1 overflow-hidden relative">
           {viewMode === 'grid' ? (
-            /* Grid View */
+            /* Grid View - with virtualized loading */
             <div className="h-full overflow-y-auto p-4 md:p-6">
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 content-visibility-auto">
                 {gallery.map((media, index) => (
-                  <button
+                  <GridItem
                     key={media.filename}
+                    media={media}
+                    index={index}
                     onClick={() => {
                       setCurrentIndex(index);
                       setViewMode('lightbox');
                     }}
-                    className="relative aspect-square bg-surface border border-cyan/10 rounded-sm overflow-hidden group hover:border-cyan/40 transition-all hover:shadow-[0_0_20px_rgba(0,230,230,0.1)]"
-                  >
-                    {media.type === 'image' ? (
-                      <img
-                        src={media.path}
-                        alt={media.filename}
-                        className="w-full h-full object-cover transition-transform group-hover:scale-105"
-                        loading="lazy"
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center bg-surface">
-                        <div className="relative">
-                          <svg className="w-12 h-12 text-cyan/50" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z"/>
-                          </svg>
-                          <div className="absolute inset-0 animate-pulse">
-                            <svg className="w-12 h-12 text-cyan/20" fill="currentColor" viewBox="0 0 24 24">
-                              <path d="M8 5v14l11-7z"/>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Index badge */}
-                    <div className="absolute top-2 right-2 bg-black/60 border border-cyan/30 px-2 py-0.5 rounded-sm">
-                      <span className="font-[family-name:var(--font-mono)] text-xs text-cyan">
-                        {index + 1}
-                      </span>
-                    </div>
-
-                    {/* Video indicator */}
-                    {media.type === 'video' && (
-                      <div className="absolute top-2 left-2 bg-magenta/80 px-2 py-0.5 rounded-sm">
-                        <span className="font-[family-name:var(--font-mono)] text-xs text-white uppercase">
-                          VIDEO
-                        </span>
-                      </div>
-                    )}
-                  </button>
+                  />
                 ))}
               </div>
             </div>
@@ -388,6 +422,8 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
                         maxWidth: '100%'
                       }}
                       onLoad={() => setIsLoading(false)}
+                      loading="eager"
+                      decoding="sync"
                     />
                   ) : (
                     <video
@@ -400,7 +436,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
                         maxWidth: '100%'
                       }}
                       onLoadedData={() => setIsLoading(false)}
-                      autoPlay
+                      preload="metadata"
                     />
                   )}
 
@@ -440,8 +476,8 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
         </div>
       </div>
 
-      {/* Scanlines effect - less opacity in lightbox for better viewing */}
-      <div className={`pointer-events-none fixed inset-0 bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-[length:100%_2px,3px_100%] z-[60] ${viewMode === 'lightbox' ? 'opacity-10' : 'opacity-30'}`} />
+      {/* Scanlines effect - reduced opacity */}
+      <div className={`pointer-events-none fixed inset-0 bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-[length:100%_2px,3px_100%] z-[60] ${viewMode === 'lightbox' ? 'opacity-5' : 'opacity-15'}`} />
     </div>
   );
 }

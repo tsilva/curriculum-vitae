@@ -62,32 +62,16 @@
 }
 
 /* ============================================
-   GLITCH KEYFRAMES — aggressive RGB split
+   GLITCH KEYFRAMES — simplified for performance
    ============================================ */
 @keyframes glitch {
-  0% {
+  0%, 100% {
     text-shadow: 2px 0 #E8003F, -2px 0 #55ead4;
     transform: translate(0);
   }
-  20% {
-    text-shadow: -4px 0 #E8003F, 4px 0 #55ead4;
-    transform: translate(-3px, 1px);
-  }
-  40% {
-    text-shadow: 4px 0 #E8003F, -4px 0 #55ead4;
-    transform: translate(3px, -2px);
-  }
-  60% {
-    text-shadow: -3px 0 #E8003F, 3px 0 #55ead4;
-    transform: translate(-2px, 2px);
-  }
-  80% {
-    text-shadow: 3px 0 #E8003F, -3px 0 #55ead4;
-    transform: translate(2px, -1px);
-  }
-  100% {
-    text-shadow: none;
-    transform: translate(0);
+  50% {
+    text-shadow: -2px 0 #E8003F, 2px 0 #55ead4;
+    transform: translate(-1px, 1px);
   }
 }
 
@@ -96,30 +80,23 @@
     clip-path: inset(0 0 0 0);
     transform: translate(0);
   }
-  10% {
+  25% {
     clip-path: inset(20% 0 60% 0);
-    transform: translate(-3px, 0);
-  }
-  20% {
-    clip-path: inset(50% 0 20% 0);
-    transform: translate(3px, 0);
-  }
-  30% {
-    clip-path: inset(10% 0 70% 0);
     transform: translate(-2px, 0);
   }
-  40% {
-    clip-path: inset(80% 0 5% 0);
+  50% {
+    clip-path: inset(50% 0 20% 0);
     transform: translate(2px, 0);
   }
-  50% {
-    clip-path: inset(0 0 0 0);
-    transform: translate(0);
+  75% {
+    clip-path: inset(10% 0 70% 0);
+    transform: translate(-1px, 0);
   }
 }
 
 .glitch-once {
   animation: glitch 0.4s ease-in-out 0.5s 1;
+  will-change: transform;
 }
 
 /* Glitch overlay via data-text pseudo-elements */
@@ -136,6 +113,7 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
+  will-change: transform;
 }
 
 .glitch-text::before {
@@ -150,11 +128,11 @@
 
 /* Active glitch state - only animate when this class is present */
 .glitch-text.glitch-active::before {
-  animation: glitch-rgb 3s infinite linear;
+  animation: glitch-rgb 4s infinite linear;
 }
 
 .glitch-text.glitch-active::after {
-  animation: glitch-rgb 3s infinite linear reverse;
+  animation: glitch-rgb 4s infinite linear reverse;
 }
 
 /* ============================================
@@ -185,7 +163,7 @@
 }
 
 /* ============================================
-   TERMINAL CURSOR BLINK
+   TERMINAL CURSOR BLINK - slower, GPU optimized
    ============================================ */
 @keyframes cursor-blink {
   0%, 100% { opacity: 1; }
@@ -195,31 +173,34 @@
 .terminal-cursor::after {
   content: "█";
   color: #00E6E6;
-  animation: cursor-blink 1s step-end infinite;
+  animation: cursor-blink 1.2s step-end infinite;
   margin-left: 2px;
+  will-change: opacity;
 }
 
 /* ============================================
-   SCREEN FLICKER
+   SCREEN FLICKER - disabled by default, only on hover
    ============================================ */
 @keyframes flicker {
-  0%, 97%, 100% { opacity: 1; }
-  98% { opacity: 0.95; }
-  99% { opacity: 0.98; }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.98; }
 }
 
 /* ============================================
-   SCROLL REVEAL
+   SCROLL REVEAL - optimized with containment
    ============================================ */
 .reveal {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  will-change: opacity, transform;
+  contain: layout style;
 }
 
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+  will-change: auto;
 }
 
 /* ============================================
@@ -237,7 +218,8 @@
 }
 
 .animate-fade-in-up {
-  animation: fade-in-up 0.5s ease-out forwards;
+  animation: fade-in-up 0.4s ease-out forwards;
+  will-change: opacity, transform;
 }
 
 /* ============================================
@@ -302,10 +284,12 @@ body {
 }
 
 /* ============================================
-   CARD GLOW — cyan neon on hover - reduced intensity
+   CARD GLOW — cyan neon on hover - GPU optimized
    ============================================ */
 .card-glow {
   transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+  will-change: transform;
+  contain: layout style;
 }
 .card-glow:hover {
   box-shadow: 0 0 15px rgba(0, 230, 230, 0.1), 0 0 30px rgba(0, 230, 230, 0.05);
@@ -313,66 +297,34 @@ body {
 }
 
 /* ============================================
-   STAGGERED FADE-IN ANIMATION
+   STAGGERED FADE-IN ANIMATION - simplified
    ============================================ */
 @keyframes stagger-fade-in {
   from {
     opacity: 0;
-    transform: translateY(20px) scale(0.95);
+    transform: translateY(15px);
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
   }
 }
 
 /* ============================================
-   GLITCH HOVER EFFECT — more aggressive
+   GLITCH HOVER EFFECT — simplified
    ============================================ */
 @keyframes glitch-hover {
-  0% {
+  0%, 100% {
     text-shadow: 2px 0 #E8003F, -2px 0 #55ead4;
     transform: translate(0) skew(0deg);
   }
-  10% {
-    text-shadow: -3px 0 #E8003F, 3px 0 #55ead4;
-    transform: translate(-2px, 1px) skew(-2deg);
-  }
-  20% {
-    text-shadow: 3px 0 #E8003F, -3px 0 #55ead4;
-    transform: translate(2px, -1px) skew(2deg);
-  }
-  30% {
+  33% {
     text-shadow: -2px 0 #E8003F, 2px 0 #55ead4;
-    transform: translate(-1px, 2px) skew(-1deg);
+    transform: translate(-1px, 1px) skew(-1deg);
   }
-  40% {
+  66% {
     text-shadow: 2px 0 #E8003F, -2px 0 #55ead4;
-    transform: translate(1px, -2px) skew(1deg);
-  }
-  50% {
-    text-shadow: -3px 0 #E8003F, 3px 0 #55ead4;
-    transform: translate(0) skew(0deg);
-  }
-  60% {
-    text-shadow: 3px 0 #E8003F, -3px 0 #55ead4;
-    transform: translate(-1px, 1px) skew(-2deg);
-  }
-  70% {
-    text-shadow: -2px 0 #E8003F, 2px 0 #55ead4;
-    transform: translate(1px, -1px) skew(2deg);
-  }
-  80% {
-    text-shadow: 2px 0 #E8003F, -2px 0 #55ead4;
-    transform: translate(-2px, 0) skew(-1deg);
-  }
-  90% {
-    text-shadow: -3px 0 #E8003F, 3px 0 #55ead4;
-    transform: translate(2px, 0) skew(1deg);
-  }
-  100% {
-    text-shadow: 2px 0 #E8003F, -2px 0 #55ead4;
-    transform: translate(0) skew(0deg);
+    transform: translate(1px, -1px) skew(1deg);
   }
 }
 
@@ -383,7 +335,7 @@ body {
 
 /* Active glitch state for GlitchText component */
 .glitch-active {
-  animation: glitch-hover 0.6s ease-in-out infinite;
+  animation: glitch-hover 0.8s ease-in-out infinite;
 }
 
 /* ============================================
@@ -425,4 +377,29 @@ body {
   .card-glow:hover {
     transform: none;
   }
+}
+
+/* ============================================
+   PERFORMANCE UTILITIES - containment
+   ============================================ */
+.contain-layout {
+  contain: layout;
+}
+
+.contain-paint {
+  contain: paint;
+}
+
+.contain-strict {
+  contain: strict;
+}
+
+.content-visibility-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
