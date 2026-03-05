@@ -88,17 +88,6 @@
     "url": "https://github.com/tsilva/dedrive-web"
   },
   {
-    "id": "workflow-personal-management",
-    "name": "workflow-personal-management",
-    "description": "🧠 A life management system that documents every input, process, and tool — so the whole system can be iterated on ✅",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-04T16:11:37Z",
-    "createdAt": "2026-01-25T17:22:40Z",
-    "url": "https://github.com/tsilva/workflow-personal-management"
-  },
-  {
     "id": ".github",
     "name": ".github",
     "description": "Shared reusable GitHub Actions workflows and org-wide maintenance tooling for the tsilva organization",
@@ -264,17 +253,6 @@
     "url": "https://github.com/tsilva/template-react-native"
   },
   {
-    "id": "minariviz",
-    "name": "minariviz",
-    "description": "🔬 Explore, filter, and visualize Minari offline reinforcement learning datasets in your browser 📊",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-03-03T18:23:38Z",
-    "createdAt": "2026-02-25T17:27:45Z",
-    "url": "https://github.com/tsilva/minariviz"
-  },
-  {
     "id": "gymrec",
     "name": "gymrec",
     "description": "🎮 Record and replay gameplay from Gymnasium environments as Hugging Face datasets 📊",
@@ -339,17 +317,6 @@
     "updatedAt": "2026-03-03T16:09:26Z",
     "createdAt": "2026-01-15T15:13:24Z",
     "url": "https://github.com/tsilva/claudeskillz"
-  },
-  {
-    "id": "parsefood",
-    "name": "parsefood",
-    "description": "🍽️ Parse food logs from Telegram and track calories with AI 📊",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-02T18:45:37Z",
-    "createdAt": "2023-09-16T18:24:52Z",
-    "url": "https://github.com/tsilva/parsefood"
   },
   {
     "id": "youtube-downloader",
@@ -438,17 +405,6 @@
     "updatedAt": "2026-03-02T12:22:36Z",
     "createdAt": "2025-01-14T12:50:15Z",
     "url": "https://github.com/tsilva/sandbox-vertex-ai"
-  },
-  {
-    "id": "sandbox-vaulthaus",
-    "name": "sandbox-vaulthaus",
-    "description": "🏥 ML-powered clinical field name standardization for healthcare data interoperability 🔬",
-    "stars": 0,
-    "forks": 0,
-    "language": "Jupyter Notebook",
-    "updatedAt": "2026-03-02T12:22:33Z",
-    "createdAt": "2025-03-06T12:45:43Z",
-    "url": "https://github.com/tsilva/sandbox-vaulthaus"
   },
   {
     "id": "sandbox-transformers",
@@ -592,17 +548,6 @@
     "updatedAt": "2026-03-02T12:21:48Z",
     "createdAt": "2025-01-13T16:28:13Z",
     "url": "https://github.com/tsilva/sandbox-llamaindex"
-  },
-  {
-    "id": "sandbox-langchain",
-    "name": "sandbox-langchain",
-    "description": "🔗 Quick start guide for LangChain with progressive examples 📚",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-02T12:21:44Z",
-    "createdAt": "2025-01-09T18:20:18Z",
-    "url": "https://github.com/tsilva/sandbox-langchain"
   },
   {
     "id": "sandbox-kafka",
@@ -902,17 +847,6 @@
     "url": "https://github.com/tsilva/dataset-explorer-agent"
   },
   {
-    "id": "clinical-notes-extractor",
-    "name": "clinical-notes-extractor",
-    "description": "🏥 Extract structured data from clinical notes using LLMs and schema inference 📋",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-02T12:19:14Z",
-    "createdAt": "2025-10-22T13:36:20Z",
-    "url": "https://github.com/tsilva/clinical-notes-extractor"
-  },
-  {
     "id": "claudesk",
     "name": "claudesk",
     "description": "️ Interactive dashboard for launching and managing Claude Code agents ⚡",
@@ -955,17 +889,6 @@
     "updatedAt": "2026-03-01T10:37:21Z",
     "createdAt": "2024-01-16T16:26:53Z",
     "url": "https://github.com/tsilva/parselabs"
-  },
-  {
-    "id": "conductor-playground",
-    "name": "conductor-playground",
-    "description": "TODO: Add description.",
-    "stars": 0,
-    "forks": 0,
-    "language": null,
-    "updatedAt": "2026-02-27T12:29:21Z",
-    "createdAt": "2026-02-27T12:29:19Z",
-    "url": "https://github.com/tsilva/conductor-playground"
   },
   {
     "id": "mbox-extractor",
