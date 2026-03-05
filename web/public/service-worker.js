@@ -3,24 +3,24 @@ const CACHE_NAME = 'cv-cache-v1';
 // Resources to cache immediately on install
 const PRECACHE_ASSETS = [
   '/',
-  '/avatar.jpg',
+  '/avatar.webp',
   '/logo.png',
   '/cv-data-manifest.json',
 ];
 
 // Install event - precache critical assets
-self.addEventListener('install', (event: ExtendableEvent) => {
+self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(PRECACHE_ASSETS);
     })
   );
   // Activate immediately
-  (self as unknown as ServiceWorkerGlobalScope).skipWaiting();
+  self.skipWaiting();
 });
 
 // Activate event - clean up old caches
-self.addEventListener('activate', (event: ExtendableEvent) => {
+self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((cacheNames) => {
       return Promise.all(
@@ -31,11 +31,11 @@ self.addEventListener('activate', (event: ExtendableEvent) => {
     })
   );
   // Take control immediately
-  (self as unknown as ServiceWorkerGlobalScope).clients.claim();
+  self.clients.claim();
 });
 
 // Fetch event - serve from cache, fallback to network
-self.addEventListener('fetch', (event: FetchEvent) => {
+self.addEventListener('fetch', (event) => {
   const { request } = event;
   const url = new URL(request.url);
 
