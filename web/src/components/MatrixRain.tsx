@@ -9,12 +9,19 @@ const FPS = 12;
 const COLOR_FULL = "#55ead4";
 const COLOR_DIMMED = "rgba(85, 234, 212, 0.3)";
 
+interface Cell {
+  char: string;
+  age: number;
+}
+
 interface Stream {
   col: number;
   row: number;
   speed: number;
   counter: number;
 }
+
+const MAX_AGE = 15; // Characters live for 15 frames max
 
 export function MatrixRain() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -51,7 +58,7 @@ export function MatrixRain() {
     const frameInterval = 1000 / FPS;
     let cols = 0;
     let rows = 0;
-    let grid: (string | null)[][] = [];
+    let grid: (Cell | null)[][] = [];
     let streams: Stream[] = [];
     let resizeTimeout: NodeJS.Timeout;
 
@@ -72,18 +79,19 @@ export function MatrixRain() {
         // Initialize empty grid
         grid = Array(rows).fill(null).map(() => Array(cols).fill(null));
         
-        // Create streams - ensure all columns get covered
-        const streamsPerCol = 2; // 2 streams per column for density
+        // Initialize empty grid
+        grid = Array(rows).fill(null).map(() => Array(cols).fill(null));
+        
+        // Create streams - about 40% of columns have active streams (less dense)
+        const numStreams = Math.floor(cols * 0.4);
         streams = [];
-        for (let col = 0; col < cols; col++) {
-          for (let s = 0; s < streamsPerCol; s++) {
-            streams.push({
-              col: col,
-              row: Math.floor(Math.random() * -rows * 2) - Math.random() * 100, // Staggered start
-              speed: Math.floor(Math.random() * 3) + 1, // 1-3 cells per frame
-              counter: Math.floor(Math.random() * 3) // Staggered timing
-            });
-          }
+        for (let i = 0; i < numStreams; i++) {
+          streams.push({
+            col: Math.floor(Math.random() * cols),
+            row: Math.floor(Math.random() * -rows * 2), // Start way above viewport
+            speed: Math.floor(Math.random() * 2) + 1, // 1-2 cells per frame
+            counter: Math.floor(Math.random() * 3)
+          });
         }
       }, 100);
     };
@@ -111,44 +119,45 @@ export function MatrixRain() {
       // Clear entire canvas
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Update streams and grid
+      // Age all cells
+      for (let row = 0; row < rows; row++) {
+        for (let col = 0; col < cols; col++) {
+          const cell = grid[row][col];
+          if (cell) {
+            cell.age++;
+            if (cell.age > MAX_AGE) {
+              grid[row][col] = null;
+            }
+          }
+        }
+      }
+
+      // Update streams and place new characters
       for (const stream of streams) {
         stream.counter++;
         if (stream.counter >= stream.speed) {
           stream.counter = 0;
-          
-          // Clear previous cell if within bounds
-          if (stream.row >= 0 && stream.row < rows) {
-            // Character stays until overwritten by another stream or cleared
-          }
           
           // Move down
           stream.row++;
           
           // Place new character if within bounds
           if (stream.row >= 0 && stream.row < rows) {
-            grid[stream.row][stream.col] = CHARS[Math.floor(Math.random() * CHARS.length)];
+            grid[stream.row][stream.col] = {
+              char: CHARS[Math.floor(Math.random() * CHARS.length)],
+              age: 0
+            };
           }
           
           // Reset stream when it goes off bottom
-          if (stream.row > rows + 10) {
-            stream.row = Math.floor(Math.random() * -20) - 5;
+          if (stream.row > rows + 5) {
+            stream.row = Math.floor(Math.random() * -30) - 10;
             stream.col = Math.floor(Math.random() * cols);
-            stream.speed = Math.floor(Math.random() * 2) + 1;
           }
         }
       }
 
-      // Clear cells that have no active stream (fade effect)
-      // Only clear a few random cells per frame for persistence
-      const cellsToClear = Math.floor(cols * rows * 0.005); // 0.5% of cells per frame
-      for (let i = 0; i < cellsToClear; i++) {
-        const clearRow = Math.floor(Math.random() * rows);
-        const clearCol = Math.floor(Math.random() * cols);
-        grid[clearRow][clearCol] = null;
-      }
-
-      // Draw all non-null cells
+      // Draw all cells with age-based fade
       ctx.font = `${FONT_SIZE}px monospace`;
       ctx.textBaseline = "top";
       
@@ -156,10 +165,14 @@ export function MatrixRain() {
       
       for (let row = 0; row < rows; row++) {
         for (let col = 0; col < cols; col++) {
-          const char = grid[row][col];
-          if (char) {
-            ctx.fillStyle = baseColor;
-            ctx.fillText(char, col * FONT_SIZE, row * FONT_SIZE);
+          const cell = grid[row][col];
+          if (cell) {
+            // Fade based on age: new = bright, old = dim
+            const opacity = 1 - (cell.age / MAX_AGE);
+            ctx.fillStyle = baseColor.startsWith("rgba") 
+              ? baseColor.replace(/[\d.]+\)$/, `${opacity * 0.3})`)
+              : baseColor + Math.floor(opacity * 255).toString(16).padStart(2, '0');
+            ctx.fillText(cell.char, col * FONT_SIZE, row * FONT_SIZE);
           }
         }
       }
