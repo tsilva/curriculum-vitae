@@ -140,14 +140,21 @@
 
 .glitch-text::before {
   color: #E8003F;
-  animation: glitch-rgb 3s infinite linear;
   opacity: 0.4;
 }
 
 .glitch-text::after {
   color: #00E6E6;
-  animation: glitch-rgb 3s infinite linear reverse;
   opacity: 0.4;
+}
+
+/* Active glitch state - only animate when this class is present */
+.glitch-text.glitch-active::before {
+  animation: glitch-rgb 3s infinite linear;
+}
+
+.glitch-text.glitch-active::after {
+  animation: glitch-rgb 3s infinite linear reverse;
 }
 
 /* ============================================
