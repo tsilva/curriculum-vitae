@@ -1,31 +1,7 @@
 import type { CVData } from '@/types/cv';
-import * as fs from 'fs';
-import * as path from 'path';
 
-// Try multiple possible paths for the JSON file
-const possiblePaths = [
-  path.join(process.cwd(), 'src', 'data', 'cv-data.json'),
-  path.join(process.cwd(), 'data', 'cv-data.json'),
-  path.join(__dirname, '..', 'data', 'cv-data.json'),
-  path.join(__dirname, '..', '..', 'data', 'cv-data.json'),
-];
-
-let jsonContent: string | null = null;
-let usedPath: string | null = null;
-
-for (const jsonPath of possiblePaths) {
-  if (fs.existsSync(jsonPath)) {
-    jsonContent = fs.readFileSync(jsonPath, 'utf-8');
-    usedPath = jsonPath;
-    break;
-  }
-}
-
-if (!jsonContent) {
-  throw new Error(`Could not find cv-data.json. Tried: ${possiblePaths.join(', ')}. CWD: ${process.cwd()}, __dirname: ${__dirname}`);
-}
-
-const cvDataJson = JSON.parse(jsonContent);
+// Import JSON directly as a module - resolved at build time
+import cvDataJson from '@/data/cv-data.json';
 
 export const cvData: CVData = cvDataJson as CVData;
 

@@ -57,7 +57,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 onClick={() => {
                   window.dispatchEvent(new CustomEvent('openProjectGallery', { detail: project }));
                 }}
-                className="flex items-center gap-1.5 font-[family-name:var(--font-mono)] text-xs text-magenta hover:text-cool-white transition-colors border border-magenta/50 hover:border-magenta bg-magenta/10 hover:bg-magenta/20 px-2 py-1 rounded-sm animate-pulse"
+                className="flex items-center gap-1.5 font-[family-name:var(--font-mono)] text-xs text-cool-white hover:text-white transition-colors border border-magenta hover:border-magenta bg-magenta/40 hover:bg-magenta/60 px-2 py-1 rounded-sm animate-pulse shadow-[0_0_10px_rgba(255,0,170,0.4)]"
                 title={`View Gallery (${project.gallery.length} items)`}
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
