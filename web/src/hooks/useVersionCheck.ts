@@ -19,24 +19,26 @@ interface DataManifest {
 
 const STORAGE_KEY = "cv_last_seen_version";
 const POLLING_INTERVAL = 5 * 60 * 1000; // 5 minutes
-const VISIBILITY_CHECK_INTERVAL = 30 * 1000; // 30 seconds when visible
 
 export function useVersionCheck(): UseVersionCheckReturn {
   const [currentVersion, setCurrentVersion] = useState<string | null>(null);
   const [latestVersion, setLatestVersion] = useState<string | null>(null);
   const [hasUpdate, setHasUpdate] = useState(false);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  const initialLoadRef = useRef(false);
-
-  // Get stored version from localStorage
-  const getStoredVersion = useCallback((): string | null => {
-    if (typeof window === "undefined") return null;
-    try {
-      return localStorage.getItem(STORAGE_KEY);
-    } catch {
-      return null;
-    }
-  }, []);
+  
+  // Use refs to track values that the polling function needs access to
+  // without causing the effect to re-run
+  const currentVersionRef = useRef<string | null>(null);
+  const hasUpdateRef = useRef(false);
+  const initialLoadDoneRef = useRef(false);
+  
+  // Keep refs in sync with state
+  useEffect(() => {
+    currentVersionRef.current = currentVersion;
+  }, [currentVersion]);
+  
+  useEffect(() => {
+    hasUpdateRef.current = hasUpdate;
+  }, [hasUpdate]);
 
   // Store version to localStorage
   const storeVersion = useCallback((version: string) => {
@@ -48,7 +50,17 @@ export function useVersionCheck(): UseVersionCheckReturn {
     }
   }, []);
 
-  // Fetch the manifest and check for updates
+  // Get stored version from localStorage
+  const getStoredVersion = useCallback((): string | null => {
+    if (typeof window === "undefined") return null;
+    try {
+      return localStorage.getItem(STORAGE_KEY);
+    } catch {
+      return null;
+    }
+  }, []);
+
+  // The actual check function - stable reference using refs for dynamic values
   const checkForUpdates = useCallback(async () => {
     try {
       const response = await fetch("/cv-data-manifest.json", {
@@ -66,15 +78,16 @@ export function useVersionCheck(): UseVersionCheckReturn {
 
       const manifest: DataManifest = await response.json();
       const remoteVersion = manifest.hash;
+      const storedVersion = getStoredVersion();
 
-      // On first load, set current version if not already stored
-      if (!initialLoadRef.current) {
-        initialLoadRef.current = true;
-        const storedVersion = getStoredVersion();
-
+      // On first load
+      if (!initialLoadDoneRef.current) {
+        initialLoadDoneRef.current = true;
+        
         if (storedVersion) {
           // We have a stored version - use it as current
           setCurrentVersion(storedVersion);
+          currentVersionRef.current = storedVersion;
 
           // Check if there's an update
           if (storedVersion !== remoteVersion) {
@@ -88,12 +101,14 @@ export function useVersionCheck(): UseVersionCheckReturn {
           // First visit - store current version
           console.log("[VersionCheck] First visit, storing version:", remoteVersion);
           setCurrentVersion(remoteVersion);
+          currentVersionRef.current = remoteVersion;
           storeVersion(remoteVersion);
         }
       } else {
-        // Subsequent check - compare with current
-        if (currentVersion && currentVersion !== remoteVersion) {
-          console.log("[VersionCheck] Update detected during polling:", currentVersion, "→", remoteVersion);
+        // Subsequent polling check - compare with current using ref
+        const current = currentVersionRef.current;
+        if (current && current !== remoteVersion && !hasUpdateRef.current) {
+          console.log("[VersionCheck] Update detected during polling:", current, "→", remoteVersion);
           setLatestVersion(remoteVersion);
           setHasUpdate(true);
         }
@@ -101,7 +116,7 @@ export function useVersionCheck(): UseVersionCheckReturn {
     } catch (error) {
       console.error("[VersionCheck] Error checking for updates:", error);
     }
-  }, [currentVersion, getStoredVersion, storeVersion]);
+  }, [getStoredVersion, storeVersion]);
 
   // Dismiss the update notification
   const dismissUpdate = useCallback(() => {
@@ -110,6 +125,7 @@ export function useVersionCheck(): UseVersionCheckReturn {
     if (latestVersion) {
       storeVersion(latestVersion);
       setCurrentVersion(latestVersion);
+      currentVersionRef.current = latestVersion;
     }
   }, [latestVersion, storeVersion]);
 
@@ -120,38 +136,36 @@ export function useVersionCheck(): UseVersionCheckReturn {
     }
   }, []);
 
-  // Initial check and setup polling
+  // Set up polling - this effect only runs once on mount
   useEffect(() => {
+    console.log("[VersionCheck] Starting polling every", POLLING_INTERVAL / 1000 / 60, "minutes");
+    
     // Check immediately on mount
     checkForUpdates();
 
-    // Set up polling interval
-    intervalRef.current = setInterval(checkForUpdates, POLLING_INTERVAL);
+    // Set up polling interval with stable function reference
+    const intervalId = setInterval(() => {
+      console.log("[VersionCheck] Polling for updates...");
+      checkForUpdates();
+    }, POLLING_INTERVAL);
 
-    // Handle visibility change - check more frequently when tab becomes visible
+    // Handle visibility change - check when tab becomes visible
     const handleVisibilityChange = () => {
       if (document.visibilityState === "visible") {
-        // Immediate check when tab becomes visible
+        console.log("[VersionCheck] Tab visible, checking for updates...");
         checkForUpdates();
       }
     };
 
     document.addEventListener("visibilitychange", handleVisibilityChange);
 
+    // Cleanup
     return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
+      console.log("[VersionCheck] Stopping polling");
+      clearInterval(intervalId);
       document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
   }, [checkForUpdates]);
-
-  // Update localStorage when user acknowledges update
-  useEffect(() => {
-    if (!hasUpdate && latestVersion && latestVersion === currentVersion) {
-      storeVersion(latestVersion);
-    }
-  }, [hasUpdate, latestVersion, currentVersion, storeVersion]);
 
   return {
     hasUpdate,
