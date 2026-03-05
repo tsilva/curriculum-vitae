@@ -6,12 +6,10 @@ const CHARS = "アイウエオカキクケコサシスセソタチツテトナ�
 const FONT_SIZE = 14;
 const FPS = 12;
 
-const COLOR_FULL = "#55ead4";
-const COLOR_DIMMED = "rgba(85, 234, 212, 0.3)";
-
 interface Cell {
   char: string;
   age: number;
+  baselineOpacity: number; // Each cell has its own baseline opacity (15-20%)
 }
 
 interface Stream {
@@ -21,8 +19,11 @@ interface Stream {
   counter: number;
 }
 
-const MAX_AGE = 360; // Characters live for 30 seconds at 12 FPS
-const MAX_STREAMS_PERCENT = 0.4; // 40% of columns have streams (more visible)
+const MAX_AGE_BRIGHT = 3; // Frames to stay bright (100%)
+const MAX_AGE_FADE = 30; // Frames to fade to baseline
+const BASELINE_OPACITY_MIN = 0.15;
+const BASELINE_OPACITY_MAX = 0.20;
+const MAX_STREAMS_PERCENT = 0.35; // 35% of columns have streams (sparse)
 const SPAWN_DELAY_MIN = 10; // Quick startup
 const SPAWN_DELAY_MAX = 60; // Max 5 seconds initial stagger
 const STREAM_RESET_DELAY_MIN = -30; // Start just above
@@ -30,24 +31,8 @@ const STREAM_RESET_DELAY_MAX = -5;
 
 export function MatrixRain() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const isInHeroRef = useRef(true);
   const isVisibleRef = useRef(true);
   const animIdRef = useRef<number | undefined>(undefined);
-
-  useEffect(() => {
-    if (window.matchMedia("(pointer: coarse)").matches) return;
-    
-    const handleScroll = () => {
-      const heroHeight = window.innerHeight;
-      const scrollY = window.scrollY;
-      isInHeroRef.current = scrollY < heroHeight * 0.5;
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -129,15 +114,12 @@ export function MatrixRain() {
       // Clear entire canvas
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Age all cells
+      // Age all cells (they never disappear, just stay at baseline)
       for (let row = 0; row < rows && row < grid.length; row++) {
         for (let col = 0; col < cols && col < grid[row].length; col++) {
           const cell = grid[row][col];
           if (cell) {
             cell.age++;
-            if (cell.age > MAX_AGE) {
-              grid[row][col] = null;
-            }
           }
         }
       }
@@ -161,7 +143,8 @@ export function MatrixRain() {
           if (stream.row >= 0 && stream.row < rows && stream.col >= 0 && stream.col < cols) {
             grid[stream.row][stream.col] = {
               char: CHARS[Math.floor(Math.random() * CHARS.length)],
-              age: 0
+              age: 0,
+              baselineOpacity: BASELINE_OPACITY_MIN + Math.random() * (BASELINE_OPACITY_MAX - BASELINE_OPACITY_MIN)
             };
           }
           
@@ -177,28 +160,24 @@ export function MatrixRain() {
       ctx.font = `${FONT_SIZE}px monospace`;
       ctx.textBaseline = "top";
       
-      const isHero = isInHeroRef.current;
-      
       for (let row = 0; row < rows && row < grid.length; row++) {
         for (let col = 0; col < cols && col < grid[row].length; col++) {
           const cell = grid[row][col];
           if (cell) {
-            // Fade curve: bright when young, fade to visible baseline
+            // Two-tier visual hierarchy:
             // New chars (0-3 frames): bright at 100%
-            // Fade (3-30 frames): fade to 15% baseline
-            // Old (30+ frames): stay at 15% baseline
+            // Fade (3-30 frames): fade from 100% to cell's baseline opacity
+            // Old (30+ frames): stay at cell's baseline opacity (15-20%)
             let opacity: number;
-            if (cell.age < 3) {
+            if (cell.age < MAX_AGE_BRIGHT) {
               opacity = 1; // Bright new characters
-            } else if (cell.age < 30) {
-              // Fade from 100% to 15% over frames 3-30
-              opacity = 1 - ((cell.age - 3) / 27 * 0.85); // Fade to 0.15 (15%)
+            } else if (cell.age < MAX_AGE_FADE) {
+              // Fade from 100% to baseline over frames 3-30
+              const fadeProgress = (cell.age - MAX_AGE_BRIGHT) / (MAX_AGE_FADE - MAX_AGE_BRIGHT);
+              opacity = 1 - (fadeProgress * (1 - cell.baselineOpacity));
             } else {
-              opacity = 0.15; // Visible baseline for old characters
+              opacity = cell.baselineOpacity; // Baseline for old characters (15-20%)
             }
-            
-            // Dim when not in hero section
-            if (!isHero) opacity *= 0.5;
             
             ctx.fillStyle = `rgba(85, 234, 212, ${opacity})`;
             ctx.fillText(cell.char, col * FONT_SIZE, row * FONT_SIZE);
