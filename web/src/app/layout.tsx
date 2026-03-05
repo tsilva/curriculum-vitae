@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/avatar.jpg",
+        url: "/avatar.webp",
         width: 144,
         height: 144,
         alt: "Tiago Silva - Software Engineer",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     description:
       "20+ years of experience, 60+ projects shipped. Expertise in Python, AI/ML, and full-stack development.",
     creator: "@tiagosilva",
-    images: ["/avatar.jpg"],
+    images: ["/avatar.webp"],
   },
   robots: {
     index: true,
@@ -113,7 +113,7 @@ const jsonLd = {
   jobTitle: "Software Engineer",
   description: "Senior software engineer with 20+ years of experience and 60+ projects shipped",
   url: "https://cv.tsilva.eu",
-  image: "https://cv.tsilva.eu/avatar.jpg",
+  image: "https://cv.tsilva.eu/avatar.webp",
   sameAs: [
     "https://github.com/tsilva",
     "https://www.linkedin.com/in/engtiagosilva/",
@@ -182,7 +182,7 @@ export default function RootLayout({
         <link rel="prefetch" href={dataUrl} />
         
         {/* Preload avatar image - hero LCP element */}
-        <link rel="preload" href="/avatar.jpg" as="image" fetchPriority="high" />
+        <link rel="preload" href="/avatar.webp" as="image" fetchPriority="high" />
         
         {/* Priority hints for other critical resources */}
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
