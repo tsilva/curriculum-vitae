@@ -30,7 +30,6 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
     setViewMode('grid');
     setIsFullscreen(false);
     setShowControls(true);
-    setShowThumbnails(true);
   }, [project?.id]);
 
   // Reset loading state when media changes
