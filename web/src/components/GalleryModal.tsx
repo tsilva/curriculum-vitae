@@ -14,7 +14,6 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
   const [viewMode, setViewMode] = useState<'grid' | 'lightbox'>('grid');
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
-  const [isFullscreen, setIsFullscreen] = useState(false);
   const [showControls, setShowControls] = useState(true);
   const controlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -28,7 +27,6 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
     setCurrentIndex(0);
     setIsLoading(true);
     setViewMode('grid');
-    setIsFullscreen(false);
     setShowControls(true);
   }, [project?.id]);
 
@@ -87,9 +85,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
 
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
-        if (isFullscreen) {
-          document.exitFullscreen();
-        } else if (viewMode === 'lightbox') {
+        if (viewMode === 'lightbox') {
           setViewMode('grid');
         } else {
           onClose();
@@ -100,8 +96,6 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
         navigateNext();
       } else if (e.key === 'Enter' && viewMode === 'grid' && gallery.length > 0) {
         setViewMode('lightbox');
-      } else if (e.key === 'f' || e.key === 'F') {
-        toggleFullscreen();
       }
     };
 
@@ -115,7 +109,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
         clearTimeout(controlsTimeoutRef.current);
       }
     };
-  }, [project, viewMode, isFullscreen, gallery.length, onClose, toggleFullscreen]);
+  }, [project, viewMode, gallery.length, onClose]);
 
   // Start auto-hide timer when entering lightbox
   useEffect(() => {
@@ -251,26 +245,6 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
               </button>
             </div>
 
-            {/* Fullscreen toggle - only in lightbox */}
-            {viewMode === 'lightbox' && (
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  toggleFullscreen();
-                }}
-                className="hidden md:flex px-2 md:px-3 py-1.5 rounded-sm text-sm font-[family-name:var(--font-mono)] text-steel hover:text-cyan transition-colors border border-steel/30 hover:border-cyan/40"
-                title="Toggle fullscreen (F)"
-              >
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                  {isFullscreen ? (
-                    <path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/>
-                  ) : (
-                    <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
-                  )}
-                </svg>
-              </button>
-            )}
-
             {/* Close button */}
             <button
               onClick={(e) => {
@@ -324,16 +298,6 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
                         </div>
                       </div>
                     )}
-                    
-                    {/* Overlay with filename */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3">
-                      <p className="font-[family-name:var(--font-mono)] text-xs text-cyan truncate">
-                        {media.filename}
-                      </p>
-                      <p className="font-[family-name:var(--font-mono)] text-xs text-steel-dim uppercase">
-                        {media.type}
-                      </p>
-                    </div>
 
                     {/* Index badge */}
                     <div className="absolute top-2 right-2 bg-black/60 border border-cyan/30 px-2 py-0.5 rounded-sm">
@@ -465,11 +429,6 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
                     <span className="text-cyan hidden md:inline">←</span>
                     <span className="text-cyan hidden md:inline">→</span>
                     <span className="hidden md:inline"> Navigate </span>
-                    <span className="mx-1 md:mx-2">|</span>
-                    <span className="text-cyan md:hidden">TAP</span>
-                    <span className="hidden md:inline text-cyan">F</span>
-                    <span className="md:hidden"> Toggle Controls</span>
-                    <span className="hidden md:inline"> Fullscreen </span>
                     <span className="mx-1 md:mx-2">|</span>
                     <span className="text-cyan">ESC</span> {viewMode === 'lightbox' ? 'Back' : 'Close'}
                   </p>
