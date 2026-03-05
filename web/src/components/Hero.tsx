@@ -4,6 +4,10 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { GlitchText } from "./GlitchText";
 import { CountUp } from "./CountUp";
+import githubRepos from "@/data/github-data.json";
+
+// Calculate OSS count excluding sandbox-* repos
+const OSS_COUNT = githubRepos.filter(repo => !repo.name.startsWith('sandbox-')).length;
 
 const socialLinks = [
   {
@@ -237,7 +241,7 @@ export function Hero() {
         <CountUp end={20} suffix="+" label="Years" />
         <CountUp end={60} suffix="+" label="Projects" />
         <CountUp end={100} suffix="M+" label="Users" />
-        <CountUp end={86} suffix="" label="OSS" />
+        <CountUp end={OSS_COUNT} suffix="" label="OSS" />
       </div>
 
       {/* Social links */}
