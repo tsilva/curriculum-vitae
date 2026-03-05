@@ -87,10 +87,10 @@ export function Backstory() {
           onClick={() => setIsExpanded(!isExpanded)}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className={`w-full group flex items-center justify-between gap-4 p-4 border-l-2 transition-all duration-300 ${
+          className={`w-full group flex items-center justify-between gap-4 p-4 border-l-2 transition-all duration-300 cursor-pointer ${
             isExpanded 
               ? 'border-kiroshi-red bg-kiroshi-red/5' 
-              : 'border-kiroshi-red/40 bg-surface/20 hover:bg-surface/40 hover:border-kiroshi-red/60'
+              : 'border-kiroshi-red/40 bg-surface/20 hover:bg-surface/50 hover:border-kiroshi-red/80 hover:shadow-[0_0_20px_rgba(232,0,63,0.15)] hover:translate-x-1'
           }`}
         >
           {/* Left side: Icon + Label */}
