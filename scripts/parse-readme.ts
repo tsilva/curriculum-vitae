@@ -66,6 +66,7 @@ interface CVData {
 const ROOT = path.resolve(__dirname, "..");
 const README_PATH = path.join(ROOT, "README.md");
 const OUTPUT_PATH = path.join(ROOT, "web", "src", "data", "cv-data.json");
+const MANIFEST_PATH = path.join(ROOT, "galleries-manifest.json");
 
 // Gallery configuration
 const GALLERY_MODE = process.env.GALLERY_MODE || 'r2';
@@ -291,12 +292,49 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
   const galleryMap = new Map<string, GalleryMedia[]>();
   const baseUrl = getGalleryBaseUrl();
   
-  if (!fs.existsSync(galleriesPath)) {
+  // Check if we should use manifest file (R2 mode without local galleries)
+  const hasLocalGalleries = fs.existsSync(galleriesPath);
+  
+  if (!hasLocalGalleries && GALLERY_MODE === 'r2' && fs.existsSync(MANIFEST_PATH)) {
+    // Use manifest file for R2 mode when galleries folder doesn't exist
+    console.log("Using galleries manifest for R2 mode (no local galleries folder)");
+    const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf-8'));
+    
+    for (const [projectId, files] of Object.entries(manifest)) {
+      const media: GalleryMedia[] = [];
+      for (const filename of files as string[]) {
+        const ext = path.extname(filename).toLowerCase();
+        const isImage = ['.webp', '.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg'].includes(ext);
+        const isVideo = ['.mp4', '.mov', '.mkv', '.avi', '.webm'].includes(ext);
+        
+        if (isImage || isVideo) {
+          media.push({
+            filename,
+            type: isImage ? 'image' : 'video',
+            path: `${baseUrl}/${projectId}/${filename}`
+          });
+        }
+      }
+      
+      // Sort by filename for consistent ordering
+      media.sort((a, b) => a.filename.localeCompare(b.filename));
+      
+      if (media.length > 0) {
+        galleryMap.set(projectId, media);
+      }
+    }
+    
+    console.log(`Loaded ${galleryMap.size} galleries from manifest (mode: ${GALLERY_MODE})`);
+    return galleryMap;
+  }
+  
+  if (!hasLocalGalleries) {
     console.log("Galleries folder not found, skipping gallery data");
     return galleryMap;
   }
   
   const entries = fs.readdirSync(galleriesPath, { withFileTypes: true });
+  const manifest: Record<string, string[]> = {};
   
   for (const entry of entries) {
     if (!entry.isDirectory()) continue;
@@ -305,6 +343,7 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
     const projectFolder = path.join(galleriesPath, entry.name);
     const files = fs.readdirSync(projectFolder);
     const media: GalleryMedia[] = [];
+    const mediaFiles: string[] = [];
     
     for (const filename of files) {
       const ext = path.extname(filename).toLowerCase();
@@ -317,15 +356,24 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
           type: isImage ? 'image' : 'video',
           path: `${baseUrl}/${entry.name}/${filename}`
         });
+        mediaFiles.push(filename);
       }
     }
     
     // Sort by filename for consistent ordering
     media.sort((a, b) => a.filename.localeCompare(b.filename));
+    mediaFiles.sort();
     
     if (media.length > 0) {
       galleryMap.set(entry.name, media);
+      manifest[entry.name] = mediaFiles;
     }
+  }
+  
+  // Update manifest file if running locally
+  if (GALLERY_MODE === 'r2' && Object.keys(manifest).length > 0) {
+    fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
+    console.log(`Updated galleries-manifest.json with ${Object.keys(manifest).length} projects`);
   }
   
   console.log(`Scanned ${galleryMap.size} galleries with media (mode: ${GALLERY_MODE})`);
