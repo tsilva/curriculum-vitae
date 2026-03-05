@@ -21,8 +21,8 @@ interface Stream {
 
 const MAX_AGE_BRIGHT = 3; // Frames to stay bright (100%)
 const MAX_AGE_FADE = 30; // Frames to fade to baseline
-const BASELINE_OPACITY_MIN = 0.15;
-const BASELINE_OPACITY_MAX = 0.20;
+const BASELINE_OPACITY_MIN = 0.05;
+const BASELINE_OPACITY_MAX = 0.10;
 const MAX_STREAMS_PERCENT = 0.35; // 35% of columns have streams (sparse)
 const SPAWN_DELAY_MIN = 10; // Quick startup
 const SPAWN_DELAY_MAX = 60; // Max 5 seconds initial stagger
@@ -52,6 +52,7 @@ export function MatrixRain() {
     let streams: Stream[] = [];
     let resizeTimeout: NodeJS.Timeout;
     let isResizing = false;
+    let filledColumns = new Set<number>(); // Track columns that have had streams
 
     const resize = () => {
       isResizing = true;
@@ -71,13 +72,34 @@ export function MatrixRain() {
         // Initialize empty grid
         grid = Array(rows).fill(null).map(() => Array(cols).fill(null));
         
-        // Create streams - sparse with staggered spawn timing
-        // All streams start within first 60 frames (5 seconds at 12 FPS)
+        // Reset filled columns tracking
+        filledColumns.clear();
+        
+        // Helper to get columns without streams
+        const getUnfilledColumns = (): number[] => {
+          const unfilled = [];
+          for (let i = 0; i < cols; i++) {
+            if (!filledColumns.has(i)) {
+              unfilled.push(i);
+            }
+          }
+          return unfilled;
+        };
+        
+        // Create streams - prioritize empty columns first
         const numStreams = Math.floor(cols * MAX_STREAMS_PERCENT);
         streams = [];
         for (let i = 0; i < numStreams; i++) {
+          // Prioritize columns that haven't been filled yet
+          const unfilled = getUnfilledColumns();
+          const col = unfilled.length > 0 
+            ? unfilled[Math.floor(Math.random() * unfilled.length)]
+            : Math.floor(Math.random() * cols);
+          
+          filledColumns.add(col);
+          
           streams.push({
-            col: Math.floor(Math.random() * cols),
+            col,
             row: Math.floor(Math.random() * (STREAM_RESET_DELAY_MAX - STREAM_RESET_DELAY_MIN) + STREAM_RESET_DELAY_MIN),
             speed: Math.floor(Math.random() * 2) + 1,
             counter: -Math.floor(Math.random() * SPAWN_DELAY_MAX) // Random delay 0-60 frames
@@ -147,9 +169,29 @@ export function MatrixRain() {
           }
           
           // Reset stream when it goes off bottom with random delay
+          // Prioritize columns that haven't been filled yet
           if (stream.row > rows + 5) {
+            const getUnfilledColumns = (): number[] => {
+              const unfilled = [];
+              for (let i = 0; i < cols; i++) {
+                if (!filledColumns.has(i)) {
+                  unfilled.push(i);
+                }
+              }
+              return unfilled;
+            };
+            
+            const unfilled = getUnfilledColumns();
+            if (unfilled.length > 0) {
+              // Pick from unfilled columns
+              stream.col = unfilled[Math.floor(Math.random() * unfilled.length)];
+            } else {
+              // All columns filled, pick randomly
+              stream.col = Math.floor(Math.random() * cols);
+            }
+            filledColumns.add(stream.col);
+            
             stream.row = Math.floor(Math.random() * (STREAM_RESET_DELAY_MAX - STREAM_RESET_DELAY_MIN) + STREAM_RESET_DELAY_MIN);
-            stream.col = Math.floor(Math.random() * cols);
           }
         }
       }
