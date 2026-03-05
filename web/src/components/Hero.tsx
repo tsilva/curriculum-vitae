@@ -129,7 +129,7 @@ export function Hero() {
         {/* Top HUD readout */}
         <div className="absolute -top-0.5 left-20 right-20 flex items-center gap-2">
           <div className="h-px flex-1 bg-kiroshi-red/20" />
-          <span className={`font-[family-name:var(--font-display)] text-[11px] font-bold text-kiroshi-red tracking-[0.25em] neon-glow-kiroshi-red transition-all duration-300 ${isHovered ? 'text-kiroshi-yellow' : ''}`}>KIROSHI OPTICS MK.4</span>
+          <span className={`font-[family-name:var(--font-display)] text-[11px] font-bold text-kiroshi-red/70 tracking-[0.25em] neon-glow-kiroshi-red transition-all duration-300 ${isHovered ? 'text-kiroshi-yellow' : ''}`}>KIROSHI OPTICS MK.4</span>
           <div className="h-px flex-1 bg-kiroshi-red/20" />
         </div>
 
