@@ -42,10 +42,10 @@ export default function Home() {
             <Projects />
           </div>
           <div className="content-visibility-auto">
-            <Education />
+            <OpenSource />
           </div>
           <div className="content-visibility-auto">
-            <OpenSource />
+            <Education />
           </div>
         </main>
         <Footer />

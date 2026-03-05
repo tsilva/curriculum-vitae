@@ -14,6 +14,7 @@ interface GitHubRepoRaw {
   forkCount: number;
   isArchived: boolean;
   isFork: boolean;
+  visibility: string;
 }
 
 interface GitHubRepo {
@@ -32,7 +33,8 @@ const ROOT = path.resolve(__dirname, "..");
 const OUTPUT_PATH = path.join(ROOT, "web", "src", "data", "github-data.json");
 
 function fetchRepos(): GitHubRepoRaw[] {
-  const cmd = `gh repo list tsilva --limit 100 --json name,description,primaryLanguage,createdAt,updatedAt,pushedAt,url,stargazerCount,forkCount,isArchived,isFork`;
+  // Explicitly request public visibility and include visibility field
+  const cmd = `gh repo list tsilva --visibility public --limit 100 --json name,description,primaryLanguage,createdAt,updatedAt,pushedAt,url,stargazerCount,forkCount,isArchived,isFork,visibility`;
   
   try {
     const output = execSync(cmd, { encoding: "utf-8", cwd: ROOT });
@@ -46,6 +48,8 @@ function fetchRepos(): GitHubRepoRaw[] {
 function processRepos(repos: GitHubRepoRaw[]): GitHubRepo[] {
   return repos
     .filter((repo) => {
+      // Double-check visibility is public (defense in depth)
+      if (repo.visibility !== "PUBLIC") return false;
       // Exclude forks and archived repos
       if (repo.isFork) return false;
       if (repo.isArchived) return false;
