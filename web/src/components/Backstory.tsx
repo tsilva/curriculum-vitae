@@ -6,7 +6,7 @@ import { cvData } from "@/lib/cv-data";
 // Extract the backstory narrative from the TLDR content
 // The backstory is contained in the blockquote sections (>)
 function extractBackstory(tldr: string): string {
-  // Split by lines and find the blockquote content
+  // Find the blockquote content - everything between the first > and the end of the quoted section
   const lines = tldr.split('\n');
   const backstoryLines: string[] = [];
   let inBlockquote = false;
@@ -15,19 +15,24 @@ function extractBackstory(tldr: string): string {
     // Skip the logo and intro paragraph
     if (line.includes('<p align=') || line.includes('logo.png')) continue;
     if (line.includes("This CV is detailed")) continue;
-    if (line.trim() === "") continue;
     
-    // Look for blockquote start
-    if (line.startsWith('>')) {
+    // Check if this line is part of a blockquote (starts with > or ><br>)
+    if (line.match(/^>(<br>)?\s*/)) {
       inBlockquote = true;
       // Remove the > marker and any leading <br>
-      const cleanLine = line.replace(/^>\s*/, '').replace(/^<br>\s*/, '');
+      const cleanLine = line.replace(/^>(<br>)?\s*/, '');
       if (cleanLine) {
         backstoryLines.push(cleanLine);
       }
-    } else if (inBlockquote && !line.startsWith('>') && line.trim() !== '') {
-      // We've exited the blockquote
-      break;
+    } else if (inBlockquote) {
+      // We've exited the blockquote (empty line or non-blockquote content)
+      if (line.trim() === '' || !line.match(/^\s*>/)) {
+        // Check if it's truly the end by looking for non-empty, non-blockquote content
+        if (line.trim() !== '' && !line.match(/^\s*>/)) {
+          break;
+        }
+        // Otherwise it's just an empty line within the blockquote, skip it
+      }
     }
   }
 
@@ -89,7 +94,7 @@ export function Backstory() {
 
           {/* Content */}
           <div
-            className="font-[family-name:var(--font-body)] text-sm md:text-base text-steel/90 leading-relaxed space-y-4 prose prose-invert max-w-none"
+            className="font-[family-name:var(--font-body)] text-sm md:text-base text-cool-white leading-relaxed space-y-6 [&_a]:text-cyan [&_a]:underline [&_a]:decoration-cyan/50 [&_a]:hover:text-cool-white [&_a]:hover:decoration-cool-white [&_strong]:text-cool-white [&_strong]:font-bold"
             dangerouslySetInnerHTML={{ __html: backstoryContent }}
           />
 
