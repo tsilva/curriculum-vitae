@@ -2,7 +2,6 @@
 
 import { useMemo } from "react";
 import cvData from "@/data/cv-data.json";
-import { Project } from "@/types/cv";
 
 interface TechnologyStat {
   name: string;
@@ -14,7 +13,7 @@ export function TechnologyStats() {
   const stats = useMemo(() => {
     const technologyCounts: Record<string, number> = {};
 
-    cvData.projects.forEach((project: Project) => {
+    cvData.projects.forEach((project) => {
       if (project.technologies && project.technologies.length > 0) {
         project.technologies.forEach((tech: string) => {
           const normalizedTech = tech.trim();
