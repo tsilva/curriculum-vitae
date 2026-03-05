@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { GlitchText } from "./GlitchText";
 import { CountUp } from "./CountUp";
 
@@ -182,12 +183,13 @@ export function Hero() {
         onMouseLeave={() => setIsHovered(false)}
       >
         <div className={`w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-2 border-kiroshi-red/60 shadow-[0_0_20px_rgba(232,0,63,0.3)] transition-all duration-300 ${isHovered ? 'border-kiroshi-red shadow-[0_0_30px_rgba(232,0,63,0.5)]' : ''}`}>
-          <img
-            src="/avatar.jpg"
+          <Image
+            src="/avatar.webp"
             alt="Tiago Silva"
             width={144}
             height={144}
             className="w-full h-full object-cover"
+            priority
           />
           {/* Scan lines overlay */}
           <div
@@ -197,8 +199,8 @@ export function Hero() {
             }}
           />
           {/* Sweeping scan bar */}
-          <div className="absolute inset-0 pointer-events-none overflow-hidden">
-            <div className={`absolute left-0 right-0 h-8 animate-[scan_3s_ease-in-out_infinite] bg-gradient-to-b from-transparent via-kiroshi-red/15 to-transparent transition-all duration-300 ${isHovered ? 'via-kiroshi-red/30' : ''}`} />
+          <div className="absolute inset-0 pointer-events-none overflow-hidden will-change-transform">
+            <div className={`absolute left-0 right-0 h-8 animate-[scan_3s_ease-in-out_infinite] bg-gradient-to-b from-transparent via-kiroshi-red/15 to-transparent transition-all duration-300 ${isHovered ? 'via-kiroshi-red/30' : ''}`} style={{ willChange: 'transform' }} />
           </div>
         </div>
         {/* Kiroshi scan ring */}
