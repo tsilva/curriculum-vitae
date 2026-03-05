@@ -7,6 +7,7 @@ export interface GalleryMedia {
   filename: string;
   type: 'image' | 'video';
   path: string;
+  thumbnail?: string;  // Thumbnail path for videos
 }
 
 export interface Project {

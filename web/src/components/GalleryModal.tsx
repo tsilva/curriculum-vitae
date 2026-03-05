@@ -50,6 +50,25 @@ const GridItem = memo(({ media, index, onClick }: { media: GalleryMedia; index: 
             <div className="font-[family-name:var(--font-mono)] text-cyan/30 text-xs">Loading...</div>
           </div>
         )
+      ) : media.thumbnail ? (
+        // Video with thumbnail - show thumbnail image
+        <div className="relative w-full h-full">
+          <img
+            src={media.thumbnail}
+            alt={media.filename}
+            className="w-full h-full object-cover transition-transform group-hover:scale-105"
+            loading="lazy"
+            decoding="async"
+          />
+          {/* Play button overlay */}
+          <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/20 transition-colors">
+            <div className="w-16 h-16 rounded-full bg-cyan/80 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
       ) : (
         <div className="w-full h-full flex items-center justify-center bg-surface">
           <svg className="w-12 h-12 text-cyan/50" fill="currentColor" viewBox="0 0 24 24">
@@ -429,6 +448,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
                     <video
                       ref={videoRef}
                       src={currentMedia?.path}
+                      poster={currentMedia?.thumbnail}
                       controls
                       className="max-w-full max-h-full w-auto h-auto"
                       style={{ 
