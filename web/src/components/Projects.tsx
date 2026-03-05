@@ -2,23 +2,42 @@
 
 import { useState, useMemo, useEffect, useRef } from "react";
 import type { Project } from "@/types/cv";
+import { useCVData, preloadCVData } from "@/hooks/useCVData";
 import { FilterBar } from "./FilterBar";
 import { TechBrowser } from "./TechBrowser";
 import { ProjectCard } from "./ProjectCard";
 import { ProjectModal } from "./ProjectModal";
 import { GalleryModal } from "./GalleryModal";
 
-interface ProjectsProps {
-  projects: Project[];
-  technologies: { name: string; count: number }[];
+// Preload data as early as possible
+if (typeof window !== "undefined") {
+  preloadCVData().catch(() => {
+    // Silent fail - will be handled by the component
+  });
 }
 
-export function Projects({ projects, technologies }: ProjectsProps) {
+export function Projects() {
+  const { data, isLoading, error } = useCVData();
   const [selectedTechs, setSelectedTechs] = useState<string[]>([]);
   const [isTechBrowserOpen, setIsTechBrowserOpen] = useState(false);
   const [modalProject, setModalProject] = useState<Project | null>(null);
   const [galleryModalProject, setGalleryModalProject] = useState<Project | null>(null);
-  const [filterKey, setFilterKey] = useState(0); // Used to trigger re-animation
+  const [filterKey, setFilterKey] = useState(0);
+
+  const projects = useMemo(() => data?.projects ?? [], [data]);
+  
+  const technologies = useMemo(() => {
+    if (!data) return [];
+    const techMap: Record<string, number> = {};
+    for (const project of data.projects) {
+      for (const tech of project.technologies) {
+        techMap[tech] = (techMap[tech] || 0) + 1;
+      }
+    }
+    return Object.entries(techMap)
+      .map(([name, count]) => ({ name, count }))
+      .sort((a, b) => b.count - a.count);
+  }, [data]);
 
   // Debug: Log projects with galleries
   useEffect(() => {
@@ -28,7 +47,6 @@ export function Projects({ projects, technologies }: ProjectsProps) {
 
   const filtered = useMemo(() => {
     if (selectedTechs.length === 0) return projects;
-    // OR logic: show projects that have ANY of the selected technologies
     return projects.filter((p) =>
       selectedTechs.some((tech) => p.technologies.includes(tech))
     );
@@ -56,7 +74,6 @@ export function Projects({ projects, technologies }: ProjectsProps) {
 
   useEffect(() => {
     if (!gridRef.current) return;
-    // Reveal all cards immediately when in view
     gridRef.current.querySelectorAll(".reveal").forEach((el) => {
       el.classList.add("visible");
     });
@@ -64,10 +81,8 @@ export function Projects({ projects, technologies }: ProjectsProps) {
 
   const handleTechSelect = (tech: string | null) => {
     if (tech === null) {
-      // Clear all filters
       setSelectedTechs([]);
     } else {
-      // Toggle the technology
       setSelectedTechs((prev) =>
         prev.includes(tech) ? prev.filter((t) => t !== tech) : [...prev, tech]
       );
@@ -79,6 +94,38 @@ export function Projects({ projects, technologies }: ProjectsProps) {
       prev.includes(tech) ? prev.filter((t) => t !== tech) : [...prev, tech]
     );
   };
+
+  if (isLoading) {
+    return (
+      <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
+        <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-10 reveal neon-glow-cyan">
+          <span className="text-magenta">&gt;</span> PROJECTS_DATABASE
+        </h2>
+        <div className="flex items-center justify-center py-20">
+          <div className="animate-pulse text-steel font-[family-name:var(--font-mono)]">
+            <span className="text-cyan">&gt;</span> Loading project data...
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
+        <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-10 reveal neon-glow-cyan">
+          <span className="text-magenta">&gt;</span> PROJECTS_DATABASE
+        </h2>
+        <div className="text-magenta font-[family-name:var(--font-mono)] p-4 border border-magenta/30 rounded bg-magenta/5">
+          <span className="text-magenta">✗</span> Error loading projects: {error.message}
+        </div>
+      </section>
+    );
+  }
+
+  if (!data) {
+    return null;
+  }
 
   return (
     <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
