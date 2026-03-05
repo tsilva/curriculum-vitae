@@ -9,9 +9,9 @@
     "build:r2": "GIT_COMMIT_HASH=$([ -n \"$VERCEL_GIT_COMMIT_SHA\" ] && echo \"${VERCEL_GIT_COMMIT_SHA:0:7}\" || git rev-parse --short HEAD) GALLERY_MODE=r2 npm run build",
     "start": "next start",
     "lint": "next lint",
-    "parse": "GALLERY_MODE=r2 npx tsx ../scripts/parse-readme.ts",
-    "parse:local": "GALLERY_MODE=local npx tsx ../scripts/parse-readme.ts",
-    "parse:r2": "GALLERY_MODE=r2 npx tsx ../scripts/parse-readme.ts",
+    "parse": "GALLERY_MODE=r2 npx tsx ../scripts/parse-readme.ts && npx tsx ../scripts/fetch-github.ts",
+    "parse:local": "GALLERY_MODE=local npx tsx ../scripts/parse-readme.ts && npx tsx ../scripts/fetch-github.ts",
+    "parse:r2": "GALLERY_MODE=r2 npx tsx ../scripts/parse-readme.ts && npx tsx ../scripts/fetch-github.ts",
     "stats": "npx tsx ../scripts/count-technologies.ts"
   },
   "dependencies": {

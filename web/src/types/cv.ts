@@ -10,6 +10,18 @@ export interface GalleryMedia {
   thumbnail?: string;  // Thumbnail path for videos
 }
 
+export interface GitHubRepo {
+  id: string;
+  name: string;
+  description: string;
+  stars: number;
+  forks: number;
+  language: string | null;
+  updatedAt: string;
+  createdAt: string;
+  url: string;
+}
+
 export interface Project {
   id: string;
   emoji: string;

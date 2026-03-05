@@ -21,6 +21,10 @@ const Education = dynamic(() => import("@/components/Education").then((mod) => (
   loading: () => <div className="h-32 animate-pulse bg-surface/50" />,
 });
 
+const OpenSource = dynamic(() => import("@/components/OpenSource").then((mod) => ({ default: mod.OpenSource })), {
+  loading: () => <div className="h-32 animate-pulse bg-surface/50" />,
+});
+
 export default function Home() {
   return (
     <>
@@ -39,6 +43,9 @@ export default function Home() {
           </div>
           <div className="content-visibility-auto">
             <Education />
+          </div>
+          <div className="content-visibility-auto">
+            <OpenSource />
           </div>
         </main>
         <Footer />
