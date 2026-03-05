@@ -159,9 +159,6 @@ const jsonLd = {
         
         {/* Preload LCP image */}
         <link rel="preload" href="/avatar.webp" as="image" type="image/webp" />
-        
-        {/* Critical CSS preload */}
-        <link rel="preload" href="/_next/static/css/app/layout.css" as="style" />
       </head>
       <body className="font-[family-name:var(--font-body)] dot-grid scanlines crt-vignette antialiased">
         <MatrixRain />
