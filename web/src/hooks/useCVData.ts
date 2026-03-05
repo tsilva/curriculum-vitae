@@ -23,16 +23,31 @@ interface DataManifest {
   };
 }
 
+// Extend Window interface
+declare global {
+  interface Window {
+    __CV_MANIFEST__?: DataManifest;
+    __CV_DATA__?: CVData;
+    __CV_DATA_URL__?: string;
+  }
+}
+
 // Cache for the manifest to avoid multiple fetches
 let manifestCache: DataManifest | null = null;
 let manifestPromise: Promise<DataManifest> | null = null;
 
 async function fetchManifest(): Promise<DataManifest> {
+  // Check if preloaded in window
+  if (window.__CV_MANIFEST__) {
+    return window.__CV_MANIFEST__;
+  }
+  
   if (manifestCache) return manifestCache;
   if (manifestPromise) return manifestPromise;
   
   manifestPromise = fetch("/cv-data-manifest.json", {
-    cache: "no-store", // Always get fresh manifest
+    cache: "no-store",
+    priority: "high",
   })
     .then((res) => {
       if (!res.ok) throw new Error("Failed to load manifest");
@@ -40,6 +55,7 @@ async function fetchManifest(): Promise<DataManifest> {
     })
     .then((data) => {
       manifestCache = data;
+      window.__CV_MANIFEST__ = data; // Store for other components
       return data;
     });
     
@@ -50,6 +66,11 @@ async function fetchManifest(): Promise<DataManifest> {
 const dataCache = new Map<string, CVData>();
 
 async function fetchCVData(manifest: DataManifest): Promise<CVData> {
+  // Check if preloaded in window
+  if (window.__CV_DATA__) {
+    return window.__CV_DATA__;
+  }
+  
   const cacheKey = manifest.hash;
   
   if (dataCache.has(cacheKey)) {
@@ -59,10 +80,9 @@ async function fetchCVData(manifest: DataManifest): Promise<CVData> {
   const dataUrl = `/${manifest.filename}`;
   
   const response = await fetch(dataUrl, {
-    // Use cache with revalidation - Cloudflare will respect these headers
     cache: "force-cache",
+    priority: "high",
     headers: {
-      // Request compression
       "Accept-Encoding": "gzip, deflate, br",
     },
   });
@@ -73,24 +93,40 @@ async function fetchCVData(manifest: DataManifest): Promise<CVData> {
   
   const data: CVData = await response.json();
   dataCache.set(cacheKey, data);
+  window.__CV_DATA__ = data; // Store for other components
   
   return data;
 }
 
 export function useCVData(): UseCVDataReturn {
-  const [data, setData] = useState<CVData | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [data, setData] = useState<CVData | null>(() => {
+    // Try to get from window immediately (avoids flash of loading state)
+    if (typeof window !== "undefined" && window.__CV_DATA__) {
+      return window.__CV_DATA__;
+    }
+    return null;
+  });
+  
+  const [isLoading, setIsLoading] = useState(() => {
+    // If we have preloaded data, don't show loading
+    return typeof window === "undefined" || !window.__CV_DATA__;
+  });
+  
   const [error, setError] = useState<Error | null>(null);
 
   const loadData = useCallback(async () => {
+    // Skip if already loaded from window
+    if (window.__CV_DATA__) {
+      setData(window.__CV_DATA__);
+      setIsLoading(false);
+      return;
+    }
+    
     try {
       setIsLoading(true);
       setError(null);
       
-      // Fetch manifest first to get the versioned filename
       const manifest = await fetchManifest();
-      
-      // Then fetch the actual data
       const cvData = await fetchCVData(manifest);
       
       setData(cvData);
