@@ -17,9 +17,3 @@ export function getAllTechnologies(): { name: string; count: number }[] {
     .map(([name, count]) => ({ name, count }))
     .sort((a, b) => b.count - a.count);
 }
-
-// Debug: Log projects with galleries
-if (typeof window !== 'undefined') {
-  const withGalleries = cvData.projects.filter(p => p.gallery && p.gallery.length > 0);
-  console.log('Projects with galleries:', withGalleries.length, withGalleries.map(p => p.id));
-}
