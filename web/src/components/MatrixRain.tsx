@@ -72,16 +72,18 @@ export function MatrixRain() {
         // Initialize empty grid
         grid = Array(rows).fill(null).map(() => Array(cols).fill(null));
         
-        // Create streams - about 30% of columns have active streams
-        const numStreams = Math.floor(cols * 0.3);
+        // Create streams - ensure all columns get covered
+        const streamsPerCol = 2; // 2 streams per column for density
         streams = [];
-        for (let i = 0; i < numStreams; i++) {
-          streams.push({
-            col: Math.floor(Math.random() * cols),
-            row: Math.floor(Math.random() * -rows), // Start above viewport
-            speed: Math.floor(Math.random() * 2) + 1, // 1-2 cells per frame
-            counter: 0
-          });
+        for (let col = 0; col < cols; col++) {
+          for (let s = 0; s < streamsPerCol; s++) {
+            streams.push({
+              col: col,
+              row: Math.floor(Math.random() * -rows * 2) - Math.random() * 100, // Staggered start
+              speed: Math.floor(Math.random() * 3) + 1, // 1-3 cells per frame
+              counter: Math.floor(Math.random() * 3) // Staggered timing
+            });
+          }
         }
       }, 100);
     };
