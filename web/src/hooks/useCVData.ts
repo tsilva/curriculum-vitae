@@ -148,22 +148,26 @@ export function useCVData(): UseCVDataReturn {
     
     // Check a few times for preloaded data (inline script loads async)
     let checks = 0;
-    const maxChecks = 20; // Check for up to 2 seconds
+    const maxChecks = 30; // Check for up to 3 seconds
     
     const interval = setInterval(() => {
       checks++;
       
       if (window.__CV_DATA__) {
+        console.log('[CV] Data found in window after', checks, 'checks');
         setData(window.__CV_DATA__);
         setIsLoading(false);
         clearInterval(interval);
       } else if (checks >= maxChecks) {
+        console.log('[CV] Polling timeout, triggering direct fetch');
         clearInterval(interval);
+        // Trigger direct fetch as fallback
+        loadData();
       }
     }, 100);
     
     return () => clearInterval(interval);
-  }, [data, isLoading]);
+  }, [data, isLoading, loadData]);
 
   return { data, isLoading, error, refetch: loadData };
 }

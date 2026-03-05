@@ -193,16 +193,26 @@ export default function RootLayout({
               fetch('/cv-data-manifest.json', { 
                 cache: 'no-store',
                 priority: 'high'
-              }).then(r => r.json()).then(m => {
+              }).then(r => {
+                if (!r.ok) throw new Error('Manifest fetch failed: ' + r.status);
+                return r.json();
+              }).then(m => {
                 window.__CV_MANIFEST__ = m;
                 // Preload the actual data file
-                fetch('/' + m.filename, { 
+                return fetch('/' + m.filename, { 
                   cache: 'force-cache',
                   priority: 'high'
-                }).then(r => r.json()).then(d => {
-                  window.__CV_DATA__ = d;
                 });
-              }).catch(() => {});
+              }).then(r => {
+                if (!r.ok) throw new Error('Data fetch failed: ' + r.status);
+                return r.json();
+              }).then(d => {
+                window.__CV_DATA__ = d;
+                console.log('[CV] Data preloaded successfully');
+              }).catch(err => {
+                console.error('[CV] Failed to preload data:', err);
+                window.__CV_LOAD_ERROR__ = err.message;
+              });
               
               // Register service worker for offline caching
               if ('serviceWorker' in navigator) {
