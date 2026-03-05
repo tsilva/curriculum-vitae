@@ -21,7 +21,12 @@ interface Stream {
   counter: number;
 }
 
-const MAX_AGE = 600; // Characters live for 600 frames (~50 seconds at 12 FPS) - allows screen to fill up
+const MAX_AGE = 480; // Characters live for 40 seconds at 12 FPS
+const MAX_STREAMS_PERCENT = 0.15; // Only 15% of columns have streams (sparse)
+const SPAWN_DELAY_MIN = 60; // Minimum frames between stream spawns
+const SPAWN_DELAY_MAX = 180; // Maximum frames between stream spawns
+const STREAM_RESET_DELAY_MIN = -80; // Start way above
+const STREAM_RESET_DELAY_MAX = -20;
 
 export function MatrixRain() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -81,16 +86,19 @@ export function MatrixRain() {
         // Initialize empty grid
         grid = Array(rows).fill(null).map(() => Array(cols).fill(null));
         
-        // Create streams - about 40% of columns have active streams (less dense)
-        const numStreams = Math.floor(cols * 0.4);
+        // Create streams - sparse with staggered spawn timing
+        const numStreams = Math.floor(cols * MAX_STREAMS_PERCENT);
         streams = [];
+        let nextSpawnFrame = 0;
         for (let i = 0; i < numStreams; i++) {
           streams.push({
             col: Math.floor(Math.random() * cols),
-            row: Math.floor(Math.random() * -rows * 2), // Start way above viewport
-            speed: Math.floor(Math.random() * 2) + 1, // 1-2 cells per frame
-            counter: Math.floor(Math.random() * 3)
+            row: Math.floor(Math.random() * (STREAM_RESET_DELAY_MAX - STREAM_RESET_DELAY_MIN) + STREAM_RESET_DELAY_MIN),
+            speed: Math.floor(Math.random() * 2) + 1,
+            counter: -nextSpawnFrame // Negative counter = delayed spawn
           });
+          // Stagger spawn times so they don't all start at once
+          nextSpawnFrame += Math.floor(Math.random() * (SPAWN_DELAY_MAX - SPAWN_DELAY_MIN) + SPAWN_DELAY_MIN);
         }
         
         isResizing = false;
@@ -136,6 +144,12 @@ export function MatrixRain() {
 
       // Update streams and place new characters
       for (const stream of streams) {
+        // Handle delayed spawn (negative counter)
+        if (stream.counter < 0) {
+          stream.counter++;
+          continue;
+        }
+        
         stream.counter++;
         if (stream.counter >= stream.speed) {
           stream.counter = 0;
@@ -151,9 +165,9 @@ export function MatrixRain() {
             };
           }
           
-          // Reset stream when it goes off bottom
+          // Reset stream when it goes off bottom with random delay
           if (stream.row > rows + 5) {
-            stream.row = Math.floor(Math.random() * -30) - 10;
+            stream.row = Math.floor(Math.random() * (STREAM_RESET_DELAY_MAX - STREAM_RESET_DELAY_MIN) + STREAM_RESET_DELAY_MIN);
             stream.col = Math.floor(Math.random() * cols);
           }
         }
@@ -163,17 +177,33 @@ export function MatrixRain() {
       ctx.font = `${FONT_SIZE}px monospace`;
       ctx.textBaseline = "top";
       
-      const baseColor = isInHeroRef.current ? COLOR_FULL : COLOR_DIMMED;
+      const isHero = isInHeroRef.current;
       
       for (let row = 0; row < rows && row < grid.length; row++) {
         for (let col = 0; col < cols && col < grid[row].length; col++) {
           const cell = grid[row][col];
           if (cell) {
-            // Fade based on age: new = bright, old = dim
-            const opacity = 1 - (cell.age / MAX_AGE);
-            ctx.fillStyle = baseColor.startsWith("rgba") 
-              ? baseColor.replace(/[\d.]+\)$/, `${opacity * 0.3})`)
-              : baseColor + Math.floor(opacity * 255).toString(16).padStart(2, '0');
+            // Fade curve: bright when young, quickly fade to very dim baseline
+            // New chars (0-5 frames): bright
+            // Middle (5-60 frames): fade to baseline
+            // Old (60+ frames): stay at very dim baseline
+            const ageRatio = cell.age / 60;
+            let opacity: number;
+            if (cell.age < 5) {
+              opacity = 1; // Bright new characters
+            } else if (ageRatio < 1) {
+              // Fade from bright to baseline over frames 5-60
+              opacity = 1 - (ageRatio * 0.95); // Fade to 0.05 (5%)
+            } else {
+              opacity = 0.05; // Very dim baseline for old characters
+            }
+            
+            // Even dimmer when not in hero section
+            if (!isHero) opacity *= 0.3;
+            
+            ctx.fillStyle = isHero
+              ? `rgba(85, 234, 212, ${opacity})`
+              : `rgba(85, 234, 212, ${opacity})`;
             ctx.fillText(cell.char, col * FONT_SIZE, row * FONT_SIZE);
           }
         }
