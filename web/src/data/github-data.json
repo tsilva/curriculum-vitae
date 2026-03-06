@@ -12,6 +12,18 @@
     "commits": 0
   },
   {
+    "id": "thunkd",
+    "name": "thunkd",
+    "description": "⚡ Capture thoughts instantly and send them straight to your inbox 💭",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-03-06T13:46:21Z",
+    "createdAt": "2026-03-02T12:30:28Z",
+    "url": "https://github.com/tsilva/thunkd",
+    "commits": 0
+  },
+  {
     "id": "retrokit",
     "name": "retrokit",
     "description": "",
@@ -141,18 +153,6 @@
     "updatedAt": "2026-03-03T18:29:59Z",
     "createdAt": "2026-01-02T17:29:35Z",
     "url": "https://github.com/tsilva/demosim",
-    "commits": 0
-  },
-  {
-    "id": "thunkd",
-    "name": "thunkd",
-    "description": "⚡ Capture thoughts instantly and send them straight to your inbox 💭",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-03-03T18:28:56Z",
-    "createdAt": "2026-03-02T12:30:28Z",
-    "url": "https://github.com/tsilva/thunkd",
     "commits": 0
   },
   {

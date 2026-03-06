@@ -35,7 +35,7 @@ const GridItem = memo(({ media, index, onClick }: { media: GalleryMedia; index: 
     <button
       ref={ref}
       onClick={onClick}
-      className="relative aspect-square bg-surface border border-cyan/10 rounded-sm overflow-hidden group hover:border-cyan/40 transition-all hover:shadow-[0_0_20px_rgba(0,230,230,0.1)]"
+      className="relative aspect-square bg-surface border border-cyan/10 rounded-sm overflow-hidden group hover:border-cyan/40 transition-all hover:shadow-[0_0_20px_rgba(0,230,230,0.1)] cursor-pointer"
     >
       {media.type === 'image' ? (
         isInView ? (
@@ -278,12 +278,12 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
         }
       }}
     >
-      {/* Main container - takes full width/height in lightbox mode */}
-      <div 
-        className={`relative w-full h-full flex flex-col ${viewMode === 'lightbox' ? 'max-w-none' : 'max-w-7xl mx-auto'}`}
-        onMouseMove={showControlsTemporarily}
-        onClick={handleContainerClick}
-      >
+        {/* Main container - takes full width/height */}
+        <div 
+          className="relative w-full h-full flex flex-col max-w-none"
+          onMouseMove={showControlsTemporarily}
+          onClick={handleContainerClick}
+        >
         {/* Header - auto-hides in lightbox mode */}
         <div 
           className={`flex items-center justify-between px-4 py-3 md:px-6 md:py-4 border-b border-cyan/20 bg-base-light/80 backdrop-blur transition-transform duration-300 ${viewMode === 'lightbox' && !showControls ? '-translate-y-full absolute top-0 left-0 right-0 z-20' : 'relative'}`}
@@ -308,7 +308,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
                   e.stopPropagation();
                   setViewMode('grid');
                 }}
-                className={`px-2 md:px-3 py-1.5 rounded-sm text-sm font-[family-name:var(--font-mono)] transition-colors ${
+                className={`px-2 md:px-3 py-1.5 rounded-sm text-sm font-[family-name:var(--font-mono)] transition-colors cursor-pointer ${
                   viewMode === 'grid' 
                     ? 'bg-cyan/20 text-cyan' 
                     : 'text-steel hover:text-cyan'
@@ -324,7 +324,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
                   e.stopPropagation();
                   setViewMode('lightbox');
                 }}
-                className={`px-2 md:px-3 py-1.5 rounded-sm text-sm font-[family-name:var(--font-mono)] transition-colors ${
+                className={`px-2 md:px-3 py-1.5 rounded-sm text-sm font-[family-name:var(--font-mono)] transition-colors cursor-pointer ${
                   viewMode === 'lightbox' 
                     ? 'bg-cyan/20 text-cyan' 
                     : 'text-steel hover:text-cyan'
@@ -347,7 +347,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
                   onClose();
                 }
               }}
-              className="font-[family-name:var(--font-mono)] text-sm text-steel hover:text-magenta transition-colors border border-steel/30 hover:border-magenta/40 px-3 py-2 rounded-sm"
+              className="font-[family-name:var(--font-mono)] text-sm text-steel hover:text-magenta transition-colors border border-steel/30 hover:border-magenta/40 px-3 py-2 rounded-sm cursor-pointer"
             >
               {viewMode === 'lightbox' ? '[BACK]' : '[ESC]'}
             </button>
@@ -357,9 +357,9 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
         {/* Content area */}
         <div className="flex-1 overflow-hidden relative">
           {viewMode === 'grid' ? (
-            /* Grid View - with virtualized loading */
+            /* Grid View - with virtualized loading, constrained width */
             <div className="h-full overflow-y-auto p-4 md:p-6">
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 content-visibility-auto">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 content-visibility-auto max-w-7xl mx-auto">
                 {gallery.map((media, index) => (
                   <GridItem
                     key={media.filename}
@@ -389,7 +389,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
                     e.stopPropagation();
                     navigatePrev();
                   }}
-                  className={`hidden md:flex absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/60 border border-cyan/30 rounded-sm text-cyan hover:bg-cyan/20 transition-all hover:scale-110 ${gallery.length <= 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
+                  className={`hidden md:flex absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/60 border border-cyan/30 rounded-sm text-cyan hover:bg-cyan/20 transition-all hover:scale-110 ${gallery.length <= 1 ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
                   disabled={gallery.length <= 1}
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -401,7 +401,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
                     e.stopPropagation();
                     navigateNext();
                   }}
-                  className={`hidden md:flex absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/60 border border-cyan/30 rounded-sm text-cyan hover:bg-cyan/20 transition-all hover:scale-110 ${gallery.length <= 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
+                  className={`hidden md:flex absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/60 border border-cyan/30 rounded-sm text-cyan hover:bg-cyan/20 transition-all hover:scale-110 ${gallery.length <= 1 ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
                   disabled={gallery.length <= 1}
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

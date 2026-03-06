@@ -155,7 +155,6 @@ export function Projects() {
             <ProjectCard
               project={project}
               onClick={() => setModalProject(project)}
-              onGalleryClick={() => setGalleryModalProject(project)}
             />
           </div>
         ))}

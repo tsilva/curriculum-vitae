@@ -79,7 +79,7 @@ export function TechBrowser({
           </div>
           <button
             onClick={onClose}
-            className="text-steel hover:text-cyan transition-colors font-[family-name:var(--font-mono)] text-sm"
+            className="text-steel hover:text-cyan transition-colors font-[family-name:var(--font-mono)] text-sm cursor-pointer"
           >
             [ESC] CLOSE
           </button>
@@ -118,7 +118,7 @@ export function TechBrowser({
                   <button
                     key={tech}
                     onClick={() => onToggle(tech)}
-                    className="font-[family-name:var(--font-mono)] text-xs text-neon-green bg-neon-green/10 px-2 py-1 rounded flex items-center gap-1 hover:bg-neon-green/20 transition-colors"
+                    className="font-[family-name:var(--font-mono)] text-xs text-neon-green bg-neon-green/10 px-2 py-1 rounded flex items-center gap-1 hover:bg-neon-green/20 transition-colors cursor-pointer"
                   >
                     {tech} [{techData?.count || 0}]
                     <span className="ml-1">×</span>
@@ -144,7 +144,7 @@ export function TechBrowser({
                   <button
                     key={tech.name}
                     onClick={() => onToggle(tech.name)}
-                    className={`text-left p-3 rounded-sm border transition-all font-[family-name:var(--font-mono)] text-xs ${
+                    className={`text-left p-3 rounded-sm border transition-all font-[family-name:var(--font-mono)] text-xs cursor-pointer ${
                       isSelected
                         ? "bg-cyan text-base border-cyan shadow-[0_0_15px_rgba(0,255,240,0.3)]"
                         : "bg-surface text-steel border-steel/20 hover:border-cyan/40 hover:text-cool-white"
@@ -176,7 +176,7 @@ export function TechBrowser({
           {selected.length > 0 && (
             <button
               onClick={onClear}
-              className="text-magenta hover:text-magenta/80 transition-colors"
+              className="text-magenta hover:text-magenta/80 transition-colors cursor-pointer"
             >
               [CLEAR ALL]
             </button>
