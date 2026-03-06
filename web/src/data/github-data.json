@@ -12,27 +12,27 @@
     "commits": 0
   },
   {
-    "id": "llame",
-    "name": "llame",
-    "description": "🧠 Run LLMs directly in your browser — no server, no API keys, just WebGPU ⚡",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-03-06T18:56:16Z",
-    "createdAt": "2026-03-06T15:44:20Z",
-    "url": "https://github.com/tsilva/llame",
-    "commits": 0
-  },
-  {
     "id": "mobileassetgen",
     "name": "mobileassetgen",
     "description": "📱 Generate production-ready Android app assets from a single text prompt — icons, round icons, notifications, and Play Store graphics, all in seconds ⚡",
     "stars": 0,
     "forks": 0,
     "language": "TypeScript",
-    "updatedAt": "2026-03-06T17:47:59Z",
+    "updatedAt": "2026-03-06T22:19:32Z",
     "createdAt": "2026-03-03T16:52:27Z",
     "url": "https://github.com/tsilva/mobileassetgen",
+    "commits": 0
+  },
+  {
+    "id": "llame",
+    "name": "llame",
+    "description": "🧠 Run LLMs directly in your browser — no server, no API keys, just WebGPU ⚡",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-03-06T22:13:01Z",
+    "createdAt": "2026-03-06T15:44:20Z",
+    "url": "https://github.com/tsilva/llame",
     "commits": 0
   },
   {
@@ -888,18 +888,6 @@
     "commits": 0
   },
   {
-    "id": "dataset-explorer-agent",
-    "name": "dataset-explorer-agent",
-    "description": "🔍 Validate dataset schemas with regex pattern hit-rate analysis — zero dependencies, instant results ⚡",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-02T12:19:21Z",
-    "createdAt": "2025-09-15T14:06:13Z",
-    "url": "https://github.com/tsilva/dataset-explorer-agent",
-    "commits": 0
-  },
-  {
     "id": "claudesk",
     "name": "claudesk",
     "description": "️ Interactive dashboard for launching and managing Claude Code agents ⚡",
@@ -909,18 +897,6 @@
     "updatedAt": "2026-03-02T12:19:10Z",
     "createdAt": "2026-02-15T17:09:36Z",
     "url": "https://github.com/tsilva/claudesk",
-    "commits": 0
-  },
-  {
-    "id": "botty-mcbotface",
-    "name": "botty-mcbotface",
-    "description": "🤖 Gradio-powered AI chatbot with tools and memory 💬",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-02T12:18:59Z",
-    "createdAt": "2025-01-16T14:24:56Z",
-    "url": "https://github.com/tsilva/botty-mcbotface",
     "commits": 0
   },
   {
