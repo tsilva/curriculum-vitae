@@ -1,6 +1,6 @@
 "use client";
 
-import { education } from "@/lib/data";
+import { cvData } from "@/lib/cv-data";
 import { CornerBrackets } from "./CornerBrackets";
 
 export function Education() {
@@ -11,7 +11,7 @@ export function Education() {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-        {education.map((entry) => (
+        {cvData.education.map((entry) => (
           <div
             key={entry.id}
             className="card-glow bg-surface border border-cyan/10 rounded-sm p-6 reveal h-full relative"

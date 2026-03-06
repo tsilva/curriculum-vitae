@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect } from "react";
 import type { Project } from "@/types/cv";
-import { projects as allProjects } from "@/lib/data";
+import { cvData } from "@/lib/cv-data";
 import { FilterBar } from "./FilterBar";
 import { TechBrowser } from "./TechBrowser";
 import { ProjectCard } from "./ProjectCard";
@@ -19,7 +19,7 @@ export function Projects() {
 
   const technologies = useMemo(() => {
     const techMap: Record<string, number> = {};
-    for (const project of allProjects) {
+    for (const project of cvData.projects_db) {
       for (const tech of project.technologies) {
         techMap[tech] = (techMap[tech] || 0) + 1;
       }
@@ -30,8 +30,8 @@ export function Projects() {
   }, []);
 
   const filtered = useMemo(() => {
-    if (selectedTechs.length === 0) return allProjects;
-    return allProjects.filter((p) =>
+    if (selectedTechs.length === 0) return cvData.projects_db;
+    return cvData.projects_db.filter((p) =>
       selectedTechs.some((tech) => p.technologies.includes(tech))
     );
   }, [selectedTechs]);
@@ -78,7 +78,7 @@ export function Projects() {
 
       <div className="mt-6 font-[family-name:var(--font-mono)] text-sm text-steel">
         <span className="text-steel-dim">//</span> Displaying {visible.length}{" "}
-        of {allProjects.length} records
+        of {cvData.projects_db.length} records
         {selectedTechs.length > 0 && (
           <span className="text-cyan ml-2">
             (matching {selectedTechs.length} filter
