@@ -50,7 +50,7 @@ export function FilterBar({
         {/* Browse All Button */}
         <button
           onClick={onBrowseAll}
-          className="flex-shrink-0 font-[family-name:var(--font-mono)] text-xs px-3 py-1.5 rounded-sm border border-dashed border-cyan/40 text-cyan hover:border-cyan hover:bg-cyan/10 transition-all whitespace-nowrap flex items-center justify-center h-[30px] box-border"
+          className="flex-shrink-0 font-[family-name:var(--font-mono)] text-xs px-3 py-1.5 rounded-sm border border-dashed border-cyan/40 text-cyan hover:border-cyan hover:bg-cyan/10 transition-all whitespace-nowrap flex items-center justify-center h-[30px] box-border cursor-pointer"
         >
           Browse all [{technologies.length}]
         </button>
@@ -70,7 +70,7 @@ export function FilterBar({
               {tech}
               <button
                 onClick={() => onSelect(tech)}
-                className="text-neon-green/70 hover:text-neon-green ml-1"
+                className="text-neon-green/70 hover:text-neon-green ml-1 cursor-pointer"
               >
                 ×
               </button>
@@ -78,7 +78,7 @@ export function FilterBar({
           ))}
           <button
             onClick={() => onSelect(null)}
-            className="font-[family-name:var(--font-mono)] text-[10px] text-magenta hover:text-magenta/80 transition-colors"
+            className="font-[family-name:var(--font-mono)] text-[10px] text-magenta hover:text-magenta/80 transition-colors cursor-pointer"
           >
             [CLEAR ALL]
           </button>

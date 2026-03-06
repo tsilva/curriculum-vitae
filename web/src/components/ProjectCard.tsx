@@ -3,10 +3,9 @@ import type { Project } from "@/types/cv";
 interface ProjectCardProps {
   project: Project;
   onClick: () => void;
-  onGalleryClick: () => void;
 }
 
-export function ProjectCard({ project, onClick, onGalleryClick }: ProjectCardProps) {
+export function ProjectCard({ project, onClick }: ProjectCardProps) {
   return (
     <button
       onClick={onClick}
@@ -46,36 +45,8 @@ export function ProjectCard({ project, onClick, onGalleryClick }: ProjectCardPro
           Click for details
         </span>
         <div className="flex gap-3">
-          {/* Local Gallery Button - shown if project has local gallery */}
-          {project.gallery && project.gallery.length > 0 && (
-            <span
-              role="button"
-              tabIndex={0}
-              onClick={(e) => {
-                e.stopPropagation();
-                onGalleryClick();
-              }}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  onGalleryClick();
-                }
-              }}
-              className="group/link relative text-steel hover:text-cyan transition-colors p-1.5 hover:shadow-[0_0_10px_rgba(0,230,230,0.15)] cursor-pointer"
-            >
-              <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-                <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-              </svg>
-              {/* Tooltip */}
-              <span className="absolute -top-9 right-0 bg-base-light border border-cyan/30 px-2 py-1 rounded-sm text-sm font-[family-name:var(--font-mono)] text-cyan whitespace-nowrap opacity-0 group-hover/link:opacity-100 transition-opacity pointer-events-none z-10">
-                Local Gallery ({project.gallery.length})
-              </span>
-            </span>
-          )}
-          
-          {project.links.length > 0 && project.links.slice(0, 2).map((link) => {
-          // Skip Google Photos links if we have local gallery
+          {project.links.length > 0 && project.links.slice(0, 3).map((link) => {
+          // Skip Google Photos links if we have local gallery (shown in modal instead)
           if (project.gallery && project.gallery.length > 0 && link.url.includes('photos.app.goo.gl')) {
             return null;
           }
@@ -89,27 +60,15 @@ export function ProjectCard({ project, onClick, onGalleryClick }: ProjectCardPro
                 </svg>
               );
             }
-            if (url.includes('photos.app.goo.gl')) {
-              // Gallery/Images icon
-              return (
-                <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-                  <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" />
-                </svg>
-              );
+            if (url.includes('photos.app.goo.gl') || label.toLowerCase().includes('gallery')) {
+              // Skip gallery icons - shown in modal instead
+              return null;
             }
             if (label.toLowerCase().includes('demo')) {
               // Demo/Gamepad icon
               return (
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
                   <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
-                </svg>
-              );
-            }
-            if (label.toLowerCase().includes('gallery')) {
-              // Gallery icon
-              return (
-                <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-                  <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" />
                 </svg>
               );
             }
@@ -121,6 +80,9 @@ export function ProjectCard({ project, onClick, onGalleryClick }: ProjectCardPro
             );
           };
           
+          const icon = getIcon(link.url, link.label);
+          if (!icon) return null;
+          
           return (
           <a
             key={link.url}
@@ -130,7 +92,7 @@ export function ProjectCard({ project, onClick, onGalleryClick }: ProjectCardPro
             onClick={(e) => e.stopPropagation()}
             className="group/link relative text-steel hover:text-cyan transition-colors p-1.5 hover:shadow-[0_0_10px_rgba(0,230,230,0.15)]"
           >
-            {getIcon(link.url, link.label)}
+            {icon}
             {/* Tooltip */}
             <span className="absolute -top-9 right-0 bg-base-light border border-cyan/30 px-2 py-1 rounded-sm text-sm font-[family-name:var(--font-mono)] text-cyan whitespace-nowrap opacity-0 group-hover/link:opacity-100 transition-opacity pointer-events-none z-10">
               {link.label}
