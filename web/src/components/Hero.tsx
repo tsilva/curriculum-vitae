@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { GlitchText } from "./GlitchText";
 import { CountUp } from "./CountUp";
 import githubRepos from "@/data/github-data.json";
 
@@ -212,7 +211,7 @@ export function Hero() {
       <h1
         className="font-[family-name:var(--font-display)] text-[clamp(2rem,6vw,4rem)] font-bold text-cool-white leading-tight text-center neon-glow-kiroshi-red"
       >
-        <GlitchText text="TIAGO SILVA" />
+        <span className="glitch-once glitch-text glitch-hover-trigger" data-text="TIAGO SILVA">TIAGO SILVA</span>
       </h1>
 
       {/* Role — cyan like secondary data in the HUD with enhanced glow */}
