@@ -12,6 +12,18 @@
     "commits": 0
   },
   {
+    "id": "retrokit",
+    "name": "retrokit",
+    "description": "",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-03-06T14:15:56Z",
+    "createdAt": "2026-03-06T12:21:11Z",
+    "url": "https://github.com/tsilva/retrokit",
+    "commits": 0
+  },
+  {
     "id": "thunkd",
     "name": "thunkd",
     "description": "⚡ Capture thoughts instantly and send them straight to your inbox 💭",
@@ -21,18 +33,6 @@
     "updatedAt": "2026-03-06T13:46:21Z",
     "createdAt": "2026-03-02T12:30:28Z",
     "url": "https://github.com/tsilva/thunkd",
-    "commits": 0
-  },
-  {
-    "id": "retrokit",
-    "name": "retrokit",
-    "description": "",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-06T13:42:04Z",
-    "createdAt": "2026-03-06T12:21:11Z",
-    "url": "https://github.com/tsilva/retrokit",
     "commits": 0
   },
   {
