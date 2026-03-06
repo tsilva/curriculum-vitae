@@ -160,7 +160,16 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 </span>
               </div>
               <div className="space-y-2 pl-4 border-l-2 border-magenta/20">
-                {project.links.map((link) => (
+                {project.links
+                  .filter((link) => {
+                    // Skip Gallery links if project has gallery (shown via Gallery button instead)
+                    if (project.gallery && project.gallery.length > 0) {
+                      if (link.label.toLowerCase().includes('gallery')) return false;
+                      if (link.url.includes('photos.app.goo.gl')) return false;
+                    }
+                    return true;
+                  })
+                  .map((link) => (
                   <a
                     key={link.url}
                     href={link.url}
