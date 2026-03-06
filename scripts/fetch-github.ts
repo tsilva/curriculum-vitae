@@ -2,6 +2,7 @@ import * as fs from "fs";
 import * as path from "path";
 import { fileURLToPath } from "url";
 import { execSync } from "child_process";
+import { calculateActivityScore } from "./lib/data-utils";
 
 interface GitHubRepoRaw {
   name: string;
@@ -46,22 +47,6 @@ function fetchRepos(): GitHubRepoRaw[] {
     console.error("Failed to fetch GitHub repos:", error);
     return [];
   }
-}
-
-function calculateActivityScore(updatedAt: string, stars: number): number {
-  const now = new Date();
-  const updated = new Date(updatedAt);
-  const daysSinceUpdate = (now.getTime() - updated.getTime()) / (1000 * 60 * 60 * 24);
-  
-  // Primary: recency (exponential decay with 30-day half-life)
-  const recencyScore = Math.exp(-daysSinceUpdate / 30);
-  
-  // Secondary: stars as proxy for project significance/activity level
-  // Log scale to prevent star count from overwhelming recency
-  const significanceScore = Math.log1p(stars);
-  
-  // Combined: recency weighted heavily, significance adds bonus
-  return recencyScore * 10 + significanceScore;
 }
 
 function processRepos(repos: GitHubRepoRaw[]): GitHubRepo[] {

@@ -19,12 +19,12 @@ This repository contains a detailed professional CV/resume along with an interac
 │   └── misc.yaml           # Miscellaneous links (structured-only, no prose)
 ├── README.md               # GENERATED from data/ (do not hand-edit)
 ├── scripts/
+│   ├── lib/
+│   │   └── data-utils.ts   # Shared utilities (frontmatter, sorting, YAML)
 │   ├── assemble-cv-data.ts # data/ + galleries → web/src/data/cv-data.json
 │   ├── generate-readme.ts  # data/ → README.md
 │   ├── fetch-github.ts     # GitHub API → web/src/data/github-data.json
-│   ├── count-technologies.ts # Technology mention analytics
-│   ├── validate_links.py   # Validates all HTTP links in README.md
-│   └── requirements.txt    # Python dependencies
+│   └── count-technologies.ts # Technology mention analytics
 ├── web/                    # Next.js cyberpunk-themed web application
 │   ├── src/
 │   │   ├── app/            # Next.js App Router (layout, page, globals.css)
@@ -35,8 +35,7 @@ This repository contains a detailed professional CV/resume along with an interac
 │   │   └── data/           # Generated cv-data.json + github-data.json
 │   ├── public/             # Static assets (avatar, logo, robots.txt, sitemap)
 │   ├── package.json
-│   ├── next.config.ts      # Static export config (output: export)
-│   └── vercel.json         # Vercel deployment config
+│   └── next.config.ts      # Static export config (output: export)
 └── .git/
 ```
 
@@ -61,7 +60,7 @@ Two scripts consume this data:
 1. **`scripts/assemble-cv-data.ts`** — Parses frontmatter .md + misc.yaml + gallery scanning → `web/src/data/cv-data.json` (for the web app)
 2. **`scripts/generate-readme.ts`** — Parses frontmatter .md + misc.yaml → `README.md` (for GitHub display)
 
-Both scripts use `gray-matter` to parse YAML frontmatter from .md files.
+Both scripts share common utilities from `scripts/lib/data-utils.ts` (frontmatter parsing, sorting helpers, YAML loading).
 
 ### Editing CV Content
 
@@ -136,7 +135,6 @@ R2_PUBLIC_URL=https://curriculum-vitae-r2.tsilva.eu
 ```bash
 cd web
 npm run build:local    # Build with local galleries
-npm run build:r2       # Build with R2 galleries
 npm run assemble       # Regenerate cv-data.json from data/
 npm run generate:readme # Regenerate README.md from data/
 ```
@@ -148,13 +146,6 @@ The `scripts/assemble-cv-data.ts` script reads `GALLERY_MODE` and generates appr
 - **R2 mode**: `https://curriculum-vitae-r2.tsilva.eu/galleries/{project}/{filename}`
 
 ## Key Commands
-
-### Validate Links
-```bash
-cd scripts
-pip install -r requirements.txt
-python validate_links.py
-```
 
 ### Count Technologies
 ```bash
@@ -269,8 +260,7 @@ The CV uses a mix of Markdown and HTML:
 When updating project information:
 1. Edit the single file `data/projects/{id}.md` (frontmatter + prose)
 2. Run `cd web && npm run assemble && npm run generate:readme`
-3. Run `python scripts/validate_links.py` to ensure no broken links
-4. Commit with descriptive message following existing git history style
+3. Commit with descriptive message following existing git history style
 
 ## Skills
 
