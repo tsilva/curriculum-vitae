@@ -317,8 +317,7 @@
         {
           "filename": "v001-demo.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/v001-demo.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/v001-demo.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/v001-demo.mp4"
         }
       ]
     },
@@ -527,50 +526,42 @@
         {
           "filename": "v001-trimmed_bopem_properties.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v001-trimmed_bopem_properties.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v001-trimmed_bopem_properties.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v001-trimmed_bopem_properties.mp4"
         },
         {
           "filename": "v002-trimmed_bopem_additem.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v002-trimmed_bopem_additem.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v002-trimmed_bopem_additem.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v002-trimmed_bopem_additem.mp4"
         },
         {
           "filename": "v003-trimmed_catchem_additem.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v003-trimmed_catchem_additem.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v003-trimmed_catchem_additem.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v003-trimmed_catchem_additem.mp4"
         },
         {
           "filename": "v004-trimmed_catchem_properties.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v004-trimmed_catchem_properties.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v004-trimmed_catchem_properties.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v004-trimmed_catchem_properties.mp4"
         },
         {
           "filename": "v005-trimmed_dressup_doll_additem.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v005-trimmed_dressup_doll_additem.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v005-trimmed_dressup_doll_additem.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v005-trimmed_dressup_doll_additem.mp4"
         },
         {
           "filename": "v006-trimmed_dressup_doll_properties.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v006-trimmed_dressup_doll_properties.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v006-trimmed_dressup_doll_properties.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v006-trimmed_dressup_doll_properties.mp4"
         },
         {
           "filename": "v007-dressup_pet_additem.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v007-dressup_pet_additem.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v007-dressup_pet_additem.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v007-dressup_pet_additem.mp4"
         },
         {
           "filename": "v008-trimmed_dressup_pet_properties.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v008-trimmed_dressup_pet_properties.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v008-trimmed_dressup_pet_properties.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v008-trimmed_dressup_pet_properties.mp4"
         }
       ]
     },
@@ -847,98 +838,82 @@
         {
           "filename": "v001-intro - train your team_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v001-intro - train your team_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v001-intro - train your team_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v001-intro - train your team_tvai.mp4"
         },
         {
           "filename": "v002-intro - welcome_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v002-intro - welcome_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v002-intro - welcome_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v002-intro - welcome_tvai.mp4"
         },
         {
           "filename": "v003-intro - team empowerment_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v003-intro - team empowerment_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v003-intro - team empowerment_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v003-intro - team empowerment_tvai.mp4"
         },
         {
           "filename": "v004-announcement - alabama governor kay ivey_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v004-announcement - alabama governor kay ivey_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v004-announcement - alabama governor kay ivey_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v004-announcement - alabama governor kay ivey_tvai.mp4"
         },
         {
           "filename": "v005-announcement - 2.mov",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v005-announcement - 2.mov",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v005-announcement - 2.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v005-announcement - 2.mov"
         },
         {
           "filename": "v006-Coding Cup by Tynker_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v006-Coding Cup by Tynker_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v006-Coding Cup by Tynker_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v006-Coding Cup by Tynker_tvai.mp4"
         },
         {
           "filename": "v007-lab - 2.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v007-lab - 2.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v007-lab - 2.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v007-lab - 2.mp4"
         },
         {
           "filename": "v008-testimonial - teacher - linda kurtz.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v008-testimonial - teacher - linda kurtz.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v008-testimonial - teacher - linda kurtz.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v008-testimonial - teacher - linda kurtz.mp4"
         },
         {
           "filename": "v009-intro - code editor_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v009-intro - code editor_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v009-intro - code editor_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v009-intro - code editor_tvai.mp4"
         },
         {
           "filename": "v010-testimonial - teacher - andy hanes.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v010-testimonial - teacher - andy hanes.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v010-testimonial - teacher - andy hanes.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v010-testimonial - teacher - andy hanes.mp4"
         },
         {
           "filename": "v011-testimonial - teacher - dan digennaro.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v011-testimonial - teacher - dan digennaro.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v011-testimonial - teacher - dan digennaro.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v011-testimonial - teacher - dan digennaro.mp4"
         },
         {
           "filename": "v012-testimonial - teacher - dan g.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v012-testimonial - teacher - dan g.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v012-testimonial - teacher - dan g.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v012-testimonial - teacher - dan g.mp4"
         },
         {
           "filename": "v013-testimonial - teacher - mr mc b.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v013-testimonial - teacher - mr mc b.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v013-testimonial - teacher - mr mc b.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v013-testimonial - teacher - mr mc b.mp4"
         },
         {
           "filename": "v014-testimonial - teacher - matt zimmerman.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v014-testimonial - teacher - matt zimmerman.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v014-testimonial - teacher - matt zimmerman.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v014-testimonial - teacher - matt zimmerman.mp4"
         },
         {
           "filename": "v015-testimonial - teacher - jan mcclellan.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v015-testimonial - teacher - jan mcclellan.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v015-testimonial - teacher - jan mcclellan.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v015-testimonial - teacher - jan mcclellan.mp4"
         },
         {
           "filename": "v016-testimonial - teacher - stephen tow.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v016-testimonial - teacher - stephen tow.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v016-testimonial - teacher - stephen tow.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v016-testimonial - teacher - stephen tow.mp4"
         }
       ]
     },
@@ -970,26 +945,22 @@
         {
           "filename": "v001-Minecraft Fort Building Mastery with Redstone R.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/live-classes/v001-Minecraft Fort Building Mastery with Redstone R.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/live-classes/v001-Minecraft Fort Building Mastery with Redstone R.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/live-classes/v001-Minecraft Fort Building Mastery with Redstone R.mp4"
         },
         {
           "filename": "v002-Exploring the Surprising Benefits of Minecraft .mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/live-classes/v002-Exploring the Surprising Benefits of Minecraft .mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/live-classes/v002-Exploring the Surprising Benefits of Minecraft .thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/live-classes/v002-Exploring the Surprising Benefits of Minecraft .mp4"
         },
         {
           "filename": "v003-Remote with Tynker - Now You Can! [ffVvAvztZ5w].mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/live-classes/v003-Remote with Tynker - Now You Can! [ffVvAvztZ5w].mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/live-classes/v003-Remote with Tynker - Now You Can! [ffVvAvztZ5w].thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/live-classes/v003-Remote with Tynker - Now You Can! [ffVvAvztZ5w].mp4"
         },
         {
           "filename": "v004-Cosmic Chronicles：Secure Underwater Base Buildi.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/live-classes/v004-Cosmic Chronicles：Secure Underwater Base Buildi.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/live-classes/v004-Cosmic Chronicles：Secure Underwater Base Buildi.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/live-classes/v004-Cosmic Chronicles：Secure Underwater Base Buildi.mp4"
         }
       ]
     },
@@ -1270,8 +1241,7 @@
         {
           "filename": "v001-Recording 2024-04-03 at 8.05.44 PM.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/collaborative-learning-system/v001-Recording 2024-04-03 at 8.05.44 PM.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/collaborative-learning-system/v001-Recording 2024-04-03 at 8.05.44 PM.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/collaborative-learning-system/v001-Recording 2024-04-03 at 8.05.44 PM.mp4"
         }
       ]
     },
@@ -1827,404 +1797,337 @@
         {
           "filename": "v001-Virtual Pet_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v001-Virtual Pet_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v001-Virtual Pet_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v001-Virtual Pet_tvai.mp4"
         },
         {
           "filename": "v002-Space Quest： Conditional Loops [duf5ArtPAXQ].mkv",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v002-Space Quest： Conditional Loops [duf5ArtPAXQ].mkv",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v002-Space Quest： Conditional Loops [duf5ArtPAXQ].thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v002-Space Quest： Conditional Loops [duf5ArtPAXQ].mkv"
         },
         {
           "filename": "v003-Tynker Quick Tips — Change Size [_O-gZ1JCyqw].mkv",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v003-Tynker Quick Tips — Change Size [_O-gZ1JCyqw].mkv",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v003-Tynker Quick Tips — Change Size [_O-gZ1JCyqw].thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v003-Tynker Quick Tips — Change Size [_O-gZ1JCyqw].mkv"
         },
         {
           "filename": "v004-Tynker Quick Tips — Mouse Clicks [CaHWDJrNVvA].mkv",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v004-Tynker Quick Tips — Mouse Clicks [CaHWDJrNVvA].mkv",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v004-Tynker Quick Tips — Mouse Clicks [CaHWDJrNVvA].thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v004-Tynker Quick Tips — Mouse Clicks [CaHWDJrNVvA].mkv"
         },
         {
           "filename": "v005-Tynker Quick Tips — Variables [sN11pHLgptk].mkv",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v005-Tynker Quick Tips — Variables [sN11pHLgptk].mkv",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v005-Tynker Quick Tips — Variables [sN11pHLgptk].thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v005-Tynker Quick Tips — Variables [sN11pHLgptk].mkv"
         },
         {
           "filename": "v006-Tynker Quick Tips — Use Physics [nL9ZfTTP_Og].mkv",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v006-Tynker Quick Tips — Use Physics [nL9ZfTTP_Og].mkv",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v006-Tynker Quick Tips — Use Physics [nL9ZfTTP_Og].thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v006-Tynker Quick Tips — Use Physics [nL9ZfTTP_Og].mkv"
         },
         {
           "filename": "v007-Tynker_s My Coding Path, Level 1_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v007-Tynker_s My Coding Path, Level 1_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v007-Tynker_s My Coding Path, Level 1_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v007-Tynker_s My Coding Path, Level 1_tvai.mp4"
         },
         {
           "filename": "v008-Tynker Quick Tips — Backgrounds [M9Ie3MZBFXM].mkv",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v008-Tynker Quick Tips — Backgrounds [M9Ie3MZBFXM].mkv",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v008-Tynker Quick Tips — Backgrounds [M9Ie3MZBFXM].thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v008-Tynker Quick Tips — Backgrounds [M9Ie3MZBFXM].mkv"
         },
         {
           "filename": "v009-Tynker Quick Tips — Move Around [jzX6EwVkgys].mkv",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v009-Tynker Quick Tips — Move Around [jzX6EwVkgys].mkv",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v009-Tynker Quick Tips — Move Around [jzX6EwVkgys].thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v009-Tynker Quick Tips — Move Around [jzX6EwVkgys].mkv"
         },
         {
           "filename": "v010-Candy Quest： Welcome to Candy Quest [XloeBk2uh.webm",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v010-Candy Quest： Welcome to Candy Quest [XloeBk2uh.webm",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v010-Candy Quest： Welcome to Candy Quest [XloeBk2uh.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v010-Candy Quest： Welcome to Candy Quest [XloeBk2uh.webm"
         },
         {
           "filename": "v011-Space Quest： Crash Landing (Buzz) [ZV8jwvOb9Kk.webm",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v011-Space Quest： Crash Landing (Buzz) [ZV8jwvOb9Kk.webm",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v011-Space Quest： Crash Landing (Buzz) [ZV8jwvOb9Kk.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v011-Space Quest： Crash Landing (Buzz) [ZV8jwvOb9Kk.webm"
         },
         {
           "filename": "v012-Candy Quest： Loops in Code [VNaqkg-VsH4].webm",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v012-Candy Quest： Loops in Code [VNaqkg-VsH4].webm",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v012-Candy Quest： Loops in Code [VNaqkg-VsH4].thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v012-Candy Quest： Loops in Code [VNaqkg-VsH4].webm"
         },
         {
           "filename": "v013-Candy Quest： Conditional Loops [Hfy1v2BSxcg].webm",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v013-Candy Quest： Conditional Loops [Hfy1v2BSxcg].webm",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v013-Candy Quest： Conditional Loops [Hfy1v2BSxcg].thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v013-Candy Quest： Conditional Loops [Hfy1v2BSxcg].webm"
         },
         {
           "filename": "v014-Candy Quest： Conditional Statements [Wohmw5VFm.webm",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v014-Candy Quest： Conditional Statements [Wohmw5VFm.webm",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v014-Candy Quest： Conditional Statements [Wohmw5VFm.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v014-Candy Quest： Conditional Statements [Wohmw5VFm.webm"
         },
         {
           "filename": "v015-Space Quest： Loops in Code [AJ5GC4kxfbc].webm",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v015-Space Quest： Loops in Code [AJ5GC4kxfbc].webm",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v015-Space Quest： Loops in Code [AJ5GC4kxfbc].thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v015-Space Quest： Loops in Code [AJ5GC4kxfbc].webm"
         },
         {
           "filename": "v016-Clever Quips with Cow Jokes [UlwckEvT844]_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v016-Clever Quips with Cow Jokes [UlwckEvT844]_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v016-Clever Quips with Cow Jokes [UlwckEvT844]_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v016-Clever Quips with Cow Jokes [UlwckEvT844]_tvai.mp4"
         },
         {
           "filename": "v017-Crazy Contraption [j77KRxEOWzA]_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v017-Crazy Contraption [j77KRxEOWzA]_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v017-Crazy Contraption [j77KRxEOWzA]_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v017-Crazy Contraption [j77KRxEOWzA]_tvai.mp4"
         },
         {
           "filename": "v018-Glide-O-Phone [pDVWuiRXgE0]_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v018-Glide-O-Phone [pDVWuiRXgE0]_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v018-Glide-O-Phone [pDVWuiRXgE0]_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v018-Glide-O-Phone [pDVWuiRXgE0]_tvai.mp4"
         },
         {
           "filename": "v019-Soarin_ Strawberry [QTN9CS7ksdc]_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v019-Soarin_ Strawberry [QTN9CS7ksdc]_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v019-Soarin_ Strawberry [QTN9CS7ksdc]_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v019-Soarin_ Strawberry [QTN9CS7ksdc]_tvai.mp4"
         },
         {
           "filename": "v020-Animated Avatar [mgx92qhRFKY]_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v020-Animated Avatar [mgx92qhRFKY]_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v020-Animated Avatar [mgx92qhRFKY]_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v020-Animated Avatar [mgx92qhRFKY]_tvai.mp4"
         },
         {
           "filename": "v021-20 Block Pen Art [4555RLYUNHs]_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v021-20 Block Pen Art [4555RLYUNHs]_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v021-20 Block Pen Art [4555RLYUNHs]_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v021-20 Block Pen Art [4555RLYUNHs]_tvai.mp4"
         },
         {
           "filename": "v022-Tynker For Fun [_6Gu92b4uYQ]_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v022-Tynker For Fun [_6Gu92b4uYQ]_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v022-Tynker For Fun [_6Gu92b4uYQ]_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v022-Tynker For Fun [_6Gu92b4uYQ]_tvai.mp4"
         },
         {
           "filename": "v023-Tell Codey_s Story [--fp5swFntI]_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v023-Tell Codey_s Story [--fp5swFntI]_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v023-Tell Codey_s Story [--fp5swFntI]_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v023-Tell Codey_s Story [--fp5swFntI]_tvai.mp4"
         },
         {
           "filename": "v024-Make an Arcade Game [usHbP6OX_Gs]_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v024-Make an Arcade Game [usHbP6OX_Gs]_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v024-Make an Arcade Game [usHbP6OX_Gs]_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v024-Make an Arcade Game [usHbP6OX_Gs]_tvai.mp4"
         },
         {
           "filename": "v025-Soundscape [LUxGmmldyl0]_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v025-Soundscape [LUxGmmldyl0]_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v025-Soundscape [LUxGmmldyl0]_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v025-Soundscape [LUxGmmldyl0]_tvai.mp4"
         },
         {
           "filename": "v026-Tynker Video Code Jam [qdlheoJ4tlM]_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v026-Tynker Video Code Jam [qdlheoJ4tlM]_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v026-Tynker Video Code Jam [qdlheoJ4tlM]_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v026-Tynker Video Code Jam [qdlheoJ4tlM]_tvai.mp4"
         },
         {
           "filename": "v027-Tynker Quick Tips — Graphic Effects [gfIr0E3TLu.mkv",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v027-Tynker Quick Tips — Graphic Effects [gfIr0E3TLu.mkv",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v027-Tynker Quick Tips — Graphic Effects [gfIr0E3TLu.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v027-Tynker Quick Tips — Graphic Effects [gfIr0E3TLu.mkv"
         },
         {
           "filename": "v028-Tynker Quick Tips — Change Direction [EjkeupLaD.mkv",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v028-Tynker Quick Tips — Change Direction [EjkeupLaD.mkv",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v028-Tynker Quick Tips — Change Direction [EjkeupLaD.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v028-Tynker Quick Tips — Change Direction [EjkeupLaD.mkv"
         },
         {
           "filename": "v029-Space Quest： Conditional Statements [zfPtV8FFOQ.mkv",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v029-Space Quest： Conditional Statements [zfPtV8FFOQ.mkv",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v029-Space Quest： Conditional Statements [zfPtV8FFOQ.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v029-Space Quest： Conditional Statements [zfPtV8FFOQ.mkv"
         },
         {
           "filename": "v030-Tynker Quick Tips — Draw with a Pen [bxU5zytHFn.mkv",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v030-Tynker Quick Tips — Draw with a Pen [bxU5zytHFn.mkv",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v030-Tynker Quick Tips — Draw with a Pen [bxU5zytHFn.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v030-Tynker Quick Tips — Draw with a Pen [bxU5zytHFn.mkv"
         },
         {
           "filename": "v031-Tynker： Shake and Run - Coding Projects by Kids.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v031-Tynker： Shake and Run - Coding Projects by Kids.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v031-Tynker： Shake and Run - Coding Projects by Kids.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v031-Tynker： Shake and Run - Coding Projects by Kids.mp4"
         },
         {
           "filename": "v032-Tynker - Wrestling - Coding Project by Kids (S_.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v032-Tynker - Wrestling - Coding Project by Kids (S_.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v032-Tynker - Wrestling - Coding Project by Kids (S_.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v032-Tynker - Wrestling - Coding Project by Kids (S_.mp4"
         },
         {
           "filename": "v033-Tynker Workshop： Create your very own animated .mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v033-Tynker Workshop： Create your very own animated .mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v033-Tynker Workshop： Create your very own animated .thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v033-Tynker Workshop： Create your very own animated .mp4"
         },
         {
           "filename": "v034-Tynker - Jumping - Coding Project by Kids  (Dig.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v034-Tynker - Jumping - Coding Project by Kids  (Dig.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v034-Tynker - Jumping - Coding Project by Kids  (Dig.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v034-Tynker - Jumping - Coding Project by Kids  (Dig.mp4"
         },
         {
           "filename": "v035-Build Games, Music, Animations & More with Tynk.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v035-Build Games, Music, Animations & More with Tynk.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v035-Build Games, Music, Animations & More with Tynk.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v035-Build Games, Music, Animations & More with Tynk.mp4"
         },
         {
           "filename": "v036-Create your very own Wipe Away AR game with Tyn.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v036-Create your very own Wipe Away AR game with Tyn.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v036-Create your very own Wipe Away AR game with Tyn.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v036-Create your very own Wipe Away AR game with Tyn.mp4"
         },
         {
           "filename": "v037-How to Make a Cool Ball Pop Game with Tynker! [.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v037-How to Make a Cool Ball Pop Game with Tynker! [.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v037-How to Make a Cool Ball Pop Game with Tynker! [.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v037-How to Make a Cool Ball Pop Game with Tynker! [.mp4"
         },
         {
           "filename": "v038-Make an Arcade Game [usHbP6OX_Gs]_505429413_tva.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v038-Make an Arcade Game [usHbP6OX_Gs]_505429413_tva.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v038-Make an Arcade Game [usHbP6OX_Gs]_505429413_tva.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v038-Make an Arcade Game [usHbP6OX_Gs]_505429413_tva.mp4"
         },
         {
           "filename": "v039-Tynker Code Jam 2020 Week 5 Winner： Cristina [f.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v039-Tynker Code Jam 2020 Week 5 Winner： Cristina [f.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v039-Tynker Code Jam 2020 Week 5 Winner： Cristina [f.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v039-Tynker Code Jam 2020 Week 5 Winner： Cristina [f.mp4"
         },
         {
           "filename": "v040-Tynker Code Jam 2020 Week 5 Winner： Owen [8sS1B.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v040-Tynker Code Jam 2020 Week 5 Winner： Owen [8sS1B.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v040-Tynker Code Jam 2020 Week 5 Winner： Owen [8sS1B.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v040-Tynker Code Jam 2020 Week 5 Winner： Owen [8sS1B.mp4"
         },
         {
           "filename": "v041-Tynker Code Jam 2020 Week 2 Winner： Colleen [do.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v041-Tynker Code Jam 2020 Week 2 Winner： Colleen [do.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v041-Tynker Code Jam 2020 Week 2 Winner： Colleen [do.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v041-Tynker Code Jam 2020 Week 2 Winner： Colleen [do.mp4"
         },
         {
           "filename": "v042-Tynker Code Jam 2020 Week 2 Winner： Sviatoslav .mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v042-Tynker Code Jam 2020 Week 2 Winner： Sviatoslav .mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v042-Tynker Code Jam 2020 Week 2 Winner： Sviatoslav .thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v042-Tynker Code Jam 2020 Week 2 Winner： Sviatoslav .mp4"
         },
         {
           "filename": "v043-Tynker Code Jam 2020 Week 3 Winner： Raghav [dAI.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v043-Tynker Code Jam 2020 Week 3 Winner： Raghav [dAI.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v043-Tynker Code Jam 2020 Week 3 Winner： Raghav [dAI.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v043-Tynker Code Jam 2020 Week 3 Winner： Raghav [dAI.mp4"
         },
         {
           "filename": "v044-Tynker Code Jam 2020 Week 5： Aylin Wins with Be.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v044-Tynker Code Jam 2020 Week 5： Aylin Wins with Be.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v044-Tynker Code Jam 2020 Week 5： Aylin Wins with Be.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v044-Tynker Code Jam 2020 Week 5： Aylin Wins with Be.mp4"
         },
         {
           "filename": "v045-Tynker Code Jam 2020： Week 3 Winner - Michael [.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v045-Tynker Code Jam 2020： Week 3 Winner - Michael [.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v045-Tynker Code Jam 2020： Week 3 Winner - Michael [.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v045-Tynker Code Jam 2020： Week 3 Winner - Michael [.mp4"
         },
         {
           "filename": "v046-Tynker Code Jam 2020 Week 2 Winner： Austen [Xzt.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v046-Tynker Code Jam 2020 Week 2 Winner： Austen [Xzt.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v046-Tynker Code Jam 2020 Week 2 Winner： Austen [Xzt.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v046-Tynker Code Jam 2020 Week 2 Winner： Austen [Xzt.mp4"
         },
         {
           "filename": "v047-Tynker Code Jam 2020： Week 2 - Autumn_s Crazy C.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v047-Tynker Code Jam 2020： Week 2 - Autumn_s Crazy C.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v047-Tynker Code Jam 2020： Week 2 - Autumn_s Crazy C.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v047-Tynker Code Jam 2020： Week 2 - Autumn_s Crazy C.mp4"
         },
         {
           "filename": "v048-Tynker Code Jam 2020 Week 3 Winner： Chris [qbHV.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v048-Tynker Code Jam 2020 Week 3 Winner： Chris [qbHV.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v048-Tynker Code Jam 2020 Week 3 Winner： Chris [qbHV.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v048-Tynker Code Jam 2020 Week 3 Winner： Chris [qbHV.mp4"
         },
         {
           "filename": "v049-Kids Making Cool Code With Tynker： The Best Way.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v049-Kids Making Cool Code With Tynker： The Best Way.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v049-Kids Making Cool Code With Tynker： The Best Way.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v049-Kids Making Cool Code With Tynker： The Best Way.mp4"
         },
         {
           "filename": "v050-Tynker Code Jam 2020 Week 2 Winner： Hasana [lBz.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v050-Tynker Code Jam 2020 Week 2 Winner： Hasana [lBz.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v050-Tynker Code Jam 2020 Week 2 Winner： Hasana [lBz.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v050-Tynker Code Jam 2020 Week 2 Winner： Hasana [lBz.mp4"
         },
         {
           "filename": "v051-Tynker Code Jam 2020 Week 2 Winner： Krishay [H4.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v051-Tynker Code Jam 2020 Week 2 Winner： Krishay [H4.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v051-Tynker Code Jam 2020 Week 2 Winner： Krishay [H4.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v051-Tynker Code Jam 2020 Week 2 Winner： Krishay [H4.mp4"
         },
         {
           "filename": "v052-Tynker Code Jam 2020 Week 3 Winner： Sai [qdK_Fn.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v052-Tynker Code Jam 2020 Week 3 Winner： Sai [qdK_Fn.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v052-Tynker Code Jam 2020 Week 3 Winner： Sai [qdK_Fn.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v052-Tynker Code Jam 2020 Week 3 Winner： Sai [qdK_Fn.mp4"
         },
         {
           "filename": "v053-Tynker Code Jam 2020 Week 5 Winner： Tito [oA0bB.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v053-Tynker Code Jam 2020 Week 5 Winner： Tito [oA0bB.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v053-Tynker Code Jam 2020 Week 5 Winner： Tito [oA0bB.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v053-Tynker Code Jam 2020 Week 5 Winner： Tito [oA0bB.mp4"
         },
         {
           "filename": "v054-Tynker Code Jam 2020 Week 2 - Wes Wins! [cikb5d.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v054-Tynker Code Jam 2020 Week 2 - Wes Wins! [cikb5d.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v054-Tynker Code Jam 2020 Week 2 - Wes Wins! [cikb5d.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v054-Tynker Code Jam 2020 Week 2 - Wes Wins! [cikb5d.mp4"
         },
         {
           "filename": "v055-Tynker Code Jam 2021 Week 2 Winner： Ishan [MWb_.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v055-Tynker Code Jam 2021 Week 2 Winner： Ishan [MWb_.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v055-Tynker Code Jam 2021 Week 2 Winner： Ishan [MWb_.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v055-Tynker Code Jam 2021 Week 2 Winner： Ishan [MWb_.mp4"
         },
         {
           "filename": "v056-Tynker Code Jam 2020： Aly Is The WINNER! [C21cN.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v056-Tynker Code Jam 2020： Aly Is The WINNER! [C21cN.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v056-Tynker Code Jam 2020： Aly Is The WINNER! [C21cN.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v056-Tynker Code Jam 2020： Aly Is The WINNER! [C21cN.mp4"
         },
         {
           "filename": "v057-Tynker Code Jam 2020 Week 3 Winner： Joey [jeCxD.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v057-Tynker Code Jam 2020 Week 3 Winner： Joey [jeCxD.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v057-Tynker Code Jam 2020 Week 3 Winner： Joey [jeCxD.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v057-Tynker Code Jam 2020 Week 3 Winner： Joey [jeCxD.mp4"
         },
         {
           "filename": "v058-Tynker Code Jam 2021 Week 7 Winner： Cristina [o.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v058-Tynker Code Jam 2021 Week 7 Winner： Cristina [o.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v058-Tynker Code Jam 2021 Week 7 Winner： Cristina [o.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v058-Tynker Code Jam 2021 Week 7 Winner： Cristina [o.mp4"
         },
         {
           "filename": "v059-Tynker Code Jam 2021 Week 2 Winner： Amaya [jn9l.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v059-Tynker Code Jam 2021 Week 2 Winner： Amaya [jn9l.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v059-Tynker Code Jam 2021 Week 2 Winner： Amaya [jn9l.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v059-Tynker Code Jam 2021 Week 2 Winner： Amaya [jn9l.mp4"
         },
         {
           "filename": "v060-Tynker Code Jam 2020 Week 7 Winner： Andrew [-Eg.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v060-Tynker Code Jam 2020 Week 7 Winner： Andrew [-Eg.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v060-Tynker Code Jam 2020 Week 7 Winner： Andrew [-Eg.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v060-Tynker Code Jam 2020 Week 7 Winner： Andrew [-Eg.mp4"
         },
         {
           "filename": "v061-Tynker Code Jam 2020 Week 7 Winner： Noah [h7kX3.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v061-Tynker Code Jam 2020 Week 7 Winner： Noah [h7kX3.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v061-Tynker Code Jam 2020 Week 7 Winner： Noah [h7kX3.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v061-Tynker Code Jam 2020 Week 7 Winner： Noah [h7kX3.mp4"
         },
         {
           "filename": "v062-Tynker Code Jam 2020 Week 6 Winner： Tessa [Wy7p.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v062-Tynker Code Jam 2020 Week 6 Winner： Tessa [Wy7p.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v062-Tynker Code Jam 2020 Week 6 Winner： Tessa [Wy7p.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v062-Tynker Code Jam 2020 Week 6 Winner： Tessa [Wy7p.mp4"
         },
         {
           "filename": "v063-Tynker Code Jam 2020 Week 1 Winner： Alex [LGp-v.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v063-Tynker Code Jam 2020 Week 1 Winner： Alex [LGp-v.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v063-Tynker Code Jam 2020 Week 1 Winner： Alex [LGp-v.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v063-Tynker Code Jam 2020 Week 1 Winner： Alex [LGp-v.mp4"
         },
         {
           "filename": "v064-Tynker Workshop： Brick Breaker - Learn how to b.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v064-Tynker Workshop： Brick Breaker - Learn how to b.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v064-Tynker Workshop： Brick Breaker - Learn how to b.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v064-Tynker Workshop： Brick Breaker - Learn how to b.mp4"
         },
         {
           "filename": "v065-Tynker Code Jam 2020 Week 1 Winner： Iva [VQ1bh5.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v065-Tynker Code Jam 2020 Week 1 Winner： Iva [VQ1bh5.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v065-Tynker Code Jam 2020 Week 1 Winner： Iva [VQ1bh5.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v065-Tynker Code Jam 2020 Week 1 Winner： Iva [VQ1bh5.mp4"
         },
         {
           "filename": "v066-Lionel WINS the Tynker Code Jam 2020 Week 3! [G.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v066-Lionel WINS the Tynker Code Jam 2020 Week 3! [G.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v066-Lionel WINS the Tynker Code Jam 2020 Week 3! [G.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v066-Lionel WINS the Tynker Code Jam 2020 Week 3! [G.mp4"
         },
         {
           "filename": "v067-Tynker Code Jam 2020 Week 5 Winner： Carl [_e7C_.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v067-Tynker Code Jam 2020 Week 5 Winner： Carl [_e7C_.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v067-Tynker Code Jam 2020 Week 5 Winner： Carl [_e7C_.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-version-30/v067-Tynker Code Jam 2020 Week 5 Winner： Carl [_e7C_.mp4"
         }
       ]
     },
@@ -2329,20 +2232,17 @@
         {
           "filename": "v001-Collaborative Coding with Crystal Clash.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/crystal-clash/v001-Collaborative Coding with Crystal Clash.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/crystal-clash/v001-Collaborative Coding with Crystal Clash.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/crystal-clash/v001-Collaborative Coding with Crystal Clash.mp4"
         },
         {
           "filename": "v002-Recording 2024-04-05 at 7.31.33 PM - Trim.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/crystal-clash/v002-Recording 2024-04-05 at 7.31.33 PM - Trim.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/crystal-clash/v002-Recording 2024-04-05 at 7.31.33 PM - Trim.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/crystal-clash/v002-Recording 2024-04-05 at 7.31.33 PM - Trim.mp4"
         },
         {
           "filename": "v003-Recording 2024-04-05 at 7.40.36 PM.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/crystal-clash/v003-Recording 2024-04-05 at 7.40.36 PM.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/crystal-clash/v003-Recording 2024-04-05 at 7.40.36 PM.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/crystal-clash/v003-Recording 2024-04-05 at 7.40.36 PM.mp4"
         }
       ]
     },
@@ -2388,8 +2288,7 @@
         {
           "filename": "v001-Mythicraft_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/mythicraft/v001-Mythicraft_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/mythicraft/v001-Mythicraft_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/mythicraft/v001-Mythicraft_tvai.mp4"
         }
       ]
     },
@@ -2542,128 +2441,107 @@
         {
           "filename": "v001-Mythicraft_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v001-Mythicraft_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v001-Mythicraft_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v001-Mythicraft_tvai.mp4"
         },
         {
           "filename": "v002-Tynker Quick Tips — Minecraft Skins.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v002-Tynker Quick Tips — Minecraft Skins.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v002-Tynker Quick Tips — Minecraft Skins.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v002-Tynker Quick Tips — Minecraft Skins.mp4"
         },
         {
           "filename": "v003-Block Editor Stained Glass [h9Sh48NGwy8]_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v003-Block Editor Stained Glass [h9Sh48NGwy8]_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v003-Block Editor Stained Glass [h9Sh48NGwy8]_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v003-Block Editor Stained Glass [h9Sh48NGwy8]_tvai.mp4"
         },
         {
           "filename": "v004-Mythicraft [xHWzSPYrxcE]_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v004-Mythicraft [xHWzSPYrxcE]_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v004-Mythicraft [xHWzSPYrxcE]_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v004-Mythicraft [xHWzSPYrxcE]_tvai.mp4"
         },
         {
           "filename": "v005-How to Easily Create Minecraft Textures in Tynk.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v005-How to Easily Create Minecraft Textures in Tynk.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v005-How to Easily Create Minecraft Textures in Tynk.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v005-How to Easily Create Minecraft Textures in Tynk.mp4"
         },
         {
           "filename": "v006-Exploring the Surprising Benefits of Minecraft .mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v006-Exploring the Surprising Benefits of Minecraft .mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v006-Exploring the Surprising Benefits of Minecraft .thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v006-Exploring the Surprising Benefits of Minecraft .mp4"
         },
         {
           "filename": "v007-Skin Editor Steve to Polar Bear [_06tfKEGk88]_t.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v007-Skin Editor Steve to Polar Bear [_06tfKEGk88]_t.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v007-Skin Editor Steve to Polar Bear [_06tfKEGk88]_t.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v007-Skin Editor Steve to Polar Bear [_06tfKEGk88]_t.mp4"
         },
         {
           "filename": "v008-Learn How to Code Minecraft Behaviors in Tynker.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v008-Learn How to Code Minecraft Behaviors in Tynker.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v008-Learn How to Code Minecraft Behaviors in Tynker.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v008-Learn How to Code Minecraft Behaviors in Tynker.mp4"
         },
         {
           "filename": "v009-Tynker Quick Tips — Minecraft Items [Bza_C_bVUl.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v009-Tynker Quick Tips — Minecraft Items [Bza_C_bVUl.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v009-Tynker Quick Tips — Minecraft Items [Bza_C_bVUl.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v009-Tynker Quick Tips — Minecraft Items [Bza_C_bVUl.mp4"
         },
         {
           "filename": "v010-Tynker Quick Tips — Minecraft Blocks [IaqujarIV.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v010-Tynker Quick Tips — Minecraft Blocks [IaqujarIV.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v010-Tynker Quick Tips — Minecraft Blocks [IaqujarIV.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v010-Tynker Quick Tips — Minecraft Blocks [IaqujarIV.mp4"
         },
         {
           "filename": "v011-Tynker Minecraft Mobs Tutorial — Master Hamster.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v011-Tynker Minecraft Mobs Tutorial — Master Hamster.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v011-Tynker Minecraft Mobs Tutorial — Master Hamster.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v011-Tynker Minecraft Mobs Tutorial — Master Hamster.mp4"
         },
         {
           "filename": "v012-Tynker Minecraft Item Editor Pufferfish [3BILcm.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v012-Tynker Minecraft Item Editor Pufferfish [3BILcm.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v012-Tynker Minecraft Item Editor Pufferfish [3BILcm.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v012-Tynker Minecraft Item Editor Pufferfish [3BILcm.mp4"
         },
         {
           "filename": "v013-Tynker Minecraft Skins Tutorial — Benjamin Brig.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v013-Tynker Minecraft Skins Tutorial — Benjamin Brig.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v013-Tynker Minecraft Skins Tutorial — Benjamin Brig.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v013-Tynker Minecraft Skins Tutorial — Benjamin Brig.mp4"
         },
         {
           "filename": "v014-Minecraft Item Tutorial — Cage from ＂Animal Res.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v014-Minecraft Item Tutorial — Cage from ＂Animal Res.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v014-Minecraft Item Tutorial — Cage from ＂Animal Res.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v014-Minecraft Item Tutorial — Cage from ＂Animal Res.mp4"
         },
         {
           "filename": "v015-Tynker Minecraft Items — Snake Oil [66N23Mz5x8o.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v015-Tynker Minecraft Items — Snake Oil [66N23Mz5x8o.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v015-Tynker Minecraft Items — Snake Oil [66N23Mz5x8o.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v015-Tynker Minecraft Items — Snake Oil [66N23Mz5x8o.mp4"
         },
         {
           "filename": "v016-How to Make a Portal in Minecraft — Minecraft P.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v016-How to Make a Portal in Minecraft — Minecraft P.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v016-How to Make a Portal in Minecraft — Minecraft P.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v016-How to Make a Portal in Minecraft — Minecraft P.mp4"
         },
         {
           "filename": "v017-Minecraft Item Tutorial — Jello from ＂Creepy Ca.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v017-Minecraft Item Tutorial — Jello from ＂Creepy Ca.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v017-Minecraft Item Tutorial — Jello from ＂Creepy Ca.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v017-Minecraft Item Tutorial — Jello from ＂Creepy Ca.mp4"
         },
         {
           "filename": "v018-How to Make Minecraft Mobs Easy and Fun with Ty.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v018-How to Make Minecraft Mobs Easy and Fun with Ty.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v018-How to Make Minecraft Mobs Easy and Fun with Ty.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v018-How to Make Minecraft Mobs Easy and Fun with Ty.mp4"
         },
         {
           "filename": "v019-Tynker Code Jam 2020： Dawson is the WINNER! [E0.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v019-Tynker Code Jam 2020： Dawson is the WINNER! [E0.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v019-Tynker Code Jam 2020： Dawson is the WINNER! [E0.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v019-Tynker Code Jam 2020： Dawson is the WINNER! [E0.mp4"
         },
         {
           "filename": "v020-Minecraft Sorcery： How to Make Your Horse Fly! .mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v020-Minecraft Sorcery： How to Make Your Horse Fly! .mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v020-Minecraft Sorcery： How to Make Your Horse Fly! .thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v020-Minecraft Sorcery： How to Make Your Horse Fly! .mp4"
         },
         {
           "filename": "v021-Tynker Quick Tips — Minecraft Mods [LPMsBOqMXjY.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v021-Tynker Quick Tips — Minecraft Mods [LPMsBOqMXjY.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v021-Tynker Quick Tips — Minecraft Mods [LPMsBOqMXjY.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/minecraft-editor/v021-Tynker Quick Tips — Minecraft Mods [LPMsBOqMXjY.mp4"
         }
       ]
     },
@@ -2764,8 +2642,7 @@
         {
           "filename": "v001-kaboom.mov",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/v001-kaboom.mov",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/v001-kaboom.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/v001-kaboom.mov"
         }
       ]
     },
@@ -2830,14 +2707,12 @@
         {
           "filename": "v001-shoe.mov",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/v001-shoe.mov",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/v001-shoe.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/v001-shoe.mov"
         },
         {
           "filename": "v002-Karl Lagerfeld - Madame Figaro_V3.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/v002-Karl Lagerfeld - Madame Figaro_V3.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/v002-Karl Lagerfeld - Madame Figaro_V3.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/v002-Karl Lagerfeld - Madame Figaro_V3.mp4"
         }
       ]
     },
@@ -3101,8 +2976,7 @@
         {
           "filename": "v001-myswearios.mov",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/v001-myswearios.mov",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/v001-myswearios.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/v001-myswearios.mov"
         }
       ]
     },
@@ -3611,8 +3485,7 @@
         {
           "filename": "v001-launch_vid_iPhone6@2x.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/v001-launch_vid_iPhone6@2x.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/v001-launch_vid_iPhone6@2x.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/v001-launch_vid_iPhone6@2x.mp4"
         }
       ]
     },
@@ -3680,8 +3553,7 @@
         {
           "filename": "v001-talkit.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/talkit/v001-talkit.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/talkit/v001-talkit.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/talkit/v001-talkit.mp4"
         }
       ]
     },
@@ -3903,8 +3775,7 @@
         {
           "filename": "v001-12948129_918752501574591_1367302782_n.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/knod/v001-12948129_918752501574591_1367302782_n.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/knod/v001-12948129_918752501574591_1367302782_n.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/knod/v001-12948129_918752501574591_1367302782_n.mp4"
         }
       ]
     },
@@ -4260,8 +4131,7 @@
         {
           "filename": "v001-projectcapture.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/project-capture/v001-projectcapture.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/project-capture/v001-projectcapture.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/project-capture/v001-projectcapture.mp4"
         }
       ]
     },
@@ -5221,8 +5091,7 @@
         {
           "filename": "v001-videoplayback_tvai.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/fresh-deck-poker/v001-videoplayback_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/fresh-deck-poker/v001-videoplayback_tvai.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/fresh-deck-poker/v001-videoplayback_tvai.mp4"
         }
       ]
     },
@@ -5895,8 +5764,7 @@
         {
           "filename": "v001-colony_install.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/colony-framework/v001-colony_install.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/colony-framework/v001-colony_install.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/colony-framework/v001-colony_install.mp4"
         }
       ]
     },
@@ -6047,8 +5915,7 @@
         {
           "filename": "v001-computercapers.mp4",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/computer-capers/v001-computercapers.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/computer-capers/v001-computercapers.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/computer-capers/v001-computercapers.mp4"
         }
       ]
     }
