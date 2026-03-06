@@ -69,6 +69,6 @@ export interface CVData {
   tldr: string;
   employers: Employer[];
   education: Education[];
-  projects: Project[];
+  projects_db: Project[];
   misc: Link[];
 }

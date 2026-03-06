@@ -24,7 +24,7 @@ function countTechnologies(data: CVData): TechnologyStats {
   const technologyCounts: TechnologyCount = {};
 
   // Count technologies from all projects
-  data.projects.forEach((project: Project) => {
+  data.projects_db.forEach((project: Project) => {
     if (project.technologies && project.technologies.length > 0) {
       project.technologies.forEach((tech: string) => {
         const normalizedTech = tech.trim();
@@ -42,7 +42,7 @@ function countTechnologies(data: CVData): TechnologyStats {
   );
 
   return {
-    totalProjects: data.projects.length,
+    totalProjects: data.projects_db.length,
     totalTechnologies: sortedTechnologies.reduce(
       (sum, [, count]) => sum + count,
       0

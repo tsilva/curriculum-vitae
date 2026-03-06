@@ -1,5 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
+import { fileURLToPath } from "url";
 import { execSync } from "child_process";
 
 interface GitHubRepoRaw {
@@ -27,13 +28,15 @@ interface GitHubRepo {
   updatedAt: string;
   createdAt: string;
   url: string;
+  commits: number;
 }
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, "..");
 const OUTPUT_PATH = path.join(ROOT, "web", "src", "data", "github-data.json");
 
 function fetchRepos(): GitHubRepoRaw[] {
-  // Explicitly request public visibility and include visibility field
   const cmd = `gh repo list tsilva --visibility public --limit 100 --json name,description,primaryLanguage,createdAt,updatedAt,pushedAt,url,stargazerCount,forkCount,isArchived,isFork,visibility`;
   
   try {
@@ -45,39 +48,54 @@ function fetchRepos(): GitHubRepoRaw[] {
   }
 }
 
-function processRepos(repos: GitHubRepoRaw[]): GitHubRepo[] {
-  return repos
-    .filter((repo) => {
-      // Double-check visibility is public (defense in depth)
-      if (repo.visibility !== "PUBLIC") return false;
-      // Exclude forks and archived repos
-      if (repo.isFork) return false;
-      if (repo.isArchived) return false;
-      // Exclude the curriculum-vitae repo itself (it's the website, not a project)
-      if (repo.name === "curriculum-vitae") return false;
-      // Exclude profile README repo
-      if (repo.name === "tsilva") return false;
-      return true;
-    })
-    .map((repo) => ({
-      id: repo.name,
-      name: repo.name,
-      description: repo.description || "",
-      stars: repo.stargazerCount,
-      forks: repo.forkCount,
-      language: repo.primaryLanguage?.name || null,
-      updatedAt: repo.pushedAt,
-      createdAt: repo.createdAt,
-      url: repo.url,
-    }))
-    .sort((a, b) => {
-      // Sort by stars (desc), then by updated date (desc)
-      if (b.stars !== a.stars) return b.stars - a.stars;
-      return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
-    });
+function calculateActivityScore(updatedAt: string, stars: number): number {
+  const now = new Date();
+  const updated = new Date(updatedAt);
+  const daysSinceUpdate = (now.getTime() - updated.getTime()) / (1000 * 60 * 60 * 24);
+  
+  // Primary: recency (exponential decay with 30-day half-life)
+  const recencyScore = Math.exp(-daysSinceUpdate / 30);
+  
+  // Secondary: stars as proxy for project significance/activity level
+  // Log scale to prevent star count from overwhelming recency
+  const significanceScore = Math.log1p(stars);
+  
+  // Combined: recency weighted heavily, significance adds bonus
+  return recencyScore * 10 + significanceScore;
 }
 
-function generateReposData() {
+function processRepos(repos: GitHubRepoRaw[]): GitHubRepo[] {
+  const filteredRepos = repos.filter((repo) => {
+    if (repo.visibility !== "PUBLIC") return false;
+    if (repo.isFork) return false;
+    if (repo.isArchived) return false;
+    if (repo.name === "curriculum-vitae") return false;
+    if (repo.name === "tsilva") return false;
+    return true;
+  });
+  
+  const processedRepos: GitHubRepo[] = filteredRepos.map((repo) => ({
+    id: repo.name,
+    name: repo.name,
+    description: repo.description || "",
+    stars: repo.stargazerCount,
+    forks: repo.forkCount,
+    language: repo.primaryLanguage?.name || null,
+    updatedAt: repo.pushedAt,
+    createdAt: repo.createdAt,
+    url: repo.url,
+    commits: 0, // Not fetched to keep builds fast
+  }));
+  
+  // Sort by activity score: primarily recency, with stars as tiebreaker/significance boost
+  return processedRepos.sort((a, b) => {
+    const scoreA = calculateActivityScore(a.updatedAt, a.stars);
+    const scoreB = calculateActivityScore(b.updatedAt, b.stars);
+    return scoreB - scoreA;
+  });
+}
+
+async function generateReposData() {
   console.log("Fetching GitHub repositories...");
   const rawRepos = fetchRepos();
   
@@ -88,16 +106,13 @@ function generateReposData() {
   
   const processedRepos = processRepos(rawRepos);
   
-  // Ensure output directory exists
   const outputDir = path.dirname(OUTPUT_PATH);
   fs.mkdirSync(outputDir, { recursive: true });
   
-  // Write data file
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(processedRepos, null, 2));
   
   console.log(`Generated: github-data.json (${processedRepos.length} repos)`);
   
-  // Print summary
   const languages = new Map<string, number>();
   processedRepos.forEach((repo) => {
     if (repo.language) {
