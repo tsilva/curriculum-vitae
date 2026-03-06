@@ -1297,8 +1297,8 @@ Open source projects and contributions.
 - [youtube-downloader](https://github.com/tsilva/youtube-downloader) - Download YouTube videos and extract audio
 - [whatsapp-llm](https://github.com/tsilva/whatsapp-llm) - Bridge WhatsApp to AI for intelligent responses
 - [tsilva.eu](https://github.com/tsilva/tsilva.eu) - Personal landing page
-- [retro-romset-cleaner](https://github.com/tsilva/retro-romset-cleaner) - Clean up retro ROM collections
-- [retro-asset-gen](https://github.com/tsilva/retro-asset-gen) - Generate retro gaming assets using Gemini AI
+- [retro-romset-cleaner](https://github.com/tsilva/retro-romset-cleaner) - Clean up retro ROM collections **[Archived]**
+- [retro-asset-gen](https://github.com/tsilva/retro-asset-gen) - Generate retro gaming assets using Gemini AI **[Archived]**
 - [repo2md](https://github.com/tsilva/repo2md) - Transform any repository into a single Markdown document
 - [popdesk](https://github.com/tsilva/popdesk) - Trigger Windows desktop notifications from anywhere via webhooks
 - [pdfpress](https://github.com/tsilva/pdfpress) - Compress, merge, split, and unlock PDF files
