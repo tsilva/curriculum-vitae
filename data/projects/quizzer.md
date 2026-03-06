@@ -22,7 +22,6 @@ links:
     url: https://www.tynker.com/quizzer/?type=placement:block
   - label: Text Coding Placement Test
     url: https://www.tynker.com/quizzer/?type=placement:text
-order: 5
 ---
 
 The Quizzer platform is a versatile tool designed to build assessments that interleave multiple interactive quiz types, using a unified content authoring format powered by MDX.

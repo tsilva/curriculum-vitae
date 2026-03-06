@@ -13,7 +13,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/53FXNdxeBmqoqXzs7
-order: 21
 ---
 
 SpeakWrite is an application that allows users to record audio and have it transcribed into text by human transcribers within a short period.

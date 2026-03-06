@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "GIT_COMMIT_HASH=$(git rev-parse --short HEAD) next dev",
-    "build": "export GIT_COMMIT_HASH=$([ -n \"$VERCEL_GIT_COMMIT_SHA\" ] && echo \"${VERCEL_GIT_COMMIT_SHA:0:7}\" || git rev-parse --short HEAD) && npm run assemble && npm run generate:readme && npm run fetch:github && next build",
+    "build": "export GIT_COMMIT_HASH=$([ -n \"$VERCEL_GIT_COMMIT_SHA\" ] && echo \"${VERCEL_GIT_COMMIT_SHA:0:7}\" || git rev-parse --short HEAD) && npm run fetch:github && npm run assemble && npm run generate:readme && next build",
     "build:local": "export GIT_COMMIT_HASH=$([ -n \"$VERCEL_GIT_COMMIT_SHA\" ] && echo \"${VERCEL_GIT_COMMIT_SHA:0:7}\" || git rev-parse --short HEAD) && GALLERY_MODE=local npm run build",
     "build:r2": "export GIT_COMMIT_HASH=$([ -n \"$VERCEL_GIT_COMMIT_SHA\" ] && echo \"${VERCEL_GIT_COMMIT_SHA:0:7}\" || git rev-parse --short HEAD) && GALLERY_MODE=r2 npm run build",
     "start": "next start",

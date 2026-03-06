@@ -18,7 +18,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/nqtk5jtiGQ56GjCm8
-order: 45
 ---
 
 Bargania was a Deal-a-Day aggregation platform, similar to Groupon, where users could browse the latest deals from major providers, sort them based on preferences, and receive personalized newsletters with offers tailored to their profiles.

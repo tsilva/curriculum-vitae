@@ -18,7 +18,6 @@ links:
     url: https://photos.app.goo.gl/T13vtSmmCndfCmUZ7
   - label: Website
     url: https://web.archive.org/web/20160401014628/https://devcenterpartners.windows.com/
-order: 18
 ---
 
 App Middleware Partners is a section of Microsoft's Windows Dev Center that serves as a directory for Microsoft partners to showcase their middleware solutions.

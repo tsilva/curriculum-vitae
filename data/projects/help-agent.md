@@ -21,7 +21,6 @@ links:
   - label: Help Agent in Parents page
     url: https://www.tynker.com/parents/
     suffix: (chat button in bottom right corner)
-order: 1
 ---
 
 Help Agent was a chatbot developed to assist users with Tynker-related inquiries, utilizing Large Language Models (LLMs) and the Retrieval-Augmented Generation (RAG) architecture.

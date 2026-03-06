@@ -12,7 +12,6 @@ technologies:
   - SQL
   - PL/SQL
 links: []
-order: 44
 ---
 
 This project was a B2B portal for managing communications and transactions for the PARFOIS handbags and fashion accessories brand.

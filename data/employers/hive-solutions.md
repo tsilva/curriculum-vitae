@@ -25,7 +25,6 @@ links:
     url: https://www.hive.pt/
   - label: Github
     url: https://github.com/hivesolutions
-order: 3
 ---
 
 As a co-founder of Hive Solutions, I took on a variety of roles, as is common for startup founders. While my primary role was Lead Software Engineer, I also handled tasks related to sales, marketing and recruitment when needed.

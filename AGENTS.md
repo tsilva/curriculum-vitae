@@ -51,7 +51,11 @@ The source of truth is the `data/` directory. Each entity (project, employer, ed
 - **`data/tldr.md`** — Plain markdown (no frontmatter)
 - **`data/misc.yaml`** — Miscellaneous links (structured data, no prose)
 
-Each frontmatter file has an `order` field that controls sort position in the output.
+Sorting is derived from existing data fields (no manual `order` field):
+- **Projects**: by `start` descending (newest first), tie-break by `title`
+- **Employers**: by start date parsed from `duration` descending (newest first)
+- **Education**: by start year parsed from `duration` descending, tie-break by `institution`
+- **OSS**: by GitHub activity score (recency + stars from `github-data.json`) descending, tie-break by `name`
 
 Two scripts consume this data:
 1. **`scripts/assemble-cv-data.ts`** — Parses frontmatter .md + misc.yaml + gallery scanning → `web/src/data/cv-data.json` (for the web app)
@@ -81,12 +85,11 @@ To update project/employer/education information:
      - React
      - Python
    links: []
-   order: 1
    ---
 
    Project narrative goes here...
    ```
-2. Set `order` to position it correctly (1 = first in README)
+2. Sorting is automatic by `start` year descending (newest first)
 3. Run `cd web && npm run assemble && npm run generate:readme` to update outputs
 
 ## Canonical Project Galleries
@@ -192,9 +195,10 @@ Use the `visual-inspection` skill to capture and analyze screenshots of the CV w
 
 ### Data Pipeline
 The web app consumes CV data via a build-time pipeline:
-1. `scripts/assemble-cv-data.ts` reads `data/**/*.md` (frontmatter) + `data/misc.yaml` + gallery scanning
-2. Outputs structured JSON to `web/src/data/cv-data.json`
-3. The Next.js app imports this JSON at build time for static generation
+1. `scripts/fetch-github.ts` fetches GitHub repo data → `web/src/data/github-data.json`
+2. `scripts/assemble-cv-data.ts` reads `data/**/*.md` (frontmatter) + `data/misc.yaml` + gallery scanning + github-data.json (for OSS sorting) → `web/src/data/cv-data.json`
+3. `scripts/generate-readme.ts` reads the same data → `README.md`
+4. The Next.js app imports cv-data.json at build time for static generation
 
 ## Web App Architecture
 
@@ -228,16 +232,16 @@ The web app uses a distinct cyberpunk/Edgerunners aesthetic:
 Each entity type has specific frontmatter fields:
 
 **Projects** (`data/projects/*.md`):
-- `emoji`, `title`, `headingUrl`, `tldr`, `start`, `client`, `location`, `role`, `team`, `platforms`, `technologies[]`, `links[]`, `order`
+- `emoji`, `title`, `headingUrl`, `tldr`, `start`, `client`, `location`, `role`, `team`, `platforms`, `technologies[]`, `links[]`
 
 **Employers** (`data/employers/*.md`):
-- `emoji`, `name`, `url`, `duration`, `role`, `location`, `projectIds[]`, `links[]`, `order`
+- `emoji`, `name`, `url`, `duration`, `role`, `location`, `projectIds[]`, `links[]`
 
 **Education** (`data/education/*.md`):
-- `emoji`, `institution`, `url`, `duration`, `degree`, `grade`, `location`, `links[]`, `order`
+- `emoji`, `institution`, `url`, `duration`, `degree`, `grade`, `location`, `links[]`
 
 **OSS** (`data/oss/*.md`):
-- `name`, `url`, `description`, `archived` (optional), `order`
+- `name`, `url`, `description`, `archived` (optional)
 
 ### Link Types
 Links support three formats:

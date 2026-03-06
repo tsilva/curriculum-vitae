@@ -19,7 +19,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/RGoL3s92XLfNqsVa9
-order: 40
 ---
 
 Discover Your City is a travel app for architecture enthusiasts, offering guided tours of buildings featuring various styles and designs.

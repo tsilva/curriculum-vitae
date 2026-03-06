@@ -23,7 +23,6 @@ links:
     url: https://photos.app.goo.gl/paiggJ6dEvdKeBwk7
   - label: Website
     url: https://web.archive.org/web/20161017041055/http://www.rocklobby.com/
-order: 41
 ---
 
 Rocklobby is a music social network connecting artists, venues, and fans. Users can follow artists, venues, and fans, buy tickets for shows, review them, book venues for gigs, chat with others, and access various other features. This project was a reboot of a previous mobile Rocklobby app I had created for the same client, with a bigger and more ambitious vision.

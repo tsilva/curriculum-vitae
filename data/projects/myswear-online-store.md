@@ -20,7 +20,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/8gPa9phk2cwfVtH87
-order: 20
 ---
 
 MYSWEAR is an online store where customers can design and purchase custom shoes from the SWEAR fashion brand.

@@ -13,7 +13,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/mf692orHUWtw1RHp7
-order: 30
 ---
 
 ValetTab is an app that streamlines the valet parking experience at participating locations. It allows users to check in, notify the valet when they are ready to check out, and pay for parking directly from their phone. The companion app, ValetStand, helps valet staff manage parked cars, checkout requests, and payments.

@@ -2,94 +2,89 @@
   "tldr": "<p align=\"center\">\n  <img src=\"logo.png\" alt=\"curriculum-vitae logo\" width=\"200\">\n</p>\n\nThis CV is detailed and comprehensive—it's more suited for running through your favorite LLM and asking questions than reading it all the way through. For a concise summary, here's the **TL;DR**:\n\n\n>👋 As a **Software Engineer** with over **20+ years of experience** and **60+ projects shipped**, my passion for technology began in childhood. My earliest memories are of playing on a <a href=\"https://www.youtube.com/watch?v=V0EfycbDhiw\" target=\"_blank\">Sinclair ZX Spectrum 48k</a> (`LOAD \"\" [ENTER]` anyone? 🎮) and later learning English by trial and error while navigating graphical adventure games like <a href=\"https://www.youtube.com/watch?v=RBeYlClQRgQ\" target=\"_blank\">The Secret of Monkey Island</a> on the <a href=\"https://en.wikipedia.org/wiki/Amiga_500\" target=\"_blank\">Commodore Amiga 500</a>. My home became the go-to spot for neighborhood friends to binge on video games for hours 🎮🕹, and when we got stuck, I would trace where game variables were stored in RAM to patch them for infinite lives (`0x00057A34 = 03 -> FF` 💻🔧😈). At age 8, I received a <a href=\"https://en.wikipedia.org/wiki/Casio_FX-850P\" target=\"_blank\">Casio FX-850P calculator</a>—my first portable computer—and began coding text adventures on it to share with friends. By age 12, I had submitted <a href=\"https://photos.app.goo.gl/uMKFMcYurDnpCged8\" target=\"_blank\">my first game</a> to <a href=\"https://en.wikipedia.org/wiki/Amiga_Format\" target=\"_blank\">Amiga Format magazine</a>, and the <a href=\"https://photos.app.goo.gl/usD9rmawFdXKwFcH8\" target=\"_blank\">positive feedback</a> from the reviewer was encouraging enough to kickstart my journey into pursuing Software Engineering.<br>\n><br>🚀 Over the past two decades, I’ve fully committed to three major roles—starting at <a href=\"#-microsoft\">Microsoft</a>, co-founding <a href=\"#-hive-solutions\">Hive Solutions</a> 🐝, and leading software development at <a href=\"#-tynker\">Tynker</a> 💡. At Tynker, I was instrumental in developing several core products used by over **100 million students across 150,000+ schools** 🏫, playing a key role in the company’s <a href=\"https://techcrunch.com/2021/09/16/byjus-acquires-coding-platform-tynker-for-200-million-in-us-expansion-push/\" target=\"_blank\">$200 million acquisition by BYJU's in 2021</a> 💰. I stayed on for two more years, ultimately riding that rollercoaster down 🎢⬇️ as <a href=\"https://techcrunch.com/2024/10/17/byjus-founder-says-his-edtech-startup-once-worth-22b-is-now-worth-zero/\" target=\"_blank\">BYJU's spiraled downward 💸</a>, taking everyone with it 🛟. This plot twist turned out to be the perfect opportunity for me to dive into Deep Learning 🌊—<a href=\"#-neuralj\">a longtime passion ❤️</a>—just as it was going mainstream with <a href=\"https://openai.com/index/chatgpt/\" target=\"_blank\">the rise of Large Language Models</a> 🚀📈🤖.<br>\n><br>💡 My journey in tech has been driven by a passion to know how everything works 📚. Rather than sticking to one niche, I’ve embraced the full spectrum 🌐—from frontend to backend, mobile to infrastructure, and now <a href=\"https://github.com/tsilva/aiml-notebooks/tree/main\" target=\"_blank\">diving into Deep Learning 🤖</a>. Each project is a new chance to level up, tackle challenges, and solve real-world problems with fresh insights 💡🔧.<br>",
   "employers": [
     {
-      "id": "rent-a-coder",
-      "emoji": "🏷",
-      "name": "Rent-a-Coder",
-      "url": "https://web.archive.org/web/20061228042557/http://www.rentacoder.com/RentACoder/default.asp",
-      "duration": "2003 - 2006 · 3 years",
-      "role": "Software Developer",
-      "location": "Remote 🌍",
-      "projectIds": [],
-      "links": [
-        {
-          "label": "Profile",
-          "url": "https://web.archive.org/web/20041112020320/http://www.rentacoder.com/RentACoder/SoftwareCoders/showBioInfo.asp?lngAuthorId=860960",
-          "suffix": "(old snapshot of profile, unfortunately most of the work reviews from later years were not crawled by the Wayback Machine)"
-        }
-      ],
-      "description": "During college, I gained valuable experience working on freelance projects for clients around the world through the Rent-a-Coder platform, where I operated under the name \"Chronosync Developments\" and was fortunate to rank in the top 1% for customer ratings. This was my first foray into managing end-to-end client relationships, where I was tasked with projects and paid for delivering them. It helped me develop key skills in understanding client needs, managing expectations, and delivering on time."
-    },
-    {
-      "id": "microsoft",
-      "emoji": "🖥",
-      "name": "Microsoft",
-      "url": "https://www.microsoft.com/",
-      "duration": "Mar 2007 - Feb 2008 · 1 year",
-      "role": "Software Development Engineer in Test (Full-time)",
-      "location": "Copenhagen, Denmark",
-      "projectIds": [
-        "windows-dev-center-app-middleware-partners"
-      ],
-      "links": [
-        {
-          "label": "Microsoft Dynamics AX",
-          "url": "https://dynamics.microsoft.com/en-us/ax/"
-        },
-        {
-          "group": "TV news coverage about being hired by Microsoft straight out of college (oh the cringe! 😬) :",
-          "links": [
-            {
-              "label": "RTP 1",
-              "url": "https://photos.app.goo.gl/jo7DskprCoxt2jB77"
-            },
-            {
-              "label": "SIC",
-              "url": "https://photos.app.goo.gl/PY6t4TEXYK4fXmt98"
-            },
-            {
-              "label": "TVI",
-              "url": "https://photos.app.goo.gl/W3wTceGahoE2p36U7"
-            }
-          ]
-        }
-      ],
-      "description": "Worked in the Global Development Localization team, in a Tester role, for <a href=\"https://dynamics.microsoft.com/en-us/ax/\" target=\"_blank\">Microsoft Dynamics AX</a> (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing new tests, searching for and investigating application bugs.\n\nImproved internal testing tools to allow scanning for test code coverage across multipler layers, as opposed to just the root of the application's layered customization stack.\n\nDeveloped internal tool for database PII anonymization to allow data transfer across internal groups spread around different regions."
-    },
-    {
-      "id": "hive-solutions",
-      "emoji": "🐝",
-      "name": "Hive Solutions",
-      "url": "https://www.hive.pt/",
-      "duration": "Mar 2008 - Sep 2016 · 8 years and 7 months",
-      "role": "Co-founder (Full-time)",
+      "id": "vaulthaus",
+      "emoji": "🔐",
+      "name": "VaultHaus",
+      "duration": "May 2024 - Present",
+      "role": "AI Research Engineer (Full-time)",
       "location": "Porto, Portugal · Onsite 🏢",
+      "projectIds": [],
+      "links": [],
+      "description": "I pursue a deliberately broad portfolio of AI initiatives—spanning deep-reinforcement-learning research, agentic and large-language-model applications, and the requisite supporting infrastructure—while systematically cultivating a rigorous, first-principles understanding of deep-learning systems and translating my insights into exploratory proof-of-concepts."
+    },
+    {
+      "id": "tynker",
+      "emoji": "🏫",
+      "name": "Tynker",
+      "url": "https://www.tynker.com/",
+      "duration": "Sep 2016 - May 2024",
+      "role": "Lead Software Engineer (Full-time)",
+      "location": "Mountain View, California · Remote 🌍",
       "projectIds": [
-        "kaboom",
-        "lugar-da-joia",
-        "windows-dev-center-app-middleware-partners",
+        "help-agent",
+        "block-ide-arcade-maker",
+        "byjus-coding-cup",
+        "live-classes",
+        "quizzer",
+        "coaching-system",
+        "lynker",
+        "collaborative-learning-system",
+        "block-ide-version-30",
+        "crystal-clash",
+        "minecraft-education-edition-integration",
+        "mythicraft",
+        "minecraft-editor",
+        "tynker-php-mongodb-odm"
+      ],
+      "links": [],
+      "description": "Tynker is a kid-friendly platform used by over 100 million students and in more than 150,000 schools, offering coding education through games and projects from basics to advanced programming languages.\n\nAs a Lead Software Engineer, I was the main contributor to many of its core products, namely:\n\n- **[Help Agent](#-help-agent) 🤖💬**: a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture.\n- **[BYJU's Coding Cup](#-byjus-coding-cup)** ⚽👾: a soccer-themed coding competition for kids, branded as a <a href=\"https://www.prnewswire.com/ae/news-releases/byjus-unveils-the-byjus-coding-cup-enabling-kids-to-use-code-and-ai-to-field-virtual-soccer-teams-in-unison-with-the-fifa-world-cup-qatar-2022-301654538.html\" target=\"_blank\">FIFA 2022 World Cup sponsor</a>, with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.\n- **[Crystal Clash](#-crystal-clash)** ⚔️🤖: an asynchronous multiplayer turn-based battlebots game that allows players to program their bots using Tynker's block-based programming language, played millions of times across numerous seasons.\n- **[Lynker](#-lynker)** 🛠💬 and the **[Collaborative Learning System](#-collaborative-learning-system)** 👥💻: enabled project sharing features in the [Block IDE](#-block-ide---version-30), real-time messaging and project editing, having been granted a <a href=\"https://patents.google.com/patent/US11699357B2\" target=\"_blank\">U.S. patent</a>.\n- **[Quizzer](#-quizzer)** 🧠❓: a modular quiz platform allowing easy integration of different question types and engines, such as allowing integration with the [Block IDE](#-block-ide---version-30) and its course content.\n- **[Block IDE - Arcade Maker](#-block-ide---arcade-maker)** 🎮👾: a simplified game development platform for kids, where they could develop and publish games without having to code.\n- **[Live Classes](#-live-classes)**: a platform that enabled educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the [Block IDE](#-block-ide---version-30) and course content.\n- **[Coaching System](#-coaching-system)** 👩‍🏫📊: a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.\n- **[Block IDE - Version 3.0](#-block-ide---version-30)** 🧩🔧: a major rewrite and rearchitecture of Tynker's Block Editor, at that time, the core of Tynker's educational platform.\n- **[Minecraft Editor](#-minecraft-editor)** 🛠🎮: a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors.\n\n❗ In all these projects, I was responsible for gathering requirements from stakeholders, researching and testing various solutions, and implementing the solution end-to-end, including deployment and post-deployment management."
+    },
+    {
+      "id": "ripe-productions",
+      "emoji": "🛍",
+      "name": "RIPE Productions",
+      "url": "https://www.platforme.com/",
+      "duration": "2016 · Less than a year",
+      "role": "Lead Software Engineer (Full-time)",
+      "location": "Porto, Portugal · Remote 🌍",
+      "projectIds": [
+        "karl-kustomize",
         "myswear-harrods-holographic-pyramid",
-        "myswear-online-store",
-        "parfois-b2b-portal",
-        "bargania",
-        "a-la-carte",
-        "mariachi",
-        "panzerini",
-        "schoooools",
-        "take-the-bill",
-        "frontdoor",
-        "colony-framework"
+        "myswear-online-store"
       ],
-      "links": [
-        {
-          "label": "Website",
-          "url": "https://www.hive.pt/"
-        },
-        {
-          "label": "Github",
-          "url": "https://github.com/hivesolutions"
-        }
+      "links": [],
+      "description": "RIPE Productions was a company that developed e-commerce solutions for the fashion industry (this company is now called <a href=\"https://www.platforme.com/\" target=\"_blank\">PlatformE</a>).\n\nDeveloped some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#-karl-kustomize) project for <a href=\"https://www.karl.com/pt-en\" target=\"_blank\">Karl Lagerfeld</a>.\n\nIn a lesser role also contributed as a software developer to the [MYSWEAR online store](#-myswear---online-store), featuring an advanced shoe customization rendering platform, related [iOS demo](#-myswear---ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#-myswear---harrods-holographic-pyramid), a luxury department store in London."
+    },
+    {
+      "id": "rocksauce-studios",
+      "emoji": "📱",
+      "name": "Rocksauce Studios",
+      "url": "https://www.rocksaucestudios.com/",
+      "duration": "2013 - 2015 · 2 years",
+      "role": "Senior iOS Developer (Full-time)",
+      "location": "Austin, Texas · Remote 🌍",
+      "projectIds": [
+        "speakwrite",
+        "details-pal",
+        "dont-mess-with-texas-report-a-litterer",
+        "energi-coach",
+        "topshelf",
+        "talkit",
+        "us-likey",
+        "win-atlas",
+        "knod",
+        "valettab",
+        "academy-sports-live-fit",
+        "active-heroes",
+        "furtile",
+        "map-my-fitness-challenges",
+        "project-capture",
+        "randid",
+        "wego",
+        "clockadoodle"
       ],
-      "description": "As a co-founder of Hive Solutions, I took on a variety of roles, as is common for startup founders. While my primary role was Lead Software Engineer, I also handled tasks related to sales, marketing and recruitment when needed.\n\nWe initially set out to build a SaaS Retail POS system called *[Frontdoor](#-frontdoor)*, which we developed entirely from scratch, using a tech stack fully built in-house. Although it was a technical success, it didn't achieve commercial success. We eventually pivoted to software consulting, where we shipped a diverse range of projects for numerous clients."
+      "links": [],
+      "description": "Rocksauce Studios was a mobile app development company that specialized in creating custom apps for businesses and startups. While working at Hive Solutions, I was contracted by them to work on more than a dozen projects for different clients, always as an iOS developer."
     },
     {
       "id": "toptal",
@@ -133,89 +128,94 @@
       "description": "Toptal is a platform connecting top developers with leading companies. It employs a rigorous screening process, assessing both advanced technical abilities and strong English proficiency. Through Toptal, I have collaborated with several companies on medium to long-term projects, consistently receiving outstanding feedback from clients."
     },
     {
-      "id": "rocksauce-studios",
-      "emoji": "📱",
-      "name": "Rocksauce Studios",
-      "url": "https://www.rocksaucestudios.com/",
-      "duration": "2013 - 2015 · 2 years",
-      "role": "Senior iOS Developer (Full-time)",
-      "location": "Austin, Texas · Remote 🌍",
-      "projectIds": [
-        "speakwrite",
-        "details-pal",
-        "dont-mess-with-texas-report-a-litterer",
-        "energi-coach",
-        "topshelf",
-        "talkit",
-        "us-likey",
-        "win-atlas",
-        "knod",
-        "valettab",
-        "academy-sports-live-fit",
-        "active-heroes",
-        "furtile",
-        "map-my-fitness-challenges",
-        "project-capture",
-        "randid",
-        "wego",
-        "clockadoodle"
-      ],
-      "links": [],
-      "description": "Rocksauce Studios was a mobile app development company that specialized in creating custom apps for businesses and startups. While working at Hive Solutions, I was contracted by them to work on more than a dozen projects for different clients, always as an iOS developer."
-    },
-    {
-      "id": "ripe-productions",
-      "emoji": "🛍",
-      "name": "RIPE Productions",
-      "url": "https://www.platforme.com/",
-      "duration": "2016 · Less than a year",
-      "role": "Lead Software Engineer (Full-time)",
-      "location": "Porto, Portugal · Remote 🌍",
-      "projectIds": [
-        "karl-kustomize",
-        "myswear-harrods-holographic-pyramid",
-        "myswear-online-store"
-      ],
-      "links": [],
-      "description": "RIPE Productions was a company that developed e-commerce solutions for the fashion industry (this company is now called <a href=\"https://www.platforme.com/\" target=\"_blank\">PlatformE</a>).\n\nDeveloped some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#-karl-kustomize) project for <a href=\"https://www.karl.com/pt-en\" target=\"_blank\">Karl Lagerfeld</a>.\n\nIn a lesser role also contributed as a software developer to the [MYSWEAR online store](#-myswear---online-store), featuring an advanced shoe customization rendering platform, related [iOS demo](#-myswear---ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#-myswear---harrods-holographic-pyramid), a luxury department store in London."
-    },
-    {
-      "id": "tynker",
-      "emoji": "🏫",
-      "name": "Tynker",
-      "url": "https://www.tynker.com/",
-      "duration": "Sep 2016 - May 2024",
-      "role": "Lead Software Engineer (Full-time)",
-      "location": "Mountain View, California · Remote 🌍",
-      "projectIds": [
-        "help-agent",
-        "block-ide-arcade-maker",
-        "byjus-coding-cup",
-        "live-classes",
-        "quizzer",
-        "coaching-system",
-        "lynker",
-        "collaborative-learning-system",
-        "block-ide-version-30",
-        "crystal-clash",
-        "minecraft-education-edition-integration",
-        "mythicraft",
-        "minecraft-editor",
-        "tynker-php-mongodb-odm"
-      ],
-      "links": [],
-      "description": "Tynker is a kid-friendly platform used by over 100 million students and in more than 150,000 schools, offering coding education through games and projects from basics to advanced programming languages.\n\nAs a Lead Software Engineer, I was the main contributor to many of its core products, namely:\n\n- **[Help Agent](#-help-agent) 🤖💬**: a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture.\n- **[BYJU's Coding Cup](#-byjus-coding-cup)** ⚽👾: a soccer-themed coding competition for kids, branded as a <a href=\"https://www.prnewswire.com/ae/news-releases/byjus-unveils-the-byjus-coding-cup-enabling-kids-to-use-code-and-ai-to-field-virtual-soccer-teams-in-unison-with-the-fifa-world-cup-qatar-2022-301654538.html\" target=\"_blank\">FIFA 2022 World Cup sponsor</a>, with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.\n- **[Crystal Clash](#-crystal-clash)** ⚔️🤖: an asynchronous multiplayer turn-based battlebots game that allows players to program their bots using Tynker's block-based programming language, played millions of times across numerous seasons.\n- **[Lynker](#-lynker)** 🛠💬 and the **[Collaborative Learning System](#-collaborative-learning-system)** 👥💻: enabled project sharing features in the [Block IDE](#-block-ide---version-30), real-time messaging and project editing, having been granted a <a href=\"https://patents.google.com/patent/US11699357B2\" target=\"_blank\">U.S. patent</a>.\n- **[Quizzer](#-quizzer)** 🧠❓: a modular quiz platform allowing easy integration of different question types and engines, such as allowing integration with the [Block IDE](#-block-ide---version-30) and its course content.\n- **[Block IDE - Arcade Maker](#-block-ide---arcade-maker)** 🎮👾: a simplified game development platform for kids, where they could develop and publish games without having to code.\n- **[Live Classes](#-live-classes)**: a platform that enabled educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the [Block IDE](#-block-ide---version-30) and course content.\n- **[Coaching System](#-coaching-system)** 👩‍🏫📊: a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.\n- **[Block IDE - Version 3.0](#-block-ide---version-30)** 🧩🔧: a major rewrite and rearchitecture of Tynker's Block Editor, at that time, the core of Tynker's educational platform.\n- **[Minecraft Editor](#-minecraft-editor)** 🛠🎮: a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors.\n\n❗ In all these projects, I was responsible for gathering requirements from stakeholders, researching and testing various solutions, and implementing the solution end-to-end, including deployment and post-deployment management."
-    },
-    {
-      "id": "vaulthaus",
-      "emoji": "🔐",
-      "name": "VaultHaus",
-      "duration": "May 2024 - Present",
-      "role": "AI Research Engineer (Full-time)",
+      "id": "hive-solutions",
+      "emoji": "🐝",
+      "name": "Hive Solutions",
+      "url": "https://www.hive.pt/",
+      "duration": "Mar 2008 - Sep 2016 · 8 years and 7 months",
+      "role": "Co-founder (Full-time)",
       "location": "Porto, Portugal · Onsite 🏢",
+      "projectIds": [
+        "kaboom",
+        "lugar-da-joia",
+        "windows-dev-center-app-middleware-partners",
+        "myswear-harrods-holographic-pyramid",
+        "myswear-online-store",
+        "parfois-b2b-portal",
+        "bargania",
+        "a-la-carte",
+        "mariachi",
+        "panzerini",
+        "schoooools",
+        "take-the-bill",
+        "frontdoor",
+        "colony-framework"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://www.hive.pt/"
+        },
+        {
+          "label": "Github",
+          "url": "https://github.com/hivesolutions"
+        }
+      ],
+      "description": "As a co-founder of Hive Solutions, I took on a variety of roles, as is common for startup founders. While my primary role was Lead Software Engineer, I also handled tasks related to sales, marketing and recruitment when needed.\n\nWe initially set out to build a SaaS Retail POS system called *[Frontdoor](#-frontdoor)*, which we developed entirely from scratch, using a tech stack fully built in-house. Although it was a technical success, it didn't achieve commercial success. We eventually pivoted to software consulting, where we shipped a diverse range of projects for numerous clients."
+    },
+    {
+      "id": "microsoft",
+      "emoji": "🖥",
+      "name": "Microsoft",
+      "url": "https://www.microsoft.com/",
+      "duration": "Mar 2007 - Feb 2008 · 1 year",
+      "role": "Software Development Engineer in Test (Full-time)",
+      "location": "Copenhagen, Denmark",
+      "projectIds": [
+        "windows-dev-center-app-middleware-partners"
+      ],
+      "links": [
+        {
+          "label": "Microsoft Dynamics AX",
+          "url": "https://dynamics.microsoft.com/en-us/ax/"
+        },
+        {
+          "group": "TV news coverage about being hired by Microsoft straight out of college (oh the cringe! 😬) :",
+          "links": [
+            {
+              "label": "RTP 1",
+              "url": "https://photos.app.goo.gl/jo7DskprCoxt2jB77"
+            },
+            {
+              "label": "SIC",
+              "url": "https://photos.app.goo.gl/PY6t4TEXYK4fXmt98"
+            },
+            {
+              "label": "TVI",
+              "url": "https://photos.app.goo.gl/W3wTceGahoE2p36U7"
+            }
+          ]
+        }
+      ],
+      "description": "Worked in the Global Development Localization team, in a Tester role, for <a href=\"https://dynamics.microsoft.com/en-us/ax/\" target=\"_blank\">Microsoft Dynamics AX</a> (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing new tests, searching for and investigating application bugs.\n\nImproved internal testing tools to allow scanning for test code coverage across multipler layers, as opposed to just the root of the application's layered customization stack.\n\nDeveloped internal tool for database PII anonymization to allow data transfer across internal groups spread around different regions."
+    },
+    {
+      "id": "rent-a-coder",
+      "emoji": "🏷",
+      "name": "Rent-a-Coder",
+      "url": "https://web.archive.org/web/20061228042557/http://www.rentacoder.com/RentACoder/default.asp",
+      "duration": "2003 - 2006 · 3 years",
+      "role": "Software Developer",
+      "location": "Remote 🌍",
       "projectIds": [],
-      "links": [],
-      "description": "I pursue a deliberately broad portfolio of AI initiatives—spanning deep-reinforcement-learning research, agentic and large-language-model applications, and the requisite supporting infrastructure—while systematically cultivating a rigorous, first-principles understanding of deep-learning systems and translating my insights into exploratory proof-of-concepts."
+      "links": [
+        {
+          "label": "Profile",
+          "url": "https://web.archive.org/web/20041112020320/http://www.rentacoder.com/RentACoder/SoftwareCoders/showBioInfo.asp?lngAuthorId=860960",
+          "suffix": "(old snapshot of profile, unfortunately most of the work reviews from later years were not crawled by the Wayback Machine)"
+        }
+      ],
+      "description": "During college, I gained valuable experience working on freelance projects for clients around the world through the Rent-a-Coder platform, where I operated under the name \"Chronosync Developments\" and was fortunate to rank in the top 1% for customer ratings. This was my first foray into managing end-to-end client relationships, where I was tasked with projects and paid for delivering them. It helped me develop key skills in understanding client needs, managing expectations, and delivering on time."
     }
   ],
   "education": [
@@ -255,81 +255,6 @@
     }
   ],
   "projects_db": [
-    {
-      "id": "help-agent",
-      "emoji": "🤖",
-      "title": "Help Agent",
-      "headingUrl": "https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6",
-      "tldr": "Sales assistant chatbot meant to assist users in Tynker related inquiries",
-      "start": "2023",
-      "client": "Tynker",
-      "location": "Mountain View, California · Remote 🌍",
-      "role": "Lead Software Engineer",
-      "team": "Just me",
-      "technologies": [
-        "React",
-        "Python",
-        "Flask",
-        "MongoDB",
-        "OpenAI",
-        "Pinecone"
-      ],
-      "links": [
-        {
-          "label": "Gallery",
-          "url": "https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6"
-        },
-        {
-          "label": "Help Agent in Parents page",
-          "url": "https://www.tynker.com/parents/",
-          "suffix": "(chat button in bottom right corner)"
-        }
-      ],
-      "narrative": "Help Agent was a chatbot developed to assist users with Tynker-related inquiries, utilizing Large Language Models (LLMs) and the Retrieval-Augmented Generation (RAG) architecture.\n\nThe project involved challenges like content scraping, data augmentation, embedding, indexing, querying, reranking, model selection, and prompt engineering. Extensive experimentation was required to ensure fast, accurate, and reliable responses while balancing safety and cost-effectiveness (less of an issue now, as LLMs have become cheaper and more reliable).\n\nA backoffice system supported the chatbot by handling data scraping, updates, and user-authored content generation with LLM assistance. It also included tools for managing chat logs, user tickets, and testing updates.\n\nMy role was to gather requirements, research solutions, and implement, deploy, and manage the system end-to-end.\n\nPost-deployment on Tynker's parent and school pages, the chatbot significantly boosted user engagement, with higher conversion rates from users who interacted with it, indicating strong potential for further development.",
-      "gallery": [
-        {
-          "filename": "001-backoffice_1.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/001-backoffice_1.webp"
-        },
-        {
-          "filename": "002-parents_chat_1.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/002-parents_chat_1.webp"
-        },
-        {
-          "filename": "003-parents_chat_2.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/003-parents_chat_2.webp"
-        },
-        {
-          "filename": "004-backoffice_2.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/004-backoffice_2.webp"
-        },
-        {
-          "filename": "005-backoffice_3.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/005-backoffice_3.webp"
-        },
-        {
-          "filename": "006-parents_chat_3.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/006-parents_chat_3.webp"
-        },
-        {
-          "filename": "007-parents_chat_4.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/007-parents_chat_4.webp"
-        },
-        {
-          "filename": "v001-demo.mp4",
-          "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/v001-demo.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/v001-demo.thumb.webp"
-        }
-      ]
-    },
     {
       "id": "block-ide-arcade-maker",
       "emoji": "🕹",
@@ -580,6 +505,81 @@
           "type": "video",
           "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v008-trimmed_dressup_pet_properties.mp4",
           "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/block-ide-arcade-maker/v008-trimmed_dressup_pet_properties.thumb.webp"
+        }
+      ]
+    },
+    {
+      "id": "help-agent",
+      "emoji": "🤖",
+      "title": "Help Agent",
+      "headingUrl": "https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6",
+      "tldr": "Sales assistant chatbot meant to assist users in Tynker related inquiries",
+      "start": "2023",
+      "client": "Tynker",
+      "location": "Mountain View, California · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "team": "Just me",
+      "technologies": [
+        "React",
+        "Python",
+        "Flask",
+        "MongoDB",
+        "OpenAI",
+        "Pinecone"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6"
+        },
+        {
+          "label": "Help Agent in Parents page",
+          "url": "https://www.tynker.com/parents/",
+          "suffix": "(chat button in bottom right corner)"
+        }
+      ],
+      "narrative": "Help Agent was a chatbot developed to assist users with Tynker-related inquiries, utilizing Large Language Models (LLMs) and the Retrieval-Augmented Generation (RAG) architecture.\n\nThe project involved challenges like content scraping, data augmentation, embedding, indexing, querying, reranking, model selection, and prompt engineering. Extensive experimentation was required to ensure fast, accurate, and reliable responses while balancing safety and cost-effectiveness (less of an issue now, as LLMs have become cheaper and more reliable).\n\nA backoffice system supported the chatbot by handling data scraping, updates, and user-authored content generation with LLM assistance. It also included tools for managing chat logs, user tickets, and testing updates.\n\nMy role was to gather requirements, research solutions, and implement, deploy, and manage the system end-to-end.\n\nPost-deployment on Tynker's parent and school pages, the chatbot significantly boosted user engagement, with higher conversion rates from users who interacted with it, indicating strong potential for further development.",
+      "gallery": [
+        {
+          "filename": "001-backoffice_1.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/001-backoffice_1.webp"
+        },
+        {
+          "filename": "002-parents_chat_1.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/002-parents_chat_1.webp"
+        },
+        {
+          "filename": "003-parents_chat_2.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/003-parents_chat_2.webp"
+        },
+        {
+          "filename": "004-backoffice_2.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/004-backoffice_2.webp"
+        },
+        {
+          "filename": "005-backoffice_3.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/005-backoffice_3.webp"
+        },
+        {
+          "filename": "006-parents_chat_3.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/006-parents_chat_3.webp"
+        },
+        {
+          "filename": "007-parents_chat_4.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/007-parents_chat_4.webp"
+        },
+        {
+          "filename": "v001-demo.mp4",
+          "type": "video",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/v001-demo.mp4",
+          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/help-agent/v001-demo.thumb.webp"
         }
       ]
     },
@@ -1173,26 +1173,6 @@
       ]
     },
     {
-      "id": "lynker",
-      "emoji": "💬",
-      "title": "Lynker",
-      "tldr": "Real-time messaging server for Tynker",
-      "start": "2020",
-      "client": "Tynker",
-      "location": "Mountain View, California · Remote 🌍",
-      "role": "Lead Software Engineer",
-      "team": "Just me",
-      "technologies": [
-        "Node.js",
-        "Express",
-        "Socket.IO",
-        "Redis",
-        "NGINX"
-      ],
-      "links": [],
-      "narrative": "Lynker was a custom-built real-time messaging server for Tynker, designed to support a wide range of features, from live dashboard notifications to project collaboration and multiplayer game development. It was engineered for scalability, reliability, security, and low-latency performance.\n\nI was responsible for the full stack development, overseeing everything from architecture to deployment and post-launch maintenance. Lynker was successfully integrated into the Tynker platform, powering key features like the [Collaborative Learning System](#-collaborative-learning-system) and the [Live Classes](#-live-classes) platform, as well as other real-time communication needs.\n\nIn hindsight, it was over-engineered, as it was built to handle a higher throughput than was ultimately needed, with features like multiplayer game development eventually backlogged due to shifting priorities."
-    },
-    {
       "id": "collaborative-learning-system",
       "emoji": "👥",
       "title": "Collaborative Learning System",
@@ -1288,6 +1268,26 @@
           "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/collaborative-learning-system/v001-Recording 2024-04-03 at 8.05.44 PM.thumb.webp"
         }
       ]
+    },
+    {
+      "id": "lynker",
+      "emoji": "💬",
+      "title": "Lynker",
+      "tldr": "Real-time messaging server for Tynker",
+      "start": "2020",
+      "client": "Tynker",
+      "location": "Mountain View, California · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "team": "Just me",
+      "technologies": [
+        "Node.js",
+        "Express",
+        "Socket.IO",
+        "Redis",
+        "NGINX"
+      ],
+      "links": [],
+      "narrative": "Lynker was a custom-built real-time messaging server for Tynker, designed to support a wide range of features, from live dashboard notifications to project collaboration and multiplayer game development. It was engineered for scalability, reliability, security, and low-latency performance.\n\nI was responsible for the full stack development, overseeing everything from architecture to deployment and post-launch maintenance. Lynker was successfully integrated into the Tynker platform, powering key features like the [Collaborative Learning System](#-collaborative-learning-system) and the [Live Classes](#-live-classes) platform, as well as other real-time communication needs.\n\nIn hindsight, it was over-engineered, as it was built to handle a higher throughput than was ultimately needed, with features like multiplayer game development eventually backlogged due to shifting priorities."
     },
     {
       "id": "block-ide-version-30",
@@ -2412,6 +2412,236 @@
       ]
     },
     {
+      "id": "kaboom",
+      "emoji": "💥",
+      "title": "Kaboom!",
+      "headingUrl": "https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8",
+      "tldr": "Fast-paced revival of the classic \"Lights Out\" game for iPhone, iPad, Apple TV and Apple Watch",
+      "start": "2016",
+      "client": "Hive Solutions",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "role": "Lead Software Engineer",
+      "technologies": [
+        "Swift",
+        "iOS",
+        "tvOS",
+        "watchOS"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8"
+        }
+      ],
+      "narrative": "Kaboom! is a fast-paced revival of the classic \"Lights Out\" game, available on iPhone, iPad, Apple TV, and Apple Watch.\n\nI coordinated the design and development of the application, contributing to core aspects of the development while also reviewing and refactoring incoming pull requests. In this project, I simultaneously served as a developer, project manager, and stakeholder, overseeing the entire process from concept to completion.",
+      "gallery": [
+        {
+          "filename": "001-IMG_0664.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/001-IMG_0664.webp"
+        },
+        {
+          "filename": "002-IMG_0666.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/002-IMG_0666.webp"
+        },
+        {
+          "filename": "003-IMG_0667.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/003-IMG_0667.webp"
+        },
+        {
+          "filename": "004-IMG_0668.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/004-IMG_0668.webp"
+        },
+        {
+          "filename": "005-IMG_0670.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/005-IMG_0670.webp"
+        },
+        {
+          "filename": "006-IMG_0672.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/006-IMG_0672.webp"
+        },
+        {
+          "filename": "007-IMG_0673.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/007-IMG_0673.webp"
+        },
+        {
+          "filename": "008-screen390x390.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/008-screen390x390.webp"
+        },
+        {
+          "filename": "009-screen390x390 (1).webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/009-screen390x390 (1).webp"
+        },
+        {
+          "filename": "010-screen390x390 (2).webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/010-screen390x390 (2).webp"
+        },
+        {
+          "filename": "011-screen390x390 (3).webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/011-screen390x390 (3).webp"
+        },
+        {
+          "filename": "v001-kaboom.mov",
+          "type": "video",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/v001-kaboom.mov",
+          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/v001-kaboom.thumb.webp"
+        }
+      ]
+    },
+    {
+      "id": "karl-kustomize",
+      "emoji": "👟",
+      "title": "Karl Kustomize",
+      "headingUrl": "https://photos.app.goo.gl/wVCsT1Y5EKjcLgeU9",
+      "tldr": "Online Shoe Customization Store",
+      "start": "2016",
+      "client": "RIPE Productions",
+      "location": "Porto, Portugal · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "technologies": [
+        "Python",
+        "MongoDB",
+        "Appier",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "UXF",
+        "Budy"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/wVCsT1Y5EKjcLgeU9"
+        }
+      ],
+      "narrative": "Karl Kustomize is an online store where consumers can design and purchase custom sneakers from the fashion brand <a href=\"https://www.karl.com/pt-en\" target=\"_blank\">Karl Lagerfeld</a>.\n\nI was responsible for developing core features, managing the project timeline, assigning tasks, and reviewing and refactoring pull requests from other developers to ensure a smooth and efficient development process.",
+      "gallery": [
+        {
+          "filename": "001-catalog.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/001-catalog.webp"
+        },
+        {
+          "filename": "002-FireShot Capture 12 - Karl_ - http___karl-test..webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/002-FireShot Capture 12 - Karl_ - http___karl-test..webp"
+        },
+        {
+          "filename": "003-FireShot Capture 13 - Karl_ - http___karl-test..webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/003-FireShot Capture 13 - Karl_ - http___karl-test..webp"
+        },
+        {
+          "filename": "004-iTunesArtwork@2x.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/004-iTunesArtwork@2x.webp"
+        },
+        {
+          "filename": "005-FireShot Capture 7 - Karl Lagerfeld - http___lo.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/005-FireShot Capture 7 - Karl Lagerfeld - http___lo.webp"
+        },
+        {
+          "filename": "006-FireShot Capture 17 - Karl Lagerfeld_ - http___.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/006-FireShot Capture 17 - Karl Lagerfeld_ - http___.webp"
+        },
+        {
+          "filename": "v001-shoe.mov",
+          "type": "video",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/v001-shoe.mov",
+          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/v001-shoe.thumb.webp"
+        },
+        {
+          "filename": "v002-Karl Lagerfeld - Madame Figaro_V3.mp4",
+          "type": "video",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/v002-Karl Lagerfeld - Madame Figaro_V3.mp4",
+          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/v002-Karl Lagerfeld - Madame Figaro_V3.thumb.webp"
+        }
+      ]
+    },
+    {
+      "id": "lugar-da-joia",
+      "emoji": "💍",
+      "title": "Lugar da Jóia",
+      "headingUrl": "https://photos.app.goo.gl/J8zziNJajw6ZwRnm9",
+      "tldr": "Online Jewellery Store",
+      "start": "2016",
+      "client": "Lugar da Jóia (through Hive Solutions)",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "role": "Lead Software Engineer",
+      "technologies": [
+        "Python",
+        "Appier",
+        "MongoDB",
+        "Budy",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "UXF"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/J8zziNJajw6ZwRnm9"
+        },
+        {
+          "label": "Landing Page",
+          "url": "https://www.lugardajoia.com/index"
+        }
+      ],
+      "narrative": "Lugar da Jóia is a chain of jewelry stores, and this project marked their first venture into online sales.\n\nI served as both a full-stack developer and coordinator, overseeing another developer and a designer. I developed a wide range of features for the site, working on both the frontend and backend, with the latter utilizing Hive Solutions' Budy e-commerce engine to integrate with the existing infrastructure.",
+      "gallery": [
+        {
+          "filename": "001-Screen Shot 2016-06-28 at 19.25.40.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/001-Screen Shot 2016-06-28 at 19.25.40.webp"
+        },
+        {
+          "filename": "002-Screen Shot 2016-06-28 at 19.25.57.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/002-Screen Shot 2016-06-28 at 19.25.57.webp"
+        },
+        {
+          "filename": "003-Screen Shot 2016-06-28 at 19.26.18.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/003-Screen Shot 2016-06-28 at 19.26.18.webp"
+        },
+        {
+          "filename": "004-Screen Shot 2016-06-28 at 19.29.35.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/004-Screen Shot 2016-06-28 at 19.29.35.webp"
+        },
+        {
+          "filename": "005-03.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/005-03.webp"
+        },
+        {
+          "filename": "006-21.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/006-21.webp"
+        },
+        {
+          "filename": "007-20.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/007-20.webp"
+        }
+      ]
+    },
+    {
       "id": "minecraft-editor",
       "emoji": "🧱",
       "title": "Minecraft Editor",
@@ -2687,6 +2917,57 @@
       ]
     },
     {
+      "id": "myswear-harrods-holographic-pyramid",
+      "emoji": "👟",
+      "title": "MYSWEAR - Harrods Holographic Pyramid",
+      "headingUrl": "https://photos.app.goo.gl/TCP2sVwqjGtvvhx28",
+      "tldr": "Instore Shoe Customization and Ordering experience with Holographic Preview",
+      "start": "2016",
+      "client": "RIPE Productions (through Hive Solutions)",
+      "location": "Porto, Portugal · Remote 🌍",
+      "role": "Full-stack Developer",
+      "technologies": [
+        "Python",
+        "Appier",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "UXF",
+        "iOS",
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/TCP2sVwqjGtvvhx28"
+        }
+      ],
+      "narrative": "MYSWEAR set up a stand at Harrods, one of the world's most renowned department stores in London, where customers could personalize and order custom shoes while viewing their design in real-time on a four-sided holographic pyramid display.\n\nDeveloped a new mode for the existing MYSWEAR online customizer, enabling customer browser instances to remotely control the holographic viewer browser instances through real-time communication using WebSockets. Additionally, also developed a Python-based orchestrator that monitored the communication channels and coordinated the holographic display, ensuring the display's browsers operated correctly at any given time.\n\nAlso single-handedly developed a proof-of-concept native iOS application that replicated the shoe customization experience from the MYSWEAR website. This native app was created in record time and successfully used for demo purposes.",
+      "gallery": [
+        {
+          "filename": "001-image-001.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-harrods-holographic-pyramid/001-image-001.webp"
+        },
+        {
+          "filename": "002-image-002.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-harrods-holographic-pyramid/002-image-002.webp"
+        },
+        {
+          "filename": "003-image.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-harrods-holographic-pyramid/003-image.webp"
+        },
+        {
+          "filename": "004-image (1).webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-harrods-holographic-pyramid/004-image (1).webp"
+        }
+      ]
+    },
+    {
       "id": "tynker-php-mongodb-odm",
       "emoji": "🖥",
       "title": "Tynker - PHP MongoDB ODM",
@@ -2701,236 +2982,6 @@
       ],
       "links": [],
       "narrative": "I developed a web-based 3D editor for Minecraft Bedrock Edition, enabling users to customize Skins, Blocks, Items, and Mobs. The editor featured texture editing and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, translating user inputs into Minecraft's declarative configuration files.\n\nOne significant challenge was optimizing performance on older iPad Mini models, where low frame rates and sluggish interactions were common. To address this, I minimized GPU compositing operations and implemented strict memory management strategies to mitigate the effects of unpredictable garbage collection. These optimizations ensured smooth performance and maintained optimal frame rates within the device's memory constraints.\n\nThis tool was integrated into both the Tynker App and Mod Creator App, offering a robust platform for Minecraft customizations. To date, users have created several million assets using the editor."
-    },
-    {
-      "id": "kaboom",
-      "emoji": "💥",
-      "title": "Kaboom!",
-      "headingUrl": "https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8",
-      "tldr": "Fast-paced revival of the classic \"Lights Out\" game for iPhone, iPad, Apple TV and Apple Watch",
-      "start": "2016",
-      "client": "Hive Solutions",
-      "location": "Porto, Portugal · Onsite 🏢",
-      "role": "Lead Software Engineer",
-      "technologies": [
-        "Swift",
-        "iOS",
-        "tvOS",
-        "watchOS"
-      ],
-      "links": [
-        {
-          "label": "Gallery",
-          "url": "https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8"
-        }
-      ],
-      "narrative": "Kaboom! is a fast-paced revival of the classic \"Lights Out\" game, available on iPhone, iPad, Apple TV, and Apple Watch.\n\nI coordinated the design and development of the application, contributing to core aspects of the development while also reviewing and refactoring incoming pull requests. In this project, I simultaneously served as a developer, project manager, and stakeholder, overseeing the entire process from concept to completion.",
-      "gallery": [
-        {
-          "filename": "001-IMG_0664.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/001-IMG_0664.webp"
-        },
-        {
-          "filename": "002-IMG_0666.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/002-IMG_0666.webp"
-        },
-        {
-          "filename": "003-IMG_0667.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/003-IMG_0667.webp"
-        },
-        {
-          "filename": "004-IMG_0668.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/004-IMG_0668.webp"
-        },
-        {
-          "filename": "005-IMG_0670.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/005-IMG_0670.webp"
-        },
-        {
-          "filename": "006-IMG_0672.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/006-IMG_0672.webp"
-        },
-        {
-          "filename": "007-IMG_0673.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/007-IMG_0673.webp"
-        },
-        {
-          "filename": "008-screen390x390.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/008-screen390x390.webp"
-        },
-        {
-          "filename": "009-screen390x390 (1).webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/009-screen390x390 (1).webp"
-        },
-        {
-          "filename": "010-screen390x390 (2).webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/010-screen390x390 (2).webp"
-        },
-        {
-          "filename": "011-screen390x390 (3).webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/011-screen390x390 (3).webp"
-        },
-        {
-          "filename": "v001-kaboom.mov",
-          "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/v001-kaboom.mov",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/kaboom/v001-kaboom.thumb.webp"
-        }
-      ]
-    },
-    {
-      "id": "karl-kustomize",
-      "emoji": "👟",
-      "title": "Karl Kustomize",
-      "headingUrl": "https://photos.app.goo.gl/wVCsT1Y5EKjcLgeU9",
-      "tldr": "Online Shoe Customization Store",
-      "start": "2016",
-      "client": "RIPE Productions",
-      "location": "Porto, Portugal · Remote 🌍",
-      "role": "Lead Software Engineer",
-      "technologies": [
-        "Python",
-        "MongoDB",
-        "Appier",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "jQuery",
-        "UXF",
-        "Budy"
-      ],
-      "links": [
-        {
-          "label": "Gallery",
-          "url": "https://photos.app.goo.gl/wVCsT1Y5EKjcLgeU9"
-        }
-      ],
-      "narrative": "Karl Kustomize is an online store where consumers can design and purchase custom sneakers from the fashion brand <a href=\"https://www.karl.com/pt-en\" target=\"_blank\">Karl Lagerfeld</a>.\n\nI was responsible for developing core features, managing the project timeline, assigning tasks, and reviewing and refactoring pull requests from other developers to ensure a smooth and efficient development process.",
-      "gallery": [
-        {
-          "filename": "001-catalog.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/001-catalog.webp"
-        },
-        {
-          "filename": "002-FireShot Capture 12 - Karl_ - http___karl-test..webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/002-FireShot Capture 12 - Karl_ - http___karl-test..webp"
-        },
-        {
-          "filename": "003-FireShot Capture 13 - Karl_ - http___karl-test..webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/003-FireShot Capture 13 - Karl_ - http___karl-test..webp"
-        },
-        {
-          "filename": "004-iTunesArtwork@2x.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/004-iTunesArtwork@2x.webp"
-        },
-        {
-          "filename": "005-FireShot Capture 7 - Karl Lagerfeld - http___lo.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/005-FireShot Capture 7 - Karl Lagerfeld - http___lo.webp"
-        },
-        {
-          "filename": "006-FireShot Capture 17 - Karl Lagerfeld_ - http___.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/006-FireShot Capture 17 - Karl Lagerfeld_ - http___.webp"
-        },
-        {
-          "filename": "v001-shoe.mov",
-          "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/v001-shoe.mov",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/v001-shoe.thumb.webp"
-        },
-        {
-          "filename": "v002-Karl Lagerfeld - Madame Figaro_V3.mp4",
-          "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/v002-Karl Lagerfeld - Madame Figaro_V3.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/karl-kustomize/v002-Karl Lagerfeld - Madame Figaro_V3.thumb.webp"
-        }
-      ]
-    },
-    {
-      "id": "lugar-da-joia",
-      "emoji": "💍",
-      "title": "Lugar da Jóia",
-      "headingUrl": "https://photos.app.goo.gl/J8zziNJajw6ZwRnm9",
-      "tldr": "Online Jewellery Store",
-      "start": "2016",
-      "client": "Lugar da Jóia (through Hive Solutions)",
-      "location": "Porto, Portugal · Onsite 🏢",
-      "role": "Lead Software Engineer",
-      "technologies": [
-        "Python",
-        "Appier",
-        "MongoDB",
-        "Budy",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "jQuery",
-        "UXF"
-      ],
-      "links": [
-        {
-          "label": "Gallery",
-          "url": "https://photos.app.goo.gl/J8zziNJajw6ZwRnm9"
-        },
-        {
-          "label": "Landing Page",
-          "url": "https://www.lugardajoia.com/index"
-        }
-      ],
-      "narrative": "Lugar da Jóia is a chain of jewelry stores, and this project marked their first venture into online sales.\n\nI served as both a full-stack developer and coordinator, overseeing another developer and a designer. I developed a wide range of features for the site, working on both the frontend and backend, with the latter utilizing Hive Solutions' Budy e-commerce engine to integrate with the existing infrastructure.",
-      "gallery": [
-        {
-          "filename": "001-Screen Shot 2016-06-28 at 19.25.40.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/001-Screen Shot 2016-06-28 at 19.25.40.webp"
-        },
-        {
-          "filename": "002-Screen Shot 2016-06-28 at 19.25.57.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/002-Screen Shot 2016-06-28 at 19.25.57.webp"
-        },
-        {
-          "filename": "003-Screen Shot 2016-06-28 at 19.26.18.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/003-Screen Shot 2016-06-28 at 19.26.18.webp"
-        },
-        {
-          "filename": "004-Screen Shot 2016-06-28 at 19.29.35.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/004-Screen Shot 2016-06-28 at 19.29.35.webp"
-        },
-        {
-          "filename": "005-03.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/005-03.webp"
-        },
-        {
-          "filename": "006-21.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/006-21.webp"
-        },
-        {
-          "filename": "007-20.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/lugar-da-joia/007-20.webp"
-        }
-      ]
     },
     {
       "id": "windows-dev-center-app-middleware-partners",
@@ -2995,173 +3046,6 @@
           "filename": "007-screencapture-web-archive-org-web-2016032705175.webp",
           "type": "image",
           "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/windows-dev-center-app-middleware-partners/007-screencapture-web-archive-org-web-2016032705175.webp"
-        }
-      ]
-    },
-    {
-      "id": "myswear-harrods-holographic-pyramid",
-      "emoji": "👟",
-      "title": "MYSWEAR - Harrods Holographic Pyramid",
-      "headingUrl": "https://photos.app.goo.gl/TCP2sVwqjGtvvhx28",
-      "tldr": "Instore Shoe Customization and Ordering experience with Holographic Preview",
-      "start": "2016",
-      "client": "RIPE Productions (through Hive Solutions)",
-      "location": "Porto, Portugal · Remote 🌍",
-      "role": "Full-stack Developer",
-      "technologies": [
-        "Python",
-        "Appier",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "jQuery",
-        "UXF",
-        "iOS",
-        "Objective-C"
-      ],
-      "links": [
-        {
-          "label": "Gallery",
-          "url": "https://photos.app.goo.gl/TCP2sVwqjGtvvhx28"
-        }
-      ],
-      "narrative": "MYSWEAR set up a stand at Harrods, one of the world's most renowned department stores in London, where customers could personalize and order custom shoes while viewing their design in real-time on a four-sided holographic pyramid display.\n\nDeveloped a new mode for the existing MYSWEAR online customizer, enabling customer browser instances to remotely control the holographic viewer browser instances through real-time communication using WebSockets. Additionally, also developed a Python-based orchestrator that monitored the communication channels and coordinated the holographic display, ensuring the display's browsers operated correctly at any given time.\n\nAlso single-handedly developed a proof-of-concept native iOS application that replicated the shoe customization experience from the MYSWEAR website. This native app was created in record time and successfully used for demo purposes.",
-      "gallery": [
-        {
-          "filename": "001-image-001.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-harrods-holographic-pyramid/001-image-001.webp"
-        },
-        {
-          "filename": "002-image-002.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-harrods-holographic-pyramid/002-image-002.webp"
-        },
-        {
-          "filename": "003-image.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-harrods-holographic-pyramid/003-image.webp"
-        },
-        {
-          "filename": "004-image (1).webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-harrods-holographic-pyramid/004-image (1).webp"
-        }
-      ]
-    },
-    {
-      "id": "myswear-online-store",
-      "emoji": "👟",
-      "title": "MYSWEAR - Online Store",
-      "headingUrl": "https://photos.app.goo.gl/8gPa9phk2cwfVtH87",
-      "tldr": "Online Fashion Store with Shoe Customizer",
-      "start": "2015",
-      "client": "RIPE Productions (through Hive Solutions)",
-      "location": "Porto, Portugal · Remote 🌍",
-      "role": "Lead Software Engineer",
-      "technologies": [
-        "Python",
-        "MongoDB",
-        "Appier",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "jQuery",
-        "UXF",
-        "Farfetch API"
-      ],
-      "links": [
-        {
-          "label": "Gallery",
-          "url": "https://photos.app.goo.gl/8gPa9phk2cwfVtH87"
-        }
-      ],
-      "narrative": "MYSWEAR is an online store where customers can design and purchase custom shoes from the SWEAR fashion brand.\n\nThe website was developed based on pre-existing design specifications. I developed core features and coordinated the work of other developers, including task assignment, reviewing pull requests, and refactoring code prior to merging.",
-      "gallery": [
-        {
-          "filename": "001-003(1).webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/001-003(1).webp"
-        },
-        {
-          "filename": "002-002(1).webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/002-002(1).webp"
-        },
-        {
-          "filename": "003-Simulator Screen Shot 13 Jul 2016 16.40.36.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/003-Simulator Screen Shot 13 Jul 2016 16.40.36.webp"
-        },
-        {
-          "filename": "004-Simulator Screen Shot 13 Jul 2016 16.41.08.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/004-Simulator Screen Shot 13 Jul 2016 16.41.08.webp"
-        },
-        {
-          "filename": "005-screen.myswear.farfetch.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/005-screen.myswear.farfetch.webp"
-        },
-        {
-          "filename": "006-screen.myswear.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/006-screen.myswear.webp"
-        },
-        {
-          "filename": "007-002.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/007-002.webp"
-        },
-        {
-          "filename": "010-003.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/010-003.webp"
-        },
-        {
-          "filename": "011-001.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/011-001.webp"
-        },
-        {
-          "filename": "v001-myswearios.mov",
-          "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/v001-myswearios.mov",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/v001-myswearios.thumb.webp"
-        }
-      ]
-    },
-    {
-      "id": "speakwrite",
-      "emoji": "📝",
-      "title": "SpeakWrite",
-      "headingUrl": "https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7",
-      "tldr": "iOS Audio Transcribing Application",
-      "start": "2015",
-      "client": "Rocksauce Studios (through Toptal)",
-      "location": "Austin, Texas · Remote 🌍",
-      "role": "Bug fixing",
-      "technologies": [
-        "iOS",
-        "Objective-C"
-      ],
-      "links": [
-        {
-          "label": "Gallery",
-          "url": "https://photos.app.goo.gl/53FXNdxeBmqoqXzs7"
-        }
-      ],
-      "narrative": "SpeakWrite is an application that allows users to record audio and have it transcribed into text by human transcribers within a short period.\n\nI resolved numerous critical bugs across various parts of the app, which was particularly challenging due to the messy and disorganized existing codebase.",
-      "gallery": [
-        {
-          "filename": "001-IMG_0695.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/speakwrite/001-IMG_0695.webp"
-        },
-        {
-          "filename": "002-IMG_0696.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/speakwrite/002-IMG_0696.webp"
         }
       ]
     },
@@ -3587,62 +3471,118 @@
       ]
     },
     {
-      "id": "topshelf",
-      "emoji": "🥃",
-      "title": "TopShelf",
-      "headingUrl": "https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6",
-      "tldr": "iOS Alcohol Delivery App",
+      "id": "myswear-online-store",
+      "emoji": "👟",
+      "title": "MYSWEAR - Online Store",
+      "headingUrl": "https://photos.app.goo.gl/8gPa9phk2cwfVtH87",
+      "tldr": "Online Fashion Store with Shoe Customizer",
       "start": "2015",
-      "client": "Rocksauce Studios (through Toptal)",
-      "location": "Austin, Texas · Remote 🌍",
-      "role": "Full-stack Developer",
-      "platforms": "iPhone (iOS)",
+      "client": "RIPE Productions (through Hive Solutions)",
+      "location": "Porto, Portugal · Remote 🌍",
+      "role": "Lead Software Engineer",
       "technologies": [
-        "iOS",
-        "Objective-C",
-        "Parse",
+        "Python",
+        "MongoDB",
+        "Appier",
+        "HTML",
+        "CSS",
         "JavaScript",
-        "Stripe",
-        "Apple Pay"
+        "jQuery",
+        "UXF",
+        "Farfetch API"
       ],
       "links": [
         {
           "label": "Gallery",
-          "url": "https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6"
+          "url": "https://photos.app.goo.gl/8gPa9phk2cwfVtH87"
         }
       ],
-      "narrative": "TopShelf is an app that allows users to order alcoholic beverages directly from their phone and have them delivered to their doorstep.\n\nI developed the iOS application and backend logic from the ground up, including integration with a third-party fleet management service to coordinate deliveries efficiently.",
+      "narrative": "MYSWEAR is an online store where customers can design and purchase custom shoes from the SWEAR fashion brand.\n\nThe website was developed based on pre-existing design specifications. I developed core features and coordinated the work of other developers, including task assignment, reviewing pull requests, and refactoring code prior to merging.",
       "gallery": [
         {
-          "filename": "001-topshelf-001.webp",
+          "filename": "001-003(1).webp",
           "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/001-topshelf-001.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/001-003(1).webp"
         },
         {
-          "filename": "002-topshelf-002.webp",
+          "filename": "002-002(1).webp",
           "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/002-topshelf-002.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/002-002(1).webp"
         },
         {
-          "filename": "003-topshelf-003.webp",
+          "filename": "003-Simulator Screen Shot 13 Jul 2016 16.40.36.webp",
           "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/003-topshelf-003.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/003-Simulator Screen Shot 13 Jul 2016 16.40.36.webp"
         },
         {
-          "filename": "004-topshelf-004.webp",
+          "filename": "004-Simulator Screen Shot 13 Jul 2016 16.41.08.webp",
           "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/004-topshelf-004.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/004-Simulator Screen Shot 13 Jul 2016 16.41.08.webp"
         },
         {
-          "filename": "005-12.topshelf.webp",
+          "filename": "005-screen.myswear.farfetch.webp",
           "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/005-12.topshelf.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/005-screen.myswear.farfetch.webp"
         },
         {
-          "filename": "v001-launch_vid_iPhone6@2x.mp4",
+          "filename": "006-screen.myswear.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/006-screen.myswear.webp"
+        },
+        {
+          "filename": "007-002.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/007-002.webp"
+        },
+        {
+          "filename": "010-003.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/010-003.webp"
+        },
+        {
+          "filename": "011-001.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/011-001.webp"
+        },
+        {
+          "filename": "v001-myswearios.mov",
           "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/v001-launch_vid_iPhone6@2x.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/v001-launch_vid_iPhone6@2x.thumb.webp"
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/v001-myswearios.mov",
+          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/myswear-online-store/v001-myswearios.thumb.webp"
+        }
+      ]
+    },
+    {
+      "id": "speakwrite",
+      "emoji": "📝",
+      "title": "SpeakWrite",
+      "headingUrl": "https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7",
+      "tldr": "iOS Audio Transcribing Application",
+      "start": "2015",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Bug fixing",
+      "technologies": [
+        "iOS",
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/53FXNdxeBmqoqXzs7"
+        }
+      ],
+      "narrative": "SpeakWrite is an application that allows users to record audio and have it transcribed into text by human transcribers within a short period.\n\nI resolved numerous critical bugs across various parts of the app, which was particularly challenging due to the messy and disorganized existing codebase.",
+      "gallery": [
+        {
+          "filename": "001-IMG_0695.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/speakwrite/001-IMG_0695.webp"
+        },
+        {
+          "filename": "002-IMG_0696.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/speakwrite/002-IMG_0696.webp"
         }
       ]
     },
@@ -3713,6 +3653,66 @@
           "type": "video",
           "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/talkit/v001-talkit.mp4",
           "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/talkit/v001-talkit.thumb.webp"
+        }
+      ]
+    },
+    {
+      "id": "topshelf",
+      "emoji": "🥃",
+      "title": "TopShelf",
+      "headingUrl": "https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6",
+      "tldr": "iOS Alcohol Delivery App",
+      "start": "2015",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Full-stack Developer",
+      "platforms": "iPhone (iOS)",
+      "technologies": [
+        "iOS",
+        "Objective-C",
+        "Parse",
+        "JavaScript",
+        "Stripe",
+        "Apple Pay"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6"
+        }
+      ],
+      "narrative": "TopShelf is an app that allows users to order alcoholic beverages directly from their phone and have them delivered to their doorstep.\n\nI developed the iOS application and backend logic from the ground up, including integration with a third-party fleet management service to coordinate deliveries efficiently.",
+      "gallery": [
+        {
+          "filename": "001-topshelf-001.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/001-topshelf-001.webp"
+        },
+        {
+          "filename": "002-topshelf-002.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/002-topshelf-002.webp"
+        },
+        {
+          "filename": "003-topshelf-003.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/003-topshelf-003.webp"
+        },
+        {
+          "filename": "004-topshelf-004.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/004-topshelf-004.webp"
+        },
+        {
+          "filename": "005-12.topshelf.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/005-12.topshelf.webp"
+        },
+        {
+          "filename": "v001-launch_vid_iPhone6@2x.mp4",
+          "type": "video",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/v001-launch_vid_iPhone6@2x.mp4",
+          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/topshelf/v001-launch_vid_iPhone6@2x.thumb.webp"
         }
       ]
     },
@@ -3891,123 +3891,6 @@
           "filename": "008-08.winatlas.webp",
           "type": "image",
           "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/win-atlas/008-08.winatlas.webp"
-        }
-      ]
-    },
-    {
-      "id": "knod",
-      "emoji": "📚",
-      "title": "Knod",
-      "headingUrl": "https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6",
-      "tldr": "iOS Media Reviews Social Network - Books, Movies, Games, etc.",
-      "start": "2014",
-      "client": "Rocksauce Studios (through Toptal)",
-      "location": "Austin, Texas · Remote 🌍",
-      "technologies": [
-        "Objective-C"
-      ],
-      "links": [
-        {
-          "label": "Gallery",
-          "url": "https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6"
-        }
-      ],
-      "narrative": "Knod is a media discovery social network where users can rate movies, books, songs, games, and more, receiving personalized recommendations based on their ratings and social connections.\n\nI contributed to the initial development of the project, creating core features for the iOS app. After being reassigned to a more urgent project, I later returned to assist with additional feature development and bug fixes.",
-      "gallery": [
-        {
-          "filename": "001-13124498_587539498068194_2810866045740281380_n.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/knod/001-13124498_587539498068194_2810866045740281380_n.webp"
-        },
-        {
-          "filename": "002-13062391_587539438068200_6722379495508148091_n.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/knod/002-13062391_587539438068200_6722379495508148091_n.webp"
-        },
-        {
-          "filename": "003-11390241_470013259820819_7077061171381925657_n.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/knod/003-11390241_470013259820819_7077061171381925657_n.webp"
-        },
-        {
-          "filename": "004-10429421_470013249820820_4476288048288776887_n.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/knod/004-10429421_470013249820820_4476288048288776887_n.webp"
-        },
-        {
-          "filename": "v001-12948129_918752501574591_1367302782_n.mp4",
-          "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/knod/v001-12948129_918752501574591_1367302782_n.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/knod/v001-12948129_918752501574591_1367302782_n.thumb.webp"
-        }
-      ]
-    },
-    {
-      "id": "valettab",
-      "emoji": "🚗",
-      "title": "ValetTab",
-      "headingUrl": "https://photos.app.goo.gl/mf692orHUWtw1RHp7",
-      "tldr": "iOS Valet Parking Software",
-      "start": "2014",
-      "client": "Rocksauce Studios (through Toptal)",
-      "location": "Austin, Texas · Remote 🌍",
-      "role": "Bug fixing",
-      "technologies": [
-        "iOS",
-        "Objective-C"
-      ],
-      "links": [
-        {
-          "label": "Gallery",
-          "url": "https://photos.app.goo.gl/mf692orHUWtw1RHp7"
-        }
-      ],
-      "narrative": "ValetTab is an app that streamlines the valet parking experience at participating locations. It allows users to check in, notify the valet when they are ready to check out, and pay for parking directly from their phone. The companion app, ValetStand, helps valet staff manage parked cars, checkout requests, and payments.\n\nI fixed numerous bugs and implemented new features, primarily related to the payment process. The project was particularly challenging due to the disorganized and messy existing codebase.",
-      "gallery": [
-        {
-          "filename": "001-iPhone_5.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/001-iPhone_5.webp"
-        },
-        {
-          "filename": "002-login_lrg_bg.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/002-login_lrg_bg.webp"
-        },
-        {
-          "filename": "003-app_preview.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/003-app_preview.webp"
-        },
-        {
-          "filename": "004-ProSTAND.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/004-ProSTAND.webp"
-        },
-        {
-          "filename": "005-smartphone2.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/005-smartphone2.webp"
-        },
-        {
-          "filename": "006-BasicSTAND.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/006-BasicSTAND.webp"
-        },
-        {
-          "filename": "007-tut_img_2@2x.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/007-tut_img_2@2x.webp"
-        },
-        {
-          "filename": "008-tut_img_1@2x.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/008-tut_img_1@2x.webp"
-        },
-        {
-          "filename": "009-tut_img_3@2x.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/009-tut_img_3@2x.webp"
         }
       ]
     },
@@ -4193,6 +4076,54 @@
           "filename": "005-03.furtile.webp",
           "type": "image",
           "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/furtile/005-03.furtile.webp"
+        }
+      ]
+    },
+    {
+      "id": "knod",
+      "emoji": "📚",
+      "title": "Knod",
+      "headingUrl": "https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6",
+      "tldr": "iOS Media Reviews Social Network - Books, Movies, Games, etc.",
+      "start": "2014",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "technologies": [
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6"
+        }
+      ],
+      "narrative": "Knod is a media discovery social network where users can rate movies, books, songs, games, and more, receiving personalized recommendations based on their ratings and social connections.\n\nI contributed to the initial development of the project, creating core features for the iOS app. After being reassigned to a more urgent project, I later returned to assist with additional feature development and bug fixes.",
+      "gallery": [
+        {
+          "filename": "001-13124498_587539498068194_2810866045740281380_n.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/knod/001-13124498_587539498068194_2810866045740281380_n.webp"
+        },
+        {
+          "filename": "002-13062391_587539438068200_6722379495508148091_n.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/knod/002-13062391_587539438068200_6722379495508148091_n.webp"
+        },
+        {
+          "filename": "003-11390241_470013259820819_7077061171381925657_n.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/knod/003-11390241_470013259820819_7077061171381925657_n.webp"
+        },
+        {
+          "filename": "004-10429421_470013249820820_4476288048288776887_n.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/knod/004-10429421_470013249820820_4476288048288776887_n.webp"
+        },
+        {
+          "filename": "v001-12948129_918752501574591_1367302782_n.mp4",
+          "type": "video",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/knod/v001-12948129_918752501574591_1367302782_n.mp4",
+          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/knod/v001-12948129_918752501574591_1367302782_n.thumb.webp"
         }
       ]
     },
@@ -4427,6 +4358,75 @@
       ]
     },
     {
+      "id": "valettab",
+      "emoji": "🚗",
+      "title": "ValetTab",
+      "headingUrl": "https://photos.app.goo.gl/mf692orHUWtw1RHp7",
+      "tldr": "iOS Valet Parking Software",
+      "start": "2014",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Bug fixing",
+      "technologies": [
+        "iOS",
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/mf692orHUWtw1RHp7"
+        }
+      ],
+      "narrative": "ValetTab is an app that streamlines the valet parking experience at participating locations. It allows users to check in, notify the valet when they are ready to check out, and pay for parking directly from their phone. The companion app, ValetStand, helps valet staff manage parked cars, checkout requests, and payments.\n\nI fixed numerous bugs and implemented new features, primarily related to the payment process. The project was particularly challenging due to the disorganized and messy existing codebase.",
+      "gallery": [
+        {
+          "filename": "001-iPhone_5.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/001-iPhone_5.webp"
+        },
+        {
+          "filename": "002-login_lrg_bg.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/002-login_lrg_bg.webp"
+        },
+        {
+          "filename": "003-app_preview.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/003-app_preview.webp"
+        },
+        {
+          "filename": "004-ProSTAND.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/004-ProSTAND.webp"
+        },
+        {
+          "filename": "005-smartphone2.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/005-smartphone2.webp"
+        },
+        {
+          "filename": "006-BasicSTAND.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/006-BasicSTAND.webp"
+        },
+        {
+          "filename": "007-tut_img_2@2x.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/007-tut_img_2@2x.webp"
+        },
+        {
+          "filename": "008-tut_img_1@2x.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/008-tut_img_1@2x.webp"
+        },
+        {
+          "filename": "009-tut_img_3@2x.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/valettab/009-tut_img_3@2x.webp"
+        }
+      ]
+    },
+    {
       "id": "wego",
       "emoji": "🏃",
       "title": "WeGo",
@@ -4534,6 +4534,62 @@
           "filename": "017-7.wego.webp",
           "type": "image",
           "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/wego/017-7.wego.webp"
+        }
+      ]
+    },
+    {
+      "id": "china-pro-tools",
+      "emoji": "🧮",
+      "title": "China Pro Tools",
+      "headingUrl": "https://photos.app.goo.gl/16xmzjMpPP9pP7Z88",
+      "tldr": "Market Analytics Solution for Exports to China",
+      "start": "2013",
+      "client": "East Point Consulting, LLC (through Toptal)",
+      "location": "New York · Remote 🌍",
+      "role": "Full-stack Developer",
+      "technologies": [
+        "Python",
+        "Flask",
+        "Quorum",
+        "MongoDB",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "UXF"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/16xmzjMpPP9pP7Z88"
+        }
+      ],
+      "narrative": "China Pro Tools is a market analytics solution that provides decision-support statistics related to exports to China.\n\nI developed the entire application based on pre-existing specifications and delivered it precisely on schedule.",
+      "gallery": [
+        {
+          "filename": "001-1-Login.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/china-pro-tools/001-1-Login.webp"
+        },
+        {
+          "filename": "002-2-Market-Share-analysis.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/china-pro-tools/002-2-Market-Share-analysis.webp"
+        },
+        {
+          "filename": "003-3-Buyer-Profile-B.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/china-pro-tools/003-3-Buyer-Profile-B.webp"
+        },
+        {
+          "filename": "004-1B-Market-Share-Popup.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/china-pro-tools/004-1B-Market-Share-Popup.webp"
+        },
+        {
+          "filename": "005-2-Buyer-Profile.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/china-pro-tools/005-2-Buyer-Profile.webp"
         }
       ]
     },
@@ -4813,62 +4869,6 @@
           "filename": "050-02.clockadoodle.webp",
           "type": "image",
           "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/clockadoodle/050-02.clockadoodle.webp"
-        }
-      ]
-    },
-    {
-      "id": "china-pro-tools",
-      "emoji": "🧮",
-      "title": "China Pro Tools",
-      "headingUrl": "https://photos.app.goo.gl/16xmzjMpPP9pP7Z88",
-      "tldr": "Market Analytics Solution for Exports to China",
-      "start": "2013",
-      "client": "East Point Consulting, LLC (through Toptal)",
-      "location": "New York · Remote 🌍",
-      "role": "Full-stack Developer",
-      "technologies": [
-        "Python",
-        "Flask",
-        "Quorum",
-        "MongoDB",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "jQuery",
-        "UXF"
-      ],
-      "links": [
-        {
-          "label": "Gallery",
-          "url": "https://photos.app.goo.gl/16xmzjMpPP9pP7Z88"
-        }
-      ],
-      "narrative": "China Pro Tools is a market analytics solution that provides decision-support statistics related to exports to China.\n\nI developed the entire application based on pre-existing specifications and delivered it precisely on schedule.",
-      "gallery": [
-        {
-          "filename": "001-1-Login.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/china-pro-tools/001-1-Login.webp"
-        },
-        {
-          "filename": "002-2-Market-Share-analysis.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/china-pro-tools/002-2-Market-Share-analysis.webp"
-        },
-        {
-          "filename": "003-3-Buyer-Profile-B.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/china-pro-tools/003-3-Buyer-Profile-B.webp"
-        },
-        {
-          "filename": "004-1B-Market-Share-Popup.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/china-pro-tools/004-1B-Market-Share-Popup.webp"
-        },
-        {
-          "filename": "005-2-Buyer-Profile.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/china-pro-tools/005-2-Buyer-Profile.webp"
         }
       ]
     },
@@ -5730,119 +5730,6 @@
       ]
     },
     {
-      "id": "frontdoor",
-      "emoji": "🛍",
-      "title": "Frontdoor",
-      "headingUrl": "https://photos.app.goo.gl/9qeFGMfqXWxdYXLXA",
-      "tldr": "SaaS ERP Solution",
-      "start": "2008",
-      "client": "Hive Solutions",
-      "location": "Porto, Portugal · Onsite 🏢",
-      "technologies": [
-        "Python",
-        "Colony Framework",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "jQuery",
-        "UXF"
-      ],
-      "links": [
-        {
-          "label": "Gallery",
-          "url": "https://photos.app.goo.gl/9qeFGMfqXWxdYXLXA"
-        }
-      ],
-      "narrative": "Developed back-end logic for online Point-of-Sale SaaS product using Python with the Colony Framework and its respective MVC stack. Also developed front-end for same system through extensive usage of JavaScript and jQuery to create a productive user experience.",
-      "gallery": [
-        {
-          "filename": "001-02.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/001-02.webp"
-        },
-        {
-          "filename": "002-04 2.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/002-04 2.webp"
-        },
-        {
-          "filename": "003-01.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/003-01.webp"
-        },
-        {
-          "filename": "004-01(1).webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/004-01(1).webp"
-        },
-        {
-          "filename": "005-04.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/005-04.webp"
-        },
-        {
-          "filename": "006-frontdoor.wallpapers.light_1920x1200.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/006-frontdoor.wallpapers.light_1920x1200.webp"
-        },
-        {
-          "filename": "007-01.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/007-01.webp"
-        },
-        {
-          "filename": "008-frontdoor_flyer.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/008-frontdoor_flyer.webp"
-        },
-        {
-          "filename": "009-frontdoor_1.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/009-frontdoor_1.webp"
-        },
-        {
-          "filename": "010-frontdoor_2.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/010-frontdoor_2.webp"
-        },
-        {
-          "filename": "011-frontdoor-chrome-store-large.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/011-frontdoor-chrome-store-large.webp"
-        },
-        {
-          "filename": "012-21.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/012-21.webp"
-        },
-        {
-          "filename": "013-20.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/013-20.webp"
-        },
-        {
-          "filename": "014-22.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/014-22.webp"
-        },
-        {
-          "filename": "015-19.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/015-19.webp"
-        },
-        {
-          "filename": "016-02(1).webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/016-02(1).webp"
-        },
-        {
-          "filename": "017-01(2).webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/017-01(2).webp"
-        }
-      ]
-    },
-    {
       "id": "colony-framework",
       "emoji": "🔌",
       "title": "Colony Framework",
@@ -5953,6 +5840,119 @@
           "type": "video",
           "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/colony-framework/v001-colony_install.mp4",
           "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/colony-framework/v001-colony_install.thumb.webp"
+        }
+      ]
+    },
+    {
+      "id": "frontdoor",
+      "emoji": "🛍",
+      "title": "Frontdoor",
+      "headingUrl": "https://photos.app.goo.gl/9qeFGMfqXWxdYXLXA",
+      "tldr": "SaaS ERP Solution",
+      "start": "2008",
+      "client": "Hive Solutions",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "technologies": [
+        "Python",
+        "Colony Framework",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "UXF"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/9qeFGMfqXWxdYXLXA"
+        }
+      ],
+      "narrative": "Developed back-end logic for online Point-of-Sale SaaS product using Python with the Colony Framework and its respective MVC stack. Also developed front-end for same system through extensive usage of JavaScript and jQuery to create a productive user experience.",
+      "gallery": [
+        {
+          "filename": "001-02.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/001-02.webp"
+        },
+        {
+          "filename": "002-04 2.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/002-04 2.webp"
+        },
+        {
+          "filename": "003-01.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/003-01.webp"
+        },
+        {
+          "filename": "004-01(1).webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/004-01(1).webp"
+        },
+        {
+          "filename": "005-04.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/005-04.webp"
+        },
+        {
+          "filename": "006-frontdoor.wallpapers.light_1920x1200.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/006-frontdoor.wallpapers.light_1920x1200.webp"
+        },
+        {
+          "filename": "007-01.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/007-01.webp"
+        },
+        {
+          "filename": "008-frontdoor_flyer.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/008-frontdoor_flyer.webp"
+        },
+        {
+          "filename": "009-frontdoor_1.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/009-frontdoor_1.webp"
+        },
+        {
+          "filename": "010-frontdoor_2.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/010-frontdoor_2.webp"
+        },
+        {
+          "filename": "011-frontdoor-chrome-store-large.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/011-frontdoor-chrome-store-large.webp"
+        },
+        {
+          "filename": "012-21.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/012-21.webp"
+        },
+        {
+          "filename": "013-20.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/013-20.webp"
+        },
+        {
+          "filename": "014-22.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/014-22.webp"
+        },
+        {
+          "filename": "015-19.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/015-19.webp"
+        },
+        {
+          "filename": "016-02(1).webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/016-02(1).webp"
+        },
+        {
+          "filename": "017-01(2).webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/frontdoor/017-01(2).webp"
         }
       ]
     },

@@ -13,7 +13,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/yV5rQH6QvrL3yQh69
-order: 34
 ---
 
 MapMyFitness, one of the first activity tracking applications, was later acquired by Under Armour.

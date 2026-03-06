@@ -28,7 +28,6 @@ links:
     url: https://www.tynker.com/minecraft/editor/mob/llama2/
   - label: Mobs - Pig
     url: https://www.tynker.com/minecraft/editor/mob/pig/
-order: 13
 ---
 
 Developed a web-based 3D editor for Minecraft Bedrock Edition, allowing users to customize Skins, Blocks, Items, and Mobs. The editor included texture editing capabilities and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, which translated user inputs into Minecraft's declarative configuration files.

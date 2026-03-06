@@ -10,7 +10,6 @@ projectIds:
   - myswear-harrods-holographic-pyramid
   - myswear-online-store
 links: []
-order: 6
 ---
 
 RIPE Productions was a company that developed e-commerce solutions for the fashion industry (this company is now called <a href="https://www.platforme.com/" target="_blank">PlatformE</a>).

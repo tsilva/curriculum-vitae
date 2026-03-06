@@ -18,7 +18,6 @@ links:
     url: https://web.archive.org/web/20160527230029/http://www.uslikey.com/
   - label: Facebook
     url: https://www.facebook.com/uslikey
-order: 27
 ---
 
 Us Likey is a social network where users can share their favorite products, places, brands, foods, and more.

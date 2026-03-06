@@ -14,7 +14,6 @@ technologies:
   - Redis
   - NGINX
 links: []
-order: 7
 ---
 
 Lynker was a custom-built real-time messaging server for Tynker, designed to support a wide range of features, from live dashboard notifications to project collaboration and multiplayer game development. It was engineered for scalability, reliability, security, and low-latency performance.

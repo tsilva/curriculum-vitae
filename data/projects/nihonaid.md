@@ -12,7 +12,6 @@ technologies:
 links:
   - label: Sourceforge project
     url: https://sourceforge.net/projects/nihonaid/
-order: 54
 ---
 
 Nihonaid is a tool I developed to assist with learning Japanese, specifically for memorizing the Kanji character set.

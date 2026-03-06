@@ -11,7 +11,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6
-order: 29
 ---
 
 Knod is a media discovery social network where users can rate movies, books, songs, games, and more, receiving personalized recommendations based on their ratings and social connections.

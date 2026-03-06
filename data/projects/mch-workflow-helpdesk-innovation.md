@@ -10,7 +10,6 @@ technologies:
   - ASP.NET
   - SQL Server
 links: []
-order: 53
 ---
 
 Collaborated in an academic-enterprise partnership to deliver a functional knowledge management system for the organization's helpdesk support team.

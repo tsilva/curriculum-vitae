@@ -11,7 +11,6 @@ technologies:
 links:
   - label: SourceForge project
     url: https://sourceforge.net/projects/neuralj/
-order: 56
 ---
 
 NeuralJ was an open-source software project I created to provide an efficient and user-friendly Neural Network library for Java.

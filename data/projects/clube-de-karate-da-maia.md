@@ -11,7 +11,6 @@ technologies:
   - PHP
   - MySQL
 links: []
-order: 55
 ---
 
 Created a website for the Clube de Karate da Maia, a local karate club where I trained for many years. The website was implemented using the Joomla framework, leveraging PHP as the scripting language and a MySQL database for data management.

@@ -14,7 +14,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/BYUjLrayGR9cRUdDA
-order: 28
 ---
 
 WIN Atlas is a career guidance app that helps users explore career options by taking various quizzes and providing detailed information about different jobs.

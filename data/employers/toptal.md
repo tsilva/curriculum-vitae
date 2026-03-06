@@ -32,7 +32,6 @@ projectIds:
 links:
   - label: Website
     url: https://www.toptal.com/
-order: 4
 ---
 
 Toptal is a platform connecting top developers with leading companies. It employs a rigorous screening process, assessing both advanced technical abilities and strong English proficiency. Through Toptal, I have collaborated with several companies on medium to long-term projects, consistently receiving outstanding feedback from clients.

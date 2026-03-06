@@ -14,7 +14,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/AMMpRdPWMU98D7mW7
-order: 31
 ---
 
 LIVE FIT is a sports tracking app for the Academy Sports + Outdoors retail chain. It integrates with the MapMyFitness (MMF) SDK to store and retrieve activity data from the MMF service.

@@ -20,7 +20,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/TCP2sVwqjGtvvhx28
-order: 19
 ---
 
 MYSWEAR set up a stand at Harrods, one of the world's most renowned department stores in London, where customers could personalize and order custom shoes while viewing their design in real-time on a four-sided holographic pyramid display.

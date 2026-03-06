@@ -15,7 +15,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/WGcN6Uyiktbc9LHFA
-order: 46
 ---
 
 A La Carte was a restaurant search engine that allowed users to search for restaurants offering specific dishes, within a certain price range, near their location.

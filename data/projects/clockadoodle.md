@@ -16,7 +16,6 @@ links:
     url: https://photos.app.goo.gl/EaASm71wXHKvfNY47
   - label: Facebook
     url: https://www.facebook.com/clockadoodleapp
-order: 38
 ---
 
 Clockadoodle was an iOS alarm clock app featuring advanced options, such as YouTube video alarms.

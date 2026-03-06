@@ -15,7 +15,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8
-order: 15
 ---
 
 Kaboom! is a fast-paced revival of the classic "Lights Out" game, available on iPhone, iPad, Apple TV, and Apple Watch.

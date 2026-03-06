@@ -15,7 +15,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/33wt6ewUqtBV1mwB7
-order: 36
 ---
 
 Randid is a social networking app for iOS where users send a picture and receive a random one in return from other users.
