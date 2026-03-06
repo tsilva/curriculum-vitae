@@ -24,7 +24,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="bg-base-light border border-cyan/20 rounded-sm w-full max-w-3xl h-[90vh] flex flex-col shadow-[0_0_30px_rgba(0,230,230,0.1),0_0_60px_rgba(0,230,230,0.05)] mx-4">
+      <div className="bg-base-light border border-cyan/20 rounded-sm w-full max-w-3xl max-h-[90vh] flex flex-col shadow-[0_0_30px_rgba(0,230,230,0.1),0_0_60px_rgba(0,230,230,0.05)] mx-4">
         {/* Terminal window chrome - fixed header */}
         <div className="flex-shrink-0 bg-base-light/95 backdrop-blur border-b border-cyan/10 px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <div className="flex items-center gap-3 min-w-0">
@@ -65,7 +65,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
         </div>
 
         {/* Body - scrollable content */}
-        <div className="flex-1 overflow-y-auto overscroll-y-contain px-4 py-4 md:px-6 md:py-6 space-y-6">
+        <div className="overflow-y-auto overscroll-y-contain px-4 py-4 md:px-6 md:py-6 space-y-6">
           {/* Section: Meta Data */}
           <div className="space-y-4">
             <div className="flex items-center gap-2 mb-2">

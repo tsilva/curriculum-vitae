@@ -11,12 +11,12 @@ This repository contains a detailed professional CV/resume along with an interac
 ```
 .
 ├── data/                   # SOURCE OF TRUTH for all CV content
-│   ├── cv-data.json        # Structured metadata (employers, projects, education, oss, misc)
-│   └── content/            # Long-form prose as markdown files
-│       ├── tldr.md         # TLDR section
-│       ├── employers/      # 8 employer description files
-│       ├── education/      # 2 education description files
-│       └── projects/       # 59 project narrative files
+│   ├── tldr.md             # TLDR section (plain markdown, no frontmatter)
+│   ├── employers/          # 8 employer files (YAML frontmatter + description)
+│   ├── education/          # 2 education files (YAML frontmatter + description)
+│   ├── projects/           # 59 project files (YAML frontmatter + narrative)
+│   ├── oss.yaml            # Open source projects (structured-only, no prose)
+│   └── misc.yaml           # Miscellaneous links (structured-only, no prose)
 ├── README.md               # GENERATED from data/ (do not hand-edit)
 ├── scripts/
 │   ├── assemble-cv-data.ts # data/ + galleries → web/src/data/cv-data.json
@@ -42,28 +42,52 @@ This repository contains a detailed professional CV/resume along with an interac
 
 ## Data Architecture (Source of Truth)
 
-The source of truth is the `data/` directory:
+The source of truth is the `data/` directory. Each entity (project, employer, education) is a single Markdown file with YAML frontmatter containing metadata and prose content below the `---` fence. This follows the well-established pattern used by Hugo, Jekyll, and Astro.
 
-- **`data/cv-data.json`** — Structured metadata for all CV entries (no long-form text)
-- **`data/content/*.md`** — Long-form prose (narratives, descriptions) as individual markdown files
+- **`data/projects/*.md`** — Project files with frontmatter (metadata) + narrative (prose)
+- **`data/employers/*.md`** — Employer files with frontmatter (metadata) + description (prose)
+- **`data/education/*.md`** — Education files with frontmatter (metadata) + description (prose)
+- **`data/tldr.md`** — Plain markdown (no frontmatter)
+- **`data/oss.yaml`** — Open source projects (structured data, no prose)
+- **`data/misc.yaml`** — Miscellaneous links (structured data, no prose)
+
+Each frontmatter file has an `order` field that controls sort position in the output.
 
 Two scripts consume this data:
-1. **`scripts/assemble-cv-data.ts`** — Combines JSON + .md files + gallery scanning → `web/src/data/cv-data.json` (for the web app)
-2. **`scripts/generate-readme.ts`** — Combines JSON + .md files → `README.md` (for GitHub display)
+1. **`scripts/assemble-cv-data.ts`** — Parses frontmatter .md + .yaml + gallery scanning → `web/src/data/cv-data.json` (for the web app)
+2. **`scripts/generate-readme.ts`** — Parses frontmatter .md + .yaml → `README.md` (for GitHub display)
+
+Both scripts use `gray-matter` to parse YAML frontmatter from .md files.
 
 ### Editing CV Content
 
 To update project/employer/education information:
-1. Edit structured fields in `data/cv-data.json`
-2. Edit prose in the corresponding `data/content/**/*.md` file
+1. Edit the single file `data/projects/{id}.md` (or `employers/` or `education/`)
+2. Metadata goes in YAML frontmatter, prose goes below the `---` fence
 3. Run `cd web && npm run assemble && npm run generate:readme` to regenerate outputs
 4. **Do NOT hand-edit README.md** — it is generated and will be overwritten
 
 ### Adding a New Project
 
-1. Add the project entry to `data/cv-data.json` in the `projects_db` array
-2. Create `data/content/projects/{id}.md` with the narrative text
-3. Run assemble + generate:readme to update outputs
+1. Create `data/projects/{id}.md` with YAML frontmatter and narrative text:
+   ```yaml
+   ---
+   emoji: "🤖"
+   title: Project Name
+   tldr: One-line description
+   start: "2024"
+   client: Client Name
+   technologies:
+     - React
+     - Python
+   links: []
+   order: 1
+   ---
+
+   Project narrative goes here...
+   ```
+2. Set `order` to position it correctly (1 = first in README)
+3. Run `cd web && npm run assemble && npm run generate:readme` to update outputs
 
 ## Canonical Project Galleries
 
@@ -168,7 +192,7 @@ Use the `visual-inspection` skill to capture and analyze screenshots of the CV w
 
 ### Data Pipeline
 The web app consumes CV data via a build-time pipeline:
-1. `scripts/assemble-cv-data.ts` reads `data/cv-data.json` + `data/content/**/*.md` + gallery scanning
+1. `scripts/assemble-cv-data.ts` reads `data/**/*.md` (frontmatter) + `data/*.yaml` + gallery scanning
 2. Outputs structured JSON to `web/src/data/cv-data.json`
 3. The Next.js app imports this JSON at build time for static generation
 
@@ -199,27 +223,29 @@ The web app uses a distinct cyberpunk/Edgerunners aesthetic:
 
 ## Content Architecture
 
-### data/cv-data.json Schema
+### Frontmatter Schema
 
-The structured data includes:
-- `employers[]` — Work history with id, name, url, duration, role, location, projectIds, links
-- `education[]` — Academic history with id, institution, url, duration, degree, grade, location, links
-- `projects_db[]` — Project metadata with id, emoji, title, headingUrl, tldr, start, client, location, role, team, platforms, technologies, links
-- `oss[]` — Open source projects with name, url, description, archived flag
-- `misc[]` — Miscellaneous grouped links with label and sub-links
+Each entity type has specific frontmatter fields:
 
-Long-form text (narratives, descriptions) lives in `data/content/**/*.md` files, NOT in the JSON.
+**Projects** (`data/projects/*.md`):
+- `emoji`, `title`, `headingUrl`, `tldr`, `start`, `client`, `location`, `role`, `team`, `platforms`, `technologies[]`, `links[]`, `order`
+
+**Employers** (`data/employers/*.md`):
+- `emoji`, `name`, `url`, `duration`, `role`, `location`, `projectIds[]`, `links[]`, `order`
+
+**Education** (`data/education/*.md`):
+- `emoji`, `institution`, `url`, `duration`, `degree`, `grade`, `location`, `links[]`, `order`
 
 ### Link Types
 Links support three formats:
-- **Simple**: `{ "label": "...", "url": "..." }`
-- **With suffix**: `{ "label": "...", "url": "...", "suffix": "(extra text)" }`
-- **Grouped**: `{ "group": "Parent label:", "links": [{ "label": "...", "url": "..." }] }`
+- **Simple**: `{ label: "...", url: "..." }`
+- **With suffix**: `{ label: "...", url: "...", suffix: "(extra text)" }`
+- **Grouped**: `{ group: "Parent label:", links: [{ label: "...", url: "..." }] }`
 
 ## Important Constraints
 
 ### README.md is Generated
-README.md is generated by `scripts/generate-readme.ts` from `data/`. Do not hand-edit it. Edit `data/cv-data.json` and `data/content/**/*.md` instead.
+README.md is generated by `scripts/generate-readme.ts` from `data/`. Do not hand-edit it. Edit the corresponding `data/**/*.md` or `data/*.yaml` files instead.
 
 ### Content Authenticity
 - Do not fabricate projects, roles, or technical details
@@ -234,7 +260,7 @@ The CV uses a mix of Markdown and HTML:
 ## Maintenance Workflow
 
 When updating project information:
-1. Edit the relevant fields in `data/cv-data.json` and/or `data/content/projects/{id}.md`
+1. Edit the single file `data/projects/{id}.md` (frontmatter + prose)
 2. Run `cd web && npm run assemble && npm run generate:readme`
 3. Run `python scripts/validate_links.py` to ensure no broken links
 4. Commit with descriptive message following existing git history style
@@ -242,7 +268,7 @@ When updating project information:
 ## Skills
 
 ### readme-generator
-Use this skill when authoring or updating README content. Edit `data/cv-data.json` and `data/content/**/*.md`, then run generate:readme.
+Use this skill when authoring or updating README content. Edit `data/**/*.md` and `data/*.yaml`, then run generate:readme.
 
 ### visual-inspection
 **Use this skill to verify visual changes before committing.** Capture screenshots of the CV web app to check layout, styling, and content. Always capture the **full page** to verify all sections render correctly.

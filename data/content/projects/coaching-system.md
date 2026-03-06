@@ -1,1 +1,0 @@
-Combining the [Collaborative Learning System](#-collaborative-learning-system) features with the [Live Classes](#-live-classes) platform, developed an integrated coaching management system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.

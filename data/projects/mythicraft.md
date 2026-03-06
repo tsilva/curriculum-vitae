@@ -1,0 +1,21 @@
+---
+emoji: 🧱
+title: Mythicraft
+headingUrl: https://photos.app.goo.gl/4mYja1dfdWLECgAs8
+tldr: Integration of Minecraft Editor into a new Tynker course.
+start: '2017'
+client: Tynker
+location: Mountain View, California · Remote 🌍
+role: Lead Software Engineer
+team: Me (Minecraft Editor) + Course Development Team (Mythicraft Course Content)
+platforms: Web / iOS (WebView)
+technologies: []
+links:
+  - label: Gallery
+    url: https://photos.app.goo.gl/4mYja1dfdWLECgAs8
+order: 12
+---
+
+Tynker's Mythicraft is a creative educational course designed to teach users how to mod their Minecraft world with a focus on mythological themes. It guides learners through the creation of custom skins, magical items, blocks, and mythical creatures.
+
+This course marked the first integration of the Minecraft Editor tool into a standard Tynker course structure, blending traditional introductory lessons with those requiring the Minecraft Editor. To achieve this, I integrated the tool into the course workflows, enabling it to be declared in the course data structures, launched at the appropriate times, and embedded within the course frame. I also implemented lesson completion detection to trigger progression to the next lesson. Additionally, I optimized the editor's performance to enhance its functionality on native mobile apps, as the course was available on those platforms as well.
