@@ -16,7 +16,6 @@ links:
     url: https://photos.app.goo.gl/JkBgK1bbqhm2b1nb6
   - label: Website
     url: http://activeheroes.org
-order: 32
 ---
 
 Active Heroes is a charity that supports Veterans, Active Duty Military, and their families. The Active Heroes app allows users to track workouts and share them to help raise funds for the foundation's initiatives.

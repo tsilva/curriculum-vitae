@@ -15,7 +15,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/S4mAy24CX2pggMEj8
-order: 37
 ---
 
 WeGo is a fitness tracking app designed to interface with multiple low-budget hardware activity trackers.

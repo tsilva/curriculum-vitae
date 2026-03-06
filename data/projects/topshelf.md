@@ -18,7 +18,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6
-order: 25
 ---
 
 TopShelf is an app that allows users to order alcoholic beverages directly from their phone and have them delivered to their doorstep.

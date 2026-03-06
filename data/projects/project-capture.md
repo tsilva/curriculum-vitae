@@ -13,7 +13,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/zdBc2yVP85U8dVNUA
-order: 35
 ---
 
 Project Capture is an app that allows users to report UFO sightings.

@@ -13,7 +13,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/q2zvsL82jeqiKAPV7
-order: 47
 ---
 
 Mariachi was a cross-platform shoot-'em-up game designed for mobile platforms.

@@ -25,7 +25,6 @@ projectIds:
   - wego
   - clockadoodle
 links: []
-order: 5
 ---
 
 Rocksauce Studios was a mobile app development company that specialized in creating custom apps for businesses and startups. While working at Hive Solutions, I was contracted by them to work on more than a dozen projects for different clients, always as an iOS developer.

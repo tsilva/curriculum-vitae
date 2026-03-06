@@ -9,7 +9,6 @@ location: Porto, Portugal · Onsite 🏢
 links:
   - label: Website
     url: https://sigarra.up.pt/feup/en/
-order: 2
 ---
 
 The Computer Engineering course I attended was one of the most competitive in the country, with high entry requirements. Despite starting with a weak foundation in Mathematics, I worked hard to turn things around, achieving excellent entry exam results and earning the second-highest grade in my high school.

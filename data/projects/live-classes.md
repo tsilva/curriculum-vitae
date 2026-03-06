@@ -17,7 +17,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/dATH9AZGA5G8Zb2K6
-order: 4
 ---
 
 The Live Class platform enabled educators to conduct interactive coding lessons, seamlessly integrating with Tynker's Block IDE and course content, allowing teachers to switch smoothly between live instruction and coding exercises.

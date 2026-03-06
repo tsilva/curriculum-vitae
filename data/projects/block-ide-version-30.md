@@ -35,7 +35,6 @@ links:
     url: https://www.tynker.com/ide/v3?type=course&slug=activity:candy-quest&chapter=0&lesson=0
   - label: Barbie Pet Vet
     url: https://www.tynker.com/ide/v3?type=course&slug=activity:barbie-pet-vet&chapter=0&lesson=0
-order: 9
 ---
 
 In six months, I rearchitected a significant portion of Tynker's Block Editor, the core of its educational platform, to address critical scalability and maintenance issues caused by years of rushed development under tight deadlines, which had left the legacy codebase cluttered with hardcoded elements and quick-fix hacks, making it difficult to scale and maintain.

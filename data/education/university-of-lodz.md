@@ -9,7 +9,6 @@ location: Lodz, Poland
 links:
   - label: Website
     url: https://www.uni.lodz.pl/en/
-order: 1
 ---
 
 During my <a href="https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/studying-abroad" target="_blank">Erasmus</a> exchange, which took place in the final year of my Computer Engineering studies at <a href="https://sigarra.up.pt/feup/pt/web_page.inicial" target="_blank">FEUP</a>, I enrolled in courses on Genetic Algorithms, Cryptography, Neural Networks, Network Services Programming, and an intensive Polish language course. I successfully completed them with an average grade of 18 out of 20.

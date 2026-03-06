@@ -14,7 +14,6 @@ links:
     url: https://photos.app.goo.gl/h8BPE44JqYkjCFnT9
   - label: Dashboard
     url: https://www.tynker.com/dashboard/student/#/battles/crystalclash
-order: 10
 ---
 
 Crystal Clash is a multiplayer, turn-based battlebots game where players program their bots using Tynker's block-based programming language to compete in asynchronous matches. The game features monthly seasons, leaderboards, quests, and a shop where players can purchase new bot parts.

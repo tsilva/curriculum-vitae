@@ -21,7 +21,6 @@ links:
     url: https://www.tynker.com/codingcup/static/media/FIFA-Welcome.5d408e712931137e67e2.mp4
   - label: Leaderboard
     url: https://www.tynker.com/codingcup/competitions/65a637807dbf0021445757ac/leaderboards/countries
-order: 3
 ---
 
 The BYJU's Coding Cup was developed as a flagship product to highlight BYJU'S sponsorship of the FIFA World Cup Qatar 2022™. Aimed at children aged 7–18, this soccer-themed coding competition introduced key programming concepts like conditional logic and debugging in an interactive, fun format. Participants coded virtual soccer teams to compete globally, enhancing their coding skills through an engaging experience.

@@ -15,7 +15,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/nxxb3rzMBLug6Fg27
-order: 24
 ---
 
 Energi is an app designed to help improve work-life balance by suggesting and scheduling various types of breaks on the user's calendar.

@@ -13,7 +13,6 @@ technologies: []
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/4mYja1dfdWLECgAs8
-order: 12
 ---
 
 Tynker's Mythicraft is a creative educational course designed to teach users how to mod their Minecraft world with a focus on mythological themes. It guides learners through the creation of custom skins, magical items, blocks, and mythical creatures.

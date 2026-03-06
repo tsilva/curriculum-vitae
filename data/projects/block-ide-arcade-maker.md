@@ -26,7 +26,6 @@ links:
     url: https://www.tynker.com/block-ide?type=arcade&p=642dc40c218b2c55131c2aca
   - label: Bop 'Em
     url: https://www.tynker.com/block-ide?type=arcade&p=642dc5b8218b2c575d1e5e2a
-order: 2
 ---
 
 Arcade Maker was an extension to the Block IDE, designed to offer a simpler entry point into game development, allowing kids to create and publish games without needing to code.

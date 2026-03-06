@@ -14,7 +14,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/8c4fpByixacvbZvAA
-order: 42
 ---
 
 Rocklobby was a music social network for artists, venues, and fans.

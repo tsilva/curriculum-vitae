@@ -12,7 +12,6 @@ technologies:
 links:
   - label: Gallery
     url: https://photos.app.goo.gl/g5w3nPii7GgV5AeA6
-order: 52
 ---
 
 Colony is a modularity container that allows plugins to be deployed, loaded, and unloaded in real-time without restarting the container.

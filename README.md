@@ -13,76 +13,13 @@ This CV is detailed and comprehensive—it's more suited for running through you
 
 # 🧑‍💻 Experience
 
-## 🏷 <a href="https://web.archive.org/web/20061228042557/http://www.rentacoder.com/RentACoder/default.asp" target="_blank">Rent-a-Coder</a>
+## 🔐 VaultHaus
 
-- **Duration:** 2003 - 2006 · 3 years
-- **Role:** Software Developer
-- **Location:** Remote 🌍
-
-During college, I gained valuable experience working on freelance projects for clients around the world through the Rent-a-Coder platform, where I operated under the name "Chronosync Developments" and was fortunate to rank in the top 1% for customer ratings. This was my first foray into managing end-to-end client relationships, where I was tasked with projects and paid for delivering them. It helped me develop key skills in understanding client needs, managing expectations, and delivering on time.
-
-- <a href="https://web.archive.org/web/20041112020320/http://www.rentacoder.com/RentACoder/SoftwareCoders/showBioInfo.asp?lngAuthorId=860960" target="_blank">Profile</a> (old snapshot of profile, unfortunately most of the work reviews from later years were not crawled by the Wayback Machine)
-
-## 🖥 <a href="https://www.microsoft.com/" target="_blank">Microsoft</a>
-
-- **Duration:** Mar 2007 - Feb 2008 · 1 year
-- **Role:** Software Development Engineer in Test (Full-time)
-- **Location:** Copenhagen, Denmark
-
-Worked in the Global Development Localization team, in a Tester role, for <a href="https://dynamics.microsoft.com/en-us/ax/" target="_blank">Microsoft Dynamics AX</a> (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing new tests, searching for and investigating application bugs.
-
-Improved internal testing tools to allow scanning for test code coverage across multipler layers, as opposed to just the root of the application's layered customization stack.
-
-Developed internal tool for database PII anonymization to allow data transfer across internal groups spread around different regions.
-
-- <a href="https://dynamics.microsoft.com/en-us/ax/" target="_blank">Microsoft Dynamics AX</a>
-- TV news coverage about being hired by Microsoft straight out of college (oh the cringe! 😬) :
-  - <a href="https://photos.app.goo.gl/jo7DskprCoxt2jB77" target="_blank">RTP 1</a>
-  - <a href="https://photos.app.goo.gl/PY6t4TEXYK4fXmt98" target="_blank">SIC</a>
-  - <a href="https://photos.app.goo.gl/W3wTceGahoE2p36U7" target="_blank">TVI</a>
-
-## 🐝 <a href="https://www.hive.pt/" target="_blank">Hive Solutions</a>
-
-- **Duration:** Mar 2008 - Sep 2016 · 8 years and 7 months
-- **Role:** Co-founder (Full-time)
+- **Duration:** May 2024 - Present
+- **Role:** AI Research Engineer (Full-time)
 - **Location:** Porto, Portugal · Onsite 🏢
 
-As a co-founder of Hive Solutions, I took on a variety of roles, as is common for startup founders. While my primary role was Lead Software Engineer, I also handled tasks related to sales, marketing and recruitment when needed.
-
-We initially set out to build a SaaS Retail POS system called *[Frontdoor](#-frontdoor)*, which we developed entirely from scratch, using a tech stack fully built in-house. Although it was a technical success, it didn't achieve commercial success. We eventually pivoted to software consulting, where we shipped a diverse range of projects for numerous clients.
-
-- <a href="https://www.hive.pt/" target="_blank">Website</a>
-- <a href="https://github.com/hivesolutions" target="_blank">Github</a>
-
-## 🌍 <a href="https://www.toptal.com/" target="_blank">Toptal</a>
-
-- **Duration:** Apr 2012 - Present
-- **Role:** Senior Software Engineer
-- **Location:** Remote 🌍
-
-Toptal is a platform connecting top developers with leading companies. It employs a rigorous screening process, assessing both advanced technical abilities and strong English proficiency. Through Toptal, I have collaborated with several companies on medium to long-term projects, consistently receiving outstanding feedback from clients.
-
-- <a href="https://www.toptal.com/" target="_blank">Website</a>
-
-## 📱 <a href="https://www.rocksaucestudios.com/" target="_blank">Rocksauce Studios</a>
-
-- **Duration:** 2013 - 2015 · 2 years
-- **Role:** Senior iOS Developer (Full-time)
-- **Location:** Austin, Texas · Remote 🌍
-
-Rocksauce Studios was a mobile app development company that specialized in creating custom apps for businesses and startups. While working at Hive Solutions, I was contracted by them to work on more than a dozen projects for different clients, always as an iOS developer.
-
-## 🛍 <a href="https://www.platforme.com/" target="_blank">RIPE Productions</a>
-
-- **Duration:** 2016 · Less than a year
-- **Role:** Lead Software Engineer (Full-time)
-- **Location:** Porto, Portugal · Remote 🌍
-
-RIPE Productions was a company that developed e-commerce solutions for the fashion industry (this company is now called <a href="https://www.platforme.com/" target="_blank">PlatformE</a>).
-
-Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#-karl-kustomize) project for <a href="https://www.karl.com/pt-en" target="_blank">Karl Lagerfeld</a>.
-
-In a lesser role also contributed as a software developer to the [MYSWEAR online store](#-myswear---online-store), featuring an advanced shoe customization rendering platform, related [iOS demo](#-myswear---ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#-myswear---harrods-holographic-pyramid), a luxury department store in London.
+I pursue a deliberately broad portfolio of AI initiatives—spanning deep-reinforcement-learning research, agentic and large-language-model applications, and the requisite supporting infrastructure—while systematically cultivating a rigorous, first-principles understanding of deep-learning systems and translating my insights into exploratory proof-of-concepts.
 
 ## 🏫 <a href="https://www.tynker.com/" target="_blank">Tynker</a>
 
@@ -107,13 +44,76 @@ As a Lead Software Engineer, I was the main contributor to many of its core prod
 
 ❗ In all these projects, I was responsible for gathering requirements from stakeholders, researching and testing various solutions, and implementing the solution end-to-end, including deployment and post-deployment management.
 
-## 🔐 VaultHaus
+## 🛍 <a href="https://www.platforme.com/" target="_blank">RIPE Productions</a>
 
-- **Duration:** May 2024 - Present
-- **Role:** AI Research Engineer (Full-time)
+- **Duration:** 2016 · Less than a year
+- **Role:** Lead Software Engineer (Full-time)
+- **Location:** Porto, Portugal · Remote 🌍
+
+RIPE Productions was a company that developed e-commerce solutions for the fashion industry (this company is now called <a href="https://www.platforme.com/" target="_blank">PlatformE</a>).
+
+Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#-karl-kustomize) project for <a href="https://www.karl.com/pt-en" target="_blank">Karl Lagerfeld</a>.
+
+In a lesser role also contributed as a software developer to the [MYSWEAR online store](#-myswear---online-store), featuring an advanced shoe customization rendering platform, related [iOS demo](#-myswear---ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#-myswear---harrods-holographic-pyramid), a luxury department store in London.
+
+## 📱 <a href="https://www.rocksaucestudios.com/" target="_blank">Rocksauce Studios</a>
+
+- **Duration:** 2013 - 2015 · 2 years
+- **Role:** Senior iOS Developer (Full-time)
+- **Location:** Austin, Texas · Remote 🌍
+
+Rocksauce Studios was a mobile app development company that specialized in creating custom apps for businesses and startups. While working at Hive Solutions, I was contracted by them to work on more than a dozen projects for different clients, always as an iOS developer.
+
+## 🌍 <a href="https://www.toptal.com/" target="_blank">Toptal</a>
+
+- **Duration:** Apr 2012 - Present
+- **Role:** Senior Software Engineer
+- **Location:** Remote 🌍
+
+Toptal is a platform connecting top developers with leading companies. It employs a rigorous screening process, assessing both advanced technical abilities and strong English proficiency. Through Toptal, I have collaborated with several companies on medium to long-term projects, consistently receiving outstanding feedback from clients.
+
+- <a href="https://www.toptal.com/" target="_blank">Website</a>
+
+## 🐝 <a href="https://www.hive.pt/" target="_blank">Hive Solutions</a>
+
+- **Duration:** Mar 2008 - Sep 2016 · 8 years and 7 months
+- **Role:** Co-founder (Full-time)
 - **Location:** Porto, Portugal · Onsite 🏢
 
-I pursue a deliberately broad portfolio of AI initiatives—spanning deep-reinforcement-learning research, agentic and large-language-model applications, and the requisite supporting infrastructure—while systematically cultivating a rigorous, first-principles understanding of deep-learning systems and translating my insights into exploratory proof-of-concepts.
+As a co-founder of Hive Solutions, I took on a variety of roles, as is common for startup founders. While my primary role was Lead Software Engineer, I also handled tasks related to sales, marketing and recruitment when needed.
+
+We initially set out to build a SaaS Retail POS system called *[Frontdoor](#-frontdoor)*, which we developed entirely from scratch, using a tech stack fully built in-house. Although it was a technical success, it didn't achieve commercial success. We eventually pivoted to software consulting, where we shipped a diverse range of projects for numerous clients.
+
+- <a href="https://www.hive.pt/" target="_blank">Website</a>
+- <a href="https://github.com/hivesolutions" target="_blank">Github</a>
+
+## 🖥 <a href="https://www.microsoft.com/" target="_blank">Microsoft</a>
+
+- **Duration:** Mar 2007 - Feb 2008 · 1 year
+- **Role:** Software Development Engineer in Test (Full-time)
+- **Location:** Copenhagen, Denmark
+
+Worked in the Global Development Localization team, in a Tester role, for <a href="https://dynamics.microsoft.com/en-us/ax/" target="_blank">Microsoft Dynamics AX</a> (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing new tests, searching for and investigating application bugs.
+
+Improved internal testing tools to allow scanning for test code coverage across multipler layers, as opposed to just the root of the application's layered customization stack.
+
+Developed internal tool for database PII anonymization to allow data transfer across internal groups spread around different regions.
+
+- <a href="https://dynamics.microsoft.com/en-us/ax/" target="_blank">Microsoft Dynamics AX</a>
+- TV news coverage about being hired by Microsoft straight out of college (oh the cringe! 😬) :
+  - <a href="https://photos.app.goo.gl/jo7DskprCoxt2jB77" target="_blank">RTP 1</a>
+  - <a href="https://photos.app.goo.gl/PY6t4TEXYK4fXmt98" target="_blank">SIC</a>
+  - <a href="https://photos.app.goo.gl/W3wTceGahoE2p36U7" target="_blank">TVI</a>
+
+## 🏷 <a href="https://web.archive.org/web/20061228042557/http://www.rentacoder.com/RentACoder/default.asp" target="_blank">Rent-a-Coder</a>
+
+- **Duration:** 2003 - 2006 · 3 years
+- **Role:** Software Developer
+- **Location:** Remote 🌍
+
+During college, I gained valuable experience working on freelance projects for clients around the world through the Rent-a-Coder platform, where I operated under the name "Chronosync Developments" and was fortunate to rank in the top 1% for customer ratings. This was my first foray into managing end-to-end client relationships, where I was tasked with projects and paid for delivering them. It helped me develop key skills in understanding client needs, managing expectations, and delivering on time.
+
+- <a href="https://web.archive.org/web/20041112020320/http://www.rentacoder.com/RentACoder/SoftwareCoders/showBioInfo.asp?lngAuthorId=860960" target="_blank">Profile</a> (old snapshot of profile, unfortunately most of the work reviews from later years were not crawled by the Wayback Machine)
 
 # 🎓 Education
 
@@ -149,31 +149,6 @@ Additionally, I regularly participated in ACM programming contests, placed secon
 
 # 🚀 Projects
 
-## 🤖 <a href="https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6" target="_blank">Help Agent</a>
-
-- **TLDR:** Sales assistant chatbot meant to assist users in Tynker related inquiries
-- **Start:** 2023
-- **Client:** Tynker
-- **Location:** Mountain View, California · Remote 🌍
-- **Role:** Lead Software Engineer
-- **Team:** Just me
-- **Technologies:** React, Python, Flask, MongoDB, OpenAI, Pinecone
-
-Help Agent was a chatbot developed to assist users with Tynker-related inquiries, utilizing Large Language Models (LLMs) and the Retrieval-Augmented Generation (RAG) architecture.
-
-The project involved challenges like content scraping, data augmentation, embedding, indexing, querying, reranking, model selection, and prompt engineering. Extensive experimentation was required to ensure fast, accurate, and reliable responses while balancing safety and cost-effectiveness (less of an issue now, as LLMs have become cheaper and more reliable).
-
-A backoffice system supported the chatbot by handling data scraping, updates, and user-authored content generation with LLM assistance. It also included tools for managing chat logs, user tickets, and testing updates.
-
-My role was to gather requirements, research solutions, and implement, deploy, and manage the system end-to-end.
-
-Post-deployment on Tynker's parent and school pages, the chatbot significantly boosted user engagement, with higher conversion rates from users who interacted with it, indicating strong potential for further development.
-
-- <a href="https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6" target="_blank">Gallery</a>
-- <a href="https://www.tynker.com/parents/" target="_blank">Help Agent in Parents page</a> (chat button in bottom right corner)
-
----
-
 ## 🕹 <a href="https://photos.app.goo.gl/ZKss72chsSgrfSMfA" target="_blank">Block IDE - Arcade Maker</a>
 
 - **TLDR:** Block IDE extension for creating games without coding
@@ -196,6 +171,31 @@ My role involved architecting the solution, developing core features, and coordi
 - <a href="https://www.tynker.com/block-ide?type=arcade&p=6418ea6f218b2c0767316018" target="_blank">Pet Designer</a>
 - <a href="https://www.tynker.com/block-ide?type=arcade&p=642dc40c218b2c55131c2aca" target="_blank">Catch 'Em</a>
 - <a href="https://www.tynker.com/block-ide?type=arcade&p=642dc5b8218b2c575d1e5e2a" target="_blank">Bop 'Em</a>
+
+---
+
+## 🤖 <a href="https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6" target="_blank">Help Agent</a>
+
+- **TLDR:** Sales assistant chatbot meant to assist users in Tynker related inquiries
+- **Start:** 2023
+- **Client:** Tynker
+- **Location:** Mountain View, California · Remote 🌍
+- **Role:** Lead Software Engineer
+- **Team:** Just me
+- **Technologies:** React, Python, Flask, MongoDB, OpenAI, Pinecone
+
+Help Agent was a chatbot developed to assist users with Tynker-related inquiries, utilizing Large Language Models (LLMs) and the Retrieval-Augmented Generation (RAG) architecture.
+
+The project involved challenges like content scraping, data augmentation, embedding, indexing, querying, reranking, model selection, and prompt engineering. Extensive experimentation was required to ensure fast, accurate, and reliable responses while balancing safety and cost-effectiveness (less of an issue now, as LLMs have become cheaper and more reliable).
+
+A backoffice system supported the chatbot by handling data scraping, updates, and user-authored content generation with LLM assistance. It also included tools for managing chat logs, user tickets, and testing updates.
+
+My role was to gather requirements, research solutions, and implement, deploy, and manage the system end-to-end.
+
+Post-deployment on Tynker's parent and school pages, the chatbot significantly boosted user engagement, with higher conversion rates from users who interacted with it, indicating strong potential for further development.
+
+- <a href="https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6" target="_blank">Gallery</a>
+- <a href="https://www.tynker.com/parents/" target="_blank">Help Agent in Parents page</a> (chat button in bottom right corner)
 
 ---
 
@@ -291,6 +291,21 @@ Combining the [Collaborative Learning System](#-collaborative-learning-system) f
 
 ---
 
+## 👥 <a href="https://patents.google.com/patent/US11699357B2" target="_blank">Collaborative Learning System</a>
+
+- **TLDR:** Real-time project sharing and collaboration features for the Block IDE
+- **Start:** 2020
+- **Client:** Tynker
+- **Role:** Lead Software Engineer
+- **Technologies:** React, Redux, Redux Saga, Socket.IO, JavaScript, PHP
+
+Using the Lynker messaging server I previously developed, I enhanced the Block IDE with collaborative learning features, including the ability to share projects, chat about them, comment on code, and monitor changes in real-time. This application was awarded a U.S. patent.
+
+- <a href="https://photos.app.goo.gl/RMAy9e66DvJSBp8T8" target="_blank">Gallery</a>
+- <a href="https://patents.google.com/patent/US11699357B2" target="_blank">Patent - Collaborative Learning System (US11699357B2)</a>
+
+---
+
 ## 💬 Lynker
 
 - **TLDR:** Real-time messaging server for Tynker
@@ -306,21 +321,6 @@ Lynker was a custom-built real-time messaging server for Tynker, designed to sup
 I was responsible for the full stack development, overseeing everything from architecture to deployment and post-launch maintenance. Lynker was successfully integrated into the Tynker platform, powering key features like the [Collaborative Learning System](#-collaborative-learning-system) and the [Live Classes](#-live-classes) platform, as well as other real-time communication needs.
 
 In hindsight, it was over-engineered, as it was built to handle a higher throughput than was ultimately needed, with features like multiplayer game development eventually backlogged due to shifting priorities.
-
----
-
-## 👥 <a href="https://patents.google.com/patent/US11699357B2" target="_blank">Collaborative Learning System</a>
-
-- **TLDR:** Real-time project sharing and collaboration features for the Block IDE
-- **Start:** 2020
-- **Client:** Tynker
-- **Role:** Lead Software Engineer
-- **Technologies:** React, Redux, Redux Saga, Socket.IO, JavaScript, PHP
-
-Using the Lynker messaging server I previously developed, I enhanced the Block IDE with collaborative learning features, including the ability to share projects, chat about them, comment on code, and monitor changes in real-time. This application was awarded a U.S. patent.
-
-- <a href="https://photos.app.goo.gl/RMAy9e66DvJSBp8T8" target="_blank">Gallery</a>
-- <a href="https://patents.google.com/patent/US11699357B2" target="_blank">Patent - Collaborative Learning System (US11699357B2)</a>
 
 ---
 
@@ -408,48 +408,6 @@ This course marked the first integration of the Minecraft Editor tool into a sta
 
 ---
 
-## 🧱 <a href="https://photos.app.goo.gl/7PtgswT8BT2jcXnR9" target="_blank">Minecraft Editor</a>
-
-- **TLDR:** Web 3D editor for Minecraft Bedrock Edition
-- **Start:** 2016
-- **Client:** Tynker
-- **Location:** Mountain View, California · Remote 🌍
-- **Role:** Lead Software Engineer
-- **Team:** Me + Game Design Team (testing)
-- **Technologies:** React, Python, Flask, MongoDB, OpenAI, Pinecone
-
-Developed a web-based 3D editor for Minecraft Bedrock Edition, allowing users to customize Skins, Blocks, Items, and Mobs. The editor included texture editing capabilities and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, which translated user inputs into Minecraft's declarative configuration files.
-
-A key challenge was optimizing performance on older iPad Mini models, where low frame rates and sluggish interactions were prevalent. To address this, I made sure I bypassed GPU compositing operations as much as possible, and implemented strict memory management strategies to mitigate the effects of unpredictable garbage collection. These optimizations ensured the editor ran smoothly within memory limits, achieving optimal frame rates.
-
-The tool was integrated into both the Tynker App and the Mod Creator App (which <a href="https://photos.app.goo.gl/KDZMd8qAxy5TeSHx8">reached top 3 in different App Store categories</a>), providing a powerful platform for Minecraft customizations. As of this writing, users have created several million assets using the editor.
-
-- <a href="https://photos.app.goo.gl/7PtgswT8BT2jcXnR9" target="_blank">Gallery</a>
-- <a href="https://www.tynker.com/minecraft/editor/skin/steve/" target="_blank">Skins - Steve</a>
-- <a href="https://www.tynker.com/minecraft/editor/block/tnt/" target="_blank">Blocks - TNT</a>
-- <a href="https://www.tynker.com/minecraft/editor/item/diamond_sword/" target="_blank">Items - Diamond Sword</a>
-- <a href="https://www.tynker.com/minecraft/editor/mob/llama2/" target="_blank">Mobs - Llama</a>
-- <a href="https://www.tynker.com/minecraft/editor/mob/pig/" target="_blank">Mobs - Pig</a>
-
----
-
-## 🖥 Tynker - PHP MongoDB ODM
-
-- **TLDR:** Custom MongoDB ODM for a legacy, unstructured PHP codebase
-- **Start:** 2016
-- **Client:** Tynker
-- **Location:** Mountain View, California · Remote 🌍
-- **Role:** Lead Software Engineer
-- **Technologies:** PHP, MongoDB
-
-I developed a web-based 3D editor for Minecraft Bedrock Edition, enabling users to customize Skins, Blocks, Items, and Mobs. The editor featured texture editing and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, translating user inputs into Minecraft's declarative configuration files.
-
-One significant challenge was optimizing performance on older iPad Mini models, where low frame rates and sluggish interactions were common. To address this, I minimized GPU compositing operations and implemented strict memory management strategies to mitigate the effects of unpredictable garbage collection. These optimizations ensured smooth performance and maintained optimal frame rates within the device's memory constraints.
-
-This tool was integrated into both the Tynker App and Mod Creator App, offering a robust platform for Minecraft customizations. To date, users have created several million assets using the editor.
-
----
-
 ## 💥 <a href="https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8" target="_blank">Kaboom!</a>
 
 - **TLDR:** Fast-paced revival of the classic "Lights Out" game for iPhone, iPad, Apple TV and Apple Watch
@@ -502,21 +460,28 @@ I served as both a full-stack developer and coordinator, overseeing another deve
 
 ---
 
-## 🖥 <a href="https://photos.app.goo.gl/T13vtSmmCndfCmUZ7" target="_blank">Windows Dev Center - App Middleware Partners</a>
+## 🧱 <a href="https://photos.app.goo.gl/7PtgswT8BT2jcXnR9" target="_blank">Minecraft Editor</a>
 
-- **TLDR:** Middleware Directory for Microsoft Partners
+- **TLDR:** Web 3D editor for Minecraft Bedrock Edition
 - **Start:** 2016
-- **Client:** Microsoft (through Hive Solutions)
-- **Location:** Redmond, Washington · Remote 🌍
+- **Client:** Tynker
+- **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
-- **Technologies:** C#, CoreCLR, ASP.NET, Docker, Frontdoor
+- **Team:** Me + Game Design Team (testing)
+- **Technologies:** React, Python, Flask, MongoDB, OpenAI, Pinecone
 
-App Middleware Partners is a section of Microsoft's Windows Dev Center that serves as a directory for Microsoft partners to showcase their middleware solutions.
+Developed a web-based 3D editor for Minecraft Bedrock Edition, allowing users to customize Skins, Blocks, Items, and Mobs. The editor included texture editing capabilities and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, which translated user inputs into Minecraft's declarative configuration files.
 
-In this project, I managed stakeholder communication, coordinated the design and development, and contributed to core development tasks. The biggest challenge was navigating Microsoft's complex organizational structure to gather the necessary information for integration and deployment. This required overcoming significant bureaucratic obstacles, including extensive outreach through messaging and cold-calling across multiple levels of the organization. Despite these challenges, the project was successfully delivered on time and within budget.
+A key challenge was optimizing performance on older iPad Mini models, where low frame rates and sluggish interactions were prevalent. To address this, I made sure I bypassed GPU compositing operations as much as possible, and implemented strict memory management strategies to mitigate the effects of unpredictable garbage collection. These optimizations ensured the editor ran smoothly within memory limits, achieving optimal frame rates.
 
-- <a href="https://photos.app.goo.gl/T13vtSmmCndfCmUZ7" target="_blank">Gallery</a>
-- <a href="https://web.archive.org/web/20160401014628/https://devcenterpartners.windows.com/" target="_blank">Website</a>
+The tool was integrated into both the Tynker App and the Mod Creator App (which <a href="https://photos.app.goo.gl/KDZMd8qAxy5TeSHx8">reached top 3 in different App Store categories</a>), providing a powerful platform for Minecraft customizations. As of this writing, users have created several million assets using the editor.
+
+- <a href="https://photos.app.goo.gl/7PtgswT8BT2jcXnR9" target="_blank">Gallery</a>
+- <a href="https://www.tynker.com/minecraft/editor/skin/steve/" target="_blank">Skins - Steve</a>
+- <a href="https://www.tynker.com/minecraft/editor/block/tnt/" target="_blank">Blocks - TNT</a>
+- <a href="https://www.tynker.com/minecraft/editor/item/diamond_sword/" target="_blank">Items - Diamond Sword</a>
+- <a href="https://www.tynker.com/minecraft/editor/mob/llama2/" target="_blank">Mobs - Llama</a>
+- <a href="https://www.tynker.com/minecraft/editor/mob/pig/" target="_blank">Mobs - Pig</a>
 
 ---
 
@@ -539,37 +504,38 @@ Also single-handedly developed a proof-of-concept native iOS application that re
 
 ---
 
-## 👟 <a href="https://photos.app.goo.gl/8gPa9phk2cwfVtH87" target="_blank">MYSWEAR - Online Store</a>
+## 🖥 Tynker - PHP MongoDB ODM
 
-- **TLDR:** Online Fashion Store with Shoe Customizer
-- **Start:** 2015
-- **Client:** RIPE Productions (through Hive Solutions)
-- **Location:** Porto, Portugal · Remote 🌍
+- **TLDR:** Custom MongoDB ODM for a legacy, unstructured PHP codebase
+- **Start:** 2016
+- **Client:** Tynker
+- **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
-- **Technologies:** Python, MongoDB, Appier, HTML, CSS, JavaScript, jQuery, UXF, Farfetch API
+- **Technologies:** PHP, MongoDB
 
-MYSWEAR is an online store where customers can design and purchase custom shoes from the SWEAR fashion brand.
+I developed a web-based 3D editor for Minecraft Bedrock Edition, enabling users to customize Skins, Blocks, Items, and Mobs. The editor featured texture editing and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, translating user inputs into Minecraft's declarative configuration files.
 
-The website was developed based on pre-existing design specifications. I developed core features and coordinated the work of other developers, including task assignment, reviewing pull requests, and refactoring code prior to merging.
+One significant challenge was optimizing performance on older iPad Mini models, where low frame rates and sluggish interactions were common. To address this, I minimized GPU compositing operations and implemented strict memory management strategies to mitigate the effects of unpredictable garbage collection. These optimizations ensured smooth performance and maintained optimal frame rates within the device's memory constraints.
 
-- <a href="https://photos.app.goo.gl/8gPa9phk2cwfVtH87" target="_blank">Gallery</a>
+This tool was integrated into both the Tynker App and Mod Creator App, offering a robust platform for Minecraft customizations. To date, users have created several million assets using the editor.
 
 ---
 
-## 📝 <a href="https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7" target="_blank">SpeakWrite</a>
+## 🖥 <a href="https://photos.app.goo.gl/T13vtSmmCndfCmUZ7" target="_blank">Windows Dev Center - App Middleware Partners</a>
 
-- **TLDR:** iOS Audio Transcribing Application
-- **Start:** 2015
-- **Client:** Rocksauce Studios (through Toptal)
-- **Location:** Austin, Texas · Remote 🌍
-- **Role:** Bug fixing
-- **Technologies:** iOS, Objective-C
+- **TLDR:** Middleware Directory for Microsoft Partners
+- **Start:** 2016
+- **Client:** Microsoft (through Hive Solutions)
+- **Location:** Redmond, Washington · Remote 🌍
+- **Role:** Lead Software Engineer
+- **Technologies:** C#, CoreCLR, ASP.NET, Docker, Frontdoor
 
-SpeakWrite is an application that allows users to record audio and have it transcribed into text by human transcribers within a short period.
+App Middleware Partners is a section of Microsoft's Windows Dev Center that serves as a directory for Microsoft partners to showcase their middleware solutions.
 
-I resolved numerous critical bugs across various parts of the app, which was particularly challenging due to the messy and disorganized existing codebase.
+In this project, I managed stakeholder communication, coordinated the design and development, and contributed to core development tasks. The biggest challenge was navigating Microsoft's complex organizational structure to gather the necessary information for integration and deployment. This required overcoming significant bureaucratic obstacles, including extensive outreach through messaging and cold-calling across multiple levels of the organization. Despite these challenges, the project was successfully delivered on time and within budget.
 
-- <a href="https://photos.app.goo.gl/53FXNdxeBmqoqXzs7" target="_blank">Gallery</a>
+- <a href="https://photos.app.goo.gl/T13vtSmmCndfCmUZ7" target="_blank">Gallery</a>
+- <a href="https://web.archive.org/web/20160401014628/https://devcenterpartners.windows.com/" target="_blank">Website</a>
 
 ---
 
@@ -629,21 +595,37 @@ I focused on fixing complex bugs in the existing codebase for both the iPhone an
 
 ---
 
-## 🥃 <a href="https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6" target="_blank">TopShelf</a>
+## 👟 <a href="https://photos.app.goo.gl/8gPa9phk2cwfVtH87" target="_blank">MYSWEAR - Online Store</a>
 
-- **TLDR:** iOS Alcohol Delivery App
+- **TLDR:** Online Fashion Store with Shoe Customizer
+- **Start:** 2015
+- **Client:** RIPE Productions (through Hive Solutions)
+- **Location:** Porto, Portugal · Remote 🌍
+- **Role:** Lead Software Engineer
+- **Technologies:** Python, MongoDB, Appier, HTML, CSS, JavaScript, jQuery, UXF, Farfetch API
+
+MYSWEAR is an online store where customers can design and purchase custom shoes from the SWEAR fashion brand.
+
+The website was developed based on pre-existing design specifications. I developed core features and coordinated the work of other developers, including task assignment, reviewing pull requests, and refactoring code prior to merging.
+
+- <a href="https://photos.app.goo.gl/8gPa9phk2cwfVtH87" target="_blank">Gallery</a>
+
+---
+
+## 📝 <a href="https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7" target="_blank">SpeakWrite</a>
+
+- **TLDR:** iOS Audio Transcribing Application
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
 - **Location:** Austin, Texas · Remote 🌍
-- **Role:** Full-stack Developer
-- **Platforms:** iPhone (iOS)
-- **Technologies:** iOS, Objective-C, Parse, JavaScript, Stripe, Apple Pay
+- **Role:** Bug fixing
+- **Technologies:** iOS, Objective-C
 
-TopShelf is an app that allows users to order alcoholic beverages directly from their phone and have them delivered to their doorstep.
+SpeakWrite is an application that allows users to record audio and have it transcribed into text by human transcribers within a short period.
 
-I developed the iOS application and backend logic from the ground up, including integration with a third-party fleet management service to coordinate deliveries efficiently.
+I resolved numerous critical bugs across various parts of the app, which was particularly challenging due to the messy and disorganized existing codebase.
 
-- <a href="https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6" target="_blank">Gallery</a>
+- <a href="https://photos.app.goo.gl/53FXNdxeBmqoqXzs7" target="_blank">Gallery</a>
 
 ---
 
@@ -661,6 +643,24 @@ TALKiT is a social media platform that offers an alternative to texting, allowin
 
 - <a href="https://photos.app.goo.gl/VJkCBsdmQzt4ihMS7" target="_blank">Gallery</a>
 - <a href="https://web.archive.org/web/20180326180938/http://www.gettalkit.com/" target="_blank">Website</a>
+
+---
+
+## 🥃 <a href="https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6" target="_blank">TopShelf</a>
+
+- **TLDR:** iOS Alcohol Delivery App
+- **Start:** 2015
+- **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
+- **Role:** Full-stack Developer
+- **Platforms:** iPhone (iOS)
+- **Technologies:** iOS, Objective-C, Parse, JavaScript, Stripe, Apple Pay
+
+TopShelf is an app that allows users to order alcoholic beverages directly from their phone and have them delivered to their doorstep.
+
+I developed the iOS application and backend logic from the ground up, including integration with a third-party fleet management service to coordinate deliveries efficiently.
+
+- <a href="https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6" target="_blank">Gallery</a>
 
 ---
 
@@ -699,39 +699,6 @@ WIN Atlas is a career guidance app that helps users explore career options by ta
 I developed the client-side of the app and integrated it with the server-side, which was implemented by in-house developers.
 
 - <a href="https://photos.app.goo.gl/BYUjLrayGR9cRUdDA" target="_blank">Gallery</a>
-
----
-
-## 📚 <a href="https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6" target="_blank">Knod</a>
-
-- **TLDR:** iOS Media Reviews Social Network - Books, Movies, Games, etc.
-- **Start:** 2014
-- **Client:** Rocksauce Studios (through Toptal)
-- **Location:** Austin, Texas · Remote 🌍
-- **Technologies:** Objective-C
-
-Knod is a media discovery social network where users can rate movies, books, songs, games, and more, receiving personalized recommendations based on their ratings and social connections.
-
-I contributed to the initial development of the project, creating core features for the iOS app. After being reassigned to a more urgent project, I later returned to assist with additional feature development and bug fixes.
-
-- <a href="https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6" target="_blank">Gallery</a>
-
----
-
-## 🚗 <a href="https://photos.app.goo.gl/mf692orHUWtw1RHp7" target="_blank">ValetTab</a>
-
-- **TLDR:** iOS Valet Parking Software
-- **Start:** 2014
-- **Client:** Rocksauce Studios (through Toptal)
-- **Location:** Austin, Texas · Remote 🌍
-- **Role:** Bug fixing
-- **Technologies:** iOS, Objective-C
-
-ValetTab is an app that streamlines the valet parking experience at participating locations. It allows users to check in, notify the valet when they are ready to check out, and pay for parking directly from their phone. The companion app, ValetStand, helps valet staff manage parked cars, checkout requests, and payments.
-
-I fixed numerous bugs and implemented new features, primarily related to the payment process. The project was particularly challenging due to the disorganized and messy existing codebase.
-
-- <a href="https://photos.app.goo.gl/mf692orHUWtw1RHp7" target="_blank">Gallery</a>
 
 ---
 
@@ -789,6 +756,22 @@ I developed the entire application, both the iOS app and the backend, from the g
 
 ---
 
+## 📚 <a href="https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6" target="_blank">Knod</a>
+
+- **TLDR:** iOS Media Reviews Social Network - Books, Movies, Games, etc.
+- **Start:** 2014
+- **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
+- **Technologies:** Objective-C
+
+Knod is a media discovery social network where users can rate movies, books, songs, games, and more, receiving personalized recommendations based on their ratings and social connections.
+
+I contributed to the initial development of the project, creating core features for the iOS app. After being reassigned to a more urgent project, I later returned to assist with additional feature development and bug fixes.
+
+- <a href="https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6" target="_blank">Gallery</a>
+
+---
+
 ## 🏃 <a href="https://photos.app.goo.gl/yV5rQH6QvrL3yQh69" target="_blank">Map My Fitness - Challenges</a>
 
 - **TLDR:** iOS Sports Tracking App
@@ -841,6 +824,23 @@ I was brought into the project to help steer it back on track, ultimately develo
 
 ---
 
+## 🚗 <a href="https://photos.app.goo.gl/mf692orHUWtw1RHp7" target="_blank">ValetTab</a>
+
+- **TLDR:** iOS Valet Parking Software
+- **Start:** 2014
+- **Client:** Rocksauce Studios (through Toptal)
+- **Location:** Austin, Texas · Remote 🌍
+- **Role:** Bug fixing
+- **Technologies:** iOS, Objective-C
+
+ValetTab is an app that streamlines the valet parking experience at participating locations. It allows users to check in, notify the valet when they are ready to check out, and pay for parking directly from their phone. The companion app, ValetStand, helps valet staff manage parked cars, checkout requests, and payments.
+
+I fixed numerous bugs and implemented new features, primarily related to the payment process. The project was particularly challenging due to the disorganized and messy existing codebase.
+
+- <a href="https://photos.app.goo.gl/mf692orHUWtw1RHp7" target="_blank">Gallery</a>
+
+---
+
 ## 🏃 <a href="https://photos.app.goo.gl/S4mAy24CX2pggMEj8" target="_blank">WeGo</a>
 
 - **TLDR:** iOS Sports Tracking app with wearable integration
@@ -856,6 +856,23 @@ WeGo is a fitness tracking app designed to interface with multiple low-budget ha
 I developed the iOS application from start to finish in record time, overcoming numerous unexpected challenges. The project required integrating five different wearable devices from various manufacturers via Bluetooth and Audio Jack. The implementation was fully successful, with any remaining limitations attributed to third-party dependencies beyond our control.
 
 - <a href="https://photos.app.goo.gl/S4mAy24CX2pggMEj8" target="_blank">Gallery</a>
+
+---
+
+## 🧮 <a href="https://photos.app.goo.gl/16xmzjMpPP9pP7Z88" target="_blank">China Pro Tools</a>
+
+- **TLDR:** Market Analytics Solution for Exports to China
+- **Start:** 2013
+- **Client:** East Point Consulting, LLC (through Toptal)
+- **Location:** New York · Remote 🌍
+- **Role:** Full-stack Developer
+- **Technologies:** Python, Flask, Quorum, MongoDB, HTML, CSS, JavaScript, jQuery, UXF
+
+China Pro Tools is a market analytics solution that provides decision-support statistics related to exports to China.
+
+I developed the entire application based on pre-existing specifications and delivered it precisely on schedule.
+
+- <a href="https://photos.app.goo.gl/16xmzjMpPP9pP7Z88" target="_blank">Gallery</a>
 
 ---
 
@@ -875,23 +892,6 @@ I developed most of the application, but it remained incomplete as I was reassig
 
 - <a href="https://photos.app.goo.gl/EaASm71wXHKvfNY47" target="_blank">Gallery</a>
 - <a href="https://www.facebook.com/clockadoodleapp" target="_blank">Facebook</a>
-
----
-
-## 🧮 <a href="https://photos.app.goo.gl/16xmzjMpPP9pP7Z88" target="_blank">China Pro Tools</a>
-
-- **TLDR:** Market Analytics Solution for Exports to China
-- **Start:** 2013
-- **Client:** East Point Consulting, LLC (through Toptal)
-- **Location:** New York · Remote 🌍
-- **Role:** Full-stack Developer
-- **Technologies:** Python, Flask, Quorum, MongoDB, HTML, CSS, JavaScript, jQuery, UXF
-
-China Pro Tools is a market analytics solution that provides decision-support statistics related to exports to China.
-
-I developed the entire application based on pre-existing specifications and delivered it precisely on schedule.
-
-- <a href="https://photos.app.goo.gl/16xmzjMpPP9pP7Z88" target="_blank">Gallery</a>
 
 ---
 
@@ -1083,20 +1083,6 @@ I developed key backend and frontend features for the application.
 
 ---
 
-## 🛍 <a href="https://photos.app.goo.gl/9qeFGMfqXWxdYXLXA" target="_blank">Frontdoor</a>
-
-- **TLDR:** SaaS ERP Solution
-- **Start:** 2008
-- **Client:** Hive Solutions
-- **Location:** Porto, Portugal · Onsite 🏢
-- **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, jQuery, UXF
-
-Developed back-end logic for online Point-of-Sale SaaS product using Python with the Colony Framework and its respective MVC stack. Also developed front-end for same system through extensive usage of JavaScript and jQuery to create a productive user experience.
-
-- <a href="https://photos.app.goo.gl/9qeFGMfqXWxdYXLXA" target="_blank">Gallery</a>
-
----
-
 ## 🔌 <a href="https://photos.app.goo.gl/g5w3nPii7GgV5AeA6" target="_blank">Colony Framework</a>
 
 - **TLDR:** Modularity Container Framework
@@ -1110,6 +1096,20 @@ Colony is a modularity container that allows plugins to be deployed, loaded, and
 I developed core technology for the framework, authored technical documentation, and contributed to marketing efforts by designing storylines for videos and comic books, as well as handling various copywriting tasks.
 
 - <a href="https://photos.app.goo.gl/g5w3nPii7GgV5AeA6" target="_blank">Gallery</a>
+
+---
+
+## 🛍 <a href="https://photos.app.goo.gl/9qeFGMfqXWxdYXLXA" target="_blank">Frontdoor</a>
+
+- **TLDR:** SaaS ERP Solution
+- **Start:** 2008
+- **Client:** Hive Solutions
+- **Location:** Porto, Portugal · Onsite 🏢
+- **Technologies:** Python, Colony Framework, HTML, CSS, JavaScript, jQuery, UXF
+
+Developed back-end logic for online Point-of-Sale SaaS product using Python with the Colony Framework and its respective MVC stack. Also developed front-end for same system through extensive usage of JavaScript and jQuery to create a productive user experience.
+
+- <a href="https://photos.app.goo.gl/9qeFGMfqXWxdYXLXA" target="_blank">Gallery</a>
 
 ---
 
@@ -1228,17 +1228,18 @@ Computer Capers was a video game I developed at 12 years old and submitted to a 
 
 Open source projects and contributions.
 
-- [aiml-notebooks](https://github.com/tsilva/aiml-notebooks) - AI/ML Jupyter notebooks for learning deep learning concepts
 - [agentpong](https://github.com/tsilva/agentpong) - Desktop notifications that jump you to the right Claude Code window
+- [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
+- [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
+- [obsidian-agents-plugin](https://github.com/tsilva/obsidian-agents-plugin) - Launch AI agents from Obsidian vault
+- [aiml-notebooks](https://github.com/tsilva/aiml-notebooks) - AI/ML Jupyter notebooks for learning deep learning concepts
 - [workflow-claude-supervisor](https://github.com/tsilva/workflow-claude-supervisor) - Supervise multiple Claude Code instances in parallel
 - [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
 - [claudebridge](https://github.com/tsilva/claudebridge) - Bridge OpenAI tools to Claude Code SDK
 - [claudebox](https://github.com/tsilva/claudebox) - Full autonomy sandbox for Claude Code
-- [obsidian-agents-plugin](https://github.com/tsilva/obsidian-agents-plugin) - Launch AI agents from Obsidian vault
 - [dedrive-web](https://github.com/tsilva/dedrive-web) - Find and clean up duplicate files in Google Drive from browser
 - [dedrive](https://github.com/tsilva/dedrive) - Find and manage duplicate files in Google Drive using MD5 checksums
 - [demosim](https://github.com/tsilva/demosim) - Explore Portugal's demographic future with economic projections
-- [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
 - [gitfleet](https://github.com/tsilva/gitfleet) - Bulk operations across GitHub repositories with parallel processing
 - [mcp-openrouter](https://github.com/tsilva/mcp-openrouter) - Access 300+ AI models through a single MCP server
 - [homebrew-tap](https://github.com/tsilva/homebrew-tap) - Homebrew tap for installing tsilva projects
@@ -1248,17 +1249,13 @@ Open source projects and contributions.
 - [repologogen](https://github.com/tsilva/repologogen) - Generate professional logos from the command line
 - [gmailstream](https://github.com/tsilva/gmailstream) - Download Gmail messages matching filters to local files
 - [claudeskillz](https://github.com/tsilva/claudeskillz) - Modular skills that supercharge Claude Code
-- [youtube-downloader](https://github.com/tsilva/youtube-downloader) - Download YouTube videos and extract audio
 - [whatsapp-llm](https://github.com/tsilva/whatsapp-llm) - Bridge WhatsApp to AI for intelligent responses
 - [tsilva.eu](https://github.com/tsilva/tsilva.eu) - Personal landing page
-- [retro-romset-cleaner](https://github.com/tsilva/retro-romset-cleaner) - Clean up retro ROM collections **[Archived]**
-- [retro-asset-gen](https://github.com/tsilva/retro-asset-gen) - Generate retro gaming assets using Gemini AI **[Archived]**
 - [repo2md](https://github.com/tsilva/repo2md) - Transform any repository into a single Markdown document
 - [popdesk](https://github.com/tsilva/popdesk) - Trigger Windows desktop notifications from anywhere via webhooks
 - [pdfpress](https://github.com/tsilva/pdfpress) - Compress, merge, split, and unlock PDF files
 - [parsemedicalexams](https://github.com/tsilva/parsemedicalexams) - Extract and summarize medical exam reports from PDFs
 - [parsehealthlog](https://github.com/tsilva/parsehealthlog) - Transform health journal entries into structured data
-- [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
 - [notebook2md](https://github.com/tsilva/notebook2md) - Convert Jupyter Notebooks to Markdown
 - [mochidecks](https://github.com/tsilva/mochidecks) - Curated flashcard decks for AI/ML and data science
 - [mcp-imagetools](https://github.com/tsilva/mcp-imagetools) - Image processing tools for Claude Code via MCP
@@ -1269,10 +1266,13 @@ Open source projects and contributions.
 - [dataset-explorer-agent](https://github.com/tsilva/dataset-explorer-agent) - Validate dataset schemas with regex pattern analysis
 - [claudesk](https://github.com/tsilva/claudesk) - Interactive dashboard for launching Claude Code agents
 - [botty-mcbotface](https://github.com/tsilva/botty-mcbotface) - Gradio-powered AI chatbot with tools and memory
-- [aerospace-setup](https://github.com/tsilva/aerospace-setup) - Portable Aerospace configuration with Cursor project switching
 - [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
 - [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
 - [archex](https://github.com/tsilva/archex) - Recursively extract archives from directory trees
+- [aerospace-setup](https://github.com/tsilva/aerospace-setup) - Portable Aerospace configuration with Cursor project switching
+- [retro-asset-gen](https://github.com/tsilva/retro-asset-gen) - Generate retro gaming assets using Gemini AI **[Archived]**
+- [retro-romset-cleaner](https://github.com/tsilva/retro-romset-cleaner) - Clean up retro ROM collections **[Archived]**
+- [youtube-downloader](https://github.com/tsilva/youtube-downloader) - Download YouTube videos and extract audio
 
 ## 🔗 Misc
 

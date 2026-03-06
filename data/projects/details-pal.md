@@ -18,7 +18,6 @@ links:
     url: https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7
   - label: Kickstarter
     url: https://www.kickstarter.com/projects/1792953608/details-pal-a-pet-activity-link-for-every-dog
-order: 22
 ---
 
 Details PAL is an iOS application that connects with a Bluetooth activity tracker placed on a dog's collar, allowing users to monitor their pet's activity over days, weeks, and months. The app also includes nutrition tracking features to help manage the pet's food intake.

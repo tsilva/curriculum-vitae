@@ -18,7 +18,6 @@ links:
         url: https://photos.app.goo.gl/PY6t4TEXYK4fXmt98
       - label: TVI
         url: https://photos.app.goo.gl/W3wTceGahoE2p36U7
-order: 2
 ---
 
 Worked in the Global Development Localization team, in a Tester role, for <a href="https://dynamics.microsoft.com/en-us/ax/" target="_blank">Microsoft Dynamics AX</a> (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing new tests, searching for and investigating application bugs.

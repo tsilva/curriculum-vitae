@@ -22,7 +22,6 @@ links:
     url: https://photos.app.goo.gl/J8zziNJajw6ZwRnm9
   - label: Landing Page
     url: https://www.lugardajoia.com/index
-order: 17
 ---
 
 Lugar da Jóia is a chain of jewelry stores, and this project marked their first venture into online sales.

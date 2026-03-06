@@ -10,7 +10,6 @@ technologies:
   - PHP
   - MongoDB
 links: []
-order: 14
 ---
 
 I developed a web-based 3D editor for Minecraft Bedrock Edition, enabling users to customize Skins, Blocks, Items, and Mobs. The editor featured texture editing and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, translating user inputs into Minecraft's declarative configuration files.

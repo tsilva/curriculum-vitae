@@ -16,7 +16,6 @@ links:
     url: https://photos.app.goo.gl/DoLcczf7SZpYcroK9
   - label: Website
     url: https://www.dontmesswithtexas.org/
-order: 23
 ---
 
 "Don't Mess with Texas" is an app that allows users to report litterers to the Texas Department of Transportation's Report a Litterer Program. Users can either manually enter the details or answer questions using voice input on their mobile phone.

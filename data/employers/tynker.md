@@ -21,7 +21,6 @@ projectIds:
   - minecraft-editor
   - tynker-php-mongodb-odm
 links: []
-order: 7
 ---
 
 Tynker is a kid-friendly platform used by over 100 million students and in more than 150,000 schools, offering coding education through games and projects from basics to advanced programming languages.
