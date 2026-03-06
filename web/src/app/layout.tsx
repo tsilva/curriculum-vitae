@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Orbitron, Share_Tech_Mono, Fira_Code } from "next/font/google";
 import dynamic from "next/dynamic";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 // Lazy load MatrixRain as it's a non-critical visual effect
@@ -163,6 +164,7 @@ const jsonLd = {
       <body className="font-[family-name:var(--font-body)] dot-grid scanlines crt-vignette antialiased">
         <MatrixRain />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
