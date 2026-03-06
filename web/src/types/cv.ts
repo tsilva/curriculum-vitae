@@ -1,13 +1,21 @@
 export interface Link {
   label: string;
   url: string;
+  suffix?: string;
 }
+
+export interface LinkGroup {
+  group: string;
+  links: Link[];
+}
+
+export type LinkEntry = Link | LinkGroup;
 
 export interface GalleryMedia {
   filename: string;
   type: 'image' | 'video';
   path: string;
-  thumbnail?: string;  // Thumbnail path for videos
+  thumbnail?: string;
 }
 
 export interface GitHubRepo {
@@ -26,6 +34,7 @@ export interface Project {
   id: string;
   emoji: string;
   title: string;
+  headingUrl?: string;
   tldr: string;
   start: string;
   client: string;
@@ -49,7 +58,7 @@ export interface Employer {
   location: string;
   description: string;
   projectIds: string[];
-  links: Link[];
+  links: LinkEntry[];
 }
 
 export interface Education {
@@ -62,6 +71,18 @@ export interface Education {
   grade: string;
   location: string;
   description: string;
+  links: LinkEntry[];
+}
+
+export interface OSSEntry {
+  name: string;
+  url: string;
+  description: string;
+  archived?: boolean;
+}
+
+export interface MiscEntry {
+  label: string;
   links: Link[];
 }
 
@@ -70,5 +91,6 @@ export interface CVData {
   employers: Employer[];
   education: Education[];
   projects_db: Project[];
-  misc: Link[];
+  oss: OSSEntry[];
+  misc: MiscEntry[];
 }

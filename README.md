@@ -255,8 +255,8 @@ The platform was deployed on schedule with only minor issues, mostly related to 
 - **Client:** Tynker
 - **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
-- **Platform:** Web
 - **Team:** Me + Design Team + Content Team
+- **Platforms:** Web
 - **Technologies:** React, MDX, Node.js, React Native, PHP
 
 The Quizzer platform is a versatile tool designed to build assessments that interleave multiple interactive quiz types, using a unified content authoring format powered by MDX.
@@ -315,11 +315,11 @@ In hindsight, it was over-engineered, as it was built to handle a higher through
 - **Start:** 2020
 - **Client:** Tynker
 - **Role:** Lead Software Engineer
-- **Technologies**: React, Redux, Redux Saga, Socket.IO, JavaScript, PHP
+- **Technologies:** React, Redux, Redux Saga, Socket.IO, JavaScript, PHP
 
 Using the Lynker messaging server I previously developed, I enhanced the Block IDE with collaborative learning features, including the ability to share projects, chat about them, comment on code, and monitor changes in real-time. This application was awarded a U.S. patent.
 
-- <a href="https://photos.app.goo.gl/RMAy9e66DvJSBp8T8">Gallery</a>
+- <a href="https://photos.app.goo.gl/RMAy9e66DvJSBp8T8" target="_blank">Gallery</a>
 - <a href="https://patents.google.com/patent/US11699357B2" target="_blank">Patent - Collaborative Learning System (US11699357B2)</a>
 
 ---
@@ -331,8 +331,8 @@ Using the Lynker messaging server I previously developed, I enhanced the Block I
 - **Client:** Tynker
 - **Location:** Mountain View, California · Remote 🌍
 - **Role:** Lead Software Engineer
-- **Platforms:** Web
 - **Team:** Me + Game Development Team (content upgrades)
+- **Platforms:** Web
 - **Technologies:** Redux, Redux Saga, AngularJS, JavaScript, CSS, PHP
 
 In six months, I rearchitected a significant portion of Tynker's Block Editor, the core of its educational platform, to address critical scalability and maintenance issues caused by years of rushed development under tight deadlines, which had left the legacy codebase cluttered with hardcoded elements and quick-fix hacks, making it difficult to scale and maintain.
@@ -463,9 +463,6 @@ Kaboom! is a fast-paced revival of the classic "Lights Out" game, available on i
 
 I coordinated the design and development of the application, contributing to core aspects of the development while also reviewing and refactoring incoming pull requests. In this project, I simultaneously served as a developer, project manager, and stakeholder, overseeing the entire process from concept to completion.
 
-<!--
-- [App Store](https://apps.apple.com/ca/app/kaboom-lights-out-reloaded/id1124058567)
--->
 - <a href="https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8" target="_blank">Gallery</a>
 
 ---
@@ -483,9 +480,6 @@ Karl Kustomize is an online store where consumers can design and purchase custom
 
 I was responsible for developing core features, managing the project timeline, assigning tasks, and reviewing and refactoring pull requests from other developers to ensure a smooth and efficient development process.
 
-<!--
-- [Landing Page](https://web.archive.org/web/20171007054048/https://kustomize.karl.com/)
--->
 - <a href="https://photos.app.goo.gl/wVCsT1Y5EKjcLgeU9" target="_blank">Gallery</a>
 
 ---
@@ -586,16 +580,13 @@ I resolved numerous critical bugs across various parts of the app, which was par
 - **Client:** Rocksauce Studios (through Toptal)
 - **Location:** Austin, Texas · Remote 🌍
 - **Role:** Full-stack Mobile App Developer
-- **Platform:** iPhone (iOS)
+- **Platforms:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C, Parse, Bluetooth
 
 Details PAL is an iOS application that connects with a Bluetooth activity tracker placed on a dog's collar, allowing users to monitor their pet's activity over days, weeks, and months. The app also includes nutrition tracking features to help manage the pet's food intake.
 
 I developed the application from the ground up, playing a key role in managing communication with the manufacturers of the Bluetooth collars in China. I worked extensively on developing for and testing various prototype versions of the collars, providing feedback on necessary improvements throughout the process.
 
-<!--
-- [App Store](https://apps.apple.com/us/app/details-pal-pet-activity-link/id1062049611)
--->
 - <a href="https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7" target="_blank">Gallery</a>
 - <a href="https://www.kickstarter.com/projects/1792953608/details-pal-a-pet-activity-link-for-every-dog" target="_blank">Kickstarter</a>
 
@@ -608,39 +599,32 @@ I developed the application from the ground up, playing a key role in managing c
 - **Client:** Rocksauce Studios (through Toptal)
 - **Location:** Austin, Texas · Remote 🌍
 - **Role:** Bug fixing
-- **Platform:** iPhone (iOS)
+- **Platforms:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C
 
 "Don't Mess with Texas" is an app that allows users to report litterers to the Texas Department of Transportation's Report a Litterer Program. Users can either manually enter the details or answer questions using voice input on their mobile phone.
 
 I fixed numerous bugs across the app and implemented new features. The project was challenging due to the messy and disorganized existing codebase.
 
-<!--
-- [App Store](https://itunes.apple.com/us/app/litterer/id882082348)
--->
 - <a href="https://photos.app.goo.gl/DoLcczf7SZpYcroK9" target="_blank">Gallery</a>
 - <a href="https://www.dontmesswithtexas.org/" target="_blank">Website</a>
 
 ---
 
-## ⚡<a href="https://photos.app.goo.gl/nxxb3rzMBLug6Fg27" target="_blank">Energi Coach</a>
+## ⚡ <a href="https://photos.app.goo.gl/nxxb3rzMBLug6Fg27" target="_blank">Energi Coach</a>
 
 - **TLDR:** iOS Work-Life Balance App
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
 - **Location:** Austin, Texas · Remote 🌍
 - **Role:** Bug fixing
-- **Platform:** iOS (iPhone + Apple Watch)
+- **Platforms:** iOS (iPhone + Apple Watch)
 - **Technologies:** iOS, Objective-C, WatchKit
 
 Energi is an app designed to help improve work-life balance by suggesting and scheduling various types of breaks on the user's calendar.
 
 I focused on fixing complex bugs in the existing codebase for both the iPhone and Apple Watch versions of the app.
 
-<!--
-- [App Store](https://itunes.apple.com/us/app/energi-coach-personalized/id986965532)
-- <a href="http://energi.life" target="_blank">Website</a>
--->
 - <a href="https://photos.app.goo.gl/nxxb3rzMBLug6Fg27" target="_blank">Gallery</a>
 
 ---
@@ -648,39 +632,33 @@ I focused on fixing complex bugs in the existing codebase for both the iPhone an
 ## 🥃 <a href="https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6" target="_blank">TopShelf</a>
 
 - **TLDR:** iOS Alcohol Delivery App
-- **Start:** 2015 
-- **Client**: Rocksauce Studios (through Toptal)
+- **Start:** 2015
+- **Client:** Rocksauce Studios (through Toptal)
 - **Location:** Austin, Texas · Remote 🌍
-- **Role**: Full-stack Developer
-- **Platform**: iPhone (iOS)
+- **Role:** Full-stack Developer
+- **Platforms:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C, Parse, JavaScript, Stripe, Apple Pay
 
 TopShelf is an app that allows users to order alcoholic beverages directly from their phone and have them delivered to their doorstep.
 
 I developed the iOS application and backend logic from the ground up, including integration with a third-party fleet management service to coordinate deliveries efficiently.
 
-<!--
-- [App Store](https://itunes.apple.com/us/app/topshelf-alcohol-delivery/id974722644)
--->
 - <a href="https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6" target="_blank">Gallery</a>
 
 ---
 
-## 🗣 <a href="https://photos.app.goo.gl/VJkCBsdmQzt4ihMS7" target="_blank">TALKiT</a> 
+## 🗣 <a href="https://photos.app.goo.gl/VJkCBsdmQzt4ihMS7" target="_blank">TALKiT</a>
 
 - **TLDR:** iOS Social Network for Sharing Experiences
 - **Start:** 2015
 - **Client:** Rocksauce Studios (through Toptal)
 - **Location:** Austin, Texas · Remote 🌍
 - **Role:** Bug fixing
-- **Platform:** iPhone (iOS)
+- **Platforms:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C
 
 TALKiT is a social media platform that offers an alternative to texting, allowing users to share their experiences by recording and sharing their voice instead of typing.
 
-<!--
-- [App Store](https://itunes.apple.com/us/app/talkit-hands-free-social-network/id880219768)
--->
 - <a href="https://photos.app.goo.gl/VJkCBsdmQzt4ihMS7" target="_blank">Gallery</a>
 - <a href="https://web.archive.org/web/20180326180938/http://www.gettalkit.com/" target="_blank">Website</a>
 
@@ -693,16 +671,13 @@ TALKiT is a social media platform that offers an alternative to texting, allowin
 - **Client:** Rocksauce Studios (through Toptal)
 - **Location:** Austin, Texas · Remote 🌍
 - **Role:** Bug fixing
-- **Platform:** iPhone (iOS)
+- **Platforms:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C
 
 Us Likey is a social network where users can share their favorite products, places, brands, foods, and more.
 
 I fixed numerous bugs and implemented new features across the app. The project was particularly challenging due to the disorganized and messy existing codebase.
 
-<!--
-- [App Store](https://itunes.apple.com/us/app/us-likey/id717595225)
--->
 - <a href="https://photos.app.goo.gl/349FvG9KzJAxKMGC9" target="_blank">Gallery</a>
 - <a href="https://web.archive.org/web/20160527230029/http://www.uslikey.com/" target="_blank">Website</a>
 - <a href="https://www.facebook.com/uslikey" target="_blank">Facebook</a>
@@ -713,19 +688,16 @@ I fixed numerous bugs and implemented new features across the app. The project w
 
 - **TLDR:** iOS Career Guidance App
 - **Start:** 2015
-- **Client**: Rocksauce Studios (through Toptal)
+- **Client:** Rocksauce Studios (through Toptal)
 - **Location:** Austin, Texas · Remote 🌍
-- **Role**: Full-stack Developer
-- **Platform**: iPhone (iOS)
+- **Role:** Full-stack Developer
+- **Platforms:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C
 
 WIN Atlas is a career guidance app that helps users explore career options by taking various quizzes and providing detailed information about different jobs.
 
 I developed the client-side of the app and integrated it with the server-side, which was implemented by in-house developers.
 
-<!--
-- [App Store](https://itunes.apple.com/us/app/win-atlas-career-planning/id997400974)
--->
 - <a href="https://photos.app.goo.gl/BYUjLrayGR9cRUdDA" target="_blank">Gallery</a>
 
 ---
@@ -784,19 +756,16 @@ During development, I encountered numerous bugs within the MMF SDK that blocked 
 
 - **TLDR:** iOS Charity for Veterans App
 - **Start:** 2014
-- **Client**: Rocksauce Studios (through Toptal)
+- **Client:** Rocksauce Studios (through Toptal)
 - **Location:** Austin, Texas · Remote 🌍
-- **Role**: Bug fixing
-- **Platform**: iPhone (iOS)
+- **Role:** Bug fixing
+- **Platforms:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C
 
 Active Heroes is a charity that supports Veterans, Active Duty Military, and their families. The Active Heroes app allows users to track workouts and share them to help raise funds for the foundation's initiatives.
 
 I fixed numerous critical and non-critical bugs in the existing app. The project was challenging due to the messy and disorganized codebase.
 
-<!--
-- [App Store](https://itunes.apple.com/us/app/active-heroes/id635435400)
--->
 - <a href="https://photos.app.goo.gl/JkBgK1bbqhm2b1nb6" target="_blank">Gallery</a>
 - <a href="http://activeheroes.org" target="_blank">Website</a>
 
@@ -808,17 +777,14 @@ I fixed numerous critical and non-critical bugs in the existing app. The project
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
 - **Location:** Austin, Texas · Remote 🌍
-- **Role**: Full-stack Developer
-- **Platform**: iPhone (iOS)
+- **Role:** Full-stack Developer
+- **Platforms:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C, Parse
 
 Furtile is a social network designed for pet owners and breeders to connect and help pets find their ideal mates.
 
 I developed the entire application, both the iOS app and the backend, from the ground up. The project was completed in record time and successfully released on the App Store.
 
-<!--
-- [App Store](https://itunes.apple.com/us/app/furtile/id883776204)
--->
 - <a href="https://photos.app.goo.gl/Ebwb13vPBHovrK1X9" target="_blank">Gallery</a>
 
 ---
@@ -829,7 +795,7 @@ I developed the entire application, both the iOS app and the backend, from the g
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
 - **Location:** Austin, Texas · Remote 🌍
-- **Role**: Mobile Developer
+- **Role:** Mobile Developer
 - **Technologies:** iOS, Objective-C
 
 MapMyFitness, one of the first activity tracking applications, was later acquired by Under Armour.
@@ -846,7 +812,7 @@ I implemented the Challenges feature, as well as the Weight and Sleep sections o
 - **Start:** 2014
 - **Client:** Rocksauce Studios (through Toptal)
 - **Location:** Austin, Texas · Remote 🌍
-- **Role**: Bug fixing
+- **Role:** Bug fixing
 - **Technologies:** iOS, Objective-C
 
 Project Capture is an app that allows users to report UFO sightings.
@@ -864,16 +830,13 @@ Although the app was originally developed by someone else, I contributed by fixi
 - **Client:** Rocksauce Studios (through Toptal)
 - **Location:** Austin, Texas · Remote 🌍
 - **Role:** Full-stack Developer
-- **Platform:** iPhone (iOS)
+- **Platforms:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C, Parse
 
 Randid is a social networking app for iOS where users send a picture and receive a random one in return from other users.
 
 I was brought into the project to help steer it back on track, ultimately developing part of the client-side and most of the server-side for the app's first version.
 
-<!--
-- [App Store](https://itunes.apple.com/us/app/randid/id791202964)
--->
 - <a href="https://photos.app.goo.gl/33wt6ewUqtBV1mwB7" target="_blank">Gallery</a>
 
 ---
@@ -885,18 +848,13 @@ I was brought into the project to help steer it back on track, ultimately develo
 - **Client:** Rocksauce Studios (through Toptal)
 - **Location:** Austin, Texas · Remote 🌍
 - **Role:** Full-stack Developer
-- **Platform:** iPhone (iOS)
+- **Platforms:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C, Bluetooth
 
 WeGo is a fitness tracking app designed to interface with multiple low-budget hardware activity trackers.
 
 I developed the iOS application from start to finish in record time, overcoming numerous unexpected challenges. The project required integrating five different wearable devices from various manufacturers via Bluetooth and Audio Jack. The implementation was fully successful, with any remaining limitations attributed to third-party dependencies beyond our control.
 
-<!--
-- [App Store](https://itunes.apple.com/us/app/join-wego/id911117062)
-- <a href="http://joinwego.com/" target="_blank">Website</a>
-- [Facebook](https://www.facebook.com/joinWeGo)
--->
 - <a href="https://photos.app.goo.gl/S4mAy24CX2pggMEj8" target="_blank">Gallery</a>
 
 ---
@@ -907,17 +865,14 @@ I developed the iOS application from start to finish in record time, overcoming 
 - **Start:** 2013
 - **Client:** Rocksauce Studios (through Toptal)
 - **Location:** Austin, Texas · Remote 🌍
-- **Role**: Mobile Developer
-- **Platform**: iPhone (iOS)
+- **Role:** Mobile Developer
+- **Platforms:** iPhone (iOS)
 - **Technologies:** iOS, Objective-C
 
 Clockadoodle was an iOS alarm clock app featuring advanced options, such as YouTube video alarms.
 
 I developed most of the application, but it remained incomplete as I was reassigned to a higher-priority project.
 
-<!--
-- [App Store](https://itunes.apple.com/BR/app/id745537889)
--->
 - <a href="https://photos.app.goo.gl/EaASm71wXHKvfNY47" target="_blank">Gallery</a>
 - <a href="https://www.facebook.com/clockadoodleapp" target="_blank">Facebook</a>
 
@@ -927,11 +882,10 @@ I developed most of the application, but it remained incomplete as I was reassig
 
 - **TLDR:** Market Analytics Solution for Exports to China
 - **Start:** 2013
-- **Client**: East Point Consulting, LLC (through Toptal)
+- **Client:** East Point Consulting, LLC (through Toptal)
 - **Location:** New York · Remote 🌍
 - **Role:** Full-stack Developer
 - **Technologies:** Python, Flask, Quorum, MongoDB, HTML, CSS, JavaScript, jQuery, UXF
-- **Location:** New York · Remote 🌍
 
 China Pro Tools is a market analytics solution that provides decision-support statistics related to exports to China.
 
@@ -945,10 +899,10 @@ I developed the entire application based on pre-existing specifications and deli
 
 - **TLDR:** Travelling App for Architecture Enthusiasts
 - **Start:** 2013
-- **Client**: Discover Your City (through Toptal)
+- **Client:** Discover Your City (through Toptal)
 - **Location:** New York · Remote 🌍
 - **Role:** Mobile Developer
-- **Platforms**: iOS (iPhone)
+- **Platforms:** iOS (iPhone)
 - **Technologies:** Python, Flask, MongoDB, Objective-C, iOS, Heroku, AWS
 
 Discover Your City is a travel app for architecture enthusiasts, offering guided tours of buildings featuring various styles and designs.
@@ -963,10 +917,10 @@ I developed the entire application, from start to finish, based on pre-existing 
 
 - **TLDR:** Web Music Social Network for Fans, Artists and Venues
 - **Start:** 2013
-- **Client**: Rock Lobby (through Toptal)
+- **Client:** Rock Lobby (through Toptal)
 - **Location:** New York · Remote 🌍
-- **Role**: Lead Software Engineer
-- **Platform:** Web
+- **Role:** Lead Software Engineer
+- **Platforms:** Web
 - **Technologies:** Python, Netius, Appier, MongoDB, Quorum, HTML, CSS, jQuery, UXF
 
 Rocklobby is a music social network connecting artists, venues, and fans. Users can follow artists, venues, and fans, buy tickets for shows, review them, book venues for gigs, chat with others, and access various other features. This project was a reboot of a previous mobile Rocklobby app I had created for the same client, with a bigger and more ambitious vision.
@@ -985,7 +939,7 @@ I developed the entire application from top to bottom while also managing the pr
 - **Client:** Rock Lobby (through Toptal)
 - **Location:** New York · Remote 🌍
 - **Role:** Mobile Developer
-- **Platform:** iOS (iPhone)
+- **Platforms:** iOS (iPhone)
 - **Technologies:** iOS, Objective-C
 
 Rocklobby was a music social network for artists, venues, and fans.
@@ -1002,8 +956,8 @@ I developed the client-side iOS app, collaborating with an existing developer wo
 - **Start:** 2012
 - **Client:** Idle Games (through Toptal)
 - **Location:** San Francisco, California · Remote 🌍
-- **Platform:** Web
 - **Role:** Backend Developer
+- **Platforms:** Web
 - **Technologies:** Python, Django, MongoDB, HTML, CSS, JavaScript, jQuery, RabbitMQ
 
 Fresh Deck Poker was an online multiplayer poker game with real cash prizes.
@@ -1325,7 +1279,6 @@ Open source projects and contributions.
 - **Mindhacking 101 presentation at BarcampPT 2010 (Porto, Portugal)**:
   - <a href="https://www.slideshare.net/hivesolutions/mind-hacking-101" target="_blank">Slides</a>
   - <a href="https://www.youtube.com/watch?v=8rTSRpF5SHE" target="_blank">Audio</a>
-
 
 ## License
 

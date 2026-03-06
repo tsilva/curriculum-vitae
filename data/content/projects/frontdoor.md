@@ -1,0 +1,1 @@
+Developed back-end logic for online Point-of-Sale SaaS product using Python with the Colony Framework and its respective MVC stack. Also developed front-end for same system through extensive usage of JavaScript and jQuery to create a productive user experience.

@@ -1,0 +1,1983 @@
+{
+  "employers": [
+    {
+      "id": "rent-a-coder",
+      "emoji": "🏷",
+      "name": "Rent-a-Coder",
+      "url": "https://web.archive.org/web/20061228042557/http://www.rentacoder.com/RentACoder/default.asp",
+      "duration": "2003 - 2006 · 3 years",
+      "role": "Software Developer",
+      "location": "Remote 🌍",
+      "projectIds": [],
+      "links": [
+        {
+          "label": "Profile",
+          "url": "https://web.archive.org/web/20041112020320/http://www.rentacoder.com/RentACoder/SoftwareCoders/showBioInfo.asp?lngAuthorId=860960",
+          "suffix": "(old snapshot of profile, unfortunately most of the work reviews from later years were not crawled by the Wayback Machine)"
+        }
+      ]
+    },
+    {
+      "id": "microsoft",
+      "emoji": "🖥",
+      "name": "Microsoft",
+      "url": "https://www.microsoft.com/",
+      "duration": "Mar 2007 - Feb 2008 · 1 year",
+      "role": "Software Development Engineer in Test (Full-time)",
+      "location": "Copenhagen, Denmark",
+      "projectIds": [
+        "windows-dev-center-app-middleware-partners"
+      ],
+      "links": [
+        {
+          "label": "Microsoft Dynamics AX",
+          "url": "https://dynamics.microsoft.com/en-us/ax/"
+        },
+        {
+          "group": "TV news coverage about being hired by Microsoft straight out of college (oh the cringe! 😬) :",
+          "links": [
+            {
+              "label": "RTP 1",
+              "url": "https://photos.app.goo.gl/jo7DskprCoxt2jB77"
+            },
+            {
+              "label": "SIC",
+              "url": "https://photos.app.goo.gl/PY6t4TEXYK4fXmt98"
+            },
+            {
+              "label": "TVI",
+              "url": "https://photos.app.goo.gl/W3wTceGahoE2p36U7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hive-solutions",
+      "emoji": "🐝",
+      "name": "Hive Solutions",
+      "url": "https://www.hive.pt/",
+      "duration": "Mar 2008 - Sep 2016 · 8 years and 7 months",
+      "role": "Co-founder (Full-time)",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "projectIds": [
+        "kaboom",
+        "lugar-da-joia",
+        "windows-dev-center-app-middleware-partners",
+        "myswear-harrods-holographic-pyramid",
+        "myswear-online-store",
+        "parfois-b2b-portal",
+        "bargania",
+        "a-la-carte",
+        "mariachi",
+        "panzerini",
+        "schoooools",
+        "take-the-bill",
+        "frontdoor",
+        "colony-framework"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://www.hive.pt/"
+        },
+        {
+          "label": "Github",
+          "url": "https://github.com/hivesolutions"
+        }
+      ]
+    },
+    {
+      "id": "toptal",
+      "emoji": "🌍",
+      "name": "Toptal",
+      "url": "https://www.toptal.com/",
+      "duration": "Apr 2012 - Present",
+      "role": "Senior Software Engineer",
+      "location": "Remote 🌍",
+      "projectIds": [
+        "speakwrite",
+        "details-pal",
+        "dont-mess-with-texas-report-a-litterer",
+        "energi-coach",
+        "topshelf",
+        "talkit",
+        "us-likey",
+        "win-atlas",
+        "knod",
+        "valettab",
+        "academy-sports-live-fit",
+        "active-heroes",
+        "furtile",
+        "map-my-fitness-challenges",
+        "project-capture",
+        "randid",
+        "wego",
+        "clockadoodle",
+        "china-pro-tools",
+        "discover-your-city",
+        "rocklobby",
+        "rocklobby-ios-app",
+        "fresh-deck-poker"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://www.toptal.com/"
+        }
+      ]
+    },
+    {
+      "id": "rocksauce-studios",
+      "emoji": "📱",
+      "name": "Rocksauce Studios",
+      "url": "https://www.rocksaucestudios.com/",
+      "duration": "2013 - 2015 · 2 years",
+      "role": "Senior iOS Developer (Full-time)",
+      "location": "Austin, Texas · Remote 🌍",
+      "projectIds": [
+        "speakwrite",
+        "details-pal",
+        "dont-mess-with-texas-report-a-litterer",
+        "energi-coach",
+        "topshelf",
+        "talkit",
+        "us-likey",
+        "win-atlas",
+        "knod",
+        "valettab",
+        "academy-sports-live-fit",
+        "active-heroes",
+        "furtile",
+        "map-my-fitness-challenges",
+        "project-capture",
+        "randid",
+        "wego",
+        "clockadoodle"
+      ],
+      "links": []
+    },
+    {
+      "id": "ripe-productions",
+      "emoji": "🛍",
+      "name": "RIPE Productions",
+      "url": "https://www.platforme.com/",
+      "duration": "2016 · Less than a year",
+      "role": "Lead Software Engineer (Full-time)",
+      "location": "Porto, Portugal · Remote 🌍",
+      "projectIds": [
+        "karl-kustomize",
+        "myswear-harrods-holographic-pyramid",
+        "myswear-online-store"
+      ],
+      "links": []
+    },
+    {
+      "id": "tynker",
+      "emoji": "🏫",
+      "name": "Tynker",
+      "url": "https://www.tynker.com/",
+      "duration": "Sep 2016 - May 2024",
+      "role": "Lead Software Engineer (Full-time)",
+      "location": "Mountain View, California · Remote 🌍",
+      "projectIds": [
+        "help-agent",
+        "block-ide-arcade-maker",
+        "byjus-coding-cup",
+        "live-classes",
+        "quizzer",
+        "coaching-system",
+        "lynker",
+        "collaborative-learning-system",
+        "block-ide-version-30",
+        "crystal-clash",
+        "minecraft-education-edition-integration",
+        "mythicraft",
+        "minecraft-editor",
+        "tynker-php-mongodb-odm"
+      ],
+      "links": []
+    },
+    {
+      "id": "vaulthaus",
+      "emoji": "🔐",
+      "name": "VaultHaus",
+      "duration": "May 2024 - Present",
+      "role": "AI Research Engineer (Full-time)",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "projectIds": [],
+      "links": []
+    }
+  ],
+  "education": [
+    {
+      "id": "university-of-lodz",
+      "emoji": "📚",
+      "institution": "University of Lodz",
+      "url": "https://www.uni.lodz.pl/en/",
+      "duration": "2006 - 2007 (one semester)",
+      "degree": "Licenciate, Computer Engineering",
+      "grade": "18 (out of 20)",
+      "location": "Lodz, Poland",
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://www.uni.lodz.pl/en/"
+        }
+      ]
+    },
+    {
+      "id": "faculdade-de-engenharia-da-universidade-do-porto",
+      "emoji": "🎓",
+      "institution": "Faculdade de Engenharia da Universidade do Porto",
+      "url": "https://sigarra.up.pt/feup/en/",
+      "duration": "2002 - 2007 (5 year course)",
+      "degree": "Licenciate, Computer Engineering",
+      "grade": "16 (out of 20)",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://sigarra.up.pt/feup/en/"
+        }
+      ]
+    }
+  ],
+  "projects_db": [
+    {
+      "id": "help-agent",
+      "emoji": "🤖",
+      "title": "Help Agent",
+      "headingUrl": "https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6",
+      "tldr": "Sales assistant chatbot meant to assist users in Tynker related inquiries",
+      "start": "2023",
+      "client": "Tynker",
+      "location": "Mountain View, California · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "team": "Just me",
+      "technologies": [
+        "React",
+        "Python",
+        "Flask",
+        "MongoDB",
+        "OpenAI",
+        "Pinecone"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6"
+        },
+        {
+          "label": "Help Agent in Parents page",
+          "url": "https://www.tynker.com/parents/",
+          "suffix": "(chat button in bottom right corner)"
+        }
+      ]
+    },
+    {
+      "id": "block-ide-arcade-maker",
+      "emoji": "🕹",
+      "title": "Block IDE - Arcade Maker",
+      "headingUrl": "https://photos.app.goo.gl/ZKss72chsSgrfSMfA",
+      "tldr": "Block IDE extension for creating games without coding",
+      "start": "2023",
+      "client": "Tynker",
+      "location": "Mountain View, California · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "team": "Me + 1 Software Developer + 1 Game Designer",
+      "platforms": "Web",
+      "technologies": [
+        "React",
+        "Redux",
+        "Redux Saga",
+        "PHP",
+        "JavaScript"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/ZKss72chsSgrfSMfA"
+        },
+        {
+          "label": "Fashion Designer",
+          "url": "https://www.tynker.com/block-ide?type=arcade&p=63f90df1218b2c5338740c8d"
+        },
+        {
+          "label": "Pet Designer",
+          "url": "https://www.tynker.com/block-ide?type=arcade&p=6418ea6f218b2c0767316018"
+        },
+        {
+          "label": "Catch 'Em",
+          "url": "https://www.tynker.com/block-ide?type=arcade&p=642dc40c218b2c55131c2aca"
+        },
+        {
+          "label": "Bop 'Em",
+          "url": "https://www.tynker.com/block-ide?type=arcade&p=642dc5b8218b2c575d1e5e2a"
+        }
+      ]
+    },
+    {
+      "id": "byjus-coding-cup",
+      "emoji": "⚽",
+      "title": "BYJU's Coding Cup",
+      "headingUrl": "https://photos.app.goo.gl/hJ5rUAbWMr21xNuJ8",
+      "tldr": "Soccer-themed coding competition for kids",
+      "start": "2022",
+      "client": "Tynker",
+      "location": "Mountain View, California · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "team": "Me + 1 Software Developer (match renderer) + multiple Game Designers (content development)",
+      "platforms": "Web, Android (WebView), iOS (WebView)",
+      "technologies": [
+        "React",
+        "PHP"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/hJ5rUAbWMr21xNuJ8"
+        },
+        {
+          "label": "Landing Page",
+          "url": "https://www.tynker.com/codingcup/"
+        },
+        {
+          "label": "Game Trailer",
+          "url": "https://www.tynker.com/codingcup/static/media/FIFA-Welcome.5d408e712931137e67e2.mp4"
+        },
+        {
+          "label": "Leaderboard",
+          "url": "https://www.tynker.com/codingcup/competitions/65a637807dbf0021445757ac/leaderboards/countries"
+        }
+      ]
+    },
+    {
+      "id": "live-classes",
+      "emoji": "👩‍🏫",
+      "title": "Live Classes",
+      "headingUrl": "https://photos.app.goo.gl/dATH9AZGA5G8Zb2K6",
+      "tldr": "Platform for educators to conduct interactive coding classes with students",
+      "start": "2022",
+      "client": "Tynker",
+      "location": "Mountain View, California · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "team": "Me + Design Team",
+      "platforms": "Web",
+      "technologies": [
+        "React",
+        "PHP",
+        "WebRTC",
+        "Dyte"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/dATH9AZGA5G8Zb2K6"
+        }
+      ]
+    },
+    {
+      "id": "quizzer",
+      "emoji": "❓",
+      "title": "Quizzer",
+      "headingUrl": "https://photos.app.goo.gl/tWYftTXKxePWfJ2G6",
+      "tldr": "Modular quiz platform",
+      "start": "2021",
+      "client": "Tynker",
+      "location": "Mountain View, California · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "team": "Me + Design Team + Content Team",
+      "platforms": "Web",
+      "technologies": [
+        "React",
+        "MDX",
+        "Node.js",
+        "React Native",
+        "PHP"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/tWYftTXKxePWfJ2G6"
+        },
+        {
+          "label": "Block Coding Placement Test",
+          "url": "https://www.tynker.com/quizzer/?type=placement:block"
+        },
+        {
+          "label": "Text Coding Placement Test",
+          "url": "https://www.tynker.com/quizzer/?type=placement:text"
+        }
+      ]
+    },
+    {
+      "id": "coaching-system",
+      "emoji": "👩‍🏫",
+      "title": "Coaching System",
+      "headingUrl": "https://photos.app.goo.gl/rGGaisXY8zYbEPZK6",
+      "tldr": "Integrated coaching management system",
+      "start": "2020",
+      "client": "Tynker",
+      "location": "Mountain View, California · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "team": "Me + Design Team",
+      "technologies": [
+        "React",
+        "PHP",
+        "JavaScript"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/rGGaisXY8zYbEPZK6"
+        }
+      ]
+    },
+    {
+      "id": "lynker",
+      "emoji": "💬",
+      "title": "Lynker",
+      "tldr": "Real-time messaging server for Tynker",
+      "start": "2020",
+      "client": "Tynker",
+      "location": "Mountain View, California · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "team": "Just me",
+      "technologies": [
+        "Node.js",
+        "Express",
+        "Socket.IO",
+        "Redis",
+        "NGINX"
+      ],
+      "links": []
+    },
+    {
+      "id": "collaborative-learning-system",
+      "emoji": "👥",
+      "title": "Collaborative Learning System",
+      "headingUrl": "https://patents.google.com/patent/US11699357B2",
+      "tldr": "Real-time project sharing and collaboration features for the Block IDE",
+      "start": "2020",
+      "client": "Tynker",
+      "role": "Lead Software Engineer",
+      "technologies": [
+        "React",
+        "Redux",
+        "Redux Saga",
+        "Socket.IO",
+        "JavaScript",
+        "PHP"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/RMAy9e66DvJSBp8T8"
+        },
+        {
+          "label": "Patent - Collaborative Learning System (US11699357B2)",
+          "url": "https://patents.google.com/patent/US11699357B2"
+        }
+      ]
+    },
+    {
+      "id": "block-ide-version-30",
+      "emoji": "🧩",
+      "title": "Block IDE - Version 3.0",
+      "headingUrl": "https://photos.app.goo.gl/rLjp8tBGs6WNStA18",
+      "tldr": "Major overhaul of Tynker's Block Editor",
+      "start": "2019",
+      "client": "Tynker",
+      "location": "Mountain View, California · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "team": "Me + Game Development Team (content upgrades)",
+      "platforms": "Web",
+      "technologies": [
+        "Redux",
+        "Redux Saga",
+        "AngularJS",
+        "JavaScript",
+        "CSS",
+        "PHP"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/rLjp8tBGs6WNStA18"
+        },
+        {
+          "label": "Block IDE",
+          "url": "https://www.tynker.com/ide/v3"
+        },
+        {
+          "label": "Platformer - Retro Racer",
+          "url": "https://www.tynker.com/ide/v3?type=platformer-v2&p=61a931e66634692f2b3a4310&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5"
+        },
+        {
+          "label": "Platformer - Outlast the Onslaught",
+          "url": "https://www.tynker.com/ide/v3?type=platformer-v2&p=61a9453f8bdab975987e36f2&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5"
+        },
+        {
+          "label": "Platformer - Platform Peril",
+          "url": "https://www.tynker.com/ide/v3?type=platformer-v2&p=61a93e699a4c54146b14233c&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5"
+        },
+        {
+          "label": "Physics Cannon",
+          "url": "https://www.tynker.com/ide/v3?type=diy&p=546eaeef84aafa3125000012&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5"
+        },
+        {
+          "label": "Brick Breaker",
+          "url": "https://www.tynker.com/ide/v3?type=diy&p=563bf549af923168448b456b&content=377a22b7-f08508e9-9e748b16-d429ccad-f5&cache=max&v=f08508e9-9e748b16-d429ccad-f5"
+        },
+        {
+          "label": "Candy Quest",
+          "url": "https://www.tynker.com/ide/v3?type=course&slug=activity:candy-quest&chapter=0&lesson=0"
+        },
+        {
+          "label": "Barbie Pet Vet",
+          "url": "https://www.tynker.com/ide/v3?type=course&slug=activity:barbie-pet-vet&chapter=0&lesson=0"
+        }
+      ]
+    },
+    {
+      "id": "crystal-clash",
+      "emoji": "🤖",
+      "title": "Crystal Clash",
+      "headingUrl": "https://photos.app.goo.gl/h8BPE44JqYkjCFnT9",
+      "tldr": "Multiplayer turn-based battlebots game",
+      "start": "2018",
+      "client": "Tynker",
+      "location": "Mountain View, California · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "platforms": "Web / iOS (WebView)",
+      "technologies": [],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/h8BPE44JqYkjCFnT9"
+        },
+        {
+          "label": "Dashboard",
+          "url": "https://www.tynker.com/dashboard/student/#/battles/crystalclash"
+        }
+      ]
+    },
+    {
+      "id": "minecraft-education-edition-integration",
+      "emoji": "🧱",
+      "title": "Minecraft Education Edition Integration",
+      "headingUrl": "https://education.minecraft.net/",
+      "tldr": "Integration of Tynker's Minecraft Editor into Minecraft Education Edition app",
+      "start": "2018",
+      "client": "Tynker",
+      "location": "Mountain View, California · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "platforms": "Windows 10",
+      "technologies": [],
+      "links": [
+        {
+          "label": "Minecraft Education Edition",
+          "url": "https://education.minecraft.net/"
+        }
+      ]
+    },
+    {
+      "id": "mythicraft",
+      "emoji": "🧱",
+      "title": "Mythicraft",
+      "headingUrl": "https://photos.app.goo.gl/4mYja1dfdWLECgAs8",
+      "tldr": "Integration of Minecraft Editor into a new Tynker course.",
+      "start": "2017",
+      "client": "Tynker",
+      "location": "Mountain View, California · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "team": "Me (Minecraft Editor) + Course Development Team (Mythicraft Course Content)",
+      "platforms": "Web / iOS (WebView)",
+      "technologies": [],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/4mYja1dfdWLECgAs8"
+        }
+      ]
+    },
+    {
+      "id": "minecraft-editor",
+      "emoji": "🧱",
+      "title": "Minecraft Editor",
+      "headingUrl": "https://photos.app.goo.gl/7PtgswT8BT2jcXnR9",
+      "tldr": "Web 3D editor for Minecraft Bedrock Edition",
+      "start": "2016",
+      "client": "Tynker",
+      "location": "Mountain View, California · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "team": "Me + Game Design Team (testing)",
+      "technologies": [
+        "React",
+        "Python",
+        "Flask",
+        "MongoDB",
+        "OpenAI",
+        "Pinecone"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/7PtgswT8BT2jcXnR9"
+        },
+        {
+          "label": "Skins - Steve",
+          "url": "https://www.tynker.com/minecraft/editor/skin/steve/"
+        },
+        {
+          "label": "Blocks - TNT",
+          "url": "https://www.tynker.com/minecraft/editor/block/tnt/"
+        },
+        {
+          "label": "Items - Diamond Sword",
+          "url": "https://www.tynker.com/minecraft/editor/item/diamond_sword/"
+        },
+        {
+          "label": "Mobs - Llama",
+          "url": "https://www.tynker.com/minecraft/editor/mob/llama2/"
+        },
+        {
+          "label": "Mobs - Pig",
+          "url": "https://www.tynker.com/minecraft/editor/mob/pig/"
+        }
+      ]
+    },
+    {
+      "id": "tynker-php-mongodb-odm",
+      "emoji": "🖥",
+      "title": "Tynker - PHP MongoDB ODM",
+      "tldr": "Custom MongoDB ODM for a legacy, unstructured PHP codebase",
+      "start": "2016",
+      "client": "Tynker",
+      "location": "Mountain View, California · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "technologies": [
+        "PHP",
+        "MongoDB"
+      ],
+      "links": []
+    },
+    {
+      "id": "kaboom",
+      "emoji": "💥",
+      "title": "Kaboom!",
+      "headingUrl": "https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8",
+      "tldr": "Fast-paced revival of the classic \"Lights Out\" game for iPhone, iPad, Apple TV and Apple Watch",
+      "start": "2016",
+      "client": "Hive Solutions",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "role": "Lead Software Engineer",
+      "technologies": [
+        "Swift",
+        "iOS",
+        "tvOS",
+        "watchOS"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8"
+        }
+      ]
+    },
+    {
+      "id": "karl-kustomize",
+      "emoji": "👟",
+      "title": "Karl Kustomize",
+      "headingUrl": "https://photos.app.goo.gl/wVCsT1Y5EKjcLgeU9",
+      "tldr": "Online Shoe Customization Store",
+      "start": "2016",
+      "client": "RIPE Productions",
+      "location": "Porto, Portugal · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "technologies": [
+        "Python",
+        "MongoDB",
+        "Appier",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "UXF",
+        "Budy"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/wVCsT1Y5EKjcLgeU9"
+        }
+      ]
+    },
+    {
+      "id": "lugar-da-joia",
+      "emoji": "💍",
+      "title": "Lugar da Jóia",
+      "headingUrl": "https://photos.app.goo.gl/J8zziNJajw6ZwRnm9",
+      "tldr": "Online Jewellery Store",
+      "start": "2016",
+      "client": "Lugar da Jóia (through Hive Solutions)",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "role": "Lead Software Engineer",
+      "technologies": [
+        "Python",
+        "Appier",
+        "MongoDB",
+        "Budy",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "UXF"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/J8zziNJajw6ZwRnm9"
+        },
+        {
+          "label": "Landing Page",
+          "url": "https://www.lugardajoia.com/index"
+        }
+      ]
+    },
+    {
+      "id": "windows-dev-center-app-middleware-partners",
+      "emoji": "🖥",
+      "title": "Windows Dev Center - App Middleware Partners",
+      "headingUrl": "https://photos.app.goo.gl/T13vtSmmCndfCmUZ7",
+      "tldr": "Middleware Directory for Microsoft Partners",
+      "start": "2016",
+      "client": "Microsoft (through Hive Solutions)",
+      "location": "Redmond, Washington · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "technologies": [
+        "C#",
+        "CoreCLR",
+        "ASP.NET",
+        "Docker",
+        "Frontdoor"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/T13vtSmmCndfCmUZ7"
+        },
+        {
+          "label": "Website",
+          "url": "https://web.archive.org/web/20160401014628/https://devcenterpartners.windows.com/"
+        }
+      ]
+    },
+    {
+      "id": "myswear-harrods-holographic-pyramid",
+      "emoji": "👟",
+      "title": "MYSWEAR - Harrods Holographic Pyramid",
+      "headingUrl": "https://photos.app.goo.gl/TCP2sVwqjGtvvhx28",
+      "tldr": "Instore Shoe Customization and Ordering experience with Holographic Preview",
+      "start": "2016",
+      "client": "RIPE Productions (through Hive Solutions)",
+      "location": "Porto, Portugal · Remote 🌍",
+      "role": "Full-stack Developer",
+      "technologies": [
+        "Python",
+        "Appier",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "UXF",
+        "iOS",
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/TCP2sVwqjGtvvhx28"
+        }
+      ]
+    },
+    {
+      "id": "myswear-online-store",
+      "emoji": "👟",
+      "title": "MYSWEAR - Online Store",
+      "headingUrl": "https://photos.app.goo.gl/8gPa9phk2cwfVtH87",
+      "tldr": "Online Fashion Store with Shoe Customizer",
+      "start": "2015",
+      "client": "RIPE Productions (through Hive Solutions)",
+      "location": "Porto, Portugal · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "technologies": [
+        "Python",
+        "MongoDB",
+        "Appier",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "UXF",
+        "Farfetch API"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/8gPa9phk2cwfVtH87"
+        }
+      ]
+    },
+    {
+      "id": "speakwrite",
+      "emoji": "📝",
+      "title": "SpeakWrite",
+      "headingUrl": "https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7",
+      "tldr": "iOS Audio Transcribing Application",
+      "start": "2015",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Bug fixing",
+      "technologies": [
+        "iOS",
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/53FXNdxeBmqoqXzs7"
+        }
+      ]
+    },
+    {
+      "id": "details-pal",
+      "emoji": "🐕",
+      "title": "Details PAL",
+      "headingUrl": "https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7",
+      "tldr": "iOS Dog Activity Tracker with Bluetooth Collar",
+      "start": "2015",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Full-stack Mobile App Developer",
+      "platforms": "iPhone (iOS)",
+      "technologies": [
+        "iOS",
+        "Objective-C",
+        "Parse",
+        "Bluetooth"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7"
+        },
+        {
+          "label": "Kickstarter",
+          "url": "https://www.kickstarter.com/projects/1792953608/details-pal-a-pet-activity-link-for-every-dog"
+        }
+      ]
+    },
+    {
+      "id": "dont-mess-with-texas-report-a-litterer",
+      "emoji": "🧼",
+      "title": "Don't Mess With Texas - Report a Litterer",
+      "headingUrl": "https://photos.app.goo.gl/DoLcczf7SZpYcroK9",
+      "tldr": "iOS Littering Reporting App",
+      "start": "2015",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Bug fixing",
+      "platforms": "iPhone (iOS)",
+      "technologies": [
+        "iOS",
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/DoLcczf7SZpYcroK9"
+        },
+        {
+          "label": "Website",
+          "url": "https://www.dontmesswithtexas.org/"
+        }
+      ]
+    },
+    {
+      "id": "energi-coach",
+      "emoji": "⚡",
+      "title": "Energi Coach",
+      "headingUrl": "https://photos.app.goo.gl/nxxb3rzMBLug6Fg27",
+      "tldr": "iOS Work-Life Balance App",
+      "start": "2015",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Bug fixing",
+      "platforms": "iOS (iPhone + Apple Watch)",
+      "technologies": [
+        "iOS",
+        "Objective-C",
+        "WatchKit"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/nxxb3rzMBLug6Fg27"
+        }
+      ]
+    },
+    {
+      "id": "topshelf",
+      "emoji": "🥃",
+      "title": "TopShelf",
+      "headingUrl": "https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6",
+      "tldr": "iOS Alcohol Delivery App",
+      "start": "2015",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Full-stack Developer",
+      "platforms": "iPhone (iOS)",
+      "technologies": [
+        "iOS",
+        "Objective-C",
+        "Parse",
+        "JavaScript",
+        "Stripe",
+        "Apple Pay"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6"
+        }
+      ]
+    },
+    {
+      "id": "talkit",
+      "emoji": "🗣",
+      "title": "TALKiT",
+      "headingUrl": "https://photos.app.goo.gl/VJkCBsdmQzt4ihMS7",
+      "tldr": "iOS Social Network for Sharing Experiences",
+      "start": "2015",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Bug fixing",
+      "platforms": "iPhone (iOS)",
+      "technologies": [
+        "iOS",
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/VJkCBsdmQzt4ihMS7"
+        },
+        {
+          "label": "Website",
+          "url": "https://web.archive.org/web/20180326180938/http://www.gettalkit.com/"
+        }
+      ]
+    },
+    {
+      "id": "us-likey",
+      "emoji": "🛍",
+      "title": "US Likey",
+      "headingUrl": "https://photos.app.goo.gl/349FvG9KzJAxKMGC9",
+      "tldr": "iOS Social Network for Sharing Products",
+      "start": "2015",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Bug fixing",
+      "platforms": "iPhone (iOS)",
+      "technologies": [
+        "iOS",
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/349FvG9KzJAxKMGC9"
+        },
+        {
+          "label": "Website",
+          "url": "https://web.archive.org/web/20160527230029/http://www.uslikey.com/"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/uslikey"
+        }
+      ]
+    },
+    {
+      "id": "win-atlas",
+      "emoji": "🌎",
+      "title": "WIN Atlas",
+      "headingUrl": "https://photos.app.goo.gl/BYUjLrayGR9cRUdDA",
+      "tldr": "iOS Career Guidance App",
+      "start": "2015",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Full-stack Developer",
+      "platforms": "iPhone (iOS)",
+      "technologies": [
+        "iOS",
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/BYUjLrayGR9cRUdDA"
+        }
+      ]
+    },
+    {
+      "id": "knod",
+      "emoji": "📚",
+      "title": "Knod",
+      "headingUrl": "https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6",
+      "tldr": "iOS Media Reviews Social Network - Books, Movies, Games, etc.",
+      "start": "2014",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "technologies": [
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6"
+        }
+      ]
+    },
+    {
+      "id": "valettab",
+      "emoji": "🚗",
+      "title": "ValetTab",
+      "headingUrl": "https://photos.app.goo.gl/mf692orHUWtw1RHp7",
+      "tldr": "iOS Valet Parking Software",
+      "start": "2014",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Bug fixing",
+      "technologies": [
+        "iOS",
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/mf692orHUWtw1RHp7"
+        }
+      ]
+    },
+    {
+      "id": "academy-sports-live-fit",
+      "emoji": "🏃",
+      "title": "Academy Sports - LIVE FIT",
+      "headingUrl": "https://photos.app.goo.gl/AMMpRdPWMU98D7mW7",
+      "tldr": "iOS Sports Tracking app",
+      "start": "2014",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Mobile Developer",
+      "technologies": [
+        "iOS",
+        "Objective-C",
+        "MapMyFitness SDK"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/AMMpRdPWMU98D7mW7"
+        }
+      ]
+    },
+    {
+      "id": "active-heroes",
+      "emoji": "🎖",
+      "title": "Active Heroes",
+      "headingUrl": "https://photos.app.goo.gl/JkBgK1bbqhm2b1nb6",
+      "tldr": "iOS Charity for Veterans App",
+      "start": "2014",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Bug fixing",
+      "platforms": "iPhone (iOS)",
+      "technologies": [
+        "iOS",
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/JkBgK1bbqhm2b1nb6"
+        },
+        {
+          "label": "Website",
+          "url": "http://activeheroes.org"
+        }
+      ]
+    },
+    {
+      "id": "furtile",
+      "emoji": "🐾",
+      "title": "Furtile",
+      "headingUrl": "https://photos.app.goo.gl/Ebwb13vPBHovrK1X9",
+      "tldr": "iOS Social Network for Pet Owners and Breeders",
+      "start": "2014",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Full-stack Developer",
+      "platforms": "iPhone (iOS)",
+      "technologies": [
+        "iOS",
+        "Objective-C",
+        "Parse"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/Ebwb13vPBHovrK1X9"
+        }
+      ]
+    },
+    {
+      "id": "map-my-fitness-challenges",
+      "emoji": "🏃",
+      "title": "Map My Fitness - Challenges",
+      "headingUrl": "https://photos.app.goo.gl/yV5rQH6QvrL3yQh69",
+      "tldr": "iOS Sports Tracking App",
+      "start": "2014",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Mobile Developer",
+      "technologies": [
+        "iOS",
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/yV5rQH6QvrL3yQh69"
+        }
+      ]
+    },
+    {
+      "id": "project-capture",
+      "emoji": "🛸",
+      "title": "Project Capture",
+      "headingUrl": "https://photos.app.goo.gl/zdBc2yVP85U8dVNUA",
+      "tldr": "iOS UFO Reporting App",
+      "start": "2014",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Bug fixing",
+      "technologies": [
+        "iOS",
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/zdBc2yVP85U8dVNUA"
+        }
+      ]
+    },
+    {
+      "id": "randid",
+      "emoji": "📸",
+      "title": "Randid",
+      "headingUrl": "https://photos.app.goo.gl/33wt6ewUqtBV1mwB7",
+      "tldr": "iOS Social Photo Sharing App",
+      "start": "2014",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Full-stack Developer",
+      "platforms": "iPhone (iOS)",
+      "technologies": [
+        "iOS",
+        "Objective-C",
+        "Parse"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/33wt6ewUqtBV1mwB7"
+        }
+      ]
+    },
+    {
+      "id": "wego",
+      "emoji": "🏃",
+      "title": "WeGo",
+      "headingUrl": "https://photos.app.goo.gl/S4mAy24CX2pggMEj8",
+      "tldr": "iOS Sports Tracking app with wearable integration",
+      "start": "2014",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Full-stack Developer",
+      "platforms": "iPhone (iOS)",
+      "technologies": [
+        "iOS",
+        "Objective-C",
+        "Bluetooth"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/S4mAy24CX2pggMEj8"
+        }
+      ]
+    },
+    {
+      "id": "clockadoodle",
+      "emoji": "⏰",
+      "title": "Clockadoodle",
+      "headingUrl": "https://photos.app.goo.gl/EaASm71wXHKvfNY47",
+      "tldr": "iOS Alarm Clock with Youtube Video Alarms",
+      "start": "2013",
+      "client": "Rocksauce Studios (through Toptal)",
+      "location": "Austin, Texas · Remote 🌍",
+      "role": "Mobile Developer",
+      "platforms": "iPhone (iOS)",
+      "technologies": [
+        "iOS",
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/EaASm71wXHKvfNY47"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/clockadoodleapp"
+        }
+      ]
+    },
+    {
+      "id": "china-pro-tools",
+      "emoji": "🧮",
+      "title": "China Pro Tools",
+      "headingUrl": "https://photos.app.goo.gl/16xmzjMpPP9pP7Z88",
+      "tldr": "Market Analytics Solution for Exports to China",
+      "start": "2013",
+      "client": "East Point Consulting, LLC (through Toptal)",
+      "location": "New York · Remote 🌍",
+      "role": "Full-stack Developer",
+      "technologies": [
+        "Python",
+        "Flask",
+        "Quorum",
+        "MongoDB",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "UXF"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/16xmzjMpPP9pP7Z88"
+        }
+      ]
+    },
+    {
+      "id": "discover-your-city",
+      "emoji": "🏛",
+      "title": "Discover Your City",
+      "headingUrl": "https://photos.app.goo.gl/RGoL3s92XLfNqsVa9",
+      "tldr": "Travelling App for Architecture Enthusiasts",
+      "start": "2013",
+      "client": "Discover Your City (through Toptal)",
+      "location": "New York · Remote 🌍",
+      "role": "Mobile Developer",
+      "platforms": "iOS (iPhone)",
+      "technologies": [
+        "Python",
+        "Flask",
+        "MongoDB",
+        "Objective-C",
+        "iOS",
+        "Heroku",
+        "AWS"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/RGoL3s92XLfNqsVa9"
+        }
+      ]
+    },
+    {
+      "id": "rocklobby",
+      "emoji": "🎶",
+      "title": "Rocklobby",
+      "headingUrl": "https://photos.app.goo.gl/paiggJ6dEvdKeBwk7",
+      "tldr": "Web Music Social Network for Fans, Artists and Venues",
+      "start": "2013",
+      "client": "Rock Lobby (through Toptal)",
+      "location": "New York · Remote 🌍",
+      "role": "Lead Software Engineer",
+      "platforms": "Web",
+      "technologies": [
+        "Python",
+        "Netius",
+        "Appier",
+        "MongoDB",
+        "Quorum",
+        "HTML",
+        "CSS",
+        "jQuery",
+        "UXF"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/paiggJ6dEvdKeBwk7"
+        },
+        {
+          "label": "Website",
+          "url": "https://web.archive.org/web/20161017041055/http://www.rocklobby.com/"
+        }
+      ]
+    },
+    {
+      "id": "rocklobby-ios-app",
+      "emoji": "🎶",
+      "title": "Rocklobby - iOS App",
+      "headingUrl": "https://photos.app.goo.gl/8c4fpByixacvbZvAA",
+      "tldr": "iOS Music Social Network for Fans, Artists and Venues",
+      "start": "2013",
+      "client": "Rock Lobby (through Toptal)",
+      "location": "New York · Remote 🌍",
+      "role": "Mobile Developer",
+      "platforms": "iOS (iPhone)",
+      "technologies": [
+        "iOS",
+        "Objective-C"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/8c4fpByixacvbZvAA"
+        }
+      ]
+    },
+    {
+      "id": "fresh-deck-poker",
+      "emoji": "♣",
+      "title": "Fresh Deck Poker",
+      "headingUrl": "https://photos.app.goo.gl/FoLw9hqAmi8UUrQw9",
+      "tldr": "Online Poker Game with Real Cash Prizes",
+      "start": "2012",
+      "client": "Idle Games (through Toptal)",
+      "location": "San Francisco, California · Remote 🌍",
+      "role": "Backend Developer",
+      "platforms": "Web",
+      "technologies": [
+        "Python",
+        "Django",
+        "MongoDB",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "RabbitMQ"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/FoLw9hqAmi8UUrQw9"
+        },
+        {
+          "label": "Website",
+          "url": "https://web.archive.org/web/20200724094354/http://freshdeckpoker.com/"
+        }
+      ]
+    },
+    {
+      "id": "parfois-b2b-portal",
+      "emoji": "👜",
+      "title": "Parfois B2B Portal",
+      "tldr": "B2B Portal for Handbags and Fashion Accessories Brand",
+      "start": "2012",
+      "client": "Parfois (through Hive Solutions)",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "role": "Lead Software Engineer",
+      "technologies": [
+        "Oracle DB",
+        "C#",
+        "SQL",
+        "PL/SQL"
+      ],
+      "links": []
+    },
+    {
+      "id": "bargania",
+      "emoji": "💰",
+      "title": "Bargania",
+      "headingUrl": "https://photos.app.goo.gl/nqtk5jtiGQ56GjCm8",
+      "tldr": "Deal-a-Day Aggregation Service",
+      "start": "2011",
+      "client": "Hive Solutions",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "role": "Backend Developer, Marketing copywriter",
+      "technologies": [
+        "Python",
+        "Colony Framework",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "UXF"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/nqtk5jtiGQ56GjCm8"
+        }
+      ]
+    },
+    {
+      "id": "a-la-carte",
+      "emoji": "🍽",
+      "title": "A La Carte",
+      "headingUrl": "https://photos.app.goo.gl/WGcN6Uyiktbc9LHFA",
+      "tldr": "Restaurant Search Engine",
+      "start": "2010",
+      "client": "Hive Solutions",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "role": "Backend Developer",
+      "technologies": [
+        "Python",
+        "HTML",
+        "XML",
+        "MySQL"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/WGcN6Uyiktbc9LHFA"
+        }
+      ]
+    },
+    {
+      "id": "mariachi",
+      "emoji": "🎮",
+      "title": "Mariachi",
+      "headingUrl": "https://photos.app.goo.gl/q2zvsL82jeqiKAPV7",
+      "tldr": "Cross-Platform Shoot'em Up Game",
+      "start": "2010",
+      "client": "Hive Solutions",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "technologies": [
+        "C++",
+        "Objective-C",
+        "OpenGL ES"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/q2zvsL82jeqiKAPV7"
+        }
+      ]
+    },
+    {
+      "id": "panzerini",
+      "emoji": "🤖",
+      "title": "Panzerini",
+      "headingUrl": "https://photos.app.goo.gl/uuMTMyFEtspu8NBY7",
+      "tldr": "Battlebots-like Game",
+      "start": "2010",
+      "client": "Hive Solutions",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "role": "Backend Developer",
+      "technologies": [
+        "Python",
+        "Colony Framework",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "UXF"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/uuMTMyFEtspu8NBY7"
+        }
+      ]
+    },
+    {
+      "id": "schoooools",
+      "emoji": "🏫",
+      "title": "Schoooools",
+      "headingUrl": "https://photos.app.goo.gl/PNSdpTtKAb8t4bkr5",
+      "tldr": "Social Network for Schools",
+      "start": "2010",
+      "client": "Schoooools (through Hive Solutions)",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "technologies": [
+        "PhoneGap",
+        "Objective-C",
+        "HTML",
+        "JavaScript",
+        "CSS",
+        "Ruby on Rails"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/PNSdpTtKAb8t4bkr5"
+        }
+      ]
+    },
+    {
+      "id": "take-the-bill",
+      "emoji": "🧾",
+      "title": "Take the Bill",
+      "headingUrl": "https://photos.app.goo.gl/PNSdpTtKAb8t4bkr5",
+      "tldr": "SaaS Invoicing Solution",
+      "start": "2010",
+      "client": "Hive Solutions",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "technologies": [
+        "Python",
+        "Colony Framework",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "UXF"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/PNSdpTtKAb8t4bkr5"
+        }
+      ]
+    },
+    {
+      "id": "frontdoor",
+      "emoji": "🛍",
+      "title": "Frontdoor",
+      "headingUrl": "https://photos.app.goo.gl/9qeFGMfqXWxdYXLXA",
+      "tldr": "SaaS ERP Solution",
+      "start": "2008",
+      "client": "Hive Solutions",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "technologies": [
+        "Python",
+        "Colony Framework",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "UXF"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/9qeFGMfqXWxdYXLXA"
+        }
+      ]
+    },
+    {
+      "id": "colony-framework",
+      "emoji": "🔌",
+      "title": "Colony Framework",
+      "headingUrl": "https://photos.app.goo.gl/g5w3nPii7GgV5AeA6",
+      "tldr": "Modularity Container Framework",
+      "start": "2008",
+      "client": "Hive Solutions",
+      "location": "Porto, Portugal · Onsite 🏢",
+      "technologies": [
+        "Python",
+        "JavaScript"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/g5w3nPii7GgV5AeA6"
+        }
+      ]
+    },
+    {
+      "id": "mch-workflow-helpdesk-innovation",
+      "emoji": "📋",
+      "title": "MCH Workflow Helpdesk Innovation",
+      "tldr": "Knowledge Management System for Helpdesk Support",
+      "start": "2006",
+      "client": "Modelo Continente Hipermercados (through FEUP)",
+      "location": "Porto, Portugal · Remote 🌍",
+      "technologies": [
+        "C#",
+        "ASP.NET",
+        "SQL Server"
+      ],
+      "links": []
+    },
+    {
+      "id": "nihonaid",
+      "emoji": "🥋",
+      "title": "Nihonaid",
+      "headingUrl": "https://sourceforge.net/projects/nihonaid/",
+      "tldr": "Japanese Language Learning Assistant",
+      "start": "2006",
+      "client": "Me",
+      "location": "Porto, Portugal",
+      "technologies": [
+        "C#",
+        "SQL Server"
+      ],
+      "links": [
+        {
+          "label": "Sourceforge project",
+          "url": "https://sourceforge.net/projects/nihonaid/"
+        }
+      ]
+    },
+    {
+      "id": "clube-de-karate-da-maia",
+      "emoji": "🥋",
+      "title": "Clube de Karate da Maia",
+      "tldr": "Community Website for Karate Club",
+      "start": "2005",
+      "client": "Clube de Karate da Maia",
+      "location": "Maia, Portugal · Onsite 🏢",
+      "role": "Full-stack Developer",
+      "technologies": [
+        "Joomla",
+        "PHP",
+        "MySQL"
+      ],
+      "links": []
+    },
+    {
+      "id": "neuralj",
+      "emoji": "🧠",
+      "title": "NeuralJ",
+      "headingUrl": "https://sourceforge.net/projects/neuralj/",
+      "tldr": "Neural Network Library for Java",
+      "start": "2005",
+      "client": "Me",
+      "location": "Porto, Portugal",
+      "technologies": [
+        "Java"
+      ],
+      "links": [
+        {
+          "label": "SourceForge project",
+          "url": "https://sourceforge.net/projects/neuralj/"
+        }
+      ]
+    },
+    {
+      "id": "clube-do-paiva",
+      "emoji": "🛶",
+      "title": "Clube do Paiva",
+      "headingUrl": "https://www.clubedopaiva.com/",
+      "tldr": "Extreme Sports Company Website",
+      "start": "2004",
+      "client": "Clube do Paiva",
+      "location": "Arouca, Portugal · Remote 🌍",
+      "technologies": [
+        "PHP",
+        "MySQL"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://www.clubedopaiva.com/"
+        }
+      ]
+    },
+    {
+      "id": "european-student-moon-orbiter",
+      "emoji": "🌔",
+      "title": "European Student Moon Orbiter",
+      "headingUrl": "https://www.esa.int/Education/European_Student_Moon_Orbiter",
+      "tldr": "European Space Agency Student Sattellite Project",
+      "start": "2004",
+      "client": "European Space Agency (through FEUP)",
+      "location": "Porto, Portugal · Remote 🌍",
+      "technologies": [],
+      "links": [
+        {
+          "label": "ESMO Project",
+          "url": "https://www.esa.int/Education/European_Student_Moon_Orbiter"
+        }
+      ]
+    },
+    {
+      "id": "computer-capers",
+      "emoji": "🎮",
+      "title": "Computer Capers",
+      "headingUrl": "https://photos.app.goo.gl/uMKFMcYurDnpCged8",
+      "tldr": "Adventure Game for the Commodore Amiga",
+      "start": "1996",
+      "client": "Me",
+      "location": "Porto, Portugal",
+      "technologies": [
+        "AMOS Basic"
+      ],
+      "links": [
+        {
+          "label": "Gallery",
+          "url": "https://photos.app.goo.gl/fk1GEomK621wdJ7s6"
+        },
+        {
+          "label": "Demo Video",
+          "url": "https://photos.app.goo.gl/uMKFMcYurDnpCged8"
+        }
+      ]
+    }
+  ],
+  "oss": [
+    {
+      "name": "aiml-notebooks",
+      "url": "https://github.com/tsilva/aiml-notebooks",
+      "description": "AI/ML Jupyter notebooks for learning deep learning concepts"
+    },
+    {
+      "name": "agentpong",
+      "url": "https://github.com/tsilva/agentpong",
+      "description": "Desktop notifications that jump you to the right Claude Code window"
+    },
+    {
+      "name": "workflow-claude-supervisor",
+      "url": "https://github.com/tsilva/workflow-claude-supervisor",
+      "description": "Supervise multiple Claude Code instances in parallel"
+    },
+    {
+      "name": "mcp-wandb",
+      "url": "https://github.com/tsilva/mcp-wandb",
+      "description": "Query Weights & Biases experiments from LLM agents via MCP"
+    },
+    {
+      "name": "claudebridge",
+      "url": "https://github.com/tsilva/claudebridge",
+      "description": "Bridge OpenAI tools to Claude Code SDK"
+    },
+    {
+      "name": "claudebox",
+      "url": "https://github.com/tsilva/claudebox",
+      "description": "Full autonomy sandbox for Claude Code"
+    },
+    {
+      "name": "obsidian-agents-plugin",
+      "url": "https://github.com/tsilva/obsidian-agents-plugin",
+      "description": "Launch AI agents from Obsidian vault"
+    },
+    {
+      "name": "dedrive-web",
+      "url": "https://github.com/tsilva/dedrive-web",
+      "description": "Find and clean up duplicate files in Google Drive from browser"
+    },
+    {
+      "name": "dedrive",
+      "url": "https://github.com/tsilva/dedrive",
+      "description": "Find and manage duplicate files in Google Drive using MD5 checksums"
+    },
+    {
+      "name": "demosim",
+      "url": "https://github.com/tsilva/demosim",
+      "description": "Explore Portugal's demographic future with economic projections"
+    },
+    {
+      "name": "thunkd",
+      "url": "https://github.com/tsilva/thunkd",
+      "description": "Capture thoughts instantly and send them to inbox"
+    },
+    {
+      "name": "gitfleet",
+      "url": "https://github.com/tsilva/gitfleet",
+      "description": "Bulk operations across GitHub repositories with parallel processing"
+    },
+    {
+      "name": "mcp-openrouter",
+      "url": "https://github.com/tsilva/mcp-openrouter",
+      "description": "Access 300+ AI models through a single MCP server"
+    },
+    {
+      "name": "homebrew-tap",
+      "url": "https://github.com/tsilva/homebrew-tap",
+      "description": "Homebrew tap for installing tsilva projects"
+    },
+    {
+      "name": "capture",
+      "url": "https://github.com/tsilva/capture",
+      "description": "Capture thoughts to Gmail with a single command"
+    },
+    {
+      "name": "mochimochi",
+      "url": "https://github.com/tsilva/mochimochi",
+      "description": "CLI for curating Mochi flashcard decks with AI-powered deduplication"
+    },
+    {
+      "name": "gymrec",
+      "url": "https://github.com/tsilva/gymrec",
+      "description": "Record and replay Gymnasium gameplay as Hugging Face datasets"
+    },
+    {
+      "name": "repologogen",
+      "url": "https://github.com/tsilva/repologogen",
+      "description": "Generate professional logos from the command line"
+    },
+    {
+      "name": "gmailstream",
+      "url": "https://github.com/tsilva/gmailstream",
+      "description": "Download Gmail messages matching filters to local files"
+    },
+    {
+      "name": "claudeskillz",
+      "url": "https://github.com/tsilva/claudeskillz",
+      "description": "Modular skills that supercharge Claude Code"
+    },
+    {
+      "name": "youtube-downloader",
+      "url": "https://github.com/tsilva/youtube-downloader",
+      "description": "Download YouTube videos and extract audio"
+    },
+    {
+      "name": "whatsapp-llm",
+      "url": "https://github.com/tsilva/whatsapp-llm",
+      "description": "Bridge WhatsApp to AI for intelligent responses"
+    },
+    {
+      "name": "tsilva.eu",
+      "url": "https://github.com/tsilva/tsilva.eu",
+      "description": "Personal landing page"
+    },
+    {
+      "name": "retro-romset-cleaner",
+      "url": "https://github.com/tsilva/retro-romset-cleaner",
+      "description": "Clean up retro ROM collections",
+      "archived": true
+    },
+    {
+      "name": "retro-asset-gen",
+      "url": "https://github.com/tsilva/retro-asset-gen",
+      "description": "Generate retro gaming assets using Gemini AI",
+      "archived": true
+    },
+    {
+      "name": "repo2md",
+      "url": "https://github.com/tsilva/repo2md",
+      "description": "Transform any repository into a single Markdown document"
+    },
+    {
+      "name": "popdesk",
+      "url": "https://github.com/tsilva/popdesk",
+      "description": "Trigger Windows desktop notifications from anywhere via webhooks"
+    },
+    {
+      "name": "pdfpress",
+      "url": "https://github.com/tsilva/pdfpress",
+      "description": "Compress, merge, split, and unlock PDF files"
+    },
+    {
+      "name": "parsemedicalexams",
+      "url": "https://github.com/tsilva/parsemedicalexams",
+      "description": "Extract and summarize medical exam reports from PDFs"
+    },
+    {
+      "name": "parsehealthlog",
+      "url": "https://github.com/tsilva/parsehealthlog",
+      "description": "Transform health journal entries into structured data"
+    },
+    {
+      "name": "papertrail",
+      "url": "https://github.com/tsilva/papertrail",
+      "description": "AI-powered PDF document classification using vision LLMs"
+    },
+    {
+      "name": "notebook2md",
+      "url": "https://github.com/tsilva/notebook2md",
+      "description": "Convert Jupyter Notebooks to Markdown"
+    },
+    {
+      "name": "mochidecks",
+      "url": "https://github.com/tsilva/mochidecks",
+      "description": "Curated flashcard decks for AI/ML and data science"
+    },
+    {
+      "name": "mcp-imagetools",
+      "url": "https://github.com/tsilva/mcp-imagetools",
+      "description": "Image processing tools for Claude Code via MCP"
+    },
+    {
+      "name": "health-agent",
+      "url": "https://github.com/tsilva/health-agent",
+      "description": "Unify lab results, medical exams, and health journals"
+    },
+    {
+      "name": "gymsolve",
+      "url": "https://github.com/tsilva/gymsolve",
+      "description": "Fast RL framework with PPO and REINFORCE on Gymnasium"
+    },
+    {
+      "name": "gymemu",
+      "url": "https://github.com/tsilva/gymemu",
+      "description": "Play retro games through learned latent dynamics"
+    },
+    {
+      "name": "gmail2obsidian",
+      "url": "https://github.com/tsilva/gmail2obsidian",
+      "description": "Flush Gmail threads into Obsidian task files"
+    },
+    {
+      "name": "dataset-explorer-agent",
+      "url": "https://github.com/tsilva/dataset-explorer-agent",
+      "description": "Validate dataset schemas with regex pattern analysis"
+    },
+    {
+      "name": "claudesk",
+      "url": "https://github.com/tsilva/claudesk",
+      "description": "Interactive dashboard for launching Claude Code agents"
+    },
+    {
+      "name": "botty-mcbotface",
+      "url": "https://github.com/tsilva/botty-mcbotface",
+      "description": "Gradio-powered AI chatbot with tools and memory"
+    },
+    {
+      "name": "aerospace-setup",
+      "url": "https://github.com/tsilva/aerospace-setup",
+      "description": "Portable Aerospace configuration with Cursor project switching"
+    },
+    {
+      "name": "parselabs",
+      "url": "https://github.com/tsilva/parselabs",
+      "description": "Extract lab results from medical PDFs using AI vision"
+    },
+    {
+      "name": "mbox-extractor",
+      "url": "https://github.com/tsilva/mbox-extractor",
+      "description": "Extract all attachments from mbox email archives"
+    },
+    {
+      "name": "archex",
+      "url": "https://github.com/tsilva/archex",
+      "description": "Recursively extract archives from directory trees"
+    }
+  ],
+  "misc": [
+    {
+      "label": "Mindhacking 101 presentation at BarcampPT 2010 (Porto, Portugal)",
+      "links": [
+        {
+          "label": "Slides",
+          "url": "https://www.slideshare.net/hivesolutions/mind-hacking-101"
+        },
+        {
+          "label": "Audio",
+          "url": "https://www.youtube.com/watch?v=8rTSRpF5SHE"
+        }
+      ]
+    }
+  ]
+}

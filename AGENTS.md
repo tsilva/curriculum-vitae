@@ -4,18 +4,27 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This repository contains a detailed professional CV/resume rendered as a comprehensive README.md file, along with an interactive cyberpunk-themed web application that presents the CV data. The CV is intentionally verbose and detailed, designed to be processed by Large Language Models rather than read linearly. It documents 20+ years of software engineering experience across 60+ projects.
+This repository contains a detailed professional CV/resume along with an interactive cyberpunk-themed web application that presents the CV data. The CV is intentionally verbose and detailed, designed to be processed by Large Language Models rather than read linearly. It documents 20+ years of software engineering experience across 60+ projects.
 
 ## Repository Structure
 
 ```
 .
-├── README.md               # Main CV content (78KB+ detailed professional history)
-├── scripts/                # Utilities for CV maintenance
+├── data/                   # SOURCE OF TRUTH for all CV content
+│   ├── cv-data.json        # Structured metadata (employers, projects, education, oss, misc)
+│   └── content/            # Long-form prose as markdown files
+│       ├── tldr.md         # TLDR section
+│       ├── employers/      # 8 employer description files
+│       ├── education/      # 2 education description files
+│       └── projects/       # 59 project narrative files
+├── README.md               # GENERATED from data/ (do not hand-edit)
+├── scripts/
+│   ├── assemble-cv-data.ts # data/ + galleries → web/src/data/cv-data.json
+│   ├── generate-readme.ts  # data/ → README.md
+│   ├── fetch-github.ts     # GitHub API → web/src/data/github-data.json
+│   ├── count-technologies.ts # Technology mention analytics
 │   ├── validate_links.py   # Validates all HTTP links in README.md
-│   ├── count_technologies.py # Extracts and counts technology mentions
-│   ├── parse-readme.ts     # Parses README.md → web/src/data/cv-data.json
-│   └── requirements.txt    # Python dependencies (bs4, markdown2, requests)
+│   └── requirements.txt    # Python dependencies
 ├── web/                    # Next.js cyberpunk-themed web application
 │   ├── src/
 │   │   ├── app/            # Next.js App Router (layout, page, globals.css)
@@ -23,13 +32,38 @@ This repository contains a detailed professional CV/resume rendered as a compreh
 │   │   ├── hooks/          # Custom hooks (useScrollReveal)
 │   │   ├── types/          # TypeScript interfaces (Project, Employer, CVData)
 │   │   ├── lib/            # Data import helpers
-│   │   └── data/           # Generated cv-data.json (from parse-readme.ts)
+│   │   └── data/           # Generated cv-data.json + github-data.json
 │   ├── public/             # Static assets (avatar, logo, robots.txt, sitemap)
 │   ├── package.json
 │   ├── next.config.ts      # Static export config (output: export)
 │   └── vercel.json         # Vercel deployment config
-└── .git/                   # Git repository
+└── .git/
 ```
+
+## Data Architecture (Source of Truth)
+
+The source of truth is the `data/` directory:
+
+- **`data/cv-data.json`** — Structured metadata for all CV entries (no long-form text)
+- **`data/content/*.md`** — Long-form prose (narratives, descriptions) as individual markdown files
+
+Two scripts consume this data:
+1. **`scripts/assemble-cv-data.ts`** — Combines JSON + .md files + gallery scanning → `web/src/data/cv-data.json` (for the web app)
+2. **`scripts/generate-readme.ts`** — Combines JSON + .md files → `README.md` (for GitHub display)
+
+### Editing CV Content
+
+To update project/employer/education information:
+1. Edit structured fields in `data/cv-data.json`
+2. Edit prose in the corresponding `data/content/**/*.md` file
+3. Run `cd web && npm run assemble && npm run generate:readme` to regenerate outputs
+4. **Do NOT hand-edit README.md** — it is generated and will be overwritten
+
+### Adding a New Project
+
+1. Add the project entry to `data/cv-data.json` in the `projects_db` array
+2. Create `data/content/projects/{id}.md` with the narrative text
+3. Run assemble + generate:readme to update outputs
 
 ## Canonical Project Galleries
 
@@ -45,78 +79,46 @@ galleries/                    # Canonical project media (gitignored)
 ```
 
 ### Naming Scheme
-Folders use **kebab-case** derived from project names in README.md:
+Folders use **kebab-case** derived from project names:
 - `Help Agent` → `help-agent`
 - `Block IDE - Arcade Maker` → `block-ide-arcade-maker`
 - `BYJU's Coding Cup` → `byjus-coding-cup`
-- `MYSWEAR - Harrods Holographic Pyramid` → `myswear-harrods-holographic-pyramid`
 
 ### File Format
 - **Images**: Converted to WebP format (quality: 85, max 1920×1080px)
 - **Videos**: Copied as-is (MP4, MOV, MKV, etc.)
-- **Metadata**: All JSON metadata files excluded
 - **Total Size**: ~4.5 GB (678 WebP images + 134 videos across 50 projects)
-
-### Generation
-Created by `scripts/create_canonical_galleries.py` which:
-1. Matches README.md projects to Google Photos Takeout albums
-2. Creates kebab-case folders for each matched project
-3. Converts images to optimized WebP using cwebp/ImageMagick
-4. Copies videos without conversion
-5. Skips projects without galleries (9 total) and non-matching albums
 
 **Note**: The `galleries/` directory is gitignored as the source of truth remains the Google Photos Takeout backup.
 
 ## Cloudflare R2 Gallery Hosting
 
-The galleries can be served from either local files or Cloudflare R2. This allows swapping between local development (with galleries folder) and production (with R2 CDN).
+The galleries can be served from either local files or Cloudflare R2.
 
 ### Configuration
 
 Set environment variables in `web/.env` or via command line:
 
 ```bash
-# Gallery mode: 'local' or 'r2'
 GALLERY_MODE=r2
-
-# R2 Public URL (custom domain or R2 dev URL)
 R2_PUBLIC_URL=https://curriculum-vitae-r2.tsilva.eu
 ```
 
 ### NPM Scripts
 
-Convenient scripts are available in `web/package.json`:
-
 ```bash
-# Build with local galleries
 cd web
-npm run build:local
-
-# Build with R2 galleries
-cd web
-npm run build:r2
-
-# Just parse (regenerate cv-data.json)
-npm run parse:local  # or parse:r2
+npm run build:local    # Build with local galleries
+npm run build:r2       # Build with R2 galleries
+npm run assemble       # Regenerate cv-data.json from data/
+npm run generate:readme # Regenerate README.md from data/
 ```
-
-### R2 Setup
-
-1. Create a Cloudflare R2 bucket named `curriculum-vitae`
-2. Configure a custom domain (e.g., `curriculum-vitae-r2.tsilva.eu`) or use the R2 dev URL
-3. Upload galleries using rclone:
-   ```bash
-   rclone sync galleries/ r2-cv:curriculum-vitae/galleries/ --progress
-   ```
-4. Set bucket to public or configure appropriate access policies
 
 ### How It Works
 
-The `scripts/parse-readme.ts` script reads `GALLERY_MODE` and generates appropriate URLs:
-- **Local mode**: `/galleries/{project}/{filename}` (served from `public/galleries/` or proxied)
-- **R2 mode**: `https://curriculum-vitae-r2.tsilva.eu/galleries/{project}/{filename}` (served from R2 CDN)
-
-The Next.js `next.config.ts` includes the R2 domain in `images.remotePatterns` for optimization support.
+The `scripts/assemble-cv-data.ts` script reads `GALLERY_MODE` and generates appropriate URLs:
+- **Local mode**: `/galleries/{project}/{filename}`
+- **R2 mode**: `https://curriculum-vitae-r2.tsilva.eu/galleries/{project}/{filename}`
 
 ## Key Commands
 
@@ -126,22 +128,21 @@ cd scripts
 pip install -r requirements.txt
 python validate_links.py
 ```
-Extracts all HTTP links from README.md and checks their status codes. Logs failures for investigation.
 
 ### Count Technologies
 ```bash
-cd scripts
-python count_technologies.py
+cd web
+npm run stats
 ```
-Parses README.md for `**Technologies:**` sections and generates a sorted count of all technology mentions across projects.
 
 ### Web App Development
 ```bash
 cd web
 npm install
-npm run dev          # Start Next.js dev server
-npm run build        # Parse README + build static export
-npm run parse        # Only regenerate cv-data.json from README.md
+npm run dev              # Start Next.js dev server
+npm run build            # Assemble + generate README + build static export
+npm run assemble         # Only regenerate cv-data.json from data/
+npm run generate:readme  # Only regenerate README.md from data/
 ```
 
 ### Visual Inspection
@@ -157,39 +158,17 @@ Use the `visual-inspection` skill to capture and analyze screenshots of the CV w
 
 **Two Modes:**
 - **Quick Mode (default)**: Tests 1 desktop (1920x1080) + 1 mobile (390x844)
-  - Use this for feature development and quick checks
-  - Covers the major layout breakpoints
 - **Full Mode (`--full`)**: Tests all 6 device layouts
-  - Use this for final audits before release
-  - Covers Desktop FHD (~9%), Laptop (~3.8%), Mobile Android (~6%), iPhone Std (~3-14%), iPhone Large (~5%), Tablet (~2%)
 
 **When to use:**
 - **Quick mode**: After making visual/design changes during development
 - **Full mode**: Before committing major changes or releasing
-- For visual regression testing (capture before/after)
-- To analyze layout, styling, or content issues
 
-**Important:** Always capture the **full page** (not just hero) to see the complete result including Experience, Projects, and Education sections. The skill automatically triggers scroll-reveal animations so all content is visible.
-
-**Analyze the screenshot:**
-After capturing, use the skill to read and analyze the screenshot. Focus on:
-- Layout integrity (no broken grids, proper spacing)
-- Visual consistency (colors match cyberpunk theme)
-- Content visibility (all sections rendered correctly)
-- Typography readability
-- Animation states (if applicable)
-
-**Example workflow:**
-1. Make changes to a component
-2. Ensure dev server is running (`cd web && npm run dev`)
-3. Capture screenshots: `./.opencode/skills/visual-inspection/screenshot-fullpage.sh`
-4. Analyze: Read files in `.visual-inspection-screenshots/*/full-page.png` and describe what you see
-5. Verify all sections (Hero, Experience, Projects, Education) look correct
-6. For final audit: Run with `--full` flag
+**Important:** Always capture the **full page** to see all sections including Experience, Projects, and Education.
 
 ### Data Pipeline
 The web app consumes CV data via a build-time pipeline:
-1. `scripts/parse-readme.ts` parses README.md, extracting projects, employers, education, etc.
+1. `scripts/assemble-cv-data.ts` reads `data/cv-data.json` + `data/content/**/*.md` + gallery scanning
 2. Outputs structured JSON to `web/src/data/cv-data.json`
 3. The Next.js app imports this JSON at build time for static generation
 
@@ -220,38 +199,30 @@ The web app uses a distinct cyberpunk/Edgerunners aesthetic:
 
 ## Content Architecture
 
-### README.md Structure
-The CV follows a specific hierarchical format:
+### data/cv-data.json Schema
 
-1. **TLDR Section**: Executive summary with technology stack overview
-2. **Experience Section**: Reverse-chronological work history with major roles
-3. **Projects Section**: Detailed project descriptions (60+ projects) with:
-   - TLDR
-   - Start date
-   - Client
-   - Role
-   - Team composition
-   - Technologies used
-   - Detailed narrative
-   - Gallery links (Google Photos)
-   - Live demo links (where applicable)
+The structured data includes:
+- `employers[]` — Work history with id, name, url, duration, role, location, projectIds, links
+- `education[]` — Academic history with id, institution, url, duration, degree, grade, location, links
+- `projects_db[]` — Project metadata with id, emoji, title, headingUrl, tldr, start, client, location, role, team, platforms, technologies, links
+- `oss[]` — Open source projects with name, url, description, archived flag
+- `misc[]` — Miscellaneous grouped links with label and sub-links
 
-### Link Management
-- **Gallery Links**: Always point to Google Photos albums (`photos.app.goo.gl`)
-- **External Links**: Must use `<a href="..." target="_blank">` HTML syntax for external navigation
-- **Demo Links**: Point to live demos when available (e.g., Tynker IDE instances)
+Long-form text (narratives, descriptions) lives in `data/content/**/*.md` files, NOT in the JSON.
 
-### Technology Mentions
-Each project has a standardized `**Technologies:**` line that lists all technical tools used. This format is parsed by `count_technologies.py` for analytics.
+### Link Types
+Links support three formats:
+- **Simple**: `{ "label": "...", "url": "..." }`
+- **With suffix**: `{ "label": "...", "url": "...", "suffix": "(extra text)" }`
+- **Grouped**: `{ "group": "Parent label:", "links": [{ "label": "...", "url": "..." }] }`
 
 ## Important Constraints
 
-### README.md Must Be Kept Up to Date
-Per user's global instructions, the README.md is the primary artifact and must be kept synchronized with any significant changes. Use the `readme-generator` skill when authoring or updating README content.
+### README.md is Generated
+README.md is generated by `scripts/generate-readme.ts` from `data/`. Do not hand-edit it. Edit `data/cv-data.json` and `data/content/**/*.md` instead.
 
 ### Content Authenticity
 - Do not fabricate projects, roles, or technical details
-- Do not add generic sections like "Tips for Development" or "Common Development Tasks" unless explicitly present in source materials
 - All project information is historical and should be treated as immutable unless corrected for accuracy
 
 ### HTML vs Markdown
@@ -263,24 +234,15 @@ The CV uses a mix of Markdown and HTML:
 ## Maintenance Workflow
 
 When updating project information:
-1. Locate the project section in README.md (search by project name)
-2. Update the relevant fields (Technologies, TLDR, narrative, etc.)
+1. Edit the relevant fields in `data/cv-data.json` and/or `data/content/projects/{id}.md`
+2. Run `cd web && npm run assemble && npm run generate:readme`
 3. Run `python scripts/validate_links.py` to ensure no broken links
-4. Run `python scripts/count_technologies.py` to verify technology parsing still works
-5. Commit with descriptive message following existing git history style
-
-## Development Notes
-
-- The repository contains both a static README-based CV and an interactive Next.js web app
-- The web app is statically exported and deployed to Vercel
-- Python scripts are utilities, not production code
-- `parse-readme.ts` bridges the README and web app — changes to README.md project structure may require updating the parser
-- When modifying CV content, run `npm run parse` in `web/` to regenerate the JSON data
+4. Commit with descriptive message following existing git history style
 
 ## Skills
 
 ### readme-generator
-Use this skill when authoring or updating README content. The README.md is the primary artifact and must be kept synchronized with any significant changes.
+Use this skill when authoring or updating README content. Edit `data/cv-data.json` and `data/content/**/*.md`, then run generate:readme.
 
 ### visual-inspection
-**Use this skill to verify visual changes before committing.** Capture screenshots of the CV web app to check layout, styling, and content. Always capture the **full page** to verify all sections (Hero, Experience, Projects, Education) render correctly. Screenshots are automatically saved to `.visual-inspection-screenshots/` (gitignored).
+**Use this skill to verify visual changes before committing.** Capture screenshots of the CV web app to check layout, styling, and content. Always capture the **full page** to verify all sections render correctly.

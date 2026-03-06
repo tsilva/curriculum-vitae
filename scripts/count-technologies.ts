@@ -81,7 +81,7 @@ function generateReport(stats: TechnologyStats): string {
 export function analyzeTechnologies(): TechnologyStats {
   if (!fs.existsSync(DATA_PATH)) {
     throw new Error(
-      `CV data not found at ${DATA_PATH}. Run 'npm run parse' first.`
+      `CV data not found at ${DATA_PATH}. Run 'npm run assemble' first.`
     );
   }
 

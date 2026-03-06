@@ -9,14 +9,15 @@
       "duration": "2003 - 2006 · 3 years",
       "role": "Software Developer",
       "location": "Remote 🌍",
-      "description": "During college, I gained valuable experience working on freelance projects for clients around the world through the Rent-a-Coder platform, where I operated under the name \"Chronosync Developments\" and was fortunate to rank in the top 1% for customer ratings. This was my first foray into managing end-to-end client relationships, where I was tasked with projects and paid for delivering them. It helped me develop key skills in understanding client needs, managing expectations, and delivering on time.",
       "projectIds": [],
       "links": [
         {
           "label": "Profile",
-          "url": "https://web.archive.org/web/20041112020320/http://www.rentacoder.com/RentACoder/SoftwareCoders/showBioInfo.asp?lngAuthorId=860960"
+          "url": "https://web.archive.org/web/20041112020320/http://www.rentacoder.com/RentACoder/SoftwareCoders/showBioInfo.asp?lngAuthorId=860960",
+          "suffix": "(old snapshot of profile, unfortunately most of the work reviews from later years were not crawled by the Wayback Machine)"
         }
-      ]
+      ],
+      "description": "During college, I gained valuable experience working on freelance projects for clients around the world through the Rent-a-Coder platform, where I operated under the name \"Chronosync Developments\" and was fortunate to rank in the top 1% for customer ratings. This was my first foray into managing end-to-end client relationships, where I was tasked with projects and paid for delivering them. It helped me develop key skills in understanding client needs, managing expectations, and delivering on time."
     },
     {
       "id": "microsoft",
@@ -26,7 +27,6 @@
       "duration": "Mar 2007 - Feb 2008 · 1 year",
       "role": "Software Development Engineer in Test (Full-time)",
       "location": "Copenhagen, Denmark",
-      "description": "Worked in the Global Development Localization team, in a Tester role, for <a href=\"https://dynamics.microsoft.com/en-us/ax/\" target=\"_blank\">Microsoft Dynamics AX</a> (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing new tests, searching for and investigating application bugs.\n\nImproved internal testing tools to allow scanning for test code coverage across multipler layers, as opposed to just the root of the application's layered customization stack.\n\nDeveloped internal tool for database PII anonymization to allow data transfer across internal groups spread around different regions.\n\n- TV news coverage about being hired by Microsoft straight out of college (oh the cringe! 😬) :",
       "projectIds": [
         "windows-dev-center-app-middleware-partners"
       ],
@@ -36,18 +36,24 @@
           "url": "https://dynamics.microsoft.com/en-us/ax/"
         },
         {
-          "label": "RTP 1",
-          "url": "https://photos.app.goo.gl/jo7DskprCoxt2jB77"
-        },
-        {
-          "label": "SIC",
-          "url": "https://photos.app.goo.gl/PY6t4TEXYK4fXmt98"
-        },
-        {
-          "label": "TVI",
-          "url": "https://photos.app.goo.gl/W3wTceGahoE2p36U7"
+          "group": "TV news coverage about being hired by Microsoft straight out of college (oh the cringe! 😬) :",
+          "links": [
+            {
+              "label": "RTP 1",
+              "url": "https://photos.app.goo.gl/jo7DskprCoxt2jB77"
+            },
+            {
+              "label": "SIC",
+              "url": "https://photos.app.goo.gl/PY6t4TEXYK4fXmt98"
+            },
+            {
+              "label": "TVI",
+              "url": "https://photos.app.goo.gl/W3wTceGahoE2p36U7"
+            }
+          ]
         }
-      ]
+      ],
+      "description": "Worked in the Global Development Localization team, in a Tester role, for <a href=\"https://dynamics.microsoft.com/en-us/ax/\" target=\"_blank\">Microsoft Dynamics AX</a> (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing new tests, searching for and investigating application bugs.\n\nImproved internal testing tools to allow scanning for test code coverage across multipler layers, as opposed to just the root of the application's layered customization stack.\n\nDeveloped internal tool for database PII anonymization to allow data transfer across internal groups spread around different regions."
     },
     {
       "id": "hive-solutions",
@@ -57,7 +63,6 @@
       "duration": "Mar 2008 - Sep 2016 · 8 years and 7 months",
       "role": "Co-founder (Full-time)",
       "location": "Porto, Portugal · Onsite 🏢",
-      "description": "As a co-founder of Hive Solutions, I took on a variety of roles, as is common for startup founders. While my primary role was Lead Software Engineer, I also handled tasks related to sales, marketing and recruitment when needed.\n\nWe initially set out to build a SaaS Retail POS system called *[Frontdoor](#-frontdoor)*, which we developed entirely from scratch, using a tech stack fully built in-house. Although it was a technical success, it didn't achieve commercial success. We eventually pivoted to software consulting, where we shipped a diverse range of projects for numerous clients.",
       "projectIds": [
         "kaboom",
         "lugar-da-joia",
@@ -83,7 +88,8 @@
           "label": "Github",
           "url": "https://github.com/hivesolutions"
         }
-      ]
+      ],
+      "description": "As a co-founder of Hive Solutions, I took on a variety of roles, as is common for startup founders. While my primary role was Lead Software Engineer, I also handled tasks related to sales, marketing and recruitment when needed.\n\nWe initially set out to build a SaaS Retail POS system called *[Frontdoor](#-frontdoor)*, which we developed entirely from scratch, using a tech stack fully built in-house. Although it was a technical success, it didn't achieve commercial success. We eventually pivoted to software consulting, where we shipped a diverse range of projects for numerous clients."
     },
     {
       "id": "toptal",
@@ -93,7 +99,6 @@
       "duration": "Apr 2012 - Present",
       "role": "Senior Software Engineer",
       "location": "Remote 🌍",
-      "description": "Toptal is a platform connecting top developers with leading companies. It employs a rigorous screening process, assessing both advanced technical abilities and strong English proficiency. Through Toptal, I have collaborated with several companies on medium to long-term projects, consistently receiving outstanding feedback from clients.",
       "projectIds": [
         "speakwrite",
         "details-pal",
@@ -124,7 +129,8 @@
           "label": "Website",
           "url": "https://www.toptal.com/"
         }
-      ]
+      ],
+      "description": "Toptal is a platform connecting top developers with leading companies. It employs a rigorous screening process, assessing both advanced technical abilities and strong English proficiency. Through Toptal, I have collaborated with several companies on medium to long-term projects, consistently receiving outstanding feedback from clients."
     },
     {
       "id": "rocksauce-studios",
@@ -134,7 +140,6 @@
       "duration": "2013 - 2015 · 2 years",
       "role": "Senior iOS Developer (Full-time)",
       "location": "Austin, Texas · Remote 🌍",
-      "description": "Rocksauce Studios was a mobile app development company that specialized in creating custom apps for businesses and startups. While working at Hive Solutions, I was contracted by them to work on more than a dozen projects for different clients, always as an iOS developer.",
       "projectIds": [
         "speakwrite",
         "details-pal",
@@ -155,7 +160,8 @@
         "wego",
         "clockadoodle"
       ],
-      "links": []
+      "links": [],
+      "description": "Rocksauce Studios was a mobile app development company that specialized in creating custom apps for businesses and startups. While working at Hive Solutions, I was contracted by them to work on more than a dozen projects for different clients, always as an iOS developer."
     },
     {
       "id": "ripe-productions",
@@ -165,13 +171,13 @@
       "duration": "2016 · Less than a year",
       "role": "Lead Software Engineer (Full-time)",
       "location": "Porto, Portugal · Remote 🌍",
-      "description": "RIPE Productions was a company that developed e-commerce solutions for the fashion industry (this company is now called <a href=\"https://www.platforme.com/\" target=\"_blank\">PlatformE</a>).\n\nDeveloped some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#-karl-kustomize) project for <a href=\"https://www.karl.com/pt-en\" target=\"_blank\">Karl Lagerfeld</a>.\n\nIn a lesser role also contributed as a software developer to the [MYSWEAR online store](#-myswear---online-store), featuring an advanced shoe customization rendering platform, related [iOS demo](#-myswear---ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#-myswear---harrods-holographic-pyramid), a luxury department store in London.",
       "projectIds": [
         "karl-kustomize",
         "myswear-harrods-holographic-pyramid",
         "myswear-online-store"
       ],
-      "links": []
+      "links": [],
+      "description": "RIPE Productions was a company that developed e-commerce solutions for the fashion industry (this company is now called <a href=\"https://www.platforme.com/\" target=\"_blank\">PlatformE</a>).\n\nDeveloped some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#-karl-kustomize) project for <a href=\"https://www.karl.com/pt-en\" target=\"_blank\">Karl Lagerfeld</a>.\n\nIn a lesser role also contributed as a software developer to the [MYSWEAR online store](#-myswear---online-store), featuring an advanced shoe customization rendering platform, related [iOS demo](#-myswear---ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#-myswear---harrods-holographic-pyramid), a luxury department store in London."
     },
     {
       "id": "tynker",
@@ -181,7 +187,6 @@
       "duration": "Sep 2016 - May 2024",
       "role": "Lead Software Engineer (Full-time)",
       "location": "Mountain View, California · Remote 🌍",
-      "description": "Tynker is a kid-friendly platform used by over 100 million students and in more than 150,000 schools, offering coding education through games and projects from basics to advanced programming languages.\n\nAs a Lead Software Engineer, I was the main contributor to many of its core products, namely:\n\n\n❗ In all these projects, I was responsible for gathering requirements from stakeholders, researching and testing various solutions, and implementing the solution end-to-end, including deployment and post-deployment management.",
       "projectIds": [
         "help-agent",
         "block-ide-arcade-maker",
@@ -198,7 +203,8 @@
         "minecraft-editor",
         "tynker-php-mongodb-odm"
       ],
-      "links": []
+      "links": [],
+      "description": "Tynker is a kid-friendly platform used by over 100 million students and in more than 150,000 schools, offering coding education through games and projects from basics to advanced programming languages.\n\nAs a Lead Software Engineer, I was the main contributor to many of its core products, namely:\n\n- **[Help Agent](#-help-agent) 🤖💬**: a chatbot designed to assist users with inquiries related to Tynker, leveraging Large Language Models (LLM) and the Retrieval-Augmented Generation (RAG) architecture.\n- **[BYJU's Coding Cup](#-byjus-coding-cup)** ⚽👾: a soccer-themed coding competition for kids, branded as a <a href=\"https://www.prnewswire.com/ae/news-releases/byjus-unveils-the-byjus-coding-cup-enabling-kids-to-use-code-and-ai-to-field-virtual-soccer-teams-in-unison-with-the-fifa-world-cup-qatar-2022-301654538.html\" target=\"_blank\">FIFA 2022 World Cup sponsor</a>, with cash prizes, aimed at fostering coding skills and competitive spirit among young learners.\n- **[Crystal Clash](#-crystal-clash)** ⚔️🤖: an asynchronous multiplayer turn-based battlebots game that allows players to program their bots using Tynker's block-based programming language, played millions of times across numerous seasons.\n- **[Lynker](#-lynker)** 🛠💬 and the **[Collaborative Learning System](#-collaborative-learning-system)** 👥💻: enabled project sharing features in the [Block IDE](#-block-ide---version-30), real-time messaging and project editing, having been granted a <a href=\"https://patents.google.com/patent/US11699357B2\" target=\"_blank\">U.S. patent</a>.\n- **[Quizzer](#-quizzer)** 🧠❓: a modular quiz platform allowing easy integration of different question types and engines, such as allowing integration with the [Block IDE](#-block-ide---version-30) and its course content.\n- **[Block IDE - Arcade Maker](#-block-ide---arcade-maker)** 🎮👾: a simplified game development platform for kids, where they could develop and publish games without having to code.\n- **[Live Classes](#-live-classes)**: a platform that enabled educators to conduct interactive coding classes with students, by integrating videoconferencing with Tynker tools such as the [Block IDE](#-block-ide---version-30) and course content.\n- **[Coaching System](#-coaching-system)** 👩‍🏫📊: a system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.\n- **[Block IDE - Version 3.0](#-block-ide---version-30)** 🧩🔧: a major rewrite and rearchitecture of Tynker's Block Editor, at that time, the core of Tynker's educational platform.\n- **[Minecraft Editor](#-minecraft-editor)** 🛠🎮: a web 3D editor for Minecraft Bedrock Edition, enabling creation of Skins, Blocks, Items, and Mobs; as well as a block-based coding interface for Mob behaviors.\n\n❗ In all these projects, I was responsible for gathering requirements from stakeholders, researching and testing various solutions, and implementing the solution end-to-end, including deployment and post-deployment management."
     },
     {
       "id": "vaulthaus",
@@ -207,9 +213,9 @@
       "duration": "May 2024 - Present",
       "role": "AI Research Engineer (Full-time)",
       "location": "Porto, Portugal · Onsite 🏢",
-      "description": "I pursue a deliberately broad portfolio of AI initiatives—spanning deep-reinforcement-learning research, agentic and large-language-model applications, and the requisite supporting infrastructure—while systematically cultivating a rigorous, first-principles understanding of deep-learning systems and translating my insights into exploratory proof-of-concepts.\n\n# 🎓 Education",
       "projectIds": [],
-      "links": []
+      "links": [],
+      "description": "I pursue a deliberately broad portfolio of AI initiatives—spanning deep-reinforcement-learning research, agentic and large-language-model applications, and the requisite supporting infrastructure—while systematically cultivating a rigorous, first-principles understanding of deep-learning systems and translating my insights into exploratory proof-of-concepts."
     }
   ],
   "education": [
@@ -222,13 +228,13 @@
       "degree": "Licenciate, Computer Engineering",
       "grade": "18 (out of 20)",
       "location": "Lodz, Poland",
-      "description": "During my <a href=\"https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/studying-abroad\" target=\"_blank\">Erasmus</a> exchange, which took place in the final year of my Computer Engineering studies at <a href=\"https://sigarra.up.pt/feup/pt/web_page.inicial\" target=\"_blank\">FEUP</a>, I enrolled in courses on Genetic Algorithms, Cryptography, Neural Networks, Network Services Programming, and an intensive Polish language course. I successfully completed them with an average grade of 18 out of 20.\n\nHowever, the most rewarding aspect of this experience extended far beyond academics. Living in a diverse cultural melting pot, alongside students from across Europe, and having the chance to travel throughout Poland and neighboring countries, proved to be incredibly enriching. This brief but immersive experience provided personal and professional growth that far exceeded what I could have gained from traditional academic settings.\n\nBeing in a country with a language and culture so different from my own, where communication was often challenging (as neither Polish nor English were widely spoken), pushed me out of my comfort zone every day. It was a profoundly transformative experience that fostered resilience and adaptability in ways I hadn't anticipated.",
       "links": [
         {
           "label": "Website",
           "url": "https://www.uni.lodz.pl/en/"
         }
-      ]
+      ],
+      "description": "During my <a href=\"https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/studying-abroad\" target=\"_blank\">Erasmus</a> exchange, which took place in the final year of my Computer Engineering studies at <a href=\"https://sigarra.up.pt/feup/pt/web_page.inicial\" target=\"_blank\">FEUP</a>, I enrolled in courses on Genetic Algorithms, Cryptography, Neural Networks, Network Services Programming, and an intensive Polish language course. I successfully completed them with an average grade of 18 out of 20.\n\nHowever, the most rewarding aspect of this experience extended far beyond academics. Living in a diverse cultural melting pot, alongside students from across Europe, and having the chance to travel throughout Poland and neighboring countries, proved to be incredibly enriching. This brief but immersive experience provided personal and professional growth that far exceeded what I could have gained from traditional academic settings.\n\nBeing in a country with a language and culture so different from my own, where communication was often challenging (as neither Polish nor English were widely spoken), pushed me out of my comfort zone every day. It was a profoundly transformative experience that fostered resilience and adaptability in ways I hadn't anticipated."
     },
     {
       "id": "faculdade-de-engenharia-da-universidade-do-porto",
@@ -239,13 +245,13 @@
       "degree": "Licenciate, Computer Engineering",
       "grade": "16 (out of 20)",
       "location": "Porto, Portugal · Onsite 🏢",
-      "description": "The Computer Engineering course I attended was one of the most competitive in the country, with high entry requirements. Despite starting with a weak foundation in Mathematics, I worked hard to turn things around, achieving excellent entry exam results and earning the second-highest grade in my high school.\n\nThe course itself was demanding, with assignments becoming more complex each semester. By the final years, I dedicated 80-100 hours a week, not because it was required, but because I genuinely enjoyed the work. From creating 3D video games to developing neural networks, the challenges were both intense and rewarding.\n\nAdditionally, I regularly participated in ACM programming contests, placed second in the 2006 edition of the <a href=\"https://www.flickr.com/photos/tiagoafpereira/albums/72057594128921562/\" target=\"_blank\">National Logic and Functional Programming Contest</a>, and was involved in the <a href=\"https://www.esa.int/Education/ESMO_mission\" target=\"_blank\">European Space Agency's ESMO project</a>.\n\n\n# 🚀 Projects",
       "links": [
         {
           "label": "Website",
           "url": "https://sigarra.up.pt/feup/en/"
         }
-      ]
+      ],
+      "description": "The Computer Engineering course I attended was one of the most competitive in the country, with high entry requirements. Despite starting with a weak foundation in Mathematics, I worked hard to turn things around, achieving excellent entry exam results and earning the second-highest grade in my high school.\n\nThe course itself was demanding, with assignments becoming more complex each semester. By the final years, I dedicated 80-100 hours a week, not because it was required, but because I genuinely enjoyed the work. From creating 3D video games to developing neural networks, the challenges were both intense and rewarding.\n\nAdditionally, I regularly participated in ACM programming contests, placed second in the 2006 edition of the <a href=\"https://www.flickr.com/photos/tiagoafpereira/albums/72057594128921562/\" target=\"_blank\">National Logic and Functional Programming Contest</a>, and was involved in the <a href=\"https://www.esa.int/Education/ESMO_mission\" target=\"_blank\">European Space Agency's ESMO project</a>."
     }
   ],
   "projects_db": [
@@ -253,6 +259,7 @@
       "id": "help-agent",
       "emoji": "🤖",
       "title": "Help Agent",
+      "headingUrl": "https://photos.app.goo.gl/3Y9DxahzZRpCHYpy6",
       "tldr": "Sales assistant chatbot meant to assist users in Tynker related inquiries",
       "start": "2023",
       "client": "Tynker",
@@ -267,7 +274,6 @@
         "OpenAI",
         "Pinecone"
       ],
-      "narrative": "Help Agent was a chatbot developed to assist users with Tynker-related inquiries, utilizing Large Language Models (LLMs) and the Retrieval-Augmented Generation (RAG) architecture.\n\nThe project involved challenges like content scraping, data augmentation, embedding, indexing, querying, reranking, model selection, and prompt engineering. Extensive experimentation was required to ensure fast, accurate, and reliable responses while balancing safety and cost-effectiveness (less of an issue now, as LLMs have become cheaper and more reliable).\n\nA backoffice system supported the chatbot by handling data scraping, updates, and user-authored content generation with LLM assistance. It also included tools for managing chat logs, user tickets, and testing updates.\n\nMy role was to gather requirements, research solutions, and implement, deploy, and manage the system end-to-end.\n\nPost-deployment on Tynker's parent and school pages, the chatbot significantly boosted user engagement, with higher conversion rates from users who interacted with it, indicating strong potential for further development.",
       "links": [
         {
           "label": "Gallery",
@@ -275,9 +281,11 @@
         },
         {
           "label": "Help Agent in Parents page",
-          "url": "https://www.tynker.com/parents/"
+          "url": "https://www.tynker.com/parents/",
+          "suffix": "(chat button in bottom right corner)"
         }
       ],
+      "narrative": "Help Agent was a chatbot developed to assist users with Tynker-related inquiries, utilizing Large Language Models (LLMs) and the Retrieval-Augmented Generation (RAG) architecture.\n\nThe project involved challenges like content scraping, data augmentation, embedding, indexing, querying, reranking, model selection, and prompt engineering. Extensive experimentation was required to ensure fast, accurate, and reliable responses while balancing safety and cost-effectiveness (less of an issue now, as LLMs have become cheaper and more reliable).\n\nA backoffice system supported the chatbot by handling data scraping, updates, and user-authored content generation with LLM assistance. It also included tools for managing chat logs, user tickets, and testing updates.\n\nMy role was to gather requirements, research solutions, and implement, deploy, and manage the system end-to-end.\n\nPost-deployment on Tynker's parent and school pages, the chatbot significantly boosted user engagement, with higher conversion rates from users who interacted with it, indicating strong potential for further development.",
       "gallery": [
         {
           "filename": "001-backoffice_1.webp",
@@ -326,6 +334,7 @@
       "id": "block-ide-arcade-maker",
       "emoji": "🕹",
       "title": "Block IDE - Arcade Maker",
+      "headingUrl": "https://photos.app.goo.gl/ZKss72chsSgrfSMfA",
       "tldr": "Block IDE extension for creating games without coding",
       "start": "2023",
       "client": "Tynker",
@@ -340,7 +349,6 @@
         "PHP",
         "JavaScript"
       ],
-      "narrative": "Arcade Maker was an extension to the Block IDE, designed to offer a simpler entry point into game development, allowing kids to create and publish games without needing to code.\n\nThis extension enabled developers to declaratively specify configuration variables, bind them to game code, and define controls in the user interface for modifying these variables. With these features and additional upgrades, developers could create new game templates that users could remix without touching any code.\n\nMy role involved architecting the solution, developing core features, and coordinating with a Software Developer and the Game Design team responsible for creating the game templates.",
       "links": [
         {
           "label": "Gallery",
@@ -363,6 +371,7 @@
           "url": "https://www.tynker.com/block-ide?type=arcade&p=642dc5b8218b2c575d1e5e2a"
         }
       ],
+      "narrative": "Arcade Maker was an extension to the Block IDE, designed to offer a simpler entry point into game development, allowing kids to create and publish games without needing to code.\n\nThis extension enabled developers to declaratively specify configuration variables, bind them to game code, and define controls in the user interface for modifying these variables. With these features and additional upgrades, developers could create new game templates that users could remix without touching any code.\n\nMy role involved architecting the solution, developing core features, and coordinating with a Software Developer and the Game Design team responsible for creating the game templates.",
       "gallery": [
         {
           "filename": "001-fashion-designer-001.webp",
@@ -578,6 +587,7 @@
       "id": "byjus-coding-cup",
       "emoji": "⚽",
       "title": "BYJU's Coding Cup",
+      "headingUrl": "https://photos.app.goo.gl/hJ5rUAbWMr21xNuJ8",
       "tldr": "Soccer-themed coding competition for kids",
       "start": "2022",
       "client": "Tynker",
@@ -589,7 +599,6 @@
         "React",
         "PHP"
       ],
-      "narrative": "The BYJU's Coding Cup was developed as a flagship product to highlight BYJU'S sponsorship of the FIFA World Cup Qatar 2022™. Aimed at children aged 7–18, this soccer-themed coding competition introduced key programming concepts like conditional logic and debugging in an interactive, fun format. Participants coded virtual soccer teams to compete globally, enhancing their coding skills through an engaging experience.\n\nThe project, completed in six months, leveraged parts of the [Crystal Clash](#-crystal-clash) game engine to streamline development. The soccer matches were simulated in a discrete, grid-based environment, with fluid game flow achieved through clever interpolation of discrete states. Game mechanics, like skill levels influencing probabilistic events (e.g., ball steals), added strategic depth.\n\nIn my role, I ideated the game, architected the solution, and developed the backend engine, APIs, and most of the frontend (excluding match and character avatar rendering). I coordinated with another developer who handled match rendering to ensure smooth integration. I also optimized the game for performance on lower-end mobile devices.\n\nLaunched in time for the World Cup, the game was accessible via the web and integrated into Tynker Apps for iOS and Android through web views. It quickly gained popularity, with millions of matches played, and over $20,000 USD awarded in prizes during the first four rounds.",
       "links": [
         {
           "label": "Gallery",
@@ -608,6 +617,7 @@
           "url": "https://www.tynker.com/codingcup/competitions/65a637807dbf0021445757ac/leaderboards/countries"
         }
       ],
+      "narrative": "The BYJU's Coding Cup was developed as a flagship product to highlight BYJU'S sponsorship of the FIFA World Cup Qatar 2022™. Aimed at children aged 7–18, this soccer-themed coding competition introduced key programming concepts like conditional logic and debugging in an interactive, fun format. Participants coded virtual soccer teams to compete globally, enhancing their coding skills through an engaging experience.\n\nThe project, completed in six months, leveraged parts of the [Crystal Clash](#-crystal-clash) game engine to streamline development. The soccer matches were simulated in a discrete, grid-based environment, with fluid game flow achieved through clever interpolation of discrete states. Game mechanics, like skill levels influencing probabilistic events (e.g., ball steals), added strategic depth.\n\nIn my role, I ideated the game, architected the solution, and developed the backend engine, APIs, and most of the frontend (excluding match and character avatar rendering). I coordinated with another developer who handled match rendering to ensure smooth integration. I also optimized the game for performance on lower-end mobile devices.\n\nLaunched in time for the World Cup, the game was accessible via the web and integrated into Tynker Apps for iOS and Android through web views. It quickly gained popularity, with millions of matches played, and over $20,000 USD awarded in prizes during the first four rounds.",
       "gallery": [
         {
           "filename": "001-WhatsApp Image 2022-11-30 at 6.11.08 PM.webp",
@@ -946,6 +956,7 @@
       "id": "live-classes",
       "emoji": "👩‍🏫",
       "title": "Live Classes",
+      "headingUrl": "https://photos.app.goo.gl/dATH9AZGA5G8Zb2K6",
       "tldr": "Platform for educators to conduct interactive coding classes with students",
       "start": "2022",
       "client": "Tynker",
@@ -959,13 +970,13 @@
         "WebRTC",
         "Dyte"
       ],
-      "narrative": "The Live Class platform enabled educators to conduct interactive coding lessons, seamlessly integrating with Tynker's Block IDE and course content, allowing teachers to switch smoothly between live instruction and coding exercises.\n\nThe platform was created to support a new product offering that bundled small course packages with scheduled lessons, where students could receive real-time help from a teacher.\n\nMy role involved quickly defining the requirements, architecting the solution, and implementing both the backend and frontend in a short time frame.\n\nThe platform was deployed on schedule with only minor issues, mostly related to the video conferencing integration and a few cases of user error, rather than system bugs.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/dATH9AZGA5G8Zb2K6"
         }
       ],
+      "narrative": "The Live Class platform enabled educators to conduct interactive coding lessons, seamlessly integrating with Tynker's Block IDE and course content, allowing teachers to switch smoothly between live instruction and coding exercises.\n\nThe platform was created to support a new product offering that bundled small course packages with scheduled lessons, where students could receive real-time help from a teacher.\n\nMy role involved quickly defining the requirements, architecting the solution, and implementing both the backend and frontend in a short time frame.\n\nThe platform was deployed on schedule with only minor issues, mostly related to the video conferencing integration and a few cases of user error, rather than system bugs.",
       "gallery": [
         {
           "filename": "v001-Minecraft Fort Building Mastery with Redstone R.mp4",
@@ -997,6 +1008,7 @@
       "id": "quizzer",
       "emoji": "❓",
       "title": "Quizzer",
+      "headingUrl": "https://photos.app.goo.gl/tWYftTXKxePWfJ2G6",
       "tldr": "Modular quiz platform",
       "start": "2021",
       "client": "Tynker",
@@ -1011,7 +1023,6 @@
         "React Native",
         "PHP"
       ],
-      "narrative": "The Quizzer platform is a versatile tool designed to build assessments that interleave multiple interactive quiz types, using a unified content authoring format powered by MDX.\n\nThe need for this system arose from the demand for more engaging and interactive quizzes that could be easily created and maintained. Initially, these quizzes were integrated into Tynker's content progression system as placement tests to onboard users at the right skill level, later evolving into assessment tests to ensure users were ready to progress to the next level.\n\nMDX was used for modularity, allowing Quizzer to seamlessly integrate with various educational components, including interactive coding exercises.\n\nMy role was to architect and implement the full-stack solution, covering both frontend and backend development. I also developed a cross-platform native mobile prototype for Android and iOS using React Native, though this mobile version was shelved due to shifting priorities.\n\nThe solution was deployed on schedule and required minimal post-deployment maintenance, with only minor issues related to content authoring and user experience.",
       "links": [
         {
           "label": "Gallery",
@@ -1026,6 +1037,7 @@
           "url": "https://www.tynker.com/quizzer/?type=placement:text"
         }
       ],
+      "narrative": "The Quizzer platform is a versatile tool designed to build assessments that interleave multiple interactive quiz types, using a unified content authoring format powered by MDX.\n\nThe need for this system arose from the demand for more engaging and interactive quizzes that could be easily created and maintained. Initially, these quizzes were integrated into Tynker's content progression system as placement tests to onboard users at the right skill level, later evolving into assessment tests to ensure users were ready to progress to the next level.\n\nMDX was used for modularity, allowing Quizzer to seamlessly integrate with various educational components, including interactive coding exercises.\n\nMy role was to architect and implement the full-stack solution, covering both frontend and backend development. I also developed a cross-platform native mobile prototype for Android and iOS using React Native, though this mobile version was shelved due to shifting priorities.\n\nThe solution was deployed on schedule and required minimal post-deployment maintenance, with only minor issues related to content authoring and user experience.",
       "gallery": [
         {
           "filename": "001-placement-block-test-001.webp",
@@ -1123,6 +1135,7 @@
       "id": "coaching-system",
       "emoji": "👩‍🏫",
       "title": "Coaching System",
+      "headingUrl": "https://photos.app.goo.gl/rGGaisXY8zYbEPZK6",
       "tldr": "Integrated coaching management system",
       "start": "2020",
       "client": "Tynker",
@@ -1134,13 +1147,13 @@
         "PHP",
         "JavaScript"
       ],
-      "narrative": "Combining the [Collaborative Learning System](#-collaborative-learning-system) features with the [Live Classes](#-live-classes) platform, developed an integrated coaching management system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/rGGaisXY8zYbEPZK6"
         }
       ],
+      "narrative": "Combining the [Collaborative Learning System](#-collaborative-learning-system) features with the [Live Classes](#-live-classes) platform, developed an integrated coaching management system that allowed teachers to monitor student progress, provide feedback, schedule lessons, etc.",
       "gallery": [
         {
           "filename": "001-001.webp",
@@ -1176,13 +1189,14 @@
         "Redis",
         "NGINX"
       ],
-      "narrative": "Lynker was a custom-built real-time messaging server for Tynker, designed to support a wide range of features, from live dashboard notifications to project collaboration and multiplayer game development. It was engineered for scalability, reliability, security, and low-latency performance.\n\nI was responsible for the full stack development, overseeing everything from architecture to deployment and post-launch maintenance. Lynker was successfully integrated into the Tynker platform, powering key features like the [Collaborative Learning System](#-collaborative-learning-system) and the [Live Classes](#-live-classes) platform, as well as other real-time communication needs.\n\nIn hindsight, it was over-engineered, as it was built to handle a higher throughput than was ultimately needed, with features like multiplayer game development eventually backlogged due to shifting priorities.",
-      "links": []
+      "links": [],
+      "narrative": "Lynker was a custom-built real-time messaging server for Tynker, designed to support a wide range of features, from live dashboard notifications to project collaboration and multiplayer game development. It was engineered for scalability, reliability, security, and low-latency performance.\n\nI was responsible for the full stack development, overseeing everything from architecture to deployment and post-launch maintenance. Lynker was successfully integrated into the Tynker platform, powering key features like the [Collaborative Learning System](#-collaborative-learning-system) and the [Live Classes](#-live-classes) platform, as well as other real-time communication needs.\n\nIn hindsight, it was over-engineered, as it was built to handle a higher throughput than was ultimately needed, with features like multiplayer game development eventually backlogged due to shifting priorities."
     },
     {
       "id": "collaborative-learning-system",
       "emoji": "👥",
       "title": "Collaborative Learning System",
+      "headingUrl": "https://patents.google.com/patent/US11699357B2",
       "tldr": "Real-time project sharing and collaboration features for the Block IDE",
       "start": "2020",
       "client": "Tynker",
@@ -1195,7 +1209,6 @@
         "JavaScript",
         "PHP"
       ],
-      "narrative": "Using the Lynker messaging server I previously developed, I enhanced the Block IDE with collaborative learning features, including the ability to share projects, chat about them, comment on code, and monitor changes in real-time. This application was awarded a U.S. patent.",
       "links": [
         {
           "label": "Gallery",
@@ -1206,6 +1219,7 @@
           "url": "https://patents.google.com/patent/US11699357B2"
         }
       ],
+      "narrative": "Using the Lynker messaging server I previously developed, I enhanced the Block IDE with collaborative learning features, including the ability to share projects, chat about them, comment on code, and monitor changes in real-time. This application was awarded a U.S. patent.",
       "gallery": [
         {
           "filename": "001-Screenshot 2024-04-03 at 7.38.19 PM.webp",
@@ -1279,6 +1293,7 @@
       "id": "block-ide-version-30",
       "emoji": "🧩",
       "title": "Block IDE - Version 3.0",
+      "headingUrl": "https://photos.app.goo.gl/rLjp8tBGs6WNStA18",
       "tldr": "Major overhaul of Tynker's Block Editor",
       "start": "2019",
       "client": "Tynker",
@@ -1294,7 +1309,6 @@
         "CSS",
         "PHP"
       ],
-      "narrative": "In six months, I rearchitected a significant portion of Tynker's Block Editor, the core of its educational platform, to address critical scalability and maintenance issues caused by years of rushed development under tight deadlines, which had left the legacy codebase cluttered with hardcoded elements and quick-fix hacks, making it difficult to scale and maintain.\n\nI implemented a new architecture based on a custom-built extension framework, Redux for state management, and Redux Saga for handling side effects. This solution improved scalability and future-proofed the platform. The extension framework modularized functionality, enforced separation of concerns, and introduced a clear lifecycle with declarative dependency management, significantly reducing maintenance overhead and simplifying feature additions. Redux decoupled UI state from the UI, and alongside the extension framework and Redux Saga, it streamlined scaling and enabled new features to be introduced with minimal changes across modules.\n\nLooking back, a stack using PHP (for legacy reasons) + React (particularly with the release of React 16.8) + EmotionJS + the Extension Framework would have been more efficient. React could have replaced AngularJS, simplifying state management and eliminating the need for Redux. While Redux Saga was powerful, its steep learning curve for new developers would have made simpler alternatives preferable.",
       "links": [
         {
           "label": "Gallery",
@@ -1333,6 +1347,7 @@
           "url": "https://www.tynker.com/ide/v3?type=course&slug=activity:barbie-pet-vet&chapter=0&lesson=0"
         }
       ],
+      "narrative": "In six months, I rearchitected a significant portion of Tynker's Block Editor, the core of its educational platform, to address critical scalability and maintenance issues caused by years of rushed development under tight deadlines, which had left the legacy codebase cluttered with hardcoded elements and quick-fix hacks, making it difficult to scale and maintain.\n\nI implemented a new architecture based on a custom-built extension framework, Redux for state management, and Redux Saga for handling side effects. This solution improved scalability and future-proofed the platform. The extension framework modularized functionality, enforced separation of concerns, and introduced a clear lifecycle with declarative dependency management, significantly reducing maintenance overhead and simplifying feature additions. Redux decoupled UI state from the UI, and alongside the extension framework and Redux Saga, it streamlined scaling and enabled new features to be introduced with minimal changes across modules.\n\nLooking back, a stack using PHP (for legacy reasons) + React (particularly with the release of React 16.8) + EmotionJS + the Extension Framework would have been more efficient. React could have replaced AngularJS, simplifying state management and eliminating the need for Redux. While Redux Saga was powerful, its steep learning curve for new developers would have made simpler alternatives preferable.",
       "gallery": [
         {
           "filename": "001-Screenshot_1.webp",
@@ -2232,6 +2247,7 @@
       "id": "crystal-clash",
       "emoji": "🤖",
       "title": "Crystal Clash",
+      "headingUrl": "https://photos.app.goo.gl/h8BPE44JqYkjCFnT9",
       "tldr": "Multiplayer turn-based battlebots game",
       "start": "2018",
       "client": "Tynker",
@@ -2239,7 +2255,6 @@
       "role": "Lead Software Engineer",
       "platforms": "Web / iOS (WebView)",
       "technologies": [],
-      "narrative": "Crystal Clash is a multiplayer, turn-based battlebots game where players program their bots using Tynker's block-based programming language to compete in asynchronous matches. The game features monthly seasons, leaderboards, quests, and a shop where players can purchase new bot parts.\n\nThe core gameplay is similar to chess, taking place on an 8x8 grid arena where bots move, attack, and use special abilities. Matches are deterministic and the arena shrinks over time, with the objective of being the last bot standing. Players' bots follow scripts they code, which dictate their actions each turn.\n\nTo support the asynchronous gameplay and integrate Tynker's block-based programming language—originally designed for browser environments—I developed a server-side virtual machine that mirrors a subset of Tynker's features. This VM processes players' scripts to compute the game's next state.\n\nSince its release, millions of matches have been played across numerous seasons.",
       "links": [
         {
           "label": "Gallery",
@@ -2250,6 +2265,7 @@
           "url": "https://www.tynker.com/dashboard/student/#/battles/crystalclash"
         }
       ],
+      "narrative": "Crystal Clash is a multiplayer, turn-based battlebots game where players program their bots using Tynker's block-based programming language to compete in asynchronous matches. The game features monthly seasons, leaderboards, quests, and a shop where players can purchase new bot parts.\n\nThe core gameplay is similar to chess, taking place on an 8x8 grid arena where bots move, attack, and use special abilities. Matches are deterministic and the arena shrinks over time, with the objective of being the last bot standing. Players' bots follow scripts they code, which dictate their actions each turn.\n\nTo support the asynchronous gameplay and integrate Tynker's block-based programming language—originally designed for browser environments—I developed a server-side virtual machine that mirrors a subset of Tynker's features. This VM processes players' scripts to compute the game's next state.\n\nSince its release, millions of matches have been played across numerous seasons.",
       "gallery": [
         {
           "filename": "001-crystal-clash.webp",
@@ -2350,6 +2366,7 @@
       "id": "minecraft-education-edition-integration",
       "emoji": "🧱",
       "title": "Minecraft Education Edition Integration",
+      "headingUrl": "https://education.minecraft.net/",
       "tldr": "Integration of Tynker's Minecraft Editor into Minecraft Education Edition app",
       "start": "2018",
       "client": "Tynker",
@@ -2357,18 +2374,19 @@
       "role": "Lead Software Engineer",
       "platforms": "Windows 10",
       "technologies": [],
-      "narrative": "Integrated Tynker's Block Editor into the Minecraft Education Edition app, enabling users to create and deploy custom mobs in real-time. This was achieved by adding a side panel with the Tynker Editor, allowing seamless access to coding tools during gameplay.",
       "links": [
         {
           "label": "Minecraft Education Edition",
           "url": "https://education.minecraft.net/"
         }
-      ]
+      ],
+      "narrative": "Integrated Tynker's Block Editor into the Minecraft Education Edition app, enabling users to create and deploy custom mobs in real-time. This was achieved by adding a side panel with the Tynker Editor, allowing seamless access to coding tools during gameplay."
     },
     {
       "id": "mythicraft",
       "emoji": "🧱",
       "title": "Mythicraft",
+      "headingUrl": "https://photos.app.goo.gl/4mYja1dfdWLECgAs8",
       "tldr": "Integration of Minecraft Editor into a new Tynker course.",
       "start": "2017",
       "client": "Tynker",
@@ -2377,13 +2395,13 @@
       "team": "Me (Minecraft Editor) + Course Development Team (Mythicraft Course Content)",
       "platforms": "Web / iOS (WebView)",
       "technologies": [],
-      "narrative": "Tynker's Mythicraft is a creative educational course designed to teach users how to mod their Minecraft world with a focus on mythological themes. It guides learners through the creation of custom skins, magical items, blocks, and mythical creatures.\n\nThis course marked the first integration of the Minecraft Editor tool into a standard Tynker course structure, blending traditional introductory lessons with those requiring the Minecraft Editor. To achieve this, I integrated the tool into the course workflows, enabling it to be declared in the course data structures, launched at the appropriate times, and embedded within the course frame. I also implemented lesson completion detection to trigger progression to the next lesson. Additionally, I optimized the editor's performance to enhance its functionality on native mobile apps, as the course was available on those platforms as well.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/4mYja1dfdWLECgAs8"
         }
       ],
+      "narrative": "Tynker's Mythicraft is a creative educational course designed to teach users how to mod their Minecraft world with a focus on mythological themes. It guides learners through the creation of custom skins, magical items, blocks, and mythical creatures.\n\nThis course marked the first integration of the Minecraft Editor tool into a standard Tynker course structure, blending traditional introductory lessons with those requiring the Minecraft Editor. To achieve this, I integrated the tool into the course workflows, enabling it to be declared in the course data structures, launched at the appropriate times, and embedded within the course frame. I also implemented lesson completion detection to trigger progression to the next lesson. Additionally, I optimized the editor's performance to enhance its functionality on native mobile apps, as the course was available on those platforms as well.",
       "gallery": [
         {
           "filename": "v001-Mythicraft_tvai.mp4",
@@ -2397,6 +2415,7 @@
       "id": "minecraft-editor",
       "emoji": "🧱",
       "title": "Minecraft Editor",
+      "headingUrl": "https://photos.app.goo.gl/7PtgswT8BT2jcXnR9",
       "tldr": "Web 3D editor for Minecraft Bedrock Edition",
       "start": "2016",
       "client": "Tynker",
@@ -2411,7 +2430,6 @@
         "OpenAI",
         "Pinecone"
       ],
-      "narrative": "Developed a web-based 3D editor for Minecraft Bedrock Edition, allowing users to customize Skins, Blocks, Items, and Mobs. The editor included texture editing capabilities and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, which translated user inputs into Minecraft's declarative configuration files.\n\nA key challenge was optimizing performance on older iPad Mini models, where low frame rates and sluggish interactions were prevalent. To address this, I made sure I bypassed GPU compositing operations as much as possible, and implemented strict memory management strategies to mitigate the effects of unpredictable garbage collection. These optimizations ensured the editor ran smoothly within memory limits, achieving optimal frame rates.\n\nThe tool was integrated into both the Tynker App and the Mod Creator App (which <a href=\"https://photos.app.goo.gl/KDZMd8qAxy5TeSHx8\">reached top 3 in different App Store categories</a>), providing a powerful platform for Minecraft customizations. As of this writing, users have created several million assets using the editor.",
       "links": [
         {
           "label": "Gallery",
@@ -2438,6 +2456,7 @@
           "url": "https://www.tynker.com/minecraft/editor/mob/pig/"
         }
       ],
+      "narrative": "Developed a web-based 3D editor for Minecraft Bedrock Edition, allowing users to customize Skins, Blocks, Items, and Mobs. The editor included texture editing capabilities and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, which translated user inputs into Minecraft's declarative configuration files.\n\nA key challenge was optimizing performance on older iPad Mini models, where low frame rates and sluggish interactions were prevalent. To address this, I made sure I bypassed GPU compositing operations as much as possible, and implemented strict memory management strategies to mitigate the effects of unpredictable garbage collection. These optimizations ensured the editor ran smoothly within memory limits, achieving optimal frame rates.\n\nThe tool was integrated into both the Tynker App and the Mod Creator App (which <a href=\"https://photos.app.goo.gl/KDZMd8qAxy5TeSHx8\">reached top 3 in different App Store categories</a>), providing a powerful platform for Minecraft customizations. As of this writing, users have created several million assets using the editor.",
       "gallery": [
         {
           "filename": "001-DbgFyrgWAAESy37.webp",
@@ -2680,13 +2699,14 @@
         "PHP",
         "MongoDB"
       ],
-      "narrative": "I developed a web-based 3D editor for Minecraft Bedrock Edition, enabling users to customize Skins, Blocks, Items, and Mobs. The editor featured texture editing and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, translating user inputs into Minecraft's declarative configuration files.\n\nOne significant challenge was optimizing performance on older iPad Mini models, where low frame rates and sluggish interactions were common. To address this, I minimized GPU compositing operations and implemented strict memory management strategies to mitigate the effects of unpredictable garbage collection. These optimizations ensured smooth performance and maintained optimal frame rates within the device's memory constraints.\n\nThis tool was integrated into both the Tynker App and Mod Creator App, offering a robust platform for Minecraft customizations. To date, users have created several million assets using the editor.",
-      "links": []
+      "links": [],
+      "narrative": "I developed a web-based 3D editor for Minecraft Bedrock Edition, enabling users to customize Skins, Blocks, Items, and Mobs. The editor featured texture editing and a block-based coding interface for Mob behaviors, inspired by Tynker's visual programming language, translating user inputs into Minecraft's declarative configuration files.\n\nOne significant challenge was optimizing performance on older iPad Mini models, where low frame rates and sluggish interactions were common. To address this, I minimized GPU compositing operations and implemented strict memory management strategies to mitigate the effects of unpredictable garbage collection. These optimizations ensured smooth performance and maintained optimal frame rates within the device's memory constraints.\n\nThis tool was integrated into both the Tynker App and Mod Creator App, offering a robust platform for Minecraft customizations. To date, users have created several million assets using the editor."
     },
     {
       "id": "kaboom",
       "emoji": "💥",
       "title": "Kaboom!",
+      "headingUrl": "https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8",
       "tldr": "Fast-paced revival of the classic \"Lights Out\" game for iPhone, iPad, Apple TV and Apple Watch",
       "start": "2016",
       "client": "Hive Solutions",
@@ -2698,13 +2718,13 @@
         "tvOS",
         "watchOS"
       ],
-      "narrative": "Kaboom! is a fast-paced revival of the classic \"Lights Out\" game, available on iPhone, iPad, Apple TV, and Apple Watch.\n\nI coordinated the design and development of the application, contributing to core aspects of the development while also reviewing and refactoring incoming pull requests. In this project, I simultaneously served as a developer, project manager, and stakeholder, overseeing the entire process from concept to completion.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/RZVr2KQYVZ7K8jDG8"
         }
       ],
+      "narrative": "Kaboom! is a fast-paced revival of the classic \"Lights Out\" game, available on iPhone, iPad, Apple TV, and Apple Watch.\n\nI coordinated the design and development of the application, contributing to core aspects of the development while also reviewing and refactoring incoming pull requests. In this project, I simultaneously served as a developer, project manager, and stakeholder, overseeing the entire process from concept to completion.",
       "gallery": [
         {
           "filename": "001-IMG_0664.webp",
@@ -2773,6 +2793,7 @@
       "id": "karl-kustomize",
       "emoji": "👟",
       "title": "Karl Kustomize",
+      "headingUrl": "https://photos.app.goo.gl/wVCsT1Y5EKjcLgeU9",
       "tldr": "Online Shoe Customization Store",
       "start": "2016",
       "client": "RIPE Productions",
@@ -2789,13 +2810,13 @@
         "UXF",
         "Budy"
       ],
-      "narrative": "Karl Kustomize is an online store where consumers can design and purchase custom sneakers from the fashion brand <a href=\"https://www.karl.com/pt-en\" target=\"_blank\">Karl Lagerfeld</a>.\n\nI was responsible for developing core features, managing the project timeline, assigning tasks, and reviewing and refactoring pull requests from other developers to ensure a smooth and efficient development process.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/wVCsT1Y5EKjcLgeU9"
         }
       ],
+      "narrative": "Karl Kustomize is an online store where consumers can design and purchase custom sneakers from the fashion brand <a href=\"https://www.karl.com/pt-en\" target=\"_blank\">Karl Lagerfeld</a>.\n\nI was responsible for developing core features, managing the project timeline, assigning tasks, and reviewing and refactoring pull requests from other developers to ensure a smooth and efficient development process.",
       "gallery": [
         {
           "filename": "001-catalog.webp",
@@ -2845,6 +2866,7 @@
       "id": "lugar-da-joia",
       "emoji": "💍",
       "title": "Lugar da Jóia",
+      "headingUrl": "https://photos.app.goo.gl/J8zziNJajw6ZwRnm9",
       "tldr": "Online Jewellery Store",
       "start": "2016",
       "client": "Lugar da Jóia (through Hive Solutions)",
@@ -2861,7 +2883,6 @@
         "jQuery",
         "UXF"
       ],
-      "narrative": "Lugar da Jóia is a chain of jewelry stores, and this project marked their first venture into online sales.\n\nI served as both a full-stack developer and coordinator, overseeing another developer and a designer. I developed a wide range of features for the site, working on both the frontend and backend, with the latter utilizing Hive Solutions' Budy e-commerce engine to integrate with the existing infrastructure.",
       "links": [
         {
           "label": "Gallery",
@@ -2872,6 +2893,7 @@
           "url": "https://www.lugardajoia.com/index"
         }
       ],
+      "narrative": "Lugar da Jóia is a chain of jewelry stores, and this project marked their first venture into online sales.\n\nI served as both a full-stack developer and coordinator, overseeing another developer and a designer. I developed a wide range of features for the site, working on both the frontend and backend, with the latter utilizing Hive Solutions' Budy e-commerce engine to integrate with the existing infrastructure.",
       "gallery": [
         {
           "filename": "001-Screen Shot 2016-06-28 at 19.25.40.webp",
@@ -2914,6 +2936,7 @@
       "id": "windows-dev-center-app-middleware-partners",
       "emoji": "🖥",
       "title": "Windows Dev Center - App Middleware Partners",
+      "headingUrl": "https://photos.app.goo.gl/T13vtSmmCndfCmUZ7",
       "tldr": "Middleware Directory for Microsoft Partners",
       "start": "2016",
       "client": "Microsoft (through Hive Solutions)",
@@ -2926,7 +2949,6 @@
         "Docker",
         "Frontdoor"
       ],
-      "narrative": "App Middleware Partners is a section of Microsoft's Windows Dev Center that serves as a directory for Microsoft partners to showcase their middleware solutions.\n\nIn this project, I managed stakeholder communication, coordinated the design and development, and contributed to core development tasks. The biggest challenge was navigating Microsoft's complex organizational structure to gather the necessary information for integration and deployment. This required overcoming significant bureaucratic obstacles, including extensive outreach through messaging and cold-calling across multiple levels of the organization. Despite these challenges, the project was successfully delivered on time and within budget.",
       "links": [
         {
           "label": "Gallery",
@@ -2937,6 +2959,7 @@
           "url": "https://web.archive.org/web/20160401014628/https://devcenterpartners.windows.com/"
         }
       ],
+      "narrative": "App Middleware Partners is a section of Microsoft's Windows Dev Center that serves as a directory for Microsoft partners to showcase their middleware solutions.\n\nIn this project, I managed stakeholder communication, coordinated the design and development, and contributed to core development tasks. The biggest challenge was navigating Microsoft's complex organizational structure to gather the necessary information for integration and deployment. This required overcoming significant bureaucratic obstacles, including extensive outreach through messaging and cold-calling across multiple levels of the organization. Despite these challenges, the project was successfully delivered on time and within budget.",
       "gallery": [
         {
           "filename": "001-microsoft1.webp",
@@ -2979,6 +3002,7 @@
       "id": "myswear-harrods-holographic-pyramid",
       "emoji": "👟",
       "title": "MYSWEAR - Harrods Holographic Pyramid",
+      "headingUrl": "https://photos.app.goo.gl/TCP2sVwqjGtvvhx28",
       "tldr": "Instore Shoe Customization and Ordering experience with Holographic Preview",
       "start": "2016",
       "client": "RIPE Productions (through Hive Solutions)",
@@ -2995,13 +3019,13 @@
         "iOS",
         "Objective-C"
       ],
-      "narrative": "MYSWEAR set up a stand at Harrods, one of the world's most renowned department stores in London, where customers could personalize and order custom shoes while viewing their design in real-time on a four-sided holographic pyramid display.\n\nDeveloped a new mode for the existing MYSWEAR online customizer, enabling customer browser instances to remotely control the holographic viewer browser instances through real-time communication using WebSockets. Additionally, also developed a Python-based orchestrator that monitored the communication channels and coordinated the holographic display, ensuring the display's browsers operated correctly at any given time.\n\nAlso single-handedly developed a proof-of-concept native iOS application that replicated the shoe customization experience from the MYSWEAR website. This native app was created in record time and successfully used for demo purposes.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/TCP2sVwqjGtvvhx28"
         }
       ],
+      "narrative": "MYSWEAR set up a stand at Harrods, one of the world's most renowned department stores in London, where customers could personalize and order custom shoes while viewing their design in real-time on a four-sided holographic pyramid display.\n\nDeveloped a new mode for the existing MYSWEAR online customizer, enabling customer browser instances to remotely control the holographic viewer browser instances through real-time communication using WebSockets. Additionally, also developed a Python-based orchestrator that monitored the communication channels and coordinated the holographic display, ensuring the display's browsers operated correctly at any given time.\n\nAlso single-handedly developed a proof-of-concept native iOS application that replicated the shoe customization experience from the MYSWEAR website. This native app was created in record time and successfully used for demo purposes.",
       "gallery": [
         {
           "filename": "001-image-001.webp",
@@ -3029,6 +3053,7 @@
       "id": "myswear-online-store",
       "emoji": "👟",
       "title": "MYSWEAR - Online Store",
+      "headingUrl": "https://photos.app.goo.gl/8gPa9phk2cwfVtH87",
       "tldr": "Online Fashion Store with Shoe Customizer",
       "start": "2015",
       "client": "RIPE Productions (through Hive Solutions)",
@@ -3045,13 +3070,13 @@
         "UXF",
         "Farfetch API"
       ],
-      "narrative": "MYSWEAR is an online store where customers can design and purchase custom shoes from the SWEAR fashion brand.\n\nThe website was developed based on pre-existing design specifications. I developed core features and coordinated the work of other developers, including task assignment, reviewing pull requests, and refactoring code prior to merging.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/8gPa9phk2cwfVtH87"
         }
       ],
+      "narrative": "MYSWEAR is an online store where customers can design and purchase custom shoes from the SWEAR fashion brand.\n\nThe website was developed based on pre-existing design specifications. I developed core features and coordinated the work of other developers, including task assignment, reviewing pull requests, and refactoring code prior to merging.",
       "gallery": [
         {
           "filename": "001-003(1).webp",
@@ -3110,6 +3135,7 @@
       "id": "speakwrite",
       "emoji": "📝",
       "title": "SpeakWrite",
+      "headingUrl": "https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7",
       "tldr": "iOS Audio Transcribing Application",
       "start": "2015",
       "client": "Rocksauce Studios (through Toptal)",
@@ -3119,13 +3145,13 @@
         "iOS",
         "Objective-C"
       ],
-      "narrative": "SpeakWrite is an application that allows users to record audio and have it transcribed into text by human transcribers within a short period.\n\nI resolved numerous critical bugs across various parts of the app, which was particularly challenging due to the messy and disorganized existing codebase.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/53FXNdxeBmqoqXzs7"
         }
       ],
+      "narrative": "SpeakWrite is an application that allows users to record audio and have it transcribed into text by human transcribers within a short period.\n\nI resolved numerous critical bugs across various parts of the app, which was particularly challenging due to the messy and disorganized existing codebase.",
       "gallery": [
         {
           "filename": "001-IMG_0695.webp",
@@ -3143,6 +3169,7 @@
       "id": "details-pal",
       "emoji": "🐕",
       "title": "Details PAL",
+      "headingUrl": "https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7",
       "tldr": "iOS Dog Activity Tracker with Bluetooth Collar",
       "start": "2015",
       "client": "Rocksauce Studios (through Toptal)",
@@ -3155,7 +3182,6 @@
         "Parse",
         "Bluetooth"
       ],
-      "narrative": "Details PAL is an iOS application that connects with a Bluetooth activity tracker placed on a dog's collar, allowing users to monitor their pet's activity over days, weeks, and months. The app also includes nutrition tracking features to help manage the pet's food intake.\n\nI developed the application from the ground up, playing a key role in managing communication with the manufacturers of the Bluetooth collars in China. I worked extensively on developing for and testing various prototype versions of the collars, providing feedback on necessary improvements throughout the process.",
       "links": [
         {
           "label": "Gallery",
@@ -3166,6 +3192,7 @@
           "url": "https://www.kickstarter.com/projects/1792953608/details-pal-a-pet-activity-link-for-every-dog"
         }
       ],
+      "narrative": "Details PAL is an iOS application that connects with a Bluetooth activity tracker placed on a dog's collar, allowing users to monitor their pet's activity over days, weeks, and months. The app also includes nutrition tracking features to help manage the pet's food intake.\n\nI developed the application from the ground up, playing a key role in managing communication with the manufacturers of the Bluetooth collars in China. I worked extensively on developing for and testing various prototype versions of the collars, providing feedback on necessary improvements throughout the process.",
       "gallery": [
         {
           "filename": "001-Production Screen-05.webp",
@@ -3373,6 +3400,7 @@
       "id": "dont-mess-with-texas-report-a-litterer",
       "emoji": "🧼",
       "title": "Don't Mess With Texas - Report a Litterer",
+      "headingUrl": "https://photos.app.goo.gl/DoLcczf7SZpYcroK9",
       "tldr": "iOS Littering Reporting App",
       "start": "2015",
       "client": "Rocksauce Studios (through Toptal)",
@@ -3383,7 +3411,6 @@
         "iOS",
         "Objective-C"
       ],
-      "narrative": "\"Don't Mess with Texas\" is an app that allows users to report litterers to the Texas Department of Transportation's Report a Litterer Program. Users can either manually enter the details or answer questions using voice input on their mobile phone.\n\nI fixed numerous bugs across the app and implemented new features. The project was challenging due to the messy and disorganized existing codebase.",
       "links": [
         {
           "label": "Gallery",
@@ -3394,6 +3421,7 @@
           "url": "https://www.dontmesswithtexas.org/"
         }
       ],
+      "narrative": "\"Don't Mess with Texas\" is an app that allows users to report litterers to the Texas Department of Transportation's Report a Litterer Program. Users can either manually enter the details or answer questions using voice input on their mobile phone.\n\nI fixed numerous bugs across the app and implemented new features. The project was challenging due to the messy and disorganized existing codebase.",
       "gallery": [
         {
           "filename": "001-LaunchImage@2x.webp",
@@ -3446,6 +3474,7 @@
       "id": "energi-coach",
       "emoji": "⚡",
       "title": "Energi Coach",
+      "headingUrl": "https://photos.app.goo.gl/nxxb3rzMBLug6Fg27",
       "tldr": "iOS Work-Life Balance App",
       "start": "2015",
       "client": "Rocksauce Studios (through Toptal)",
@@ -3457,13 +3486,13 @@
         "Objective-C",
         "WatchKit"
       ],
-      "narrative": "Energi is an app designed to help improve work-life balance by suggesting and scheduling various types of breaks on the user's calendar.\n\nI focused on fixing complex bugs in the existing codebase for both the iPhone and Apple Watch versions of the app.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/nxxb3rzMBLug6Fg27"
         }
       ],
+      "narrative": "Energi is an app designed to help improve work-life balance by suggesting and scheduling various types of breaks on the user's calendar.\n\nI focused on fixing complex bugs in the existing codebase for both the iPhone and Apple Watch versions of the app.",
       "gallery": [
         {
           "filename": "001-Energy_Splash@2x.webp",
@@ -3561,6 +3590,7 @@
       "id": "topshelf",
       "emoji": "🥃",
       "title": "TopShelf",
+      "headingUrl": "https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6",
       "tldr": "iOS Alcohol Delivery App",
       "start": "2015",
       "client": "Rocksauce Studios (through Toptal)",
@@ -3575,13 +3605,13 @@
         "Stripe",
         "Apple Pay"
       ],
-      "narrative": "TopShelf is an app that allows users to order alcoholic beverages directly from their phone and have them delivered to their doorstep.\n\nI developed the iOS application and backend logic from the ground up, including integration with a third-party fleet management service to coordinate deliveries efficiently.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/vE4CAiCtnQHrp1PX6"
         }
       ],
+      "narrative": "TopShelf is an app that allows users to order alcoholic beverages directly from their phone and have them delivered to their doorstep.\n\nI developed the iOS application and backend logic from the ground up, including integration with a third-party fleet management service to coordinate deliveries efficiently.",
       "gallery": [
         {
           "filename": "001-topshelf-001.webp",
@@ -3620,6 +3650,7 @@
       "id": "talkit",
       "emoji": "🗣",
       "title": "TALKiT",
+      "headingUrl": "https://photos.app.goo.gl/VJkCBsdmQzt4ihMS7",
       "tldr": "iOS Social Network for Sharing Experiences",
       "start": "2015",
       "client": "Rocksauce Studios (through Toptal)",
@@ -3630,7 +3661,6 @@
         "iOS",
         "Objective-C"
       ],
-      "narrative": "TALKiT is a social media platform that offers an alternative to texting, allowing users to share their experiences by recording and sharing their voice instead of typing.",
       "links": [
         {
           "label": "Gallery",
@@ -3641,6 +3671,7 @@
           "url": "https://web.archive.org/web/20180326180938/http://www.gettalkit.com/"
         }
       ],
+      "narrative": "TALKiT is a social media platform that offers an alternative to texting, allowing users to share their experiences by recording and sharing their voice instead of typing.",
       "gallery": [
         {
           "filename": "001-talkit_poster.webp",
@@ -3689,6 +3720,7 @@
       "id": "us-likey",
       "emoji": "🛍",
       "title": "US Likey",
+      "headingUrl": "https://photos.app.goo.gl/349FvG9KzJAxKMGC9",
       "tldr": "iOS Social Network for Sharing Products",
       "start": "2015",
       "client": "Rocksauce Studios (through Toptal)",
@@ -3699,7 +3731,6 @@
         "iOS",
         "Objective-C"
       ],
-      "narrative": "Us Likey is a social network where users can share their favorite products, places, brands, foods, and more.\n\nI fixed numerous bugs and implemented new features across the app. The project was particularly challenging due to the disorganized and messy existing codebase.",
       "links": [
         {
           "label": "Gallery",
@@ -3714,6 +3745,7 @@
           "url": "https://www.facebook.com/uslikey"
         }
       ],
+      "narrative": "Us Likey is a social network where users can share their favorite products, places, brands, foods, and more.\n\nI fixed numerous bugs and implemented new features across the app. The project was particularly challenging due to the disorganized and messy existing codebase.",
       "gallery": [
         {
           "filename": "001-3help-568h-7@2x.webp",
@@ -3801,6 +3833,7 @@
       "id": "win-atlas",
       "emoji": "🌎",
       "title": "WIN Atlas",
+      "headingUrl": "https://photos.app.goo.gl/BYUjLrayGR9cRUdDA",
       "tldr": "iOS Career Guidance App",
       "start": "2015",
       "client": "Rocksauce Studios (through Toptal)",
@@ -3811,13 +3844,13 @@
         "iOS",
         "Objective-C"
       ],
-      "narrative": "WIN Atlas is a career guidance app that helps users explore career options by taking various quizzes and providing detailed information about different jobs.\n\nI developed the client-side of the app and integrated it with the server-side, which was implemented by in-house developers.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/BYUjLrayGR9cRUdDA"
         }
       ],
+      "narrative": "WIN Atlas is a career guidance app that helps users explore career options by taking various quizzes and providing detailed information about different jobs.\n\nI developed the client-side of the app and integrated it with the server-side, which was implemented by in-house developers.",
       "gallery": [
         {
           "filename": "001-Twitter-Posts2.webp",
@@ -3865,6 +3898,7 @@
       "id": "knod",
       "emoji": "📚",
       "title": "Knod",
+      "headingUrl": "https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6",
       "tldr": "iOS Media Reviews Social Network - Books, Movies, Games, etc.",
       "start": "2014",
       "client": "Rocksauce Studios (through Toptal)",
@@ -3872,13 +3906,13 @@
       "technologies": [
         "Objective-C"
       ],
-      "narrative": "Knod is a media discovery social network where users can rate movies, books, songs, games, and more, receiving personalized recommendations based on their ratings and social connections.\n\nI contributed to the initial development of the project, creating core features for the iOS app. After being reassigned to a more urgent project, I later returned to assist with additional feature development and bug fixes.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/XB4Ret1XBSLiWAoe6"
         }
       ],
+      "narrative": "Knod is a media discovery social network where users can rate movies, books, songs, games, and more, receiving personalized recommendations based on their ratings and social connections.\n\nI contributed to the initial development of the project, creating core features for the iOS app. After being reassigned to a more urgent project, I later returned to assist with additional feature development and bug fixes.",
       "gallery": [
         {
           "filename": "001-13124498_587539498068194_2810866045740281380_n.webp",
@@ -3912,6 +3946,7 @@
       "id": "valettab",
       "emoji": "🚗",
       "title": "ValetTab",
+      "headingUrl": "https://photos.app.goo.gl/mf692orHUWtw1RHp7",
       "tldr": "iOS Valet Parking Software",
       "start": "2014",
       "client": "Rocksauce Studios (through Toptal)",
@@ -3921,13 +3956,13 @@
         "iOS",
         "Objective-C"
       ],
-      "narrative": "ValetTab is an app that streamlines the valet parking experience at participating locations. It allows users to check in, notify the valet when they are ready to check out, and pay for parking directly from their phone. The companion app, ValetStand, helps valet staff manage parked cars, checkout requests, and payments.\n\nI fixed numerous bugs and implemented new features, primarily related to the payment process. The project was particularly challenging due to the disorganized and messy existing codebase.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/mf692orHUWtw1RHp7"
         }
       ],
+      "narrative": "ValetTab is an app that streamlines the valet parking experience at participating locations. It allows users to check in, notify the valet when they are ready to check out, and pay for parking directly from their phone. The companion app, ValetStand, helps valet staff manage parked cars, checkout requests, and payments.\n\nI fixed numerous bugs and implemented new features, primarily related to the payment process. The project was particularly challenging due to the disorganized and messy existing codebase.",
       "gallery": [
         {
           "filename": "001-iPhone_5.webp",
@@ -3980,6 +4015,7 @@
       "id": "academy-sports-live-fit",
       "emoji": "🏃",
       "title": "Academy Sports - LIVE FIT",
+      "headingUrl": "https://photos.app.goo.gl/AMMpRdPWMU98D7mW7",
       "tldr": "iOS Sports Tracking app",
       "start": "2014",
       "client": "Rocksauce Studios (through Toptal)",
@@ -3990,13 +4026,13 @@
         "Objective-C",
         "MapMyFitness SDK"
       ],
-      "narrative": "LIVE FIT is a sports tracking app for the Academy Sports + Outdoors retail chain. It integrates with the MapMyFitness (MMF) SDK to store and retrieve activity data from the MMF service.\n\nDuring development, I encountered numerous bugs within the MMF SDK that blocked progress. With MMF's permission, I fully refactored sections of the SDK to meet the project's deadlines. MMF appreciated the quality and speed of my work, later inviting me to contribute to feature development in the official MapMyFitness app.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/AMMpRdPWMU98D7mW7"
         }
       ],
+      "narrative": "LIVE FIT is a sports tracking app for the Academy Sports + Outdoors retail chain. It integrates with the MapMyFitness (MMF) SDK to store and retrieve activity data from the MMF service.\n\nDuring development, I encountered numerous bugs within the MMF SDK that blocked progress. With MMF's permission, I fully refactored sections of the SDK to meet the project's deadlines. MMF appreciated the quality and speed of my work, later inviting me to contribute to feature development in the official MapMyFitness app.",
       "gallery": [
         {
           "filename": "001-Screen__15.webp",
@@ -4059,6 +4095,7 @@
       "id": "active-heroes",
       "emoji": "🎖",
       "title": "Active Heroes",
+      "headingUrl": "https://photos.app.goo.gl/JkBgK1bbqhm2b1nb6",
       "tldr": "iOS Charity for Veterans App",
       "start": "2014",
       "client": "Rocksauce Studios (through Toptal)",
@@ -4069,7 +4106,6 @@
         "iOS",
         "Objective-C"
       ],
-      "narrative": "Active Heroes is a charity that supports Veterans, Active Duty Military, and their families. The Active Heroes app allows users to track workouts and share them to help raise funds for the foundation's initiatives.\n\nI fixed numerous critical and non-critical bugs in the existing app. The project was challenging due to the messy and disorganized codebase.",
       "links": [
         {
           "label": "Gallery",
@@ -4080,6 +4116,7 @@
           "url": "http://activeheroes.org"
         }
       ],
+      "narrative": "Active Heroes is a charity that supports Veterans, Active Duty Military, and their families. The Active Heroes app allows users to track workouts and share them to help raise funds for the foundation's initiatives.\n\nI fixed numerous critical and non-critical bugs in the existing app. The project was challenging due to the messy and disorganized codebase.",
       "gallery": [
         {
           "filename": "001-ActiveHeroes-FB-Logo_lr.webp",
@@ -4112,6 +4149,7 @@
       "id": "furtile",
       "emoji": "🐾",
       "title": "Furtile",
+      "headingUrl": "https://photos.app.goo.gl/Ebwb13vPBHovrK1X9",
       "tldr": "iOS Social Network for Pet Owners and Breeders",
       "start": "2014",
       "client": "Rocksauce Studios (through Toptal)",
@@ -4123,13 +4161,13 @@
         "Objective-C",
         "Parse"
       ],
-      "narrative": "Furtile is a social network designed for pet owners and breeders to connect and help pets find their ideal mates.\n\nI developed the entire application, both the iOS app and the backend, from the ground up. The project was completed in record time and successfully released on the App Store.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/Ebwb13vPBHovrK1X9"
         }
       ],
+      "narrative": "Furtile is a social network designed for pet owners and breeders to connect and help pets find their ideal mates.\n\nI developed the entire application, both the iOS app and the backend, from the ground up. The project was completed in record time and successfully released on the App Store.",
       "gallery": [
         {
           "filename": "001-splash@2x.webp",
@@ -4162,6 +4200,7 @@
       "id": "map-my-fitness-challenges",
       "emoji": "🏃",
       "title": "Map My Fitness - Challenges",
+      "headingUrl": "https://photos.app.goo.gl/yV5rQH6QvrL3yQh69",
       "tldr": "iOS Sports Tracking App",
       "start": "2014",
       "client": "Rocksauce Studios (through Toptal)",
@@ -4171,13 +4210,13 @@
         "iOS",
         "Objective-C"
       ],
-      "narrative": "MapMyFitness, one of the first activity tracking applications, was later acquired by Under Armour.\n\nI implemented the Challenges feature, as well as the Weight and Sleep sections of the 24/7 tracking feature for the widely popular MapMyFitness app. Due to the app's enormous codebase, it was challenging to navigate and work efficiently, but the features were fully implemented and delivered on schedule.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/yV5rQH6QvrL3yQh69"
         }
       ],
+      "narrative": "MapMyFitness, one of the first activity tracking applications, was later acquired by Under Armour.\n\nI implemented the Challenges feature, as well as the Weight and Sleep sections of the 24/7 tracking feature for the widely popular MapMyFitness app. Due to the app's enormous codebase, it was challenging to navigate and work efficiently, but the features were fully implemented and delivered on schedule.",
       "gallery": [
         {
           "filename": "001-Challenges_v5_Details.webp",
@@ -4190,6 +4229,7 @@
       "id": "project-capture",
       "emoji": "🛸",
       "title": "Project Capture",
+      "headingUrl": "https://photos.app.goo.gl/zdBc2yVP85U8dVNUA",
       "tldr": "iOS UFO Reporting App",
       "start": "2014",
       "client": "Rocksauce Studios (through Toptal)",
@@ -4199,13 +4239,13 @@
         "iOS",
         "Objective-C"
       ],
-      "narrative": "Project Capture is an app that allows users to report UFO sightings.\n\nAlthough the app was originally developed by someone else, I contributed by fixing numerous bugs throughout the app.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/zdBc2yVP85U8dVNUA"
         }
       ],
+      "narrative": "Project Capture is an app that allows users to report UFO sightings.\n\nAlthough the app was originally developed by someone else, I contributed by fixing numerous bugs throughout the app.",
       "gallery": [
         {
           "filename": "001-project-capture-app-icon.webp",
@@ -4269,6 +4309,7 @@
       "id": "randid",
       "emoji": "📸",
       "title": "Randid",
+      "headingUrl": "https://photos.app.goo.gl/33wt6ewUqtBV1mwB7",
       "tldr": "iOS Social Photo Sharing App",
       "start": "2014",
       "client": "Rocksauce Studios (through Toptal)",
@@ -4280,13 +4321,13 @@
         "Objective-C",
         "Parse"
       ],
-      "narrative": "Randid is a social networking app for iOS where users send a picture and receive a random one in return from other users.\n\nI was brought into the project to help steer it back on track, ultimately developing part of the client-side and most of the server-side for the app's first version.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/33wt6ewUqtBV1mwB7"
         }
       ],
+      "narrative": "Randid is a social networking app for iOS where users send a picture and receive a random one in return from other users.\n\nI was brought into the project to help steer it back on track, ultimately developing part of the client-side and most of the server-side for the app's first version.",
       "gallery": [
         {
           "filename": "001-randid screen-01.webp",
@@ -4389,6 +4430,7 @@
       "id": "wego",
       "emoji": "🏃",
       "title": "WeGo",
+      "headingUrl": "https://photos.app.goo.gl/S4mAy24CX2pggMEj8",
       "tldr": "iOS Sports Tracking app with wearable integration",
       "start": "2014",
       "client": "Rocksauce Studios (through Toptal)",
@@ -4400,13 +4442,13 @@
         "Objective-C",
         "Bluetooth"
       ],
-      "narrative": "WeGo is a fitness tracking app designed to interface with multiple low-budget hardware activity trackers.\n\nI developed the iOS application from start to finish in record time, overcoming numerous unexpected challenges. The project required integrating five different wearable devices from various manufacturers via Bluetooth and Audio Jack. The implementation was fully successful, with any remaining limitations attributed to third-party dependencies beyond our control.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/S4mAy24CX2pggMEj8"
         }
       ],
+      "narrative": "WeGo is a fitness tracking app designed to interface with multiple low-budget hardware activity trackers.\n\nI developed the iOS application from start to finish in record time, overcoming numerous unexpected challenges. The project required integrating five different wearable devices from various manufacturers via Bluetooth and Audio Jack. The implementation was fully successful, with any remaining limitations attributed to third-party dependencies beyond our control.",
       "gallery": [
         {
           "filename": "001-wego_Sign-In.webp",
@@ -4497,8 +4539,9 @@
     },
     {
       "id": "clockadoodle",
-      "emoji": "",
+      "emoji": "⏰",
       "title": "Clockadoodle",
+      "headingUrl": "https://photos.app.goo.gl/EaASm71wXHKvfNY47",
       "tldr": "iOS Alarm Clock with Youtube Video Alarms",
       "start": "2013",
       "client": "Rocksauce Studios (through Toptal)",
@@ -4509,7 +4552,6 @@
         "iOS",
         "Objective-C"
       ],
-      "narrative": "Clockadoodle was an iOS alarm clock app featuring advanced options, such as YouTube video alarms.\n\nI developed most of the application, but it remained incomplete as I was reassigned to a higher-priority project.",
       "links": [
         {
           "label": "Gallery",
@@ -4520,6 +4562,7 @@
           "url": "https://www.facebook.com/clockadoodleapp"
         }
       ],
+      "narrative": "Clockadoodle was an iOS alarm clock app featuring advanced options, such as YouTube video alarms.\n\nI developed most of the application, but it remained incomplete as I was reassigned to a higher-priority project.",
       "gallery": [
         {
           "filename": "001-iTunesArtwork@2x.webp",
@@ -4777,6 +4820,7 @@
       "id": "china-pro-tools",
       "emoji": "🧮",
       "title": "China Pro Tools",
+      "headingUrl": "https://photos.app.goo.gl/16xmzjMpPP9pP7Z88",
       "tldr": "Market Analytics Solution for Exports to China",
       "start": "2013",
       "client": "East Point Consulting, LLC (through Toptal)",
@@ -4793,13 +4837,13 @@
         "jQuery",
         "UXF"
       ],
-      "narrative": "China Pro Tools is a market analytics solution that provides decision-support statistics related to exports to China.\n\nI developed the entire application based on pre-existing specifications and delivered it precisely on schedule.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/16xmzjMpPP9pP7Z88"
         }
       ],
+      "narrative": "China Pro Tools is a market analytics solution that provides decision-support statistics related to exports to China.\n\nI developed the entire application based on pre-existing specifications and delivered it precisely on schedule.",
       "gallery": [
         {
           "filename": "001-1-Login.webp",
@@ -4832,6 +4876,7 @@
       "id": "discover-your-city",
       "emoji": "🏛",
       "title": "Discover Your City",
+      "headingUrl": "https://photos.app.goo.gl/RGoL3s92XLfNqsVa9",
       "tldr": "Travelling App for Architecture Enthusiasts",
       "start": "2013",
       "client": "Discover Your City (through Toptal)",
@@ -4847,13 +4892,13 @@
         "Heroku",
         "AWS"
       ],
-      "narrative": "Discover Your City is a travel app for architecture enthusiasts, offering guided tours of buildings featuring various styles and designs.\n\nI developed the entire application, from start to finish, based on pre-existing design specifications. The project also included a server-side back office for managing the app's content.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/RGoL3s92XLfNqsVa9"
         }
       ],
+      "narrative": "Discover Your City is a travel app for architecture enthusiasts, offering guided tours of buildings featuring various styles and designs.\n\nI developed the entire application, from start to finish, based on pre-existing design specifications. The project also included a server-side back office for managing the app's content.",
       "gallery": [
         {
           "filename": "001-2-Main-page-Log-in-A.webp",
@@ -4941,6 +4986,7 @@
       "id": "rocklobby",
       "emoji": "🎶",
       "title": "Rocklobby",
+      "headingUrl": "https://photos.app.goo.gl/paiggJ6dEvdKeBwk7",
       "tldr": "Web Music Social Network for Fans, Artists and Venues",
       "start": "2013",
       "client": "Rock Lobby (through Toptal)",
@@ -4958,7 +5004,6 @@
         "jQuery",
         "UXF"
       ],
-      "narrative": "Rocklobby is a music social network connecting artists, venues, and fans. Users can follow artists, venues, and fans, buy tickets for shows, review them, book venues for gigs, chat with others, and access various other features. This project was a reboot of a previous mobile Rocklobby app I had created for the same client, with a bigger and more ambitious vision.\n\nI developed the entire application from top to bottom while also managing the project. This involved coordinating with the designer and handling all communication with the client.",
       "links": [
         {
           "label": "Gallery",
@@ -4969,6 +5014,7 @@
           "url": "https://web.archive.org/web/20161017041055/http://www.rocklobby.com/"
         }
       ],
+      "narrative": "Rocklobby is a music social network connecting artists, venues, and fans. Users can follow artists, venues, and fans, buy tickets for shows, review them, book venues for gigs, chat with others, and access various other features. This project was a reboot of a previous mobile Rocklobby app I had created for the same client, with a bigger and more ambitious vision.\n\nI developed the entire application from top to bottom while also managing the project. This involved coordinating with the designer and handling all communication with the client.",
       "gallery": [
         {
           "filename": "001-Default@2x.webp",
@@ -5036,6 +5082,7 @@
       "id": "rocklobby-ios-app",
       "emoji": "🎶",
       "title": "Rocklobby - iOS App",
+      "headingUrl": "https://photos.app.goo.gl/8c4fpByixacvbZvAA",
       "tldr": "iOS Music Social Network for Fans, Artists and Venues",
       "start": "2013",
       "client": "Rock Lobby (through Toptal)",
@@ -5046,13 +5093,13 @@
         "iOS",
         "Objective-C"
       ],
-      "narrative": "Rocklobby was a music social network for artists, venues, and fans.\n\nI developed the client-side iOS app, collaborating with an existing developer working on the server-side. Although the app had an existing codebase, I had to rebuild it from scratch due to its poor condition. The application was successfully delivered on schedule and within the estimated budget.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/8c4fpByixacvbZvAA"
         }
       ],
+      "narrative": "Rocklobby was a music social network for artists, venues, and fans.\n\nI developed the client-side iOS app, collaborating with an existing developer working on the server-side. Although the app had an existing codebase, I had to rebuild it from scratch due to its poor condition. The application was successfully delivered on schedule and within the estimated budget.",
       "gallery": [
         {
           "filename": "001-RL_app_final_0000_Layer-Comp-1.webp",
@@ -5130,6 +5177,7 @@
       "id": "fresh-deck-poker",
       "emoji": "♣",
       "title": "Fresh Deck Poker",
+      "headingUrl": "https://photos.app.goo.gl/FoLw9hqAmi8UUrQw9",
       "tldr": "Online Poker Game with Real Cash Prizes",
       "start": "2012",
       "client": "Idle Games (through Toptal)",
@@ -5146,7 +5194,6 @@
         "jQuery",
         "RabbitMQ"
       ],
-      "narrative": "Fresh Deck Poker was an online multiplayer poker game with real cash prizes.\n\nI developed several features for the game's administration backoffice, including account management, game and table management, monetization, and odds assignment. Some requests exceeded Django's native capabilities, requiring advanced solutions like heavy-duty hacks and monkey-patching to implement the necessary features.",
       "links": [
         {
           "label": "Gallery",
@@ -5157,6 +5204,7 @@
           "url": "https://web.archive.org/web/20200724094354/http://freshdeckpoker.com/"
         }
       ],
+      "narrative": "Fresh Deck Poker was an online multiplayer poker game with real cash prizes.\n\nI developed several features for the game's administration backoffice, including account management, game and table management, monetization, and odds assignment. Some requests exceeded Django's native capabilities, requiring advanced solutions like heavy-duty hacks and monkey-patching to implement the necessary features.",
       "gallery": [
         {
           "filename": "001-002.webp",
@@ -5241,13 +5289,14 @@
         "SQL",
         "PL/SQL"
       ],
-      "narrative": "This project was a B2B portal for managing communications and transactions for the PARFOIS handbags and fashion accessories brand.\n\nInitially contracted as a consultant to help the development team adopt the required technologies, but ultimately led the entire development team to complete the project within a tight schedule and an underestimated budget. To achieve this, I identified and exploited every possible shortcut to ensure the project was delivered on time.",
-      "links": []
+      "links": [],
+      "narrative": "This project was a B2B portal for managing communications and transactions for the PARFOIS handbags and fashion accessories brand.\n\nInitially contracted as a consultant to help the development team adopt the required technologies, but ultimately led the entire development team to complete the project within a tight schedule and an underestimated budget. To achieve this, I identified and exploited every possible shortcut to ensure the project was delivered on time."
     },
     {
       "id": "bargania",
       "emoji": "💰",
       "title": "Bargania",
+      "headingUrl": "https://photos.app.goo.gl/nqtk5jtiGQ56GjCm8",
       "tldr": "Deal-a-Day Aggregation Service",
       "start": "2011",
       "client": "Hive Solutions",
@@ -5262,13 +5311,13 @@
         "jQuery",
         "UXF"
       ],
-      "narrative": "Bargania was a Deal-a-Day aggregation platform, similar to Groupon, where users could browse the latest deals from major providers, sort them based on preferences, and receive personalized newsletters with offers tailored to their profiles.\n\nI developed the core features of the platform and handled copywriting and translation for the website and all associated media, including advertising materials.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/nqtk5jtiGQ56GjCm8"
         }
       ],
+      "narrative": "Bargania was a Deal-a-Day aggregation platform, similar to Groupon, where users could browse the latest deals from major providers, sort them based on preferences, and receive personalized newsletters with offers tailored to their profiles.\n\nI developed the core features of the platform and handled copywriting and translation for the website and all associated media, including advertising materials.",
       "gallery": [
         {
           "filename": "001-03.webp",
@@ -5326,6 +5375,7 @@
       "id": "a-la-carte",
       "emoji": "🍽",
       "title": "A La Carte",
+      "headingUrl": "https://photos.app.goo.gl/WGcN6Uyiktbc9LHFA",
       "tldr": "Restaurant Search Engine",
       "start": "2010",
       "client": "Hive Solutions",
@@ -5337,13 +5387,13 @@
         "XML",
         "MySQL"
       ],
-      "narrative": "A La Carte was a restaurant search engine that allowed users to search for restaurants offering specific dishes, within a certain price range, near their location.\n\nI designed and developed the ETL components for the food indexing and search system, and created software to retrieve information from a wide array of heterogeneous data sources.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/WGcN6Uyiktbc9LHFA"
         }
       ],
+      "narrative": "A La Carte was a restaurant search engine that allowed users to search for restaurants offering specific dishes, within a certain price range, near their location.\n\nI designed and developed the ETL components for the food indexing and search system, and created software to retrieve information from a wide array of heterogeneous data sources.",
       "gallery": [
         {
           "filename": "001-a_la_carte_4.webp",
@@ -5381,6 +5431,7 @@
       "id": "mariachi",
       "emoji": "🎮",
       "title": "Mariachi",
+      "headingUrl": "https://photos.app.goo.gl/q2zvsL82jeqiKAPV7",
       "tldr": "Cross-Platform Shoot'em Up Game",
       "start": "2010",
       "client": "Hive Solutions",
@@ -5390,13 +5441,13 @@
         "Objective-C",
         "OpenGL ES"
       ],
-      "narrative": "Mariachi was a cross-platform shoot-'em-up game designed for mobile platforms.\n\nI developed and implemented the game's core logic, 3D model import feature, and physics engine.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/q2zvsL82jeqiKAPV7"
         }
       ],
+      "narrative": "Mariachi was a cross-platform shoot-'em-up game designed for mobile platforms.\n\nI developed and implemented the game's core logic, 3D model import feature, and physics engine.",
       "gallery": [
         {
           "filename": "001-mariachi_iphone_512.webp",
@@ -5409,6 +5460,7 @@
       "id": "panzerini",
       "emoji": "🤖",
       "title": "Panzerini",
+      "headingUrl": "https://photos.app.goo.gl/uuMTMyFEtspu8NBY7",
       "tldr": "Battlebots-like Game",
       "start": "2010",
       "client": "Hive Solutions",
@@ -5423,13 +5475,13 @@
         "jQuery",
         "UXF"
       ],
-      "narrative": "Panzerini was a Battlebots-style game built using Hive Solutions' Colony Framework, created for the 2010 Sapo Codebits 48-hour programming competition. Developers could write AI for their bots (as Colony plugins) and deploy them in the Panzerini arena, which ran directly in a web browser without requiring any extensions.\n\nI developed core features of the game and created the artificial intelligence for sample bots used in the arena.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/uuMTMyFEtspu8NBY7"
         }
       ],
+      "narrative": "Panzerini was a Battlebots-style game built using Hive Solutions' Colony Framework, created for the 2010 Sapo Codebits 48-hour programming competition. Developers could write AI for their bots (as Colony plugins) and deploy them in the Panzerini arena, which ran directly in a web browser without requiring any extensions.\n\nI developed core features of the game and created the artificial intelligence for sample bots used in the arena.",
       "gallery": [
         {
           "filename": "001-6993efc115bd4eea8a3a16a11c0cc05d_7.webp",
@@ -5477,6 +5529,7 @@
       "id": "schoooools",
       "emoji": "🏫",
       "title": "Schoooools",
+      "headingUrl": "https://photos.app.goo.gl/PNSdpTtKAb8t4bkr5",
       "tldr": "Social Network for Schools",
       "start": "2010",
       "client": "Schoooools (through Hive Solutions)",
@@ -5489,13 +5542,13 @@
         "CSS",
         "Ruby on Rails"
       ],
-      "narrative": "Schoooools is a platform that provides personal and social learning spaces, fostering collaboration between learners, parents, and teachers. It allows all schoolwork to be stored digitally, enabling parents to follow their children's progress, organize their work, and preserve it for future reference, sharing, or family viewing.\n\nI developed core features such as action tracking, analytics, and classroom management tools. Additionally, I created a cross-platform mobile application for the service using PhoneGap.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/PNSdpTtKAb8t4bkr5"
         }
       ],
+      "narrative": "Schoooools is a platform that provides personal and social learning spaces, fostering collaboration between learners, parents, and teachers. It allows all schoolwork to be stored digitally, enabling parents to follow their children's progress, organize their work, and preserve it for future reference, sharing, or family viewing.\n\nI developed core features such as action tracking, analytics, and classroom management tools. Additionally, I created a cross-platform mobile application for the service using PhoneGap.",
       "gallery": [
         {
           "filename": "001-02(1).webp",
@@ -5543,6 +5596,7 @@
       "id": "take-the-bill",
       "emoji": "🧾",
       "title": "Take the Bill",
+      "headingUrl": "https://photos.app.goo.gl/PNSdpTtKAb8t4bkr5",
       "tldr": "SaaS Invoicing Solution",
       "start": "2010",
       "client": "Hive Solutions",
@@ -5555,13 +5609,13 @@
         "JavaScript",
         "UXF"
       ],
-      "narrative": "Take the Bill is an online invoicing solution initially intended as a public service but ultimately deployed in private clouds, including as the billing app for Hive Solutions.\n\nI developed key backend and frontend features for the application.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/PNSdpTtKAb8t4bkr5"
         }
       ],
+      "narrative": "Take the Bill is an online invoicing solution initially intended as a public service but ultimately deployed in private clouds, including as the billing app for Hive Solutions.\n\nI developed key backend and frontend features for the application.",
       "gallery": [
         {
           "filename": "001-create_invoice_panel3.webp",
@@ -5679,6 +5733,7 @@
       "id": "frontdoor",
       "emoji": "🛍",
       "title": "Frontdoor",
+      "headingUrl": "https://photos.app.goo.gl/9qeFGMfqXWxdYXLXA",
       "tldr": "SaaS ERP Solution",
       "start": "2008",
       "client": "Hive Solutions",
@@ -5692,13 +5747,13 @@
         "jQuery",
         "UXF"
       ],
-      "narrative": "Developed back-end logic for online Point-of-Sale SaaS product using Python with the Colony Framework and its respective MVC stack. Also developed front-end for same system through extensive usage of JavaScript and jQuery to create a productive user experience.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/9qeFGMfqXWxdYXLXA"
         }
       ],
+      "narrative": "Developed back-end logic for online Point-of-Sale SaaS product using Python with the Colony Framework and its respective MVC stack. Also developed front-end for same system through extensive usage of JavaScript and jQuery to create a productive user experience.",
       "gallery": [
         {
           "filename": "001-02.webp",
@@ -5791,6 +5846,7 @@
       "id": "colony-framework",
       "emoji": "🔌",
       "title": "Colony Framework",
+      "headingUrl": "https://photos.app.goo.gl/g5w3nPii7GgV5AeA6",
       "tldr": "Modularity Container Framework",
       "start": "2008",
       "client": "Hive Solutions",
@@ -5799,13 +5855,13 @@
         "Python",
         "JavaScript"
       ],
-      "narrative": "Colony is a modularity container that allows plugins to be deployed, loaded, and unloaded in real-time without restarting the container.\n\nI developed core technology for the framework, authored technical documentation, and contributed to marketing efforts by designing storylines for videos and comic books, as well as handling various copywriting tasks.",
       "links": [
         {
           "label": "Gallery",
           "url": "https://photos.app.goo.gl/g5w3nPii7GgV5AeA6"
         }
       ],
+      "narrative": "Colony is a modularity container that allows plugins to be deployed, loaded, and unloaded in real-time without restarting the container.\n\nI developed core technology for the framework, authored technical documentation, and contributed to marketing efforts by designing storylines for videos and comic books, as well as handling various copywriting tasks.",
       "gallery": [
         {
           "filename": "001-colony.comics.accelerated_development 3-3.webp",
@@ -5913,13 +5969,14 @@
         "ASP.NET",
         "SQL Server"
       ],
-      "narrative": "Collaborated in an academic-enterprise partnership to deliver a functional knowledge management system for the organization's helpdesk support team.\n\nAs part of a unique 11-person team selected for diverse personalities and skills, I assumed the role of \"Coach,\" acting as a bridge between management and the development team. This role provided valuable insights into management, team dynamics, and workflow optimization, and taught me to utilize different motivation strategies to suit various personality types.\n\nThe final product was successfully completed and deployed at the partner enterprise's facilities.",
-      "links": []
+      "links": [],
+      "narrative": "Collaborated in an academic-enterprise partnership to deliver a functional knowledge management system for the organization's helpdesk support team.\n\nAs part of a unique 11-person team selected for diverse personalities and skills, I assumed the role of \"Coach,\" acting as a bridge between management and the development team. This role provided valuable insights into management, team dynamics, and workflow optimization, and taught me to utilize different motivation strategies to suit various personality types.\n\nThe final product was successfully completed and deployed at the partner enterprise's facilities."
     },
     {
       "id": "nihonaid",
       "emoji": "🥋",
       "title": "Nihonaid",
+      "headingUrl": "https://sourceforge.net/projects/nihonaid/",
       "tldr": "Japanese Language Learning Assistant",
       "start": "2006",
       "client": "Me",
@@ -5928,13 +5985,13 @@
         "C#",
         "SQL Server"
       ],
-      "narrative": "Nihonaid is a tool I developed to assist with learning Japanese, specifically for memorizing the Kanji character set.\n\nThe app presented each character in order of complexity, prompting the user for its meaning. After revealing the correct meaning, the user would rate how well they remembered it. This feedback was processed by a Neural Network, which tracked the user's knowledge of each character and determined the optimal time to reintroduce it for review.\n\nThe system focused on characters the user either didn't know or was predicted to have forgotten. For example, if a user didn't recognize a character, the app would present it again in the next session. If the user remembered it, the app would space out the reviews progressively, showing it again in two days, then a week, and so on.\n\nWith this system, daily sessions ensured the user retained previously learned characters, as the app adapted to their individual learning and forgetting curve.",
       "links": [
         {
           "label": "Sourceforge project",
           "url": "https://sourceforge.net/projects/nihonaid/"
         }
-      ]
+      ],
+      "narrative": "Nihonaid is a tool I developed to assist with learning Japanese, specifically for memorizing the Kanji character set.\n\nThe app presented each character in order of complexity, prompting the user for its meaning. After revealing the correct meaning, the user would rate how well they remembered it. This feedback was processed by a Neural Network, which tracked the user's knowledge of each character and determined the optimal time to reintroduce it for review.\n\nThe system focused on characters the user either didn't know or was predicted to have forgotten. For example, if a user didn't recognize a character, the app would present it again in the next session. If the user remembered it, the app would space out the reviews progressively, showing it again in two days, then a week, and so on.\n\nWith this system, daily sessions ensured the user retained previously learned characters, as the app adapted to their individual learning and forgetting curve."
     },
     {
       "id": "clube-de-karate-da-maia",
@@ -5950,13 +6007,14 @@
         "PHP",
         "MySQL"
       ],
-      "narrative": "Created a website for the Clube de Karate da Maia, a local karate club where I trained for many years. The website was implemented using the Joomla framework, leveraging PHP as the scripting language and a MySQL database for data management.\n\nThrough this project, I gained experience in customizing the Mambo/Joomla Content Management System to provide essential functionalities for a community-oriented website.",
-      "links": []
+      "links": [],
+      "narrative": "Created a website for the Clube de Karate da Maia, a local karate club where I trained for many years. The website was implemented using the Joomla framework, leveraging PHP as the scripting language and a MySQL database for data management.\n\nThrough this project, I gained experience in customizing the Mambo/Joomla Content Management System to provide essential functionalities for a community-oriented website."
     },
     {
       "id": "neuralj",
       "emoji": "🧠",
       "title": "NeuralJ",
+      "headingUrl": "https://sourceforge.net/projects/neuralj/",
       "tldr": "Neural Network Library for Java",
       "start": "2005",
       "client": "Me",
@@ -5964,13 +6022,13 @@
       "technologies": [
         "Java"
       ],
-      "narrative": "NeuralJ was an open-source software project I created to provide an efficient and user-friendly Neural Network library for Java.\n\nThrough this project, I deepened my understanding of Neural Networks and Genetic Algorithms, while also honing my skills in Java programming and software architecture.",
       "links": [
         {
           "label": "SourceForge project",
           "url": "https://sourceforge.net/projects/neuralj/"
         }
       ],
+      "narrative": "NeuralJ was an open-source software project I created to provide an efficient and user-friendly Neural Network library for Java.\n\nThrough this project, I deepened my understanding of Neural Networks and Genetic Algorithms, while also honing my skills in Java programming and software architecture.",
       "gallery": [
         {
           "filename": "001-1602180471271.webp",
@@ -5983,6 +6041,7 @@
       "id": "clube-do-paiva",
       "emoji": "🛶",
       "title": "Clube do Paiva",
+      "headingUrl": "https://www.clubedopaiva.com/",
       "tldr": "Extreme Sports Company Website",
       "start": "2004",
       "client": "Clube do Paiva",
@@ -5991,35 +6050,37 @@
         "PHP",
         "MySQL"
       ],
-      "narrative": "Handled entire backend production of a website, web application and database programming. Solution was provided in the form of a web application implemented in the PHP scripting language, interfacing with a MySQL database.",
       "links": [
         {
           "label": "Website",
           "url": "https://www.clubedopaiva.com/"
         }
-      ]
+      ],
+      "narrative": "Handled entire backend production of a website, web application and database programming. Solution was provided in the form of a web application implemented in the PHP scripting language, interfacing with a MySQL database."
     },
     {
       "id": "european-student-moon-orbiter",
       "emoji": "🌔",
       "title": "European Student Moon Orbiter",
+      "headingUrl": "https://www.esa.int/Education/European_Student_Moon_Orbiter",
       "tldr": "European Space Agency Student Sattellite Project",
       "start": "2004",
       "client": "European Space Agency (through FEUP)",
       "location": "Porto, Portugal · Remote 🌍",
       "technologies": [],
-      "narrative": "I served as the Coordinator of the Software subteam within the On Board Data Handler team for the European Student Moon Orbiter project, part of the European Space Agency's SSETI (Student Space Exploration & Technology Initiative) program, which aimed to deploy a satellite into lunar orbit.\n\nOne of the key lessons I took away from this experience was the immense value of effective teamwork.",
       "links": [
         {
           "label": "ESMO Project",
           "url": "https://www.esa.int/Education/European_Student_Moon_Orbiter"
         }
-      ]
+      ],
+      "narrative": "I served as the Coordinator of the Software subteam within the On Board Data Handler team for the European Student Moon Orbiter project, part of the European Space Agency's SSETI (Student Space Exploration & Technology Initiative) program, which aimed to deploy a satellite into lunar orbit.\n\nOne of the key lessons I took away from this experience was the immense value of effective teamwork."
     },
     {
       "id": "computer-capers",
       "emoji": "🎮",
       "title": "Computer Capers",
+      "headingUrl": "https://photos.app.goo.gl/uMKFMcYurDnpCged8",
       "tldr": "Adventure Game for the Commodore Amiga",
       "start": "1996",
       "client": "Me",
@@ -6027,7 +6088,6 @@
       "technologies": [
         "AMOS Basic"
       ],
-      "narrative": "Computer Capers was a video game I developed at 12 years old and submitted to a monthly competition in Amiga Format magazine. Although the plot was simplistic and cringe, and the mechanics basic, I was proud of my accomplishment, especially given my age and having no internet access of any kind at the time. The game featured a tile-based world where players interacted with characters searching for specific items. By finding and trading these items, players advanced the storyline. I was particularly encouraged by the positive feedback I received from the magazine's contest reviewer.",
       "links": [
         {
           "label": "Gallery",
@@ -6038,6 +6098,7 @@
           "url": "https://photos.app.goo.gl/uMKFMcYurDnpCged8"
         }
       ],
+      "narrative": "Computer Capers was a video game I developed at 12 years old and submitted to a monthly competition in Amiga Format magazine. Although the plot was simplistic and cringe, and the mechanics basic, I was proud of my accomplishment, especially given my age and having no internet access of any kind at the time. The game featured a tile-based world where players interacted with characters searching for specific items. By finding and trading these items, players advanced the storyline. I was particularly encouraged by the positive feedback I received from the magazine's contest reviewer.",
       "gallery": [
         {
           "filename": "001-computer_capers.webp",
@@ -6055,12 +6116,17 @@
   ],
   "misc": [
     {
-      "label": "Slides",
-      "url": "https://www.slideshare.net/hivesolutions/mind-hacking-101"
-    },
-    {
-      "label": "Audio",
-      "url": "https://www.youtube.com/watch?v=8rTSRpF5SHE"
+      "label": "Mindhacking 101 presentation at BarcampPT 2010 (Porto, Portugal)",
+      "links": [
+        {
+          "label": "Slides",
+          "url": "https://www.slideshare.net/hivesolutions/mind-hacking-101"
+        },
+        {
+          "label": "Audio",
+          "url": "https://www.youtube.com/watch?v=8rTSRpF5SHE"
+        }
+      ]
     }
   ]
 }
