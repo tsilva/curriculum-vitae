@@ -6,21 +6,33 @@
     "stars": 1,
     "forks": 0,
     "language": "Shell",
-    "updatedAt": "2026-03-06T16:04:25Z",
+    "updatedAt": "2026-03-06T17:29:16Z",
     "createdAt": "2026-01-08T14:52:54Z",
     "url": "https://github.com/tsilva/agentpong",
     "commits": 0
   },
   {
-    "id": "model-playground",
-    "name": "model-playground",
+    "id": "llame",
+    "name": "llame",
     "description": "",
     "stars": 0,
     "forks": 0,
     "language": "TypeScript",
-    "updatedAt": "2026-03-06T15:46:20Z",
+    "updatedAt": "2026-03-06T18:05:23Z",
     "createdAt": "2026-03-06T15:44:20Z",
-    "url": "https://github.com/tsilva/model-playground",
+    "url": "https://github.com/tsilva/llame",
+    "commits": 0
+  },
+  {
+    "id": "mobileassetgen",
+    "name": "mobileassetgen",
+    "description": "📱 Generate production-ready Android app assets from a single text prompt — icons, round icons, notifications, and Play Store graphics, all in seconds ⚡",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-03-06T17:47:59Z",
+    "createdAt": "2026-03-03T16:52:27Z",
+    "url": "https://github.com/tsilva/mobileassetgen",
     "commits": 0
   },
   {
@@ -33,18 +45,6 @@
     "updatedAt": "2026-03-06T15:42:52Z",
     "createdAt": "2025-03-09T17:07:24Z",
     "url": "https://github.com/tsilva/papertrail",
-    "commits": 0
-  },
-  {
-    "id": ".github",
-    "name": ".github",
-    "description": "Shared reusable GitHub Actions workflows and org-wide maintenance tooling for the tsilva organization",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-06T14:48:08Z",
-    "createdAt": "2026-02-02T15:50:37Z",
-    "url": "https://github.com/tsilva/.github",
     "commits": 0
   },
   {
@@ -93,18 +93,6 @@
     "updatedAt": "2026-03-02T12:18:52Z",
     "createdAt": "2024-08-02T15:00:41Z",
     "url": "https://github.com/tsilva/aiml-notebooks",
-    "commits": 0
-  },
-  {
-    "id": "workflow-claude-supervisor",
-    "name": "workflow-claude-supervisor",
-    "description": "🎛️ Supervise multiple Claude Code instances in parallel — switch contexts instantly, get notified when tasks complete 🔔",
-    "stars": 1,
-    "forks": 0,
-    "language": null,
-    "updatedAt": "2026-03-02T12:23:14Z",
-    "createdAt": "2026-01-25T13:08:34Z",
-    "url": "https://github.com/tsilva/workflow-claude-supervisor",
     "commits": 0
   },
   {
@@ -333,18 +321,6 @@
     "updatedAt": "2026-03-03T18:21:11Z",
     "createdAt": "2025-01-13T12:00:33Z",
     "url": "https://github.com/tsilva/sandbox-crewai",
-    "commits": 0
-  },
-  {
-    "id": "mobileassetgen",
-    "name": "mobileassetgen",
-    "description": "TODO: Add description.",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-03-03T18:09:29Z",
-    "createdAt": "2026-03-03T16:52:27Z",
-    "url": "https://github.com/tsilva/mobileassetgen",
     "commits": 0
   },
   {
