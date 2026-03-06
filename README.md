@@ -1233,7 +1233,6 @@ Open source projects and contributions.
 - [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
 - [obsidian-agents-plugin](https://github.com/tsilva/obsidian-agents-plugin) - Launch AI agents from Obsidian vault
 - [aiml-notebooks](https://github.com/tsilva/aiml-notebooks) - AI/ML Jupyter notebooks for learning deep learning concepts
-- [workflow-claude-supervisor](https://github.com/tsilva/workflow-claude-supervisor) - Supervise multiple Claude Code instances in parallel
 - [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
 - [claudebridge](https://github.com/tsilva/claudebridge) - Bridge OpenAI tools to Claude Code SDK
 - [claudebox](https://github.com/tsilva/claudebox) - Full autonomy sandbox for Claude Code
@@ -1272,6 +1271,7 @@ Open source projects and contributions.
 - [aerospace-setup](https://github.com/tsilva/aerospace-setup) - Portable Aerospace configuration with Cursor project switching
 - [retro-asset-gen](https://github.com/tsilva/retro-asset-gen) - Generate retro gaming assets using Gemini AI **[Archived]**
 - [retro-romset-cleaner](https://github.com/tsilva/retro-romset-cleaner) - Clean up retro ROM collections **[Archived]**
+- [workflow-claude-supervisor](https://github.com/tsilva/workflow-claude-supervisor) - Supervise multiple Claude Code instances in parallel
 - [youtube-downloader](https://github.com/tsilva/youtube-downloader) - Download YouTube videos and extract audio
 
 ## 🔗 Misc
