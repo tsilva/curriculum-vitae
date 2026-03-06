@@ -1262,13 +1262,13 @@ Open source projects and contributions.
 - [gymsolve](https://github.com/tsilva/gymsolve) - Fast RL framework with PPO and REINFORCE on Gymnasium
 - [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
 - [gmail2obsidian](https://github.com/tsilva/gmail2obsidian) - Flush Gmail threads into Obsidian task files
-- [dataset-explorer-agent](https://github.com/tsilva/dataset-explorer-agent) - Validate dataset schemas with regex pattern analysis
 - [claudesk](https://github.com/tsilva/claudesk) - Interactive dashboard for launching Claude Code agents
-- [botty-mcbotface](https://github.com/tsilva/botty-mcbotface) - Gradio-powered AI chatbot with tools and memory
 - [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
 - [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
 - [archex](https://github.com/tsilva/archex) - Recursively extract archives from directory trees
 - [aerospace-setup](https://github.com/tsilva/aerospace-setup) - Portable Aerospace configuration with Cursor project switching
+- [botty-mcbotface](https://github.com/tsilva/botty-mcbotface) - Gradio-powered AI chatbot with tools and memory
+- [dataset-explorer-agent](https://github.com/tsilva/dataset-explorer-agent) - Validate dataset schemas with regex pattern analysis
 - [retro-asset-gen](https://github.com/tsilva/retro-asset-gen) - Generate retro gaming assets using Gemini AI **[Archived]**
 - [retro-romset-cleaner](https://github.com/tsilva/retro-romset-cleaner) - Clean up retro ROM collections **[Archived]**
 - [workflow-claude-supervisor](https://github.com/tsilva/workflow-claude-supervisor) - Supervise multiple Claude Code instances in parallel
