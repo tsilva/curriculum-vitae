@@ -31,14 +31,14 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-end md:items-center justify-center modal-backdrop bg-black/80"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="bg-base-light border border-cyan/20 rounded-sm w-full h-[95vh] md:h-auto md:max-w-2xl md:max-h-[85vh] overflow-y-auto shadow-[0_0_30px_rgba(0,230,230,0.1),0_0_60px_rgba(0,230,230,0.05)]">
-        {/* Terminal window chrome */}
-        <div className="sticky top-0 bg-base-light/95 backdrop-blur border-b border-cyan/10 px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
+      <div className="bg-base-light border border-cyan/20 rounded-sm w-full max-w-3xl h-[90vh] flex flex-col shadow-[0_0_30px_rgba(0,230,230,0.1),0_0_60px_rgba(0,230,230,0.05)] mx-4">
+        {/* Terminal window chrome - fixed header */}
+        <div className="flex-shrink-0 bg-base-light/95 backdrop-blur border-b border-cyan/10 px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <div className="flex items-center gap-3 min-w-0">
             {/* Terminal dots */}
             <div className="flex gap-1.5 flex-shrink-0">
@@ -76,8 +76,8 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           </div>
         </div>
 
-        {/* Body */}
-        <div className="px-4 py-4 md:px-6 md:py-6 space-y-6">
+        {/* Body - scrollable content */}
+        <div className="flex-1 overflow-y-auto px-4 py-4 md:px-6 md:py-6 space-y-6">
           {/* Section: Meta Data */}
           <div className="space-y-4">
             <div className="flex items-center gap-2 mb-2">
