@@ -1,4 +1,4 @@
-// Assembles web/src/data/cv-data.json from data/**/*.md (frontmatter) + data/*.yaml + galleries
+// Assembles web/src/data/cv-data.json from data/**/*.md (frontmatter) + data/misc.yaml + galleries
 import * as fs from "fs";
 import * as path from "path";
 import { createRequire } from "module";
@@ -162,8 +162,13 @@ function main() {
     };
   });
 
-  // Read OSS and misc from YAML
-  const oss = readYaml("oss.yaml");
+  // Read OSS from frontmatter files
+  const oss = readFrontmatterFiles(path.join(DATA_DIR, "oss")).map(({ data, content }) => {
+    const { order, ...rest } = data;
+    return { ...rest, ...(content ? { narrative: content } : {}) };
+  });
+
+  // Read misc from YAML
   const misc = readYaml("misc.yaml");
 
   const assembled = { tldr, employers, education, projects_db, misc };

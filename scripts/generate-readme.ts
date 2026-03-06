@@ -1,4 +1,4 @@
-// Generates README.md from data/**/*.md (frontmatter) + data/*.yaml
+// Generates README.md from data/**/*.md (frontmatter) + data/misc.yaml
 import * as fs from "fs";
 import * as path from "path";
 import { createRequire } from "module";
@@ -130,10 +130,10 @@ function generateProjects(): string {
 }
 
 function generateOSS(): string {
-  const oss = readYaml("oss.yaml");
-  const lines = oss.map((entry: any) => {
-    const archived = entry.archived ? " **[Archived]**" : "";
-    return `- [${entry.name}](${entry.url}) - ${entry.description}${archived}`;
+  const oss = readFrontmatterFiles(path.join(DATA_DIR, "oss"));
+  const lines = oss.map(({ data }) => {
+    const archived = data.archived ? " **[Archived]**" : "";
+    return `- [${data.name}](${data.url}) - ${data.description}${archived}`;
   });
 
   return `---\n\n## 🔓 OSS\n\nOpen source projects and contributions.\n\n${lines.join("\n")}`;
