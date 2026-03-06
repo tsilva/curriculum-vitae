@@ -78,7 +78,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
         </div>
 
         {/* Body - scrollable content */}
-        <div className="flex-1 overflow-y-auto px-4 py-4 md:px-6 md:py-6 space-y-6">
+        <div className="flex-1 overflow-y-auto overscroll-y-contain px-4 py-4 md:px-6 md:py-6 space-y-6">
           {/* Section: Meta Data */}
           <div className="space-y-4">
             <div className="flex items-center gap-2 mb-2">
