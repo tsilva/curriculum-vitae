@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import type { Project } from "@/types/cv";
 import { TechBadge } from "./TechBadge";
+import { useModal } from "@/hooks/useModal";
 
 interface ProjectModalProps {
   project: Project | null;
@@ -11,20 +11,7 @@ interface ProjectModalProps {
 }
 
 export function ProjectModal({ project, onClose }: ProjectModalProps) {
-  useEffect(() => {
-    if (!project) return;
-    
-    const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-    };
-    document.body.style.overflow = "hidden";
-    window.addEventListener("keydown", handleEsc);
-    
-    return () => {
-      document.body.style.overflow = "";
-      window.removeEventListener("keydown", handleEsc);
-    };
-  }, [project, onClose]);
+  useModal(!!project, onClose);
 
   if (!project) return null;
 

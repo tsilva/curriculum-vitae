@@ -1,29 +1,22 @@
 "use client";
 
-import { useState, useMemo, useEffect, useRef, useCallback } from "react";
+import { useState, useMemo, useEffect } from "react";
 import type { Project } from "@/types/cv";
-import { projects as allProjects, data } from "@/lib/data";
+import { projects as allProjects } from "@/lib/data";
 import { FilterBar } from "./FilterBar";
 import { TechBrowser } from "./TechBrowser";
 import { ProjectCard } from "./ProjectCard";
 import { ProjectModal } from "./ProjectModal";
 import { GalleryModal } from "./GalleryModal";
-
-const ITEMS_PER_PAGE = 12; // Number of items to render at once
-const ITEM_HEIGHT_ESTIMATE = 280; // Estimated height of a project card
+import { useInfiniteScroll } from "@/hooks/useInfiniteScroll";
 
 export function Projects() {
   const [selectedTechs, setSelectedTechs] = useState<string[]>([]);
   const [isTechBrowserOpen, setIsTechBrowserOpen] = useState(false);
   const [modalProject, setModalProject] = useState<Project | null>(null);
   const [galleryModalProject, setGalleryModalProject] = useState<Project | null>(null);
-  const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
   const [filterKey, setFilterKey] = useState(0);
-  const gridRef = useRef<HTMLDivElement>(null);
-  const loadMoreRef = useRef<HTMLDivElement>(null);
 
-  const projects = useMemo(() => allProjects, []);
-  
   const technologies = useMemo(() => {
     const techMap: Record<string, number> = {};
     for (const project of allProjects) {
@@ -37,57 +30,27 @@ export function Projects() {
   }, []);
 
   const filtered = useMemo(() => {
-    if (selectedTechs.length === 0) return projects;
-    return projects.filter((p) =>
+    if (selectedTechs.length === 0) return allProjects;
+    return allProjects.filter((p) =>
       selectedTechs.some((tech) => p.technologies.includes(tech))
     );
-  }, [projects, selectedTechs]);
-
-  // Virtualized: only render visible items
-  const visibleProjects = useMemo(() => {
-    return filtered.slice(0, visibleCount);
-  }, [filtered, visibleCount]);
-
-  // Reset visible count when filters change
-  useEffect(() => {
-    setVisibleCount(ITEMS_PER_PAGE);
-    setFilterKey((prev) => prev + 1);
   }, [selectedTechs]);
 
-  // IntersectionObserver for infinite scroll
+  const { visible, remaining, loadMoreRef, ITEMS_PER_PAGE } = useInfiniteScroll(filtered, [selectedTechs]);
+
+  // Reset filter key for animation
   useEffect(() => {
-    if (!loadMoreRef.current || visibleCount >= filtered.length) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setVisibleCount((prev) => Math.min(prev + ITEMS_PER_PAGE, filtered.length));
-        }
-      },
-      { rootMargin: "200px" }
-    );
-
-    observer.observe(loadMoreRef.current);
-    return () => observer.disconnect();
-  }, [visibleCount, filtered.length]);
-
-  // Debug: Log projects with galleries
-  useEffect(() => {
-    const withGalleries = projects.filter(p => p.gallery && p.gallery.length > 0);
-    console.log(`Projects with galleries: ${withGalleries.length}`, withGalleries.map(p => p.id));
-  }, [projects]);
+    setFilterKey((prev) => prev + 1);
+  }, [selectedTechs]);
 
   // Listen for gallery open events from ProjectModal
   useEffect(() => {
     const handleOpenGallery = (e: CustomEvent<Project>) => {
       setGalleryModalProject(e.detail);
     };
-    
+
     window.addEventListener('openProjectGallery', handleOpenGallery as EventListener);
-    
-    return () => {
-      window.removeEventListener('openProjectGallery', handleOpenGallery as EventListener);
-    };
+    return () => window.removeEventListener('openProjectGallery', handleOpenGallery as EventListener);
   }, []);
 
   const handleTechSelect = (tech: string | null) => {
@@ -99,14 +62,6 @@ export function Projects() {
       );
     }
   };
-
-  const handleTechToggle = (tech: string) => {
-    setSelectedTechs((prev) =>
-      prev.includes(tech) ? prev.filter((t) => t !== tech) : [...prev, tech]
-    );
-  };
-
-  const remainingCount = filtered.length - visibleProjects.length;
 
   return (
     <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
@@ -122,33 +77,32 @@ export function Projects() {
       />
 
       <div className="mt-6 font-[family-name:var(--font-mono)] text-sm text-steel">
-        <span className="text-steel-dim">//</span> Displaying {visibleProjects.length}{" "}
-        of {projects.length} records
+        <span className="text-steel-dim">//</span> Displaying {visible.length}{" "}
+        of {allProjects.length} records
         {selectedTechs.length > 0 && (
           <span className="text-cyan ml-2">
             (matching {selectedTechs.length} filter
             {selectedTechs.length > 1 ? "s" : ""})
           </span>
         )}
-        {remainingCount > 0 && (
+        {remaining > 0 && (
           <span className="text-steel-dim ml-2">
-            — {remainingCount} more below
+            — {remaining} more below
           </span>
         )}
       </div>
 
       <div
-        ref={gridRef}
         key={filterKey}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 content-visibility-auto"
       >
-        {visibleProjects.map((project, index) => (
+        {visible.map((project, index) => (
           <div
             key={project.id}
             className="h-full contain-layout"
             style={{
-              animation: index < ITEMS_PER_PAGE 
-                ? `stagger-fade-in 0.4s ease-out ${index * 0.04}s both` 
+              animation: index < ITEMS_PER_PAGE
+                ? `stagger-fade-in 0.4s ease-out ${index * 0.04}s both`
                 : undefined,
             }}
           >
@@ -160,12 +114,8 @@ export function Projects() {
         ))}
       </div>
 
-      {/* Load more trigger */}
-      {remainingCount > 0 && (
-        <div 
-          ref={loadMoreRef}
-          className="mt-8 py-8 text-center"
-        >
+      {remaining > 0 && (
+        <div ref={loadMoreRef} className="mt-8 py-8 text-center">
           <div className="font-[family-name:var(--font-mono)] text-sm text-steel-dim animate-pulse">
             <span className="text-cyan">...</span> Loading more projects <span className="text-cyan">...</span>
           </div>
@@ -175,7 +125,7 @@ export function Projects() {
       <TechBrowser
         technologies={technologies}
         selected={selectedTechs}
-        onToggle={handleTechToggle}
+        onToggle={(tech) => handleTechSelect(tech)}
         onClear={() => setSelectedTechs([])}
         onClose={() => setIsTechBrowserOpen(false)}
         isOpen={isTechBrowserOpen}

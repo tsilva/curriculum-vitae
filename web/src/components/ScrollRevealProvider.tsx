@@ -1,27 +1,12 @@
-"use client";
-
-import { useEffect } from "react";
-
 export function ScrollRevealProvider({ children }: { children: React.ReactNode }) {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-          }
-        }
-      },
-      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
-    );
-
-    // Observe all .reveal elements
-    const elements = document.querySelectorAll(".reveal");
-    elements.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
-
-  return <>{children}</>;
+  return (
+    <>
+      {children}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(){var o=new IntersectionObserver(function(e){e.forEach(function(n){if(n.isIntersecting){n.target.classList.add("visible");o.unobserve(n.target)}})},{threshold:0.1,rootMargin:"0px 0px -40px 0px"});new MutationObserver(function(){document.querySelectorAll(".reveal:not(.visible)").forEach(function(e){o.observe(e)})}).observe(document.body,{childList:true,subtree:true});document.querySelectorAll(".reveal").forEach(function(e){o.observe(e)})})()`,
+        }}
+      />
+    </>
+  );
 }

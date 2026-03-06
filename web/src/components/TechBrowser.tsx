@@ -3,6 +3,7 @@
 import { useState, useMemo, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import { TechBadge } from "./TechBadge";
+import { useModal } from "@/hooks/useModal";
 
 interface TechBrowserProps {
   technologies: { name: string; count: number }[];
@@ -24,6 +25,8 @@ export function TechBrowser({
   const [searchQuery, setSearchQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
 
+  useModal(isOpen, onClose);
+
   const filteredTechs = useMemo(() => {
     if (!searchQuery.trim()) return technologies;
     const query = searchQuery.toLowerCase();
@@ -38,20 +41,6 @@ export function TechBrowser({
       setTimeout(() => inputRef.current?.focus(), 100);
     }
   }, [isOpen]);
-
-  // Handle keyboard shortcuts
-  useEffect(() => {
-    if (!isOpen) return;
-
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        onClose();
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
