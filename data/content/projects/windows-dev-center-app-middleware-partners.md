@@ -1,3 +1,0 @@
-App Middleware Partners is a section of Microsoft's Windows Dev Center that serves as a directory for Microsoft partners to showcase their middleware solutions.
-
-In this project, I managed stakeholder communication, coordinated the design and development, and contributed to core development tasks. The biggest challenge was navigating Microsoft's complex organizational structure to gather the necessary information for integration and deployment. This required overcoming significant bureaucratic obstacles, including extensive outreach through messaging and cold-calling across multiple levels of the organization. Despite these challenges, the project was successfully delivered on time and within budget.

@@ -1,16 +1,37 @@
-// Generates README.md from data/cv-data.json + data/content/*.md
+// Generates README.md from data/**/*.md (frontmatter) + data/*.yaml
 import * as fs from "fs";
 import * as path from "path";
+import { createRequire } from "module";
+
+const webRequire = createRequire(path.join(path.resolve(__dirname, ".."), "web", "package.json"));
+const matter = webRequire("gray-matter");
+const jsYaml = webRequire("js-yaml");
 
 const ROOT = path.resolve(__dirname, "..");
 const DATA_DIR = path.join(ROOT, "data");
-const CONTENT_DIR = path.join(DATA_DIR, "content");
 const OUTPUT_PATH = path.join(ROOT, "README.md");
 
-function readContent(subdir: string, id: string): string {
-  const filePath = path.join(CONTENT_DIR, subdir, `${id}.md`);
-  if (!fs.existsSync(filePath)) return "";
-  return fs.readFileSync(filePath, "utf-8").trimEnd();
+function readFrontmatterFiles(dir: string): { id: string; data: any; content: string }[] {
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".md"))
+    .map((f) => {
+      const raw = fs.readFileSync(path.join(dir, f), "utf-8");
+      const parsed = matter(raw);
+      return {
+        id: path.basename(f, ".md"),
+        data: parsed.data,
+        content: parsed.content.trim(),
+      };
+    })
+    .sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+}
+
+function readYaml(filename: string): any[] {
+  const filePath = path.join(DATA_DIR, filename);
+  if (!fs.existsSync(filePath)) return [];
+  return jsYaml.load(fs.readFileSync(filePath, "utf-8")) || [];
 }
 
 function formatHeading(emoji: string, title: string, url?: string): string {
@@ -22,7 +43,6 @@ function formatHeading(emoji: string, title: string, url?: string): string {
 
 function formatLinkEntry(entry: any): string {
   if (entry.group) {
-    // Grouped links: parent label with indented sub-links
     const subLinks = entry.links
       .map((l: any) => `  - <a href="${l.url}" target="_blank">${l.label}</a>`)
       .join("\n");
@@ -37,22 +57,23 @@ function formatLinks(links: any[]): string {
 }
 
 function generateTLDR(): string {
-  const content = readContent("", "tldr");
+  const tldrPath = path.join(DATA_DIR, "tldr.md");
+  const content = fs.existsSync(tldrPath) ? fs.readFileSync(tldrPath, "utf-8").trimEnd() : "";
   return `# TLDR\n\n${content}`;
 }
 
-function generateExperience(employers: any[]): string {
-  const sections = employers.map((emp) => {
-    const heading = formatHeading(emp.emoji, emp.name, emp.url);
+function generateExperience(): string {
+  const employers = readFrontmatterFiles(path.join(DATA_DIR, "employers"));
+  const sections = employers.map(({ data, content }) => {
+    const heading = formatHeading(data.emoji, data.name, data.url);
     const meta = [
-      `- **Duration:** ${emp.duration}`,
-      `- **Role:** ${emp.role}`,
-      `- **Location:** ${emp.location}`,
+      `- **Duration:** ${data.duration}`,
+      `- **Role:** ${data.role}`,
+      `- **Location:** ${data.location}`,
     ].join("\n");
-    const description = readContent("employers", emp.id);
-    const links = emp.links.length > 0 ? formatLinks(emp.links) : "";
+    const links = data.links && data.links.length > 0 ? formatLinks(data.links) : "";
 
-    const parts = [heading, "", meta, "", description];
+    const parts = [heading, "", meta, "", content];
     if (links) parts.push("", links);
     return parts.join("\n");
   });
@@ -60,19 +81,19 @@ function generateExperience(employers: any[]): string {
   return `# 🧑‍💻 Experience\n\n${sections.join("\n\n")}`;
 }
 
-function generateEducation(education: any[]): string {
-  const sections = education.map((edu) => {
-    const heading = formatHeading(edu.emoji, edu.institution, edu.url);
+function generateEducation(): string {
+  const education = readFrontmatterFiles(path.join(DATA_DIR, "education"));
+  const sections = education.map(({ data, content }) => {
+    const heading = formatHeading(data.emoji, data.institution, data.url);
     const meta = [
-      `- **Duration:** ${edu.duration}`,
-      `- **Degree:** ${edu.degree}`,
-      `- **Grade:** ${edu.grade}`,
-      `- **Location:** ${edu.location}`,
+      `- **Duration:** ${data.duration}`,
+      `- **Degree:** ${data.degree}`,
+      `- **Grade:** ${data.grade}`,
+      `- **Location:** ${data.location}`,
     ].join("\n");
-    const description = readContent("education", edu.id);
-    const links = edu.links.length > 0 ? formatLinks(edu.links) : "";
+    const links = data.links && data.links.length > 0 ? formatLinks(data.links) : "";
 
-    const parts = [heading, "", meta, "", description];
+    const parts = [heading, "", meta, "", content];
     if (links) parts.push("", links);
     return parts.join("\n");
   });
@@ -80,27 +101,27 @@ function generateEducation(education: any[]): string {
   return `# 🎓 Education\n\n${sections.join("\n\n")}`;
 }
 
-function generateProjects(projects: any[]): string {
-  const sections = projects.map((proj) => {
-    const heading = formatHeading(proj.emoji, proj.title, proj.headingUrl);
+function generateProjects(): string {
+  const projects = readFrontmatterFiles(path.join(DATA_DIR, "projects"));
+  const sections = projects.map(({ data, content }) => {
+    const heading = formatHeading(data.emoji, data.title, data.headingUrl);
 
     const metaLines: string[] = [];
-    metaLines.push(`- **TLDR:** ${proj.tldr}`);
-    metaLines.push(`- **Start:** ${proj.start}`);
-    metaLines.push(`- **Client:** ${proj.client}`);
-    if (proj.location) metaLines.push(`- **Location:** ${proj.location}`);
-    if (proj.role) metaLines.push(`- **Role:** ${proj.role}`);
-    if (proj.team) metaLines.push(`- **Team:** ${proj.team}`);
-    if (proj.platforms) metaLines.push(`- **Platforms:** ${proj.platforms}`);
-    if (proj.technologies.length > 0) {
-      metaLines.push(`- **Technologies:** ${proj.technologies.join(", ")}`);
+    metaLines.push(`- **TLDR:** ${data.tldr}`);
+    metaLines.push(`- **Start:** ${data.start}`);
+    metaLines.push(`- **Client:** ${data.client}`);
+    if (data.location) metaLines.push(`- **Location:** ${data.location}`);
+    if (data.role) metaLines.push(`- **Role:** ${data.role}`);
+    if (data.team) metaLines.push(`- **Team:** ${data.team}`);
+    if (data.platforms) metaLines.push(`- **Platforms:** ${data.platforms}`);
+    if (data.technologies && data.technologies.length > 0) {
+      metaLines.push(`- **Technologies:** ${data.technologies.join(", ")}`);
     }
 
-    const narrative = readContent("projects", proj.id);
-    const links = proj.links.length > 0 ? formatLinks(proj.links) : "";
+    const links = data.links && data.links.length > 0 ? formatLinks(data.links) : "";
 
     const parts = [heading, "", metaLines.join("\n")];
-    if (narrative) parts.push("", narrative);
+    if (content) parts.push("", content);
     if (links) parts.push("", links);
     return parts.join("\n");
   });
@@ -108,7 +129,8 @@ function generateProjects(projects: any[]): string {
   return `# 🚀 Projects\n\n${sections.join("\n\n---\n\n")}`;
 }
 
-function generateOSS(oss: any[]): string {
+function generateOSS(): string {
+  const oss = readYaml("oss.yaml");
   const lines = oss.map((entry: any) => {
     const archived = entry.archived ? " **[Archived]**" : "";
     return `- [${entry.name}](${entry.url}) - ${entry.description}${archived}`;
@@ -117,7 +139,8 @@ function generateOSS(oss: any[]): string {
   return `---\n\n## 🔓 OSS\n\nOpen source projects and contributions.\n\n${lines.join("\n")}`;
 }
 
-function generateMisc(misc: any[]): string {
+function generateMisc(): string {
+  const misc = readYaml("misc.yaml");
   const sections = misc.map((entry: any) => {
     const links = entry.links
       .map(
@@ -131,17 +154,13 @@ function generateMisc(misc: any[]): string {
 }
 
 function main() {
-  const data = JSON.parse(
-    fs.readFileSync(path.join(DATA_DIR, "cv-data.json"), "utf-8")
-  );
-
   const parts = [
     generateTLDR(),
-    generateExperience(data.employers),
-    generateEducation(data.education),
-    generateProjects(data.projects_db),
-    generateOSS(data.oss),
-    generateMisc(data.misc),
+    generateExperience(),
+    generateEducation(),
+    generateProjects(),
+    generateOSS(),
+    generateMisc(),
     "## License\n\nMIT",
   ];
 

@@ -1,10 +1,14 @@
-// Assembles web/src/data/cv-data.json from data/cv-data.json + data/content/*.md + galleries
+// Assembles web/src/data/cv-data.json from data/**/*.md (frontmatter) + data/*.yaml + galleries
 import * as fs from "fs";
 import * as path from "path";
+import { createRequire } from "module";
+
+const webRequire = createRequire(path.join(path.resolve(__dirname, ".."), "web", "package.json"));
+const matter = webRequire("gray-matter");
+const jsYaml = webRequire("js-yaml");
 
 const ROOT = path.resolve(__dirname, "..");
 const DATA_DIR = path.join(ROOT, "data");
-const CONTENT_DIR = path.join(DATA_DIR, "content");
 const OUTPUT_PATH = path.join(ROOT, "web", "src", "data", "cv-data.json");
 const MANIFEST_PATH = path.join(ROOT, "galleries-manifest.json");
 
@@ -12,10 +16,6 @@ const GALLERY_MODE = process.env.GALLERY_MODE || "r2";
 const R2_PUBLIC_URL =
   process.env.R2_PUBLIC_URL || "https://curriculum-vitae-r2.tsilva.eu";
 
-interface Link {
-  label: string;
-  url: string;
-}
 interface GalleryMedia {
   filename: string;
   type: "image" | "video";
@@ -27,10 +27,27 @@ function getGalleryBaseUrl(): string {
   return GALLERY_MODE === "r2" ? `${R2_PUBLIC_URL}/galleries` : "/galleries";
 }
 
-function readContent(subdir: string, id: string): string {
-  const filePath = path.join(CONTENT_DIR, subdir, `${id}.md`);
-  if (!fs.existsSync(filePath)) return "";
-  return fs.readFileSync(filePath, "utf-8").trimEnd();
+function readFrontmatterFiles(dir: string): { id: string; data: any; content: string }[] {
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".md"))
+    .map((f) => {
+      const raw = fs.readFileSync(path.join(dir, f), "utf-8");
+      const parsed = matter(raw);
+      return {
+        id: path.basename(f, ".md"),
+        data: parsed.data,
+        content: parsed.content.trim(),
+      };
+    })
+    .sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+}
+
+function readYaml(filename: string): any[] {
+  const filePath = path.join(DATA_DIR, filename);
+  if (!fs.existsSync(filePath)) return [];
+  return jsYaml.load(fs.readFileSync(filePath, "utf-8")) || [];
 }
 
 function scanGalleries(): Map<string, GalleryMedia[]> {
@@ -115,41 +132,41 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
 }
 
 function main() {
-  const sourceData = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "cv-data.json"), "utf-8"));
   const galleryMap = scanGalleries();
 
   // Read TLDR content
-  const tldr = readContent("", "tldr");
+  const tldrPath = path.join(DATA_DIR, "tldr.md");
+  const tldr = fs.existsSync(tldrPath) ? fs.readFileSync(tldrPath, "utf-8").trimEnd() : "";
 
-  // Assemble employers with descriptions
-  const employers = sourceData.employers.map((emp: any) => ({
-    ...emp,
-    description: readContent("employers", emp.id),
-  }));
+  // Read employers
+  const employers = readFrontmatterFiles(path.join(DATA_DIR, "employers")).map(({ id, data, content }) => {
+    const { order, ...rest } = data;
+    return { id, ...rest, description: content };
+  });
 
-  // Assemble education with descriptions
-  const education = sourceData.education.map((edu: any) => ({
-    ...edu,
-    description: readContent("education", edu.id),
-  }));
+  // Read education
+  const education = readFrontmatterFiles(path.join(DATA_DIR, "education")).map(({ id, data, content }) => {
+    const { order, ...rest } = data;
+    return { id, ...rest, description: content };
+  });
 
-  // Assemble projects with narratives and galleries
-  const projects_db = sourceData.projects_db.map((proj: any) => {
-    const gallery = galleryMap.get(proj.id);
+  // Read projects with galleries
+  const projects_db = readFrontmatterFiles(path.join(DATA_DIR, "projects")).map(({ id, data, content }) => {
+    const { order, ...rest } = data;
+    const gallery = galleryMap.get(id);
     return {
-      ...proj,
-      narrative: readContent("projects", proj.id),
+      id,
+      ...rest,
+      narrative: content,
       ...(gallery ? { gallery } : {}),
     };
   });
 
-  const assembled = {
-    tldr,
-    employers,
-    education,
-    projects_db,
-    misc: sourceData.misc,
-  };
+  // Read OSS and misc from YAML
+  const oss = readYaml("oss.yaml");
+  const misc = readYaml("misc.yaml");
+
+  const assembled = { tldr, employers, education, projects_db, misc };
 
   const dataDir = path.dirname(OUTPUT_PATH);
   fs.mkdirSync(dataDir, { recursive: true });
