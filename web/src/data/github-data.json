@@ -12,6 +12,18 @@
     "commits": 0
   },
   {
+    "id": "retrokit",
+    "name": "retrokit",
+    "description": "",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-03-06T13:42:04Z",
+    "createdAt": "2026-03-06T12:21:11Z",
+    "url": "https://github.com/tsilva/retrokit",
+    "commits": 0
+  },
+  {
     "id": "obsidian-agents-plugin",
     "name": "obsidian-agents-plugin",
     "description": "Launch AI agents from your vault — right-click any file or folder to open a terminal with context 🤖",
@@ -729,30 +741,6 @@
     "updatedAt": "2026-03-02T12:21:07Z",
     "createdAt": "2026-01-16T18:54:14Z",
     "url": "https://github.com/tsilva/sandbox-android",
-    "commits": 0
-  },
-  {
-    "id": "retro-romset-cleaner",
-    "name": "retro-romset-cleaner",
-    "description": "🎮 Clean up your retro ROM collection by automatically identifying and removing duplicates, bad dumps, and unwanted variants 🧹",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-02T12:21:04Z",
-    "createdAt": "2026-01-02T11:09:53Z",
-    "url": "https://github.com/tsilva/retro-romset-cleaner",
-    "commits": 0
-  },
-  {
-    "id": "retro-asset-gen",
-    "name": "retro-asset-gen",
-    "description": "🎮 Generate retro gaming platform assets using Gemini AI for Pegasus Frontend themes 🎨",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-02T12:21:01Z",
-    "createdAt": "2026-01-01T15:21:41Z",
-    "url": "https://github.com/tsilva/retro-asset-gen",
     "commits": 0
   },
   {

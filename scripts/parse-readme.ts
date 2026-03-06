@@ -554,6 +554,10 @@ function parse(): CVData {
 
     const endIdx = getNextH2OrEnd(i);
     const tldrField = extractMetadataField(lines, i, "TLDR") || "";
+    
+    // Skip entries without TLDR (these are section headers, not projects)
+    if (!tldrField) continue;
+    
     const start = extractMetadataField(lines, i, "Start") || "";
     const client = extractMetadataField(lines, i, "Client") || "";
     const location = extractMetadataField(lines, i, "Location");
