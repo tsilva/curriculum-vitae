@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { createPortal } from "react-dom";
 import type { Project } from "@/types/cv";
 import { TechBadge } from "./TechBadge";
 
@@ -29,7 +30,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
 
   const paragraphs = project.narrative.split("\n\n");
 
-  return (
+  return createPortal(
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
       onClick={(e) => {
@@ -191,6 +192,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           )}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

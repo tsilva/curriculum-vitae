@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 import { TechBadge } from "./TechBadge";
 
 interface TechBrowserProps {
@@ -54,7 +55,7 @@ export function TechBrowser({
 
   if (!isOpen) return null;
 
-  return (
+  return createPortal(
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop bg-black/80"
       onClick={(e) => {
@@ -182,6 +183,7 @@ export function TechBrowser({
           )}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
