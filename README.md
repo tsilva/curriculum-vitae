@@ -13,6 +13,77 @@ This CV is detailed and comprehensive—it's more suited for running through you
 
 # 🧑‍💻 Experience
 
+## 🏷 <a href="https://web.archive.org/web/20061228042557/http://www.rentacoder.com/RentACoder/default.asp" target="_blank">Rent-a-Coder</a>
+
+- **Duration:** 2003 - 2006 · 3 years
+- **Role:** Software Developer
+- **Location:** Remote 🌍
+
+During college, I gained valuable experience working on freelance projects for clients around the world through the Rent-a-Coder platform, where I operated under the name "Chronosync Developments" and was fortunate to rank in the top 1% for customer ratings. This was my first foray into managing end-to-end client relationships, where I was tasked with projects and paid for delivering them. It helped me develop key skills in understanding client needs, managing expectations, and delivering on time.
+
+- <a href="https://web.archive.org/web/20041112020320/http://www.rentacoder.com/RentACoder/SoftwareCoders/showBioInfo.asp?lngAuthorId=860960" target="_blank">Profile</a> (old snapshot of profile, unfortunately most of the work reviews from later years were not crawled by the Wayback Machine)
+
+## 🖥 <a href="https://www.microsoft.com/" target="_blank">Microsoft</a>
+
+- **Duration:** Mar 2007 - Feb 2008 · 1 year
+- **Role:** Software Development Engineer in Test (Full-time)
+- **Location:** Copenhagen, Denmark
+
+Worked in the Global Development Localization team, in a Tester role, for <a href="https://dynamics.microsoft.com/en-us/ax/" target="_blank">Microsoft Dynamics AX</a> (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing new tests, searching for and investigating application bugs.
+
+Improved internal testing tools to allow scanning for test code coverage across multipler layers, as opposed to just the root of the application's layered customization stack.
+
+Developed internal tool for database PII anonymization to allow data transfer across internal groups spread around different regions.
+
+- <a href="https://dynamics.microsoft.com/en-us/ax/" target="_blank">Microsoft Dynamics AX</a>
+- TV news coverage about being hired by Microsoft straight out of college (oh the cringe! 😬) :
+  - <a href="https://photos.app.goo.gl/jo7DskprCoxt2jB77" target="_blank">RTP 1</a>
+  - <a href="https://photos.app.goo.gl/PY6t4TEXYK4fXmt98" target="_blank">SIC</a>
+  - <a href="https://photos.app.goo.gl/W3wTceGahoE2p36U7" target="_blank">TVI</a>
+
+## 🐝 <a href="https://www.hive.pt/" target="_blank">Hive Solutions</a>
+
+- **Duration:** Mar 2008 - Sep 2016 · 8 years and 7 months
+- **Role:** Co-founder (Full-time)
+- **Location:** Porto, Portugal · Onsite 🏢
+
+As a co-founder of Hive Solutions, I took on a variety of roles, as is common for startup founders. While my primary role was Lead Software Engineer, I also handled tasks related to sales, marketing and recruitment when needed.
+
+We initially set out to build a SaaS Retail POS system called *[Frontdoor](#-frontdoor)*, which we developed entirely from scratch, using a tech stack fully built in-house. Although it was a technical success, it didn't achieve commercial success. We eventually pivoted to software consulting, where we shipped a diverse range of projects for numerous clients.
+
+- <a href="https://www.hive.pt/" target="_blank">Website</a>
+- <a href="https://github.com/hivesolutions" target="_blank">Github</a>
+
+## 🌍 <a href="https://www.toptal.com/" target="_blank">Toptal</a>
+
+- **Duration:** Apr 2012 - Present
+- **Role:** Senior Software Engineer
+- **Location:** Remote 🌍
+
+Toptal is a platform connecting top developers with leading companies. It employs a rigorous screening process, assessing both advanced technical abilities and strong English proficiency. Through Toptal, I have collaborated with several companies on medium to long-term projects, consistently receiving outstanding feedback from clients.
+
+- <a href="https://www.toptal.com/" target="_blank">Website</a>
+
+## 📱 <a href="https://www.rocksaucestudios.com/" target="_blank">Rocksauce Studios</a>
+
+- **Duration:** 2013 - 2015 · 2 years
+- **Role:** Senior iOS Developer (Full-time)
+- **Location:** Austin, Texas · Remote 🌍
+
+Rocksauce Studios was a mobile app development company that specialized in creating custom apps for businesses and startups. While working at Hive Solutions, I was contracted by them to work on more than a dozen projects for different clients, always as an iOS developer.
+
+## 🛍 <a href="https://www.platforme.com/" target="_blank">RIPE Productions</a>
+
+- **Duration:** 2016 · Less than a year
+- **Role:** Lead Software Engineer (Full-time)
+- **Location:** Porto, Portugal · Remote 🌍
+
+RIPE Productions was a company that developed e-commerce solutions for the fashion industry (this company is now called <a href="https://www.platforme.com/" target="_blank">PlatformE</a>).
+
+Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#-karl-kustomize) project for <a href="https://www.karl.com/pt-en" target="_blank">Karl Lagerfeld</a>.
+
+In a lesser role also contributed as a software developer to the [MYSWEAR online store](#-myswear---online-store), featuring an advanced shoe customization rendering platform, related [iOS demo](#-myswear---ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#-myswear---harrods-holographic-pyramid), a luxury department store in London.
+
 ## 🏫 <a href="https://www.tynker.com/" target="_blank">Tynker</a>
 
 - **Duration:** Sep 2016 - May 2024
@@ -43,77 +114,6 @@ As a Lead Software Engineer, I was the main contributor to many of its core prod
 - **Location:** Porto, Portugal · Onsite 🏢
 
 I pursue a deliberately broad portfolio of AI initiatives—spanning deep-reinforcement-learning research, agentic and large-language-model applications, and the requisite supporting infrastructure—while systematically cultivating a rigorous, first-principles understanding of deep-learning systems and translating my insights into exploratory proof-of-concepts.
-
-## 🛍 <a href="https://www.platforme.com/" target="_blank">RIPE Productions</a>
-
-- **Duration:** 2016 · Less than a year
-- **Role:** Lead Software Engineer (Full-time)
-- **Location:** Porto, Portugal · Remote 🌍
-
-RIPE Productions was a company that developed e-commerce solutions for the fashion industry (this company is now called <a href="https://www.platforme.com/" target="_blank">PlatformE</a>).
-
-Developed some core features for the RIPE Core infrastructure, while simultaneously coordinating a development team (defining, prioritizing and assigning tasks, reviewing and merging pull requests, etc.), through the development of the [Karl Kustomize](#-karl-kustomize) project for <a href="https://www.karl.com/pt-en" target="_blank">Karl Lagerfeld</a>.
-
-In a lesser role also contributed as a software developer to the [MYSWEAR online store](#-myswear---online-store), featuring an advanced shoe customization rendering platform, related [iOS demo](#-myswear---ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#-myswear---harrods-holographic-pyramid), a luxury department store in London.
-
-## 📱 <a href="https://www.rocksaucestudios.com/" target="_blank">Rocksauce Studios</a>
-
-- **Duration:** 2013 - 2015 · 2 years
-- **Role:** Senior iOS Developer (Full-time)
-- **Location:** Austin, Texas · Remote 🌍
-
-Rocksauce Studios was a mobile app development company that specialized in creating custom apps for businesses and startups. While working at Hive Solutions, I was contracted by them to work on more than a dozen projects for different clients, always as an iOS developer.
-
-## 🌍 <a href="https://www.toptal.com/" target="_blank">Toptal</a>
-
-- **Duration:** Apr 2012 - Present
-- **Role:** Senior Software Engineer
-- **Location:** Remote 🌍
-
-Toptal is a platform connecting top developers with leading companies. It employs a rigorous screening process, assessing both advanced technical abilities and strong English proficiency. Through Toptal, I have collaborated with several companies on medium to long-term projects, consistently receiving outstanding feedback from clients.
-
-- <a href="https://www.toptal.com/" target="_blank">Website</a>
-
-## 🐝 <a href="https://www.hive.pt/" target="_blank">Hive Solutions</a>
-
-- **Duration:** Mar 2008 - Sep 2016 · 8 years and 7 months
-- **Role:** Co-founder (Full-time)
-- **Location:** Porto, Portugal · Onsite 🏢
-
-As a co-founder of Hive Solutions, I took on a variety of roles, as is common for startup founders. While my primary role was Lead Software Engineer, I also handled tasks related to sales, marketing and recruitment when needed.
-
-We initially set out to build a SaaS Retail POS system called *[Frontdoor](#-frontdoor)*, which we developed entirely from scratch, using a tech stack fully built in-house. Although it was a technical success, it didn’t achieve commercial success. We eventually pivoted to software consulting, where we shipped a diverse range of projects for numerous clients.
-
-- <a href="https://www.hive.pt/" target="_blank">Website</a>
-- <a href="https://github.com/hivesolutions" target="_blank">Github</a>
-
-## 🖥 <a href="https://www.microsoft.com/" target="_blank">Microsoft</a>
-
-- **Duration:** Mar 2007 - Feb 2008 · 1 year
-- **Role:** Software Development Engineer in Test (Full-time)
-- **Location:** Copenhagen, Denmark
-
-Worked in the Global Development Localization team, in a Tester role, for <a href="https://dynamics.microsoft.com/en-us/ax/" target="_blank">Microsoft Dynamics AX</a> (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing new tests, searching for and investigating application bugs.
-
-Improved internal testing tools to allow scanning for test code coverage across multipler layers, as opposed to just the root of the application's layered customization stack.
-
-Developed internal tool for database PII anonymization to allow data transfer across internal groups spread around different regions.
-
-- <a href="https://dynamics.microsoft.com/en-us/ax/" target="_blank">Microsoft Dynamics AX</a>
-- TV news coverage about being hired by Microsoft straight out of college (oh the cringe! 😬) :
-  - <a href="https://photos.app.goo.gl/jo7DskprCoxt2jB77" target="_blank">RTP 1</a>
-  - <a href="https://photos.app.goo.gl/PY6t4TEXYK4fXmt98" target="_blank">SIC</a>
-  - <a href="https://photos.app.goo.gl/W3wTceGahoE2p36U7" target="_blank">TVI</a>
-
-## 🏷 <a href="https://web.archive.org/web/20061228042557/http://www.rentacoder.com/RentACoder/default.asp" target="_blank">Rent-a-Coder</a>
-
-- **Duration:** 2003 - 2006 · 3 years
-- **Role:** Software Developer
-- **Location:** Remote 🌍
-
-During college, I gained valuable experience working on freelance projects for clients around the world through the Rent-a-Coder platform, where I operated under the name "Chronosync Developments" and was fortunate to rank in the top 1% for customer ratings. This was my first foray into managing end-to-end client relationships, where I was tasked with projects and paid for delivering them. It helped me develop key skills in understanding client needs, managing expectations, and delivering on time.
-
-- <a href="https://web.archive.org/web/20041112020320/http://www.rentacoder.com/RentACoder/SoftwareCoders/showBioInfo.asp?lngAuthorId=860960" target="_blank">Profile</a> (old snapshot of profile, unfortunately most of the work reviews from later years were not crawled by the Wayback Machine)
 
 # 🎓 Education
 
