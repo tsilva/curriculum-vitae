@@ -1,0 +1,1 @@
+Integrated Tynker's Block Editor into the Minecraft Education Edition app, enabling users to create and deploy custom mobs in real-time. This was achieved by adding a side panel with the Tynker Editor, allowing seamless access to coding tools during gameplay.

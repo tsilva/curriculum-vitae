@@ -1,0 +1,1 @@
+Handled entire backend production of a website, web application and database programming. Solution was provided in the form of a web application implemented in the PHP scripting language, interfacing with a MySQL database.
