@@ -27,6 +27,10 @@ export function Footer() {
           <div className="text-cyan/20 font-[family-name:var(--font-mono)] text-[10px] tracking-[0.3em] mt-2">
             KIROSHI_OPTICS_DISCONNECT
           </div>
+
+          <div className="font-[family-name:var(--font-mono)] text-[10px] text-steel-dim/60 mt-1">
+            build: {process.env.GIT_COMMIT_HASH || 'unknown'}
+          </div>
         </div>
       </div>
     </footer>
