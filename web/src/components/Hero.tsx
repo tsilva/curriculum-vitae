@@ -265,9 +265,13 @@ export function Hero() {
         ))}
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 animate-bounce flex flex-col items-center gap-1">
-        <span className="font-[family-name:var(--font-mono)] text-sm text-kiroshi-red tracking-widest neon-glow-kiroshi-red">SCROLL</span>
+      {/* Bottom-left scroll indicator */}
+      <div className="absolute bottom-8 left-8 md:left-20 animate-bounce">
+        <span className="text-kiroshi-red text-lg neon-glow-kiroshi-red">▼</span>
+      </div>
+
+      {/* Bottom-right scroll indicator */}
+      <div className="absolute bottom-8 right-8 md:right-20 animate-bounce">
         <span className="text-kiroshi-red text-lg neon-glow-kiroshi-red">▼</span>
       </div>
     </section>

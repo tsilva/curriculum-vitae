@@ -248,7 +248,7 @@
       ]
     }
   ],
-  "projects": [
+  "projects_db": [
     {
       "id": "help-agent",
       "emoji": "🤖",

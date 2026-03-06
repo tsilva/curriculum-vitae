@@ -60,7 +60,7 @@ interface CVData {
   tldr: string;
   employers: Employer[];
   education: Education[];
-  projects: Project[];
+  projects_db: Project[];
   misc: Link[];
 }
 
@@ -546,7 +546,7 @@ function parse(): CVData {
   }
 
   // Parse Projects
-  const projects: Project[] = [];
+  const projects_db: Project[] = [];
   const endSection = miscStart > 0 ? miscStart : lines.length;
   for (let i = projectsStart + 1; i < endSection; i++) {
     const heading = parseH2Heading(lines[i]);
@@ -576,7 +576,7 @@ function parse(): CVData {
     const projectId = slugify(heading.title);
     const gallery = galleryMap.get(projectId);
 
-    projects.push({
+    projects_db.push({
       id: projectId,
       emoji: heading.emoji,
       title: heading.title,
@@ -596,7 +596,7 @@ function parse(): CVData {
 
   // Map employer to project IDs based on client matching
   for (const employer of employers) {
-    const relatedProjects = projects.filter((p) => {
+    const relatedProjects = projects_db.filter((p) => {
       const clientLower = p.client.toLowerCase();
       const employerLower = employer.name.toLowerCase();
       return (
@@ -622,7 +622,7 @@ function parse(): CVData {
     }
   }
 
-  return { tldr, employers, education, projects, misc };
+  return { tldr, employers, education, projects_db, misc };
 }
 
 const data = parse();
@@ -638,7 +638,7 @@ const staticPath = path.join(dataDir, "cv-data.json");
 fs.writeFileSync(staticPath, JSON.stringify(data, null, 2));
 
 console.log(
-  `Parsed: ${data.employers.length} employers, ${data.education.length} education entries, ${data.projects.length} projects`
+  `Parsed: ${data.employers.length} employers, ${data.education.length} education entries, ${data.projects_db.length} projects`
 );
-console.log(`Projects with galleries: ${data.projects.filter(p => p.gallery && p.gallery.length > 0).length}`);
+console.log(`Projects with galleries: ${data.projects_db.filter(p => p.gallery && p.gallery.length > 0).length}`);
 console.log(`Generated: cv-data.json`);

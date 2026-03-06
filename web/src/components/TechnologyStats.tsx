@@ -13,7 +13,7 @@ export function TechnologyStats() {
   const stats = useMemo(() => {
     const technologyCounts: Record<string, number> = {};
 
-    cvData.projects.forEach((project) => {
+    cvData.projects_db.forEach((project) => {
       if (project.technologies && project.technologies.length > 0) {
         project.technologies.forEach((tech: string) => {
           const normalizedTech = tech.trim();
@@ -30,7 +30,7 @@ export function TechnologyStats() {
       .map(([name, count]) => ({
         name,
         count,
-        percentage: Math.round((count / cvData.projects.length) * 100),
+        percentage: Math.round((count / cvData.projects_db.length) * 100),
       }));
 
     const totalMentions = sortedTechnologies.reduce(
@@ -39,7 +39,7 @@ export function TechnologyStats() {
     );
 
     return {
-      totalProjects: cvData.projects.length,
+      totalProjects: cvData.projects_db.length,
       uniqueTechnologies: sortedTechnologies.length,
       totalMentions,
       technologies: sortedTechnologies,

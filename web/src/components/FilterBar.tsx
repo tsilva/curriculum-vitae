@@ -30,7 +30,7 @@ export function FilterBar({
         </span>
 
         {/* Quick Access Techs */}
-        <div className="flex items-center gap-2 overflow-x-auto hide-scrollbar pb-1 flex-1">
+        <div className="flex items-center gap-2 overflow-x-auto hide-scrollbar flex-1">
           <TechBadge
             name="ALL"
             active={selected.length === 0}

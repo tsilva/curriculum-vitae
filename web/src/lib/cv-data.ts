@@ -11,7 +11,7 @@ export function getCVData(): CVData {
 
 export function getAllTechnologies(): { name: string; count: number }[] {
   const techMap: Record<string, number> = {};
-  for (const project of cvData.projects) {
+  for (const project of cvData.projects_db) {
     for (const tech of project.technologies) {
       techMap[tech] = (techMap[tech] || 0) + 1;
     }
