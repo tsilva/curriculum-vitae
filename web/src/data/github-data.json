@@ -2,7 +2,7 @@
   {
     "id": "agentpong",
     "name": "agentpong",
-    "description": "🏓 Your AI agent pings, you pong back — desktop notifications that jump you to the right window, even across workspaces 🔔",
+    "description": "🎛️ Supervise multiple AI coding agents in parallel — organized workspaces, instant switching, desktop notifications 🏓",
     "stars": 1,
     "forks": 0,
     "language": "Shell",
@@ -12,27 +12,51 @@
     "commits": 0
   },
   {
+    "id": "llame",
+    "name": "llame",
+    "description": "No Python. No CUDA. No server. Just a URL.",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-03-07T11:57:22Z",
+    "createdAt": "2026-03-06T15:44:20Z",
+    "url": "https://github.com/tsilva/llame",
+    "commits": 0
+  },
+  {
+    "id": "gmail2obsidian",
+    "name": "gmail2obsidian",
+    "description": "📬 Flush labeled Gmail threads into Obsidian task files with one click ✅",
+    "stars": 0,
+    "forks": 0,
+    "language": "JavaScript",
+    "updatedAt": "2026-03-07T10:47:08Z",
+    "createdAt": "2026-02-12T17:31:27Z",
+    "url": "https://github.com/tsilva/gmail2obsidian",
+    "commits": 0
+  },
+  {
     "id": "mobileassetgen",
     "name": "mobileassetgen",
     "description": "📱 Generate production-ready Android app assets from a single text prompt — icons, round icons, notifications, and Play Store graphics, all in seconds ⚡",
     "stars": 0,
     "forks": 0,
     "language": "TypeScript",
-    "updatedAt": "2026-03-06T22:19:32Z",
+    "updatedAt": "2026-03-06T22:41:08Z",
     "createdAt": "2026-03-03T16:52:27Z",
     "url": "https://github.com/tsilva/mobileassetgen",
     "commits": 0
   },
   {
-    "id": "llame",
-    "name": "llame",
-    "description": "🧠 Run LLMs directly in your browser — no server, no API keys, just WebGPU ⚡",
+    "id": "dedrive-web",
+    "name": "dedrive-web",
+    "description": "🔍 Find and clean up duplicate files in your Google Drive — entirely from your browser 🧹",
     "stars": 0,
     "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-03-06T22:13:01Z",
-    "createdAt": "2026-03-06T15:44:20Z",
-    "url": "https://github.com/tsilva/llame",
+    "language": "JavaScript",
+    "updatedAt": "2026-03-06T22:30:31Z",
+    "createdAt": "2026-03-04T12:30:11Z",
+    "url": "https://github.com/tsilva/dedrive-web",
     "commits": 0
   },
   {
@@ -132,18 +156,6 @@
     "commits": 0
   },
   {
-    "id": "dedrive-web",
-    "name": "dedrive-web",
-    "description": "🔍 Find and clean up duplicate files in your Google Drive — entirely from your browser 🧹",
-    "stars": 0,
-    "forks": 0,
-    "language": "JavaScript",
-    "updatedAt": "2026-03-04T18:54:54Z",
-    "createdAt": "2026-03-04T12:30:11Z",
-    "url": "https://github.com/tsilva/dedrive-web",
-    "commits": 0
-  },
-  {
     "id": "dedrive",
     "name": "dedrive",
     "description": "🔍 Find and manage duplicate files in Google Drive using MD5 checksums 🗑️",
@@ -165,18 +177,6 @@
     "updatedAt": "2026-03-03T18:29:59Z",
     "createdAt": "2026-01-02T17:29:35Z",
     "url": "https://github.com/tsilva/demosim",
-    "commits": 0
-  },
-  {
-    "id": "gitfleet",
-    "name": "gitfleet",
-    "description": "🚢 Bulk operations across all your GitHub repositories with parallel processing and smart filtering ⚡",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-03T18:27:15Z",
-    "createdAt": "2025-01-18T17:43:22Z",
-    "url": "https://github.com/tsilva/gitfleet",
     "commits": 0
   },
   {
@@ -873,18 +873,6 @@
     "updatedAt": "2026-03-02T12:19:42Z",
     "createdAt": "2025-04-30T09:11:14Z",
     "url": "https://github.com/tsilva/gymemu",
-    "commits": 0
-  },
-  {
-    "id": "gmail2obsidian",
-    "name": "gmail2obsidian",
-    "description": "📬 Flush labeled Gmail threads into Obsidian task files with one click ✅",
-    "stars": 0,
-    "forks": 0,
-    "language": "JavaScript",
-    "updatedAt": "2026-03-02T12:19:37Z",
-    "createdAt": "2026-02-12T17:31:27Z",
-    "url": "https://github.com/tsilva/gmail2obsidian",
     "commits": 0
   },
   {

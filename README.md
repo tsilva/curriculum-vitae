@@ -1229,6 +1229,8 @@ Computer Capers was a video game I developed at 12 years old and submitted to a 
 Open source projects and contributions.
 
 - [agentpong](https://github.com/tsilva/agentpong) - Desktop notifications that jump you to the right Claude Code window
+- [gmail2obsidian](https://github.com/tsilva/gmail2obsidian) - Flush Gmail threads into Obsidian task files
+- [dedrive-web](https://github.com/tsilva/dedrive-web) - Find and clean up duplicate files in Google Drive from browser
 - [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
 - [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
 - [obsidian-agents-plugin](https://github.com/tsilva/obsidian-agents-plugin) - Launch AI agents from Obsidian vault
@@ -1236,10 +1238,8 @@ Open source projects and contributions.
 - [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
 - [claudebridge](https://github.com/tsilva/claudebridge) - Bridge OpenAI tools to Claude Code SDK
 - [claudebox](https://github.com/tsilva/claudebox) - Full autonomy sandbox for Claude Code
-- [dedrive-web](https://github.com/tsilva/dedrive-web) - Find and clean up duplicate files in Google Drive from browser
 - [dedrive](https://github.com/tsilva/dedrive) - Find and manage duplicate files in Google Drive using MD5 checksums
 - [demosim](https://github.com/tsilva/demosim) - Explore Portugal's demographic future with economic projections
-- [gitfleet](https://github.com/tsilva/gitfleet) - Bulk operations across GitHub repositories with parallel processing
 - [mcp-openrouter](https://github.com/tsilva/mcp-openrouter) - Access 300+ AI models through a single MCP server
 - [homebrew-tap](https://github.com/tsilva/homebrew-tap) - Homebrew tap for installing tsilva projects
 - [capture](https://github.com/tsilva/capture) - Capture thoughts to Gmail with a single command
@@ -1261,7 +1261,6 @@ Open source projects and contributions.
 - [health-agent](https://github.com/tsilva/health-agent) - Unify lab results, medical exams, and health journals
 - [gymsolve](https://github.com/tsilva/gymsolve) - Fast RL framework with PPO and REINFORCE on Gymnasium
 - [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
-- [gmail2obsidian](https://github.com/tsilva/gmail2obsidian) - Flush Gmail threads into Obsidian task files
 - [claudesk](https://github.com/tsilva/claudesk) - Interactive dashboard for launching Claude Code agents
 - [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
 - [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
@@ -1269,6 +1268,7 @@ Open source projects and contributions.
 - [aerospace-setup](https://github.com/tsilva/aerospace-setup) - Portable Aerospace configuration with Cursor project switching
 - [botty-mcbotface](https://github.com/tsilva/botty-mcbotface) - Gradio-powered AI chatbot with tools and memory
 - [dataset-explorer-agent](https://github.com/tsilva/dataset-explorer-agent) - Validate dataset schemas with regex pattern analysis
+- [gitfleet](https://github.com/tsilva/gitfleet) - Bulk operations across GitHub repositories with parallel processing
 - [retro-asset-gen](https://github.com/tsilva/retro-asset-gen) - Generate retro gaming assets using Gemini AI **[Archived]**
 - [retro-romset-cleaner](https://github.com/tsilva/retro-romset-cleaner) - Clean up retro ROM collections **[Archived]**
 - [workflow-claude-supervisor](https://github.com/tsilva/workflow-claude-supervisor) - Supervise multiple Claude Code instances in parallel
