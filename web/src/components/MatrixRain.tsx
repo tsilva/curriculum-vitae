@@ -28,13 +28,14 @@ const SPAWN_DELAY_MIN = 10;
 const SPAWN_DELAY_MAX = 60;
 const STREAM_RESET_DELAY_MIN = -30;
 const STREAM_RESET_DELAY_MAX = -5;
+const HERO_CANVAS_OPACITY = 0.45;
 
 export function MatrixRain() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const isVisibleRef = useRef(true);
   const inHeroRef = useRef(true);
   const animIdRef = useRef<number | undefined>(undefined);
-  const [canvasOpacity, setCanvasOpacity] = useState(1);
+  const [canvasOpacity, setCanvasOpacity] = useState(HERO_CANVAS_OPACITY);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -128,7 +129,7 @@ export function MatrixRain() {
       const isInHero = heroRect.bottom > 0;
       
       inHeroRef.current = isInHero;
-      setCanvasOpacity(isInHero ? 1 : 0);
+      setCanvasOpacity(isInHero ? HERO_CANVAS_OPACITY : 0);
     };
 
     checkHeroVisibility();
