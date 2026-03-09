@@ -241,6 +241,12 @@ export function Hero() {
         backend + frontend + mobile + ai. idea in → product out.
       </p>
 
+      <p className="max-w-3xl mt-5 text-center text-sm md:text-base text-cool-white/75 leading-7">
+        Full-stack software engineer with 20+ years of experience shipping production systems across backend,
+        frontend, mobile, and AI. Strongest in Python, TypeScript, React, Next.js, Node.js, LLM products, and
+        cloud architecture.
+      </p>
+
       {/* Red separator line */}
       <div className="flex items-center gap-3 mt-6 mb-8 w-48">
         <div className="h-px flex-1 bg-kiroshi-red/40" />

@@ -4,6 +4,11 @@ import dynamic from "next/dynamic";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
+const SITE_URL = "https://www.tsilva.eu";
+const SITE_TITLE = "Tiago Silva | Full-Stack Software Engineer with AI Skills";
+const SITE_DESCRIPTION =
+  "Full-stack software engineer with 20+ years of experience building backend, frontend, mobile, and AI products. Python, TypeScript, React, Next.js, Node.js, LLMs, and cloud architecture.";
+
 // Lazy load MatrixRain as it's a non-critical visual effect
 const MatrixRain = dynamic(() => import("@/components/MatrixRain").then((mod) => ({ default: mod.MatrixRain })));
 
@@ -30,16 +35,23 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "Tiago Silva — Software Engineer | 20+ Years Experience",
-  description:
-    "Senior software engineer with 20+ years of experience and 60+ projects shipped. Expertise in Python, JavaScript, AI/ML, cloud architecture, and full-stack development.",
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
   keywords: [
     "software engineer",
+    "fullstack software engineer",
     "full-stack developer",
+    "full stack engineer",
+    "AI software engineer",
     "Python developer",
-    "JavaScript developer",
+    "TypeScript developer",
+    "React developer",
+    "Next.js developer",
+    "Node.js developer",
     "AI engineer",
-    "machine learning",
+    "LLM engineer",
+    "AI agents",
+    "machine learning engineer",
     "cloud architecture",
     "senior developer",
     "20 years experience",
@@ -47,17 +59,17 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Tiago Silva" }],
   creator: "Tiago Silva",
-  metadataBase: new URL("https://cv.tsilva.eu"),
+  metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Tiago Silva — Software Engineer",
+    title: SITE_TITLE,
     description:
-      "20+ years of experience, 60+ projects shipped. From ZX Spectrum to Large Language Models.",
+      "20+ years building backend, frontend, mobile, and AI products. CV, projects, open source, and experience.",
     type: "website",
-    url: "https://cv.tsilva.eu",
-    siteName: "Tiago Silva CV",
+    url: SITE_URL,
+    siteName: "Tiago Silva",
     locale: "en_US",
     images: [
       {
@@ -70,9 +82,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tiago Silva — Software Engineer",
+    title: SITE_TITLE,
     description:
-      "20+ years of experience, 60+ projects shipped. Expertise in Python, AI/ML, and full-stack development.",
+      "Full-stack software engineer with AI skills. Python, TypeScript, React, Node.js, LLMs, and cloud architecture.",
     creator: "@tiagosilva",
     images: ["/avatar.webp"],
   },
@@ -95,48 +107,60 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Tiago Silva",
-  jobTitle: "Software Engineer",
-  description: "Senior software engineer with 20+ years of experience and 60+ projects shipped",
-  url: "https://cv.tsilva.eu",
-  image: "https://cv.tsilva.eu/avatar.webp",
-  sameAs: [
-    "https://github.com/tsilva",
-    "https://www.linkedin.com/in/engtiagosilva/",
-    "https://x.com/tiagosilva",
-    "https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6",
-  ],
-  knowsAbout: [
-    "Python",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
-    "AI",
-    "Machine Learning",
-    "Cloud Architecture",
-    "Full-Stack Development",
-    "PostgreSQL",
-    "MongoDB",
-    "Docker",
-    "Kubernetes",
-    "AWS",
-    "Google Cloud",
-  ],
-  worksFor: {
-    "@type": "Organization",
-    name: "Freelance",
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Tiago Silva",
+    url: SITE_URL,
+    description: SITE_DESCRIPTION,
   },
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Lisbon",
-    addressCountry: "PT",
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Tiago Silva",
+    jobTitle: "Full-Stack Software Engineer",
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    image: `${SITE_URL}/avatar.webp`,
+    sameAs: [
+      "https://github.com/tsilva",
+      "https://www.linkedin.com/in/engtiagosilva/",
+      "https://huggingface.co/tsilva",
+      "https://x.com/tiagosilva",
+      "https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6",
+    ],
+    knowsAbout: [
+      "Python",
+      "TypeScript",
+      "JavaScript",
+      "React",
+      "Next.js",
+      "Node.js",
+      "Full-Stack Development",
+      "Artificial Intelligence",
+      "Large Language Models",
+      "AI Agents",
+      "Machine Learning",
+      "Cloud Architecture",
+      "PostgreSQL",
+      "MongoDB",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Google Cloud",
+    ],
+    worksFor: {
+      "@type": "Organization",
+      name: "Freelance",
+    },
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Lisbon",
+      addressCountry: "PT",
+    },
   },
-};
+];
 
   export default function RootLayout({
   children,
