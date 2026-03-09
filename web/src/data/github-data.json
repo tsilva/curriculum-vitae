@@ -1,5 +1,17 @@
 [
   {
+    "id": "gymemu",
+    "name": "gymemu",
+    "description": "🎮 Play retro games through learned latent dynamics—no ROM required 🧠",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-03-09T11:26:24Z",
+    "createdAt": "2025-04-30T09:11:14Z",
+    "url": "https://github.com/tsilva/gymemu",
+    "commits": 0
+  },
+  {
     "id": "agentpong",
     "name": "agentpong",
     "description": "🎛️ Supervise multiple AI coding agents in parallel — organized workspaces, instant switching, desktop notifications 🏓",
@@ -12,15 +24,87 @@
     "commits": 0
   },
   {
+    "id": "llmcouncil",
+    "name": "llmcouncil",
+    "description": "",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-03-08T20:00:39Z",
+    "createdAt": "2026-03-08T18:15:45Z",
+    "url": "https://github.com/tsilva/llmcouncil",
+    "commits": 0
+  },
+  {
+    "id": "drdre",
+    "name": "drdre",
+    "description": "",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-03-08T19:54:55Z",
+    "createdAt": "2026-03-08T09:42:36Z",
+    "url": "https://github.com/tsilva/drdre",
+    "commits": 0
+  },
+  {
+    "id": "youdown",
+    "name": "youdown",
+    "description": "📺 Download YouTube videos and extract audio with one command 🎵",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-03-08T19:54:34Z",
+    "createdAt": "2025-04-11T13:22:16Z",
+    "url": "https://github.com/tsilva/youdown",
+    "commits": 0
+  },
+  {
     "id": "llame",
     "name": "llame",
     "description": "No Python. No CUDA. No server. Just a URL.",
     "stars": 0,
     "forks": 0,
     "language": "TypeScript",
-    "updatedAt": "2026-03-07T11:57:22Z",
+    "updatedAt": "2026-03-08T19:40:55Z",
     "createdAt": "2026-03-06T15:44:20Z",
     "url": "https://github.com/tsilva/llame",
+    "commits": 0
+  },
+  {
+    "id": "gymrec",
+    "name": "gymrec",
+    "description": "🎮 Record and replay gameplay from Gymnasium environments as Hugging Face datasets 📊",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-03-08T18:58:47Z",
+    "createdAt": "2025-04-16T14:39:15Z",
+    "url": "https://github.com/tsilva/gymrec",
+    "commits": 0
+  },
+  {
+    "id": "aigrounds",
+    "name": "aigrounds",
+    "description": "🧠 Learn AI ideas by poking the algorithm until it explains itself 🔬",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-03-08T18:52:58Z",
+    "createdAt": "2026-03-08T17:46:30Z",
+    "url": "https://github.com/tsilva/aigrounds",
+    "commits": 0
+  },
+  {
+    "id": "gymsolve",
+    "name": "gymsolve",
+    "description": "🎮 Fast RL framework with PPO and REINFORCE on Gymnasium ⚡",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-03-07T22:29:38Z",
+    "createdAt": "2025-07-16T12:42:07Z",
+    "url": "https://github.com/tsilva/gymsolve",
     "commits": 0
   },
   {
@@ -117,6 +201,18 @@
     "updatedAt": "2026-03-02T12:18:52Z",
     "createdAt": "2024-08-02T15:00:41Z",
     "url": "https://github.com/tsilva/aiml-notebooks",
+    "commits": 0
+  },
+  {
+    "id": "mcp-openrouter",
+    "name": "mcp-openrouter",
+    "description": "🚀 Access 300+ AI models through a single MCP server — text, images, embeddings, and model discovery at your fingertips 🤖",
+    "stars": 1,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-03-03T18:26:17Z",
+    "createdAt": "2026-01-26T11:39:07Z",
+    "url": "https://github.com/tsilva/mcp-openrouter",
     "commits": 0
   },
   {
@@ -228,18 +324,6 @@
     "commits": 0
   },
   {
-    "id": "mcp-openrouter",
-    "name": "mcp-openrouter",
-    "description": "🚀 Access 300+ AI models through a single MCP server — text, images, embeddings, and model discovery at your fingertips 🤖",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-03T18:26:17Z",
-    "createdAt": "2026-01-26T11:39:07Z",
-    "url": "https://github.com/tsilva/mcp-openrouter",
-    "commits": 0
-  },
-  {
     "id": "homebrew-tap",
     "name": "homebrew-tap",
     "description": "🍺 Homebrew tap for installing tsilva projects with one command 🚀",
@@ -300,18 +384,6 @@
     "commits": 0
   },
   {
-    "id": "gymrec",
-    "name": "gymrec",
-    "description": "🎮 Record and replay gameplay from Gymnasium environments as Hugging Face datasets 📊",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-03T18:23:05Z",
-    "createdAt": "2025-04-16T14:39:15Z",
-    "url": "https://github.com/tsilva/gymrec",
-    "commits": 0
-  },
-  {
     "id": "sandbox-crewai",
     "name": "sandbox-crewai",
     "description": "🤖 A sandbox for experimenting with CrewAI multi-agent AI systems that research topics and generate comprehensive reports 🔬",
@@ -357,18 +429,6 @@
     "updatedAt": "2026-03-03T16:09:26Z",
     "createdAt": "2026-01-15T15:13:24Z",
     "url": "https://github.com/tsilva/claudeskillz",
-    "commits": 0
-  },
-  {
-    "id": "youdown",
-    "name": "youdown",
-    "description": "📺 Download YouTube videos and extract audio with one command 🎵",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-02T12:23:21Z",
-    "createdAt": "2025-04-11T13:22:16Z",
-    "url": "https://github.com/tsilva/youdown",
     "commits": 0
   },
   {
@@ -849,30 +909,6 @@
     "updatedAt": "2026-03-02T12:19:51Z",
     "createdAt": "2026-01-19T13:02:57Z",
     "url": "https://github.com/tsilva/health-agent",
-    "commits": 0
-  },
-  {
-    "id": "gymsolve",
-    "name": "gymsolve",
-    "description": "🎮 Fast RL framework with PPO and REINFORCE on Gymnasium ⚡",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-02T12:19:48Z",
-    "createdAt": "2025-07-16T12:42:07Z",
-    "url": "https://github.com/tsilva/gymsolve",
-    "commits": 0
-  },
-  {
-    "id": "gymemu",
-    "name": "gymemu",
-    "description": "🎮 Play retro games through learned latent dynamics—no ROM required 🧠",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-02T12:19:42Z",
-    "createdAt": "2025-04-30T09:11:14Z",
-    "url": "https://github.com/tsilva/gymemu",
     "commits": 0
   },
   {

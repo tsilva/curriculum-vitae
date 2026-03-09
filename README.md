@@ -1228,23 +1228,25 @@ Computer Capers was a video game I developed at 12 years old and submitted to a 
 
 Open source projects and contributions.
 
+- [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
 - [agentpong](https://github.com/tsilva/agentpong) - Desktop notifications that jump you to the right Claude Code window
+- [gymrec](https://github.com/tsilva/gymrec) - Record and replay Gymnasium gameplay as Hugging Face datasets
+- [gymsolve](https://github.com/tsilva/gymsolve) - Fast RL framework with PPO and REINFORCE on Gymnasium
 - [gmail2obsidian](https://github.com/tsilva/gmail2obsidian) - Flush Gmail threads into Obsidian task files
 - [dedrive-web](https://github.com/tsilva/dedrive-web) - Find and clean up duplicate files in Google Drive from browser
 - [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
 - [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
 - [obsidian-agents-plugin](https://github.com/tsilva/obsidian-agents-plugin) - Launch AI agents from Obsidian vault
 - [aiml-notebooks](https://github.com/tsilva/aiml-notebooks) - AI/ML Jupyter notebooks for learning deep learning concepts
+- [mcp-openrouter](https://github.com/tsilva/mcp-openrouter) - Access 300+ AI models through a single MCP server
 - [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
 - [claudebridge](https://github.com/tsilva/claudebridge) - Bridge OpenAI tools to Claude Code SDK
 - [claudebox](https://github.com/tsilva/claudebox) - Full autonomy sandbox for Claude Code
 - [dedrive](https://github.com/tsilva/dedrive) - Find and manage duplicate files in Google Drive using MD5 checksums
 - [demosim](https://github.com/tsilva/demosim) - Explore Portugal's demographic future with economic projections
-- [mcp-openrouter](https://github.com/tsilva/mcp-openrouter) - Access 300+ AI models through a single MCP server
 - [homebrew-tap](https://github.com/tsilva/homebrew-tap) - Homebrew tap for installing tsilva projects
 - [capture](https://github.com/tsilva/capture) - Capture thoughts to Gmail with a single command
 - [mochimochi](https://github.com/tsilva/mochimochi) - CLI for curating Mochi flashcard decks with AI-powered deduplication
-- [gymrec](https://github.com/tsilva/gymrec) - Record and replay Gymnasium gameplay as Hugging Face datasets
 - [repologogen](https://github.com/tsilva/repologogen) - Generate professional logos from the command line
 - [gmailstream](https://github.com/tsilva/gmailstream) - Download Gmail messages matching filters to local files
 - [claudeskillz](https://github.com/tsilva/claudeskillz) - Modular skills that supercharge Claude Code
@@ -1259,8 +1261,6 @@ Open source projects and contributions.
 - [mochidecks](https://github.com/tsilva/mochidecks) - Curated flashcard decks for AI/ML and data science
 - [mcp-imagetools](https://github.com/tsilva/mcp-imagetools) - Image processing tools for Claude Code via MCP
 - [health-agent](https://github.com/tsilva/health-agent) - Unify lab results, medical exams, and health journals
-- [gymsolve](https://github.com/tsilva/gymsolve) - Fast RL framework with PPO and REINFORCE on Gymnasium
-- [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
 - [claudesk](https://github.com/tsilva/claudesk) - Interactive dashboard for launching Claude Code agents
 - [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
 - [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
