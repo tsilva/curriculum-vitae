@@ -1,10 +1,10 @@
 # TLDR
 
 <p align="center">
-  <img src="logo.png" alt="curriculum-vitae logo" width="200">
+  <a href="https://www.tsilva.eu"><img src="logo.png" alt="curriculum-vitae logo" width="200"></a>
 </p>
 
-This CV is detailed and comprehensive—it's more suited for running through your favorite LLM and asking questions than reading it all the way through. For a concise summary, here's the **TL;DR**:
+This CV is detailed and comprehensive—it's more suited for running through your favorite LLM and asking questions than reading it all the way through. For a concise summary, here's the **TL;DR**, or view the [interactive web version](https://www.tsilva.eu):
 
 
 >👋 As a **Software Engineer** with over **20+ years of experience** and **60+ projects shipped**, my passion for technology began in childhood. My earliest memories are of playing on a <a href="https://www.youtube.com/watch?v=V0EfycbDhiw" target="_blank">Sinclair ZX Spectrum 48k</a> (`LOAD "" [ENTER]` anyone? 🎮) and later learning English by trial and error while navigating graphical adventure games like <a href="https://www.youtube.com/watch?v=RBeYlClQRgQ" target="_blank">The Secret of Monkey Island</a> on the <a href="https://en.wikipedia.org/wiki/Amiga_500" target="_blank">Commodore Amiga 500</a>. My home became the go-to spot for neighborhood friends to binge on video games for hours 🎮🕹, and when we got stuck, I would trace where game variables were stored in RAM to patch them for infinite lives (`0x00057A34 = 03 -> FF` 💻🔧😈). At age 8, I received a <a href="https://en.wikipedia.org/wiki/Casio_FX-850P" target="_blank">Casio FX-850P calculator</a>—my first portable computer—and began coding text adventures on it to share with friends. By age 12, I had submitted <a href="https://photos.app.goo.gl/uMKFMcYurDnpCged8" target="_blank">my first game</a> to <a href="https://en.wikipedia.org/wiki/Amiga_Format" target="_blank">Amiga Format magazine</a>, and the <a href="https://photos.app.goo.gl/usD9rmawFdXKwFcH8" target="_blank">positive feedback</a> from the reviewer was encouraging enough to kickstart my journey into pursuing Software Engineering.<br>
