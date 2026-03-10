@@ -9,6 +9,7 @@
     "updatedAt": "2026-03-10T14:11:23Z",
     "createdAt": "2026-01-26T11:39:07Z",
     "url": "https://github.com/tsilva/mcp-openrouter",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -18,9 +19,36 @@
     "stars": 0,
     "forks": 0,
     "language": "TypeScript",
-    "updatedAt": "2026-03-10T17:20:11Z",
+    "updatedAt": "2026-03-10T17:40:27Z",
     "createdAt": "2026-03-08T18:15:45Z",
     "url": "https://github.com/tsilva/aipit",
+    "homepageUrl": "https://llmcouncil-rose.vercel.app",
+    "commits": 0
+  },
+  {
+    "id": "llame",
+    "name": "llame",
+    "description": "No Python. No CUDA. No server. Just a URL.",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-03-10T17:39:28Z",
+    "createdAt": "2026-03-06T15:44:20Z",
+    "url": "https://github.com/tsilva/llame",
+    "homepageUrl": "https://llame.tsilva.eu",
+    "commits": 0
+  },
+  {
+    "id": "gymemu",
+    "name": "gymemu",
+    "description": "🎮 Play retro games through learned latent dynamics—no ROM required 🧠",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-03-10T17:33:53Z",
+    "createdAt": "2025-04-30T09:11:14Z",
+    "url": "https://github.com/tsilva/gymemu",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -33,6 +61,7 @@
     "updatedAt": "2026-03-10T16:58:55Z",
     "createdAt": "2026-01-02T17:29:35Z",
     "url": "https://github.com/tsilva/demosim",
+    "homepageUrl": "https://demosim.tsilva.eu",
     "commits": 0
   },
   {
@@ -45,6 +74,7 @@
     "updatedAt": "2026-03-10T15:44:02Z",
     "createdAt": "2026-03-08T09:42:36Z",
     "url": "https://github.com/tsilva/drdre",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -57,6 +87,7 @@
     "updatedAt": "2026-03-10T15:44:02Z",
     "createdAt": "2026-03-04T12:30:11Z",
     "url": "https://github.com/tsilva/dedrive-web",
+    "homepageUrl": "https://dedrive.tsilva.eu",
     "commits": 0
   },
   {
@@ -69,18 +100,7 @@
     "updatedAt": "2026-03-10T15:44:02Z",
     "createdAt": "2026-03-03T16:52:27Z",
     "url": "https://github.com/tsilva/mobileassetgen",
-    "commits": 0
-  },
-  {
-    "id": "llame",
-    "name": "llame",
-    "description": "No Python. No CUDA. No server. Just a URL.",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-03-10T15:44:01Z",
-    "createdAt": "2026-03-06T15:44:20Z",
-    "url": "https://github.com/tsilva/llame",
+    "homepageUrl": "https://mobileassetgen.tsilva.eu",
     "commits": 0
   },
   {
@@ -93,6 +113,7 @@
     "updatedAt": "2026-03-10T15:23:40Z",
     "createdAt": "2026-02-17T16:31:18Z",
     "url": "https://github.com/tsilva/sandbox-minari",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -105,18 +126,7 @@
     "updatedAt": "2026-03-10T15:08:41Z",
     "createdAt": "2026-03-02T12:30:28Z",
     "url": "https://github.com/tsilva/thunkd",
-    "commits": 0
-  },
-  {
-    "id": "gymemu",
-    "name": "gymemu",
-    "description": "🎮 Play retro games through learned latent dynamics—no ROM required 🧠",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-10T14:58:34Z",
-    "createdAt": "2025-04-30T09:11:14Z",
-    "url": "https://github.com/tsilva/gymemu",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -129,6 +139,7 @@
     "updatedAt": "2026-03-10T14:20:36Z",
     "createdAt": "2024-01-16T16:26:53Z",
     "url": "https://github.com/tsilva/parselabs",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -141,6 +152,7 @@
     "updatedAt": "2026-03-10T12:12:03Z",
     "createdAt": "2025-04-16T14:39:15Z",
     "url": "https://github.com/tsilva/gymrec",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -153,6 +165,7 @@
     "updatedAt": "2026-03-06T17:29:16Z",
     "createdAt": "2026-01-08T14:52:54Z",
     "url": "https://github.com/tsilva/agentpong",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -165,6 +178,7 @@
     "updatedAt": "2026-03-08T19:54:34Z",
     "createdAt": "2025-04-11T13:22:16Z",
     "url": "https://github.com/tsilva/youdown",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -177,6 +191,7 @@
     "updatedAt": "2026-03-08T18:52:58Z",
     "createdAt": "2026-03-08T17:46:30Z",
     "url": "https://github.com/tsilva/aigrounds",
+    "homepageUrl": "https://aigrounds.tsilva.eu",
     "commits": 0
   },
   {
@@ -189,6 +204,7 @@
     "updatedAt": "2026-03-07T22:29:38Z",
     "createdAt": "2025-07-16T12:42:07Z",
     "url": "https://github.com/tsilva/gymsolve",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -201,6 +217,7 @@
     "updatedAt": "2026-03-07T10:47:08Z",
     "createdAt": "2026-02-12T17:31:27Z",
     "url": "https://github.com/tsilva/gmail2obsidian",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -213,6 +230,7 @@
     "updatedAt": "2026-03-06T15:42:52Z",
     "createdAt": "2025-03-09T17:07:24Z",
     "url": "https://github.com/tsilva/papertrail",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -225,6 +243,7 @@
     "updatedAt": "2026-03-06T14:15:56Z",
     "createdAt": "2026-03-06T12:21:11Z",
     "url": "https://github.com/tsilva/retrokit",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -237,6 +256,7 @@
     "updatedAt": "2026-03-02T12:18:52Z",
     "createdAt": "2024-08-02T15:00:41Z",
     "url": "https://github.com/tsilva/aiml-notebooks",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -249,6 +269,7 @@
     "updatedAt": "2026-03-06T12:11:22Z",
     "createdAt": "2026-03-03T12:24:40Z",
     "url": "https://github.com/tsilva/obsidian-agents-plugin",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -261,6 +282,7 @@
     "updatedAt": "2026-03-02T12:20:07Z",
     "createdAt": "2025-06-17T15:40:10Z",
     "url": "https://github.com/tsilva/mcp-wandb",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -273,6 +295,7 @@
     "updatedAt": "2026-03-02T12:19:08Z",
     "createdAt": "2026-01-25T10:27:29Z",
     "url": "https://github.com/tsilva/claudebridge",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -285,6 +308,7 @@
     "updatedAt": "2026-03-02T12:19:05Z",
     "createdAt": "2026-01-22T14:16:20Z",
     "url": "https://github.com/tsilva/claudebox",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -297,6 +321,7 @@
     "updatedAt": "2026-03-04T12:21:32Z",
     "createdAt": "2026-01-12T12:07:00Z",
     "url": "https://github.com/tsilva/dedrive",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -309,6 +334,7 @@
     "updatedAt": "2026-03-03T18:27:07Z",
     "createdAt": "2025-01-30T13:16:33Z",
     "url": "https://github.com/tsilva/sandbox-nextjs",
+    "homepageUrl": "https://sandbox-nextjs-indol.vercel.app",
     "commits": 0
   },
   {
@@ -321,6 +347,7 @@
     "updatedAt": "2026-03-03T18:26:43Z",
     "createdAt": "2025-01-28T14:16:10Z",
     "url": "https://github.com/tsilva/sandbox-node",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -333,6 +360,7 @@
     "updatedAt": "2026-03-03T18:26:40Z",
     "createdAt": "2025-11-06T16:14:57Z",
     "url": "https://github.com/tsilva/sandbox-ocr",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -345,6 +373,7 @@
     "updatedAt": "2026-03-03T18:26:33Z",
     "createdAt": "2026-02-14T21:51:37Z",
     "url": "https://github.com/tsilva/template-python-cli",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -357,6 +386,7 @@
     "updatedAt": "2026-03-03T18:25:26Z",
     "createdAt": "2026-02-09T13:53:24Z",
     "url": "https://github.com/tsilva/homebrew-tap",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -369,6 +399,7 @@
     "updatedAt": "2026-03-03T18:25:02Z",
     "createdAt": "2021-04-19T11:13:00Z",
     "url": "https://github.com/tsilva/capture",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -381,6 +412,7 @@
     "updatedAt": "2026-03-03T18:24:52Z",
     "createdAt": "2025-11-03T12:49:25Z",
     "url": "https://github.com/tsilva/mochimochi",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -393,6 +425,7 @@
     "updatedAt": "2026-03-03T18:24:10Z",
     "createdAt": "2025-02-04T12:11:08Z",
     "url": "https://github.com/tsilva/sandbox-assemblyscript",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -405,6 +438,7 @@
     "updatedAt": "2026-03-03T18:23:56Z",
     "createdAt": "2026-03-02T11:59:51Z",
     "url": "https://github.com/tsilva/template-react-native",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -417,6 +451,7 @@
     "updatedAt": "2026-03-03T18:21:11Z",
     "createdAt": "2025-01-13T12:00:33Z",
     "url": "https://github.com/tsilva/sandbox-crewai",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -429,6 +464,7 @@
     "updatedAt": "2026-03-03T17:56:41Z",
     "createdAt": "2026-03-03T15:24:54Z",
     "url": "https://github.com/tsilva/repologogen",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -441,6 +477,7 @@
     "updatedAt": "2026-03-03T17:36:05Z",
     "createdAt": "2026-01-31T17:17:06Z",
     "url": "https://github.com/tsilva/gmailstream",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -453,6 +490,7 @@
     "updatedAt": "2026-03-03T16:09:26Z",
     "createdAt": "2026-01-15T15:13:24Z",
     "url": "https://github.com/tsilva/claudeskillz",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -465,6 +503,7 @@
     "updatedAt": "2026-03-02T12:23:07Z",
     "createdAt": "2025-04-03T13:08:47Z",
     "url": "https://github.com/tsilva/whatsapp-llm",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -477,6 +516,7 @@
     "updatedAt": "2026-03-02T12:23:00Z",
     "createdAt": "2024-02-11T22:36:34Z",
     "url": "https://github.com/tsilva/tsilva.eu",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -489,6 +529,7 @@
     "updatedAt": "2026-03-02T12:22:51Z",
     "createdAt": "2026-02-14T21:52:52Z",
     "url": "https://github.com/tsilva/template-python-sandbox",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -501,6 +542,7 @@
     "updatedAt": "2026-03-02T12:22:46Z",
     "createdAt": "2026-02-14T21:52:54Z",
     "url": "https://github.com/tsilva/template-generic",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -513,6 +555,7 @@
     "updatedAt": "2026-03-02T12:22:44Z",
     "createdAt": "2025-02-04T14:03:35Z",
     "url": "https://github.com/tsilva/sandbox-x86asm",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -525,6 +568,7 @@
     "updatedAt": "2026-03-02T12:22:41Z",
     "createdAt": "2025-01-30T18:09:19Z",
     "url": "https://github.com/tsilva/sandbox-vite",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -537,6 +581,7 @@
     "updatedAt": "2026-03-02T12:22:36Z",
     "createdAt": "2025-01-14T12:50:15Z",
     "url": "https://github.com/tsilva/sandbox-vertex-ai",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -549,6 +594,7 @@
     "updatedAt": "2026-03-02T12:22:30Z",
     "createdAt": "2025-01-09T17:56:50Z",
     "url": "https://github.com/tsilva/sandbox-transformers",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -561,6 +607,7 @@
     "updatedAt": "2026-03-02T12:22:27Z",
     "createdAt": "2025-03-06T14:49:51Z",
     "url": "https://github.com/tsilva/sandbox-transformers-js",
+    "homepageUrl": "https://huggingface.co/docs/transformers.js/en/index",
     "commits": 0
   },
   {
@@ -573,6 +620,7 @@
     "updatedAt": "2026-03-02T12:22:24Z",
     "createdAt": "2025-01-15T17:20:36Z",
     "url": "https://github.com/tsilva/sandbox-tavily",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -585,6 +633,7 @@
     "updatedAt": "2026-03-02T12:22:21Z",
     "createdAt": "2025-01-14T15:40:47Z",
     "url": "https://github.com/tsilva/sandbox-swarm",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -597,6 +646,7 @@
     "updatedAt": "2026-03-02T12:22:19Z",
     "createdAt": "2025-01-13T18:12:56Z",
     "url": "https://github.com/tsilva/sandbox-streamlit",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -609,6 +659,7 @@
     "updatedAt": "2026-03-02T12:22:16Z",
     "createdAt": "2025-01-14T16:02:05Z",
     "url": "https://github.com/tsilva/sandbox-smolagents",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -621,6 +672,7 @@
     "updatedAt": "2026-03-02T12:22:13Z",
     "createdAt": "2025-01-30T16:40:57Z",
     "url": "https://github.com/tsilva/sandbox-rust",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -633,6 +685,7 @@
     "updatedAt": "2026-03-02T12:22:10Z",
     "createdAt": "2026-01-16T11:48:15Z",
     "url": "https://github.com/tsilva/sandbox-rl",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -645,6 +698,7 @@
     "updatedAt": "2026-03-02T12:22:06Z",
     "createdAt": "2025-01-31T09:29:46Z",
     "url": "https://github.com/tsilva/sandbox-redis",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -657,6 +711,7 @@
     "updatedAt": "2026-03-02T12:22:04Z",
     "createdAt": "2025-02-10T12:48:10Z",
     "url": "https://github.com/tsilva/sandbox-openrouter",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -669,6 +724,7 @@
     "updatedAt": "2026-03-02T12:22:01Z",
     "createdAt": "2025-01-13T18:38:29Z",
     "url": "https://github.com/tsilva/sandbox-openai",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -681,6 +737,7 @@
     "updatedAt": "2026-03-02T12:21:48Z",
     "createdAt": "2025-01-13T16:28:13Z",
     "url": "https://github.com/tsilva/sandbox-llamaindex",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -693,6 +750,7 @@
     "updatedAt": "2026-03-02T12:21:42Z",
     "createdAt": "2025-01-31T12:14:24Z",
     "url": "https://github.com/tsilva/sandbox-kafka",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -705,6 +763,7 @@
     "updatedAt": "2026-03-02T12:21:39Z",
     "createdAt": "2026-01-19T12:58:15Z",
     "url": "https://github.com/tsilva/sandbox-ios",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -717,6 +776,7 @@
     "updatedAt": "2026-03-02T12:21:37Z",
     "createdAt": "2025-01-13T15:55:01Z",
     "url": "https://github.com/tsilva/sandbox-gradio",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -729,6 +789,7 @@
     "updatedAt": "2026-03-02T12:21:33Z",
     "createdAt": "2025-01-15T17:35:51Z",
     "url": "https://github.com/tsilva/sandbox-google-places-api",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -741,6 +802,7 @@
     "updatedAt": "2026-03-02T12:21:29Z",
     "createdAt": "2025-01-28T14:52:21Z",
     "url": "https://github.com/tsilva/sandbox-go",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -753,6 +815,7 @@
     "updatedAt": "2026-03-02T12:21:26Z",
     "createdAt": "2025-06-17T11:54:07Z",
     "url": "https://github.com/tsilva/sandbox-fastmcp",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -765,6 +828,7 @@
     "updatedAt": "2026-03-02T12:21:23Z",
     "createdAt": "2025-01-30T13:54:22Z",
     "url": "https://github.com/tsilva/sandbox-fastapi",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -777,6 +841,7 @@
     "updatedAt": "2026-03-02T12:21:20Z",
     "createdAt": "2025-01-20T18:07:08Z",
     "url": "https://github.com/tsilva/sandbox-cuda",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -789,6 +854,7 @@
     "updatedAt": "2026-03-02T12:21:15Z",
     "createdAt": "2025-01-13T16:14:53Z",
     "url": "https://github.com/tsilva/sandbox-autogen",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -801,6 +867,7 @@
     "updatedAt": "2026-03-02T12:21:10Z",
     "createdAt": "2025-01-14T12:42:24Z",
     "url": "https://github.com/tsilva/sandbox-anthropic",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -813,6 +880,7 @@
     "updatedAt": "2026-03-02T12:21:07Z",
     "createdAt": "2026-01-16T18:54:14Z",
     "url": "https://github.com/tsilva/sandbox-android",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -825,6 +893,7 @@
     "updatedAt": "2026-03-02T12:20:56Z",
     "createdAt": "2025-04-02T11:09:52Z",
     "url": "https://github.com/tsilva/repo2md",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -837,6 +906,7 @@
     "updatedAt": "2026-03-02T12:20:53Z",
     "createdAt": "2025-03-27T15:15:54Z",
     "url": "https://github.com/tsilva/popdesk",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -849,6 +919,7 @@
     "updatedAt": "2026-03-02T12:20:49Z",
     "createdAt": "2026-02-20T15:54:12Z",
     "url": "https://github.com/tsilva/pdfpress",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -861,6 +932,7 @@
     "updatedAt": "2026-03-02T12:20:39Z",
     "createdAt": "2026-01-12T12:53:54Z",
     "url": "https://github.com/tsilva/parsemedicalexams",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -873,6 +945,7 @@
     "updatedAt": "2026-03-02T12:20:34Z",
     "createdAt": "2025-05-11T08:44:43Z",
     "url": "https://github.com/tsilva/parsehealthlog",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -885,6 +958,7 @@
     "updatedAt": "2026-03-02T12:20:20Z",
     "createdAt": "2025-04-02T11:02:46Z",
     "url": "https://github.com/tsilva/notebook2md",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -897,6 +971,7 @@
     "updatedAt": "2026-03-02T12:20:13Z",
     "createdAt": "2025-11-04T12:28:23Z",
     "url": "https://github.com/tsilva/mochidecks",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -909,6 +984,7 @@
     "updatedAt": "2026-03-02T12:20:01Z",
     "createdAt": "2026-01-26T14:41:27Z",
     "url": "https://github.com/tsilva/mcp-imagetools",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -921,6 +997,7 @@
     "updatedAt": "2026-03-02T12:19:51Z",
     "createdAt": "2026-01-19T13:02:57Z",
     "url": "https://github.com/tsilva/health-agent",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -933,6 +1010,7 @@
     "updatedAt": "2026-03-02T12:19:10Z",
     "createdAt": "2026-02-15T17:09:36Z",
     "url": "https://github.com/tsilva/claudesk",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -945,6 +1023,7 @@
     "updatedAt": "2026-02-23T18:06:32Z",
     "createdAt": "2025-04-30T16:15:07Z",
     "url": "https://github.com/tsilva/mbox-extractor",
+    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -957,6 +1036,7 @@
     "updatedAt": "2026-02-23T17:57:16Z",
     "createdAt": "2025-05-01T08:53:45Z",
     "url": "https://github.com/tsilva/archex",
+    "homepageUrl": null,
     "commits": 0
   }
 ]

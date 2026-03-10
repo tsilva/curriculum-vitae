@@ -1,10 +1,10 @@
 # TLDR
 
 <p align="center">
-  <a href="https://www.tsilva.eu"><img src="logo.png" alt="curriculum-vitae logo" width="200"></a>
+  <img src="logo.png" alt="curriculum-vitae logo" width="200">
 </p>
 
-This CV is detailed and comprehensive—it's more suited for running through your favorite LLM and asking questions than reading it all the way through. For a concise summary, here's the **TL;DR**, or view the [interactive web version](https://www.tsilva.eu):
+This CV is detailed and comprehensive—it's more suited for running through your favorite LLM and asking questions than reading it all the way through. For a concise summary, here's the **TL;DR**:
 
 
 >👋 As a **Software Engineer** with over **20+ years of experience** and **60+ projects shipped**, my passion for technology began in childhood. My earliest memories are of playing on a <a href="https://www.youtube.com/watch?v=V0EfycbDhiw" target="_blank">Sinclair ZX Spectrum 48k</a> (`LOAD "" [ENTER]` anyone? 🎮) and later learning English by trial and error while navigating graphical adventure games like <a href="https://www.youtube.com/watch?v=RBeYlClQRgQ" target="_blank">The Secret of Monkey Island</a> on the <a href="https://en.wikipedia.org/wiki/Amiga_500" target="_blank">Commodore Amiga 500</a>. My home became the go-to spot for neighborhood friends to binge on video games for hours 🎮🕹, and when we got stuck, I would trace where game variables were stored in RAM to patch them for infinite lives (`0x00057A34 = 03 -> FF` 💻🔧😈). At age 8, I received a <a href="https://en.wikipedia.org/wiki/Casio_FX-850P" target="_blank">Casio FX-850P calculator</a>—my first portable computer—and began coding text adventures on it to share with friends. By age 12, I had submitted <a href="https://photos.app.goo.gl/uMKFMcYurDnpCged8" target="_blank">my first game</a> to <a href="https://en.wikipedia.org/wiki/Amiga_Format" target="_blank">Amiga Format magazine</a>, and the <a href="https://photos.app.goo.gl/usD9rmawFdXKwFcH8" target="_blank">positive feedback</a> from the reviewer was encouraging enough to kickstart my journey into pursuing Software Engineering.<br>
@@ -1229,10 +1229,10 @@ Computer Capers was a video game I developed at 12 years old and submitted to a 
 Open source projects and contributions.
 
 - [mcp-openrouter](https://github.com/tsilva/mcp-openrouter) - Access 300+ AI models through a single MCP server
+- [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
 - [demosim](https://github.com/tsilva/demosim) - Explore Portugal's demographic future with economic projections
 - [dedrive-web](https://github.com/tsilva/dedrive-web) - Find and clean up duplicate files in Google Drive from browser
 - [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
-- [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
 - [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
 - [gymrec](https://github.com/tsilva/gymrec) - Record and replay Gymnasium gameplay as Hugging Face datasets
 - [agentpong](https://github.com/tsilva/agentpong) - Desktop notifications that jump you to the right Claude Code window
