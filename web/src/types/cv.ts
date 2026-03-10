@@ -28,6 +28,7 @@ export interface GitHubRepo {
   updatedAt: string;
   createdAt: string;
   url: string;
+  homepageUrl?: string | null;
 }
 
 export interface Project {

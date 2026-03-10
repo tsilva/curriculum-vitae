@@ -12,6 +12,7 @@ interface GitHubRepoRaw {
   updatedAt: string;
   pushedAt: string;
   url: string;
+  homepageUrl: string;
   stargazerCount: number;
   forkCount: number;
   isArchived: boolean;
@@ -29,6 +30,7 @@ interface GitHubRepo {
   updatedAt: string;
   createdAt: string;
   url: string;
+  homepageUrl: string | null;
   commits: number;
 }
 
@@ -38,7 +40,7 @@ const ROOT = path.resolve(__dirname, "..");
 const OUTPUT_PATH = path.join(ROOT, "web", "src", "data", "github-data.json");
 
 function fetchRepos(): GitHubRepoRaw[] {
-  const cmd = `gh repo list tsilva --visibility public --limit 100 --json name,description,primaryLanguage,createdAt,updatedAt,pushedAt,url,stargazerCount,forkCount,isArchived,isFork,visibility`;
+  const cmd = `gh repo list tsilva --visibility public --limit 100 --json name,description,primaryLanguage,createdAt,updatedAt,pushedAt,url,homepageUrl,stargazerCount,forkCount,isArchived,isFork,visibility`;
   
   try {
     const output = execSync(cmd, { encoding: "utf-8", cwd: ROOT });
@@ -69,6 +71,7 @@ function processRepos(repos: GitHubRepoRaw[]): GitHubRepo[] {
     updatedAt: repo.pushedAt,
     createdAt: repo.createdAt,
     url: repo.url,
+    homepageUrl: repo.homepageUrl || null,
     commits: 0, // Not fetched to keep builds fast
   }));
   
