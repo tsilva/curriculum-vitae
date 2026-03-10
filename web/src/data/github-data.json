@@ -1,14 +1,146 @@
 [
   {
+    "id": "mcp-openrouter",
+    "name": "mcp-openrouter",
+    "description": "🚀 Access 300+ AI models through a single MCP server — text, images, embeddings, and model discovery at your fingertips 🤖",
+    "stars": 1,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-03-10T14:11:23Z",
+    "createdAt": "2026-01-26T11:39:07Z",
+    "url": "https://github.com/tsilva/mcp-openrouter",
+    "commits": 0
+  },
+  {
+    "id": "aipit",
+    "name": "aipit",
+    "description": "Next.js app for throwing persona simulations against each other in moderator-led debates through OpenRouter:",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-03-10T17:20:11Z",
+    "createdAt": "2026-03-08T18:15:45Z",
+    "url": "https://github.com/tsilva/aipit",
+    "commits": 0
+  },
+  {
+    "id": "demosim",
+    "name": "demosim",
+    "description": "📊 Explore Portugal's demographic future from 2024 to 2100 with real-time economic impact projections 🇵🇹",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-03-10T16:58:55Z",
+    "createdAt": "2026-01-02T17:29:35Z",
+    "url": "https://github.com/tsilva/demosim",
+    "commits": 0
+  },
+  {
+    "id": "drdre",
+    "name": "drdre",
+    "description": "",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-03-10T15:44:02Z",
+    "createdAt": "2026-03-08T09:42:36Z",
+    "url": "https://github.com/tsilva/drdre",
+    "commits": 0
+  },
+  {
+    "id": "dedrive-web",
+    "name": "dedrive-web",
+    "description": "🔍 Find and clean up duplicate files in your Google Drive — entirely from your browser 🧹",
+    "stars": 0,
+    "forks": 0,
+    "language": "JavaScript",
+    "updatedAt": "2026-03-10T15:44:02Z",
+    "createdAt": "2026-03-04T12:30:11Z",
+    "url": "https://github.com/tsilva/dedrive-web",
+    "commits": 0
+  },
+  {
+    "id": "mobileassetgen",
+    "name": "mobileassetgen",
+    "description": "📱 Generate production-ready Android app assets from a single text prompt — icons, round icons, notifications, and Play Store graphics, all in seconds ⚡",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-03-10T15:44:02Z",
+    "createdAt": "2026-03-03T16:52:27Z",
+    "url": "https://github.com/tsilva/mobileassetgen",
+    "commits": 0
+  },
+  {
+    "id": "llame",
+    "name": "llame",
+    "description": "No Python. No CUDA. No server. Just a URL.",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-03-10T15:44:01Z",
+    "createdAt": "2026-03-06T15:44:20Z",
+    "url": "https://github.com/tsilva/llame",
+    "commits": 0
+  },
+  {
+    "id": "sandbox-minari",
+    "name": "sandbox-minari",
+    "description": "🤖 Explore offline reinforcement learning datasets with Minari 📊",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-03-10T15:23:40Z",
+    "createdAt": "2026-02-17T16:31:18Z",
+    "url": "https://github.com/tsilva/sandbox-minari",
+    "commits": 0
+  },
+  {
+    "id": "thunkd",
+    "name": "thunkd",
+    "description": "⚡ Capture thoughts instantly and send them straight to your inbox 💭",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-03-10T15:08:41Z",
+    "createdAt": "2026-03-02T12:30:28Z",
+    "url": "https://github.com/tsilva/thunkd",
+    "commits": 0
+  },
+  {
     "id": "gymemu",
     "name": "gymemu",
     "description": "🎮 Play retro games through learned latent dynamics—no ROM required 🧠",
     "stars": 0,
     "forks": 0,
     "language": "Python",
-    "updatedAt": "2026-03-09T11:26:24Z",
+    "updatedAt": "2026-03-10T14:58:34Z",
     "createdAt": "2025-04-30T09:11:14Z",
     "url": "https://github.com/tsilva/gymemu",
+    "commits": 0
+  },
+  {
+    "id": "parselabs",
+    "name": "parselabs",
+    "description": "🔬 Extract lab results from medical PDFs using AI vision with self-consistency 📊",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-03-10T14:20:36Z",
+    "createdAt": "2024-01-16T16:26:53Z",
+    "url": "https://github.com/tsilva/parselabs",
+    "commits": 0
+  },
+  {
+    "id": "gymrec",
+    "name": "gymrec",
+    "description": "🎮 Record and replay gameplay from Gymnasium environments as Hugging Face datasets 📊",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-03-10T12:12:03Z",
+    "createdAt": "2025-04-16T14:39:15Z",
+    "url": "https://github.com/tsilva/gymrec",
     "commits": 0
   },
   {
@@ -24,30 +156,6 @@
     "commits": 0
   },
   {
-    "id": "llmcouncil",
-    "name": "llmcouncil",
-    "description": "",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-03-08T20:00:39Z",
-    "createdAt": "2026-03-08T18:15:45Z",
-    "url": "https://github.com/tsilva/llmcouncil",
-    "commits": 0
-  },
-  {
-    "id": "drdre",
-    "name": "drdre",
-    "description": "",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-03-08T19:54:55Z",
-    "createdAt": "2026-03-08T09:42:36Z",
-    "url": "https://github.com/tsilva/drdre",
-    "commits": 0
-  },
-  {
     "id": "youdown",
     "name": "youdown",
     "description": "📺 Download YouTube videos and extract audio with one command 🎵",
@@ -57,30 +165,6 @@
     "updatedAt": "2026-03-08T19:54:34Z",
     "createdAt": "2025-04-11T13:22:16Z",
     "url": "https://github.com/tsilva/youdown",
-    "commits": 0
-  },
-  {
-    "id": "llame",
-    "name": "llame",
-    "description": "No Python. No CUDA. No server. Just a URL.",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-03-08T19:40:55Z",
-    "createdAt": "2026-03-06T15:44:20Z",
-    "url": "https://github.com/tsilva/llame",
-    "commits": 0
-  },
-  {
-    "id": "gymrec",
-    "name": "gymrec",
-    "description": "🎮 Record and replay gameplay from Gymnasium environments as Hugging Face datasets 📊",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-08T18:58:47Z",
-    "createdAt": "2025-04-16T14:39:15Z",
-    "url": "https://github.com/tsilva/gymrec",
     "commits": 0
   },
   {
@@ -120,30 +204,6 @@
     "commits": 0
   },
   {
-    "id": "mobileassetgen",
-    "name": "mobileassetgen",
-    "description": "📱 Generate production-ready Android app assets from a single text prompt — icons, round icons, notifications, and Play Store graphics, all in seconds ⚡",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-03-06T22:41:08Z",
-    "createdAt": "2026-03-03T16:52:27Z",
-    "url": "https://github.com/tsilva/mobileassetgen",
-    "commits": 0
-  },
-  {
-    "id": "dedrive-web",
-    "name": "dedrive-web",
-    "description": "🔍 Find and clean up duplicate files in your Google Drive — entirely from your browser 🧹",
-    "stars": 0,
-    "forks": 0,
-    "language": "JavaScript",
-    "updatedAt": "2026-03-06T22:30:31Z",
-    "createdAt": "2026-03-04T12:30:11Z",
-    "url": "https://github.com/tsilva/dedrive-web",
-    "commits": 0
-  },
-  {
     "id": "papertrail",
     "name": "papertrail",
     "description": "📄 AI-powered PDF document classification and organization using vision LLMs 🗂️",
@@ -168,30 +228,6 @@
     "commits": 0
   },
   {
-    "id": "thunkd",
-    "name": "thunkd",
-    "description": "⚡ Capture thoughts instantly and send them straight to your inbox 💭",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-03-06T13:46:21Z",
-    "createdAt": "2026-03-02T12:30:28Z",
-    "url": "https://github.com/tsilva/thunkd",
-    "commits": 0
-  },
-  {
-    "id": "obsidian-agents-plugin",
-    "name": "obsidian-agents-plugin",
-    "description": "Launch AI agents from your vault — right-click any file or folder to open a terminal with context 🤖",
-    "stars": 0,
-    "forks": 0,
-    "language": "Shell",
-    "updatedAt": "2026-03-06T12:11:22Z",
-    "createdAt": "2026-03-03T12:24:40Z",
-    "url": "https://github.com/tsilva/obsidian-agents-plugin",
-    "commits": 0
-  },
-  {
     "id": "aiml-notebooks",
     "name": "aiml-notebooks",
     "description": "📚 AI/ML Jupyter notebooks for learning deep learning concepts 🧠",
@@ -204,15 +240,15 @@
     "commits": 0
   },
   {
-    "id": "mcp-openrouter",
-    "name": "mcp-openrouter",
-    "description": "🚀 Access 300+ AI models through a single MCP server — text, images, embeddings, and model discovery at your fingertips 🤖",
-    "stars": 1,
+    "id": "obsidian-agents-plugin",
+    "name": "obsidian-agents-plugin",
+    "description": "Launch AI agents from your vault — right-click any file or folder to open a terminal with context 🤖",
+    "stars": 0,
     "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-03T18:26:17Z",
-    "createdAt": "2026-01-26T11:39:07Z",
-    "url": "https://github.com/tsilva/mcp-openrouter",
+    "language": "Shell",
+    "updatedAt": "2026-03-06T12:11:22Z",
+    "createdAt": "2026-03-03T12:24:40Z",
+    "url": "https://github.com/tsilva/obsidian-agents-plugin",
     "commits": 0
   },
   {
@@ -261,18 +297,6 @@
     "updatedAt": "2026-03-04T12:21:32Z",
     "createdAt": "2026-01-12T12:07:00Z",
     "url": "https://github.com/tsilva/dedrive",
-    "commits": 0
-  },
-  {
-    "id": "demosim",
-    "name": "demosim",
-    "description": "📊 Explore Portugal's demographic future from 2024 to 2100 with real-time economic impact projections 🇵🇹",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-03-03T18:29:59Z",
-    "createdAt": "2026-01-02T17:29:35Z",
-    "url": "https://github.com/tsilva/demosim",
     "commits": 0
   },
   {
@@ -648,18 +672,6 @@
     "commits": 0
   },
   {
-    "id": "sandbox-minari",
-    "name": "sandbox-minari",
-    "description": "🤖 Explore offline reinforcement learning datasets with Minari 📊",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-02T12:21:50Z",
-    "createdAt": "2026-02-17T16:31:18Z",
-    "url": "https://github.com/tsilva/sandbox-minari",
-    "commits": 0
-  },
-  {
     "id": "sandbox-llamaindex",
     "name": "sandbox-llamaindex",
     "description": "🦙 A sandbox for experimenting with LlamaIndex RAG (Retrieval-Augmented Generation) pipelines 🔍",
@@ -921,18 +933,6 @@
     "updatedAt": "2026-03-02T12:19:10Z",
     "createdAt": "2026-02-15T17:09:36Z",
     "url": "https://github.com/tsilva/claudesk",
-    "commits": 0
-  },
-  {
-    "id": "parselabs",
-    "name": "parselabs",
-    "description": "🔬 Extract lab results from medical PDFs using AI vision with self-consistency 📊",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-03-01T10:37:21Z",
-    "createdAt": "2024-01-16T16:26:53Z",
-    "url": "https://github.com/tsilva/parselabs",
     "commits": 0
   },
   {
