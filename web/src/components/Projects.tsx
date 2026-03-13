@@ -10,11 +10,16 @@ import { ProjectModal } from "./ProjectModal";
 import { GalleryModal } from "./GalleryModal";
 import { useInfiniteScroll } from "@/hooks/useInfiniteScroll";
 
+interface GalleryOpenDetail {
+  project: Project;
+  returnFocusTo?: HTMLElement | null;
+}
+
 export function Projects() {
   const [selectedTechs, setSelectedTechs] = useState<string[]>([]);
   const [isTechBrowserOpen, setIsTechBrowserOpen] = useState(false);
   const [modalProject, setModalProject] = useState<Project | null>(null);
-  const [galleryModalProject, setGalleryModalProject] = useState<Project | null>(null);
+  const [galleryModalState, setGalleryModalState] = useState<GalleryOpenDetail | null>(null);
   const [filterKey, setFilterKey] = useState(0);
 
   const technologies = useMemo(() => {
@@ -45,8 +50,8 @@ export function Projects() {
 
   // Listen for gallery open events from ProjectModal
   useEffect(() => {
-    const handleOpenGallery = (e: CustomEvent<Project>) => {
-      setGalleryModalProject(e.detail);
+    const handleOpenGallery = (e: CustomEvent<GalleryOpenDetail>) => {
+      setGalleryModalState(e.detail);
     };
 
     window.addEventListener('openProjectGallery', handleOpenGallery as EventListener);
@@ -77,7 +82,7 @@ export function Projects() {
       />
 
       <div className="mt-6 font-[family-name:var(--font-mono)] text-sm text-steel">
-        <span className="text-steel-dim">//</span> Displaying {visible.length}{" "}
+        <span className="text-steel-dim">{"//"}</span> Displaying {visible.length}{" "}
         of {cvData.projects_db.length} records
         {selectedTechs.length > 0 && (
           <span className="text-cyan ml-2">
@@ -137,8 +142,14 @@ export function Projects() {
       />
 
       <GalleryModal
-        project={galleryModalProject}
-        onClose={() => setGalleryModalProject(null)}
+        project={galleryModalState?.project ?? null}
+        onClose={() => {
+          const target = galleryModalState?.returnFocusTo;
+          setGalleryModalState(null);
+          window.requestAnimationFrame(() => {
+            target?.focus();
+          });
+        }}
       />
     </section>
   );

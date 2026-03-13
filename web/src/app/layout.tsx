@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Orbitron, Share_Tech_Mono, Fira_Code } from "next/font/google";
 import dynamic from "next/dynamic";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { AnalyticsConsent } from "@/components/AnalyticsConsent";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import "./globals.css";
 
@@ -9,6 +10,7 @@ const SITE_URL = "https://www.tsilva.eu";
 const SITE_TITLE = "Tiago Silva | Full-Stack Software Engineer with AI Skills";
 const SITE_DESCRIPTION =
   "Full-stack software engineer with 20+ years of experience building backend, frontend, mobile, and AI products. Python, TypeScript, React, Next.js, Node.js, LLMs, and cloud architecture.";
+const ENABLE_SPEED_INSIGHTS = process.env.VERCEL === "1";
 
 // Lazy load MatrixRain as it's a non-critical visual effect
 const MatrixRain = dynamic(() => import("@/components/MatrixRain").then((mod) => ({ default: mod.MatrixRain })));
@@ -187,10 +189,11 @@ const jsonLd = [
         <link rel="preload" href="/avatar.webp" as="image" type="image/webp" />
       </head>
       <body className="font-[family-name:var(--font-body)] dot-grid scanlines crt-vignette antialiased">
+        <AnalyticsConsent />
         <GoogleAnalytics />
         <MatrixRain />
         {children}
-        <SpeedInsights />
+        {ENABLE_SPEED_INSIGHTS ? <SpeedInsights /> : null}
       </body>
     </html>
   );

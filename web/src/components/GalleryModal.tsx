@@ -1,10 +1,12 @@
 "use client";
+/* eslint-disable @next/next/no-img-element */
 
-import { useEffect, useState, useRef, memo, useCallback } from "react";
+import { useEffect, useState, useRef, memo, useCallback, useId, useMemo } from "react";
 import { createPortal } from "react-dom";
 import type { Project, GalleryMedia } from "@/types/cv";
 import PhotoSwipe from "photoswipe";
 import "photoswipe/style.css";
+import { useModal } from "@/hooks/useModal";
 
 interface GalleryModalProps {
   project: Project | null;
@@ -76,7 +78,17 @@ const GridItem = memo(({ media, index, onClick }: { media: GalleryMedia; index: 
 GridItem.displayName = 'GridItem';
 
 export function GalleryModal({ project, onClose }: GalleryModalProps) {
-  const gallery = project?.gallery || [];
+  const gallery = useMemo(() => project?.gallery ?? [], [project?.gallery]);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const titleId = useId();
+
+  useModal({
+    isOpen: !!project && gallery.length > 0,
+    onClose,
+    dialogRef,
+    initialFocusRef: closeButtonRef,
+  });
 
   // Open PhotoSwipe lightbox at a given index
   const openLightbox = useCallback((index: number) => {
@@ -114,44 +126,37 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
     pswp.init();
   }, [gallery]);
 
-  // Handle escape + body overflow
-  useEffect(() => {
-    if (!project || gallery.length === 0) return;
-
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
-    };
-
-    document.body.style.overflow = 'hidden';
-    window.addEventListener('keydown', handleKeyDown);
-
-    return () => {
-      document.body.style.overflow = '';
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [project, gallery.length, onClose]);
-
   if (!project || gallery.length === 0) return null;
 
   return createPortal(
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-sm"
+      role="presentation"
       onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
     >
-      <div className="relative w-full h-full flex flex-col max-w-none">
+      <div
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
+        tabIndex={-1}
+        className="relative w-full h-full flex flex-col max-w-none"
+      >
         {/* Header */}
         <div className="flex items-center justify-between px-4 py-3 md:px-6 md:py-4 border-b border-cyan/20 bg-base-light/80 backdrop-blur">
           <div className="flex items-center gap-3">
             <span className="text-cyan text-xl">{project.emoji}</span>
             <div>
-              <h2 className="font-[family-name:var(--font-display)] text-lg font-bold text-cool-white">{project.title}</h2>
+              <h2 id={titleId} className="font-[family-name:var(--font-display)] text-lg font-bold text-cool-white">{project.title}</h2>
               <p className="font-[family-name:var(--font-mono)] text-xs text-steel-dim">
                 <span className="text-cyan">GALLERY://</span> {gallery.length} items
               </p>
             </div>
           </div>
           <button
+            ref={closeButtonRef}
             onClick={onClose}
+            aria-label={`Close ${project.title} gallery`}
             className="font-[family-name:var(--font-mono)] text-sm text-steel hover:text-magenta transition-colors border border-steel/30 hover:border-magenta/40 px-3 py-2 rounded-sm cursor-pointer"
           >
             [ESC]

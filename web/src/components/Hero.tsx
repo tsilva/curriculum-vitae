@@ -264,6 +264,7 @@ export function Hero() {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={link.label}
             className="relative group text-steel hover:text-cyan transition-all duration-300 p-2 rounded-sm hover:shadow-[0_0_20px_rgba(0,230,230,0.3),0_0_40px_rgba(0,230,230,0.15)] hover:scale-110 hover:bg-cyan/5 border border-transparent hover:border-cyan/30"
             data-tooltip={link.label}
           >

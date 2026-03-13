@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 interface CountUpProps {
   end: number;
@@ -11,11 +11,27 @@ interface CountUpProps {
 }
 
 export function CountUp({ end, suffix = "", duration = 2000, label, className = "" }: CountUpProps) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(end);
   const [started, setStarted] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const shouldAnimateRef = useRef(false);
+
+  useLayoutEffect(() => {
+    const canAnimate =
+      typeof window !== "undefined" &&
+      "IntersectionObserver" in window &&
+      !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    shouldAnimateRef.current = canAnimate;
+    setCount(canAnimate ? 0 : end);
+  }, [end]);
 
   useEffect(() => {
+    if (!shouldAnimateRef.current) {
+      setStarted(true);
+      return;
+    }
+
     const el = ref.current;
     if (!el) return;
 
@@ -34,7 +50,7 @@ export function CountUp({ end, suffix = "", duration = 2000, label, className = 
   }, []);
 
   useEffect(() => {
-    if (!started) return;
+    if (!started || !shouldAnimateRef.current) return;
 
     const steps = 60;
     const stepDuration = duration / steps;

@@ -1,3 +1,5 @@
+import { PrivacyControls } from "./PrivacyControls";
+
 export function Footer() {
   return (
     <footer className="border-t border-cyan/20 bg-base-light/30 py-12 pb-24 lg:pb-16">
@@ -13,7 +15,7 @@ export function Footer() {
           </div>
           
           <p className="font-[family-name:var(--font-mono)] text-sm text-neon-green/70 tracking-wider">
-            // END_OF_TRANSMISSION
+            {"// END_OF_TRANSMISSION"}
           </p>
           
           <div className="flex items-center gap-2 mt-1">
@@ -31,6 +33,8 @@ export function Footer() {
           <div className="font-[family-name:var(--font-mono)] text-[10px] text-steel-dim/60 mt-1">
             build: {process.env.GIT_COMMIT_HASH || 'unknown'}
           </div>
+
+          <PrivacyControls />
         </div>
       </div>
     </footer>

@@ -216,6 +216,14 @@ body {
   overflow-x: hidden;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--color-cyan);
+  outline-offset: 3px;
+}
+
 /* ============================================
    SCROLLBAR — cyan themed
    ============================================ */
