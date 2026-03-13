@@ -242,7 +242,7 @@ export function Hero() {
       </p>
 
       {/* Red separator line */}
-      <div className="flex items-center gap-3 mt-6 mb-8 w-48">
+      <div className="flex items-center gap-3 mt-6 mb-5 w-48 sm:mb-8">
         <div className="h-px flex-1 bg-kiroshi-red/40" />
         <span className="text-kiroshi-red text-xs">◇</span>
         <div className="h-px flex-1 bg-kiroshi-red/40" />
