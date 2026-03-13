@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Orbitron, Share_Tech_Mono, Fira_Code } from "next/font/google";
 import dynamic from "next/dynamic";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import "./globals.css";
 
 const SITE_URL = "https://www.tsilva.eu";
@@ -186,6 +187,7 @@ const jsonLd = [
         <link rel="preload" href="/avatar.webp" as="image" type="image/webp" />
       </head>
       <body className="font-[family-name:var(--font-body)] dot-grid scanlines crt-vignette antialiased">
+        <GoogleAnalytics />
         <MatrixRain />
         {children}
         <SpeedInsights />
