@@ -143,9 +143,9 @@ export function Hero() {
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-6 h-3 border-l border-r border-b border-kiroshi-red/40" />
 
         {/* Top HUD readout */}
-        <div className="absolute -top-0.5 left-20 right-20 flex items-center gap-2">
+        <div className="absolute -top-0.5 left-1/2 flex w-[min(18rem,calc(100%-4rem))] -translate-x-1/2 items-center gap-2 md:w-auto md:min-w-[24rem]">
           <div className="h-px flex-1 bg-kiroshi-red/20" />
-          <span className={`font-[family-name:var(--font-display)] text-[11px] font-bold text-kiroshi-red/70 tracking-[0.25em] neon-glow-kiroshi-red transition-all duration-300 ${isHovered ? 'text-kiroshi-yellow' : ''}`}>KIROSHI OPTICS MK.4</span>
+          <span className={`text-center font-[family-name:var(--font-display)] text-[11px] font-bold text-kiroshi-red/70 tracking-[0.25em] neon-glow-kiroshi-red transition-all duration-300 ${isHovered ? 'text-kiroshi-yellow' : ''}`}>KIROSHI OPTICS MK.4</span>
           <div className="h-px flex-1 bg-kiroshi-red/20" />
         </div>
 
@@ -228,9 +228,9 @@ export function Hero() {
       </h1>
 
       {/* Role — cyan like secondary data in the HUD with enhanced glow */}
-      <div className="flex items-center justify-center gap-3 mt-3">
+      <div className="mt-3 grid w-full max-w-xl grid-cols-[auto,minmax(0,1fr),auto] items-center gap-3">
         <span className="text-kiroshi-red text-base">◆</span>
-        <p className="font-[family-name:var(--font-display)] text-base md:text-lg text-cyan tracking-[0.25em] uppercase neon-glow-cyan">
+        <p className="text-center font-[family-name:var(--font-display)] text-base leading-tight text-cyan tracking-[0.25em] uppercase neon-glow-cyan md:text-lg">
           Fullstack Software Engineer
         </p>
         <span className="text-kiroshi-red text-base">◆</span>
@@ -239,12 +239,6 @@ export function Hero() {
       {/* Tagline */}
       <p className="font-[family-name:var(--font-mono)] text-[10px] md:text-xs text-kiroshi-yellow/80 mt-2 tracking-[0.15em] uppercase text-center">
         backend + frontend + mobile + ai. idea in → product out.
-      </p>
-
-      <p className="max-w-3xl mt-5 text-center text-sm md:text-base text-cool-white/75 leading-7">
-        Full-stack software engineer with 20+ years of experience shipping production systems across backend,
-        frontend, mobile, and AI. Strongest in Python, TypeScript, React, Next.js, Node.js, LLM products, and
-        cloud architecture.
       </p>
 
       {/* Red separator line */}
