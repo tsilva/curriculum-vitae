@@ -121,7 +121,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col items-center justify-center px-6 relative overflow-hidden"
+      className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pb-28 pt-20 md:pb-24 md:pt-16 lg:py-0"
     >
       {/* Kiroshi scan frame — red corner brackets with interactive pulse */}
       <div 
@@ -228,12 +228,12 @@ export function Hero() {
       </h1>
 
       {/* Role — cyan like secondary data in the HUD with enhanced glow */}
-      <div className="mt-3 grid w-full max-w-xl grid-cols-[auto,minmax(0,1fr),auto] items-center gap-3">
-        <span className="text-kiroshi-red text-base">◆</span>
-        <p className="text-center font-[family-name:var(--font-display)] text-base leading-tight text-cyan tracking-[0.25em] uppercase neon-glow-cyan md:text-lg">
+      <div className="mt-3 grid w-full max-w-[18rem] grid-cols-[auto,minmax(0,1fr),auto] items-center gap-2 px-2 sm:max-w-[21rem] sm:gap-3 md:max-w-xl md:px-0">
+        <span className="text-sm text-kiroshi-red md:text-base">◆</span>
+        <p className="text-center font-[family-name:var(--font-display)] text-[0.95rem] leading-tight text-cyan tracking-[0.22em] uppercase neon-glow-cyan sm:text-base md:text-lg">
           Fullstack Software Engineer
         </p>
-        <span className="text-kiroshi-red text-base">◆</span>
+        <span className="text-sm text-kiroshi-red md:text-base">◆</span>
       </div>
 
       {/* Tagline */}
@@ -249,7 +249,7 @@ export function Hero() {
       </div>
 
       {/* Stats — yellow numbers like Kiroshi data readouts */}
-      <div className="flex gap-8 md:gap-12">
+      <div className="grid w-full max-w-[22rem] grid-cols-4 gap-3 px-1 sm:max-w-[24rem] sm:gap-4 md:flex md:w-auto md:max-w-none md:gap-12 md:px-0">
         <CountUp end={20} suffix="+" label="Years" />
         <CountUp end={60} suffix="+" label="Projects" />
         <CountUp end={100} suffix="M+" label="Users" />
@@ -257,7 +257,7 @@ export function Hero() {
       </div>
 
       {/* Social links */}
-      <div className="flex gap-4 mt-12">
+      <div className="mt-10 flex flex-wrap justify-center gap-3 sm:gap-4 md:mt-12">
         {socialLinks.map((link) => (
           <a
             key={link.label}
