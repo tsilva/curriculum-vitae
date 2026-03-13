@@ -249,7 +249,7 @@ export function Hero() {
       </div>
 
       {/* Stats — yellow numbers like Kiroshi data readouts */}
-      <div className="grid w-full max-w-[19rem] grid-cols-2 gap-x-5 gap-y-6 px-2 sm:max-w-[24rem] sm:grid-cols-4 sm:gap-4 sm:px-0 md:flex md:w-auto md:max-w-none md:gap-12">
+      <div className="grid w-full max-w-[18rem] grid-cols-2 gap-x-4 gap-y-4 px-2 sm:max-w-[24rem] sm:grid-cols-4 sm:gap-4 sm:px-0 md:flex md:w-auto md:max-w-none md:gap-12">
         <CountUp end={20} suffix="+" label="Years" />
         <CountUp end={60} suffix="+" label="Projects" />
         <CountUp end={100} suffix="M+" label="Users" />
@@ -257,7 +257,7 @@ export function Hero() {
       </div>
 
       {/* Social links */}
-      <div className="mt-6 flex flex-wrap justify-center gap-3 sm:mt-8 sm:gap-4 md:mt-12">
+      <div className="mt-4 flex flex-wrap justify-center gap-3 sm:mt-8 sm:gap-4 md:mt-12">
         {socialLinks.map((link) => (
           <a
             key={link.label}
