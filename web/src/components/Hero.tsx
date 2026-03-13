@@ -229,11 +229,11 @@ export function Hero() {
 
       {/* Role — cyan like secondary data in the HUD with enhanced glow */}
       <div className="mt-3 grid w-full max-w-[18rem] grid-cols-[auto,minmax(0,1fr),auto] items-center gap-2 px-2 sm:max-w-[21rem] sm:gap-3 md:max-w-xl md:px-0">
-        <span className="hidden text-sm text-kiroshi-red md:block md:text-base">◆</span>
-        <p className="text-center font-[family-name:var(--font-display)] text-[0.95rem] leading-tight text-cyan tracking-[0.22em] uppercase neon-glow-cyan sm:text-base md:text-lg">
+        <span className="hidden text-sm text-kiroshi-red md:block md:text-[1rem]">◆</span>
+        <p className="text-center font-[family-name:var(--font-display)] text-[0.95rem] leading-tight text-cyan tracking-[0.22em] uppercase neon-glow-cyan sm:text-[1rem] md:text-lg">
           Fullstack Software Engineer
         </p>
-        <span className="hidden text-sm text-kiroshi-red md:block md:text-base">◆</span>
+        <span className="hidden text-sm text-kiroshi-red md:block md:text-[1rem]">◆</span>
       </div>
 
       {/* Tagline */}
