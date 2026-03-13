@@ -55,18 +55,18 @@ export function CountUp({ end, suffix = "", duration = 2000, label }: CountUpPro
   }, [started, end, duration]);
 
   return (
-    <div ref={ref} className="text-center">
-      <div className="font-[family-name:var(--font-mono)] text-sm font-bold text-kiroshi-red/80 mb-1 tracking-[0.15em] uppercase leading-tight">
+    <div ref={ref} className="min-w-0 text-center">
+      <div className="mb-1 font-[family-name:var(--font-mono)] text-[0.8rem] font-bold uppercase leading-tight tracking-[0.12em] text-kiroshi-red/80 md:text-sm md:tracking-[0.15em]">
         {label.split(' ').map((word, i) => (
           <span key={i} className="block">{word}</span>
         ))}
       </div>
       <div
-        className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-kiroshi-yellow neon-glow-kiroshi-yellow"
+        className="font-[family-name:var(--font-display)] text-[2.6rem] font-bold text-kiroshi-yellow neon-glow-kiroshi-yellow md:text-4xl"
       >
         {count}<span className="text-kiroshi-yellow/70">{suffix}</span>
       </div>
-      <div className="mt-3 mx-auto w-14 h-px bg-kiroshi-red/30" />
+      <div className="mx-auto mt-3 h-px w-12 bg-kiroshi-red/30 md:w-14" />
     </div>
   );
 }
