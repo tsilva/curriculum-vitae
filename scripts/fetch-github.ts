@@ -88,7 +88,14 @@ async function generateReposData() {
   const rawRepos = fetchRepos();
   
   if (rawRepos.length === 0) {
-    console.log("No repositories fetched. Skipping GitHub data generation.");
+    if (fs.existsSync(OUTPUT_PATH)) {
+      console.log("No repositories fetched. Keeping existing github-data.json.");
+      return;
+    }
+
+    console.log("No repositories fetched and no cached github-data.json exists. Writing an empty dataset.");
+    fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
+    fs.writeFileSync(OUTPUT_PATH, JSON.stringify([], null, 2));
     return;
   }
   

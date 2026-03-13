@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useMemo, useEffect, useRef } from "react";
+import { useState, useMemo, useEffect, useRef, useId } from "react";
 import { createPortal } from "react-dom";
-import { TechBadge } from "./TechBadge";
 import { useModal } from "@/hooks/useModal";
 
 interface TechBrowserProps {
@@ -24,8 +23,15 @@ export function TechBrowser({
 }: TechBrowserProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const titleId = useId();
 
-  useModal(isOpen, onClose);
+  useModal({
+    isOpen,
+    onClose,
+    dialogRef,
+    initialFocusRef: inputRef,
+  });
 
   const filteredTechs = useMemo(() => {
     if (!searchQuery.trim()) return technologies;
@@ -47,11 +53,19 @@ export function TechBrowser({
   return createPortal(
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop bg-black/80"
+      role="presentation"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="bg-base-light border border-cyan/20 rounded-sm w-full max-w-4xl max-h-[85vh] overflow-hidden shadow-[0_0_30px_rgba(0,230,230,0.1),0_0_60px_rgba(0,230,230,0.05)]">
+      <div
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
+        tabIndex={-1}
+        className="bg-base-light border border-cyan/20 rounded-sm w-full max-w-4xl max-h-[85vh] overflow-hidden shadow-[0_0_30px_rgba(0,230,230,0.1),0_0_60px_rgba(0,230,230,0.05)]"
+      >
         {/* Terminal Header */}
         <div className="sticky top-0 bg-base-light/95 backdrop-blur border-b border-cyan/10 px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3 min-w-0">
@@ -61,13 +75,14 @@ export function TechBrowser({
               <span className="w-2.5 h-2.5 rounded-full bg-kiroshi-yellow/80" />
               <span className="w-2.5 h-2.5 rounded-full bg-neon-green/80" />
             </div>
-            <h2 className="font-[family-name:var(--font-mono)] text-sm text-cool-white">
+            <h2 id={titleId} className="font-[family-name:var(--font-mono)] text-sm text-cool-white">
               <span className="text-cyan">tech_browser</span>
               <span className="text-steel">.exe</span>
             </h2>
           </div>
           <button
             onClick={onClose}
+            aria-label="Close technology browser"
             className="text-steel hover:text-cyan transition-colors font-[family-name:var(--font-mono)] text-sm cursor-pointer"
           >
             [ESC] CLOSE
@@ -86,6 +101,7 @@ export function TechBrowser({
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search technologies..."
+              aria-label="Search technologies"
               className="flex-1 bg-transparent border-none outline-none font-[family-name:var(--font-mono)] text-sm text-cool-white placeholder:text-steel/50"
             />
             <span className="font-[family-name:var(--font-mono)] text-[10px] text-steel/50">
@@ -123,7 +139,7 @@ export function TechBrowser({
           {filteredTechs.length === 0 ? (
             <div className="text-center py-8 text-steel font-[family-name:var(--font-mono)] text-sm">
               <span className="text-magenta">ERROR:</span> No technologies found
-              matching "{searchQuery}"
+              matching &quot;{searchQuery}&quot;
             </div>
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">

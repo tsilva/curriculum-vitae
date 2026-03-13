@@ -59,11 +59,10 @@ export function OpenSource() {
         technologies={languages}
         selected={selectedLanguages}
         onSelect={handleLanguageSelect}
-        onBrowseAll={() => {}}
       />
 
       <div className="mt-6 font-[family-name:var(--font-mono)] text-sm text-steel">
-        <span className="text-steel-dim">//</span> Displaying {visible.length}{" "}
+        <span className="text-steel-dim">{"//"}</span> Displaying {visible.length}{" "}
         of {repos.length} repositories
         {selectedLanguages.length > 0 && (
           <span className="text-cyan ml-2">

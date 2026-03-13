@@ -63,6 +63,8 @@ logs/
 # Next.js
 web/.next/
 web/out/
+playwright-report/
+test-results/
 
 # Canonical Galleries (generated from Google Photos Takeout)
 galleries/

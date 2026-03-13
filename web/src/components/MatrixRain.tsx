@@ -24,7 +24,6 @@ const MAX_AGE_FADE = 30;
 const BASELINE_OPACITY_MIN = 0.05;
 const BASELINE_OPACITY_MAX = 0.10;
 const MAX_STREAMS_PERCENT = 0.35;
-const SPAWN_DELAY_MIN = 10;
 const SPAWN_DELAY_MAX = 60;
 const STREAM_RESET_DELAY_MIN = -30;
 const STREAM_RESET_DELAY_MAX = -5;
@@ -55,7 +54,7 @@ export function MatrixRain() {
     let streams: Stream[] = [];
     let resizeTimeout: NodeJS.Timeout;
     let isResizing = false;
-    let filledColumns = new Set<number>();
+    const filledColumns = new Set<number>();
 
     const resize = () => {
       isResizing = true;

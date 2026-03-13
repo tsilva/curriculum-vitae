@@ -1,5 +1,6 @@
 "use client";
 
+import { useId, useRef } from "react";
 import { createPortal } from "react-dom";
 import type { Project } from "@/types/cv";
 import { TechBadge } from "./TechBadge";
@@ -11,7 +12,16 @@ interface ProjectModalProps {
 }
 
 export function ProjectModal({ project, onClose }: ProjectModalProps) {
-  useModal(!!project, onClose);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const titleId = useId();
+
+  useModal({
+    isOpen: !!project,
+    onClose,
+    dialogRef,
+    initialFocusRef: closeButtonRef,
+  });
 
   if (!project) return null;
 
@@ -20,11 +30,19 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
   return createPortal(
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
+      role="presentation"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="bg-base-light border border-cyan/20 rounded-sm w-full max-w-3xl max-h-[90vh] flex flex-col shadow-[0_0_30px_rgba(0,230,230,0.1),0_0_60px_rgba(0,230,230,0.05)] mx-4">
+      <div
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
+        tabIndex={-1}
+        className="bg-base-light border border-cyan/20 rounded-sm w-full max-w-3xl max-h-[90vh] flex flex-col shadow-[0_0_30px_rgba(0,230,230,0.1),0_0_60px_rgba(0,230,230,0.05)] mx-4"
+      >
         {/* Terminal window chrome - fixed header */}
         <div className="flex-shrink-0 bg-base-light/95 backdrop-blur border-b border-cyan/10 px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <div className="flex items-center gap-3 min-w-0">
@@ -34,7 +52,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
               <span className="w-2.5 h-2.5 rounded-full bg-kiroshi-yellow/80" />
               <span className="w-2.5 h-2.5 rounded-full bg-neon-green/80" />
             </div>
-            <h2 className="font-[family-name:var(--font-display)] text-base font-bold text-cool-white truncate">
+            <h2 id={titleId} className="font-[family-name:var(--font-display)] text-base font-bold text-cool-white truncate">
               <span className="text-cyan">ACCESSING:</span> {project.title.toLowerCase().replace(/\s+/g, "_")}.dat
             </h2>
           </div>
@@ -42,9 +60,17 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             {/* Gallery button - prominent if gallery exists */}
             {project.gallery && project.gallery.length > 0 && (
               <button
-                onClick={() => {
-                  window.dispatchEvent(new CustomEvent('openProjectGallery', { detail: project }));
+                onClick={(event) => {
+                  window.dispatchEvent(
+                    new CustomEvent("openProjectGallery", {
+                      detail: {
+                        project,
+                        returnFocusTo: event.currentTarget,
+                      },
+                    })
+                  );
                 }}
+                aria-label={`Open ${project.title} gallery`}
                 className="flex items-center gap-1.5 font-[family-name:var(--font-mono)] text-xs text-cool-white hover:text-white transition-colors border border-magenta hover:border-magenta bg-magenta/40 hover:bg-magenta/60 px-2 py-1 rounded-sm animate-pulse shadow-[0_0_10px_rgba(255,0,170,0.4)] cursor-pointer"
                 title={`View Gallery (${project.gallery.length} items)`}
               >
@@ -56,7 +82,9 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
               </button>
             )}
             <button
+              ref={closeButtonRef}
               onClick={onClose}
+              aria-label={`Close ${project.title} details`}
               className="font-[family-name:var(--font-mono)] text-sm text-steel hover:text-cyan transition-colors flex-shrink-0 cursor-pointer border border-steel/30 hover:border-cyan/40 px-2 py-1 rounded-sm"
             >
               [ESC]

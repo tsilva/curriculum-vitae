@@ -16,6 +16,7 @@ const MANIFEST_PATH = path.join(ROOT, "galleries-manifest.json");
 const GALLERY_MODE = process.env.GALLERY_MODE || "r2";
 const R2_PUBLIC_URL =
   process.env.R2_PUBLIC_URL || "https://curriculum-vitae-r2.tsilva.eu";
+const INCLUDE_VIDEO_THUMBNAILS = GALLERY_MODE === "local";
 
 interface GalleryMedia {
   filename: string;
@@ -50,7 +51,10 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
             filename,
             type: isImage ? "image" : "video",
             path: `${baseUrl}/${projectId}/${filename}`,
-            thumbnail: isVideo && hasThumbnail ? `${baseUrl}/${projectId}/${thumbFilename}` : undefined,
+            thumbnail:
+              isVideo && hasThumbnail && INCLUDE_VIDEO_THUMBNAILS
+                ? `${baseUrl}/${projectId}/${thumbFilename}`
+                : undefined,
           });
         }
       }
@@ -88,7 +92,10 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
           filename,
           type: isImage ? "image" : "video",
           path: `${baseUrl}/${entry.name}/${filename}`,
-          thumbnail: isVideo && hasThumbnail ? `${baseUrl}/${entry.name}/${thumbFilename}` : undefined,
+          thumbnail:
+            isVideo && hasThumbnail && INCLUDE_VIDEO_THUMBNAILS
+              ? `${baseUrl}/${entry.name}/${thumbFilename}`
+              : undefined,
         });
         mediaFiles.push(filename);
       }

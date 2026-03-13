@@ -63,6 +63,7 @@ export function Nav() {
           <a
             key={section.id}
             href={`#${section.id}`}
+            aria-current={active === section.id ? "page" : undefined}
             onClick={(event) => {
               event.preventDefault();
               scrollToSection(section.id);
@@ -91,6 +92,7 @@ export function Nav() {
             <a
               key={section.id}
               href={`#${section.id}`}
+              aria-current={active === section.id ? "page" : undefined}
               onClick={(event) => {
                 event.preventDefault();
                 scrollToSection(section.id);

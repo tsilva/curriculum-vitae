@@ -10,6 +10,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
   return (
     <button
       onClick={onClick}
+      aria-label={`Open details for ${project.title}`}
       className="card-glow bg-surface border border-cyan/20 rounded-sm p-6 text-left w-full h-full cursor-pointer transition-all hover:border-cyan/40 hover:shadow-[0_0_20px_rgba(0,230,230,0.1),0_0_40px_rgba(0,230,230,0.05)] group flex flex-col relative"
     >
       <CornerBrackets />
@@ -23,7 +24,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
         </h3>
           </div>
           <span className="font-[family-name:var(--font-mono)] text-sm text-steel-dim flex-shrink-0">
-            <span className="text-cyan/70">//</span> {project.start}
+            <span className="text-cyan/70">{"//"}</span> {project.start}
           </span>
         </div>
 
@@ -86,6 +87,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`${link.label} for ${project.title}`}
             onClick={(e) => e.stopPropagation()}
             className="group/link relative text-steel hover:text-cyan transition-colors p-1.5 hover:shadow-[0_0_10px_rgba(0,230,230,0.15)]"
           >

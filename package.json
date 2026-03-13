@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "smoke": "playwright test",
+    "verify": "npm --prefix web run lint && npm --prefix web run build && npm run smoke"
+  },
   "devDependencies": {
     "@playwright/test": "^1.58.2"
   }
