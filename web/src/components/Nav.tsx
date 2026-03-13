@@ -13,6 +13,28 @@ const sections = [
 export function Nav() {
   const [active, setActive] = useState("hero");
 
+  const scrollToSection = (id: string) => {
+    window.history.replaceState(null, "", `#${id}`);
+
+    let attempts = 0;
+    const maxAttempts = 20;
+
+    const tryScroll = () => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+
+      attempts += 1;
+      if (attempts < maxAttempts) {
+        window.setTimeout(tryScroll, 100);
+      }
+    };
+
+    tryScroll();
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -41,6 +63,10 @@ export function Nav() {
           <a
             key={section.id}
             href={`#${section.id}`}
+            onClick={(event) => {
+              event.preventDefault();
+              scrollToSection(section.id);
+            }}
             className="group flex items-center gap-3 justify-end"
             title={section.label}
           >
@@ -65,6 +91,10 @@ export function Nav() {
             <a
               key={section.id}
               href={`#${section.id}`}
+              onClick={(event) => {
+                event.preventDefault();
+                scrollToSection(section.id);
+              }}
               className={`font-[family-name:var(--font-mono)] text-xs px-3 py-1.5 rounded transition-colors ${
                 active === section.id
                   ? "text-cyan"
