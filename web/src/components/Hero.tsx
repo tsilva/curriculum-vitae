@@ -229,11 +229,11 @@ export function Hero() {
 
       {/* Role — cyan like secondary data in the HUD with enhanced glow */}
       <div className="mt-3 grid w-full max-w-[18rem] grid-cols-[auto,minmax(0,1fr),auto] items-center gap-2 px-2 sm:max-w-[21rem] sm:gap-3 md:max-w-xl md:px-0">
-        <span className="text-sm text-kiroshi-red md:text-base">◆</span>
+        <span className="hidden text-sm text-kiroshi-red md:block md:text-base">◆</span>
         <p className="text-center font-[family-name:var(--font-display)] text-[0.95rem] leading-tight text-cyan tracking-[0.22em] uppercase neon-glow-cyan sm:text-base md:text-lg">
           Fullstack Software Engineer
         </p>
-        <span className="text-sm text-kiroshi-red md:text-base">◆</span>
+        <span className="hidden text-sm text-kiroshi-red md:block md:text-base">◆</span>
       </div>
 
       {/* Tagline */}
@@ -249,7 +249,7 @@ export function Hero() {
       </div>
 
       {/* Stats — yellow numbers like Kiroshi data readouts */}
-      <div className="grid w-full max-w-[22rem] grid-cols-4 gap-3 px-1 sm:max-w-[24rem] sm:gap-4 md:flex md:w-auto md:max-w-none md:gap-12 md:px-0">
+      <div className="grid w-full max-w-[19rem] grid-cols-2 gap-x-5 gap-y-6 px-2 sm:max-w-[24rem] sm:grid-cols-4 sm:gap-4 sm:px-0 md:flex md:w-auto md:max-w-none md:gap-12">
         <CountUp end={20} suffix="+" label="Years" />
         <CountUp end={60} suffix="+" label="Projects" />
         <CountUp end={100} suffix="M+" label="Users" />
@@ -257,7 +257,7 @@ export function Hero() {
       </div>
 
       {/* Social links */}
-      <div className="mt-10 flex flex-wrap justify-center gap-3 sm:gap-4 md:mt-12">
+      <div className="mt-6 flex flex-wrap justify-center gap-3 sm:mt-8 sm:gap-4 md:mt-12">
         {socialLinks.map((link) => (
           <a
             key={link.label}

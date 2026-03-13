@@ -62,7 +62,7 @@ export function CountUp({ end, suffix = "", duration = 2000, label }: CountUpPro
         ))}
       </div>
       <div
-        className="font-[family-name:var(--font-display)] text-[2.6rem] font-bold text-kiroshi-yellow neon-glow-kiroshi-yellow md:text-4xl"
+        className="font-[family-name:var(--font-display)] text-[2.25rem] font-bold text-kiroshi-yellow neon-glow-kiroshi-yellow sm:text-[2.6rem] md:text-4xl"
       >
         {count}<span className="text-kiroshi-yellow/70">{suffix}</span>
       </div>
