@@ -7,9 +7,10 @@ interface CountUpProps {
   suffix?: string;
   duration?: number;
   label: string;
+  className?: string;
 }
 
-export function CountUp({ end, suffix = "", duration = 2000, label }: CountUpProps) {
+export function CountUp({ end, suffix = "", duration = 2000, label, className = "" }: CountUpProps) {
   const [count, setCount] = useState(0);
   const [started, setStarted] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -55,7 +56,7 @@ export function CountUp({ end, suffix = "", duration = 2000, label }: CountUpPro
   }, [started, end, duration]);
 
   return (
-    <div ref={ref} className="min-w-0 text-center">
+    <div ref={ref} className={`min-w-0 text-center ${className}`}>
       <div className="mb-0.5 font-[family-name:var(--font-mono)] text-[0.75rem] font-bold uppercase leading-tight tracking-[0.1em] text-kiroshi-red/80 md:mb-1 md:text-sm md:tracking-[0.15em]">
         {label.split(' ').map((word, i) => (
           <span key={i} className="block">{word}</span>
