@@ -1,8 +1,7 @@
 import type { MetadataRoute } from "next";
 import fs from "node:fs";
 import path from "node:path";
-
-const SITE_URL = "https://www.tsilva.eu";
+import { siteUrl } from "@/lib/site-config";
 
 export const dynamic = "force-static";
 
@@ -49,7 +48,7 @@ function getLatestContentUpdate(): Date {
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: `${SITE_URL}/`,
+      url: `${siteUrl}/`,
       lastModified: getLatestContentUpdate(),
       changeFrequency: "monthly",
       priority: 1,

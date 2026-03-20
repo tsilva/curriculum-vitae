@@ -1,0 +1,20 @@
+{
+  "name": "Tiago Silva | Interactive Cyberpunk CV, AI Engineer & 60+ Projects",
+  "short_name": "Tiago Silva CV",
+  "description": "Explore Tiago Silva's interactive cyberpunk CV: 20+ years across AI agents, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped products.",
+  "icons": [
+    {
+      "src": "android-chrome-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#0A0A12",
+  "theme_color": "#0A0A12",
+  "display": "standalone"
+}

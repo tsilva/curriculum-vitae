@@ -16,7 +16,9 @@ const MANIFEST_PATH = path.join(ROOT, "galleries-manifest.json");
 const GALLERY_MODE = process.env.GALLERY_MODE || "r2";
 const R2_PUBLIC_URL =
   process.env.R2_PUBLIC_URL || "https://curriculum-vitae-r2.tsilva.eu";
-const INCLUDE_VIDEO_THUMBNAILS = GALLERY_MODE === "local";
+
+const IMAGE_EXTENSIONS = [".webp", ".jpg", ".jpeg", ".png", ".gif", ".bmp", ".svg"];
+const VIDEO_EXTENSIONS = [".mp4", ".mov", ".mkv", ".avi", ".webm", ".m4v"];
 
 interface GalleryMedia {
   filename: string;
@@ -41,9 +43,10 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
     for (const [projectId, files] of Object.entries(manifest)) {
       const media: GalleryMedia[] = [];
       for (const filename of files as string[]) {
+        if (filename.endsWith(".thumb.webp")) continue;
         const ext = path.extname(filename).toLowerCase();
-        const isImage = [".webp", ".jpg", ".jpeg", ".png", ".gif", ".bmp", ".svg"].includes(ext);
-        const isVideo = [".mp4", ".mov", ".mkv", ".avi", ".webm"].includes(ext);
+        const isImage = IMAGE_EXTENSIONS.includes(ext);
+        const isVideo = VIDEO_EXTENSIONS.includes(ext);
         if (isImage || isVideo) {
           const thumbFilename = path.basename(filename, ext) + ".thumb.webp";
           const hasThumbnail = (files as string[]).includes(thumbFilename);
@@ -52,7 +55,7 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
             type: isImage ? "image" : "video",
             path: `${baseUrl}/${projectId}/${filename}`,
             thumbnail:
-              isVideo && hasThumbnail && INCLUDE_VIDEO_THUMBNAILS
+              isVideo && hasThumbnail
                 ? `${baseUrl}/${projectId}/${thumbFilename}`
                 : undefined,
           });
@@ -78,13 +81,16 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
     const projectFolder = path.join(galleriesPath, entry.name);
     const files = fs.readdirSync(projectFolder);
     const media: GalleryMedia[] = [];
-    const mediaFiles: string[] = [];
+    const manifestFiles: string[] = [];
 
     for (const filename of files) {
+      if (filename.endsWith(".thumb.webp")) {
+        manifestFiles.push(filename);
+        continue;
+      }
       const ext = path.extname(filename).toLowerCase();
-      const isImage = [".webp", ".jpg", ".jpeg", ".png", ".gif", ".bmp", ".svg"].includes(ext);
-      const isVideo = [".mp4", ".mov", ".mkv", ".avi", ".webm"].includes(ext);
-      if (filename.endsWith(".thumb.webp")) continue;
+      const isImage = IMAGE_EXTENSIONS.includes(ext);
+      const isVideo = VIDEO_EXTENSIONS.includes(ext);
       if (isImage || isVideo) {
         const thumbFilename = path.basename(filename, ext) + ".thumb.webp";
         const hasThumbnail = files.includes(thumbFilename);
@@ -93,18 +99,18 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
           type: isImage ? "image" : "video",
           path: `${baseUrl}/${entry.name}/${filename}`,
           thumbnail:
-            isVideo && hasThumbnail && INCLUDE_VIDEO_THUMBNAILS
+            isVideo && hasThumbnail
               ? `${baseUrl}/${entry.name}/${thumbFilename}`
               : undefined,
         });
-        mediaFiles.push(filename);
+        manifestFiles.push(filename);
       }
     }
     media.sort((a, b) => a.filename.localeCompare(b.filename));
-    mediaFiles.sort();
+    manifestFiles.sort();
     if (media.length > 0) {
       galleryMap.set(entry.name, media);
-      manifest[entry.name] = mediaFiles;
+      manifest[entry.name] = manifestFiles;
     }
   }
 
