@@ -1,4 +1,4 @@
-// Generates README.md from data/**/*.md (frontmatter) + data/misc.yaml
+// Generates CV.md from data/**/*.md (frontmatter) + data/misc.yaml
 import * as fs from "fs";
 import * as path from "path";
 import {
@@ -11,7 +11,7 @@ import {
 
 const ROOT = path.resolve(__dirname, "..");
 const DATA_DIR = path.join(ROOT, "data");
-const OUTPUT_PATH = path.join(ROOT, "README.md");
+const OUTPUT_PATH = path.join(ROOT, "CV.md");
 const GITHUB_DATA_PATH = path.join(ROOT, "web", "src", "data", "github-data.json");
 
 function formatHeading(emoji: string, title: string, url?: string): string {
@@ -160,10 +160,10 @@ function main() {
     "## License\n\nMIT",
   ];
 
-  const readme = parts.join("\n\n") + "\n";
-  fs.writeFileSync(OUTPUT_PATH, readme);
+  const cv = parts.join("\n\n") + "\n";
+  fs.writeFileSync(OUTPUT_PATH, cv);
 
-  console.log(`Generated README.md (${readme.split("\n").length} lines)`);
+  console.log(`Generated CV.md (${cv.split("\n").length} lines)`);
 }
 
 main();

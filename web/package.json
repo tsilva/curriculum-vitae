@@ -4,14 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "GIT_COMMIT_HASH=$(git rev-parse --short HEAD) next dev",
-    "build": "export GIT_COMMIT_HASH=$([ -n \"$VERCEL_GIT_COMMIT_SHA\" ] && echo \"${VERCEL_GIT_COMMIT_SHA:0:7}\" || git rev-parse --short HEAD) && npm run assemble && npm run generate:readme && next build",
+    "build": "export GIT_COMMIT_HASH=$([ -n \"$VERCEL_GIT_COMMIT_SHA\" ] && echo \"${VERCEL_GIT_COMMIT_SHA:0:7}\" || git rev-parse --short HEAD) && npm run assemble && npm run generate:cv && next build",
     "build:local": "GALLERY_MODE=local npm run build",
-    "sync": "npm run fetch:github && npm run assemble && npm run generate:readme",
+    "sync": "npm run fetch:github && npm run assemble && npm run generate:cv",
     "start": "next start",
     "lint": "eslint . --max-warnings=0",
     "assemble": "GALLERY_MODE=r2 npx tsx ../scripts/assemble-cv-data.ts",
     "assemble:local": "GALLERY_MODE=local npx tsx ../scripts/assemble-cv-data.ts",
-    "generate:readme": "npx tsx ../scripts/generate-readme.ts",
+    "generate:cv": "npx tsx ../scripts/generate-cv.ts",
     "fetch:github": "npx tsx ../scripts/fetch-github.ts",
     "stats": "npx tsx ../scripts/count-technologies.ts"
   },
