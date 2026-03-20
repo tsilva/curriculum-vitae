@@ -47,9 +47,18 @@ const GridItem = memo(({ media, index, onClick }: { media: GalleryMedia; index: 
             <div className="font-[family-name:var(--font-mono)] text-cyan/30 text-xs">Loading...</div>
           </div>
         )
-      ) : media.thumbnail ? (
-        <div className="relative w-full h-full">
-          <img src={media.thumbnail} alt={media.filename} className="w-full h-full object-cover transition-transform group-hover:scale-105" loading="lazy" decoding="async" />
+      ) : isInView ? (
+        <div className="relative w-full h-full bg-black">
+          <video
+            src={media.path}
+            className="pointer-events-none w-full h-full object-cover transition-transform group-hover:scale-105"
+            autoPlay
+            loop
+            preload="metadata"
+            muted
+            playsInline
+            aria-hidden="true"
+          />
           <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/20 transition-colors">
             <div className="w-16 h-16 rounded-full bg-cyan/80 flex items-center justify-center group-hover:scale-110 transition-transform">
               <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>

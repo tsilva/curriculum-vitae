@@ -16,7 +16,14 @@ function trackBrowserIssues(page: Page) {
   });
 
   page.on("requestfailed", (request) => {
-    requestFailures.push(`${request.method()} ${request.url()} :: ${request.failure()?.errorText ?? "unknown error"}`);
+    const failure = request.failure()?.errorText ?? "unknown error";
+    const isAbortedMediaRequest =
+      failure === "net::ERR_ABORTED" &&
+      request.method() === "GET" &&
+      /\.(mp4|mov|m4v|webm|mkv|avi)(?:$|[?#])/i.test(request.url());
+
+    if (isAbortedMediaRequest) return;
+    requestFailures.push(`${request.method()} ${request.url()} :: ${failure}`);
   });
 
   return () => {
@@ -83,6 +90,37 @@ test("desktop smoke flow covers modals, gallery, and R2 assets", async ({ page }
   await page.keyboard.press("Escape");
   await expect(techBrowser).toBeHidden();
   await expect(browseAllButton).toBeFocused();
+
+  assertNoBrowserIssues();
+});
+
+test("gallery falls back to inline video previews when thumbnails are unavailable", async ({ page }) => {
+  const assertNoBrowserIssues = trackBrowserIssues(page);
+
+  await page.route("**/*.thumb.webp", async (route) => {
+    await route.fulfill({
+      status: 404,
+      contentType: "text/plain",
+      body: "missing thumbnail",
+    });
+  });
+
+  await page.goto("/");
+
+  const projectCard = page.getByRole("button", { name: /open details for help agent/i });
+  await expect(projectCard).toBeVisible();
+  await projectCard.click();
+
+  const projectDialog = page.getByRole("dialog", { name: /accessing: help_agent\.dat/i });
+  await expect(projectDialog).toBeVisible();
+  await projectDialog.getByRole("button", { name: /open help agent gallery/i }).click();
+
+  const galleryDialog = page.getByRole("dialog", { name: /help agent/i });
+  await expect(galleryDialog).toBeVisible();
+
+  const videoTile = galleryDialog.locator("button").filter({ hasText: "VIDEO" }).first();
+  await expect(videoTile).toBeVisible();
+  await expect(videoTile.locator("video")).toBeVisible();
 
   assertNoBrowserIssues();
 });
