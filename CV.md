@@ -1,11 +1,7 @@
 # TLDR
 
 <p align="center">
-<<<<<<< HEAD
   <img src="logo.png" alt="curriculum-vitae logo" width="200">
-=======
-  <img src="https://raw.githubusercontent.com/tsilva/curriculum-vitae/main/logo.png" alt="curriculum-vitae logo" width="512">
->>>>>>> db6cc27957d1c188025f731ff4abf86a22a6af1a
 </p>
 
 This CV is detailed and comprehensive—it's more suited for running through your favorite LLM and asking questions than reading it all the way through. For a concise summary, here's the **TL;DR**:
