@@ -1,11 +1,14 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Orbitron, Share_Tech_Mono, Fira_Code } from "next/font/google";
 import dynamic from "next/dynamic";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AnalyticsConsent } from "@/components/AnalyticsConsent";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { siteUrl } from "@/lib/site-config";
-import { createMetadata } from "../../web-seo-metadata";
+import {
+  APP_THEME_COLOR,
+  createMetadata,
+} from "../../web-seo-metadata";
 import "./globals.css";
 
 const SITE_TITLE = "Tiago Silva | Interactive Cyberpunk CV, AI Engineer & 60+ Projects";
@@ -67,6 +70,10 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: APP_THEME_COLOR,
 };
 
 const jsonLd = [
@@ -136,6 +143,7 @@ const jsonLd = [
       className={`${orbitron.variable} ${shareTechMono.variable} ${firaCode.variable}`}
     >
       <head>
+        <meta name="theme-color" content={APP_THEME_COLOR} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
