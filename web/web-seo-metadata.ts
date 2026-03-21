@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+export const APP_THEME_COLOR = "#0F0F1A";
+
 const payload: Omit<Metadata, "metadataBase"> = {
   title: "Tiago Silva | Interactive Cyberpunk CV, AI Engineer & 60+ Projects",
   description:
