@@ -87,52 +87,6 @@ export interface MiscEntry {
   links: Link[];
 }
 
-export interface PerkEvidenceProject {
-  id: string;
-  title: string;
-  start: string;
-}
-
-export interface PerkDesktopPosition {
-  x: number;
-  y: number;
-}
-
-export interface PerkMetrics {
-  careerYearsSpan: number;
-  projectCount: number;
-  uniqueTechCount: number;
-  webProjectCount: number;
-  backendProjectCount: number;
-  mobileProjectCount: number;
-  leadershipProjectCount: number;
-  aiProjectCount: number;
-  ossRepoCount: number;
-}
-
-export interface PerkNode {
-  id: string;
-  label: string;
-  category: string;
-  description: string;
-  level: 0 | 1 | 2 | 3;
-  currentValue: number;
-  nextThreshold: number | null;
-  metricLabel: string;
-  evidenceProjectIds: string[];
-  evidenceProjects: PerkEvidenceProject[];
-  highlightTechs: string[];
-  supportingSignals: string[];
-  locked: boolean;
-  desktopPosition: PerkDesktopPosition;
-  mobileOrder: number;
-}
-
-export interface PerksTreeData {
-  metrics: PerkMetrics;
-  nodes: PerkNode[];
-}
-
 export interface CVData {
   tldr: string;
   employers: Employer[];
@@ -140,5 +94,4 @@ export interface CVData {
   projects_db: Project[];
   oss?: OSSEntry[];
   misc: MiscEntry[];
-  perksTree?: PerksTreeData;
 }
