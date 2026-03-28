@@ -7,11 +7,13 @@ import {
   parseDurationStart,
   readYaml,
 } from "./lib/data-utils";
+import { derivePerksTree } from "./lib/perks-tree";
 
 const ROOT = path.resolve(__dirname, "..");
 const DATA_DIR = path.join(ROOT, "data");
 const OUTPUT_PATH = path.join(ROOT, "web", "src", "data", "cv-data.json");
 const MANIFEST_PATH = path.join(ROOT, "galleries-manifest.json");
+const GITHUB_DATA_PATH = path.join(ROOT, "web", "src", "data", "github-data.json");
 
 const GALLERY_MODE = process.env.GALLERY_MODE || "r2";
 const R2_PUBLIC_URL =
@@ -124,6 +126,9 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
 
 function main() {
   const galleryMap = scanGalleries();
+  const githubRepos = fs.existsSync(GITHUB_DATA_PATH)
+    ? JSON.parse(fs.readFileSync(GITHUB_DATA_PATH, "utf-8"))
+    : [];
 
   // Read TLDR content
   const tldrPath = path.join(DATA_DIR, "tldr.md");
@@ -160,8 +165,9 @@ function main() {
 
   // Read misc from YAML
   const misc = readYaml(path.join(DATA_DIR, "misc.yaml"));
+  const perksTree = derivePerksTree(projects_db, githubRepos);
 
-  const assembled = { tldr, employers, education, projects_db, misc };
+  const assembled = { tldr, employers, education, projects_db, misc, perksTree };
 
   const dataDir = path.dirname(OUTPUT_PATH);
   fs.mkdirSync(dataDir, { recursive: true });
