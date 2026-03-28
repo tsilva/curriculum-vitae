@@ -9,6 +9,10 @@ const Backstory = dynamic(() => import("@/components/Backstory").then((mod) => (
   loading: () => <div className="h-32 animate-pulse bg-surface/50" />,
 });
 
+const PerksTree = dynamic(() => import("@/components/PerksTree").then((mod) => ({ default: mod.PerksTree })), {
+  loading: () => <div className="h-40 animate-pulse bg-surface/50" />,
+});
+
 const Experience = dynamic(() => import("@/components/Experience").then((mod) => ({ default: mod.Experience })), {
   loading: () => <div className="h-32 animate-pulse bg-surface/50" />,
 });
@@ -32,6 +36,9 @@ export default function Home() {
         <Nav />
         <main>
           <Hero />
+          <div className="content-visibility-auto">
+            <PerksTree />
+          </div>
           <div className="content-visibility-auto">
             <Backstory />
           </div>

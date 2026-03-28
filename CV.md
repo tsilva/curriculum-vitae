@@ -1234,9 +1234,9 @@ Open source projects and contributions.
 - [mcp-openrouter](https://github.com/tsilva/mcp-openrouter) - Access 300+ AI models through a single MCP server
 - [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
 - [claudebridge](https://github.com/tsilva/claudebridge) - Bridge OpenAI tools to Claude Code SDK
+- [agentpong](https://github.com/tsilva/agentpong) - Desktop notifications that jump you to the right Claude Code window
 - [dedrive](https://github.com/tsilva/dedrive) - Find and manage duplicate files in Google Drive using MD5 checksums
 - [demosim](https://github.com/tsilva/demosim) - Explore Portugal's demographic future with economic projections
-- [agentpong](https://github.com/tsilva/agentpong) - Desktop notifications that jump you to the right Claude Code window
 - [gmailstream](https://github.com/tsilva/gmailstream) - Download Gmail messages matching filters to local files
 - [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
 - [gymsolve](https://github.com/tsilva/gymsolve) - Fast RL framework with PPO and REINFORCE on Gymnasium
@@ -1246,9 +1246,9 @@ Open source projects and contributions.
 - [gymrec](https://github.com/tsilva/gymrec) - Record and replay Gymnasium gameplay as Hugging Face datasets
 - [gmail2obsidian](https://github.com/tsilva/gmail2obsidian) - Flush Gmail threads into Obsidian task files
 - [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
-- [obsidian-agents-plugin](https://github.com/tsilva/obsidian-agents-plugin) - Launch AI agents from Obsidian vault
 - [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
 - [claudebox](https://github.com/tsilva/claudebox) - Full autonomy sandbox for Claude Code
+- [obsidian-agents-plugin](https://github.com/tsilva/obsidian-agents-plugin) - Launch AI agents from Obsidian vault
 - [homebrew-tap](https://github.com/tsilva/homebrew-tap) - Homebrew tap for installing tsilva projects
 - [mochimochi](https://github.com/tsilva/mochimochi) - CLI for curating Mochi flashcard decks with AI-powered deduplication
 - [claudeskillz](https://github.com/tsilva/claudeskillz) - Modular skills that supercharge Claude Code
