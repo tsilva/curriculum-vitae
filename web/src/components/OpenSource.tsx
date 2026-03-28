@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import type { GitHubRepo } from "@/types/cv";
 import { RepoCard } from "./RepoCard";
+import { RepoModal } from "./RepoModal";
 import { FilterBar } from "./FilterBar";
 import { useInfiniteScroll } from "@/hooks/useInfiniteScroll";
 
@@ -17,6 +18,7 @@ const filteredGithubRepos = githubRepos.filter(
 export function OpenSource() {
   const repos = useMemo(() => filteredGithubRepos as GitHubRepo[], []);
   const [selectedLanguages, setSelectedLanguages] = useState<string[]>([]);
+  const [modalRepo, setModalRepo] = useState<GitHubRepo | null>(null);
 
   const languages = useMemo(() => {
     const langMap: Record<string, number> = {};
@@ -88,7 +90,10 @@ export function OpenSource() {
                 : undefined,
             }}
           >
-            <RepoCard repo={repo} />
+            <RepoCard
+              repo={repo}
+              onClick={() => setModalRepo(repo)}
+            />
           </div>
         ))}
       </div>
@@ -100,6 +105,11 @@ export function OpenSource() {
           </div>
         </div>
       )}
+
+      <RepoModal
+        repo={modalRepo}
+        onClose={() => setModalRepo(null)}
+      />
     </section>
   );
 }

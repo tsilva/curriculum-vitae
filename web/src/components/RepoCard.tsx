@@ -3,9 +3,10 @@ import { CornerBrackets } from "./CornerBrackets";
 
 interface RepoCardProps {
   repo: GitHubRepo;
+  onClick: () => void;
 }
 
-export function RepoCard({ repo }: RepoCardProps) {
+export function RepoCard({ repo, onClick }: RepoCardProps) {
   const isTsilvaEuHomepage = (url?: string | null) => {
     if (!url) return false;
 
@@ -62,6 +63,7 @@ export function RepoCard({ repo }: RepoCardProps) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Open ${repo.name} website`}
+          onClick={(event) => event.stopPropagation()}
           className="absolute top-4 right-4 z-10 inline-flex items-center justify-center rounded-sm border border-magenta/30 bg-surface/90 p-1.5 text-magenta transition-colors hover:border-magenta hover:bg-magenta/10 hover:text-cool-white"
         >
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
@@ -72,11 +74,11 @@ export function RepoCard({ repo }: RepoCardProps) {
         </a>
       )}
 
-      <a
-        href={repo.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex h-full flex-col"
+      <button
+        type="button"
+        onClick={onClick}
+        aria-label={`Open ${repo.name} details`}
+        className="flex h-full flex-col text-left cursor-pointer"
       >
         {/* Header: Name */}
         <div className="mb-3 flex items-center gap-2 pr-10">
@@ -116,7 +118,7 @@ export function RepoCard({ repo }: RepoCardProps) {
             <span className="text-cyan/50">updated</span> {formatDate(repo.updatedAt)}
           </div>
         </div>
-      </a>
+      </button>
     </div>
   );
 }
