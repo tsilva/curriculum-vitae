@@ -1,9 +1,10 @@
 {
-  "title": "Tiago Silva | Software Engineer CV",
-  "description": "Software engineer with 20+ years of experience across AI, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped projects.",
+  "title": "Tiago Silva | AI-Powered Fullstack Software Engineer CV",
+  "description": "AI-powered Fullstack Software Engineer with 20+ years of experience across AI, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped projects.",
   "keywords": [
     "Tiago Silva",
     "software engineer",
+    "AI-powered Fullstack Software Engineer",
     "software engineer CV",
     "AI engineer",
     "AI research engineer",
@@ -23,8 +24,8 @@
     "Microsoft"
   ],
   "openGraph": {
-    "title": "Tiago Silva | Software Engineer CV",
-    "description": "Software engineer with 20+ years of experience across AI, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped projects.",
+    "title": "Tiago Silva | AI-Powered Fullstack Software Engineer CV",
+    "description": "AI-powered Fullstack Software Engineer with 20+ years of experience across AI, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped projects.",
     "images": [
       {
         "url": "/brand/web-seo/og-image-1200x630.png",
@@ -36,8 +37,8 @@
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Tiago Silva | Software Engineer CV",
-    "description": "Software engineer with 20+ years of experience across AI, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped projects.",
+    "title": "Tiago Silva | AI-Powered Fullstack Software Engineer CV",
+    "description": "AI-powered Fullstack Software Engineer with 20+ years of experience across AI, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped projects.",
     "images": [
       "/brand/web-seo/og-image-1200x630.png"
     ]
