@@ -11,9 +11,9 @@ import {
 } from "../../web-seo-metadata";
 import "./globals.css";
 
-const SITE_TITLE = "Tiago Silva | Interactive Cyberpunk CV, AI Engineer & 60+ Projects";
+const SITE_TITLE = "Tiago Silva | Software Engineer CV";
 const SITE_DESCRIPTION =
-  "Explore Tiago Silva's interactive cyberpunk CV: 20+ years across AI agents, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped products.";
+  "Software engineer with 20+ years of experience across AI, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped projects.";
 const ENABLE_SPEED_INSIGHTS = process.env.VERCEL === "1";
 const generatedMetadata = createMetadata(new URL(siteUrl));
 const generatedOpenGraph = (generatedMetadata.openGraph ?? {}) as NonNullable<Metadata["openGraph"]>;

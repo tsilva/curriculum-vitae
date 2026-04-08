@@ -2,19 +2,21 @@ import type { Metadata } from "next";
 
 export const APP_THEME_COLOR = "#00E6E6";
 
+const SITE_TITLE = "Tiago Silva | Software Engineer CV";
+const SITE_DESCRIPTION =
+  "Software engineer with 20+ years of experience across AI, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped projects.";
+
 const payload: Omit<Metadata, "metadataBase"> = {
-  title: "Tiago Silva | Interactive Cyberpunk CV, AI Engineer & 60+ Projects",
-  description:
-    "Explore Tiago Silva's interactive cyberpunk CV: 20+ years across AI agents, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped products.",
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
   keywords: [
     "Tiago Silva",
     "software engineer",
+    "software engineer CV",
     "AI engineer",
     "AI research engineer",
     "full-stack engineer",
-    "interactive CV",
-    "cyberpunk portfolio",
-    "portfolio",
+    "CV",
     "curriculum vitae",
     "resume",
     "TypeScript",
@@ -29,23 +31,21 @@ const payload: Omit<Metadata, "metadataBase"> = {
     "Microsoft",
   ],
   openGraph: {
-    title: "Tiago Silva | Interactive Cyberpunk CV, AI Engineer & 60+ Projects",
-    description:
-      "Explore Tiago Silva's interactive cyberpunk CV: 20+ years across AI agents, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped products.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     images: [
       {
         url: "/brand/web-seo/og-image-1200x630.png",
         width: 1200,
         height: 630,
-        alt: "Tiago Silva interactive cyberpunk CV brand card",
+        alt: "Tiago Silva CV",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tiago Silva | Interactive Cyberpunk CV, AI Engineer & 60+ Projects",
-    description:
-      "Explore Tiago Silva's interactive cyberpunk CV: 20+ years across AI agents, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped products.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     images: ["/brand/web-seo/og-image-1200x630.png"],
   },
   icons: {
