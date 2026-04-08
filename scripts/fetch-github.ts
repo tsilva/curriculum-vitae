@@ -2,7 +2,6 @@ import * as fs from "fs";
 import * as path from "path";
 import { fileURLToPath } from "url";
 import { execSync } from "child_process";
-import { calculateActivityScore } from "./lib/data-utils";
 
 interface GitHubRepoRaw {
   name: string;
@@ -75,11 +74,10 @@ function processRepos(repos: GitHubRepoRaw[]): GitHubRepo[] {
     commits: 0, // Not fetched to keep builds fast
   }));
   
-  // Sort by activity score: primarily recency, with stars as tiebreaker/significance boost
+  // Sort by most recent repository update, newest first.
   return processedRepos.sort((a, b) => {
-    const scoreA = calculateActivityScore(a.updatedAt, a.stars);
-    const scoreB = calculateActivityScore(b.updatedAt, b.stars);
-    return scoreB - scoreA;
+    const diff = new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
+    return diff !== 0 ? diff : a.name.localeCompare(b.name);
   });
 }
 

@@ -5,7 +5,7 @@ import {
   readFrontmatterFiles,
   parseStartField,
   parseDurationStart,
-  loadGithubActivityMap,
+  loadGithubUpdatedAtMap,
   readYaml,
 } from "./lib/data-utils";
 
@@ -119,12 +119,12 @@ function generateProjects(): string {
 }
 
 function generateOSS(): string {
-  const activityMap = loadGithubActivityMap(GITHUB_DATA_PATH);
+  const updatedAtMap = loadGithubUpdatedAtMap(GITHUB_DATA_PATH);
   const oss = readFrontmatterFiles(path.join(DATA_DIR, "oss"))
     .sort((a, b) => {
-      const scoreA = activityMap.get(a.data.name) ?? -1;
-      const scoreB = activityMap.get(b.data.name) ?? -1;
-      const diff = scoreB - scoreA;
+      const updatedAtA = updatedAtMap.get(a.data.name) ?? -1;
+      const updatedAtB = updatedAtMap.get(b.data.name) ?? -1;
+      const diff = updatedAtB - updatedAtA;
       return diff !== 0 ? diff : a.data.name.localeCompare(b.data.name);
     });
   const lines = oss.map(({ data }) => {
