@@ -8,12 +8,11 @@ import { siteUrl } from "@/lib/site-config";
 import {
   APP_THEME_COLOR,
   createMetadata,
+  SITE_DESCRIPTION,
+  SITE_TITLE,
 } from "../../web-seo-metadata";
 import "./globals.css";
 
-const SITE_TITLE = "Tiago Silva | AI-Powered Fullstack Software Engineer CV";
-const SITE_DESCRIPTION =
-  "AI-powered Fullstack Software Engineer with 20+ years of experience across AI, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped projects.";
 const ENABLE_SPEED_INSIGHTS = process.env.VERCEL === "1";
 const generatedMetadata = createMetadata(new URL(siteUrl));
 const generatedOpenGraph = (generatedMetadata.openGraph ?? {}) as NonNullable<Metadata["openGraph"]>;
@@ -132,7 +131,7 @@ const jsonLd = [
   },
 ];
 
-  export default function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -143,7 +142,6 @@ const jsonLd = [
       className={`${orbitron.variable} ${shareTechMono.variable} ${firaCode.variable}`}
     >
       <head>
-        <meta name="theme-color" content={APP_THEME_COLOR} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -6,7 +6,7 @@
   [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat&logo=next.js)](https://nextjs.org/)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat)](LICENSE)
 
-  **A software engineer CV covering 20+ years of experience across 60+ shipped projects**
+  **A software engineer CV and interactive web experience covering 20+ years of work across 60+ shipped projects**
 
   [Live Site](https://www.tsilva.eu) · [CV.md](CV.md) · [Web App](web/)
 </div>
@@ -15,16 +15,16 @@
 
 ## 🔍 Overview
 
-This repository contains both the **source data** and the **web application** for a professional CV/resume. The CV is intentionally verbose and detailed, designed to be processed by LLMs rather than read linearly.
+This repository contains both the **source data** and the **web application** for a professional CV/resume. The content is intentionally detailed and structured so it works well both as a browsable website and as source material for LLM-assisted exploration.
 
 Everything is data-driven: project, employer, and education records live as individual Markdown files with YAML frontmatter in `data/`. Two scripts consume this data to produce:
 
 - **[CV.md](CV.md)** — A generated Markdown document optimized for LLM consumption
-- **[tsilva.eu](https://www.tsilva.eu)** — A CV website for human consumption, styled with a cyberpunk visual treatment
+- **[tsilva.eu](https://www.tsilva.eu)** — A polished CV website with a cyberpunk visual system and interactive project browsing
 
 ## ✨ Features
 
-- 🎨 **Distinct visual treatment** — cyberpunk-inspired styling with scanlines, CRT vignette, matrix rain, and glitch effects
+- 🎨 **Distinct visual treatment** — a professional cyberpunk interface with scanlines, CRT vignette, matrix rain, and glitch effects
 - 📊 **Data-driven architecture** — single-source YAML frontmatter + Markdown files
 - 🤖 **LLM-friendly CV.md** — generated Markdown covering 59 projects across 8 employers
 - 🖼️ **Project galleries** — screenshots and videos served via Cloudflare R2
@@ -37,8 +37,8 @@ Everything is data-driven: project, employer, and education records live as indi
 ```bash
 git clone https://github.com/tsilva/curriculum-vitae.git
 cd curriculum-vitae/web
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view the app.
@@ -73,12 +73,12 @@ The `data/` directory is the **single source of truth**. Each entity (project, e
 ```bash
 cd web
 
-npm run dev            # Start dev server
-npm run build          # Full build (assemble + generate CV + Next.js build)
-npm run assemble       # Regenerate cv-data.json from data/
-npm run generate:cv    # Regenerate CV.md from data/
-npm run sync           # Fetch GitHub data + assemble + generate CV
-npm run stats          # Technology mention analytics
+pnpm dev            # Start dev server
+pnpm build          # Full build (assemble + generate CV + Next.js build)
+pnpm assemble       # Regenerate cv-data.json from data/
+pnpm generate:cv    # Regenerate CV.md from data/
+pnpm sync           # Fetch GitHub data + assemble + generate CV
+pnpm stats          # Technology mention analytics
 ```
 
 ## 📄 License
