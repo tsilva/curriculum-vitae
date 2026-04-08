@@ -1,18 +1,20 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useMemo, useState } from "react";
 import type { GitHubRepo } from "@/types/cv";
+import githubRepos from "@/data/github-data.json";
 import { RepoCard } from "./RepoCard";
-import { RepoModal } from "./RepoModal";
 import { FilterBar } from "./FilterBar";
 import { useInfiniteScroll } from "@/hooks/useInfiniteScroll";
 
-// Import GitHub data - this is generated at build time
-import githubRepos from "@/data/github-data.json";
+const RepoModal = dynamic(
+  () => import("./RepoModal").then((mod) => ({ default: mod.RepoModal })),
+  { ssr: false }
+);
 
-// Filter out template-* and sandbox-* repos
 const filteredGithubRepos = githubRepos.filter(
-  repo => !repo.name.startsWith('template-') && !repo.name.startsWith('sandbox-')
+  (repo) => !repo.name.startsWith("template-") && !repo.name.startsWith("sandbox-")
 );
 
 export function OpenSource() {

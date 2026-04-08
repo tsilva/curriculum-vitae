@@ -1,29 +1,17 @@
-import dynamic from "next/dynamic";
+import githubRepos from "@/data/github-data.json";
+import { cvData } from "@/lib/cv-data";
 import { Hero } from "@/components/Hero";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { Backstory } from "@/components/Backstory";
+import { Experience } from "@/components/Experience";
+import { LazySections } from "@/components/LazySections";
 import { ScrollRevealProvider } from "@/components/ScrollRevealProvider";
 
-// Lazy load below-the-fold sections to reduce initial bundle size
-const Backstory = dynamic(() => import("@/components/Backstory").then((mod) => ({ default: mod.Backstory })), {
-  loading: () => <div className="h-32 animate-pulse bg-surface/50" />,
-});
-
-const Experience = dynamic(() => import("@/components/Experience").then((mod) => ({ default: mod.Experience })), {
-  loading: () => <div className="h-32 animate-pulse bg-surface/50" />,
-});
-
-const Projects = dynamic(() => import("@/components/Projects").then((mod) => ({ default: mod.Projects })), {
-  loading: () => <div className="h-32 animate-pulse bg-surface/50" />,
-});
-
-const Education = dynamic(() => import("@/components/Education").then((mod) => ({ default: mod.Education })), {
-  loading: () => <div className="h-32 animate-pulse bg-surface/50" />,
-});
-
-const OpenSource = dynamic(() => import("@/components/OpenSource").then((mod) => ({ default: mod.OpenSource })), {
-  loading: () => <div className="h-32 animate-pulse bg-surface/50" />,
-});
+const publicGithubRepos = githubRepos.filter(
+  (repo) => !repo.name.startsWith("template-") && !repo.name.startsWith("sandbox-")
+);
+const ossCount = publicGithubRepos.length;
 
 export default function Home() {
   return (
@@ -31,22 +19,14 @@ export default function Home() {
       <ScrollRevealProvider>
         <Nav />
         <main>
-          <Hero />
+          <Hero ossCount={ossCount} />
           <div className="content-visibility-auto">
-            <Backstory />
+            <Backstory tldr={cvData.tldr} />
           </div>
           <div className="content-visibility-auto">
-            <Experience />
+            <Experience employers={cvData.employers} />
           </div>
-          <div className="content-visibility-auto">
-            <Projects />
-          </div>
-          <div className="content-visibility-auto">
-            <OpenSource />
-          </div>
-          <div className="content-visibility-auto">
-            <Education />
-          </div>
+          <LazySections />
         </main>
         <Footer />
       </ScrollRevealProvider>

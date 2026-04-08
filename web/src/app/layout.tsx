@@ -1,9 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Orbitron, Share_Tech_Mono, Fira_Code } from "next/font/google";
 import dynamic from "next/dynamic";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AnalyticsConsent } from "@/components/AnalyticsConsent";
-import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { ClientServices } from "@/components/ClientServices";
 import { siteUrl } from "@/lib/site-config";
 import {
   APP_THEME_COLOR,
@@ -146,20 +145,14 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-
-        {/* Preconnect for R2 CDN */}
-        <link rel="preconnect" href="https://curriculum-vitae-r2.tsilva.eu" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://curriculum-vitae-r2.tsilva.eu" />
-
         {/* Preload LCP image */}
         <link rel="preload" href="/avatar.webp" as="image" type="image/webp" />
       </head>
       <body className="font-[family-name:var(--font-body)] dot-grid scanlines crt-vignette antialiased">
         <AnalyticsConsent />
-        <GoogleAnalytics />
         <MatrixRain />
         {children}
-        {ENABLE_SPEED_INSIGHTS ? <SpeedInsights /> : null}
+        <ClientServices enableSpeedInsights={ENABLE_SPEED_INSIGHTS} />
       </body>
     </html>
   );

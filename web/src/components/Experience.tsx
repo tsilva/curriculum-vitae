@@ -1,6 +1,4 @@
-"use client";
-
-import { cvData } from "@/lib/cv-data";
+import type { Employer } from "@/types/cv";
 import { TimelineItem } from "./TimelineItem";
 
 // Parse start date from duration string (e.g., "Sep 2016 - May 2024" -> Date)
@@ -17,13 +15,17 @@ function parseStartDate(duration: string): Date {
 }
 
 // Sort employers by start date (descending - most recent first)
-const sortedEmployers = [...cvData.employers].sort((a, b) => {
-  const dateA = parseStartDate(a.duration);
-  const dateB = parseStartDate(b.duration);
-  return dateB.getTime() - dateA.getTime();
-});
+interface ExperienceProps {
+  employers: Employer[];
+}
 
-export function Experience() {
+export function Experience({ employers }: ExperienceProps) {
+  const sortedEmployers = [...employers].sort((a, b) => {
+    const dateA = parseStartDate(a.duration);
+    const dateB = parseStartDate(b.duration);
+    return dateB.getTime() - dateA.getTime();
+  });
+
   return (
     <section id="experience" className="max-w-6xl mx-auto px-6 py-20">
       <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-16 reveal neon-glow-cyan">
