@@ -1,7 +1,7 @@
 # TLDR
 
 <p align="center">
-  <img src="logo.png" alt="curriculum-vitae logo" width="200">
+  <img src="readme-logo.png" alt="curriculum-vitae markdown logo" width="200">
 </p>
 
 This CV is detailed and comprehensive—it's more suited for running through your favorite LLM and asking questions than reading it all the way through. For a concise summary, here's the **TL;DR**:
