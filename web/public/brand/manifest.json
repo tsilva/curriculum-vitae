@@ -10,21 +10,23 @@
     "cli_args"
   ],
   "metadata": {
-    "title": "Tiago Silva | Software Engineer Portfolio & Interactive CV",
-    "short_description": "Interactive, LLM-optimized portfolio of a Lead Software Engineer with 20+ years of experience across AI/ML, EdTech (Tynker), and 60+ shipped projects.",
-    "social_title": "Tiago Silva - Professional Portfolio & CV",
-    "social_description": "Explore the career of a software engineer featuring 20 years of expertise in deep learning, full-stack development, and product leadership at companies like Microsoft and Tynker.",
+    "title": "Tiago Silva | Software Engineer CV",
+    "short_description": "Software engineer with 20+ years of experience across AI, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped projects.",
+    "social_title": "Tiago Silva | Software Engineer CV",
+    "social_description": "Software engineer with 20+ years of experience across AI, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped projects.",
     "keywords": [
       "Software Engineer",
+      "AI Engineer",
       "Deep Learning",
+      "TypeScript",
+      "Python",
       "Node.js",
-      "AI Research",
+      "AI Agents",
       "Tynker",
       "Full-Stack",
-      "Portfolio",
       "Curriculum Vitae",
-      "LLM-ready",
-      "Educational Technology"
+      "Resume",
+      "Microsoft"
     ]
   },
   "assets": [

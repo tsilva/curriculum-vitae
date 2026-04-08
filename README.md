@@ -6,7 +6,7 @@
   [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat&logo=next.js)](https://nextjs.org/)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat)](LICENSE)
 
-  🎮 **A cyberpunk-themed interactive CV presenting 20+ years of fullstack engineering across 60+ projects** ⚡
+  **A software engineer CV covering 20+ years of experience across 60+ shipped projects**
 
   [Live Site](https://www.tsilva.eu) · [CV.md](CV.md) · [Web App](web/)
 </div>
@@ -15,16 +15,16 @@
 
 ## 🔍 Overview
 
-This repository contains both the **source data** and the **interactive web application** for a professional CV/resume. The CV is intentionally verbose and detailed — designed to be processed by LLMs rather than read linearly.
+This repository contains both the **source data** and the **web application** for a professional CV/resume. The CV is intentionally verbose and detailed, designed to be processed by LLMs rather than read linearly.
 
 Everything is data-driven: project, employer, and education records live as individual Markdown files with YAML frontmatter in `data/`. Two scripts consume this data to produce:
 
 - **[CV.md](CV.md)** — A generated Markdown document optimized for LLM consumption
-- **[tsilva.eu](https://www.tsilva.eu)** — A cyberpunk-themed web app for human consumption
+- **[tsilva.eu](https://www.tsilva.eu)** — A CV website for human consumption, styled with a cyberpunk visual treatment
 
 ## ✨ Features
 
-- 🕹️ **Cyberpunk/Edgerunners aesthetic** — scanlines, CRT vignette, matrix rain, glitch text effects
+- 🎨 **Distinct visual treatment** — cyberpunk-inspired styling with scanlines, CRT vignette, matrix rain, and glitch effects
 - 📊 **Data-driven architecture** — single-source YAML frontmatter + Markdown files
 - 🤖 **LLM-friendly CV.md** — generated Markdown covering 59 projects across 8 employers
 - 🖼️ **Project galleries** — screenshots and videos served via Cloudflare R2
