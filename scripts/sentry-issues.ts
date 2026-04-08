@@ -34,7 +34,7 @@ const DEFAULT_OPTIONS: Options = {
 function printHelp() {
   console.log(`Usage: pnpm sentry:issues [options]
 
-List recent Sentry issues using credentials from .env.sentry-mcp or the shell.
+List recent Sentry issues using credentials from .env, .env.sentry-mcp, or the shell.
 
 Options:
   --days <n>        Look back n days (default: 7)
@@ -144,7 +144,9 @@ function getRequiredEnv(name: string): string {
   const value = process.env[name]?.trim();
 
   if (!value) {
-    throw new Error(`Missing ${name}. Copy .env.sentry-mcp.example to .env.sentry-mcp and fill it in.`);
+    throw new Error(
+      `Missing ${name}. Set it in the shell, .env, or .env.sentry-mcp and try again.`,
+    );
   }
 
   return value;
@@ -209,8 +211,16 @@ async function fetchProjectId(
 }
 
 async function main() {
-  loadOptionalEnvFile(resolve(process.cwd(), ".env.sentry-mcp")) ||
-    loadOptionalEnvFile(resolve(process.cwd(), "..", ".env.sentry-mcp"));
+  const envFiles = [
+    resolve(process.cwd(), ".env"),
+    resolve(process.cwd(), "..", ".env"),
+    resolve(process.cwd(), ".env.sentry-mcp"),
+    resolve(process.cwd(), "..", ".env.sentry-mcp"),
+  ];
+
+  for (const envFile of envFiles) {
+    loadOptionalEnvFile(envFile);
+  }
 
   const options = parseArgs(process.argv.slice(2));
   if (!options) {

@@ -43,6 +43,7 @@ const sentryBuildEnabled = Boolean(process.env.SENTRY_AUTH_TOKEN);
 
 const nextConfig: NextConfig = {
   output: "export",
+  outputFileTracingRoot: join(process.cwd(), ".."),
   env: {
     GIT_COMMIT_HASH: process.env.GIT_COMMIT_HASH || "dev",
   },
