@@ -64,9 +64,14 @@ const nextConfig: NextConfig = {
     removeConsole: process.env.NODE_ENV === "production",
   },
   // Optimize bundle by excluding certain polyfills
-  webpack: (config, { isServer }) => {
+  webpack: (config, { isServer, webpack }) => {
     // Only apply to client-side bundle
     if (!isServer) {
+      const modernPolyfillShim = join(
+        process.cwd(),
+        "src/lib/empty-polyfill-module.js",
+      );
+
       // Exclude certain heavy polyfills that aren't needed for modern browsers
       config.resolve.fallback = {
         ...config.resolve.fallback,
@@ -74,6 +79,15 @@ const nextConfig: NextConfig = {
         net: false,
         tls: false,
       };
+
+      // Next injects a legacy polyfill bundle into the App Router client runtime.
+      // We only target modern browsers, so replace it with an empty module.
+      config.plugins.push(
+        new webpack.NormalModuleReplacementPlugin(
+          /(?:^|[\\/])build[\\/]polyfills[\\/]polyfill-module(?:\.js)?$/,
+          modernPolyfillShim,
+        ),
+      );
     }
     return config;
   },
