@@ -1,4 +1,4 @@
-import { PrivacyControls } from "./PrivacyControls";
+import { FooterPrivacyControls } from "./FooterPrivacyControls";
 
 export function Footer() {
   return (
@@ -34,7 +34,7 @@ export function Footer() {
             build: {process.env.GIT_COMMIT_HASH || 'unknown'}
           </div>
 
-          <PrivacyControls />
+          <FooterPrivacyControls />
         </div>
       </div>
     </footer>
