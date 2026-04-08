@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 
 export const APP_THEME_COLOR = "#00E6E6";
 
-const SITE_TITLE = "Tiago Silva | AI-Powered Fullstack Software Engineer CV";
-const SITE_DESCRIPTION =
+export const SITE_TITLE = "Tiago Silva | AI-Powered Fullstack Software Engineer CV";
+export const SITE_DESCRIPTION =
   "AI-powered Fullstack Software Engineer with 20+ years of experience across AI, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped projects.";
 
 const payload: Omit<Metadata, "metadataBase"> = {
