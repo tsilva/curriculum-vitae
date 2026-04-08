@@ -1,19 +1,30 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useState, useMemo, useEffect } from "react";
 import type { Project } from "@/types/cv";
 import { cvData } from "@/lib/cv-data";
 import { FilterBar } from "./FilterBar";
-import { TechBrowser } from "./TechBrowser";
 import { ProjectCard } from "./ProjectCard";
-import { ProjectModal } from "./ProjectModal";
-import { GalleryModal } from "./GalleryModal";
 import { useInfiniteScroll } from "@/hooks/useInfiniteScroll";
 
 interface GalleryOpenDetail {
   project: Project;
   returnFocusTo?: HTMLElement | null;
 }
+
+const TechBrowser = dynamic(
+  () => import("./TechBrowser").then((mod) => ({ default: mod.TechBrowser })),
+  { ssr: false }
+);
+const ProjectModal = dynamic(
+  () => import("./ProjectModal").then((mod) => ({ default: mod.ProjectModal })),
+  { ssr: false }
+);
+const GalleryModal = dynamic(
+  () => import("./GalleryModal").then((mod) => ({ default: mod.GalleryModal })),
+  { ssr: false }
+);
 
 export function Projects() {
   const [selectedTechs, setSelectedTechs] = useState<string[]>([]);

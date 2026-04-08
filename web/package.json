@@ -2,18 +2,20 @@
   "name": "cv-tsilva",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.27.0",
   "scripts": {
+    "preinstall": "node -e \"const ua = process.env.npm_config_user_agent || ''; if (!ua.startsWith('pnpm/')) { console.error('Use pnpm for this repo.'); process.exit(1); }\"",
     "dev": "GIT_COMMIT_HASH=$(git rev-parse --short HEAD) next dev",
-    "build": "export GIT_COMMIT_HASH=$([ -n \"$VERCEL_GIT_COMMIT_SHA\" ] && echo \"${VERCEL_GIT_COMMIT_SHA:0:7}\" || git rev-parse --short HEAD) && npm run assemble && npm run generate:cv && next build",
-    "build:local": "GALLERY_MODE=local npm run build",
-    "sync": "npm run fetch:github && npm run assemble && npm run generate:cv",
+    "build": "export GIT_COMMIT_HASH=$([ -n \"$VERCEL_GIT_COMMIT_SHA\" ] && echo \"${VERCEL_GIT_COMMIT_SHA:0:7}\" || git rev-parse --short HEAD) && pnpm run assemble && pnpm run generate:cv && next build",
+    "build:local": "GALLERY_MODE=local pnpm run build",
+    "sync": "pnpm run fetch:github && pnpm run assemble && pnpm run generate:cv",
     "start": "next start",
     "lint": "eslint . --max-warnings=0",
-    "assemble": "GALLERY_MODE=r2 npx tsx ../scripts/assemble-cv-data.ts",
-    "assemble:local": "GALLERY_MODE=local npx tsx ../scripts/assemble-cv-data.ts",
-    "generate:cv": "npx tsx ../scripts/generate-cv.ts",
-    "fetch:github": "npx tsx ../scripts/fetch-github.ts",
-    "stats": "npx tsx ../scripts/count-technologies.ts"
+    "assemble": "GALLERY_MODE=r2 pnpm exec tsx ../scripts/assemble-cv-data.ts",
+    "assemble:local": "GALLERY_MODE=local pnpm exec tsx ../scripts/assemble-cv-data.ts",
+    "generate:cv": "pnpm exec tsx ../scripts/generate-cv.ts",
+    "fetch:github": "pnpm exec tsx ../scripts/fetch-github.ts",
+    "stats": "pnpm exec tsx ../scripts/count-technologies.ts"
   },
   "dependencies": {
     "@sentry/nextjs": "^10.45.0",

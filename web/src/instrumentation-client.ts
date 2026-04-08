@@ -1,9 +1,10 @@
 import * as Sentry from "@sentry/nextjs";
 import {
-  SENTRY_DSN,
-  SENTRY_ENABLED,
+  SENTRY_BROWSER_DSN,
+  SENTRY_BROWSER_ENABLED,
   SENTRY_ENVIRONMENT,
   SENTRY_RELEASE,
+  SENTRY_TRACES_SAMPLE_RATE,
 } from "./lib/sentry";
 
 declare global {
@@ -13,11 +14,12 @@ declare global {
 }
 
 Sentry.init({
-  dsn: SENTRY_DSN,
-  enabled: SENTRY_ENABLED,
+  dsn: SENTRY_BROWSER_DSN,
+  enabled: SENTRY_BROWSER_ENABLED,
   environment: SENTRY_ENVIRONMENT,
   release: SENTRY_RELEASE,
   sendDefaultPii: false,
+  tracesSampleRate: SENTRY_TRACES_SAMPLE_RATE,
 });
 
 if (typeof window !== "undefined") {

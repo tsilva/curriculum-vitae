@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { CountUp } from "./CountUp";
-import githubRepos from "@/data/github-data.json";
 
-// Calculate OSS count excluding template-* and sandbox-* repos
-const OSS_COUNT = githubRepos.filter(repo => !repo.name.startsWith('template-') && !repo.name.startsWith('sandbox-')).length;
+interface HeroProps {
+  ossCount: number;
+}
 
 const socialLinks = [
   {
@@ -93,7 +93,7 @@ const THREAT_LEVELS = ["NONE", "LOW", "MONITOR"];
 const ICE_STATUS = ["CLEAN", "SCANNING", "VERIFIED"];
 const STOCK_LEVELS = ["FULL", "98%", "NOMINAL"];
 
-export function Hero() {
+export function Hero({ ossCount }: HeroProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [threat, setThreat] = useState("NONE");
   const [ice, setIce] = useState("CLEAN");
@@ -251,7 +251,7 @@ export function Hero() {
         <CountUp end={20} suffix="+" label="Years" className="-mt-1 sm:mt-0" />
         <CountUp end={60} suffix="+" label="Projects" className="-mt-1 sm:mt-0" />
         <CountUp end={100} suffix="M+" label="Users" />
-        <CountUp end={OSS_COUNT} suffix="" label="OSS" />
+        <CountUp end={ossCount} suffix="" label="OSS" />
       </div>
 
       {/* Social links */}

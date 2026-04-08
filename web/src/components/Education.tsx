@@ -1,10 +1,15 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useState } from "react";
 import { cvData } from "@/lib/cv-data";
 import type { Education as EducationEntry } from "@/types/cv";
 import { CornerBrackets } from "./CornerBrackets";
-import { EducationModal } from "./EducationModal";
+
+const EducationModal = dynamic(
+  () => import("./EducationModal").then((mod) => ({ default: mod.EducationModal })),
+  { ssr: false }
+);
 
 export function Education() {
   const [modalEducation, setModalEducation] = useState<EducationEntry | null>(null);

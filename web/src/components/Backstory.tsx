@@ -1,7 +1,3 @@
-"use client";
-
-import { cvData } from "@/lib/cv-data";
-
 // Convert basic Markdown to HTML
 function markdownToHtml(markdown: string): string {
   return markdown
@@ -36,8 +32,12 @@ function extractBackstory(tldr: string): string {
   return markdownToHtml(backstoryLines.join('\n'));
 }
 
-export function Backstory() {
-  const backstoryContent = extractBackstory(cvData.tldr);
+interface BackstoryProps {
+  tldr: string;
+}
+
+export function Backstory({ tldr }: BackstoryProps) {
+  const backstoryContent = extractBackstory(tldr);
 
   if (!backstoryContent) return null;
 
