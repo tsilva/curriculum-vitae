@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-const SITE_TITLE = "Tiago Silva | Software Engineer CV";
+const SITE_TITLE = "Tiago Silva | AI-Powered Fullstack Software Engineer CV";
 const SITE_DESCRIPTION =
-  "Software engineer with 20+ years of experience across AI, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped projects.";
+  "AI-powered Fullstack Software Engineer with 20+ years of experience across AI, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped projects.";
 
 const payload: Omit<Metadata, "metadataBase"> = {
   "title": SITE_TITLE,
@@ -10,6 +10,7 @@ const payload: Omit<Metadata, "metadataBase"> = {
   "keywords": [
     "Tiago Silva",
     "software engineer",
+    "AI-powered Fullstack Software Engineer",
     "software engineer CV",
     "AI engineer",
     "AI research engineer",
