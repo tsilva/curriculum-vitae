@@ -32,14 +32,14 @@ const shareTechMono = Share_Tech_Mono({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
-  preload: true,
+  preload: false,
 });
 
 const firaCode = Fira_Code({
   subsets: ["latin"],
   variable: "--font-mono",
   display: "swap",
-  preload: true,
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -145,8 +145,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {/* Preload LCP image */}
-        <link rel="preload" href="/avatar.webp" as="image" type="image/webp" />
       </head>
       <body className="font-[family-name:var(--font-body)] dot-grid scanlines crt-vignette antialiased">
         <AnalyticsConsent />
