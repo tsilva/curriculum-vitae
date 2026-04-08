@@ -267,5 +267,8 @@ When updating project information:
 ### readme-generator
 Use this skill when authoring or updating exported CV markdown. Edit `data/**/*.md` and `data/misc.yaml`, then run `generate:cv`.
 
+### sentry-setup
+Use this skill when enabling, repairing, or validating Sentry in this repository. The canonical slash-command trigger is `/sentry-setup`.
+
 ### visual-inspection
 **Use this skill to verify visual changes before committing.** Capture screenshots of the CV web app to check layout, styling, and content. Always capture the **full page** to verify all sections render correctly.
