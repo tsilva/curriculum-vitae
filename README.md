@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logo.png" alt="curriculum-vitae" width="512"/>
+  <img src="readme-logo.png" alt="curriculum-vitae markdown logo" width="512"/>
 
   [![Vercel](https://img.shields.io/badge/Vercel-deployed-black?style=flat&logo=vercel)](https://www.tsilva.eu)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -67,6 +67,13 @@ The `data/` directory is the **single source of truth**. Each entity (project, e
 | Monitoring | Sentry |
 | Hosting | Vercel |
 | Media | Cloudflare R2 |
+
+## 🎨 Branding Surfaces
+
+- **Web runtime branding** lives under `web/public/brand/` and is the only source for favicons, manifest, apple-touch icon, OG image, and other browser-facing brand assets.
+- **Markdown branding** uses the root-level `readme-logo.png` asset for `README.md` and generated `CV.md`, so GitHub rendering stays independent from the web app asset pipeline.
+- **Metadata wiring** stays in `web/web-seo-metadata.ts`, `web/src/app/layout.tsx`, `web/src/app/robots.ts`, `web/src/app/sitemap.ts`, and `web/src/lib/site-config.ts`.
+- **Asset refresh workflow** is owned by the external `optimize-seo` skill. This repo does not implement OpenRouter preflight locally; any future brand regeneration should be gated by that skill before assets under `web/public/brand/` are refreshed.
 
 ## 📂 Key Commands
 

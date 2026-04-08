@@ -54,6 +54,7 @@ logs/
 # Visual Inspection Skill screenshots
 .visual-inspection-screenshots/
 *.png
+!readme-logo.png
 !web/public/*.png
 !docs/**/*.png
 

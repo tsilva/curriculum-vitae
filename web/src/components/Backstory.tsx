@@ -17,7 +17,11 @@ function extractBackstory(tldr: string): string {
   let inBlockquote = false;
 
   for (const line of lines) {
-    if (line.includes('<p align=') || line.includes('logo.png')) continue;
+    if (
+      line.includes("<p align=") ||
+      line.includes("readme-logo.png") ||
+      line.includes("logo.png")
+    ) continue;
     if (line.includes('This CV is detailed')) continue;
 
     if (line.match(/^>(<br>)?\s*/)) {
