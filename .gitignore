@@ -56,6 +56,7 @@ logs/
 *.png
 !readme-logo.png
 !web/public/*.png
+!web/public/**/*.png
 !docs/**/*.png
 
 # Lighthouse Audit reports
