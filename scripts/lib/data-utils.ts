@@ -51,22 +51,13 @@ export function parseDurationStart(duration: string): number {
   return parseInt(tokens[0]) * 100;
 }
 
-export function calculateActivityScore(updatedAt: string, stars: number): number {
-  const now = new Date();
-  const updated = new Date(updatedAt);
-  const daysSinceUpdate = (now.getTime() - updated.getTime()) / (1000 * 60 * 60 * 24);
-  const recencyScore = Math.exp(-daysSinceUpdate / 30);
-  const significanceScore = Math.log1p(stars);
-  return recencyScore * 10 + significanceScore;
-}
-
-export function loadGithubActivityMap(githubDataPath: string): Map<string, number> {
+export function loadGithubUpdatedAtMap(githubDataPath: string): Map<string, number> {
   const map = new Map<string, number>();
   if (!fs.existsSync(githubDataPath)) return map;
-  const repos: { name: string; updatedAt: string; stars: number }[] =
+  const repos: { name: string; updatedAt: string }[] =
     JSON.parse(fs.readFileSync(githubDataPath, "utf-8"));
   for (const repo of repos) {
-    map.set(repo.name, calculateActivityScore(repo.updatedAt, repo.stars));
+    map.set(repo.name, new Date(repo.updatedAt).getTime());
   }
   return map;
 }
