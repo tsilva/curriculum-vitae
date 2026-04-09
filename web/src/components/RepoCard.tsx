@@ -1,4 +1,5 @@
 import type { GitHubRepo } from "@/types/cv";
+import { getNormalizedTsilvaEuUrl } from "@/lib/url-utils";
 import { CornerBrackets } from "./CornerBrackets";
 
 interface RepoCardProps {
@@ -7,17 +8,6 @@ interface RepoCardProps {
 }
 
 export function RepoCard({ repo, onClick }: RepoCardProps) {
-  const isTsilvaEuHomepage = (url?: string | null) => {
-    if (!url) return false;
-
-    try {
-      const hostname = new URL(url).hostname.toLowerCase();
-      return hostname === "tsilva.eu" || hostname.endsWith(".tsilva.eu");
-    } catch {
-      return false;
-    }
-  };
-
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     const now = new Date();
@@ -49,7 +39,7 @@ export function RepoCard({ repo, onClick }: RepoCardProps) {
   };
 
   const languageColor = repo.language ? (languageColors[repo.language] || "#00FFF0") : null;
-  const homepageUrl = isTsilvaEuHomepage(repo.homepageUrl) ? repo.homepageUrl : null;
+  const homepageUrl = getNormalizedTsilvaEuUrl(repo.homepageUrl);
 
   return (
     <div
