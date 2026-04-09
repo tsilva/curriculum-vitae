@@ -3,6 +3,7 @@
 import { useId, useRef } from "react";
 import { createPortal } from "react-dom";
 import type { GitHubRepo } from "@/types/cv";
+import { normalizeHttpUrl } from "@/lib/url-utils";
 import { useModal } from "@/hooks/useModal";
 
 interface RepoModalProps {
@@ -43,6 +44,8 @@ export function RepoModal({ repo, onClose }: RepoModalProps) {
   });
 
   if (!repo) return null;
+
+  const homepageUrl = normalizeHttpUrl(repo.homepageUrl);
 
   return createPortal(
     <div
@@ -134,7 +137,7 @@ export function RepoModal({ repo, onClose }: RepoModalProps) {
             </div>
           </div>
 
-          {repo.homepageUrl && (
+          {homepageUrl && (
             <div className="pt-4 border-t border-cyan/10 space-y-4">
               <div className="flex items-center gap-2 mb-2">
                 <span className="text-magenta text-base">■</span>
@@ -144,7 +147,7 @@ export function RepoModal({ repo, onClose }: RepoModalProps) {
               </div>
               <div className="space-y-2 pl-4 border-l-2 border-magenta/20">
                 <a
-                  href={repo.homepageUrl}
+                  href={homepageUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-base text-cyan hover:text-cyan/80 transition-colors group/link"

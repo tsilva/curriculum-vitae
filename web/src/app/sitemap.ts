@@ -46,12 +46,13 @@ function getLatestContentUpdate(): Date {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: `${siteUrl}/`,
-      lastModified: getLatestContentUpdate(),
-      changeFrequency: "monthly",
-      priority: 1,
-    },
-  ];
+  const lastModified = getLatestContentUpdate();
+  const siteRoutes = ["/"];
+
+  return siteRoutes.map((route) => ({
+    url: `${siteUrl}${route}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: route === "/" ? 1 : 0.8,
+  }));
 }
