@@ -86,6 +86,19 @@
       ]
     }
   ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "tsilva.eu"
+        }
+      ],
+      "destination": "https://www.tsilva.eu/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/galleries/:path*",
