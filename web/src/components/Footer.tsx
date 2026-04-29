@@ -1,5 +1,3 @@
-import { FooterPrivacyControls } from "./FooterPrivacyControls";
-
 export function Footer() {
   return (
     <footer className="border-t border-cyan/20 bg-base-light/30 py-12 pb-24 lg:pb-16">
@@ -33,8 +31,6 @@ export function Footer() {
           <div className="font-[family-name:var(--font-mono)] text-[10px] text-steel-dim/60 mt-1">
             build: {process.env.GIT_COMMIT_HASH || 'unknown'}
           </div>
-
-          <FooterPrivacyControls />
         </div>
       </div>
     </footer>

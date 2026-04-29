@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Orbitron, Share_Tech_Mono, Fira_Code } from "next/font/google";
 import dynamic from "next/dynamic";
-import { AnalyticsConsent } from "@/components/AnalyticsConsent";
 import { ClientServices } from "@/components/ClientServices";
 import { siteUrl } from "@/lib/site-config";
 import {
@@ -147,7 +146,6 @@ export default function RootLayout({
         />
       </head>
       <body className="font-[family-name:var(--font-body)] dot-grid scanlines crt-vignette antialiased">
-        <AnalyticsConsent />
         <MatrixRain />
         {children}
         <ClientServices enableSpeedInsights={ENABLE_SPEED_INSIGHTS} />
