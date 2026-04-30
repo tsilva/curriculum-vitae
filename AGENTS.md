@@ -128,6 +128,7 @@ Set environment variables in `web/.env` or via command line:
 ```bash
 GALLERY_MODE=r2
 R2_PUBLIC_URL=https://curriculum-vitae-r2.tsilva.eu
+GALLERY_PUBLIC_URL=/galleries
 ```
 
 ### NPM Scripts
@@ -141,9 +142,9 @@ npm run generate:cv     # Regenerate CV.md from data/
 
 ### How It Works
 
-The `scripts/assemble-cv-data.ts` script reads `GALLERY_MODE` and generates appropriate URLs:
+The `scripts/assemble-cv-data.ts` script reads `GALLERY_MODE` and generates cache-tokened gallery URLs:
 - **Local mode**: `/galleries/{project}/{filename}`
-- **R2 mode**: `https://curriculum-vitae-r2.tsilva.eu/galleries/{project}/{filename}`
+- **R2 mode**: `/galleries/{project}/{filename}?v={cache-token}` by default, proxied to Cloudflare R2 by Vercel
 
 ## Key Commands
 
