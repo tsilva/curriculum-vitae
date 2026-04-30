@@ -3,6 +3,7 @@ import { Orbitron, Share_Tech_Mono, Fira_Code } from "next/font/google";
 import dynamic from "next/dynamic";
 import { ClientServices } from "@/components/ClientServices";
 import { siteUrl } from "@/lib/site-config";
+import { versionedAssetPath } from "@/lib/cache-token";
 import {
   APP_THEME_COLOR,
   createMetadata,
@@ -89,7 +90,7 @@ const jsonLd = [
     jobTitle: "AI-Powered Fullstack Software Engineer",
     description: SITE_DESCRIPTION,
     url: siteUrl,
-    image: `${siteUrl}/avatar.webp`,
+    image: versionedAssetPath(`${siteUrl}/avatar.webp`),
     sameAs: [
       "https://github.com/tsilva",
       "https://www.linkedin.com/in/engtiagosilva/",
@@ -140,6 +141,7 @@ export default function RootLayout({
       className={`${orbitron.variable} ${shareTechMono.variable} ${firaCode.variable}`}
     >
       <head>
+        <link rel="manifest" href={versionedAssetPath("/site.webmanifest")} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

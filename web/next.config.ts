@@ -45,6 +45,10 @@ const nextConfig: NextConfig = {
   output: "export",
   outputFileTracingRoot: join(process.cwd(), ".."),
   env: {
+    ASSET_CACHE_TOKEN:
+      process.env.ASSET_CACHE_TOKEN ||
+      process.env.GIT_COMMIT_HASH ||
+      "dev",
     GIT_COMMIT_HASH: process.env.GIT_COMMIT_HASH || "dev",
   },
   images: {

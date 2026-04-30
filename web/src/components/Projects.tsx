@@ -33,6 +33,34 @@ export function Projects() {
   const [galleryModalState, setGalleryModalState] = useState<GalleryOpenDetail | null>(null);
   const [filterKey, setFilterKey] = useState(0);
 
+  const fullGalleryProject = useMemo<Project | null>(() => {
+    const gallery = cvData.projects_db.flatMap((project) =>
+      (project.gallery ?? []).map((media) => ({
+        ...media,
+        projectId: project.id,
+        projectTitle: project.title,
+        projectEmoji: project.emoji,
+      }))
+    );
+
+    if (gallery.length === 0) return null;
+
+    return {
+      id: "all-galleries",
+      emoji: "[]",
+      title: "All Project Galleries",
+      tldr: "Combined project gallery stream",
+      start: "",
+      client: "",
+      technologies: [],
+      narrative: "",
+      links: [],
+      gallery,
+    };
+  }, []);
+
+  const galleryItemCount = fullGalleryProject?.gallery?.length ?? 0;
+
   const technologies = useMemo(() => {
     const techMap: Record<string, number> = {};
     for (const project of cvData.projects_db) {
@@ -81,9 +109,32 @@ export function Projects() {
 
   return (
     <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
-      <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan mb-10 reveal neon-glow-cyan">
-        <span className="text-magenta">&gt;</span> PROJECTS_DB
-      </h2>
+      <div className="mb-10 flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+        <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-cyan reveal neon-glow-cyan">
+          <span className="text-magenta">&gt;</span> PROJECTS_DB
+        </h2>
+
+        {fullGalleryProject && (
+          <button
+            type="button"
+            onClick={(event) =>
+              setGalleryModalState({
+                project: fullGalleryProject,
+                returnFocusTo: event.currentTarget,
+              })
+            }
+            className="group w-full border border-magenta/70 bg-magenta/20 px-5 py-4 text-left font-[family-name:var(--font-mono)] uppercase text-cool-white shadow-[0_0_24px_rgba(255,0,170,0.22)] transition-all hover:border-magenta hover:bg-magenta/35 hover:shadow-[0_0_32px_rgba(255,0,170,0.32)] md:w-auto md:min-w-64"
+            aria-label={`Open full project gallery with ${galleryItemCount} items`}
+          >
+            <span className="block text-sm tracking-normal text-magenta group-hover:text-cool-white">
+              Open full gallery
+            </span>
+            <span className="mt-1 block text-xs text-steel group-hover:text-cool-white">
+              {galleryItemCount} captures across project media
+            </span>
+          </button>
+        )}
+      </div>
 
       <FilterBar
         technologies={technologies}

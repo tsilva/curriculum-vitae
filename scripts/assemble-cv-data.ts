@@ -1,6 +1,7 @@
 // Assembles web/src/data/cv-data.json from data/**/*.md (frontmatter) + data/misc.yaml + galleries
 import * as fs from "fs";
 import * as path from "path";
+import { execSync } from "child_process";
 import {
   readFrontmatterFiles,
   parseStartField,
@@ -17,6 +18,11 @@ const GALLERY_ORDER_PATH = path.join(DATA_DIR, "gallery-order.yaml");
 const GALLERY_MODE = process.env.GALLERY_MODE || "r2";
 const R2_PUBLIC_URL =
   process.env.R2_PUBLIC_URL || "https://curriculum-vitae-r2.tsilva.eu";
+const GALLERY_PUBLIC_URL =
+  process.env.GALLERY_PUBLIC_URL ||
+  (process.env.GALLERY_DIRECT_R2 === "1"
+    ? `${R2_PUBLIC_URL}/galleries`
+    : "/galleries");
 
 const IMAGE_EXTENSIONS = [".webp", ".jpg", ".jpeg", ".png", ".gif", ".bmp", ".svg"];
 const VIDEO_EXTENSIONS = [".mp4", ".mov", ".mkv", ".avi", ".webm", ".m4v"];
@@ -26,6 +32,39 @@ interface GalleryMedia {
   type: "image" | "video";
   path: string;
   thumbnail?: string;
+}
+
+function getGitShortHash(): string {
+  try {
+    return execSync("git rev-parse --short HEAD", {
+      cwd: ROOT,
+      encoding: "utf-8",
+      stdio: ["ignore", "pipe", "ignore"],
+    }).trim();
+  } catch {
+    return "";
+  }
+}
+
+function getAssetCacheToken(): string {
+  const rawToken =
+    process.env.ASSET_CACHE_TOKEN ||
+    process.env.GIT_COMMIT_HASH ||
+    getGitShortHash() ||
+    "dev";
+
+  return rawToken.replace(/[^a-zA-Z0-9._-]/g, "").slice(0, 64) || "dev";
+}
+
+const ASSET_CACHE_TOKEN = getAssetCacheToken();
+
+function withCacheToken(url: string): string {
+  const hashIndex = url.indexOf("#");
+  const base = hashIndex === -1 ? url : url.slice(0, hashIndex);
+  const hash = hashIndex === -1 ? "" : url.slice(hashIndex);
+  const separator = base.includes("?") ? "&" : "?";
+
+  return `${base}${separator}v=${encodeURIComponent(ASSET_CACHE_TOKEN)}${hash}`;
 }
 
 function readGalleryOrder(): Record<string, string[]> {
@@ -46,7 +85,11 @@ function readGalleryOrder(): Record<string, string[]> {
 }
 
 function getGalleryBaseUrl(): string {
-  return GALLERY_MODE === "r2" ? `${R2_PUBLIC_URL}/galleries` : "/galleries";
+  if (GALLERY_MODE === "r2") {
+    return GALLERY_PUBLIC_URL;
+  }
+
+  return "/galleries";
 }
 
 function sortGalleryMedia(projectId: string, media: GalleryMedia[], galleryOrder: Record<string, string[]>): void {
@@ -92,10 +135,10 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
           media.push({
             filename,
             type: isImage ? "image" : "video",
-            path: `${baseUrl}/${projectId}/${filename}`,
+            path: withCacheToken(`${baseUrl}/${projectId}/${filename}`),
             thumbnail:
               isVideo && hasThumbnail
-                ? `${baseUrl}/${projectId}/${thumbFilename}`
+                ? withCacheToken(`${baseUrl}/${projectId}/${thumbFilename}`)
                 : undefined,
           });
         }
@@ -136,10 +179,10 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
         media.push({
           filename,
           type: isImage ? "image" : "video",
-          path: `${baseUrl}/${entry.name}/${filename}`,
+          path: withCacheToken(`${baseUrl}/${entry.name}/${filename}`),
           thumbnail:
             isVideo && hasThumbnail
-              ? `${baseUrl}/${entry.name}/${thumbFilename}`
+              ? withCacheToken(`${baseUrl}/${entry.name}/${thumbFilename}`)
               : undefined,
         });
         manifestFiles.push(filename);

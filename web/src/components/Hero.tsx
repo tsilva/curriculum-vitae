@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { CountUp } from "./CountUp";
+import { versionedAssetPath } from "@/lib/cache-token";
 
 interface HeroProps {
   ossCount: number;
@@ -197,7 +198,7 @@ export function Hero({ ossCount }: HeroProps) {
       >
         <div className={`w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-2 border-kiroshi-red/60 shadow-[0_0_20px_rgba(232,0,63,0.3)] transition-all duration-300 ${isHovered ? 'border-kiroshi-red shadow-[0_0_30px_rgba(232,0,63,0.5)]' : ''}`}>
           <Image
-            src="/avatar.webp"
+            src={versionedAssetPath("/avatar.webp")}
             alt="Tiago Silva"
             width={144}
             height={144}
