@@ -124,11 +124,11 @@ During college, I gained valuable experience working on freelance projects for c
 - **Grade:** 18 (out of 20)
 - **Location:** Lodz, Poland
 
-During my <a href="https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/studying-abroad" target="_blank">Erasmus</a> exchange, which took place in the final year of my Computer Engineering studies at <a href="https://sigarra.up.pt/feup/pt/web_page.inicial" target="_blank">FEUP</a>, I enrolled in courses on Genetic Algorithms, Cryptography, Neural Networks, Network Services Programming, and an intensive Polish language course. I successfully completed them with an average grade of 18 out of 20.
+During my <a href="https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/studying-abroad" target="_blank">Erasmus</a> exchange, which took place in the final year of my Computer Engineering studies at <a href="https://sigarra.up.pt/feup/pt/web_page.inicial" target="_blank">FEUP</a>, I took courses in Genetic Algorithms, Cryptography, Neural Networks, Network Services Programming, and intensive Polish. I completed the semester with an average grade of 18 out of 20.
 
-However, the most rewarding aspect of this experience extended far beyond academics. Living in a diverse cultural melting pot, alongside students from across Europe, and having the chance to travel throughout Poland and neighboring countries, proved to be incredibly enriching. This brief but immersive experience provided personal and professional growth that far exceeded what I could have gained from traditional academic settings.
+The exchange was valuable beyond the coursework. I lived and studied with students from across Europe, and had the chance to travel throughout Poland and neighboring countries. It broadened my perspective in a way that a regular semester at home would not have.
 
-Being in a country with a language and culture so different from my own, where communication was often challenging (as neither Polish nor English were widely spoken), pushed me out of my comfort zone every day. It was a profoundly transformative experience that fostered resilience and adaptability in ways I hadn't anticipated.
+Living in a country where I did not speak the local language, and where English was not always widely used in day-to-day settings, also made everyday communication more challenging. That experience helped me become more independent and adaptable.
 
 - <a href="https://www.uni.lodz.pl/en/" target="_blank">Website</a>
 
@@ -139,11 +139,11 @@ Being in a country with a language and culture so different from my own, where c
 - **Grade:** 16 (out of 20)
 - **Location:** Porto, Portugal · Onsite 🏢
 
-The Computer Engineering course I attended was one of the most competitive in the country, with high entry requirements. Despite starting with a weak foundation in Mathematics, I worked hard to turn things around, achieving excellent entry exam results and earning the second-highest grade in my high school.
+I studied Computer Engineering in a competitive program with high entry requirements. Although I started with a weaker background in Mathematics, I worked hard to improve, performed very well in the entry exams, and earned the second-highest grade in my high school.
 
-The course itself was demanding, with assignments becoming more complex each semester. By the final years, I dedicated 80-100 hours a week, not because it was required, but because I genuinely enjoyed the work. From creating 3D video games to developing neural networks, the challenges were both intense and rewarding.
+The course was demanding, and the assignments became more challenging each semester. In the final years, I often spent 80-100 hours a week on coursework, largely because I enjoyed the work. Projects ranged from 3D video games to neural networks, and the challenges were intense but rewarding.
 
-Additionally, I regularly participated in ACM programming contests, placed second in the 2006 edition of the <a href="https://www.flickr.com/photos/tiagoafpereira/albums/72057594128921562/" target="_blank">National Logic and Functional Programming Contest</a>, and was involved in the <a href="https://www.esa.int/Education/ESMO_mission" target="_blank">European Space Agency's ESMO project</a>.
+I also took part in ACM programming contests, placed second in the 2006 edition of the <a href="https://www.flickr.com/photos/tiagoafpereira/albums/72057594128921562/" target="_blank">National Logic and Functional Programming Contest</a>, and contributed to the <a href="https://www.esa.int/Education/ESMO_mission" target="_blank">European Space Agency's ESMO project</a>.
 
 - <a href="https://sigarra.up.pt/feup/en/" target="_blank">Website</a>
 

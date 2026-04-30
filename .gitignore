@@ -55,6 +55,7 @@ logs/
 .visual-inspection-screenshots/
 *.png
 !readme-logo.png
+!architecture.png
 !web/public/*.png
 !web/public/**/*.png
 !docs/**/*.png
