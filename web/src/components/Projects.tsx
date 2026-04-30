@@ -123,14 +123,36 @@ export function Projects() {
                 returnFocusTo: event.currentTarget,
               })
             }
-            className="group w-full border border-magenta/70 bg-magenta/20 px-5 py-4 text-left font-[family-name:var(--font-mono)] uppercase text-cool-white shadow-[0_0_24px_rgba(255,0,170,0.22)] transition-all hover:border-magenta hover:bg-magenta/35 hover:shadow-[0_0_32px_rgba(255,0,170,0.32)] md:w-auto md:min-w-64"
-            aria-label={`Open full project gallery with ${galleryItemCount} items`}
+            className="group flex w-full items-center gap-4 border border-magenta/70 bg-magenta/20 px-5 py-4 text-left font-[family-name:var(--font-mono)] uppercase text-cool-white shadow-[0_0_24px_rgba(255,0,170,0.22)] transition-all hover:border-magenta hover:bg-magenta/35 hover:shadow-[0_0_32px_rgba(255,0,170,0.32)] md:w-auto md:min-w-80"
+            aria-label={`Open projects gallery with ${galleryItemCount} project screenshots`}
           >
-            <span className="block text-sm tracking-normal text-magenta group-hover:text-cool-white">
-              Open full gallery
+            <span
+              className="flex h-11 w-11 shrink-0 items-center justify-center border border-cyan/50 bg-black/25 text-cyan shadow-[0_0_18px_rgba(0,255,240,0.12)] transition-colors group-hover:border-cyan group-hover:text-cool-white"
+              aria-hidden="true"
+            >
+              <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M4 5h16v14H4z"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M8 9h2.5M7 16l3.2-3.4 2.5 2.2 2.1-2.5L18 16"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </span>
-            <span className="mt-1 block text-xs text-steel group-hover:text-cool-white">
-              {galleryItemCount} captures across project media
+            <span>
+              <span className="block text-sm tracking-normal text-magenta group-hover:text-cool-white">
+                Open Projects Gallery
+              </span>
+              <span className="mt-1 block text-xs text-steel group-hover:text-cool-white">
+                {galleryItemCount} Project Screenshots
+              </span>
             </span>
           </button>
         )}
