@@ -1,7 +1,7 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 
-import { useEffect, useState, useRef, memo, useCallback, useId, useMemo } from "react";
+import { Fragment, useEffect, useState, useRef, memo, useCallback, useId, useMemo } from "react";
 import { createPortal } from "react-dom";
 import type { Project, GalleryMedia } from "@/types/cv";
 import PhotoSwipe from "photoswipe";
@@ -35,8 +35,10 @@ const GridItem = memo(({ media, index, onClick }: { media: GalleryMedia; index: 
 
   return (
     <button
+      type="button"
       ref={ref}
       onClick={onClick}
+      aria-label={`Open gallery item ${index + 1}${media.projectTitle ? ` from ${media.projectTitle}` : ""}`}
       className="relative aspect-square bg-surface border border-cyan/10 rounded-sm overflow-hidden group hover:border-cyan/40 transition-all hover:shadow-[0_0_20px_rgba(0,230,230,0.1)] cursor-pointer"
     >
       {media.type === 'image' ? (
@@ -81,16 +83,6 @@ const GridItem = memo(({ media, index, onClick }: { media: GalleryMedia; index: 
         </div>
       )}
 
-      {media.projectTitle && (
-        <div className="absolute bottom-2 left-2 right-2 bg-black/70 border border-black/40 px-2 py-1 backdrop-blur-sm">
-          <div className="flex min-w-0 items-center gap-1.5">
-            {media.projectEmoji && <span className="shrink-0 text-sm">{media.projectEmoji}</span>}
-            <span className="truncate font-[family-name:var(--font-mono)] text-[10px] uppercase text-cool-white">
-              {media.projectTitle}
-            </span>
-          </div>
-        </div>
-      )}
     </button>
   );
 });
@@ -99,6 +91,52 @@ GridItem.displayName = 'GridItem';
 
 export function GalleryModal({ project, onClose }: GalleryModalProps) {
   const gallery = useMemo(() => project?.gallery ?? [], [project?.gallery]);
+  const gallerySections = useMemo(() => {
+    const sections: {
+      key: string;
+      groupKey: string;
+      title: string;
+      emoji?: string;
+      startIndex: number;
+      items: GalleryMedia[];
+    }[] = [];
+    let itemCount = 0;
+
+    for (const media of gallery) {
+      const title = media.projectTitle;
+      const key = media.projectId ?? title ?? "gallery";
+      const current = sections[sections.length - 1];
+
+      if (!title || current?.groupKey === key) {
+        if (current) {
+          current.items.push(media);
+        } else {
+          sections.push({
+            key: `${key}:${itemCount}`,
+            groupKey: key,
+            title: title ?? project?.title ?? "Gallery",
+            emoji: media.projectEmoji,
+            startIndex: itemCount,
+            items: [media],
+          });
+        }
+        itemCount += 1;
+        continue;
+      }
+
+      sections.push({
+        key: `${key}:${itemCount}`,
+        groupKey: key,
+        title,
+        emoji: media.projectEmoji,
+        startIndex: itemCount,
+        items: [media],
+      });
+      itemCount += 1;
+    }
+
+    return sections;
+  }, [gallery, project?.title]);
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const titleId = useId();
@@ -211,13 +249,31 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
         {/* Grid View */}
         <div className="flex-1 overflow-y-auto p-4 md:p-6">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 content-visibility-auto max-w-7xl mx-auto">
-            {gallery.map((media, index) => (
-              <GridItem
-                key={`${media.projectId ?? project.id}:${media.filename}`}
-                media={media}
-                index={index}
-                onClick={() => openLightbox(index)}
-              />
+            {gallerySections.map((section) => (
+              <Fragment key={section.key}>
+                {section.title && section.items.some((item) => item.projectTitle) && (
+                  <div className="col-span-full mt-4 first:mt-0 border-b border-cyan/20 pb-2">
+                    <h3 className="flex min-w-0 items-center gap-2 font-[family-name:var(--font-display)] text-sm font-bold uppercase tracking-normal text-cyan">
+                      {section.emoji && <span className="shrink-0 text-lg">{section.emoji}</span>}
+                      <span className="truncate">{section.title}</span>
+                      <span className="shrink-0 font-[family-name:var(--font-mono)] text-xs font-normal text-steel-dim">
+                        [{section.items.length}]
+                      </span>
+                    </h3>
+                  </div>
+                )}
+                {section.items.map((media, sectionIndex) => {
+                  const index = section.startIndex + sectionIndex;
+                  return (
+                    <GridItem
+                      key={`${media.projectId ?? project.id}:${media.filename}`}
+                      media={media}
+                      index={index}
+                      onClick={() => openLightbox(index)}
+                    />
+                  );
+                })}
+              </Fragment>
             ))}
           </div>
         </div>
