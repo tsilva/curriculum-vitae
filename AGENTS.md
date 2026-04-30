@@ -272,3 +272,6 @@ Use this skill when enabling, repairing, or validating Sentry in this repository
 
 ### visual-inspection
 **Use this skill to verify visual changes before committing.** Capture screenshots of the CV web app to check layout, styling, and content. Always capture the **full page** to verify all sections render correctly.
+
+### cv-hiring-review
+Use this project-level Codex skill when reviewing the CV/site from multiple hiring perspectives to create a private hiring and compensation action report. The skill lives at `.codex/skills/cv-hiring-review/SKILL.md` and writes reports to `.hiring-review/YYYY-MM-DD.md` unless explicitly run in read-only/dry-run mode.

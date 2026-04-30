@@ -320,6 +320,25 @@ summary:focus-visible {
 }
 
 /* ============================================
+   PHOTOSWIPE CAPTION
+   ============================================ */
+.pswp__custom-caption {
+  position: absolute;
+  left: 50%;
+  bottom: 1.5rem;
+  max-width: min(90vw, 56rem);
+  transform: translateX(-50%);
+  border: 1px solid rgba(0, 230, 230, 0.35);
+  background: rgba(5, 8, 12, 0.82);
+  padding: 0.5rem 0.75rem;
+  color: #e8f7ff;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.75rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+/* ============================================
    BACKSTORY DETAILS — smooth open animation
    ============================================ */
 .backstory-content {

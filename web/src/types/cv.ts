@@ -16,6 +16,9 @@ export interface GalleryMedia {
   type: 'image' | 'video';
   path: string;
   thumbnail?: string;
+  projectId?: string;
+  projectTitle?: string;
+  projectEmoji?: string;
 }
 
 export interface GitHubRepo {

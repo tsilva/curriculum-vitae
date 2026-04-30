@@ -63,6 +63,9 @@ logs/
 # Lighthouse Audit reports
 .lighthouse-reports/
 
+# Private hiring review reports
+.hiring-review/
+
 # Next.js
 web/.next/
 web/out/

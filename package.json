@@ -3,6 +3,7 @@
   "scripts": {
     "preinstall": "node -e \"const ua = process.env.npm_config_user_agent || ''; if (!ua.startsWith('pnpm/')) { console.error('Use pnpm for this repo.'); process.exit(1); }\"",
     "sentry:issues": "pnpm --dir web exec tsx ../scripts/sentry-issues.ts",
+    "links": "CHECK_EXTERNAL_LINKS=1 playwright test tests/smoke/links.spec.ts",
     "smoke": "playwright test",
     "verify": "pnpm --dir web lint && pnpm --dir web build && pnpm run smoke"
   },

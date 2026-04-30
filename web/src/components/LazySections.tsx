@@ -26,11 +26,22 @@ const OpenSource = dynamic(
   }
 );
 
+const MainGallery = dynamic(
+  () => import("@/components/MainGallery").then((mod) => ({ default: mod.MainGallery })),
+  {
+    ssr: false,
+    loading: () => <div className="h-32 animate-pulse bg-surface/50" />,
+  }
+);
+
 export function LazySections() {
   return (
     <>
       <div className="content-visibility-auto">
         <Projects />
+      </div>
+      <div className="content-visibility-auto">
+        <MainGallery />
       </div>
       <div className="content-visibility-auto">
         <OpenSource />

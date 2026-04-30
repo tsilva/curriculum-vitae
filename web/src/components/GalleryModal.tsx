@@ -80,6 +80,17 @@ const GridItem = memo(({ media, index, onClick }: { media: GalleryMedia; index: 
           <span className="font-[family-name:var(--font-mono)] text-xs text-white uppercase">VIDEO</span>
         </div>
       )}
+
+      {media.projectTitle && (
+        <div className="absolute bottom-2 left-2 right-2 bg-black/70 border border-black/40 px-2 py-1 backdrop-blur-sm">
+          <div className="flex min-w-0 items-center gap-1.5">
+            {media.projectEmoji && <span className="shrink-0 text-sm">{media.projectEmoji}</span>}
+            <span className="truncate font-[family-name:var(--font-mono)] text-[10px] uppercase text-cool-white">
+              {media.projectTitle}
+            </span>
+          </div>
+        </div>
+      )}
     </button>
   );
 });
@@ -102,12 +113,14 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
   // Open PhotoSwipe lightbox at a given index
   const openLightbox = useCallback((index: number) => {
     const items = gallery.map((media) => {
+      const label = `${media.projectEmoji ? `${media.projectEmoji} ` : ""}${media.projectTitle ?? project?.title ?? ""}`;
       if (media.type === 'video') {
         return {
           html: `<div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%"><video src="${media.path}" ${media.thumbnail ? `poster="${media.thumbnail}"` : ''} controls autoplay style="max-width:100%;max-height:100%"></video></div>`,
+          alt: `${label} - ${media.filename}`,
         };
       }
-      return { src: media.path, w: 1920, h: 1080, msrc: media.path };
+      return { src: media.path, w: 1920, h: 1080, msrc: media.path, alt: `${label} - ${media.filename}` };
     });
 
     const pswp = new PhotoSwipe({
@@ -132,8 +145,31 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
       }
     });
 
+    pswp.on("uiRegister", () => {
+      pswp.ui?.registerElement({
+        name: "custom-caption",
+        order: 9,
+        isButton: false,
+        appendTo: "root",
+        html: "",
+        onInit: (el, photoSwipe) => {
+          const updateCaption = () => {
+            const currentMedia = gallery[photoSwipe.currIndex];
+            if (!currentMedia) {
+              el.textContent = "";
+              return;
+            }
+            const label = currentMedia.projectTitle ?? project?.title ?? "";
+            el.textContent = `${currentMedia.projectEmoji ? `${currentMedia.projectEmoji} ` : ""}${label} / ${currentMedia.filename}`;
+          };
+          updateCaption();
+          photoSwipe.on("change", updateCaption);
+        },
+      });
+    });
+
     pswp.init();
-  }, [gallery]);
+  }, [gallery, project?.title]);
 
   if (!project || gallery.length === 0) return null;
 
@@ -177,7 +213,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 content-visibility-auto max-w-7xl mx-auto">
             {gallery.map((media, index) => (
               <GridItem
-                key={media.filename}
+                key={`${media.projectId ?? project.id}:${media.filename}`}
                 media={media}
                 index={index}
                 onClick={() => openLightbox(index)}

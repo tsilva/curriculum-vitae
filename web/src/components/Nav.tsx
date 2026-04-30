@@ -4,10 +4,11 @@ import { useEffect, useState } from "react";
 
 const sections = [
   { id: "hero", label: "TOP" },
-  { id: "experience", label: "EXPERIENCE" },
-  { id: "projects", label: "PROJECTS" },
+  { id: "experience", label: "EXPERIENCE", mobileLabel: "EXP" },
+  { id: "projects", label: "PROJECTS", mobileLabel: "PROJ" },
+  { id: "gallery", label: "GALLERY", mobileLabel: "GAL" },
   { id: "opensource", label: "OSS" },
-  { id: "education", label: "TRAINING" },
+  { id: "education", label: "TRAINING", mobileLabel: "EDU" },
 ];
 
 export function Nav() {
@@ -97,13 +98,13 @@ export function Nav() {
                 event.preventDefault();
                 scrollToSection(section.id);
               }}
-              className={`font-[family-name:var(--font-mono)] text-xs px-3 py-1.5 rounded transition-colors ${
+              className={`font-[family-name:var(--font-mono)] text-xs px-2 py-1.5 rounded transition-colors ${
                 active === section.id
                   ? "text-cyan"
                   : "text-steel hover:text-cool-white"
               }`}
             >
-              {section.label}
+              {section.mobileLabel ?? section.label}
             </a>
           ))}
         </div>
