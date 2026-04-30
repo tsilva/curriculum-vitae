@@ -154,7 +154,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
       const label = `${media.projectEmoji ? `${media.projectEmoji} ` : ""}${media.projectTitle ?? project?.title ?? ""}`;
       if (media.type === 'video') {
         return {
-          html: `<div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%"><video src="${media.path}" ${media.thumbnail ? `poster="${media.thumbnail}"` : ''} controls autoplay style="max-width:100%;max-height:100%"></video></div>`,
+          html: `<div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%"><video data-gallery-video src="${media.path}" ${media.thumbnail ? `poster="${media.thumbnail}"` : ''} controls autoplay playsinline preload="auto" style="max-width:100%;max-height:100%"></video></div>`,
           alt: `${label} - ${media.filename}`,
         };
       }
@@ -168,6 +168,44 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
       showHideAnimationType: 'fade',
       pswpModule: PhotoSwipe,
     });
+
+    const getSlideVideo = (slide = pswp.currSlide) =>
+      slide?.holderElement?.querySelector<HTMLVideoElement>("video[data-gallery-video]") ?? null;
+
+    const pauseInactiveVideos = () => {
+      const currentVideo = getSlideVideo();
+      pswp.element
+        ?.querySelectorAll<HTMLVideoElement>("video[data-gallery-video]")
+        .forEach((video) => {
+          if (video !== currentVideo) {
+            video.pause();
+          }
+        });
+    };
+
+    const playCurrentVideo = () => {
+      const video = getSlideVideo();
+      if (!video) return;
+
+      video.autoplay = true;
+      video.playsInline = true;
+
+      const playPromise = video.play();
+      if (playPromise) {
+        playPromise.catch(() => {
+          video.muted = true;
+          video.play().catch(() => {
+            // Browser policy can still block autoplay; controls remain available.
+          });
+        });
+      }
+    };
+
+    const activateCurrentVideo = () => {
+      pauseInactiveVideos();
+      playCurrentVideo();
+      window.requestAnimationFrame(playCurrentVideo);
+    };
 
     // Dynamically size images once loaded
     pswp.on('gettingData', (e) => {
@@ -206,7 +244,25 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
       });
     });
 
+    pswp.on("afterInit", activateCurrentVideo);
+    pswp.on("change", activateCurrentVideo);
+    pswp.on("appendHeavyContent", (e) => {
+      if (e.slide.index === pswp.currIndex) {
+        activateCurrentVideo();
+      }
+    });
+    pswp.on("slideActivate", activateCurrentVideo);
+    pswp.on("slideDeactivate", (e) => {
+      getSlideVideo(e.slide)?.pause();
+    });
+    pswp.on("close", () => {
+      pswp.element?.querySelectorAll<HTMLVideoElement>("video[data-gallery-video]").forEach((video) => {
+        video.pause();
+      });
+    });
+
     pswp.init();
+    activateCurrentVideo();
   }, [gallery, project?.title]);
 
   if (!project || gallery.length === 0) return null;

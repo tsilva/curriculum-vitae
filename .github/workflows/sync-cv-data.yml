@@ -29,23 +29,20 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10.27.0
+          cache: npm
+          cache-dependency-path: web/package-lock.json
 
       - name: Install web dependencies
         run: npm --prefix web ci
 
       - name: Sync generated data
-        run: pnpm --dir web sync
+        run: npm --prefix web run sync
 
       - name: Lint web app
-        run: pnpm --dir web lint
+        run: npm --prefix web run lint
 
       - name: Build web app
-        run: pnpm --dir web build
+        run: npm --prefix web run build
 
       - name: Open sync pull request
         uses: peter-evans/create-pull-request@v7
@@ -59,9 +56,9 @@ jobs:
             Automated daily sync of generated CV data.
 
             This runs:
-            - `pnpm --dir web sync`
-            - `pnpm --dir web lint`
-            - `pnpm --dir web build`
+            - `npm --prefix web run sync`
+            - `npm --prefix web run lint`
+            - `npm --prefix web run build`
           add-paths: |
             CV.md
             web/src/data/cv-data.json
