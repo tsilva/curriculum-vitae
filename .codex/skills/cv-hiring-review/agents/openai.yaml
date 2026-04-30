@@ -1,0 +1,4 @@
+interface:
+  display_name: "CV Hiring Review"
+  short_description: "Multi-perspective CV hiring audit"
+  default_prompt: "Use $cv-hiring-review to review this CV/site from multiple hiring perspectives and produce a private prioritized action list for increasing hire probability and compensation."
