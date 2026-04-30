@@ -620,14 +620,43 @@
       "narrative": "The BYJU's Coding Cup was developed as a flagship product to highlight BYJU'S sponsorship of the FIFA World Cup Qatar 2022™. Aimed at children aged 7–18, this soccer-themed coding competition introduced key programming concepts like conditional logic and debugging in an interactive, fun format. Participants coded virtual soccer teams to compete globally, enhancing their coding skills through an engaging experience.\n\nThe project, completed in six months, leveraged parts of the [Crystal Clash](#-crystal-clash) game engine to streamline development. The soccer matches were simulated in a discrete, grid-based environment, with fluid game flow achieved through clever interpolation of discrete states. Game mechanics, like skill levels influencing probabilistic events (e.g., ball steals), added strategic depth.\n\nIn my role, I ideated the game, architected the solution, and developed the backend engine, APIs, and most of the frontend (excluding match and character avatar rendering). I coordinated with another developer who handled match rendering to ensure smooth integration. I also optimized the game for performance on lower-end mobile devices.\n\nLaunched in time for the World Cup, the game was accessible via the web and integrated into Tynker Apps for iOS and Android through web views. It quickly gained popularity, with millions of matches played, and over $20,000 USD awarded in prizes during the first four rounds.",
       "gallery": [
         {
-          "filename": "001-WhatsApp Image 2022-11-30 at 6.11.08 PM.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/001-WhatsApp Image 2022-11-30 at 6.11.08 PM.webp"
+          "filename": "v002-intro - welcome_tvai.mp4",
+          "type": "video",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v002-intro - welcome_tvai.mp4",
+          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v002-intro - welcome_tvai.thumb.webp"
+        },
+        {
+          "filename": "v001-intro - train your team_tvai.mp4",
+          "type": "video",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v001-intro - train your team_tvai.mp4",
+          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v001-intro - train your team_tvai.thumb.webp"
+        },
+        {
+          "filename": "v003-intro - team empowerment_tvai.mp4",
+          "type": "video",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v003-intro - team empowerment_tvai.mp4",
+          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v003-intro - team empowerment_tvai.thumb.webp"
+        },
+        {
+          "filename": "v009-intro - code editor_tvai.mp4",
+          "type": "video",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v009-intro - code editor_tvai.mp4",
+          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v009-intro - code editor_tvai.thumb.webp"
         },
         {
           "filename": "002-appstore_feature_screenshot.webp",
           "type": "image",
           "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/002-appstore_feature_screenshot.webp"
+        },
+        {
+          "filename": "046-Screenshot 2024-04-03 at 7.07.00 PM.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/046-Screenshot 2024-04-03 at 7.07.00 PM.webp"
+        },
+        {
+          "filename": "047-screencapture-tynker-codingcup-2024-04-03-18_40.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/047-screencapture-tynker-codingcup-2024-04-03-18_40.webp"
         },
         {
           "filename": "003-Screenshot 2024-04-03 at 6.42.49 PM.webp",
@@ -845,68 +874,10 @@
           "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/045-Screenshot 2024-04-03 at 6.59.25 PM.webp"
         },
         {
-          "filename": "046-Screenshot 2024-04-03 at 7.07.00 PM.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/046-Screenshot 2024-04-03 at 7.07.00 PM.webp"
-        },
-        {
-          "filename": "047-screencapture-tynker-codingcup-2024-04-03-18_40.webp",
-          "type": "image",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/047-screencapture-tynker-codingcup-2024-04-03-18_40.webp"
-        },
-        {
-          "filename": "v001-intro - train your team_tvai.mp4",
-          "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v001-intro - train your team_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v001-intro - train your team_tvai.thumb.webp"
-        },
-        {
-          "filename": "v002-intro - welcome_tvai.mp4",
-          "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v002-intro - welcome_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v002-intro - welcome_tvai.thumb.webp"
-        },
-        {
-          "filename": "v003-intro - team empowerment_tvai.mp4",
-          "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v003-intro - team empowerment_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v003-intro - team empowerment_tvai.thumb.webp"
-        },
-        {
-          "filename": "v004-announcement - alabama governor kay ivey_tvai.mp4",
-          "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v004-announcement - alabama governor kay ivey_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v004-announcement - alabama governor kay ivey_tvai.thumb.webp"
-        },
-        {
-          "filename": "v005-announcement - 2.mov",
-          "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v005-announcement - 2.mov",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v005-announcement - 2.thumb.webp"
-        },
-        {
-          "filename": "v006-Coding Cup by Tynker_tvai.mp4",
-          "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v006-Coding Cup by Tynker_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v006-Coding Cup by Tynker_tvai.thumb.webp"
-        },
-        {
-          "filename": "v007-lab - 2.mp4",
-          "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v007-lab - 2.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v007-lab - 2.thumb.webp"
-        },
-        {
           "filename": "v008-testimonial - teacher - linda kurtz.mp4",
           "type": "video",
           "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v008-testimonial - teacher - linda kurtz.mp4",
           "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v008-testimonial - teacher - linda kurtz.thumb.webp"
-        },
-        {
-          "filename": "v009-intro - code editor_tvai.mp4",
-          "type": "video",
-          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v009-intro - code editor_tvai.mp4",
-          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v009-intro - code editor_tvai.thumb.webp"
         },
         {
           "filename": "v010-testimonial - teacher - andy hanes.mp4",
@@ -949,6 +920,35 @@
           "type": "video",
           "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v016-testimonial - teacher - stephen tow.mp4",
           "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v016-testimonial - teacher - stephen tow.thumb.webp"
+        },
+        {
+          "filename": "v007-lab - 2.mp4",
+          "type": "video",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v007-lab - 2.mp4",
+          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v007-lab - 2.thumb.webp"
+        },
+        {
+          "filename": "001-WhatsApp Image 2022-11-30 at 6.11.08 PM.webp",
+          "type": "image",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/001-WhatsApp Image 2022-11-30 at 6.11.08 PM.webp"
+        },
+        {
+          "filename": "v004-announcement - alabama governor kay ivey_tvai.mp4",
+          "type": "video",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v004-announcement - alabama governor kay ivey_tvai.mp4",
+          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v004-announcement - alabama governor kay ivey_tvai.thumb.webp"
+        },
+        {
+          "filename": "v005-announcement - 2.mov",
+          "type": "video",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v005-announcement - 2.mov",
+          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v005-announcement - 2.thumb.webp"
+        },
+        {
+          "filename": "v006-Coding Cup by Tynker_tvai.mp4",
+          "type": "video",
+          "path": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v006-Coding Cup by Tynker_tvai.mp4",
+          "thumbnail": "https://curriculum-vitae-r2.tsilva.eu/galleries/byjus-coding-cup/v006-Coding Cup by Tynker_tvai.thumb.webp"
         }
       ]
     },

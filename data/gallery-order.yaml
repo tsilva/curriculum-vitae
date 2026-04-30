@@ -1,6 +1,71 @@
 # Optional per-project gallery ordering overrides.
 # Projects not listed here keep the filename order produced by the gallery scan.
 
+byjus-coding-cup:
+  - v002-intro - welcome_tvai.mp4
+  - v001-intro - train your team_tvai.mp4
+  - v003-intro - team empowerment_tvai.mp4
+  - v009-intro - code editor_tvai.mp4
+  - 002-appstore_feature_screenshot.webp
+  - 046-Screenshot 2024-04-03 at 7.07.00 PM.webp
+  - 047-screencapture-tynker-codingcup-2024-04-03-18_40.webp
+  - 003-Screenshot 2024-04-03 at 6.42.49 PM.webp
+  - 004-Screenshot 2024-04-03 at 6.43.06 PM.webp
+  - 005-Screenshot 2024-04-03 at 6.43.16 PM.webp
+  - 006-Screenshot 2024-04-03 at 6.43.31 PM.webp
+  - 007-Screenshot 2024-04-03 at 6.43.48 PM.webp
+  - 008-Screenshot 2024-04-03 at 6.43.59 PM.webp
+  - 009-Screenshot 2024-04-03 at 6.46.03 PM.webp
+  - 010-Screenshot 2024-04-03 at 6.46.19 PM.webp
+  - 011-Screenshot 2024-04-03 at 6.46.28 PM.webp
+  - 012-Screenshot 2024-04-03 at 6.46.42 PM.webp
+  - 013-Screenshot 2024-04-03 at 6.46.50 PM.webp
+  - 014-Screenshot 2024-04-03 at 6.47.09 PM.webp
+  - 015-Screenshot 2024-04-03 at 6.47.38 PM.webp
+  - 016-Screenshot 2024-04-03 at 6.47.49 PM.webp
+  - 017-Screenshot 2024-04-03 at 6.48.01 PM.webp
+  - 018-Screenshot 2024-04-03 at 6.48.18 PM.webp
+  - 019-Screenshot 2024-04-03 at 6.48.34 PM.webp
+  - 020-Screenshot 2024-04-03 at 6.48.43 PM.webp
+  - 021-Screenshot 2024-04-03 at 6.48.57 PM.webp
+  - 022-Screenshot 2024-04-03 at 6.49.08 PM.webp
+  - 023-Screenshot 2024-04-03 at 6.50.18 PM.webp
+  - 024-Screenshot 2024-04-03 at 6.50.30 PM.webp
+  - 025-Screenshot 2024-04-03 at 6.50.48 PM.webp
+  - 026-Screenshot 2024-04-03 at 6.50.58 PM.webp
+  - 027-Screenshot 2024-04-03 at 6.51.04 PM.webp
+  - 028-Screenshot 2024-04-03 at 6.51.24 PM.webp
+  - 029-Screenshot 2024-04-03 at 6.52.12 PM.webp
+  - 030-Screenshot 2024-04-03 at 6.52.23 PM.webp
+  - 031-Screenshot 2024-04-03 at 6.52.39 PM.webp
+  - 032-Screenshot 2024-04-03 at 6.52.47 PM.webp
+  - 033-Screenshot 2024-04-03 at 6.54.18 PM.webp
+  - 034-Screenshot 2024-04-03 at 6.54.34 PM.webp
+  - 035-Screenshot 2024-04-03 at 6.54.50 PM.webp
+  - 036-Screenshot 2024-04-03 at 6.55.00 PM.webp
+  - 037-Screenshot 2024-04-03 at 6.55.22 PM.webp
+  - 038-Screenshot 2024-04-03 at 6.55.44 PM.webp
+  - 039-Screenshot 2024-04-03 at 6.56.12 PM.webp
+  - 040-Screenshot 2024-04-03 at 6.57.35 PM.webp
+  - 041-Screenshot 2024-04-03 at 6.57.49 PM.webp
+  - 042-Screenshot 2024-04-03 at 6.58.03 PM.webp
+  - 043-Screenshot 2024-04-03 at 6.58.14 PM.webp
+  - 044-Screenshot 2024-04-03 at 6.59.13 PM.webp
+  - 045-Screenshot 2024-04-03 at 6.59.25 PM.webp
+  - v008-testimonial - teacher - linda kurtz.mp4
+  - v010-testimonial - teacher - andy hanes.mp4
+  - v011-testimonial - teacher - dan digennaro.mp4
+  - v012-testimonial - teacher - dan g.mp4
+  - v013-testimonial - teacher - mr mc b.mp4
+  - v014-testimonial - teacher - matt zimmerman.mp4
+  - v015-testimonial - teacher - jan mcclellan.mp4
+  - v016-testimonial - teacher - stephen tow.mp4
+  - v007-lab - 2.mp4
+  - 001-WhatsApp Image 2022-11-30 at 6.11.08 PM.webp
+  - v004-announcement - alabama governor kay ivey_tvai.mp4
+  - v005-announcement - 2.mov
+  - v006-Coding Cup by Tynker_tvai.mp4
+
 block-ide-arcade-maker:
   - 001-fashion-designer-001.webp
   - 002-fashion-designer-002.webp
