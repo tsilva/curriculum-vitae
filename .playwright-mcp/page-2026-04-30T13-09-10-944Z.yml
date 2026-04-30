@@ -1,0 +1,220 @@
+- generic [active] [ref=e1]:
+  - navigation:
+    - link "TOP":
+      - /url: "#hero"
+      - generic: TOP
+    - link "EXPERIENCE":
+      - /url: "#experience"
+      - generic: EXPERIENCE
+    - link "PROJECTS":
+      - /url: "#projects"
+      - generic: PROJECTS
+    - link "OSS":
+      - /url: "#opensource"
+      - generic: OSS
+    - link "TRAINING":
+      - /url: "#education"
+      - generic: TRAINING
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic:
+        - generic:
+          - generic: KIROSHI OPTICS MK.4
+        - generic:
+          - generic: SIG ■■■■■■□ — 98.2%
+      - generic [ref=e4]:
+        - generic [ref=e5]: ■ SCAN ACTIVE
+        - generic [ref=e6]: "ID: TSV-1984"
+        - generic [ref=e7]: "CLASS: ENGINEER"
+        - generic [ref=e8]: "THREAT: NONE"
+        - generic [ref=e9]: ────────
+        - generic [ref=e10]: "AFFIL: CORPO"
+        - generic [ref=e11]: "NET: B5A1411"
+        - generic [ref=e12]: "ICE: CLEAN"
+      - generic [ref=e13]:
+        - generic [ref=e14]: REC ●
+        - generic [ref=e15]: "LAT: 38.7223"
+        - generic [ref=e16]: "LON: -9.1393"
+        - generic [ref=e17]: ────────
+        - generic [ref=e18]: "STK: FULL"
+        - generic [ref=e19]: "HP: ████████"
+      - generic [ref=e20]: ◈ SCAN COMPLETE ◈
+      - generic [ref=e21]: SUBJECT IDENTIFIED
+      - img "Tiago Silva" [ref=e24] [cursor=pointer]
+      - heading "TIAGO SILVA TIAGO SILVA TIAGO SILVA" [level=1] [ref=e26]
+      - paragraph [ref=e28]: Fullstack Software Engineer
+      - paragraph [ref=e29]: backend + frontend + mobile + ai. idea in → product out.
+      - generic [ref=e32]: ◇
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e37]: Years
+          - generic [ref=e38]: 2+
+        - generic [ref=e40]:
+          - generic [ref=e42]: Projects
+          - generic [ref=e43]: 6+
+        - generic [ref=e45]:
+          - generic [ref=e47]: Users
+          - generic [ref=e48]: 10M+
+        - generic [ref=e50]:
+          - generic [ref=e52]: OSS
+          - generic [ref=e53]: "5"
+      - generic [ref=e55]:
+        - link "GitHub" [ref=e56] [cursor=pointer]:
+          - /url: https://github.com/tsilva
+          - img [ref=e57]
+          - generic: GitHub
+        - link "X" [ref=e59] [cursor=pointer]:
+          - /url: https://x.com/tiagosilva
+          - img [ref=e60]
+          - generic: X
+        - link "LinkedIn" [ref=e62] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/engtiagosilva/
+          - img [ref=e63]
+          - generic: LinkedIn
+        - link "Hugging Face" [ref=e65] [cursor=pointer]:
+          - /url: https://huggingface.co/tsilva
+          - img [ref=e66]
+          - generic: Hugging Face
+        - link "YouTube" [ref=e74] [cursor=pointer]:
+          - /url: https://www.youtube.com/@tiagoshiruba
+          - img [ref=e75]
+          - generic: YouTube
+        - link "Portfolio" [ref=e77] [cursor=pointer]:
+          - /url: https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6
+          - img [ref=e78]
+          - generic: Portfolio
+        - link "Podcast" [ref=e80] [cursor=pointer]:
+          - /url: https://drive.google.com/file/d/1mI_kDTRpEhqn0xzEg1lQjEodMI0tZ_hB/view?usp=sharing
+          - img [ref=e81]
+          - generic: Podcast
+      - generic [ref=e83]: ▼
+      - generic [ref=e84]: ▼
+    - group [ref=e88]:
+      - generic "+ Optional Side Quest ORIGIN_STORY.exe [ LOCKED ]" [ref=e89] [cursor=pointer]:
+        - generic [ref=e90]:
+          - generic [ref=e91]: +
+          - generic [ref=e92]:
+            - generic [ref=e93]: Optional Side Quest
+            - generic [ref=e94]: ORIGIN_STORY.exe
+        - generic [ref=e96]: "[ LOCKED ]"
+    - generic [ref=e99]:
+      - heading "> EXPERIENCE_LOG" [level=2] [ref=e100]
+      - generic [ref=e101]:
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - heading "🔐VaultHaus" [level=3] [ref=e107]
+            - generic [ref=e108]: "[May 2024 >>> PRESENT]"
+          - generic [ref=e109]: AI Research Engineer (Full-time)
+          - generic [ref=e110]:
+            - generic [ref=e111]: ◇
+            - text: Porto, Portugal · Onsite 🏢
+          - generic [ref=e112]: I pursue a deliberately broad portfolio of AI initiatives—spanning deep-reinforcement-learning research, agentic and large-language-model applications, and the requisite supporting infrastructure—while systematically cultivating a rigorous, first-principles understanding of deep-learning systems and translating my insights into exploratory proof-of-concepts.
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - heading "🏫Tynker" [level=3] [ref=e118]:
+              - text: 🏫
+              - link "Tynker" [ref=e119] [cursor=pointer]:
+                - /url: https://www.tynker.com/
+            - generic [ref=e120]: "[Sep 2016 >>> May 2024]"
+          - generic [ref=e121]: Lead Software Engineer (Full-time)
+          - generic [ref=e122]:
+            - generic [ref=e123]: ◇
+            - text: Mountain View, California · Remote 🌍
+          - generic [ref=e124]: Tynker is a kid-friendly platform used by over 100 million students and in more than 150,000 schools, offering coding education through games and projects from basics to advanced programming languages.
+          - generic [ref=e125]: 14 projects
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - heading "🛍RIPE Productions" [level=3] [ref=e131]:
+              - text: 🛍
+              - link "RIPE Productions" [ref=e132] [cursor=pointer]:
+                - /url: https://www.platforme.com/
+            - generic [ref=e133]: "[2016 · Less than a year]"
+          - generic [ref=e134]: Lead Software Engineer (Full-time)
+          - generic [ref=e135]:
+            - generic [ref=e136]: ◇
+            - text: Porto, Portugal · Remote 🌍
+          - generic [ref=e137]:
+            - text: RIPE Productions was a company that developed e-commerce solutions for the fashion industry (this company is now called
+            - link "PlatformE" [ref=e138] [cursor=pointer]:
+              - /url: https://www.platforme.com/
+            - text: ).
+          - generic [ref=e139]: 3 projects
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - heading "📱Rocksauce Studios" [level=3] [ref=e145]:
+              - text: 📱
+              - link "Rocksauce Studios" [ref=e146] [cursor=pointer]:
+                - /url: https://www.rocksaucestudios.com/
+            - generic [ref=e147]: "[2013 >>> 2015 · 2 years]"
+          - generic [ref=e148]: Senior iOS Developer (Full-time)
+          - generic [ref=e149]:
+            - generic [ref=e150]: ◇
+            - text: Austin, Texas · Remote 🌍
+          - generic [ref=e151]: Rocksauce Studios was a mobile app development company that specialized in creating custom apps for businesses and startups. While working at Hive Solutions, I was contracted by them to work on more than a dozen projects for different clients, always as an iOS developer.
+          - generic [ref=e152]: 18 projects
+        - generic [ref=e156]:
+          - generic [ref=e157]:
+            - heading "🌍Toptal" [level=3] [ref=e158]:
+              - text: 🌍
+              - link "Toptal" [ref=e159] [cursor=pointer]:
+                - /url: https://www.toptal.com/
+            - generic [ref=e160]: "[Apr 2012 >>> PRESENT]"
+          - generic [ref=e161]: Senior Software Engineer
+          - generic [ref=e162]:
+            - generic [ref=e163]: ◇
+            - text: Remote 🌍
+          - generic [ref=e164]: Toptal is a platform connecting top developers with leading companies. It employs a rigorous screening process, assessing both advanced technical abilities and strong English proficiency. Through Toptal, I have collaborated with several companies on medium to long-term projects, consistently receiving outstanding feedback from clients.
+          - generic [ref=e165]: 23 projects
+        - generic [ref=e169]:
+          - generic [ref=e170]:
+            - heading "🐝Hive Solutions" [level=3] [ref=e171]:
+              - text: 🐝
+              - link "Hive Solutions" [ref=e172] [cursor=pointer]:
+                - /url: https://www.hive.pt/
+            - generic [ref=e173]: "[Mar 2008 >>> Sep 2016 · 8 years and 7 months]"
+          - generic [ref=e174]: Co-founder (Full-time)
+          - generic [ref=e175]:
+            - generic [ref=e176]: ◇
+            - text: Porto, Portugal · Onsite 🏢
+          - generic [ref=e177]: As a co-founder of Hive Solutions, I took on a variety of roles, as is common for startup founders. While my primary role was Lead Software Engineer, I also handled tasks related to sales, marketing and recruitment when needed.
+          - generic [ref=e178]: 14 projects
+        - generic [ref=e182]:
+          - generic [ref=e183]:
+            - heading "🖥Microsoft" [level=3] [ref=e184]:
+              - text: 🖥
+              - link "Microsoft" [ref=e185] [cursor=pointer]:
+                - /url: https://www.microsoft.com/
+            - generic [ref=e186]: "[Mar 2007 >>> Feb 2008 · 1 year]"
+          - generic [ref=e187]: Software Development Engineer in Test (Full-time)
+          - generic [ref=e188]:
+            - generic [ref=e189]: ◇
+            - text: Copenhagen, Denmark
+          - generic [ref=e190]:
+            - text: Worked in the Global Development Localization team, in a Tester role, for
+            - link "Microsoft Dynamics AX" [ref=e191] [cursor=pointer]:
+              - /url: https://dynamics.microsoft.com/en-us/ax/
+            - text: (an enterprise resource planning software package for finance and operations). Regular work involved performing manual tests, coding and fixing test automation, designing new tests, searching for and investigating application bugs.
+          - generic [ref=e192]: 1 project
+        - generic [ref=e195]:
+          - generic [ref=e196]:
+            - heading "🏷Rent-a-Coder" [level=3] [ref=e197]:
+              - text: 🏷
+              - link "Rent-a-Coder" [ref=e198] [cursor=pointer]:
+                - /url: https://web.archive.org/web/20061228042557/http://www.rentacoder.com/RentACoder/default.asp
+            - generic [ref=e199]: "[2003 >>> 2006 · 3 years]"
+          - generic [ref=e200]: Software Developer
+          - generic [ref=e201]:
+            - generic [ref=e202]: ◇
+            - text: Remote 🌍
+          - generic [ref=e203]: During college, I gained valuable experience working on freelance projects for clients around the world through the Rent-a-Coder platform, where I operated under the name "Chronosync Developments" and was fortunate to rank in the top 1% for customer ratings. This was my first foray into managing end-to-end client relationships, where I was tasked with projects and paid for delivering them. It helped me develop key skills in understanding client needs, managing expectations, and delivering on time.
+  - contentinfo [ref=e210]:
+    - generic [ref=e212]:
+      - generic [ref=e213]:
+        - generic [ref=e214]: ┌───
+        - generic [ref=e216]: ◆
+        - generic [ref=e218]: ───┐
+      - paragraph [ref=e219]: // END_OF_TRANSMISSION
+      - paragraph [ref=e222]: © 2026 tsilva — all_rights_reserved.dat
+      - generic [ref=e224]: KIROSHI_OPTICS_DISCONNECT
+      - generic [ref=e225]: "build: b5a1411"
+  - alert [ref=e226]

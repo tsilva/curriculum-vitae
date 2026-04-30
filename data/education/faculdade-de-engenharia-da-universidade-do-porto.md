@@ -11,8 +11,8 @@ links:
     url: https://sigarra.up.pt/feup/en/
 ---
 
-The Computer Engineering course I attended was one of the most competitive in the country, with high entry requirements. Despite starting with a weak foundation in Mathematics, I worked hard to turn things around, achieving excellent entry exam results and earning the second-highest grade in my high school.
+I studied Computer Engineering in a competitive program with high entry requirements. Although I started with a weaker background in Mathematics, I worked hard to improve, performed very well in the entry exams, and earned the second-highest grade in my high school.
 
-The course itself was demanding, with assignments becoming more complex each semester. By the final years, I dedicated 80-100 hours a week, not because it was required, but because I genuinely enjoyed the work. From creating 3D video games to developing neural networks, the challenges were both intense and rewarding.
+The course was demanding, and the assignments became more challenging each semester. In the final years, I often spent 80-100 hours a week on coursework, largely because I enjoyed the work. Projects ranged from 3D video games to neural networks, and the challenges were intense but rewarding.
 
-Additionally, I regularly participated in ACM programming contests, placed second in the 2006 edition of the <a href="https://www.flickr.com/photos/tiagoafpereira/albums/72057594128921562/" target="_blank">National Logic and Functional Programming Contest</a>, and was involved in the <a href="https://www.esa.int/Education/ESMO_mission" target="_blank">European Space Agency's ESMO project</a>.
+I also took part in ACM programming contests, placed second in the 2006 edition of the <a href="https://www.flickr.com/photos/tiagoafpereira/albums/72057594128921562/" target="_blank">National Logic and Functional Programming Contest</a>, and contributed to the <a href="https://www.esa.int/Education/ESMO_mission" target="_blank">European Space Agency's ESMO project</a>.

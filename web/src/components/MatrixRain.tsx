@@ -24,6 +24,7 @@ const MAX_AGE_FADE = 30;
 const BASELINE_OPACITY_MIN = 0.05;
 const BASELINE_OPACITY_MAX = 0.10;
 const MAX_STREAMS_PERCENT = 0.35;
+const MOBILE_MAX_STREAMS_PERCENT = 0.22;
 const SPAWN_DELAY_MAX = 60;
 const STREAM_RESET_DELAY_MIN = -30;
 const STREAM_RESET_DELAY_MAX = -5;
@@ -40,7 +41,6 @@ export function MatrixRain() {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    if (window.matchMedia("(pointer: coarse)").matches) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const ctx = canvas.getContext("2d", { alpha: true });
@@ -60,11 +60,6 @@ export function MatrixRain() {
       isResizing = true;
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(() => {
-        if (window.innerWidth < 768) {
-          canvas.width = 0;
-          canvas.height = 0;
-          return;
-        }
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
         
@@ -85,7 +80,8 @@ export function MatrixRain() {
           return unfilled;
         };
         
-        const numStreams = Math.floor(cols * MAX_STREAMS_PERCENT);
+        const maxStreamsPercent = window.innerWidth < 768 ? MOBILE_MAX_STREAMS_PERCENT : MAX_STREAMS_PERCENT;
+        const numStreams = Math.floor(cols * maxStreamsPercent);
         streams = [];
         for (let i = 0; i < numStreams; i++) {
           const unfilled = getUnfilledColumns();
@@ -239,7 +235,7 @@ export function MatrixRain() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 pointer-events-none z-0 hidden md:block will-change-transform transition-opacity duration-700 ease-out"
+      className="fixed inset-0 pointer-events-none z-0 block will-change-transform transition-opacity duration-700 ease-out"
       style={{ opacity: canvasOpacity }}
       aria-hidden="true"
     />
