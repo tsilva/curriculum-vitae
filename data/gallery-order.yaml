@@ -1,0 +1,461 @@
+# Optional per-project gallery ordering overrides.
+# Projects not listed here keep the filename order produced by the gallery scan.
+
+block-ide-arcade-maker:
+  - 001-fashion-designer-001.webp
+  - 002-fashion-designer-002.webp
+  - 003-fashion-designer-003.webp
+  - 004-fashion-designer-004.webp
+  - 005-fashion-designer-005.webp
+  - 030-Screenshot_1.webp
+  - 006-fashion-designer-006.webp
+  - v005-trimmed_dressup_doll_additem.mp4
+  - v006-trimmed_dressup_doll_properties.mp4
+  - 007-pet-designer-001.webp
+  - 008-pet-designer-002.webp
+  - 009-pet-designer-003.webp
+  - 010-pet-designer-004.webp
+  - 011-pet-designer-005.webp
+  - 031-Screenshot_2.webp
+  - 012-pet-designer-006.webp
+  - v007-dressup_pet_additem.mp4
+  - v008-trimmed_dressup_pet_properties.mp4
+  - 013-catchem-001.webp
+  - 014-catchem-002.webp
+  - 015-catchem-003.webp
+  - 016-catchem-004.webp
+  - 017-catchem-005.webp
+  - 018-catchem-006.webp
+  - 019-catchem-007.webp
+  - 032-Screenshot_3.webp
+  - 020-catchem-008.webp
+  - v003-trimmed_catchem_additem.mp4
+  - v004-trimmed_catchem_properties.mp4
+  - 029-bopem-001.webp
+  - 028-bopem-002.webp
+  - 021-bopem-003.webp
+  - 022-bopem-004.webp
+  - 023-bopem-005.webp
+  - 024-bopem-006.webp
+  - 025-bopem-007.webp
+  - 026-bopem-009.webp
+  - 027-bopem-010.webp
+  - v002-trimmed_bopem_additem.mp4
+  - v001-trimmed_bopem_properties.mp4
+
+help-agent:
+  - 002-parents_chat_1.webp
+  - 003-parents_chat_2.webp
+  - v001-demo.mp4
+  - 001-backoffice_1.webp
+  - 004-backoffice_2.webp
+  - 005-backoffice_3.webp
+  - 006-parents_chat_3.webp
+  - 007-parents_chat_4.webp
+
+details-pal:
+  - 024-1.0 - SignUp.webp
+  - 005-1.2 - Sign Up with Email.webp
+  - 022-1.3 - Sign-In-with-Email.webp
+  - 023-1.4 - Reset-Password.webp
+  - 006-2.1 - Profile Creation Image.webp
+  - 026-2.2 - Profile Creation Name.webp
+  - 025-2.4 - Profile Creation Breed.webp
+  - 029-2.6 - Profile Creation Age.webp
+  - 008-2.7 - Device Yes or No.webp
+  - 007-2.7.1 - Device No Prompt.webp
+  - 030-2.7.3 - Initial Device Sync 2.webp
+  - 033-2.8 - Register.webp
+  - 010-3.0 - Goal Setting Tutorial 1.webp
+  - 009-3.1 - Goal Setting Tutorial 2.webp
+  - 011-3.2 - Goal Setting Tutorial 3.webp
+  - 016-4.0 - Home.webp
+  - 017-4.1 - Remove Pet.webp
+  - 019-4.2 - Remove Pet Prompt.webp
+  - 036-5.0.7 - Pet Profile _ Syncing With Collar.webp
+  - 020-5.1 - Sync Activity _ Log Manually.webp
+  - 012-5.2.0 - Activity Reward.webp
+  - 032-5.3.1 - Activity Progress Prompt.webp
+  - 013-5.4 - Collar Missing Prompt.webp
+  - 015-5.6 - Log Manually Screen.webp
+  - 021-5.7 - Pet Profile _ Activity Overview.webp
+  - 035-5.8.0.1 - Pet Profile.webp
+  - 014-5.8.1 - Edit Pet Profile.webp
+  - 003-5.8.2 - Diary _ Activity Daily.webp
+  - 004-5.8.5 - Diary _ Nutrition Daily.webp
+  - 027-6.1 - Pet Profile _ Add Meal.webp
+  - 028-6.2 - Pet Profile _ Brand Options.webp
+  - 031-6.4 - Nutritional Info.webp
+  - 037-6.5 - Manual Food Entry.webp
+  - 040-6.7 - Pet Profile _ Nutrition Overview (Delete).webp
+  - 034-7.0 - Settings.webp
+  - 018-7.5 - Change Password Pt1.webp
+  - 001-Production Screen-05.webp
+  - 002-Production Screen-07.webp
+  - 038-detailspal-003.webp
+  - 039-11.details.pal.webp
+
+dont-mess-with-texas-report-a-litterer:
+  - 001-LaunchImage@2x.webp
+  - 002-dmwt-002.webp
+  - 003-dmwt-008.webp
+  - 004-dmwt-013.webp
+  - 006-003.webp
+  - 007-004.webp
+  - 008-005.webp
+  - 005-002.webp
+  - 009-13.dont.mess.with.texas.webp
+
+energi-coach:
+  - 001-Energy_Splash@2x.webp
+  - 010-001.webp
+  - 006-002.webp
+  - 008-003.webp
+  - 013-005.webp
+  - 017-008.webp
+  - 018-009.webp
+  - 012-010.webp
+  - 014-011.webp
+  - 016-012.webp
+  - 015-013.webp
+  - 011-014.webp
+  - 009-015.webp
+  - 007-017.webp
+  - 002-IMG_0688.webp
+  - 003-IMG_0689.webp
+  - 004-IMG_0691.webp
+  - 005-20.energi.webp
+
+academy-sports-live-fit:
+  - 009-Default-568h@2x.webp
+  - 011-tutorial1_iphone4.webp
+  - 010-tutorial2_iphone4.webp
+  - 008-tutorial3_iphone4.webp
+  - 007-tutorial4_iphone4.webp
+  - 005-Screen__5.webp
+  - 004-Screen__6.webp
+  - 003-Screen__8.webp
+  - 002-Screen__11.webp
+  - 001-Screen__15.webp
+  - 006-2013-09-10.webp
+
+active-heroes:
+  - 001-ActiveHeroes-FB-Logo_lr.webp
+  - 005-001.webp
+  - 003-002.webp
+  - 004-003.webp
+  - 002-09.active.heroes.webp
+
+furtile:
+  - 001-splash@2x.webp
+  - 002-furtile-001.webp
+  - 004-furtile-002.webp
+  - 003-furtile-003.webp
+  - 005-03.furtile.webp
+
+project-capture:
+  - 001-project-capture-app-icon.webp
+  - 002-project-capture_interface_four.webp
+  - 006-project-capture_interface_five.webp
+  - 003-project-capture_finaldesign_three.webp
+  - 004-project-capture_finaldesign_one.webp
+  - 005-project-capture_finaldesign_two.webp
+  - 007-project-capture_finaldesign_four.webp
+  - 008-IMG_0692.webp
+  - 009-IMG_0693.webp
+  - 010-IMG_0694.webp
+  - v001-projectcapture.mp4
+
+us-likey:
+  - 011-al-568h@2x.webp
+  - 012-512X512@2x.webp
+  - 003-1help-568h-7@2x.webp
+  - 004-2help-568h@2x.webp
+  - 001-3help-568h-7@2x.webp
+  - 002-4help-568h@2x.webp
+  - 008-discover252.webp
+  - 006-organize.webp
+  - 007-recommend252.webp
+  - 005-share252.webp
+  - 010-1.webp
+  - 009-4.webp
+  - 013-screen322x572.webp
+  - 015-003.webp
+  - 016-004.webp
+  - 014-18.us.likey.webp
+
+win-atlas:
+  - 006-Launch-Screen@3x.webp
+  - 004-tutorial_1@3x.webp
+  - 003-tutorial_2@3x.webp
+  - 005-tutorial_3@2x.webp
+  - 007-screen322x572(1).webp
+  - 008-08.winatlas.webp
+  - 002-Twitter-Posts1.webp
+  - 001-Twitter-Posts2.webp
+
+take-the-bill:
+  - 008-launch@2x.webp
+  - 009-signup_panel.webp
+  - 015-login_panel.webp
+  - 014-dashboard_panel.webp
+  - 006-latest_activities_panel.webp
+  - 011-add_connection_panel.webp
+  - 012-add_connection_panel2.webp
+  - 013-connections_list_panel.webp
+  - 007-invoices_list_panel.webp
+  - 005-invoice_panel.webp
+  - 002-create_invoice_panel.webp
+  - 003-create_invoice_panel2.webp
+  - 001-create_invoice_panel3.webp
+  - 004-create_invoice_panel4.webp
+  - 010-user_profile_panel.webp
+  - 021-8.webp
+  - 022-12.webp
+  - 019-take_the_bill_2.webp
+  - 020-take_the_bill_3.webp
+  - 016-take_the_bill_4.webp
+  - 018-take_the_bill_6.webp
+  - 017-take_the_bill_7.webp
+
+talkit:
+  - 001-talkit_poster.webp
+  - 006-talkit-001.webp
+  - 005-talkit-003.webp
+  - 002-talkit-004.webp
+  - 003-talkit-005.webp
+  - 004-talkit-006.webp
+  - v001-talkit.mp4
+  - 007-16.talkit.webp
+
+valettab:
+  - 002-login_lrg_bg.webp
+  - 003-app_preview.webp
+  - 001-iPhone_5.webp
+  - 008-tut_img_1@2x.webp
+  - 007-tut_img_2@2x.webp
+  - 009-tut_img_3@2x.webp
+  - 005-smartphone2.webp
+  - 006-BasicSTAND.webp
+  - 004-ProSTAND.webp
+
+wego:
+  - 001-wego_Sign-In.webp
+  - 003-wego_Sign-In 3.webp
+  - 002-wego_Sign-In 4.webp
+  - 006-wego_Sign-In 5.webp
+  - 005-wego_Sign-In 6.webp
+  - 004-wego_Sign-In 7.webp
+  - 013-wego_Dashboard2.webp
+  - 014-wego_Dashboard2 2.webp
+  - 015-wego_Dashboard2 3.webp
+  - 011-wego_SideNav.webp
+  - 012-wego_Settings.webp
+  - 009-wego_Profile2 2.webp
+  - 010-wego_Profile2 3.webp
+  - 007-wego_Activity-Log 2.webp
+  - 008-wego_Activity-Log 4.webp
+  - 016-wego-001.webp
+  - 017-7.wego.webp
+
+china-pro-tools:
+  - 001-1-Login.webp
+  - 002-2-Market-Share-analysis.webp
+  - 004-1B-Market-Share-Popup.webp
+  - 005-2-Buyer-Profile.webp
+  - 003-3-Buyer-Profile-B.webp
+
+clockadoodle:
+  - 001-iTunesArtwork@2x.webp
+  - 005-VideoAlarm_iOS_screens_v1_AM 1-AAA.webp
+  - 006-VideoAlarm_iOS_screens_v1_AM 1-AA.webp
+  - 004-VideoAlarm_iOS_screens_v1_AM 1.1.1.webp
+  - 007-VideoAlarm_iOS_screens_v1_AM 1-2a.webp
+  - 008-VideoAlarm_iOS_screens_v1_AM 1-2b.webp
+  - 012-VideoAlarm_iOS_screens_v1_AM 1-3.webp
+  - 014-VideoAlarm_iOS_screens_v1_AM 1-3a.webp
+  - 013-VideoAlarm_iOS_screens_v1_AM 1-3b.webp
+  - 015-VideoAlarm_iOS_screens_v1_AM 1-3c.webp
+  - 016-VideoAlarm_iOS_screens_v1_AM 1-3d.webp
+  - 017-VideoAlarm_iOS_screens_v1_AM 1-3e.webp
+  - 018-VideoAlarm_iOS_screens_v1_AM 1-3e-1.webp
+  - 021-VideoAlarm_iOS_screens_v1_AM 1-3e-3.webp
+  - 019-VideoAlarm_iOS_screens_v1_AM 1-3e-4.webp
+  - 020-VideoAlarm_iOS_screens_v1_AM 1-3e-6.webp
+  - 022-VideoAlarm_iOS_screens_v1_AM 1-3g.webp
+  - 027-VideoAlarm_iOS_screens_v1_AM 1-3h.webp
+  - 026-VideoAlarm_iOS_screens_v1_AM 1-3h-3.webp
+  - 023-VideoAlarm_iOS_screens_v1_AM 1-3i.webp
+  - 009-VideoAlarm_iOS_screens_v1_AM 1-3.1.webp
+  - 010-VideoAlarm_iOS_screens_v1_AM 1-3.2.webp
+  - 011-VideoAlarm_iOS_screens_v1_AM 1-3.3.webp
+  - 024-VideoAlarm_iOS_screens_v1_AM 1-5.webp
+  - 025-VideoAlarm_iOS_screens_v1_AM 1-5b.webp
+  - 002-VideoAlarm_iOS_screens_v1_AM L-4a.webp
+  - 003-VideoAlarm_iOS_screens_v1_AM Land-2.webp
+  - 028-VideoAlarm_Tablet_screens_1of2_v1_AM 1-AAA.webp
+  - 029-VideoAlarm_Tablet_screens_1of2_v1_AM 1-AA.webp
+  - 030-VideoAlarm_Tablet_screens_1of2_v1_AM 1-2.webp
+  - 031-VideoAlarm_Tablet_screens_1of2_v1_AM 1-BB.webp
+  - 038-VideoAlarm_Tablet_screens_1of2_v1_AM 1-3.webp
+  - 032-VideoAlarm_Tablet_screens_1of2_v1_AM 1-3a.webp
+  - 033-VideoAlarm_Tablet_screens_1of2_v1_AM 1-3b.webp
+  - 034-VideoAlarm_Tablet_screens_1of2_v1_AM 1-3d.webp
+  - 035-VideoAlarm_Tablet_screens_1of2_v1_AM 1-3e.webp
+  - 036-VideoAlarm_Tablet_screens_1of2_v1_AM 1-3e-1.webp
+  - 037-VideoAlarm_Tablet_screens_1of2_v1_AM 1-3f.webp
+  - 039-VideoAlarm_Tablet_screens_1of2_v1_AM 1-3g.webp
+  - 040-VideoAlarm_Tablet_screens_1of2_v1_AM 1-3h-2.webp
+  - 041-VideoAlarm_Tablet_screens_1of2_v1_AM 1-3i.webp
+  - 042-VideoAlarm_Tablet_screens_2of2_v1_AM 1-4-1.webp
+  - 043-VideoAlarm_Tablet_screens_2of2_v1_AM 1-4a.webp
+  - 044-VideoAlarm_Tablet_screens_2of2_v1_AM 1-4e.webp
+  - 045-VideoAlarm_Tablet_screens_2of2_v1_AM 1-5a.webp
+  - 046-VideoAlarm_Tablet_screens_2of2_v1_AM P-1.webp
+  - 048-clockadoodle-001.webp
+  - 049-clockadoodle-002.webp
+  - 047-clockadoodle-003.webp
+  - 050-02.clockadoodle.webp
+
+discover-your-city:
+  - 001-2-Main-page-Log-in-A.webp
+  - 002-3-Main-page-Log-in-B.webp
+  - 003-4-Main-page-Log-in-C.webp
+  - 004-5-Main-page-Preview-building.webp
+  - 005-6-Main-page-Adds.webp
+  - 015-8-Building-Page-add-to-MTL.webp
+  - 013-10-Building-Page-editors-comment.webp
+  - 014-11-Building-Page-Take-Photo.webp
+  - 006-12-Building-Page-Directions.webp
+  - 007-13-Building-Page-Adds.webp
+  - 011-14-Search.webp
+  - 012-15-Search-by-architects.webp
+  - 008-16-Search-results.webp
+  - 009-17-Travel-log.webp
+  - 010-18-Travel-log-notes.webp
+  - 016-sadDefault@2x.webp
+
+windows-dev-center-app-middleware-partners:
+  - 001-microsoft1.webp
+  - 002-microsoft3.webp
+  - 003-screen.dev.center.webp
+  - 007-screencapture-web-archive-org-web-2016032705175.webp
+  - 005-screencapture-web-archive-org-web-2016032705522.webp
+  - 004-screencapture-web-archive-org-web-2016032706111.webp
+  - 006-screencapture-web-archive-org-web-2016040101462.webp
+
+colony-framework:
+  - 002-colony.comics.accelerated_development-1.webp
+  - 003-colony.comics.accelerated_development 2-2.webp
+  - 001-colony.comics.accelerated_development 3-3.webp
+  - 005-colony.comics.runtime_modularity-1.webp
+  - 006-colony.comics.runtime_modularity 2-2.webp
+  - 004-colony.comics.runtime_modularity 3-3.webp
+  - 007-colony.comics.transparent_distribution-1.webp
+  - 008-colony.comics.transparent_distribution 2-2.webp
+  - 009-colony.comics.transparent_distribution 3-3.webp
+  - 015-colony_manager_1.webp
+  - 014-colony_manager_2.webp
+  - 013-colony_manager_3.webp
+  - 016-colony_manager_4.webp
+  - v001-colony_install.mp4
+  - 017-screen.webp
+  - 010-01.webp
+  - 011-02.webp
+  - 012-hive.wallpapers_02_1920x1200.webp
+
+fresh-deck-poker:
+  - 002-001.webp
+  - 001-002.webp
+  - 003-003.webp
+  - 006-001.webp
+  - 004-002.webp
+  - 005-003.webp
+  - 007-004.webp
+  - 012-3.webp
+  - 008-4.webp
+  - 009-5.webp
+  - 011-6.webp
+  - 010-7.webp
+  - v001-videoplayback_tvai.mp4
+
+a-la-carte:
+  - 004-a_la_carte_1.webp
+  - 002-a_la_carte_2.webp
+  - 003-a_la_carte_3.webp
+  - 001-a_la_carte_4.webp
+  - 005-a_la_carte-thumbnail.webp
+  - 006-35.webp
+
+bargania:
+  - 010-01.webp
+  - 001-03.webp
+  - 009-05.webp
+  - 004-07.webp
+  - 007-08.webp
+  - 006-09.webp
+  - 005-13.webp
+  - 002-15.webp
+  - 003-17.webp
+  - 008-18.webp
+
+karl-kustomize:
+  - 004-iTunesArtwork@2x.webp
+  - 001-catalog.webp
+  - 005-FireShot Capture 7 - Karl Lagerfeld - http___lo.webp
+  - 002-FireShot Capture 12 - Karl_ - http___karl-test..webp
+  - 003-FireShot Capture 13 - Karl_ - http___karl-test..webp
+  - 006-FireShot Capture 17 - Karl Lagerfeld_ - http___.webp
+  - v001-shoe.mov
+  - v002-Karl Lagerfeld - Madame Figaro_V3.mp4
+
+myswear-online-store:
+  - 005-screen.myswear.farfetch.webp
+  - 006-screen.myswear.webp
+  - 011-001.webp
+  - 002-002(1).webp
+  - 001-003(1).webp
+  - 007-002.webp
+  - 010-003.webp
+  - 003-Simulator Screen Shot 13 Jul 2016 16.40.36.webp
+  - 004-Simulator Screen Shot 13 Jul 2016 16.41.08.webp
+  - v001-myswearios.mov
+
+panzerini:
+  - 004-game.webp
+  - 005-game-reduced.webp
+  - 008-24.webp
+  - 007-26.webp
+  - 006-27.webp
+  - 001-6993efc115bd4eea8a3a16a11c0cc05d_7.webp
+  - 002-c5fcf2f96bbb403bbbadfa034fd8feeb_7.webp
+  - 003-f415709b08d84778ba252a048a026132_7.webp
+
+schoooools:
+  - 002-01 (1).webp
+  - 003-01 (2).webp
+  - 001-02(1).webp
+  - 005-38.webp
+  - 004-39.webp
+  - 008-40.webp
+  - 007-41.webp
+  - 006-42.webp
+
+frontdoor:
+  - 011-frontdoor-chrome-store-large.webp
+  - 006-frontdoor.wallpapers.light_1920x1200.webp
+  - 008-frontdoor_flyer.webp
+  - 007-01.webp
+  - 001-02.webp
+  - 002-04 2.webp
+  - 005-04.webp
+  - 003-01.webp
+  - 004-01(1).webp
+  - 009-frontdoor_1.webp
+  - 010-frontdoor_2.webp
+  - 015-19.webp
+  - 013-20.webp
+  - 012-21.webp
+  - 014-22.webp
+  - 017-01(2).webp
+  - 016-02(1).webp

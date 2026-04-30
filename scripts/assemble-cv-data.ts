@@ -12,6 +12,7 @@ const ROOT = path.resolve(__dirname, "..");
 const DATA_DIR = path.join(ROOT, "data");
 const OUTPUT_PATH = path.join(ROOT, "web", "src", "data", "cv-data.json");
 const MANIFEST_PATH = path.join(ROOT, "galleries-manifest.json");
+const GALLERY_ORDER_PATH = path.join(DATA_DIR, "gallery-order.yaml");
 
 const GALLERY_MODE = process.env.GALLERY_MODE || "r2";
 const R2_PUBLIC_URL =
@@ -27,13 +28,51 @@ interface GalleryMedia {
   thumbnail?: string;
 }
 
+function readGalleryOrder(): Record<string, string[]> {
+  const raw = readYaml(GALLERY_ORDER_PATH);
+
+  if (!raw || Array.isArray(raw) || typeof raw !== "object") {
+    return {};
+  }
+
+  return Object.fromEntries(
+    Object.entries(raw as Record<string, unknown>)
+      .filter(([, filenames]) => Array.isArray(filenames))
+      .map(([projectId, filenames]) => [
+        projectId,
+        (filenames as unknown[]).filter((filename): filename is string => typeof filename === "string"),
+      ])
+  );
+}
+
 function getGalleryBaseUrl(): string {
   return GALLERY_MODE === "r2" ? `${R2_PUBLIC_URL}/galleries` : "/galleries";
+}
+
+function sortGalleryMedia(projectId: string, media: GalleryMedia[], galleryOrder: Record<string, string[]>): void {
+  const orderedFilenames = galleryOrder[projectId];
+
+  if (!orderedFilenames?.length) {
+    media.sort((a, b) => a.filename.localeCompare(b.filename));
+    return;
+  }
+
+  const orderIndex = new Map(orderedFilenames.map((filename, index) => [filename, index]));
+  media.sort((a, b) => {
+    const aIndex = orderIndex.get(a.filename);
+    const bIndex = orderIndex.get(b.filename);
+
+    if (aIndex !== undefined && bIndex !== undefined) return aIndex - bIndex;
+    if (aIndex !== undefined) return -1;
+    if (bIndex !== undefined) return 1;
+    return a.filename.localeCompare(b.filename);
+  });
 }
 
 function scanGalleries(): Map<string, GalleryMedia[]> {
   const galleriesPath = path.join(ROOT, "galleries");
   const galleryMap = new Map<string, GalleryMedia[]>();
+  const galleryOrder = readGalleryOrder();
   const baseUrl = getGalleryBaseUrl();
   const hasLocal = fs.existsSync(galleriesPath);
 
@@ -61,7 +100,7 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
           });
         }
       }
-      media.sort((a, b) => a.filename.localeCompare(b.filename));
+      sortGalleryMedia(projectId, media, galleryOrder);
       if (media.length > 0) galleryMap.set(projectId, media);
     }
     console.log(`Loaded ${galleryMap.size} galleries from manifest`);
@@ -106,7 +145,7 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
         manifestFiles.push(filename);
       }
     }
-    media.sort((a, b) => a.filename.localeCompare(b.filename));
+    sortGalleryMedia(entry.name, media, galleryOrder);
     manifestFiles.sort();
     if (media.length > 0) {
       galleryMap.set(entry.name, media);
