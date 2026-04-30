@@ -12,6 +12,83 @@ interface GalleryPreviewTileProps {
   onClick: () => void;
 }
 
+const SHOWCASE_MEDIA: Array<Pick<GalleryMedia, "projectId" | "filename">> = [
+  {
+    projectId: "byjus-coding-cup",
+    filename: "047-screencapture-tynker-codingcup-2024-04-03-18_40.webp",
+  },
+  {
+    projectId: "block-ide-version-30",
+    filename: "016-Screenshot_18.webp",
+  },
+  {
+    projectId: "crystal-clash",
+    filename: "001-crystal-clash.webp",
+  },
+  {
+    projectId: "fresh-deck-poker",
+    filename: "012-3.webp",
+  },
+  {
+    projectId: "project-capture",
+    filename: "002-project-capture_interface_four.webp",
+  },
+  {
+    projectId: "block-ide-version-30",
+    filename: "077-Screenshot_3(7).webp",
+  },
+  {
+    projectId: "byjus-coding-cup",
+    filename: "039-Screenshot 2024-04-03 at 6.56.12 PM.webp",
+  },
+  {
+    projectId: "minecraft-editor",
+    filename: "020-Screenshot_31.webp",
+  },
+  {
+    projectId: "colony-framework",
+    filename: "012-hive.wallpapers_02_1920x1200.webp",
+  },
+  {
+    projectId: "block-ide-version-30",
+    filename: "062-Screenshot_7(8).webp",
+  },
+];
+
+const PREVIEW_LIMIT = 10;
+
+function getShowcasePreview(gallery: GalleryMedia[]) {
+  const byProjectAndFilename = new Map(
+    gallery.map((item) => [`${item.projectId}:${item.filename}`, item])
+  );
+  const preview: GalleryMedia[] = [];
+  const used = new Set<string>();
+
+  SHOWCASE_MEDIA.forEach((showcaseItem) => {
+    const key = `${showcaseItem.projectId}:${showcaseItem.filename}`;
+    const item = byProjectAndFilename.get(key);
+
+    if (item) {
+      preview.push(item);
+      used.add(key);
+    }
+  });
+
+  if (preview.length < PREVIEW_LIMIT) {
+    gallery.some((item) => {
+      const key = `${item.projectId}:${item.filename}`;
+
+      if (!used.has(key)) {
+        preview.push(item);
+      }
+
+      return preview.length >= PREVIEW_LIMIT;
+    });
+  }
+
+  return preview.slice(0, PREVIEW_LIMIT);
+}
+
 const GalleryPreviewTile = memo(({ item, index, onClick }: GalleryPreviewTileProps) => {
   return (
     <button
@@ -50,15 +127,6 @@ const GalleryPreviewTile = memo(({ item, index, onClick }: GalleryPreviewTilePro
           </div>
         </div>
       )}
-
-      <div className="absolute left-2 top-2 max-w-[calc(100%-1rem)] border border-black/40 bg-black/70 px-2 py-1 backdrop-blur-sm">
-        <div className="flex min-w-0 items-center gap-1.5">
-          {item.projectEmoji && <span className="shrink-0 text-sm">{item.projectEmoji}</span>}
-          <span className="truncate font-[family-name:var(--font-mono)] text-[10px] uppercase text-cool-white">
-            {item.projectTitle}
-          </span>
-        </div>
-      </div>
 
       <div className="absolute bottom-2 right-2 border border-cyan/30 bg-black/70 px-2 py-0.5">
         <span className="font-[family-name:var(--font-mono)] text-xs text-cyan">
@@ -114,7 +182,7 @@ export function MainGallery() {
 
   if (gallery.length === 0) return null;
 
-  const preview = gallery.slice(0, 10);
+  const preview = getShowcasePreview(gallery);
 
   return (
     <section id="gallery" className="mx-auto max-w-6xl px-6 py-20">
@@ -125,8 +193,8 @@ export function MainGallery() {
           </h2>
           <p className="mt-3 max-w-2xl font-[family-name:var(--font-mono)] text-sm leading-relaxed text-steel">
             <span className="text-steel-dim">{"//"}</span> {gallery.length} captures from{" "}
-            {projectsWithGalleries} project galleries, ordered by CV project sequence and then by
-            each project&apos;s internal media order.
+            {projectsWithGalleries} project galleries, previewing curated highlights. Open the full
+            stream for CV project sequence and each project&apos;s internal media order.
           </p>
         </div>
         <button
@@ -153,7 +221,7 @@ export function MainGallery() {
       </div>
 
       <div className="mt-4 font-[family-name:var(--font-mono)] text-xs uppercase text-steel-dim">
-        <span className="text-cyan">INDEX:</span> CV_ORDER / MEDIA_ORDER
+        <span className="text-cyan">INDEX:</span> CURATED_SHOWCASE
       </div>
 
       <GalleryModal
