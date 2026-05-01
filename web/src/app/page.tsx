@@ -12,6 +12,12 @@ const publicGithubRepos = githubRepos.filter(
   (repo) => !repo.name.startsWith("template-") && !repo.name.startsWith("sandbox-")
 );
 const ossCount = publicGithubRepos.length;
+const relatedSites = publicGithubRepos.filter(
+  (repo) =>
+    repo.homepageUrl &&
+    repo.homepageUrl.endsWith(".tsilva.eu") &&
+    repo.homepageUrl !== "https://www.tsilva.eu"
+);
 
 export default function Home() {
   return (
@@ -26,6 +32,16 @@ export default function Home() {
           <div className="content-visibility-auto">
             <Experience employers={cvData.employers} />
           </div>
+          <aside aria-label="RELATED_SITES" className="sr-only">
+            <h2>RELATED_SITES</h2>
+            <ul>
+              {relatedSites.map((repo) => (
+                <li key={repo.id}>
+                  <a href={repo.homepageUrl ?? undefined}>{repo.name}</a>
+                </li>
+              ))}
+            </ul>
+          </aside>
           <LazySections />
         </main>
         <Footer />

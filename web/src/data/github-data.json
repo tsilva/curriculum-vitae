@@ -22,7 +22,7 @@
     "updatedAt": "2026-04-08T10:21:10Z",
     "createdAt": "2026-03-28T12:25:22Z",
     "url": "https://github.com/tsilva/scummweb",
-    "homepageUrl": "https://scummvm.tsilva.eu",
+    "homepageUrl": "https://scummweb.tsilva.eu",
     "commits": 0
   },
   {
@@ -322,19 +322,6 @@
     "createdAt": "2026-01-02T17:29:35Z",
     "url": "https://github.com/tsilva/demosim",
     "homepageUrl": "https://demosim.tsilva.eu",
-    "commits": 0
-  },
-  {
-    "id": "zxvibes",
-    "name": "zxvibes",
-    "description": "",
-    "stars": 0,
-    "forks": 0,
-    "language": "JavaScript",
-    "updatedAt": "2026-03-26T12:35:25Z",
-    "createdAt": "2026-03-21T17:50:18Z",
-    "url": "https://github.com/tsilva/zxvibes",
-    "homepageUrl": "https://zxvibes.tsilva.eu",
     "commits": 0
   },
   {
