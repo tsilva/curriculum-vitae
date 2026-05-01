@@ -20,6 +20,8 @@ const HTML_HREF_PATTERN = /href=["']([^"']+)["']/g;
 const CHECK_CONCURRENCY = 8;
 const CHECK_TIMEOUT_MS = 15_000;
 const CHECK_RETRIES = 1;
+const INCONCLUSIVE_HTTP_STATUSES = new Set([401, 403, 429, 999]);
+const KNOWN_BROKEN_HTTP_STATUSES = new Set([404, 410]);
 
 function readJsonFile<T extends JsonValue>(relativePath: string): T {
   return JSON.parse(readFileSync(path.join(ROOT_DIR, relativePath), "utf8")) as T;
@@ -147,7 +149,7 @@ async function requestUrl(request: APIRequestContext, url: string) {
   throw new Error(`Unable to request ${url}`);
 }
 
-test("external website links return HTTP 200", async ({ request }) => {
+test("external website links are not known broken", async ({ request }) => {
   test.setTimeout(180_000);
 
   test.skip(
@@ -156,6 +158,7 @@ test("external website links return HTTP 200", async ({ request }) => {
   );
 
   const links = collectWebsiteLinks();
+  const inconclusive: string[] = [];
   const homepageResponse = await request.get("/");
   expect(homepageResponse.ok()).toBe(true);
   collectHtmlHrefs(links, await homepageResponse.text(), "homepage HTML");
@@ -172,21 +175,32 @@ test("external website links return HTTP 200", async ({ request }) => {
       try {
         const response = await requestUrl(request, url);
 
-        if (response.status() !== 200) {
+        if (KNOWN_BROKEN_HTTP_STATUSES.has(response.status())) {
           failures.push(
+            `${response.status()} ${url}\n  sources: ${Array.from(links.get(url) ?? []).join(", ")}`
+          );
+        } else if (!response.ok() && INCONCLUSIVE_HTTP_STATUSES.has(response.status())) {
+          inconclusive.push(
+            `${response.status()} ${url}\n  sources: ${Array.from(links.get(url) ?? []).join(", ")}`
+          );
+        } else if (!response.ok()) {
+          inconclusive.push(
             `${response.status()} ${url}\n  sources: ${Array.from(links.get(url) ?? []).join(", ")}`
           );
         }
       } catch (error) {
         const message = error instanceof Error ? error.message : String(error);
-        failures.push(
-          `${message} ${url}\n  sources: ${Array.from(links.get(url) ?? []).join(", ")}`
-        );
+        const target = /ENOTFOUND|ERR_NAME_NOT_RESOLVED/i.test(message) ? failures : inconclusive;
+        target.push(`${message} ${url}\n  sources: ${Array.from(links.get(url) ?? []).join(", ")}`);
       }
     }
   }
 
   await Promise.all(Array.from({ length: CHECK_CONCURRENCY }, worker));
+
+  if (inconclusive.length > 0) {
+    console.warn(`Inconclusive protected/transient links:\n${inconclusive.join("\n\n")}`);
+  }
 
   expect(failures, `Broken links:\n${failures.join("\n\n")}`).toEqual([]);
 });

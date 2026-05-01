@@ -56,7 +56,7 @@ Developed some core features for the RIPE Core infrastructure, while simultaneou
 
 In a lesser role also contributed as a software developer to the [MYSWEAR online store](#-myswear---online-store), featuring an advanced shoe customization rendering platform, related [iOS demo](#-myswear---ios-demo) and the adaptation of the customizer to be used in a [holographic pyramid at Harrods](#-myswear---harrods-holographic-pyramid), a luxury department store in London.
 
-## 📱 <a href="https://www.rocksaucestudios.com/" target="_blank">Rocksauce Studios</a>
+## 📱 Rocksauce Studios
 
 - **Duration:** 2013 - 2015 · 2 years
 - **Role:** Senior iOS Developer (Full-time)

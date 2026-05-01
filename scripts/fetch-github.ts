@@ -37,6 +37,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, "..");
 const OUTPUT_PATH = path.join(ROOT, "web", "src", "data", "github-data.json");
+const HOMEPAGE_OVERRIDES: Record<string, string | null> = {
+  scummweb: "https://scummweb.tsilva.eu",
+};
 
 function fetchRepos(): GitHubRepoRaw[] {
   const cmd = `gh repo list tsilva --visibility public --limit 100 --json name,description,primaryLanguage,createdAt,updatedAt,pushedAt,url,homepageUrl,stargazerCount,forkCount,isArchived,isFork,visibility`;
@@ -70,7 +73,9 @@ function processRepos(repos: GitHubRepoRaw[]): GitHubRepo[] {
     updatedAt: repo.pushedAt,
     createdAt: repo.createdAt,
     url: repo.url,
-    homepageUrl: repo.homepageUrl || null,
+    homepageUrl: repo.name in HOMEPAGE_OVERRIDES
+      ? HOMEPAGE_OVERRIDES[repo.name]
+      : repo.homepageUrl || null,
     commits: 0, // Not fetched to keep builds fast
   }));
   

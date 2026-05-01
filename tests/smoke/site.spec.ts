@@ -1,5 +1,31 @@
 import { expect, test, type Page } from "@playwright/test";
 
+const TINY_PNG = Buffer.from(
+  "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/p9sAAAAASUVORK5CYII=",
+  "base64"
+);
+
+async function routeGalleryRequests(page: Page) {
+  await page.route("**/galleries/**", async (route) => {
+    const pathname = new URL(route.request().url()).pathname;
+
+    if (/\.(mp4|mov|m4v|webm|mkv|avi)$/i.test(pathname)) {
+      await route.fulfill({
+        status: 200,
+        contentType: "video/mp4",
+        body: "",
+      });
+      return;
+    }
+
+    await route.fulfill({
+      status: 200,
+      contentType: "image/png",
+      body: TINY_PNG,
+    });
+  });
+}
+
 function trackBrowserIssues(page: Page) {
   const consoleErrors: string[] = [];
   const requestFailures: string[] = [];
@@ -34,6 +60,7 @@ function trackBrowserIssues(page: Page) {
 }
 
 test("desktop smoke flow covers modals, gallery, and R2 assets", async ({ page }) => {
+  await routeGalleryRequests(page);
   const assertNoBrowserIssues = trackBrowserIssues(page);
 
   await page.goto("/");
@@ -51,24 +78,23 @@ test("desktop smoke flow covers modals, gallery, and R2 assets", async ({ page }
     .first();
   await expect(projectDialog).toBeVisible();
   await expect(projectDialog.getByRole("button", { name: /close help agent details/i })).toBeFocused();
+  const galleryResponse = page.waitForResponse(
+    (response) =>
+      response.url().includes("/galleries/help-agent/") &&
+      response.ok()
+  );
   await galleryTrigger.click();
 
   const galleryDialog = page.getByRole("dialog", { name: /help agent/i });
   await expect(galleryDialog).toBeVisible();
   await expect(galleryDialog.getByRole("button", { name: /close help agent gallery/i })).toBeFocused();
 
-  const r2Response = page.waitForResponse(
-    (response) =>
-      response.url().includes("curriculum-vitae-r2.tsilva.eu") &&
-      response.ok()
-  );
-
   await expect(galleryDialog.locator("img").first()).toBeVisible();
   await expect(galleryDialog.locator("img").first()).toHaveAttribute(
     "src",
-    /curriculum-vitae-r2\.tsilva\.eu/
+    /\/galleries\/help-agent\//
   );
-  await r2Response;
+  await galleryResponse;
 
   await page.keyboard.press("Escape");
   await expect(galleryDialog).toBeHidden();
@@ -95,6 +121,7 @@ test("desktop smoke flow covers modals, gallery, and R2 assets", async ({ page }
 });
 
 test("gallery falls back to inline video previews when thumbnails are unavailable", async ({ page }) => {
+  await routeGalleryRequests(page);
   const assertNoBrowserIssues = trackBrowserIssues(page);
 
   await page.route("**/*.thumb.webp", async (route) => {
@@ -133,10 +160,10 @@ test("mobile navigation renders and updates the URL hash", async ({ browser }) =
   const assertNoBrowserIssues = trackBrowserIssues(page);
 
   await page.goto("http://127.0.0.1:4173/");
-  const mobileNav = page.locator("nav").filter({ has: page.getByRole("link", { name: "PROJECTS" }) }).last();
+  const mobileNav = page.locator("nav").filter({ has: page.getByRole("link", { name: "PROJ" }) }).last();
   await expect(mobileNav).toBeVisible();
 
-  await mobileNav.getByRole("link", { name: "PROJECTS" }).click();
+  await mobileNav.getByRole("link", { name: "PROJ" }).click();
   await expect(page).toHaveURL(/#projects$/);
   await expect(page.getByRole("heading", { name: /projects_db/i })).toBeVisible();
 

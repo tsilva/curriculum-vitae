@@ -1,7 +1,6 @@
 ---
 emoji: 📱
 name: Rocksauce Studios
-url: https://www.rocksaucestudios.com/
 duration: 2013 - 2015 · 2 years
 role: Senior iOS Developer (Full-time)
 location: Austin, Texas · Remote 🌍
