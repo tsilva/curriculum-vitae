@@ -15,6 +15,16 @@ export function GET() {
       theme_color: APP_THEME_COLOR,
       icons: [
         {
+          src: versionedAssetPath("/brand/web-seo/android-chrome-192.webp"),
+          sizes: "192x192",
+          type: "image/webp",
+        },
+        {
+          src: versionedAssetPath("/brand/web-seo/android-chrome-512.webp"),
+          sizes: "512x512",
+          type: "image/webp",
+        },
+        {
           src: versionedAssetPath("/brand/web-seo/android-chrome-192.png"),
           sizes: "192x192",
           type: "image/png",

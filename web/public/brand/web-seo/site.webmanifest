@@ -4,6 +4,16 @@
   "description": "AI-powered Fullstack Software Engineer with 20+ years of experience across AI, deep learning, full-stack engineering, Microsoft, Tynker, and 60+ shipped projects.",
   "icons": [
     {
+      "src": "android-chrome-192.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "android-chrome-512.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    },
+    {
       "src": "android-chrome-192.png",
       "sizes": "192x192",
       "type": "image/png"
