@@ -6,10 +6,13 @@ This script creates favicon files (ICO and PNG formats) from the avatar.webp ima
 located in the web/public directory.
 
 Generated files:
-- favicon.ico (multi-resolution: 16x16, 32x32, 48x48)
-- favicon-32x32.png
-- favicon-16x16.png (optional, for legacy browsers)
-- apple-touch-icon.png (180x180)
+- web/public/brand/web-seo/favicon/favicon.ico (multi-resolution)
+- web/public/brand/web-seo/favicon/favicon-16.png
+- web/public/brand/web-seo/favicon/favicon-32.png
+- web/public/brand/web-seo/favicon/favicon-48.png
+- web/public/brand/web-seo/apple-touch-icon.png
+- web/public/brand/web-seo/android-chrome-192.png
+- web/public/brand/web-seo/android-chrome-512.png
 
 Usage:
     python generate_favicon.py
@@ -34,49 +37,44 @@ def main():
     # Directories
     web_public = Path(__file__).parent.parent / "web" / "public"
     avatar_path = web_public / "avatar.webp"
+    web_seo = web_public / "brand" / "web-seo"
+    favicon_dir = web_seo / "favicon"
 
     if not avatar_path.exists():
         print(f"Error: Avatar not found at {avatar_path}", file=sys.stderr)
         sys.exit(1)
 
-    print(f"Generating favicons from {avatar_path}...")
+    favicon_dir.mkdir(parents=True, exist_ok=True)
+    print(f"Generating web SEO icons from {avatar_path}...")
 
     # Generate favicon.ico (multi-resolution)
-    ico_path = web_public / "favicon.ico"
-    print(f"  → {ico_path.name} (16x16, 32x32, 48x48)")
+    ico_path = favicon_dir / "favicon.ico"
+    print(f"  → {ico_path.relative_to(web_public)} (16x16, 32x32, 48x48)")
     run_magick(
         str(avatar_path),
-        "-resize",
-        "48x48",
-        str(avatar_path),
-        "-resize",
-        "32x32",
-        str(avatar_path),
-        "-resize",
-        "16x16",
+        "-define",
+        "icon:auto-resize=48,32,16",
         str(ico_path),
     )
 
-    # Generate favicon-32x32.png
-    png32_path = web_public / "favicon-32x32.png"
-    print(f"  → {png32_path.name}")
-    run_magick(str(avatar_path), "-resize", "32x32", str(png32_path))
+    sized_icons = [
+        (favicon_dir / "favicon-16.png", 16),
+        (favicon_dir / "favicon-32.png", 32),
+        (favicon_dir / "favicon-48.png", 48),
+        (web_seo / "apple-touch-icon.png", 180),
+        (web_seo / "android-chrome-192.png", 192),
+        (web_seo / "android-chrome-512.png", 512),
+    ]
 
-    # Generate favicon-16x16.png
-    png16_path = web_public / "favicon-16x16.png"
-    print(f"  → {png16_path.name}")
-    run_magick(str(avatar_path), "-resize", "16x16", str(png16_path))
+    for path, size in sized_icons:
+        print(f"  → {path.relative_to(web_public)} ({size}x{size})")
+        run_magick(str(avatar_path), "-resize", f"{size}x{size}", str(path))
 
-    # Generate apple-touch-icon.png (180x180)
-    apple_path = web_public / "apple-touch-icon.png"
-    print(f"  → {apple_path.name} (180x180)")
-    run_magick(str(avatar_path), "-resize", "180x180", str(apple_path))
-
-    print("\nFavicons generated successfully!")
+    print("\nWeb SEO icons generated successfully!")
     print("\nFiles created:")
-    for path in [ico_path, png32_path, png16_path, apple_path]:
+    for path in [ico_path] + [path for path, _ in sized_icons]:
         size = path.stat().st_size
-        print(f"  - {path.name} ({size:,} bytes)")
+        print(f"  - {path.relative_to(web_public)} ({size:,} bytes)")
 
 
 if __name__ == "__main__":
