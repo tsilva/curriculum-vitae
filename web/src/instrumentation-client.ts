@@ -45,9 +45,9 @@ if (typeof window !== "undefined") {
   const requestIdleCallback = globalThis.requestIdleCallback?.bind(globalThis);
 
   if (requestIdleCallback) {
-    requestIdleCallback(boot, { timeout: 2000 });
+    requestIdleCallback(boot, { timeout: 8000 });
   } else {
-    globalThis.setTimeout(boot, 1);
+    globalThis.setTimeout(boot, 8000);
   }
 }
 
