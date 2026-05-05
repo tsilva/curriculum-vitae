@@ -86,7 +86,7 @@ function hasMonthPrecision(value: string): boolean {
 }
 
 function formatYearMonthDuration(totalMonths: number): string {
-  if (totalMonths < 12) return "Less than a year";
+  if (totalMonths < 12) return "1 year";
 
   const years = Math.floor(totalMonths / 12);
   const months = totalMonths % 12;

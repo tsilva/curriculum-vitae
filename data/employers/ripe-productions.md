@@ -2,7 +2,7 @@
 emoji: 🛍
 name: RIPE Productions
 url: https://www.platforme.com/
-duration: 2016 · Less than a year
+duration: 2016 · 1 year
 role: Lead Software Engineer (Full-time)
 location: Porto, Portugal · Remote 🌍
 projectIds:
