@@ -51,6 +51,77 @@ export function parseDurationStart(duration: string): number {
   return parseInt(tokens[0]) * 100;
 }
 
+interface DurationPoint {
+  year: number;
+  month: number;
+}
+
+function parseDurationPoint(value: string, referenceDate: Date): DurationPoint | undefined {
+  const part = value.trim();
+
+  if (/^present$/i.test(part)) {
+    return {
+      year: referenceDate.getFullYear(),
+      month: referenceDate.getMonth() + 1,
+    };
+  }
+
+  const tokens = part.split(" ");
+  if (tokens.length === 2 && MONTH_MAP[tokens[0]]) {
+    return {
+      year: parseInt(tokens[1], 10),
+      month: MONTH_MAP[tokens[0]],
+    };
+  }
+
+  const year = parseInt(tokens[0], 10);
+  if (Number.isNaN(year)) return undefined;
+
+  return { year, month: 1 };
+}
+
+function hasMonthPrecision(value: string): boolean {
+  const [firstToken] = value.trim().split(" ");
+  return /^present$/i.test(firstToken) || Boolean(MONTH_MAP[firstToken]);
+}
+
+function formatYearMonthDuration(totalMonths: number): string {
+  if (totalMonths < 12) return "Less than a year";
+
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
+  const yearPart = `${years} year${years === 1 ? "" : "s"}`;
+  const monthPart = months > 0 ? `${months} month${months === 1 ? "" : "s"}` : "";
+
+  return monthPart ? `${yearPart} and ${monthPart}` : yearPart;
+}
+
+export function formatDurationLength(
+  duration: string,
+  referenceDate = new Date()
+): string | undefined {
+  const existingLength = duration.split(" · ")[1]?.trim();
+  if (existingLength) return existingLength;
+
+  const [startRaw, endRaw] = duration.split(" - ");
+  if (!startRaw || !endRaw) return undefined;
+
+  const start = parseDurationPoint(startRaw, referenceDate);
+  const end = parseDurationPoint(endRaw, referenceDate);
+  if (!start || !end) return undefined;
+
+  const inclusiveMonth = hasMonthPrecision(startRaw) && hasMonthPrecision(endRaw) ? 1 : 0;
+  const totalMonths = (end.year - start.year) * 12 + (end.month - start.month) + inclusiveMonth;
+  return formatYearMonthDuration(Math.max(0, totalMonths));
+}
+
+export function formatDurationWithLength(duration: string, referenceDate = new Date()): string {
+  if (duration.includes(" · ")) return duration;
+
+  const length = formatDurationLength(duration, referenceDate);
+  return length ? `${duration} · ${length}` : duration;
+}
+
 export function loadGithubUpdatedAtMap(githubDataPath: string): Map<string, number> {
   const map = new Map<string, number>();
   if (!fs.existsSync(githubDataPath)) return map;

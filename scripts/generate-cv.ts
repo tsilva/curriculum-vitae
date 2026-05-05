@@ -5,6 +5,7 @@ import {
   readFrontmatterFiles,
   parseStartField,
   parseDurationStart,
+  formatDurationWithLength,
   loadGithubUpdatedAtMap,
   readYaml,
 } from "./lib/data-utils";
@@ -48,7 +49,7 @@ function generateExperience(): string {
   const sections = employers.map(({ data, content }) => {
     const heading = formatHeading(data.emoji, data.name, data.url);
     const meta = [
-      `- **Duration:** ${data.duration}`,
+      `- **Duration:** ${formatDurationWithLength(data.duration)}`,
       `- **Role:** ${data.role}`,
       `- **Location:** ${data.location}`,
     ].join("\n");

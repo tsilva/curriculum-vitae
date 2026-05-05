@@ -58,6 +58,7 @@ export interface Employer {
   name: string;
   url?: string;
   duration: string;
+  durationYears?: string;
   role: string;
   location: string;
   description: string;

@@ -6,6 +6,7 @@ import {
   readFrontmatterFiles,
   parseStartField,
   parseDurationStart,
+  formatDurationLength,
   readYaml,
 } from "./lib/data-utils";
 
@@ -214,7 +215,12 @@ function main() {
   // Read employers — sorted by start date descending (newest first)
   const employers = readFrontmatterFiles(path.join(DATA_DIR, "employers"))
     .sort((a, b) => parseDurationStart(b.data.duration) - parseDurationStart(a.data.duration))
-    .map(({ id, data, content }) => ({ id, ...data, description: content }));
+    .map(({ id, data, content }) => ({
+      id,
+      ...data,
+      durationYears: formatDurationLength(data.duration),
+      description: content,
+    }));
 
   // Read education — sorted by start year descending, tie-break by institution
   const education = readFrontmatterFiles(path.join(DATA_DIR, "education"))
