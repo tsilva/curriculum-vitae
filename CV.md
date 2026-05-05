@@ -46,7 +46,7 @@ As a Lead Software Engineer, I was the main contributor to many of its core prod
 
 ## 🛍 <a href="https://www.platforme.com/" target="_blank">RIPE Productions</a>
 
-- **Duration:** 2016 · Less than a year
+- **Duration:** 2016 · 1 year
 - **Role:** Lead Software Engineer (Full-time)
 - **Location:** Porto, Portugal · Remote 🌍
 
