@@ -15,7 +15,7 @@ This CV is detailed and comprehensive—it's more suited for running through you
 
 ## 🔐 VaultHaus
 
-- **Duration:** May 2024 - Present
+- **Duration:** May 2024 - Present · 2 years and 1 month
 - **Role:** AI Research Engineer (Full-time)
 - **Location:** Porto, Portugal · Onsite 🏢
 
@@ -23,7 +23,7 @@ I pursue a deliberately broad portfolio of AI initiatives—spanning deep-reinfo
 
 ## 🏫 <a href="https://www.tynker.com/" target="_blank">Tynker</a>
 
-- **Duration:** Sep 2016 - May 2024
+- **Duration:** Sep 2016 - May 2024 · 7 years and 9 months
 - **Role:** Lead Software Engineer (Full-time)
 - **Location:** Mountain View, California · Remote 🌍
 
@@ -66,7 +66,7 @@ Rocksauce Studios was a mobile app development company that specialized in creat
 
 ## 🌍 <a href="https://www.toptal.com/" target="_blank">Toptal</a>
 
-- **Duration:** Apr 2012 - Present
+- **Duration:** Apr 2012 - Present · 14 years and 2 months
 - **Role:** Senior Software Engineer
 - **Location:** Remote 🌍
 

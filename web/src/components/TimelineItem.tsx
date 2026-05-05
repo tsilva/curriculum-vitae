@@ -6,6 +6,7 @@ interface TimelineItemProps {
 
 export function TimelineItem({ employer }: TimelineItemProps) {
   const formattedDuration = employer.duration
+    .split(" · ")[0]
     .replace(" - ", " >>> ")
     .replace("Present", "PRESENT");
 
@@ -38,8 +39,13 @@ export function TimelineItem({ employer }: TimelineItemProps) {
           </span>
         </div>
 
-        <div className="font-[family-name:var(--font-mono)] text-sm text-neon-green mt-2 tracking-wide">
-          {employer.role}
+        <div className="font-[family-name:var(--font-mono)] text-sm text-neon-green mt-2 tracking-wide flex flex-wrap items-center gap-x-2 gap-y-1">
+          <span>{employer.role}</span>
+          {employer.durationYears && (
+            <span className="text-[11px] text-kiroshi-yellow/90 tracking-[0.16em] uppercase">
+              {employer.durationYears}
+            </span>
+          )}
         </div>
 
         <div className="font-[family-name:var(--font-mono)] text-xs text-steel-dim mt-1 flex items-center gap-1">
