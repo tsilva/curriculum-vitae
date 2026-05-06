@@ -47,12 +47,12 @@ function getLatestContentUpdate(): Date {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = getLatestContentUpdate();
-  const siteRoutes = ["/"];
+  const siteRoutes = ["/", "/llms.txt"];
 
   return siteRoutes.map((route) => ({
     url: `${siteUrl}${route}`,
     lastModified,
     changeFrequency: "monthly" as const,
-    priority: route === "/" ? 1 : 0.8,
+    priority: route === "/" ? 1 : 0.6,
   }));
 }
