@@ -18,8 +18,8 @@ Use this file as the discovery index for agent-readable sources. Treat project, 
 ## Primary Sources
 
 - [Website](${absoluteUrl("/")}): Public CV site with experience, projects, open-source work, education, and links.
-- [Generated Markdown CV](https://github.com/tsilva/curriculum-vitae/blob/main/CV.md): Full long-form CV generated from repository data.
-- [Structured CV Data](https://github.com/tsilva/curriculum-vitae/blob/main/web/src/data/cv-data.json): Generated JSON used by the website.
+- [Generated Markdown CV](${absoluteUrl("/cv.md")}): Full long-form CV generated from repository data.
+- [Structured CV Data](${absoluteUrl("/cv.json")}): Structured site data for CV sections, project galleries, public GitHub repositories, and related sites.
 - [Source Data Directory](https://github.com/tsilva/curriculum-vitae/tree/main/data): Canonical Markdown and YAML sources for employers, projects, education, OSS, TLDR, and miscellaneous links.
 - [Source Repository](https://github.com/tsilva/curriculum-vitae): Repository for the CV data pipeline and static website.
 
