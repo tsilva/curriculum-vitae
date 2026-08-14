@@ -16,8 +16,8 @@ The web app is a cyberpunk-themed CV browser with project filtering, generated d
 git clone https://github.com/tsilva/curriculum-vitae.git
 cd curriculum-vitae
 pnpm install
-pnpm --dir web install
-pnpm --dir web dev
+npm --prefix web ci
+npm --prefix web run dev -- --port auto
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
@@ -25,15 +25,16 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Commands
 
 ```bash
-pnpm --dir web dev             # start the Next.js dev server
-pnpm --dir web build           # assemble data, generate CV.md, and static-export the site
-pnpm --dir web build:local     # build with local gallery URLs
-pnpm --dir web assemble        # regenerate web/src/data/cv-data.json for R2 galleries
-pnpm --dir web assemble:local  # regenerate web data with local gallery URLs
-pnpm --dir web generate:cv     # regenerate CV.md from data/
-pnpm --dir web sync            # fetch GitHub data, assemble web data, and regenerate CV.md
-pnpm --dir web lint            # run ESLint
-pnpm --dir web stats           # count technology mentions
+npm --prefix web run dev -- --port auto # start Next.js on a random available port
+npm --prefix web run build             # assemble data, generate CV.md, and static-export the site
+npm --prefix web run build:local       # build with local gallery URLs
+npm --prefix web run assemble          # regenerate web/src/data/cv-data.json for R2 galleries
+npm --prefix web run assemble:local    # regenerate web data with local gallery URLs
+npm --prefix web run generate:cv       # regenerate CV.md from data/
+npm --prefix web run sync              # fetch GitHub data, assemble web data, and regenerate CV.md
+npm --prefix web run lint              # run ESLint
+npm --prefix web run typecheck         # run TypeScript without emitting files
+npm --prefix web run stats             # count technology mentions
 pnpm run smoke                 # run Playwright smoke tests
 pnpm run verify                # lint, build, and run smoke tests
 ```
@@ -46,7 +47,7 @@ pnpm run verify                # lint, build, and run smoke tests
 - Browser metadata uses `NEXT_PUBLIC_SITE_URL`; analytics and Sentry use the variables documented in `web/.env.example`.
 - Root Sentry issue tooling reads `SENTRY_AUTH_TOKEN`, `SENTRY_ORG`, `SENTRY_PROJECT`, and `SENTRY_BASE_URL` from `.env`.
 - The Next.js app is configured for static export with unoptimized images. `vercel.json` sets security/cache headers, redirects `tsilva.eu` to `www.tsilva.eu`, and proxies `/galleries/*` to the R2 gallery host.
-- Local development is documented with `pnpm@10.27.0`. The current Vercel configuration still uses `npm install` and `npm run build`.
+- Root browser tooling uses `pnpm@10.27.0`; the Vercel web app uses npm with a committed lockfile.
 
 ## Local credentials
 
