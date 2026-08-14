@@ -70,7 +70,7 @@ function processRepos(repos: GitHubRepoRaw[]): GitHubRepo[] {
     stars: repo.stargazerCount,
     forks: repo.forkCount,
     language: repo.primaryLanguage?.name || null,
-    updatedAt: repo.pushedAt,
+    updatedAt: repo.updatedAt,
     createdAt: repo.createdAt,
     url: repo.url,
     homepageUrl: repo.name in HOMEPAGE_OVERRIDES

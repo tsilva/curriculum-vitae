@@ -48,6 +48,14 @@ pnpm run verify                # lint, build, and run smoke tests
 - The Next.js app is configured for static export with unoptimized images. `vercel.json` sets security/cache headers, redirects `tsilva.eu` to `www.tsilva.eu`, and proxies `/galleries/*` to the R2 gallery host.
 - Local development is documented with `pnpm@10.27.0`. The current Vercel configuration still uses `npm install` and `npm run build`.
 
+## Local credentials
+
+Private local values declared in `.keyenv.toml` live in macOS Keychain. Run
+`keyenv doctor` to verify them and launch credential-dependent commands with
+`keyenv run -- <command>`. Python, Node, and their child processes receive the
+values through their normal environment APIs. Keep only public or non-secret
+configuration in dotenv files.
+
 ## Architecture
 
 ![curriculum-vitae architecture diagram](./architecture.png)

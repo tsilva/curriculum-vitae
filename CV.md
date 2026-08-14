@@ -15,7 +15,7 @@ This CV is detailed and comprehensive—it's more suited for running through you
 
 ## 🔐 VaultHaus
 
-- **Duration:** May 2024 - Present · 2 years and 1 month
+- **Duration:** May 2024 - Present · 2 years and 4 months
 - **Role:** AI Research Engineer (Full-time)
 - **Location:** Porto, Portugal · Onsite 🏢
 
@@ -66,7 +66,7 @@ Rocksauce Studios was a mobile app development company that specialized in creat
 
 ## 🌍 <a href="https://www.toptal.com/" target="_blank">Toptal</a>
 
-- **Duration:** Apr 2012 - Present · 14 years and 2 months
+- **Duration:** Apr 2012 - Present · 14 years and 5 months
 - **Role:** Senior Software Engineer
 - **Location:** Remote 🌍
 
@@ -1228,38 +1228,38 @@ Computer Capers was a video game I developed at 12 years old and submitted to a 
 
 Open source projects and contributions.
 
-- [mochimochi](https://github.com/tsilva/mochimochi) - CLI for curating Mochi flashcard decks with AI-powered deduplication
 - [parsemedicalexams](https://github.com/tsilva/parsemedicalexams) - Extract and summarize medical exam reports from PDFs
-- [gmailstream](https://github.com/tsilva/gmailstream) - Download Gmail messages matching filters to local files
-- [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
-- [capture](https://github.com/tsilva/capture) - Capture thoughts to Gmail with a single command
 - [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
-- [aiml-notebooks](https://github.com/tsilva/aiml-notebooks) - AI/ML Jupyter notebooks for learning deep learning concepts
-- [notebook2md](https://github.com/tsilva/notebook2md) - Convert Jupyter Notebooks to Markdown
+- [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
 - [demosim](https://github.com/tsilva/demosim) - Explore Portugal's demographic future with economic projections
 - [dedrive](https://github.com/tsilva/dedrive) - Find and manage duplicate files in Google Drive using MD5 checksums
+- [gmailstream](https://github.com/tsilva/gmailstream) - Download Gmail messages matching filters to local files
+- [pdfpress](https://github.com/tsilva/pdfpress) - Compress, merge, split, and unlock PDF files
 - [gymsolve](https://github.com/tsilva/gymsolve) - Fast RL framework with PPO and REINFORCE on Gymnasium
+- [capture](https://github.com/tsilva/capture) - Capture thoughts to Gmail with a single command
 - [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
 - [tsilva.eu](https://github.com/tsilva/tsilva.eu) - Personal landing page
 - [gmail2obsidian](https://github.com/tsilva/gmail2obsidian) - Flush Gmail threads into Obsidian task files
+- [mochimochi](https://github.com/tsilva/mochimochi) - CLI for curating Mochi flashcard decks with AI-powered deduplication
 - [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
 - [whatsapp-llm](https://github.com/tsilva/whatsapp-llm) - Bridge WhatsApp to AI for intelligent responses
+- [obsidian-agents-plugin](https://github.com/tsilva/obsidian-agents-plugin) - Launch AI agents from Obsidian vault
 - [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
 - [mcp-imagetools](https://github.com/tsilva/mcp-imagetools) - Image processing tools for Claude Code via MCP
-- [pdfpress](https://github.com/tsilva/pdfpress) - Compress, merge, split, and unlock PDF files
-- [obsidian-agents-plugin](https://github.com/tsilva/obsidian-agents-plugin) - Launch AI agents from Obsidian vault
 - [claudeskillz](https://github.com/tsilva/claudeskillz) - Modular skills that supercharge Claude Code
 - [popdesk](https://github.com/tsilva/popdesk) - Trigger Windows desktop notifications from anywhere via webhooks
 - [parsehealthlog](https://github.com/tsilva/parsehealthlog) - Transform health journal entries into structured data
 - [gymrec](https://github.com/tsilva/gymrec) - Record and replay Gymnasium gameplay as Hugging Face datasets
-- [mochidecks](https://github.com/tsilva/mochidecks) - Curated flashcard decks for AI/ML and data science
 - [repo2md](https://github.com/tsilva/repo2md) - Transform any repository into a single Markdown document
+- [notebook2md](https://github.com/tsilva/notebook2md) - Convert Jupyter Notebooks to Markdown
+- [aiml-notebooks](https://github.com/tsilva/aiml-notebooks) - AI/ML Jupyter notebooks for learning deep learning concepts
 - [repologogen](https://github.com/tsilva/repologogen) - Generate professional logos from the command line
-- [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
 - [homebrew-tap](https://github.com/tsilva/homebrew-tap) - Homebrew tap for installing tsilva projects
+- [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
+- [agentpong](https://github.com/tsilva/agentpong) - Desktop notifications that jump you to the right Claude Code window
+- [mochidecks](https://github.com/tsilva/mochidecks) - Curated flashcard decks for AI/ML and data science
 - [mcp-openrouter](https://github.com/tsilva/mcp-openrouter) - Access 300+ AI models through a single MCP server
 - [claudesk](https://github.com/tsilva/claudesk) - Interactive dashboard for launching Claude Code agents
-- [agentpong](https://github.com/tsilva/agentpong) - Desktop notifications that jump you to the right Claude Code window
 - [aerospace-setup](https://github.com/tsilva/aerospace-setup) - Portable Aerospace configuration with Cursor project switching
 - [archex](https://github.com/tsilva/archex) - Recursively extract archives from directory trees
 - [botty-mcbotface](https://github.com/tsilva/botty-mcbotface) - Gradio-powered AI chatbot with tools and memory
