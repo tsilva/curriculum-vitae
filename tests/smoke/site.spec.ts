@@ -26,6 +26,16 @@ async function routeGalleryRequests(page: Page) {
   });
 }
 
+async function routeHostedTelemetry(page: Page) {
+  await page.route("**/_vercel/**", async (route) => {
+    await route.fulfill({
+      status: 200,
+      contentType: "application/javascript",
+      body: "",
+    });
+  });
+}
+
 function trackBrowserIssues(page: Page) {
   const consoleErrors: string[] = [];
   const requestFailures: string[] = [];
@@ -60,6 +70,7 @@ function trackBrowserIssues(page: Page) {
 }
 
 test("desktop smoke flow covers modals, gallery, and R2 assets", async ({ page }) => {
+  await routeHostedTelemetry(page);
   await routeGalleryRequests(page);
   const assertNoBrowserIssues = trackBrowserIssues(page);
 
@@ -121,6 +132,7 @@ test("desktop smoke flow covers modals, gallery, and R2 assets", async ({ page }
 });
 
 test("gallery falls back to inline video previews when thumbnails are unavailable", async ({ page }) => {
+  await routeHostedTelemetry(page);
   await routeGalleryRequests(page);
   const assertNoBrowserIssues = trackBrowserIssues(page);
 
@@ -157,6 +169,7 @@ test("mobile navigation renders and updates the URL hash", async ({ browser }) =
     viewport: { width: 390, height: 844 },
   });
   const page = await context.newPage();
+  await routeHostedTelemetry(page);
   const assertNoBrowserIssues = trackBrowserIssues(page);
 
   await page.goto("http://127.0.0.1:4173/");

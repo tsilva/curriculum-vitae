@@ -2,7 +2,6 @@
   "name": "cv-tsilva",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@10.27.0",
   "scripts": {
     "dev": "GIT_COMMIT_HASH=$(git rev-parse --short HEAD) node ../scripts/dev-server.mjs next dev",
     "build": "export GIT_COMMIT_HASH=$([ -n \"$VERCEL_GIT_COMMIT_SHA\" ] && echo \"${VERCEL_GIT_COMMIT_SHA:0:7}\" || git rev-parse --short HEAD) && npm run assemble && npm run generate:cv && next build",
@@ -10,11 +9,12 @@
     "sync": "npm run fetch:github && npm run assemble && npm run generate:cv",
     "start": "node ../scripts/dev-server.mjs next start",
     "lint": "eslint . --max-warnings=0",
-    "assemble": "GALLERY_MODE=r2 npx tsx ../scripts/assemble-cv-data.ts",
-    "assemble:local": "GALLERY_MODE=local npx tsx ../scripts/assemble-cv-data.ts",
-    "generate:cv": "npx tsx ../scripts/generate-cv.ts",
-    "fetch:github": "npx tsx ../scripts/fetch-github.ts",
-    "stats": "npx tsx ../scripts/count-technologies.ts"
+    "typecheck": "tsc --noEmit",
+    "assemble": "GALLERY_MODE=r2 tsx ../scripts/assemble-cv-data.ts",
+    "assemble:local": "GALLERY_MODE=local tsx ../scripts/assemble-cv-data.ts",
+    "generate:cv": "tsx ../scripts/generate-cv.ts",
+    "fetch:github": "tsx ../scripts/fetch-github.ts",
+    "stats": "tsx ../scripts/count-technologies.ts"
   },
   "dependencies": {
     "@sentry/nextjs": "^10.45.0",
