@@ -15,7 +15,7 @@ This CV is detailed and comprehensive—it's more suited for running through you
 
 ## 🔐 VaultHaus
 
-- **Duration:** May 2024 - Present · 2 years and 4 months
+- **Duration:** May 2024 - Present · 2 years and 5 months
 - **Role:** AI Research Engineer (Full-time)
 - **Location:** Porto, Portugal · Onsite 🏢
 
@@ -66,7 +66,7 @@ Rocksauce Studios was a mobile app development company that specialized in creat
 
 ## 🌍 <a href="https://www.toptal.com/" target="_blank">Toptal</a>
 
-- **Duration:** Apr 2012 - Present · 14 years and 5 months
+- **Duration:** Apr 2012 - Present · 14 years and 6 months
 - **Role:** Senior Software Engineer
 - **Location:** Remote 🌍
 
@@ -612,7 +612,7 @@ The website was developed based on pre-existing design specifications. I develop
 
 ---
 
-## 📝 <a href="https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7" target="_blank">SpeakWrite</a>
+## 📝 <a href="https://photos.app.goo.gl/53FXNdxeBmqoqXzs7" target="_blank">SpeakWrite</a>
 
 - **TLDR:** iOS Audio Transcribing Application
 - **Start:** 2015
@@ -1051,7 +1051,7 @@ I developed core features of the game and created the artificial intelligence fo
 
 ---
 
-## 🏫 <a href="https://photos.app.goo.gl/PNSdpTtKAb8t4bkr5" target="_blank">Schoooools</a>
+## 🏫 <a href="https://photos.google.com/share/AF1QipMwLYokunkp_Vzdhb_thq7P_ACDArJBrS1-Vfs6y3uejob-RZgj4DKVCBdCJPFbDQ?key=cGFoN0ZQQk81ZDFmQnZYbWlHOWl5Q3NucDNUWHpR" target="_blank">Schoooools</a>
 
 - **TLDR:** Social Network for Schools
 - **Start:** 2010
@@ -1063,7 +1063,7 @@ Schoooools is a platform that provides personal and social learning spaces, fost
 
 I developed core features such as action tracking, analytics, and classroom management tools. Additionally, I created a cross-platform mobile application for the service using PhoneGap.
 
-- <a href="https://photos.app.goo.gl/PNSdpTtKAb8t4bkr5" target="_blank">Gallery</a>
+- <a href="https://photos.google.com/share/AF1QipMwLYokunkp_Vzdhb_thq7P_ACDArJBrS1-Vfs6y3uejob-RZgj4DKVCBdCJPFbDQ?key=cGFoN0ZQQk81ZDFmQnZYbWlHOWl5Q3NucDNUWHpR" target="_blank">Gallery</a>
 
 ---
 

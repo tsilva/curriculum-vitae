@@ -1,7 +1,7 @@
 ---
 emoji: 📝
 title: SpeakWrite
-headingUrl: https://photos.app.goo.gl/u9VWTn8S3DpYZgMJ7
+headingUrl: https://photos.app.goo.gl/53FXNdxeBmqoqXzs7
 tldr: iOS Audio Transcribing Application
 start: '2015'
 client: Rocksauce Studios (through Toptal)

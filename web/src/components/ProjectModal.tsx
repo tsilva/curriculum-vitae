@@ -193,7 +193,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                     // Skip Gallery links if project has gallery (shown via Gallery button instead)
                     if (project.gallery && project.gallery.length > 0) {
                       if (link.label.toLowerCase().includes('gallery')) return false;
-                      if (link.url.includes('photos.app.goo.gl')) return false;
+                      if (/photos\.(app\.goo\.gl|google\.com)/.test(link.url)) return false;
                     }
                     return true;
                   })
