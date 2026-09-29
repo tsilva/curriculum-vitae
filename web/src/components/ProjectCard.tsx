@@ -45,7 +45,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
         <div className="flex gap-3">
           {project.links.length > 0 && project.links.slice(0, 3).map((link) => {
           // Skip Google Photos links if we have local gallery (shown in modal instead)
-          if (project.gallery && project.gallery.length > 0 && link.url.includes('photos.app.goo.gl')) {
+          if (project.gallery && project.gallery.length > 0 && /photos\.(app\.goo\.gl|google\.com)/.test(link.url)) {
             return null;
           }
           // SVG icons matching Hero component style
@@ -58,7 +58,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
                 </svg>
               );
             }
-            if (url.includes('photos.app.goo.gl') || label.toLowerCase().includes('gallery')) {
+            if (/photos\.(app\.goo\.gl|google\.com)/.test(url) || label.toLowerCase().includes('gallery')) {
               // Skip gallery icons - shown in modal instead
               return null;
             }
