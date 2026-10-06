@@ -6,7 +6,13 @@
     "links": "CHECK_EXTERNAL_LINKS=1 playwright test tests/smoke/links.spec.ts",
     "smoke": "playwright test",
     "security:check": "node scripts/check-dependency-sources.mjs && npm --prefix web audit --audit-level=low",
-    "verify": "pnpm run security:check && npm --prefix web run lint && npm --prefix web run typecheck && npm --prefix web run build && pnpm run smoke"
+    "verify": "pnpm run security:check && npm --prefix web run lint && npm --prefix web run typecheck && npm --prefix web run build && pnpm run smoke",
+    "dev": "python3 scripts/infisical/run.py dev",
+    "build:secrets": "python3 scripts/infisical/run.py build",
+    "start:secrets": "python3 scripts/infisical/run.py start",
+    "secrets:check": "python3 scripts/infisical/run.py check",
+    "secrets:migrate": "python3 scripts/infisical/migrate_keyenv.py",
+    "test:secrets": "python3 -m unittest discover -s scripts/infisical -p test_secrets.py"
   },
   "devDependencies": {
     "@playwright/test": "^1.58.2"

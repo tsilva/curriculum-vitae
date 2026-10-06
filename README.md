@@ -17,10 +17,10 @@ git clone https://github.com/tsilva/curriculum-vitae.git
 cd curriculum-vitae
 pnpm install
 npm --prefix web ci
-npm --prefix web run dev -- --port auto
+pnpm dev --port auto
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open the random localhost URL printed by the dev server.
 
 ## Commands
 
@@ -48,14 +48,6 @@ pnpm run verify                # lint, build, and run smoke tests
 - Root Sentry issue tooling reads `SENTRY_AUTH_TOKEN`, `SENTRY_ORG`, `SENTRY_PROJECT`, and `SENTRY_BASE_URL` from `.env`.
 - The Next.js app is configured for static export with unoptimized images. `vercel.json` sets security/cache headers, redirects `tsilva.eu` to `www.tsilva.eu`, and proxies `/galleries/*` to the R2 gallery host.
 - Root browser tooling uses `pnpm@10.27.0`; the Vercel web app uses npm with a committed lockfile.
-
-## Local credentials
-
-Private local values declared in `.keyenv.toml` live in macOS Keychain. Run
-`keyenv doctor` to verify them and launch credential-dependent commands with
-`keyenv run -- <command>`. Python, Node, and their child processes receive the
-values through their normal environment APIs. Keep only public or non-secret
-configuration in dotenv files.
 
 ## Architecture
 

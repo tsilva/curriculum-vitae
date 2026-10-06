@@ -276,3 +276,7 @@ Use this skill when enabling, repairing, or validating Sentry in this repository
 
 ### cv-hiring-review
 Use this project-level Codex skill when reviewing the CV/site from multiple hiring perspectives to create a private hiring and compensation action report. The skill lives at `.codex/skills/cv-hiring-review/SKILL.md` and writes reports to `.hiring-review/YYYY-MM-DD.md` unless explicitly run in read-only/dry-run mode.
+
+## Secrets
+
+Use Infisical `curriculum-vitae` Development `/` for local private credentials, and `curriculum-vitae-production` Production `/` for the Vercel Production sync. Default web dev loads secrets through the repository wrapper; use `build:secrets` for local Sentry source-map uploads. Never print credential values or upload local dotenv credential files. Preserve existing Keychain originals until verified provider rotation.

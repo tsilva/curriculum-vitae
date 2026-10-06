@@ -36,23 +36,55 @@ export function Nav() {
   };
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            setActive(entry.target.id);
-          }
-        }
-      },
-      { rootMargin: "-40% 0px -55% 0px" }
-    );
+    let frame = 0;
 
-    for (const section of sections) {
-      const el = document.getElementById(section.id);
-      if (el) observer.observe(el);
+    const updateActive = () => {
+      frame = 0;
+      const marker = window.innerHeight * 0.45;
+      let current = sections[0].id;
+
+      for (const section of sections) {
+        const el = document.getElementById(section.id);
+        if (el && el.getBoundingClientRect().top <= marker) {
+          current = section.id;
+        }
+      }
+
+      // The final section can be too short to reach the viewport marker.
+      if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
+        const lastSection = [...sections].reverse().find(({ id }) => document.getElementById(id));
+        if (lastSection) current = lastSection.id;
+      }
+
+      setActive(current);
+    };
+
+    const scheduleUpdate = () => {
+      if (!frame) frame = window.requestAnimationFrame(updateActive);
+    };
+
+    const main = document.querySelector("main");
+    const observer = new MutationObserver(() => {
+      scheduleUpdate();
+      if (sections.every(({ id }) => document.getElementById(id))) {
+        observer.disconnect();
+      }
+    });
+
+    if (main && !sections.every(({ id }) => document.getElementById(id))) {
+      observer.observe(main, { childList: true, subtree: true });
     }
 
-    return () => observer.disconnect();
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate);
+    scheduleUpdate();
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", scheduleUpdate);
+      window.removeEventListener("resize", scheduleUpdate);
+      if (frame) window.cancelAnimationFrame(frame);
+    };
   }, []);
 
   return (

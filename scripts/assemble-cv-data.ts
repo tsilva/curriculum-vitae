@@ -118,7 +118,16 @@ function scanGalleries(): Map<string, GalleryMedia[]> {
   const galleryMap = new Map<string, GalleryMedia[]>();
   const galleryOrder = readGalleryOrder();
   const baseUrl = getGalleryBaseUrl();
-  const hasLocal = fs.existsSync(galleriesPath);
+  // Upload tools may preserve empty ignored directories. Use the saved R2
+  // manifest when no local gallery contains media, rather than dropping galleries.
+  const hasLocal = fs.existsSync(galleriesPath) &&
+    fs.readdirSync(galleriesPath, { withFileTypes: true }).some((entry) =>
+      entry.isDirectory() && !entry.name.startsWith("_") &&
+      fs.readdirSync(path.join(galleriesPath, entry.name)).some((filename) => {
+        const extension = path.extname(filename).toLowerCase();
+        return IMAGE_EXTENSIONS.includes(extension) || VIDEO_EXTENSIONS.includes(extension);
+      }),
+    );
 
   if (!hasLocal && GALLERY_MODE === "r2" && fs.existsSync(MANIFEST_PATH)) {
     console.log("Using galleries manifest for R2 mode");

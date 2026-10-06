@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "GIT_COMMIT_HASH=$(git rev-parse --short HEAD) node ../scripts/dev-server.mjs next dev",
+    "dev": "python3 ../scripts/infisical/run.py dev",
     "build": "export GIT_COMMIT_HASH=$([ -n \"$VERCEL_GIT_COMMIT_SHA\" ] && echo \"${VERCEL_GIT_COMMIT_SHA:0:7}\" || git rev-parse --short HEAD) && npm run assemble && npm run generate:cv && next build",
     "build:local": "GALLERY_MODE=local npm run build",
     "sync": "npm run fetch:github && npm run assemble && npm run generate:cv",
@@ -14,13 +14,16 @@
     "assemble:local": "GALLERY_MODE=local tsx ../scripts/assemble-cv-data.ts",
     "generate:cv": "tsx ../scripts/generate-cv.ts",
     "fetch:github": "tsx ../scripts/fetch-github.ts",
-    "stats": "tsx ../scripts/count-technologies.ts"
+    "stats": "tsx ../scripts/count-technologies.ts",
+    "dev:app": "GIT_COMMIT_HASH=$(git rev-parse --short HEAD) node ../scripts/dev-server.mjs next dev",
+    "build:secrets": "python3 ../scripts/infisical/run.py build",
+    "start:secrets": "python3 ../scripts/infisical/run.py start"
   },
   "dependencies": {
     "@sentry/nextjs": "^10.45.0",
     "@vercel/analytics": "^1.6.1",
     "@vercel/speed-insights": "^1.3.1",
-    "next": "^16.3.0",
+    "next": "16.3.6",
     "photoswipe": "^5.4.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -32,7 +35,7 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "eslint": "^9.0.0",
-    "eslint-config-next": "^16.3.0",
+    "eslint-config-next": "16.3.6",
     "gray-matter": "^4.0.3",
     "postcss": "^8.0.0",
     "tailwindcss": "^4.0.0",
@@ -41,6 +44,7 @@
   },
   "overrides": {
     "next": "$next",
-    "postcss": "$postcss"
+    "postcss": "$postcss",
+    "source-map-js": "1.2.2"
   }
 }
