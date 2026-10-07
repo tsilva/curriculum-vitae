@@ -18,6 +18,7 @@ export interface GalleryMedia {
   thumbnail?: string;
   projectId?: string;
   projectTitle?: string;
+  projectYear?: string;
   projectEmoji?: string;
 }
 

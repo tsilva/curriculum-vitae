@@ -321,6 +321,7 @@ export function MainGallery() {
         ...media,
         projectId: project.id,
         projectTitle: project.title,
+        projectYear: project.start,
         projectEmoji: project.emoji,
       }))
     );

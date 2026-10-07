@@ -1,7 +1,7 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 
-import { Fragment, useEffect, useState, useRef, memo, useCallback, useId, useMemo } from "react";
+import { Fragment, useEffect, useState, useRef, memo, useCallback, useId, useMemo, type RefObject } from "react";
 import { createPortal } from "react-dom";
 import type { Project, GalleryMedia } from "@/types/cv";
 import PhotoSwipe from "photoswipe";
@@ -13,50 +13,136 @@ interface GalleryModalProps {
   onClose: () => void;
 }
 
-// Memoized grid item with lazy loading
-const GridItem = memo(({ media, index, onClick }: { media: GalleryMedia; index: number; onClick: () => void }) => {
-  const [isInView, setIsInView] = useState(false);
+type MediaRegistration = {
+  load: () => void;
+  loaded: boolean;
+  setVisible?: (visible: boolean) => void;
+};
+
+// One pair of observers per gallery, rather than one observer per thumbnail.
+function useGalleryLoading(rootRef: RefObject<HTMLDivElement | null>, isOpen: boolean) {
+  const registrations = useRef(new Map<Element, MediaRegistration>());
+  const preloadObserver = useRef<IntersectionObserver | null>(null);
+  const visibilityObserver = useRef<IntersectionObserver | null>(null);
+
+  const registerMedia = useCallback((element: Element, load: () => void, setVisible?: (visible: boolean) => void) => {
+    registrations.current.set(element, { load, loaded: false, setVisible });
+    preloadObserver.current?.observe(element);
+    if (setVisible) visibilityObserver.current?.observe(element);
+
+    return () => {
+      registrations.current.delete(element);
+      preloadObserver.current?.unobserve(element);
+      visibilityObserver.current?.unobserve(element);
+    };
+  }, []);
+
+  useEffect(() => {
+    const root = rootRef.current;
+    if (!isOpen || !root) return;
+
+    visibilityObserver.current = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => registrations.current.get(entry.target)?.setVisible?.(entry.isIntersecting));
+    }, { root });
+
+    registrations.current.forEach((registration, element) => {
+      if (registration.setVisible) visibilityObserver.current?.observe(element);
+    });
+
+    const updatePreloadWindow = () => {
+      preloadObserver.current?.disconnect();
+      // Keep half a screen behind and one and a half screens ahead ready.
+      // The actual scroll container must be the root, otherwise it clips the buffer.
+      const height = root.clientHeight;
+      preloadObserver.current = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          const registration = registrations.current.get(entry.target);
+          if (!entry.isIntersecting || !registration || registration.loaded) return;
+          registration.loaded = true;
+          registration.load();
+          preloadObserver.current?.unobserve(entry.target);
+        });
+      }, { root, rootMargin: `${Math.round(height * 0.5)}px 0px ${Math.round(height * 1.5)}px 0px` });
+
+      registrations.current.forEach((registration, element) => {
+        if (!registration.loaded) preloadObserver.current?.observe(element);
+      });
+    };
+
+    updatePreloadWindow();
+    const resizeObserver = new ResizeObserver(updatePreloadWindow);
+    resizeObserver.observe(root);
+
+    return () => {
+      resizeObserver.disconnect();
+      preloadObserver.current?.disconnect();
+      visibilityObserver.current?.disconnect();
+      preloadObserver.current = null;
+      visibilityObserver.current = null;
+    };
+  }, [isOpen, rootRef]);
+
+  return registerMedia;
+}
+
+const GridItem = memo(({ media, index, onOpen, registerMedia }: {
+  media: GalleryMedia;
+  index: number;
+  onOpen: (index: number) => void;
+  registerMedia: ReturnType<typeof useGalleryLoading>;
+}) => {
+  const [shouldLoad, setShouldLoad] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLButtonElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     if (!ref.current) return;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsInView(true);
-          observer.disconnect();
-        }
-      },
-      { rootMargin: "100px" }
+    return registerMedia(
+      ref.current,
+      () => setShouldLoad(true),
+      media.type === "video" ? setIsVisible : undefined,
     );
-    observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
+  }, [media.type, registerMedia]);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    if (isVisible) {
+      video.play().catch(() => { /* The play button still opens the full player. */ });
+    } else {
+      video.pause();
+    }
+  }, [isVisible, shouldLoad]);
 
   return (
     <button
       type="button"
       ref={ref}
-      onClick={onClick}
+      onClick={() => onOpen(index)}
       aria-label={`Open gallery item ${index + 1}${media.projectTitle ? ` from ${media.projectTitle}` : ""}`}
       className="relative aspect-square bg-surface border border-cyan/10 rounded-sm overflow-hidden group hover:border-cyan/40 transition-all hover:shadow-[0_0_20px_rgba(0,230,230,0.1)] cursor-pointer"
     >
       {media.type === 'image' ? (
-        isInView ? (
-          <img src={media.path} alt={media.filename} className="w-full h-full object-cover transition-transform group-hover:scale-105" loading="lazy" decoding="async" />
+        shouldLoad ? (
+          <img src={media.path} alt={media.filename} className="w-full h-full object-cover transition-transform group-hover:scale-105" loading="eager" decoding="async" />
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-surface">
             <div className="font-[family-name:var(--font-mono)] text-cyan/30 text-xs">Loading...</div>
           </div>
         )
-      ) : isInView ? (
+      ) : shouldLoad ? (
         <div className="relative w-full h-full bg-black">
+          {media.thumbnail && (
+            <img src={media.thumbnail} alt="" className="absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async" />
+          )}
           <video
-            src={media.path}
-            className="pointer-events-none w-full h-full object-cover transition-transform group-hover:scale-105"
-            autoPlay
+            ref={videoRef}
+            src={isVisible ? media.path : undefined}
+            poster={media.thumbnail}
+            className="relative pointer-events-none w-full h-full object-cover transition-transform group-hover:scale-105"
             loop
-            preload="metadata"
+            preload="none"
             muted
             playsInline
             aria-hidden="true"
@@ -96,6 +182,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
       key: string;
       groupKey: string;
       title: string;
+      year?: string;
       emoji?: string;
       startIndex: number;
       items: GalleryMedia[];
@@ -115,6 +202,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
             key: `${key}:${itemCount}`,
             groupKey: key,
             title: title ?? project?.title ?? "Gallery",
+            year: media.projectYear,
             emoji: media.projectEmoji,
             startIndex: itemCount,
             items: [media],
@@ -128,6 +216,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
         key: `${key}:${itemCount}`,
         groupKey: key,
         title,
+        year: media.projectYear,
         emoji: media.projectEmoji,
         startIndex: itemCount,
         items: [media],
@@ -138,6 +227,8 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
     return sections;
   }, [gallery, project?.title]);
   const dialogRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const registerMedia = useGalleryLoading(scrollRef, !!project && gallery.length > 0);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const titleId = useId();
 
@@ -286,7 +377,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
           <div className="flex items-center gap-3">
             <span className="text-cyan text-xl">{project.emoji}</span>
             <div>
-              <h2 id={titleId} className="font-[family-name:var(--font-display)] text-lg font-bold text-cool-white">{project.title}</h2>
+              <h2 id={titleId} className="font-[family-name:var(--font-display)] text-lg font-bold text-cool-white">{project.title}{project.start && ` (${project.start})`}</h2>
               <p className="font-[family-name:var(--font-mono)] text-xs text-steel-dim">
                 <span className="text-cyan">GALLERY://</span> {gallery.length} items
               </p>
@@ -303,7 +394,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
         </div>
 
         {/* Grid View */}
-        <div className="flex-1 overflow-y-auto p-4 md:p-6">
+        <div ref={scrollRef} className="flex-1 min-h-0 overflow-y-auto overscroll-contain p-4 md:p-6">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 content-visibility-auto max-w-7xl mx-auto">
             {gallerySections.map((section) => (
               <Fragment key={section.key}>
@@ -312,6 +403,7 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
                     <h3 className="flex min-w-0 items-center gap-2 font-[family-name:var(--font-display)] text-sm font-bold uppercase tracking-normal text-cyan">
                       {section.emoji && <span className="shrink-0 text-lg">{section.emoji}</span>}
                       <span className="truncate">{section.title}</span>
+                      {section.year && <span className="shrink-0">({section.year})</span>}
                       <span className="shrink-0 font-[family-name:var(--font-mono)] text-xs font-normal text-steel-dim">
                         [{section.items.length}]
                       </span>
@@ -325,7 +417,8 @@ export function GalleryModal({ project, onClose }: GalleryModalProps) {
                       key={`${media.projectId ?? project.id}:${media.filename}`}
                       media={media}
                       index={index}
-                      onClick={() => openLightbox(index)}
+                      onOpen={openLightbox}
+                      registerMedia={registerMedia}
                     />
                   );
                 })}

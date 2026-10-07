@@ -39,6 +39,7 @@ export function Projects() {
         ...media,
         projectId: project.id,
         projectTitle: project.title,
+        projectYear: project.start,
         projectEmoji: project.emoji,
       }))
     );
