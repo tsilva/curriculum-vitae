@@ -1,0 +1,18 @@
+{
+  "repository": "tsilva/curriculum-vitae",
+  "githubRepositoryId": 751968666,
+  "identityId": "672c01c3-c025-40f9-b89b-5abcc03e8261",
+  "infisicalProjectId": "a9af1319-4c51-4055-86f0-9f537d32b8b7",
+  "secretNames": [
+    "NEXT_PUBLIC_GA_MEASUREMENT_ID",
+    "NEXT_PUBLIC_SENTRY_DSN",
+    "SENTRY_AUTH_TOKEN",
+    "SENTRY_BASE_URL",
+    "SENTRY_ORG",
+    "SENTRY_PROJECT"
+  ],
+  "destination": "vercel",
+  "vercelProjectId": "prj_r3jpAdDLcGZ4u6N7kvmjwXLZh2kN",
+  "vercelProjectName": "curriculum-vitae",
+  "vercelTeamId": "team_eE2Iv7IMqPOx8ZVN2xNfR2f0"
+}

@@ -18,7 +18,9 @@ export function readFrontmatterFiles(
     .filter((f) => f.endsWith(".md"))
     .map((f) => {
       const raw = fs.readFileSync(path.join(dir, f), "utf-8");
-      const parsed = matter(raw);
+      const parsed = matter(raw, {
+        engines: { yaml: (source: string) => jsYaml.load(source) },
+      });
       return {
         id: path.basename(f, ".md"),
         data: parsed.data,

@@ -78,6 +78,8 @@ test("desktop smoke flow covers modals, gallery, and R2 assets", async ({ page }
   await expect(page.getByRole("heading", { name: /tiago silva/i })).toBeVisible();
   await expect(page.getByText(/fullstack software engineer/i)).toBeVisible();
 
+  await page.locator("#projects").scrollIntoViewIfNeeded();
+
   const projectCard = page.getByRole("button", { name: /open details for help agent/i });
   await expect(projectCard).toBeVisible();
   await projectCard.focus();
@@ -145,6 +147,8 @@ test("gallery falls back to inline video previews when thumbnails are unavailabl
   });
 
   await page.goto("/");
+
+  await page.locator("#projects").scrollIntoViewIfNeeded();
 
   const projectCard = page.getByRole("button", { name: /open details for help agent/i });
   await expect(projectCard).toBeVisible();

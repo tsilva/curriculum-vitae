@@ -151,5 +151,8 @@
       "source": "/galleries/:path*",
       "destination": "https://curriculum-vitae-r2.tsilva.eu/galleries/:path*"
     }
-  ]
+  ],
+  "git": {
+    "deploymentEnabled": false
+  }
 }
