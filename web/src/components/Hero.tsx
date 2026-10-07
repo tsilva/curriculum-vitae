@@ -41,23 +41,16 @@ const socialLinks = [
     label: "Hugging Face",
     url: "https://huggingface.co/tsilva",
     icon: (
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="w-5 h-5"
-      >
-        <circle cx="12" cy="11" r="6.75" />
-        <circle cx="9.25" cy="9.5" r="0.85" fill="currentColor" stroke="none" />
-        <circle cx="14.75" cy="9.5" r="0.85" fill="currentColor" stroke="none" />
-        <path d="M9 13.1c.8.95 2 1.45 3 1.45s2.2-.5 3-1.45" />
-        <path d="M6.4 13.8c.9-.95 2.1-1.5 3.35-1.5" />
-        <path d="M17.6 13.8c-.9-.95-2.1-1.5-3.35-1.5" />
-        <path d="M8 16.85c1.15 1.1 2.55 1.65 4 1.65s2.85-.55 4-1.65" />
-      </svg>
+      <span
+        aria-hidden="true"
+        className="block w-6 h-6 -m-0.5 bg-current"
+        style={{
+          maskImage: `url("${versionedAssetPath('/hugging-face.svg')}")`,
+          maskSize: "contain",
+          maskPosition: "center",
+          maskRepeat: "no-repeat",
+        }}
+      />
     ),
   },
   {
@@ -66,24 +59,6 @@ const socialLinks = [
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
         <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-      </svg>
-    ),
-  },
-  {
-    label: "Portfolio",
-    url: "https://photos.app.goo.gl/QQkFqqXiNBvnRaZm6",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-        <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" />
-      </svg>
-    ),
-  },
-  {
-    label: "Podcast",
-    url: "https://drive.google.com/file/d/1mI_kDTRpEhqn0xzEg1lQjEodMI0tZ_hB/view?usp=sharing",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3zm-1 14.93A5.002 5.002 0 0 1 7 11h2a3 3 0 0 0 6 0h2a5.002 5.002 0 0 1-4 4.93V19h3v2H8v-2h3v-3.07z" />
       </svg>
     ),
   },
