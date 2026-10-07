@@ -1,10 +1,14 @@
-<div align="center">
+<p align="center">
   <img src="readme-logo.png" alt="curriculum-vitae markdown logo" width="512"/>
+  <br />
+  <!-- repo-tagline:start -->
+  <strong>👋 Explore my software engineering career and shipped projects 💻</strong>
+  <!-- repo-tagline:end -->
+</p>
 
-  **A software engineer CV and interactive web experience covering 20+ years of work across 60+ shipped projects**
+**A software engineer CV and interactive web experience covering 20+ years of work across 60+ shipped projects**
 
   [Live Site](https://www.tsilva.eu)
-</div>
 
 curriculum-vitae is the source repository for Tiago Silva's CV. It keeps the long-form professional history in structured Markdown files and publishes it as both a generated `CV.md` and a static Next.js website.
 
