@@ -60,3 +60,11 @@ pnpm run verify                # lint, build, and run smoke tests
 ## License
 
 [MIT](LICENSE)
+
+### Generated duration checks
+
+`npm --prefix web run test:data` verifies the shared CV duration formatter.
+Ongoing roles report elapsed calendar months; completed month-granularity
+periods retain inclusive end-month counting. Tenures shorter than a year
+report months, and same-month ongoing roles report less than one month.
+Both CV.md and the web data are regenerated through their existing scripts.

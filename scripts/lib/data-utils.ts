@@ -88,7 +88,8 @@ function hasMonthPrecision(value: string): boolean {
 }
 
 function formatYearMonthDuration(totalMonths: number): string {
-  if (totalMonths < 12) return "1 year";
+  if (totalMonths === 0) return "Less than 1 month";
+  if (totalMonths < 12) return `${totalMonths} month${totalMonths === 1 ? "" : "s"}`;
 
   const years = Math.floor(totalMonths / 12);
   const months = totalMonths % 12;
@@ -112,7 +113,12 @@ export function formatDurationLength(
   const end = parseDurationPoint(endRaw, referenceDate);
   if (!start || !end) return undefined;
 
-  const inclusiveMonth = hasMonthPrecision(startRaw) && hasMonthPrecision(endRaw) ? 1 : 0;
+  // Completed month-granularity periods include their final month. Present
+  // represents elapsed time, so the current month must not be added again.
+  const inclusiveMonth =
+    hasMonthPrecision(startRaw) && hasMonthPrecision(endRaw) && !/^present$/i.test(endRaw.trim())
+      ? 1
+      : 0;
   const totalMonths = (end.year - start.year) * 12 + (end.month - start.month) + inclusiveMonth;
   return formatYearMonthDuration(Math.max(0, totalMonths));
 }

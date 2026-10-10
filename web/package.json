@@ -17,7 +17,8 @@
     "stats": "tsx ../scripts/count-technologies.ts",
     "dev:app": "GIT_COMMIT_HASH=$(git rev-parse --short HEAD) node ../scripts/dev-server.mjs next dev",
     "build:secrets": "python3 ../scripts/infisical/run.py build",
-    "start:secrets": "python3 ../scripts/infisical/run.py start"
+    "start:secrets": "python3 ../scripts/infisical/run.py start",
+    "test:data": "tsx --test ../scripts/lib/data-utils.test.ts"
   },
   "dependencies": {
     "@sentry/nextjs": "^10.45.0",

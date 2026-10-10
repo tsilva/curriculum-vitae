@@ -54,6 +54,9 @@ jobs:
       - name: Lint
         run: npm --prefix web run lint
 
+      - name: Test data generators
+        run: npm --prefix web run test:data
+
       - name: Type-check
         run: npm --prefix web run typecheck
 

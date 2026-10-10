@@ -15,7 +15,7 @@ This CV is detailed and comprehensive—it's more suited for running through you
 
 ## 🔐 VaultHaus
 
-- **Duration:** May 2024 - Present · 2 years and 6 months
+- **Duration:** May 2024 - Present · 2 years and 5 months
 - **Role:** AI Research Engineer (Full-time)
 - **Location:** Porto, Portugal · Onsite 🏢
 
@@ -66,7 +66,7 @@ Rocksauce Studios was a mobile app development company that specialized in creat
 
 ## 🌍 <a href="https://www.toptal.com/" target="_blank">Toptal</a>
 
-- **Duration:** Apr 2012 - Present · 14 years and 7 months
+- **Duration:** Apr 2012 - Present · 14 years and 6 months
 - **Role:** Senior Software Engineer
 - **Location:** Remote 🌍
 
