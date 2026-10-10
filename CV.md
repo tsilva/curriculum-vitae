@@ -1228,49 +1228,49 @@ Computer Capers was a video game I developed at 12 years old and submitted to a 
 
 Open source projects and contributions.
 
-- [parsemedicalexams](https://github.com/tsilva/parsemedicalexams) - Extract and summarize medical exam reports from PDFs
-- [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
-- [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
-- [demosim](https://github.com/tsilva/demosim) - Explore Portugal's demographic future with economic projections
-- [dedrive](https://github.com/tsilva/dedrive) - Find and manage duplicate files in Google Drive using MD5 checksums
-- [gmailstream](https://github.com/tsilva/gmailstream) - Download Gmail messages matching filters to local files
-- [pdfpress](https://github.com/tsilva/pdfpress) - Compress, merge, split, and unlock PDF files
-- [gymsolve](https://github.com/tsilva/gymsolve) - Fast RL framework with PPO and REINFORCE on Gymnasium
-- [capture](https://github.com/tsilva/capture) - Capture thoughts to Gmail with a single command
-- [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
-- [tsilva.eu](https://github.com/tsilva/tsilva.eu) - Personal landing page
-- [gmail2obsidian](https://github.com/tsilva/gmail2obsidian) - Flush Gmail threads into Obsidian task files
-- [mochimochi](https://github.com/tsilva/mochimochi) - CLI for curating Mochi flashcard decks with AI-powered deduplication
-- [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
-- [whatsapp-llm](https://github.com/tsilva/whatsapp-llm) - Bridge WhatsApp to AI for intelligent responses
-- [obsidian-agents-plugin](https://github.com/tsilva/obsidian-agents-plugin) - Launch AI agents from Obsidian vault
-- [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
-- [mcp-imagetools](https://github.com/tsilva/mcp-imagetools) - Image processing tools for Claude Code via MCP
-- [claudeskillz](https://github.com/tsilva/claudeskillz) - Modular skills that supercharge Claude Code
-- [popdesk](https://github.com/tsilva/popdesk) - Trigger Windows desktop notifications from anywhere via webhooks
-- [parsehealthlog](https://github.com/tsilva/parsehealthlog) - Transform health journal entries into structured data
-- [gymrec](https://github.com/tsilva/gymrec) - Record and replay Gymnasium gameplay as Hugging Face datasets
-- [repo2md](https://github.com/tsilva/repo2md) - Transform any repository into a single Markdown document
 - [notebook2md](https://github.com/tsilva/notebook2md) - Convert Jupyter Notebooks to Markdown
+- [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
+- [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
+- [mochimochi](https://github.com/tsilva/mochimochi) - CLI for curating Mochi flashcard decks with AI-powered deduplication
+- [demosim](https://github.com/tsilva/demosim) - Explore Portugal's demographic future with economic projections
+- [mcp-imagetools](https://github.com/tsilva/mcp-imagetools) - Image processing tools for Claude Code via MCP
+- [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
+- [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
 - [aiml-notebooks](https://github.com/tsilva/aiml-notebooks) - AI/ML Jupyter notebooks for learning deep learning concepts
+- [gmailstream](https://github.com/tsilva/gmailstream) - Download Gmail messages matching filters to local files
+- [capture](https://github.com/tsilva/capture) - Capture thoughts to Gmail with a single command
 - [repologogen](https://github.com/tsilva/repologogen) - Generate professional logos from the command line
-- [homebrew-tap](https://github.com/tsilva/homebrew-tap) - Homebrew tap for installing tsilva projects
-- [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
-- [agentpong](https://github.com/tsilva/agentpong) - Desktop notifications that jump you to the right Claude Code window
-- [mochidecks](https://github.com/tsilva/mochidecks) - Curated flashcard decks for AI/ML and data science
+- [repo2md](https://github.com/tsilva/repo2md) - Transform any repository into a single Markdown document
 - [mcp-openrouter](https://github.com/tsilva/mcp-openrouter) - Access 300+ AI models through a single MCP server
-- [claudesk](https://github.com/tsilva/claudesk) - Interactive dashboard for launching Claude Code agents
+- [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
+- [popdesk](https://github.com/tsilva/popdesk) - Trigger Windows desktop notifications from anywhere via webhooks
+- [pdfpress](https://github.com/tsilva/pdfpress) - Compress, merge, split, and unlock PDF files
+- [parsehealthlog](https://github.com/tsilva/parsehealthlog) - Transform health journal entries into structured data
+- [parsemedicalexams](https://github.com/tsilva/parsemedicalexams) - Extract and summarize medical exam reports from PDFs
+- [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
+- [mochidecks](https://github.com/tsilva/mochidecks) - Curated flashcard decks for AI/ML and data science
+- [dedrive](https://github.com/tsilva/dedrive) - Find and manage duplicate files in Google Drive using MD5 checksums
+- [agentpong](https://github.com/tsilva/agentpong) - Desktop notifications that jump you to the right Claude Code window
+- [gmail2obsidian](https://github.com/tsilva/gmail2obsidian) - Flush Gmail threads into Obsidian task files
 - [aerospace-setup](https://github.com/tsilva/aerospace-setup) - Portable Aerospace configuration with Cursor project switching
 - [archex](https://github.com/tsilva/archex) - Recursively extract archives from directory trees
 - [botty-mcbotface](https://github.com/tsilva/botty-mcbotface) - Gradio-powered AI chatbot with tools and memory
 - [claudebox](https://github.com/tsilva/claudebox) - Full autonomy sandbox for Claude Code
 - [claudebridge](https://github.com/tsilva/claudebridge) - Bridge OpenAI tools to Claude Code SDK
+- [claudesk](https://github.com/tsilva/claudesk) - Interactive dashboard for launching Claude Code agents
+- [claudeskillz](https://github.com/tsilva/claudeskillz) - Modular skills that supercharge Claude Code
 - [dataset-explorer-agent](https://github.com/tsilva/dataset-explorer-agent) - Validate dataset schemas with regex pattern analysis
 - [dedrive-web](https://github.com/tsilva/dedrive-web) - Find and clean up duplicate files in Google Drive from browser
 - [gitfleet](https://github.com/tsilva/gitfleet) - Bulk operations across GitHub repositories with parallel processing
+- [gymrec](https://github.com/tsilva/gymrec) - Record and replay Gymnasium gameplay as Hugging Face datasets
+- [gymsolve](https://github.com/tsilva/gymsolve) - Fast RL framework with PPO and REINFORCE on Gymnasium
 - [health-agent](https://github.com/tsilva/health-agent) - Unify lab results, medical exams, and health journals
+- [homebrew-tap](https://github.com/tsilva/homebrew-tap) - Homebrew tap for installing tsilva projects
+- [obsidian-agents-plugin](https://github.com/tsilva/obsidian-agents-plugin) - Launch AI agents from Obsidian vault
 - [retro-asset-gen](https://github.com/tsilva/retro-asset-gen) - Generate retro gaming assets using Gemini AI **[Archived]**
 - [retro-romset-cleaner](https://github.com/tsilva/retro-romset-cleaner) - Clean up retro ROM collections **[Archived]**
+- [tsilva.eu](https://github.com/tsilva/tsilva.eu) - Personal landing page
+- [whatsapp-llm](https://github.com/tsilva/whatsapp-llm) - Bridge WhatsApp to AI for intelligent responses
 - [workflow-claude-supervisor](https://github.com/tsilva/workflow-claude-supervisor) - Supervise multiple Claude Code instances in parallel
 - [youtube-downloader](https://github.com/tsilva/youtube-downloader) - Download YouTube videos and extract audio
 
