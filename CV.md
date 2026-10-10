@@ -1228,26 +1228,26 @@ Computer Capers was a video game I developed at 12 years old and submitted to a 
 
 Open source projects and contributions.
 
-- [notebook2md](https://github.com/tsilva/notebook2md) - Convert Jupyter Notebooks to Markdown
 - [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
 - [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
+- [parsemedicalexams](https://github.com/tsilva/parsemedicalexams) - Extract and summarize medical exam reports from PDFs
+- [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
+- [parsehealthlog](https://github.com/tsilva/parsehealthlog) - Transform health journal entries into structured data
+- [popdesk](https://github.com/tsilva/popdesk) - Trigger Windows desktop notifications from anywhere via webhooks
+- [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
+- [repo2md](https://github.com/tsilva/repo2md) - Transform any repository into a single Markdown document
+- [notebook2md](https://github.com/tsilva/notebook2md) - Convert Jupyter Notebooks to Markdown
 - [mochimochi](https://github.com/tsilva/mochimochi) - CLI for curating Mochi flashcard decks with AI-powered deduplication
 - [demosim](https://github.com/tsilva/demosim) - Explore Portugal's demographic future with economic projections
 - [mcp-imagetools](https://github.com/tsilva/mcp-imagetools) - Image processing tools for Claude Code via MCP
 - [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
-- [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
 - [aiml-notebooks](https://github.com/tsilva/aiml-notebooks) - AI/ML Jupyter notebooks for learning deep learning concepts
 - [gmailstream](https://github.com/tsilva/gmailstream) - Download Gmail messages matching filters to local files
 - [capture](https://github.com/tsilva/capture) - Capture thoughts to Gmail with a single command
 - [repologogen](https://github.com/tsilva/repologogen) - Generate professional logos from the command line
-- [repo2md](https://github.com/tsilva/repo2md) - Transform any repository into a single Markdown document
 - [mcp-openrouter](https://github.com/tsilva/mcp-openrouter) - Access 300+ AI models through a single MCP server
 - [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
-- [popdesk](https://github.com/tsilva/popdesk) - Trigger Windows desktop notifications from anywhere via webhooks
 - [pdfpress](https://github.com/tsilva/pdfpress) - Compress, merge, split, and unlock PDF files
-- [parsehealthlog](https://github.com/tsilva/parsehealthlog) - Transform health journal entries into structured data
-- [parsemedicalexams](https://github.com/tsilva/parsemedicalexams) - Extract and summarize medical exam reports from PDFs
-- [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
 - [mochidecks](https://github.com/tsilva/mochidecks) - Curated flashcard decks for AI/ML and data science
 - [dedrive](https://github.com/tsilva/dedrive) - Find and manage duplicate files in Google Drive using MD5 checksums
 - [agentpong](https://github.com/tsilva/agentpong) - Desktop notifications that jump you to the right Claude Code window
