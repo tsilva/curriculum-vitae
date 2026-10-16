@@ -1,5 +1,122 @@
 [
   {
+    "id": "chatex",
+    "name": "chatex",
+    "description": "💬 Follow conversations with live captions 👥",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-10-15T17:28:22Z",
+    "createdAt": "2026-10-01T09:04:33Z",
+    "url": "https://github.com/tsilva/chatex",
+    "homepageUrl": "https://chatex-phi.vercel.app",
+    "commits": 0
+  },
+  {
+    "id": "waxon",
+    "name": "waxon",
+    "description": "🧠 Build knowledge and keep it 🔁",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-10-15T16:01:12Z",
+    "createdAt": "2026-05-28T16:51:15Z",
+    "url": "https://github.com/tsilva/waxon",
+    "homepageUrl": "https://waxon.tsilva.eu",
+    "commits": 0
+  },
+  {
+    "id": "reshoot",
+    "name": "reshoot",
+    "description": "📸 Every angle, one product 📸",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-10-15T15:59:54Z",
+    "createdAt": "2026-07-30T17:00:54Z",
+    "url": "https://github.com/tsilva/reshoot",
+    "homepageUrl": "https://reshoot-zeta.vercel.app",
+    "commits": 0
+  },
+  {
+    "id": "aipit",
+    "name": "aipit",
+    "description": "🔥 Where AI personas clash in moderator-led debates 🔥",
+    "stars": 2,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-10-15T15:31:13Z",
+    "createdAt": "2026-03-08T18:15:45Z",
+    "url": "https://github.com/tsilva/aipit",
+    "homepageUrl": "https://aipit.tsilva.eu",
+    "commits": 0
+  },
+  {
+    "id": "aigrounds",
+    "name": "aigrounds",
+    "description": "🧠 Learn AI by experimenting with algorithms 🔬",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-10-15T15:22:13Z",
+    "createdAt": "2026-03-08T17:46:30Z",
+    "url": "https://github.com/tsilva/aigrounds",
+    "homepageUrl": "https://aigrounds.tsilva.eu",
+    "commits": 0
+  },
+  {
+    "id": "modelarchviz",
+    "name": "modelarchviz",
+    "description": "🧭 Explore model architectures beside the code that defines them 🧭",
+    "stars": 0,
+    "forks": 0,
+    "language": "Jupyter Notebook",
+    "updatedAt": "2026-10-15T13:04:35Z",
+    "createdAt": "2026-05-29T10:13:35Z",
+    "url": "https://github.com/tsilva/modelarchviz",
+    "homepageUrl": "https://modelarchviz.tsilva.eu",
+    "commits": 0
+  },
+  {
+    "id": "papertrail",
+    "name": "papertrail",
+    "description": "🧾 Sort documents into sidecar-backed order 🧾",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-10-15T10:13:54Z",
+    "createdAt": "2025-03-09T17:07:24Z",
+    "url": "https://github.com/tsilva/papertrail",
+    "homepageUrl": null,
+    "commits": 0
+  },
+  {
+    "id": "parselabs",
+    "name": "parselabs",
+    "description": "🔬 Extract structured lab results from medical PDFs 📊",
+    "stars": 1,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-10-15T09:39:17Z",
+    "createdAt": "2024-01-16T16:26:53Z",
+    "url": "https://github.com/tsilva/parselabs",
+    "homepageUrl": "https://pypi.org/project/parselabs/",
+    "commits": 0
+  },
+  {
+    "id": "repoman",
+    "name": "repoman",
+    "description": "🔎 Find issues across your Git repositories. Fix them with AI 🤖",
+    "stars": 0,
+    "forks": 0,
+    "language": "Swift",
+    "updatedAt": "2026-10-14T16:20:34Z",
+    "createdAt": "2026-09-29T16:09:07Z",
+    "url": "https://github.com/tsilva/repoman",
+    "homepageUrl": null,
+    "commits": 0
+  },
+  {
     "id": "agentbridge",
     "name": "agentbridge",
     "description": "🌉 Claude, Codex, and OpenRouter through one API 🔌",
@@ -36,19 +153,6 @@
     "createdAt": "2026-07-11T19:07:05Z",
     "url": "https://github.com/tsilva/env-BreakoutAtari2600-turbo-native",
     "homepageUrl": "https://pypi.org/project/env-breakoutatari2600-turbo-native/",
-    "commits": 0
-  },
-  {
-    "id": "repoman",
-    "name": "repoman",
-    "description": "🔎 Find issues across your Git repositories. Fix them with AI 🤖",
-    "stars": 0,
-    "forks": 0,
-    "language": "Swift",
-    "updatedAt": "2026-10-10T17:44:54Z",
-    "createdAt": "2026-09-29T16:09:07Z",
-    "url": "https://github.com/tsilva/repoman",
-    "homepageUrl": null,
     "commits": 0
   },
   {
@@ -104,19 +208,6 @@
     "commits": 0
   },
   {
-    "id": "chatex",
-    "name": "chatex",
-    "description": "💬 Follow conversations with live captions 👥",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-10-10T10:51:47Z",
-    "createdAt": "2026-10-01T09:04:33Z",
-    "url": "https://github.com/tsilva/chatex",
-    "homepageUrl": "https://chatex-phi.vercel.app",
-    "commits": 0
-  },
-  {
     "id": "sandbox-skypilot",
     "name": "sandbox-skypilot",
     "description": "☁️ Try SkyPilot across RunPod, Hyperbolic, and Lambda Cloud 🧪",
@@ -140,32 +231,6 @@
     "createdAt": "2025-01-30T13:16:33Z",
     "url": "https://github.com/tsilva/sandbox-nextjs",
     "homepageUrl": "https://sandbox-nextjs-indol.vercel.app",
-    "commits": 0
-  },
-  {
-    "id": "reshoot",
-    "name": "reshoot",
-    "description": "📸 Every angle, one product 📸",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-10-10T08:51:06Z",
-    "createdAt": "2026-07-30T17:00:54Z",
-    "url": "https://github.com/tsilva/reshoot",
-    "homepageUrl": "https://reshoot-zeta.vercel.app",
-    "commits": 0
-  },
-  {
-    "id": "modelarchviz",
-    "name": "modelarchviz",
-    "description": "🧭 Explore model architectures beside the code that defines them 🧭",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-10-10T08:50:57Z",
-    "createdAt": "2026-05-29T10:13:35Z",
-    "url": "https://github.com/tsilva/modelarchviz",
-    "homepageUrl": "https://modelarchviz.tsilva.eu",
     "commits": 0
   },
   {
@@ -218,19 +283,6 @@
     "createdAt": "2026-01-12T12:53:54Z",
     "url": "https://github.com/tsilva/parsemedicalexams",
     "homepageUrl": "https://pypi.org/project/parsemedicalexams/",
-    "commits": 0
-  },
-  {
-    "id": "parselabs",
-    "name": "parselabs",
-    "description": "🔬 Extract structured lab results from medical PDFs 📊",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-10-09T18:23:13Z",
-    "createdAt": "2024-01-16T16:26:53Z",
-    "url": "https://github.com/tsilva/parselabs",
-    "homepageUrl": "https://pypi.org/project/parselabs/",
     "commits": 0
   },
   {
@@ -338,19 +390,6 @@
     "commits": 0
   },
   {
-    "id": "aigrounds",
-    "name": "aigrounds",
-    "description": "🧠 Learn AI by experimenting with algorithms 🔬",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-10-09T17:10:00Z",
-    "createdAt": "2026-03-08T17:46:30Z",
-    "url": "https://github.com/tsilva/aigrounds",
-    "homepageUrl": "https://aigrounds.tsilva.eu",
-    "commits": 0
-  },
-  {
     "id": "gadash",
     "name": "gadash",
     "description": "📊 Private realtime dashboard for sites and code 📊",
@@ -413,19 +452,6 @@
     "createdAt": "2025-04-02T11:02:46Z",
     "url": "https://github.com/tsilva/notebook2md",
     "homepageUrl": null,
-    "commits": 0
-  },
-  {
-    "id": "waxon",
-    "name": "waxon",
-    "description": "🧠 Build knowledge and keep it 🔁",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-10-08T13:38:17Z",
-    "createdAt": "2026-05-28T16:51:15Z",
-    "url": "https://github.com/tsilva/waxon",
-    "homepageUrl": "https://waxon.tsilva.eu",
     "commits": 0
   },
   {
@@ -594,19 +620,6 @@
     "updatedAt": "2026-10-08T13:21:29Z",
     "createdAt": "2026-03-11T15:02:05Z",
     "url": "https://github.com/tsilva/youtube2datasets",
-    "homepageUrl": null,
-    "commits": 0
-  },
-  {
-    "id": "papertrail",
-    "name": "papertrail",
-    "description": "🧾 Sort documents into sidecar-backed order 🧾",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-10-08T13:21:19Z",
-    "createdAt": "2025-03-09T17:07:24Z",
-    "url": "https://github.com/tsilva/papertrail",
     "homepageUrl": null,
     "commits": 0
   },
@@ -1024,19 +1037,6 @@
     "createdAt": "2026-03-30T10:54:15Z",
     "url": "https://github.com/tsilva/sandbox-lightonocr",
     "homepageUrl": null,
-    "commits": 0
-  },
-  {
-    "id": "aipit",
-    "name": "aipit",
-    "description": "🔥 Where AI personas clash in moderator-led debates 🔥",
-    "stars": 2,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-10-07T17:05:30Z",
-    "createdAt": "2026-03-08T18:15:45Z",
-    "url": "https://github.com/tsilva/aipit",
-    "homepageUrl": "https://aipit.tsilva.eu",
     "commits": 0
   },
   {

@@ -1228,11 +1228,12 @@ Computer Capers was a video game I developed at 12 years old and submitted to a 
 
 Open source projects and contributions.
 
+- [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
+- [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
 - [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
 - [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
 - [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
 - [parsemedicalexams](https://github.com/tsilva/parsemedicalexams) - Extract and summarize medical exam reports from PDFs
-- [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
 - [parsehealthlog](https://github.com/tsilva/parsehealthlog) - Transform health journal entries into structured data
 - [popdesk](https://github.com/tsilva/popdesk) - Trigger Windows desktop notifications from anywhere via webhooks
 - [repo2md](https://github.com/tsilva/repo2md) - Transform any repository into a single Markdown document
@@ -1240,7 +1241,6 @@ Open source projects and contributions.
 - [mochimochi](https://github.com/tsilva/mochimochi) - CLI for curating Mochi flashcard decks with AI-powered deduplication
 - [demosim](https://github.com/tsilva/demosim) - Explore Portugal's demographic future with economic projections
 - [mcp-imagetools](https://github.com/tsilva/mcp-imagetools) - Image processing tools for Claude Code via MCP
-- [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
 - [aiml-notebooks](https://github.com/tsilva/aiml-notebooks) - AI/ML Jupyter notebooks for learning deep learning concepts
 - [gmailstream](https://github.com/tsilva/gmailstream) - Download Gmail messages matching filters to local files
 - [capture](https://github.com/tsilva/capture) - Capture thoughts to Gmail with a single command
