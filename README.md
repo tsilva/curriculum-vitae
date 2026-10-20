@@ -68,3 +68,5 @@ Ongoing roles report elapsed calendar months; completed month-granularity
 periods retain inclusive end-month counting. Tenures shorter than a year
 report months, and same-month ongoing roles report less than one month.
 Both CV.md and the web data are regenerated through their existing scripts.
+
+Production delivery keeps Vercel secret isolation enabled and distinguishes public configuration from private credentials; see [production delivery](docs/production-delivery.md).

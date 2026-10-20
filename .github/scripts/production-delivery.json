@@ -14,5 +14,12 @@
   "destination": "vercel",
   "vercelProjectId": "prj_r3jpAdDLcGZ4u6N7kvmjwXLZh2kN",
   "vercelProjectName": "curriculum-vitae",
-  "vercelTeamId": "team_eE2Iv7IMqPOx8ZVN2xNfR2f0"
+  "vercelTeamId": "team_eE2Iv7IMqPOx8ZVN2xNfR2f0",
+  "configNames": [
+    "NEXT_PUBLIC_GA_MEASUREMENT_ID",
+    "NEXT_PUBLIC_SENTRY_DSN",
+    "SENTRY_BASE_URL",
+    "SENTRY_ORG",
+    "SENTRY_PROJECT"
+  ]
 }
