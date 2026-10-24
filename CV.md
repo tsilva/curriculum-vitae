@@ -1228,28 +1228,28 @@ Computer Capers was a video game I developed at 12 years old and submitted to a 
 
 Open source projects and contributions.
 
-- [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
-- [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
-- [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
-- [parsemedicalexams](https://github.com/tsilva/parsemedicalexams) - Extract and summarize medical exam reports from PDFs
-- [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
-- [parsehealthlog](https://github.com/tsilva/parsehealthlog) - Transform health journal entries into structured data
-- [popdesk](https://github.com/tsilva/popdesk) - Trigger Windows desktop notifications from anywhere via webhooks
-- [repo2md](https://github.com/tsilva/repo2md) - Transform any repository into a single Markdown document
 - [notebook2md](https://github.com/tsilva/notebook2md) - Convert Jupyter Notebooks to Markdown
-- [mochimochi](https://github.com/tsilva/mochimochi) - CLI for curating Mochi flashcard decks with AI-powered deduplication
-- [demosim](https://github.com/tsilva/demosim) - Explore Portugal's demographic future with economic projections
-- [mcp-imagetools](https://github.com/tsilva/mcp-imagetools) - Image processing tools for Claude Code via MCP
-- [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
-- [aiml-notebooks](https://github.com/tsilva/aiml-notebooks) - AI/ML Jupyter notebooks for learning deep learning concepts
-- [gmailstream](https://github.com/tsilva/gmailstream) - Download Gmail messages matching filters to local files
-- [capture](https://github.com/tsilva/capture) - Capture thoughts to Gmail with a single command
-- [repologogen](https://github.com/tsilva/repologogen) - Generate professional logos from the command line
-- [mcp-openrouter](https://github.com/tsilva/mcp-openrouter) - Access 300+ AI models through a single MCP server
-- [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
-- [pdfpress](https://github.com/tsilva/pdfpress) - Compress, merge, split, and unlock PDF files
-- [mochidecks](https://github.com/tsilva/mochidecks) - Curated flashcard decks for AI/ML and data science
 - [dedrive](https://github.com/tsilva/dedrive) - Find and manage duplicate files in Google Drive using MD5 checksums
+- [demosim](https://github.com/tsilva/demosim) - Explore Portugal's demographic future with economic projections
+- [aiml-notebooks](https://github.com/tsilva/aiml-notebooks) - AI/ML Jupyter notebooks for learning deep learning concepts
+- [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
+- [capture](https://github.com/tsilva/capture) - Capture thoughts to Gmail with a single command
+- [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
+- [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
+- [repologogen](https://github.com/tsilva/repologogen) - Generate professional logos from the command line
+- [parsehealthlog](https://github.com/tsilva/parsehealthlog) - Transform health journal entries into structured data
+- [mochimochi](https://github.com/tsilva/mochimochi) - CLI for curating Mochi flashcard decks with AI-powered deduplication
+- [mcp-openrouter](https://github.com/tsilva/mcp-openrouter) - Access 300+ AI models through a single MCP server
+- [repo2md](https://github.com/tsilva/repo2md) - Transform any repository into a single Markdown document
+- [popdesk](https://github.com/tsilva/popdesk) - Trigger Windows desktop notifications from anywhere via webhooks
+- [pdfpress](https://github.com/tsilva/pdfpress) - Compress, merge, split, and unlock PDF files
+- [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
+- [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
+- [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
+- [parsemedicalexams](https://github.com/tsilva/parsemedicalexams) - Extract and summarize medical exam reports from PDFs
+- [mcp-imagetools](https://github.com/tsilva/mcp-imagetools) - Image processing tools for Claude Code via MCP
+- [gmailstream](https://github.com/tsilva/gmailstream) - Download Gmail messages matching filters to local files
+- [mochidecks](https://github.com/tsilva/mochidecks) - Curated flashcard decks for AI/ML and data science
 - [agentpong](https://github.com/tsilva/agentpong) - Desktop notifications that jump you to the right Claude Code window
 - [gmail2obsidian](https://github.com/tsilva/gmail2obsidian) - Flush Gmail threads into Obsidian task files
 - [aerospace-setup](https://github.com/tsilva/aerospace-setup) - Portable Aerospace configuration with Cursor project switching
