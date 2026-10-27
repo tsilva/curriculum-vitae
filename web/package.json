@@ -36,7 +36,7 @@
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "eslint": "^9.0.0",
+    "eslint": "^10.13.0",
     "eslint-config-next": "16.4.1",
     "gray-matter": "^4.0.3",
     "postcss": "^8.5.29",
