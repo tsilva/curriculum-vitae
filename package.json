@@ -15,6 +15,6 @@
     "test:secrets": "python3 -m unittest discover -s scripts/infisical -p test_secrets.py"
   },
   "devDependencies": {
-    "@playwright/test": "^1.63.0"
+    "@playwright/test": "^1.64.1"
   }
 }
