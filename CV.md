@@ -1228,30 +1228,31 @@ Computer Capers was a video game I developed at 12 years old and submitted to a 
 
 Open source projects and contributions.
 
-- [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
-- [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
-- [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
+- [gmail2obsidian](https://github.com/tsilva/gmail2obsidian) - Flush Gmail threads into Obsidian task files
+- [mochimochi](https://github.com/tsilva/mochimochi) - CLI for curating Mochi flashcard decks with AI-powered deduplication
+- [tsilva.eu](https://github.com/tsilva/tsilva.eu) - Personal landing page
+- [capture](https://github.com/tsilva/capture) - Capture thoughts to Gmail with a single command
+- [popdesk](https://github.com/tsilva/popdesk) - Trigger Windows desktop notifications from anywhere via webhooks
+- [parsehealthlog](https://github.com/tsilva/parsehealthlog) - Transform health journal entries into structured data
 - [parsemedicalexams](https://github.com/tsilva/parsemedicalexams) - Extract and summarize medical exam reports from PDFs
 - [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
-- [parsehealthlog](https://github.com/tsilva/parsehealthlog) - Transform health journal entries into structured data
-- [popdesk](https://github.com/tsilva/popdesk) - Trigger Windows desktop notifications from anywhere via webhooks
-- [repo2md](https://github.com/tsilva/repo2md) - Transform any repository into a single Markdown document
-- [notebook2md](https://github.com/tsilva/notebook2md) - Convert Jupyter Notebooks to Markdown
-- [mochimochi](https://github.com/tsilva/mochimochi) - CLI for curating Mochi flashcard decks with AI-powered deduplication
-- [demosim](https://github.com/tsilva/demosim) - Explore Portugal's demographic future with economic projections
 - [mcp-imagetools](https://github.com/tsilva/mcp-imagetools) - Image processing tools for Claude Code via MCP
-- [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
-- [aiml-notebooks](https://github.com/tsilva/aiml-notebooks) - AI/ML Jupyter notebooks for learning deep learning concepts
-- [gmailstream](https://github.com/tsilva/gmailstream) - Download Gmail messages matching filters to local files
-- [capture](https://github.com/tsilva/capture) - Capture thoughts to Gmail with a single command
-- [repologogen](https://github.com/tsilva/repologogen) - Generate professional logos from the command line
-- [mcp-openrouter](https://github.com/tsilva/mcp-openrouter) - Access 300+ AI models through a single MCP server
-- [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
-- [pdfpress](https://github.com/tsilva/pdfpress) - Compress, merge, split, and unlock PDF files
-- [mochidecks](https://github.com/tsilva/mochidecks) - Curated flashcard decks for AI/ML and data science
-- [dedrive](https://github.com/tsilva/dedrive) - Find and manage duplicate files in Google Drive using MD5 checksums
+- [demosim](https://github.com/tsilva/demosim) - Explore Portugal's demographic future with economic projections
 - [agentpong](https://github.com/tsilva/agentpong) - Desktop notifications that jump you to the right Claude Code window
-- [gmail2obsidian](https://github.com/tsilva/gmail2obsidian) - Flush Gmail threads into Obsidian task files
+- [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
+- [aiml-notebooks](https://github.com/tsilva/aiml-notebooks) - AI/ML Jupyter notebooks for learning deep learning concepts
+- [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
+- [repologogen](https://github.com/tsilva/repologogen) - Generate professional logos from the command line
+- [notebook2md](https://github.com/tsilva/notebook2md) - Convert Jupyter Notebooks to Markdown
+- [dedrive](https://github.com/tsilva/dedrive) - Find and manage duplicate files in Google Drive using MD5 checksums
+- [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
+- [mcp-openrouter](https://github.com/tsilva/mcp-openrouter) - Access 300+ AI models through a single MCP server
+- [repo2md](https://github.com/tsilva/repo2md) - Transform any repository into a single Markdown document
+- [pdfpress](https://github.com/tsilva/pdfpress) - Compress, merge, split, and unlock PDF files
+- [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
+- [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
+- [gmailstream](https://github.com/tsilva/gmailstream) - Download Gmail messages matching filters to local files
+- [mochidecks](https://github.com/tsilva/mochidecks) - Curated flashcard decks for AI/ML and data science
 - [aerospace-setup](https://github.com/tsilva/aerospace-setup) - Portable Aerospace configuration with Cursor project switching
 - [archex](https://github.com/tsilva/archex) - Recursively extract archives from directory trees
 - [botty-mcbotface](https://github.com/tsilva/botty-mcbotface) - Gradio-powered AI chatbot with tools and memory
@@ -1269,7 +1270,6 @@ Open source projects and contributions.
 - [obsidian-agents-plugin](https://github.com/tsilva/obsidian-agents-plugin) - Launch AI agents from Obsidian vault
 - [retro-asset-gen](https://github.com/tsilva/retro-asset-gen) - Generate retro gaming assets using Gemini AI **[Archived]**
 - [retro-romset-cleaner](https://github.com/tsilva/retro-romset-cleaner) - Clean up retro ROM collections **[Archived]**
-- [tsilva.eu](https://github.com/tsilva/tsilva.eu) - Personal landing page
 - [whatsapp-llm](https://github.com/tsilva/whatsapp-llm) - Bridge WhatsApp to AI for intelligent responses
 - [workflow-claude-supervisor](https://github.com/tsilva/workflow-claude-supervisor) - Supervise multiple Claude Code instances in parallel
 - [youtube-downloader](https://github.com/tsilva/youtube-downloader) - Download YouTube videos and extract audio
