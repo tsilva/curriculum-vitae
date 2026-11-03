@@ -279,4 +279,4 @@ Use this project-level Codex skill when reviewing the CV/site from multiple hiri
 
 ## Secrets
 
-Use Infisical `curriculum-vitae` Development `/` for local private credentials, and `curriculum-vitae-production` Production `/` for the Vercel Production sync. Default web dev loads secrets through the repository wrapper; use `build:secrets` for local Sentry source-map uploads. Never print credential values or upload local dotenv credential files. Preserve existing Keychain originals until verified provider rotation.
+Use Infisical `curriculum-vitae` Development `/` for local private credentials, and `curriculum-vitae-production` Production `/` for the Vercel Production sync. Use the ordinary build for local checks. Hosted Vercel builds handle Sentry source-map uploads. Never print credential values or upload local dotenv credential files. Preserve existing Keychain originals until verified provider rotation.

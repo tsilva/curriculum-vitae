@@ -49,6 +49,7 @@ pnpm run verify                # lint, build, and run smoke tests
 - `CV.md`, `web/src/data/cv-data.json`, and `web/src/data/github-data.json` are generated outputs. Regenerate them instead of hand-editing them.
 - Gallery source data is controlled by `GALLERY_MODE` and `R2_PUBLIC_URL` in `web/.env`; production emits same-origin `/galleries/*?v=<cache-token>` URLs and proxies them to Cloudflare R2.
 - Browser metadata uses `NEXT_PUBLIC_SITE_URL`; analytics and Sentry use the variables documented in `web/.env.example`.
+- Local builds skip Sentry source-map uploads. Hosted Vercel builds handle uploads.
 - Root Sentry issue tooling reads `SENTRY_AUTH_TOKEN`, `SENTRY_ORG`, `SENTRY_PROJECT`, and `SENTRY_BASE_URL` from `.env`.
 - The Next.js app is configured for static export with unoptimized images. `vercel.json` sets security/cache headers, redirects `tsilva.eu` to `www.tsilva.eu`, and proxies `/galleries/*` to the R2 gallery host.
 - Root browser tooling uses `pnpm@10.27.0`; the Vercel web app uses npm with a committed lockfile.
