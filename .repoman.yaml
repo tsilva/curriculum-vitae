@@ -1,0 +1,18 @@
+version: 1
+websites:
+  cv.tsilva.eu:
+    url: https://cv.tsilva.eu/
+    redirect-to: https://www.tsilva.eu/
+    availability: reachable
+    checked-on: 2026-11-03
+  tsilva.eu:
+    url: https://tsilva.eu/
+    redirect-to: https://www.tsilva.eu/
+    availability: reachable
+    checked-on: 2026-11-03
+  www.tsilva.eu:
+    url: https://www.tsilva.eu/
+    availability: reachable
+    ga4: tag-detected
+    sentry: source-detected
+    checked-on: 2026-11-03
