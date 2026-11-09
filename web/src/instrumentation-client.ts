@@ -1,3 +1,4 @@
+import { sentryDataCollection } from "./lib/sentry-data-collection";
 import {
   SENTRY_BROWSER_DSN,
   SENTRY_BROWSER_ENABLED,
@@ -17,21 +18,21 @@ async function initSentryClient() {
     return;
   }
 
-  const Sentry = await import("@sentry/nextjs");
+  const { init, captureException } = await import("@sentry/nextjs");
 
-  Sentry.init({
+  init({
     dsn: SENTRY_BROWSER_DSN,
     enabled: SENTRY_BROWSER_ENABLED,
     environment: SENTRY_ENVIRONMENT,
     release: SENTRY_RELEASE,
-    sendDefaultPii: false,
+    dataCollection: sentryDataCollection,
     tracesSampleRate: SENTRY_TRACES_SAMPLE_RATE,
   });
 
   window.__sentryTest = () => {
     const error = new Error("Sentry test exception triggered via window.__sentryTest()");
 
-    Sentry.captureException(error);
+    captureException(error);
 
     throw error;
   };
