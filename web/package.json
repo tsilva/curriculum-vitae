@@ -64,6 +64,9 @@
     "@sentry/bundler-plugins@10.75.3": {
       "glob": "14.0.2"
     },
+    "@sentry/bundler-plugins@11": {
+      "glob": "14.0.2"
+    },
     "glob@14.0.2": {
       "path-scurry": "3.0.0"
     },

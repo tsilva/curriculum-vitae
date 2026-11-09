@@ -1,3 +1,4 @@
+import { sentryDataCollection } from "./lib/sentry-data-collection";
 import {
   SENTRY_BROWSER_DSN,
   SENTRY_BROWSER_ENABLED,
@@ -24,7 +25,7 @@ async function initSentryClient() {
     enabled: SENTRY_BROWSER_ENABLED,
     environment: SENTRY_ENVIRONMENT,
     release: SENTRY_RELEASE,
-    sendDefaultPii: false,
+    dataCollection: sentryDataCollection,
     tracesSampleRate: SENTRY_TRACES_SAMPLE_RATE,
   });
 
