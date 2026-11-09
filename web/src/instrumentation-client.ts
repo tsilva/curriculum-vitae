@@ -18,9 +18,9 @@ async function initSentryClient() {
     return;
   }
 
-  const Sentry = await import("@sentry/nextjs");
+  const { init, captureException } = await import("@sentry/nextjs");
 
-  Sentry.init({
+  init({
     dsn: SENTRY_BROWSER_DSN,
     enabled: SENTRY_BROWSER_ENABLED,
     environment: SENTRY_ENVIRONMENT,
@@ -32,7 +32,7 @@ async function initSentryClient() {
   window.__sentryTest = () => {
     const error = new Error("Sentry test exception triggered via window.__sentryTest()");
 
-    Sentry.captureException(error);
+    captureException(error);
 
     throw error;
   };
