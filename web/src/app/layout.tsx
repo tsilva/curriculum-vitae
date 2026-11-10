@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Orbitron, Share_Tech_Mono, Fira_Code } from "next/font/google";
-import dynamic from "next/dynamic";
 import { ClientServices } from "@/components/ClientServices";
+import { DeferredMatrixRain } from "@/components/DeferredMatrixRain";
 import { siteUrl } from "@/lib/site-config";
 import { versionedAssetPath } from "@/lib/cache-token";
 import {
@@ -16,9 +16,6 @@ const ENABLE_SPEED_INSIGHTS = process.env.VERCEL === "1";
 const generatedMetadata = createMetadata(new URL(siteUrl));
 const generatedOpenGraph = (generatedMetadata.openGraph ?? {}) as NonNullable<Metadata["openGraph"]>;
 const generatedTwitter = (generatedMetadata.twitter ?? {}) as NonNullable<Metadata["twitter"]>;
-
-// Lazy load MatrixRain as it's a non-critical visual effect
-const MatrixRain = dynamic(() => import("@/components/MatrixRain").then((mod) => ({ default: mod.MatrixRain })));
 
 const orbitron = Orbitron({
   subsets: ["latin"],
@@ -148,7 +145,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-[family-name:var(--font-body)] dot-grid scanlines crt-vignette antialiased">
-        <MatrixRain />
+        <DeferredMatrixRain />
         {children}
         <ClientServices enableSpeedInsights={ENABLE_SPEED_INSIGHTS} />
       </body>
