@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 import { join } from "node:path";
-import { withSentryConfig } from "@sentry/nextjs";
+import { withSentryConfig } from "@sentry/nextjs/config";
 
 const sentryOrg = process.env.SENTRY_ORG?.trim() || "tsilva";
 const sentryProject = process.env.SENTRY_PROJECT?.trim() || "curriculum-vitae";

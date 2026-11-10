@@ -1,3 +1,4 @@
+import { sentryDataCollection } from "./lib/sentry-data-collection";
 import * as Sentry from "@sentry/nextjs";
 import {
   SENTRY_SERVER_DSN,
@@ -12,6 +13,6 @@ Sentry.init({
   enabled: SENTRY_SERVER_ENABLED,
   environment: SENTRY_ENVIRONMENT,
   release: SENTRY_RELEASE,
-  sendDefaultPii: false,
+  dataCollection: sentryDataCollection,
   tracesSampleRate: SENTRY_TRACES_SAMPLE_RATE,
 });
