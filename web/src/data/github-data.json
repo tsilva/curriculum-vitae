@@ -1,5 +1,44 @@
 [
   {
+    "id": "reshoot",
+    "name": "reshoot",
+    "description": "📸 Every angle, one product 📸",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-11-11T18:19:04Z",
+    "createdAt": "2026-07-30T17:00:54Z",
+    "url": "https://github.com/tsilva/reshoot",
+    "homepageUrl": "https://reshoot-zeta.vercel.app",
+    "commits": 0
+  },
+  {
+    "id": "minariviz",
+    "name": "minariviz",
+    "description": "🔬 Explore and visualize Minari offline reinforcement learning datasets 📊",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-11-11T18:19:03Z",
+    "createdAt": "2026-02-25T17:27:45Z",
+    "url": "https://github.com/tsilva/minariviz",
+    "homepageUrl": "https://minariviz.tsilva.eu",
+    "commits": 0
+  },
+  {
+    "id": "paperclean-web",
+    "name": "paperclean-web",
+    "description": "🧹 Clean scans. Verified content 🧹",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-11-11T18:19:02Z",
+    "createdAt": "2026-08-14T14:02:59Z",
+    "url": "https://github.com/tsilva/paperclean-web",
+    "homepageUrl": "https://paperclean.tsilva.eu",
+    "commits": 0
+  },
+  {
     "id": "scummbench",
     "name": "scummbench",
     "description": "🧭 Evaluate agents through adventure games 🕹️",
@@ -36,19 +75,6 @@
     "createdAt": "2026-03-19T16:28:19Z",
     "url": "https://github.com/tsilva/sigmaevolve",
     "homepageUrl": "https://sigmaevolve.tsilva.eu",
-    "commits": 0
-  },
-  {
-    "id": "reshoot",
-    "name": "reshoot",
-    "description": "📸 Every angle, one product 📸",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-11-11T15:49:44Z",
-    "createdAt": "2026-07-30T17:00:54Z",
-    "url": "https://github.com/tsilva/reshoot",
-    "homepageUrl": "https://reshoot-zeta.vercel.app",
     "commits": 0
   },
   {
@@ -140,19 +166,6 @@
     "createdAt": "2026-10-20T16:02:28Z",
     "url": "https://github.com/tsilva/waldofinder",
     "homepageUrl": "https://waldofinder.vercel.app",
-    "commits": 0
-  },
-  {
-    "id": "paperclean-web",
-    "name": "paperclean-web",
-    "description": "🧹 Clean scans. Verified content 🧹",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-11-11T11:50:59Z",
-    "createdAt": "2026-08-14T14:02:59Z",
-    "url": "https://github.com/tsilva/paperclean-web",
-    "homepageUrl": "https://paperclean.tsilva.eu",
     "commits": 0
   },
   {
@@ -257,19 +270,6 @@
     "createdAt": "2026-03-08T17:46:30Z",
     "url": "https://github.com/tsilva/aigrounds",
     "homepageUrl": "https://aigrounds.tsilva.eu",
-    "commits": 0
-  },
-  {
-    "id": "minariviz",
-    "name": "minariviz",
-    "description": "🔬 Explore and visualize Minari offline reinforcement learning datasets 📊",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2026-11-11T11:32:55Z",
-    "createdAt": "2026-02-25T17:27:45Z",
-    "url": "https://github.com/tsilva/minariviz",
-    "homepageUrl": "https://minariviz.tsilva.eu",
     "commits": 0
   },
   {
