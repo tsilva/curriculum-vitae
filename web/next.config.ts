@@ -1,45 +1,9 @@
 import type { NextConfig } from "next";
-import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { withSentryConfig } from "@sentry/nextjs";
-
-function loadOptionalEnvFile(fileName: string) {
-  const filePath = join(process.cwd(), fileName);
-
-  if (!existsSync(filePath)) {
-    return;
-  }
-
-  for (const rawLine of readFileSync(filePath, "utf8").split(/\r?\n/)) {
-    const line = rawLine.trim();
-
-    if (!line || line.startsWith("#")) {
-      continue;
-    }
-
-    const normalizedLine = line.startsWith("export ") ? line.slice(7) : line;
-    const separatorIndex = normalizedLine.indexOf("=");
-
-    if (separatorIndex === -1) {
-      continue;
-    }
-
-    const key = normalizedLine.slice(0, separatorIndex).trim();
-
-    if (!key || process.env[key] !== undefined) {
-      continue;
-    }
-
-    const value = normalizedLine.slice(separatorIndex + 1).trim();
-    process.env[key] = value.replace(/^['"]|['"]$/g, "");
-  }
-}
-
-loadOptionalEnvFile(".env.sentry-build-plugin");
+import { withSentryConfig } from "@sentry/nextjs/config";
 
 const sentryOrg = process.env.SENTRY_ORG?.trim() || "tsilva";
 const sentryProject = process.env.SENTRY_PROJECT?.trim() || "curriculum-vitae";
-const sentryBuildEnabled = Boolean(process.env.SENTRY_AUTH_TOKEN);
 
 const nextConfig: NextConfig = {
   output: "export",
@@ -102,15 +66,19 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
 };
 
+const isHostedBuild = process.env.VERCEL === "1" && Boolean(process.env.VERCEL_DEPLOYMENT_ID);
+
 export default withSentryConfig(nextConfig, {
+  useRunAfterProductionCompileHook: isHostedBuild ? undefined : false,
   silent: !process.env.CI,
   org: sentryOrg,
   project: sentryProject,
-  authToken: process.env.SENTRY_AUTH_TOKEN,
+  authToken: isHostedBuild ? process.env.SENTRY_AUTH_TOKEN : undefined,
   sourcemaps: {
-    disable: !sentryBuildEnabled,
+    disable: !isHostedBuild || !process.env.SENTRY_AUTH_TOKEN,
   },
   webpack: {
+    disableSentryConfig: !isHostedBuild,
     treeshake: {
       removeDebugLogging: true,
     },

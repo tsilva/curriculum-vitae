@@ -8,7 +8,7 @@
     "build:local": "GALLERY_MODE=local npm run build",
     "sync": "npm run fetch:github && npm run assemble && npm run generate:cv",
     "start": "node ../scripts/dev-server.mjs next start",
-    "lint": "eslint . --max-warnings=0",
+    "lint": "node --require ./eslint-minimatch-compat.cjs ./node_modules/eslint/bin/eslint.js . --max-warnings=0",
     "typecheck": "tsc --noEmit",
     "assemble": "GALLERY_MODE=r2 tsx ../scripts/assemble-cv-data.ts",
     "assemble:local": "GALLERY_MODE=local tsx ../scripts/assemble-cv-data.ts",
@@ -16,33 +16,32 @@
     "fetch:github": "tsx ../scripts/fetch-github.ts",
     "stats": "tsx ../scripts/count-technologies.ts",
     "dev:app": "GIT_COMMIT_HASH=$(git rev-parse --short HEAD) node ../scripts/dev-server.mjs next dev",
-    "build:secrets": "python3 ../scripts/infisical/run.py build",
     "start:secrets": "python3 ../scripts/infisical/run.py start",
     "test:data": "tsx --test ../scripts/lib/data-utils.test.ts"
   },
   "dependencies": {
-    "@sentry/nextjs": "10.75.2",
+    "@sentry/nextjs": "11.10.0",
     "@vercel/analytics": "^1.6.1",
     "@vercel/speed-insights": "^1.3.1",
-    "next": "16.4.1",
+    "next": "16.4.5",
     "photoswipe": "^5.4.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "js-yaml": "4.3.2"
   },
   "devDependencies": {
-    "@playwright/mcp": "^0.0.83",
+    "@playwright/mcp": "^0.0.84",
     "@tailwindcss/postcss": "^4.0.0",
-    "@types/node": "^22.0.0",
+    "@types/node": "^22.20.5",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "eslint": "^9.0.0",
-    "eslint-config-next": "16.4.1",
+    "eslint": "^10.14.0",
+    "eslint-config-next": "16.4.5",
     "gray-matter": "^4.0.3",
-    "postcss": "^8.5.29",
+    "postcss": "^8.5.32",
     "tailwindcss": "^4.0.0",
     "tsx": "^4.0.0",
-    "typescript": "^5.7.0"
+    "typescript": "^6.0.3"
   },
   "overrides": {
     "next": "$next",
@@ -58,6 +57,22 @@
       "zod": "4.6.6"
     },
     "zod@>=4 <4.6.6": "4.6.6",
-    "fast-uri": "3.1.9"
+    "fast-uri": "3.1.9",
+    "@sentry/bundler-plugin-core@5.3.0": {
+      "glob": "14.0.2"
+    },
+    "@sentry/bundler-plugins@10.75.3": {
+      "glob": "14.0.2"
+    },
+    "@sentry/bundler-plugins@11": {
+      "glob": "14.0.2"
+    },
+    "glob@14.0.2": {
+      "path-scurry": "3.0.0"
+    },
+    "minimatch": {
+      ".": "11.0.1",
+      "@isaacs/nonrecursive-glob-match": "1.0.1"
+    }
   }
 }
