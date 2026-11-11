@@ -42,18 +42,23 @@ const HOMEPAGE_OVERRIDES: Record<string, string | null> = {
 };
 
 function fetchRepos(): GitHubRepoRaw[] {
-  const cmd = `gh repo list tsilva --visibility public --limit 100 --json name,description,primaryLanguage,createdAt,updatedAt,pushedAt,url,homepageUrl,stargazerCount,forkCount,isArchived,isFork,visibility`;
+  // gh follows GraphQL pages up to this safety bound. Refuse a possibly
+  // truncated result rather than silently publishing an incomplete catalog.
+  const cmd = `gh repo list tsilva --visibility public --limit 10000 --json name,description,primaryLanguage,createdAt,updatedAt,pushedAt,url,homepageUrl,stargazerCount,forkCount,isArchived,isFork,visibility`;
   
   try {
-    const output = execSync(cmd, { encoding: "utf-8", cwd: ROOT });
-    return JSON.parse(output);
-  } catch (error) {
-    console.error("Failed to fetch GitHub repos:", error);
-    return [];
+    const output = execSync(cmd, { encoding: "utf-8", cwd: ROOT, stdio: ["ignore", "pipe", "pipe"] });
+    const repos = JSON.parse(output);
+    if (!Array.isArray(repos) || repos.length >= 10000) {
+      throw new Error("Repository pagination bound reached");
+    }
+    return repos;
+  } catch {
+    throw new Error("GitHub collection failed; existing data was not replaced");
   }
 }
 
-function processRepos(repos: GitHubRepoRaw[]): GitHubRepo[] {
+export function processRepos(repos: GitHubRepoRaw[]): GitHubRepo[] {
   const filteredRepos = repos.filter((repo) => {
     if (repo.visibility !== "PUBLIC") return false;
     if (repo.isFork) return false;
@@ -130,4 +135,17 @@ async function generateReposData() {
   console.log(`\nTotal stars: ${totalStars}`);
 }
 
-generateReposData();
+// Imports expose only the pure mapping. Hosted execution retains its gh flow.
+const isMain = process.argv[1] && path.resolve(process.argv[1]) === __filename;
+if (isMain) {
+  if (process.platform === "linux" && process.env.CV_GITHUB_TRANSPORT !== "agent-vault-public" &&
+      (process.env.GITHUB_ACTIONS === "true" || process.env.VERCEL === "1")) {
+    generateReposData().catch((error) => {
+      console.error(error.message);
+      process.exitCode = 1;
+    });
+  } else {
+    console.error("Use the reviewed local GitHub Vault launcher; no cached-token fallback.");
+    process.exitCode = 1;
+  }
+}

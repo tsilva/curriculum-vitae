@@ -6,8 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
 
 concurrency:
   group: sync-cv-data
@@ -15,17 +14,26 @@ concurrency:
 
 jobs:
   sync:
+    if: github.repository == 'tsilva/curriculum-vitae' && github.ref == 'refs/heads/main'
     name: Sync generated CV data
     runs-on: ubuntu-latest
-
-    env:
-      GH_TOKEN: ${{ secrets.GH_SYNC_TOKEN || github.token }}
+    timeout-minutes: 35
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+
+      - name: Check sync App configuration
+        env:
+          APP_CLIENT_ID: ${{ vars.CV_SYNC_APP_CLIENT_ID }}
+          HAS_APP_KEY: ${{ secrets.CV_SYNC_APP_PRIVATE_KEY != '' }}
+        run: |
+          if [[ -z "$APP_CLIENT_ID" || "$HAS_APP_KEY" != true ]]; then
+            echo "::error::Configure CV_SYNC_APP_CLIENT_ID and CV_SYNC_APP_PRIVATE_KEY for a GitHub App installed only on this repository (Contents and Pull requests write; Checks read). No GITHUB_TOKEN fallback is used."
+            exit 1
+          fi
 
       - name: Set up Node.js
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
@@ -34,11 +42,35 @@ jobs:
           cache: npm
           cache-dependency-path: web/package-lock.json
 
+      - name: Preserve gallery versions during metadata-only synchronization
+        run: |
+          node --input-type=module <<'JS'
+          import { readFileSync, appendFileSync } from 'node:fs';
+          const data = JSON.parse(readFileSync('web/src/data/cv-data.json', 'utf8'));
+          const tokens = new Set(data.projects_db.flatMap(project =>
+            (project.gallery ?? []).map(media => new URL(media.path, 'https://cv.tsilva.eu').searchParams.get('v'))));
+          if (tokens.size === 0) process.exit(0);
+          const [token] = tokens;
+          if (tokens.size !== 1 || !/^[a-zA-Z0-9._-]{1,64}$/.test(token ?? '')) throw new Error('Invalid gallery version');
+          appendFileSync(process.env.GITHUB_ENV, `ASSET_CACHE_TOKEN=${token}\n`);
+          JS
+
       - name: Install web dependencies
-        run: npm --prefix web ci
+        run: npm --prefix web ci --ignore-scripts
 
       - name: Sync generated data
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: npm --prefix web run sync
+
+      - name: Test collectors and merge guards
+        working-directory: web
+        run: |
+          node --test ../scripts/merge-cv-sync.test.mjs
+          node_modules/.bin/tsx --test ../scripts/infisical/test_github_public.mjs
+
+      - name: Test data generators
+        run: npm --prefix web run test:data
 
       - name: Lint web app
         run: npm --prefix web run lint
@@ -46,10 +78,23 @@ jobs:
       - name: Build web app
         run: npm --prefix web run build
 
+      - name: Create repository-scoped sync token
+        id: app
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        with:
+          client-id: ${{ vars.CV_SYNC_APP_CLIENT_ID }}
+          private-key: ${{ secrets.CV_SYNC_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: ${{ github.event.repository.name }}
+          permission-contents: write
+          permission-pull-requests: write
+          permission-checks: read
+
       - name: Open sync pull request
+        id: pr
         uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
         with:
-          token: ${{ env.GH_TOKEN }}
+          token: ${{ steps.app.outputs.token }}
           branch: codex/automated-cv-sync
           delete-branch: true
           commit-message: "chore: sync generated CV data"
@@ -65,3 +110,11 @@ jobs:
             CV.md
             web/src/data/cv-data.json
             web/src/data/github-data.json
+
+      - name: Merge generated data after exact-revision checks
+        if: steps.pr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+          PR_NUMBER: ${{ steps.pr.outputs.pull-request-number }}
+          PR_SHA: ${{ steps.pr.outputs.pull-request-head-sha }}
+        run: node scripts/merge-cv-sync.mjs "$PR_NUMBER" "$PR_SHA"

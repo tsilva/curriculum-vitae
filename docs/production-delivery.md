@@ -1,5 +1,8 @@
 # Production delivery
 
+Daily open-source metadata updates reach this pipeline through the
+[generated-data sync workflow](oss-sync.md).
+
 A successful `CI` completion for a push to `main` triggers `.github/workflows/production-delivery.yml` through `workflow_run`. After secret scanning, it calls the trusted workflow in public `tsilva/.github`, pinned to a reviewed full commit SHA. The privileged job checks out only the shared implementation, rechecks the same latest main commit's already successful CI, and syncs its fixed Production allowlist. A separate GitHub Actions job builds the exact commit, stages its prebuilt artifact on Vercel, verifies that deployment, then promotes it to production. Vercel's automatic Git deployments remain disabled so they cannot race synchronization.
 
 Automatic delivery accepts only successful main-push CI from this repository,

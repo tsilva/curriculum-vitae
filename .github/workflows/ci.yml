@@ -57,6 +57,12 @@ jobs:
       - name: Test data generators
         run: npm --prefix web run test:data
 
+      - name: Test repository collectors and sync merge guards
+        working-directory: web
+        run: |
+          node --test ../scripts/merge-cv-sync.test.mjs
+          node_modules/.bin/tsx --test ../scripts/infisical/test_github_public.mjs
+
       - name: Type-check
         run: npm --prefix web run typecheck
 
