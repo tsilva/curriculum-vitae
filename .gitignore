@@ -74,3 +74,5 @@ test-results/
 
 # Canonical Galleries (generated from Google Photos Takeout)
 galleries/
+/INBOX.md
+/.local/repo-inbox/

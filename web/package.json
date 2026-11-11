@@ -13,7 +13,7 @@
     "assemble": "GALLERY_MODE=r2 tsx ../scripts/assemble-cv-data.ts",
     "assemble:local": "GALLERY_MODE=local tsx ../scripts/assemble-cv-data.ts",
     "generate:cv": "tsx ../scripts/generate-cv.ts",
-    "fetch:github": "tsx ../scripts/fetch-github.ts",
+    "fetch:github": "node ../scripts/github-entry.mjs",
     "stats": "tsx ../scripts/count-technologies.ts",
     "dev:app": "GIT_COMMIT_HASH=$(git rev-parse --short HEAD) node ../scripts/dev-server.mjs next dev",
     "start:secrets": "python3 ../scripts/infisical/run.py start",
