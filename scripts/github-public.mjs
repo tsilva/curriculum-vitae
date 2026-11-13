@@ -1,6 +1,6 @@
 import { existsSync, lstatSync, writeFileSync } from "node:fs";
-import { pathToFileURL } from "node:url";
-import { processRepos } from "../fetch-github.ts";
+import { fileURLToPath, pathToFileURL } from "node:url";
+import { processRepos } from "./fetch-github.ts";
 
 export const REPOSITORIES_PATH = "/users/tsilva/repos";
 export const QUERY = { type: "owner", sort: "pushed", direction: "desc", per_page: "100", page: "1" };
@@ -113,8 +113,13 @@ export async function run(mode, env = process.env) {
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   try {
     if (process.argv.length !== 3) throw new Error("No scope overrides");
-    installSession(process.env.CV_GITHUB_API_BASE);
-    console.log(JSON.stringify(await run(process.argv[2])));
+    process.env.CV_GITHUB_API_BASE ??= "https://api.github.com";
+    process.env.CV_GITHUB_OUTPUT ??= fileURLToPath(new URL("../web/src/data/github-data.json", import.meta.url));
+    if (process.env.CV_GITHUB_TRANSPORT === "agent-vault-public") installSession(process.env.CV_GITHUB_API_BASE);
+    else if (process.env.CV_GITHUB_TRANSPORT || PRIVATE_ENV.some(name => process.env[name])) throw new Error("Public collection accepts no credentials or transport override");
+    const result = await run(process.argv[2]);
+    console.log(JSON.stringify(process.argv[2] === "check"
+      ? {ok:true, read_only:true, credential_mode:"none", item_count:result.fetched} : result));
   } catch (error) {
     console.log(JSON.stringify({ ok: false, http_status: error.httpStatus ?? null,
       reason: "Public GitHub collection failed; no credential or cached-token fallback" }));

@@ -44,12 +44,11 @@ delivery reaches READY on the configured domains. No-change runs create no PR.
 
 ## Collection and recovery
 
-On a provisioned Mac, run `npm --prefix web run sync`. Local collection uses its
-reviewed sandboxed public GitHub Vault route, with no GitHub credential. The REST
+Run `npm --prefix web run sync` with the configured public collection route.
+Local collection needs no GitHub credential. The REST
 client requests 100 records per page and stops at the first short page. A
 100-page safety bound, duplicate records or a failure on any page cause failure
-without replacing the existing snapshot. Source/runtime pins must pass trusted
-review before a changed local collector runs.
+without replacing the existing snapshot. A configured credential proxy retains its separate source/runtime approval.
 
 Hosted Linux collection uses GitHub CLI pagination with a 10,000-record safety
 bound. Reaching the bound or failing collection fails the workflow while keeping

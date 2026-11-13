@@ -1,5 +1,3 @@
-import { existsSync, readFileSync } from "node:fs";
-import { resolve } from "node:path";
 
 type Options = {
   days: number;
@@ -32,9 +30,9 @@ const DEFAULT_OPTIONS: Options = {
 };
 
 function printHelp() {
-  console.log(`Usage: pnpm sentry:issues [options]
+  console.log(`Usage: node scripts/sentry-issues.ts [options]
 
-List recent Sentry issues using credentials from .env, .env.sentry-mcp, or the shell.
+List recent Sentry issues with configured read-only service access.
 
 Options:
   --days <n>        Look back n days (default: 7)
@@ -44,43 +42,11 @@ Options:
   --help            Show this message
 
 Environment:
-  SENTRY_AUTH_TOKEN
+  SENTRY_AUTH_TOKEN  Server-side authentication token
   SENTRY_ORG        Optional, defaults to ${DEFAULT_ORG}
   SENTRY_PROJECT    Optional, defaults to ${DEFAULT_PROJECT}
   SENTRY_BASE_URL   Optional, defaults to https://sentry.io
 `);
-}
-
-function loadOptionalEnvFile(filePath: string) {
-  if (!existsSync(filePath)) {
-    return false;
-  }
-
-  for (const rawLine of readFileSync(filePath, "utf8").split(/\r?\n/)) {
-    const line = rawLine.trim();
-
-    if (!line || line.startsWith("#")) {
-      continue;
-    }
-
-    const normalizedLine = line.startsWith("export ") ? line.slice(7) : line;
-    const separatorIndex = normalizedLine.indexOf("=");
-
-    if (separatorIndex === -1) {
-      continue;
-    }
-
-    const key = normalizedLine.slice(0, separatorIndex).trim();
-
-    if (!key || process.env[key] !== undefined) {
-      continue;
-    }
-
-    const value = normalizedLine.slice(separatorIndex + 1).trim();
-    process.env[key] = value.replace(/^['"]|['"]$/g, "");
-  }
-
-  return true;
 }
 
 function parseArgs(argv: string[]): Options | null {
@@ -88,6 +54,7 @@ function parseArgs(argv: string[]): Options | null {
 
   for (let index = 0; index < argv.length; index += 1) {
     const arg = argv[index];
+    if (arg === "--") continue;
 
     if (arg === "--help" || arg === "-h") {
       printHelp();
@@ -145,7 +112,7 @@ function getRequiredEnv(name: string): string {
 
   if (!value) {
     throw new Error(
-      `Missing ${name}. Set it in the shell, .env, or .env.sentry-mcp and try again.`,
+      `Missing ${name}. Use reviewed read-only service access.`,
     );
   }
 
@@ -175,19 +142,8 @@ async function fetchSentryJson<T>(url: URL | string, token: string): Promise<T> 
   });
 
   if (!response.ok) {
-    const body = await response.text();
-    let details = body;
-
-    try {
-      const parsed = JSON.parse(body) as { detail?: string };
-      details = parsed.detail ?? body;
-    } catch {
-      // Keep the raw response body when it is not JSON.
-    }
-
-    throw new Error(
-      `Sentry API request failed (${response.status} ${response.statusText}): ${details}`,
-    );
+    await response.body?.cancel();
+    throw new Error(`Sentry API request failed (${response.status}); provider details withheld.`);
   }
 
   return (await response.json()) as T;
@@ -211,23 +167,17 @@ async function fetchProjectId(
 }
 
 async function main() {
-  const envFiles = [
-    resolve(process.cwd(), ".env"),
-    resolve(process.cwd(), "..", ".env"),
-    resolve(process.cwd(), ".env.sentry-mcp"),
-    resolve(process.cwd(), "..", ".env.sentry-mcp"),
-  ];
-
-  for (const envFile of envFiles) {
-    loadOptionalEnvFile(envFile);
-  }
-
   const options = parseArgs(process.argv.slice(2));
   if (!options) {
     return;
   }
 
   const token = getRequiredEnv("SENTRY_AUTH_TOKEN");
+  if (process.env.SENTRY_VAULT_TRANSPORT !== undefined
+      ? process.env.SENTRY_VAULT_TRANSPORT !== "agent-vault" || token !== "sentry_read_public_placeholder"
+      : !token || token === "sentry_read_public_placeholder") {
+    throw new Error("Set SENTRY_AUTH_TOKEN in the server environment; configured proxy sessions require their reviewed placeholder.");
+  }
   const org = getEnvWithDefault("SENTRY_ORG", DEFAULT_ORG);
   const project = getEnvWithDefault("SENTRY_PROJECT", DEFAULT_PROJECT);
   const baseUrl = normalizeBaseUrl(process.env.SENTRY_BASE_URL?.trim() || DEFAULT_BASE_URL);

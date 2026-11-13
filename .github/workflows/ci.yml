@@ -61,7 +61,7 @@ jobs:
         working-directory: web
         run: |
           node --test ../scripts/merge-cv-sync.test.mjs
-          node_modules/.bin/tsx --test ../scripts/infisical/test_github_public.mjs
+          node_modules/.bin/tsx --test ../scripts/test_github_public.mjs
 
       - name: Type-check
         run: npm --prefix web run typecheck

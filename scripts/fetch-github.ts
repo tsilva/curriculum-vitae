@@ -144,8 +144,15 @@ if (isMain) {
       console.error(error.message);
       process.exitCode = 1;
     });
+  } else if (!process.env.CV_GITHUB_TRANSPORT) {
+    import("./github-public.mjs").then(module => module.run("collect", {
+      CV_GITHUB_API_BASE: "https://api.github.com", CV_GITHUB_OUTPUT: OUTPUT_PATH,
+    })).catch(() => {
+      console.error("Public GitHub collection failed; existing data retained.");
+      process.exitCode = 1;
+    });
   } else {
-    console.error("Use the reviewed local GitHub Vault launcher; no cached-token fallback.");
+    console.error("Use the explicitly configured public collector; no credential fallback.");
     process.exitCode = 1;
   }
 }

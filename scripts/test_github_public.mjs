@@ -5,9 +5,8 @@ import { readFileSync, mkdtempSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { selectRoute, childEnvironment } from "../github-entry.mjs";
-import { processRepos } from "../fetch-github.ts";
-import { installSession, normalizePublicRepositories, run, QUERY, MAX_PAGES } from "./github_public_client.mjs";
+import { processRepos } from "./fetch-github.ts";
+import { installSession, normalizePublicRepositories, run, QUERY, MAX_PAGES } from "./github-public.mjs";
 
 const rows = JSON.parse(readFileSync(new URL("./fixtures/github_public_data.json", import.meta.url)));
 const env = { CV_GITHUB_TRANSPORT: "agent-vault-public", CV_GITHUB_API_BASE: "https://api.github.com",
@@ -35,22 +34,8 @@ test("private, unrelated or malformed repository data fails closed", () => {
   assert.throws(() => normalizePublicRepositories(Array(101).fill(rows[0])));
 });
 
-test("hosted command and environment remain intact; local callers cannot select hosted auth", () => {
-  const hostedEnv = { GITHUB_ACTIONS: "true", GH_TOKEN: "synthetic-hosted", HOME: "/synthetic/home" };
-  const hosted = selectRoute("linux", hostedEnv, []);
-  assert.deepEqual(hosted, { command: "tsx", args: ["../scripts/fetch-github.ts"], hosted: true });
-  assert.equal(childEnvironment(hosted, hostedEnv), hostedEnv);
-  const local = selectRoute("darwin", hostedEnv, ["--check"]);
-  assert.equal(local.hosted, false);
-  assert.equal(local.args.at(-1), "check");
-  assert.deepEqual(childEnvironment(local, hostedEnv), { HOME: "/synthetic/home", PATH: "/usr/bin:/bin" });
-  assert.throws(() => selectRoute("linux", {}, []));
-  assert.throws(() => selectRoute("linux", hostedEnv, ["--check"]));
-  assert.throws(() => selectRoute("darwin", {}, ["--token", "synthetic"]));
-});
-
 test("actual hosted collector keeps its gh command and generated schema without a real call or write", () => {
-  const script = fileURLToPath(new URL("../fetch-github.ts", import.meta.url));
+  const script = fileURLToPath(new URL("./fetch-github.ts", import.meta.url));
   const code = `
     import fs from 'node:fs'; import cp from 'node:child_process';
     import {syncBuiltinESMExports} from 'node:module'; import {pathToFileURL} from 'node:url';

@@ -50,7 +50,6 @@ pnpm run verify                # lint, build, and run smoke tests
 - Gallery source data is controlled by `GALLERY_MODE` and `R2_PUBLIC_URL` in `web/.env`; production emits same-origin `/galleries/*?v=<cache-token>` URLs and proxies them to Cloudflare R2.
 - Browser metadata uses `NEXT_PUBLIC_SITE_URL`; analytics and Sentry use the variables documented in `web/.env.example`.
 - Local builds skip Sentry source-map uploads. Hosted Vercel builds handle uploads.
-- Root Sentry issue tooling reads `SENTRY_AUTH_TOKEN`, `SENTRY_ORG`, `SENTRY_PROJECT`, and `SENTRY_BASE_URL` from `.env`.
 - The Next.js app is configured for static export with unoptimized images. `vercel.json` sets security/cache headers, redirects `tsilva.eu` to `www.tsilva.eu`, and proxies `/galleries/*` to the R2 gallery host.
 - Root browser tooling uses `pnpm@10.27.0`; the Vercel web app uses npm with a committed lockfile.
 
@@ -69,5 +68,7 @@ Ongoing roles report elapsed calendar months; completed month-granularity
 periods retain inclusive end-month counting. Tenures shorter than a year
 report months, and same-month ongoing roles report less than one month.
 Both CV.md and the web data are regenerated through their existing scripts.
+
+Production delivery uses the pinned shared GitHub Actions workflow; see [production delivery](docs/production-delivery.md) for scope and recovery.
 
 Production delivery keeps Vercel secret isolation enabled and distinguishes public configuration from private credentials; see [production delivery](docs/production-delivery.md).

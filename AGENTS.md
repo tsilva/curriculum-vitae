@@ -23,7 +23,7 @@ This repository contains a detailed professional CV/resume along with an interac
 │   │   └── data-utils.ts   # Shared utilities (frontmatter, sorting, YAML)
 │   ├── assemble-cv-data.ts # data/ + galleries → web/src/data/cv-data.json
 │   ├── generate-cv.ts      # data/ → CV.md
-│   ├── fetch-github.ts     # GitHub API → web/src/data/github-data.json
+│   ├── fetch-github.ts     # Shared GitHub mapping and hosted collector
 │   └── count-technologies.ts # Technology mention analytics
 ├── web/                    # Next.js cyberpunk-themed web application
 │   ├── src/
@@ -187,7 +187,7 @@ Use the `visual-inspection` skill to capture and analyze screenshots of the CV w
 
 ### Data Pipeline
 The web app consumes CV data via a build-time pipeline:
-1. `scripts/fetch-github.ts` fetches GitHub repo data → `web/src/data/github-data.json`
+1. `npm --prefix web run fetch:github` fetches public repository data → `web/src/data/github-data.json`; local calls use the public API, while hosted collection retains the original `scripts/fetch-github.ts` flow.
 2. `scripts/assemble-cv-data.ts` reads `data/**/*.md` (frontmatter) + `data/misc.yaml` + gallery scanning + github-data.json (for OSS sorting) → `web/src/data/cv-data.json`
 3. `scripts/generate-cv.ts` reads the same data → `CV.md`
 4. The Next.js app imports cv-data.json at build time for static generation
@@ -277,6 +277,14 @@ Use this skill when enabling, repairing, or validating Sentry in this repository
 ### cv-hiring-review
 Use this project-level Codex skill when reviewing the CV/site from multiple hiring perspectives to create a private hiring and compensation action report. The skill lives at `.codex/skills/cv-hiring-review/SKILL.md` and writes reports to `.hiring-review/YYYY-MM-DD.md` unless explicitly run in read-only/dry-run mode.
 
-## Secrets
+## Runtime boundaries
 
-Use Infisical `curriculum-vitae` Development `/` for local private credentials, and `curriculum-vitae-production` Production `/` for the Vercel Production sync. Use the ordinary build for local checks. Hosted Vercel builds handle Sentry source-map uploads. Never print credential values or upload local dotenv credential files. Preserve existing Keychain originals until verified provider rotation.
+Keep credentials out of browser
+bundles and preserve hosted source-map uploads, Production isolation and delivery.
+The optional issue reader needs a separately configured access route.
+
+The public GitHub collector uses no GitHub token and updates only the generated
+repository snapshot. Rate limits, malformed/duplicate pages and pagination bounds
+fail without replacing existing data. A configured proxy route must fail without
+raw-key, cached-token or direct-network fallback. Hosted Linux collection retains
+its existing authenticated GitHub CLI workflow.
