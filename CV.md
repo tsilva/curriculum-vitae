@@ -1242,7 +1242,6 @@ Open source projects and contributions.
 - [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
 - [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
 - [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
-- [repologogen](https://github.com/tsilva/repologogen) - Generate professional logos from the command line
 - [parsehealthlog](https://github.com/tsilva/parsehealthlog) - Transform health journal entries into structured data
 - [mcp-openrouter](https://github.com/tsilva/mcp-openrouter) - Access 300+ AI models through a single MCP server
 - [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
@@ -1268,6 +1267,7 @@ Open source projects and contributions.
 - [health-agent](https://github.com/tsilva/health-agent) - Unify lab results, medical exams, and health journals
 - [homebrew-tap](https://github.com/tsilva/homebrew-tap) - Homebrew tap for installing tsilva projects
 - [obsidian-agents-plugin](https://github.com/tsilva/obsidian-agents-plugin) - Launch AI agents from Obsidian vault
+- [repologogen](https://github.com/tsilva/repologogen) - Generate professional logos from the command line
 - [retro-asset-gen](https://github.com/tsilva/retro-asset-gen) - Generate retro gaming assets using Gemini AI **[Archived]**
 - [retro-romset-cleaner](https://github.com/tsilva/retro-romset-cleaner) - Clean up retro ROM collections **[Archived]**
 - [whatsapp-llm](https://github.com/tsilva/whatsapp-llm) - Bridge WhatsApp to AI for intelligent responses
