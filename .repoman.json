@@ -15,5 +15,42 @@
       "npm:eslint-config-next@16.4.5#age": "Audited Next.js 16.4.5 security release (vercel/next.js@4e5335a). Verified registry signatures, source attestations, and package contents. This release family is normally eligible on 2026-11-10 at 18:01:55 UTC.",
       "npm:next@16.4.5#age": "Audited Next.js 16.4.5 security release (vercel/next.js@4e5335a). Verified registry signatures, source attestations, and package contents. This release family is normally eligible on 2026-11-10 at 18:01:55 UTC."
     }
+  },
+  "websites": {
+    "cv.tsilva.eu": {
+      "url": "https://cv.tsilva.eu/",
+      "redirect-to": "https://www.tsilva.eu/",
+      "availability": "reachable",
+      "checked-on": "2026-11-03",
+      "ga4-expectation": "disabled",
+      "ga4-verification-path": "/",
+      "ga4-exception-reason": "Redirect alias. GA4 is checked on the destination.",
+      "sentry-expectation": "disabled",
+      "sentry-verification-path": "/",
+      "sentry-exception-reason": "Redirect alias. Sentry is checked on the destination."
+    },
+    "tsilva.eu": {
+      "url": "https://tsilva.eu/",
+      "redirect-to": "https://www.tsilva.eu/",
+      "availability": "reachable",
+      "checked-on": "2026-11-03",
+      "ga4-expectation": "disabled",
+      "ga4-verification-path": "/",
+      "ga4-exception-reason": "Redirect alias. GA4 is checked on the destination.",
+      "sentry-expectation": "disabled",
+      "sentry-verification-path": "/",
+      "sentry-exception-reason": "Redirect alias. Sentry is checked on the destination."
+    },
+    "www.tsilva.eu": {
+      "url": "https://www.tsilva.eu/",
+      "availability": "reachable",
+      "ga4": "tag-detected",
+      "sentry": "source-detected",
+      "checked-on": "2026-11-03",
+      "ga4-expectation": "required",
+      "ga4-verification-path": "/",
+      "sentry-expectation": "required",
+      "sentry-verification-path": "/"
+    }
   }
 }
