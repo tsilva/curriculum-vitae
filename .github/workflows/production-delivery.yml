@@ -71,7 +71,7 @@ jobs:
         github.event.workflow_run.path == '.github/workflows/ci.yml' &&
         github.event.workflow_run.repository.id == github.repository_id &&
         github.event.workflow_run.head_repository.id == github.repository_id))
-    uses: tsilva/.github/.github/workflows/vercel-prebuilt.yml@08055b56dde74cc5ed880877b83ba5bba48d76e2
+    uses: tsilva/.github/.github/workflows/vercel-prebuilt.yml@a20dac1368cedf94bf81e0af5eb38f844a924240
     with:
       project_id: prj_r3jpAdDLcGZ4u6N7kvmjwXLZh2kN
       project_name: curriculum-vitae
