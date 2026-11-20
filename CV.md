@@ -1231,27 +1231,20 @@ Open source projects and contributions.
 - [dedrive](https://github.com/tsilva/dedrive) - Find and manage duplicate files in Google Drive using MD5 checksums
 - [demosim](https://github.com/tsilva/demosim) - Explore Portugal's demographic future with economic projections
 - [gymemu](https://github.com/tsilva/gymemu) - Play retro games through learned latent dynamics
-- [mcp-imagetools](https://github.com/tsilva/mcp-imagetools) - Image processing tools for Claude Code via MCP
 - [pdfpress](https://github.com/tsilva/pdfpress) - Compress, merge, split, and unlock PDF files
 - [parsemedicalexams](https://github.com/tsilva/parsemedicalexams) - Extract and summarize medical exam reports from PDFs
 - [gmailstream](https://github.com/tsilva/gmailstream) - Download Gmail messages matching filters to local files
 - [capture](https://github.com/tsilva/capture) - Capture thoughts to Gmail with a single command
-- [notebook2md](https://github.com/tsilva/notebook2md) - Convert Jupyter Notebooks to Markdown
 - [popdesk](https://github.com/tsilva/popdesk) - Trigger Windows desktop notifications from anywhere via webhooks
-- [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
 - [papertrail](https://github.com/tsilva/papertrail) - AI-powered PDF document classification using vision LLMs
 - [parselabs](https://github.com/tsilva/parselabs) - Extract lab results from medical PDFs using AI vision
 - [thunkd](https://github.com/tsilva/thunkd) - Capture thoughts instantly and send them to inbox
-- [repologogen](https://github.com/tsilva/repologogen) - Generate professional logos from the command line
 - [parsehealthlog](https://github.com/tsilva/parsehealthlog) - Transform health journal entries into structured data
 - [mcp-openrouter](https://github.com/tsilva/mcp-openrouter) - Access 300+ AI models through a single MCP server
 - [mbox-extractor](https://github.com/tsilva/mbox-extractor) - Extract all attachments from mbox email archives
-- [repo2md](https://github.com/tsilva/repo2md) - Transform any repository into a single Markdown document
-- [mochimochi](https://github.com/tsilva/mochimochi) - CLI for curating Mochi flashcard decks with AI-powered deduplication
 - [gmail2obsidian](https://github.com/tsilva/gmail2obsidian) - Flush Gmail threads into Obsidian task files
 - [tsilva.eu](https://github.com/tsilva/tsilva.eu) - Personal landing page
 - [agentpong](https://github.com/tsilva/agentpong) - Desktop notifications that jump you to the right Claude Code window
-- [mochidecks](https://github.com/tsilva/mochidecks) - Curated flashcard decks for AI/ML and data science
 - [aerospace-setup](https://github.com/tsilva/aerospace-setup) - Portable Aerospace configuration with Cursor project switching
 - [aiml-notebooks](https://github.com/tsilva/aiml-notebooks) - AI/ML Jupyter notebooks for learning deep learning concepts
 - [archex](https://github.com/tsilva/archex) - Recursively extract archives from directory trees
@@ -1267,7 +1260,14 @@ Open source projects and contributions.
 - [gymsolve](https://github.com/tsilva/gymsolve) - Fast RL framework with PPO and REINFORCE on Gymnasium
 - [health-agent](https://github.com/tsilva/health-agent) - Unify lab results, medical exams, and health journals
 - [homebrew-tap](https://github.com/tsilva/homebrew-tap) - Homebrew tap for installing tsilva projects
+- [mcp-imagetools](https://github.com/tsilva/mcp-imagetools) - Image processing tools for Claude Code via MCP
+- [mcp-wandb](https://github.com/tsilva/mcp-wandb) - Query Weights & Biases experiments from LLM agents via MCP
+- [mochidecks](https://github.com/tsilva/mochidecks) - Curated flashcard decks for AI/ML and data science
+- [mochimochi](https://github.com/tsilva/mochimochi) - CLI for curating Mochi flashcard decks with AI-powered deduplication
+- [notebook2md](https://github.com/tsilva/notebook2md) - Convert Jupyter Notebooks to Markdown
 - [obsidian-agents-plugin](https://github.com/tsilva/obsidian-agents-plugin) - Launch AI agents from Obsidian vault
+- [repo2md](https://github.com/tsilva/repo2md) - Transform any repository into a single Markdown document
+- [repologogen](https://github.com/tsilva/repologogen) - Generate professional logos from the command line
 - [retro-asset-gen](https://github.com/tsilva/retro-asset-gen) - Generate retro gaming assets using Gemini AI **[Archived]**
 - [retro-romset-cleaner](https://github.com/tsilva/retro-romset-cleaner) - Clean up retro ROM collections **[Archived]**
 - [whatsapp-llm](https://github.com/tsilva/whatsapp-llm) - Bridge WhatsApp to AI for intelligent responses
